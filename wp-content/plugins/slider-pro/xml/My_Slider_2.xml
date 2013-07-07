@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<slider>
+  <name><![CDATA[My Slider]]></name>
+  <settings>
+    <slide_width>500</slide_width>
+    <slide_height>300</slide_height>
+    <width>90%</width>
+    <height>430</height>
+    <responsive>1</responsive>
+    <aspect_ratio>-1</aspect_ratio>
+    <skin>circle</skin>
+    <include_skin>0</include_skin>
+    <shadow>0</shadow>
+    <border>0</border>
+    <glow>0</glow>
+    <align_type>centerCenter</align_type>
+    <scale_type>outsideFit</scale_type>
+    <allow_scale_up>0</allow_scale_up>
+    <lazy_loading>0</lazy_loading>
+    <preload_nearby_images>0</preload_nearby_images>
+    <shuffle>0</shuffle>
+    <slide_start>0</slide_start>
+    <slideshow>1</slideshow>
+    <pause_slideshow_on_hover>1</pause_slideshow_on_hover>
+    <custom_class></custom_class>
+    <enable_custom_css>1</enable_custom_css>
+    <enable_custom_js>0</enable_custom_js>
+  </settings>
+  <panels_state>
+    <publish>opened</publish>
+    <general>opened</general>
+    <slideshow>opened</slideshow>
+    <slide_navigation_controls>opened</slide_navigation_controls>
+    <lightbox>closed</lightbox>
+    <fullscreen>closed</fullscreen>
+    <timer_animation>closed</timer_animation>
+    <transition_effects>opened</transition_effects>
+    <thumbnails>closed</thumbnails>
+    <video>closed</video>
+    <timthumb_resizing>closed</timthumb_resizing>
+    <slides_order>closed</slides_order>
+    <custom_js_css>opened</custom_js_css>
+  </panels_state>
+  <custom_css><![CDATA[.circle .slide-arrows a { 
+       top: 118%; 
+} 
+
+.circle .slide-arrows a.previous  { 
+      left: 33%; 
+      display: none; 
+} 
+
+.circle .slide-arrows a.next { 
+      right: 33%; 
+      display: none; 
+} ]]></custom_css>
+  <slides>
+    <slide>
+      <id>47</id>
+      <slider_id>2</slider_id>
+      <name><![CDATA[Slide 1]]></name>
+      <content>
+        <image><![CDATA[[sp_image]]]></image>
+        <alt><![CDATA[]]></alt>
+        <title><![CDATA[]]></title>
+        <thumbnail_image><![CDATA[]]></thumbnail_image>
+        <thumbnail_alt><![CDATA[]]></thumbnail_alt>
+        <thumbnail_title><![CDATA[]]></thumbnail_title>
+        <thumbnail_content><![CDATA[]]></thumbnail_content>
+        <layer_1_content><![CDATA[&lt;h3&gt;[sp_title]&lt;/h3&gt;
+]]></layer_1_content>
+        <layer_2_content><![CDATA[[sp_excerpt limit=\&quot;140\&quot;]]]></layer_2_content>
+        <slide_link_path><![CDATA[[sp_link]]]></slide_link_path>
+        <slide_link_title><![CDATA[[sp_title]]]></slide_link_title>
+        <thumbnail_link_path><![CDATA[]]></thumbnail_link_path>
+        <thumbnail_link_title><![CDATA[]]></thumbnail_link_title>
+      </content>
+      <settings>
+        <layers_num>2</layers_num>
+        <layers_ids>+1+2+</layers_ids>
+        <layer_1_settings>layer_position=topLeft+layer_preset_styles=black+layer_horizontal=30+layer_vertical=21</layer_1_settings>
+        <layer_2_settings>layer_position=topLeft+layer_preset_styles=black+layer_horizontal=29+layer_vertical=100</layer_2_settings>
+        <slide_link_target>_self</slide_link_target>
+        <slide_link_lightbox>0</slide_link_lightbox>
+        <thumbnail_link_target>_self</thumbnail_link_target>
+        <thumbnail_link_lightbox>0</thumbnail_link_lightbox>
+        <slide_type>posts</slide_type>
+        <dynamic_posts_relation>or</dynamic_posts_relation>
+        <dynamic_posts_orderby>date</dynamic_posts_orderby>
+        <dynamic_posts_order>DESC</dynamic_posts_order>
+        <dynamic_posts_maximum>10</dynamic_posts_maximum>
+        <dynamic_posts_offset>0</dynamic_posts_offset>
+      </settings>
+      <position>1</position>
+      <panel_state>opened</panel_state>
+      <selected_tab>2</selected_tab>
+      <visibility>enabled</visibility>
+    </slide>
+  </slides>
+</slider>

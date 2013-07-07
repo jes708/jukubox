@@ -1,0 +1,13 @@
+.circle .slide-arrows a { 
+       top: 118%; 
+} 
+
+.circle .slide-arrows a.previous  { 
+      left: 33%; 
+      display: none; 
+} 
+
+.circle .slide-arrows a.next { 
+      right: 33%; 
+      display: none; 
+} 

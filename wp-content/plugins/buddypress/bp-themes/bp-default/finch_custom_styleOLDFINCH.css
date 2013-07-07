@@ -1,0 +1,618 @@
+@import url(http://fonts.googleapis.com/css?family=Questrial);
+@import url(http://fonts.googleapis.com/css?family=Economica&subset=latin,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Share+Tech+Mono);
+@import url(http://fonts.googleapis.com/css?family=Contrail+One);
+@import url(http://fonts.googleapis.com/css?family=Merriweather+Sans);
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed);
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans);
+@import url(http://fonts.googleapis.com/css?family=BenchNine);
+@import url(http://fonts.googleapis.com/css?family=Comfortaa);
+
+
+div.item-list-tabs ul { 
+	width: auto; 
+}
+
+#inst_holder {
+	float: right;
+	margin-top: 4px;
+	padding-right: 8px; 
+}
+
+div #newkey { 
+	font-size: 16pt;
+	padding: 12px;
+	font-weight: bold;	  
+}
+
+.app_timetable_cell { 
+	color: white; 
+}
+
+.appointments-list table td { 
+	color: white;
+}
+
+/* edits to core body NHF */ 
+
+body {
+	width: 100%; 
+ } 
+
+#jukulogo { 
+	width: /*330px;*/ 293px; 
+	margin-top: -30px;
+}    
+
+
+#header { 
+	background: /*#191919;*/ #000000;  
+} 
+
+#nav li a { 
+	background: white;  /*#eaeaea;*/ 
+	color: black;
+	border-top: solid black 1px;
+	border-right: solid black 1px;
+	border-left: solid black 1px;	
+	padding: 10px 15px;  
+}
+
+/* change color of sub menu items  */ 
+
+#nav .sfhover ul li a, #nav :hover ul li a { 
+	background-color: white;  
+	color: black; 
+} 
+
+#nav ul li.sfhover > a, #nav ul li:hover > a { 
+/*	background-color: white; */ 
+} 
+
+#nav .sfhover ul li > a, #nav :hover ul li > a { 
+/* 	background-color: white; */ 
+} 
+ 
+.sub-menu li a { 
+	border: none !important;
+	/*border-top: solid black 1px !important;*/
+} 
+
+ #nav .sfhover ul li a:hover, #nav :hover ul li a:hover, #nav li a:hover {
+	 
+/*	background: #333;
+	color: #fff; */ 
+	background: none; 
+	color: #cacaca; 
+}
+
+  
+ #nav .sfhover ul li a:active, #nav :hover ul li a:active, #nav li a:active {
+/*	background-color: black; */ 
+} 
+
+#feature_list { 
+	list-style-image: url('../../../../uploads/2013/04/note2.png');
+	font-size: 17px;
+} 
+
+#feature_list li { 
+	margin-top: 10px;
+	margin-bottom: 10px;
+}  
+
+#buatp_loop_fields { 
+	line-height: normal;
+	margin-left: /*63px;*/ -52px; 
+	margin-top: 34px; 
+} 
+
+span.update { 
+	display: none;
+}
+
+ul.item-list li { 
+	padding: 25px 0; 
+} 
+
+#feature_div { 
+	display: none;
+}
+
+#tophometable { 
+	display: none; 
+} 
+
+.bx-next, .bx-prev { 
+	display: none;	
+}
+
+#bottom_stuff { 
+	width: 87%;
+	margin: 0 auto;  
+}
+
+.admin-bar-search { 
+	display: none;
+}
+
+.teach_prof { 
+	text-align: center;
+} 
+
+.teach_prof img { 
+	width: 50px;
+	height: 50px;
+	margin-right: 14px;
+	margin-bottom: 14px;  
+}
+
+.teach_prof h4, .teach_prof p  { 
+	text-align: left;
+	margin-left: 10px;  
+}
+
+
+.bx-viewport { 
+/*	height: 155px;*/  
+} 
+
+.bx-wrapper { 
+/*	height: 165px;*/  
+} 
+
+.bx-pager-link.active { 
+	background-color: white; 
+} 
+
+body { 
+/*	font-family: "Share Tech Mono", sans-serif;*/ 
+	font-family: /* "Merriweather Sans", */ /*"Economica"*/ /*"Roboto Condensed"*/ /*"Questrial"*/ /*"Noto Sans"*/ /*Arial*/ "Lucida Grande"  sans-serif;
+	background: url('https://upload.wikimedia.org/wikipedia/commons/f/f1/Radio_City_Music_Hall_3051638324_4a385c5623.jpg') fixed; 
+	background-size: 1400px;
+	width: 1000px;
+background: url('http://www.avgdigital.co/jukubox/wp-content/uploads/2013/05/Jukubox_bg1_1920x1080.jpg') fixed;
+	background: url('http://www.avgdigital.co/jukubox/wp-content/uploads/2013/05/Jukubox_bg1_1920x1080Gradient2.jpg') fixed; 
+	/*background: url('http://st.gdefon.ru/wallpapers_original/wallpapers/325524_minimalizm_gradient_svechenie_sinij_tekstura_2560x1600_(www.GdeFon.ru).jpg') fixed;*/ 
+	background: url('../../../../uploads/2013/05/Ubuntu-Desktop-Blue-1800x2880stampout.jpg') fixed;  
+	
+	background-size: 1600px;
+	background-position: 47% 0%;
+ } 
+
+h1, h2, h3, h4, h5 { 
+	font-family: 'Comfortaa' "BenchNine" "Arial" !important;
+} 
+
+#site-generator, #footer { 
+	margin: 0px; 
+} 
+
+#footer { 
+	background: /*#191919;*/ #000000; 
+	padding: 20px;
+} 
+/* alter menu */
+#nav { 
+	float: none; 
+} 
+ 
+#nav li { 
+	margin-left: 0px;
+	font-weight: bold; 
+}  
+#nav > li > a { 
+	-moz-border-radius-topleft: 0px;
+	-webkit-border-top-left-radius: 0px;
+	-moz-border-radius-topright: 0px;
+	-webkit-border-top-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+/*	border-left: dotted black 1px;*/  
+	border-right: none;
+	border-top: none;  
+	border-left: none;
+	background: url(pictures/menu-sperator.png) no-repeat right center; 
+}
+
+ #nav > li:first-child > a { 
+	border-left: none; 
+}
+
+ #nav > li:last-child > a { 
+	/*border-right: dotted black 1px;*/  
+}
+#navigation { 
+	 background-color: white; 
+	border-bottom: dotted black 1px;  
+}
+
+#header { 
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+	margin-bottom: 0px; 	
+} 
+
+div#container { 
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+} 
+/* end menu stylings */ 
+
+#loggedin_div .avatar { 
+	width: 100px;
+	height: 100px; 
+}
+
+.confirmdiv, #enter_app_room_wrap { 
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 8px;
+	border: double black 1px;
+	-webkit-box-shadow: 2px 2px 4px black;
+	-moz-box-shadow: 2px 2px 4px black;
+	box-shadow: 2px 2px 4px black;
+	padding: 20px;
+	text-align: center;
+}
+
+button,
+a.button,
+input[type=submit],
+input[type=button],
+input[type=reset],
+ul.button-nav li a,
+div.generic-button a,
+.comment-reply-link { 
+/*color: #d7d7d7;
+background: #333;
+background: -webkit-gradient(linear, left top, left bottom, from(#666), to(#000));
+background: -moz-linear-gradient(top, #666, #000); */ 
+
+
+
+background: #5394f3;
+background: -webkit-gradient(linear, left top, left bottom, from(#59a9ff), to(#5495f3));
+background: -moz-linear-gradient(top, #59a9ff, #5495f3);
+
+
+/*background: #1161a0;
+background: -webkit-gradient(linear, left top, left bottom, from(#2395ee), to(#2eb1e9));
+background: -moz-linear-gradient(top, #2395ee, #2eb1e9); */ 
+
+
+/*1c90cd */ 
+background: #1161a0;
+background: -webkit-gradient(linear, left top, left bottom, from(#1161a0), to(#4da1cd));
+
+background: -moz-linear-gradient(top, #1161a0, #4da1cd);
+
+
+background: #1161a0;
+background: -webkit-gradient(linear, left top, left bottom, from(#4da1cd), to(#1161a0) );
+
+background: -moz-linear-gradient(top, #4da1cd, #1161a0);
+
+color: white !important;
+font-family: "Lucida Grande" sans-serif;
+/* padding: 0px 7px 0px 7px;  */ 
+padding-right: 13px; 
+padding-left: 13px;  
+
+}  
+
+button:hover,
+a.button:hover,
+a.button:focus,
+input[type=submit]:hover,
+input[type=button]:hover,
+input[type=reset]:hover,
+ul.button-nav li a:hover,
+ul.button-nav li.current a,
+div.generic-button a:hover,
+.comment-reply-link:hover { 
+ /*background: #000;
+    background: -webkit-gradient(linear, left top, left bottom, from(#444), to(#000));
+    background: -moz-linear-gradient(top,  #444,  #000); */ 
+
+
+/*background: #5394f3;
+background: -webkit-gradient(linear, left top, left bottom, from(#5495f3), to(#59a9ff));
+background: -moz-linear-gradient(top, #5495f3, #59a9ff, ); */ 
+
+
+background: #1161a0;
+background: -webkit-gradient(linear, left top, left bottom, from(#4da1cd), to(#1161a0) );
+
+background: -moz-linear-gradient(top, #4da1cd, #1161a0);
+
+
+background: #1161a0;
+background: -webkit-gradient(linear, left top, left bottom, from(#1161a0), to(#4da1cd));
+
+background: -moz-linear-gradient(top, #1161a0, #4da1cd);
+}
+
+button:active,
+a.button:active,
+a.button:active,
+input[type=submit]:active,
+input[type=button]:active,
+input[type=reset]:active,
+ul.button-nav li a:active,
+ul.button-nav li.current a:active,
+div.generic-button a:active,
+.comment-reply-link:active {
+    color: #666;
+    background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#444));
+    background: -moz-linear-gradient(top,  #000,  #444);
+	
+	
+    color: #666;
+    background: -webkit-gradient(linear, left top, left bottom, from(#3d96f1), to(#517ded));
+    background: -moz-linear-gradient(top,  #3d96f1,  #517ded);
+
+/* 267eac */ 
+
+
+background: #1161a0;
+background: -webkit-gradient(linear, left top, left bottom, from(#023467), to(#4da1cd));
+
+background: -moz-linear-gradient(top, #023467, #4da1cd);
+
+
+}
+
+a.button, input[type=submit], input[type=button], input[type=reset], ul.button-nav li a, div.generic-button a, .comment-reply-link { 
+	/*-webkit-box-shadow: #ccc 2px 2px 10px;
+-moz-box-shadow: #ccc 2px 2px 10px;
+box-shadow: #ccc 2px 2px 10px; */ 
+/* border: none;*/  
+}  
+
+#content .padder { 
+	background: url('../../../../uploads/2013/04/pat24.png'); 
+
+}
+
+
+/* NHF - styles for nevo slider on homepage */ 
+ .nivo-caption { 
+	font-size: 24px;
+	padding: 13px;
+	top: 28px;
+	left: 30px;
+	bottom: auto; 
+	width: auto;   
+}  
+
+/* end niv slider */ 
+
+/* NHF - styling for slider pro */ 
+
+.advanced-slider canvas { 
+	right: 0; 
+}
+
+/* end slider pro */  
+
+h2.pagetitle a:hover, h2.posttitle a:hover { 
+	text-decoration: underline; 
+}
+
+.post .wp-post-image { 
+	margin-bottom: 15px;
+	margin-right: 9px !important; 
+	border: 7px solid #dedede;
+	margin: 0 auto;
+	margin: 8px;  	 
+} 
+
+.post .wp-post-image:hover { 
+	border: 7px solid #888; 
+} 
+
+.post { 
+	border-top: 1px solid #888;	
+	padding-top: 10px; 
+} 
+
+.author-box { 
+	margin-bottom: 0 !important; 
+	margin-top: 8px !important; 
+	padding-top: 0px !important; 
+	padding-left: 0px !important;  
+} 
+
+div.post-content { 
+	margin-left: 0; 
+}
+
+.finch_pic_wrap { 
+	float: left; 
+	margin-bottom: 15px;
+} 
+
+#members-list li, .post, #newroomtable { 
+	-webkit-box-shadow: #ccc 3px 3px 8px;
+-moz-box-shadow: #ccc 3px 3px 8px;
+box-shadow: #ccc 3px 3px 8px;
+margin-bottom: 20px;
+background: #fff;
+padding: 17px;
+margin-top: 5px;
+}
+
+#members-list li:first-child {
+	margin-top: 20px;   	
+} 
+
+.action .rating-top { 
+	right: 19px !important;
+	top: 3px !important;  
+}
+
+span.activity { 
+	display: none;
+}   
+ 
+#members-list li, .post { 
+	border: 1px solid #e4e4e4;
+	background: #f2f2f2;
+	overflow: visible !important;
+	/* padding-bottom: 33px; */
+background-image: linear-gradient(left , rgb(228,228,228) 0%, rgb(171,171,171) 52%);
+background-image: -o-linear-gradient(left , rgb(228,228,228) 0%, rgb(171,171,171) 52%);
+background-image: -moz-linear-gradient(left , rgb(228,228,228) 0%, rgb(171,171,171) 52%);
+background-image: -webkit-linear-gradient(left , rgb(228,228,228) 0%, rgb(171,171,171) 52%);
+background-image: -ms-linear-gradient(left , rgb(228,228,228) 0%, rgb(171,171,171) 52%);
+
+background-image: -webkit-gradient(
+	linear,
+	left top,
+	right top,
+	color-stop(0, rgb(228,228,228)),
+	color-stop(0.52, rgb(171,171,171))
+); 
+background: url('http://www.avgdigital.co/jukubox/wp-content/uploads/2013/05/paper_fibers.png');
+/*background: url('http://www.avgdigital.co/jukubox/wp-content/uploads/2013/05/fabric_plaid.png');   	 */  
+} 
+
+.finchFeatureImg { 
+	float: left; 
+	/*margin-bottom: 15px;*/
+}
+
+.finchFeatureImg img { 
+	margin-top: 1px !important; 
+} 
+
+a.frienship-button { 
+	margin-right: 7px; 
+}
+
+#bottom_stuff { 
+/*	display: none; */ 
+} 
+/* CSS rules for lesson room! */ 
+
+
+#subscribers { 
+	/*float: left;*/  
+	width: 640px;
+	height: 480px;
+	margin-top: 30px;
+	background-size: 639px !important;
+
+}
+
+#subscribers, .publisherContainer { 
+	border: double 7px white;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+	background: url('../../../../uploads/2013/04/final_nosloganRE.png') no-repeat;
+	background-position: 0;
+	background-color: black; 
+} 
+
+.publisherContainer{ 
+	top: 11px;
+	position: absolute;
+	right: 23px;
+	min-width: 160px; 
+	min-height: 120px;
+	background-size: 159px;  
+	
+}
+
+.scrollyPublish { 
+	float: right;
+	position: fixed;
+	right: 122px;
+	top: 41px;
+} 
+ 
+#disconnectLink { 
+	display: none;
+} 
+
+#publishLink { 
+	display: none;
+} 
+
+#unpublishLink { 
+	display: none; 
+}
+
+p.date { 
+	border: 0; 
+}
+
+.author-box { 
+	margin-top: 0px !important; 
+} 
+
+#buatp_members.list_view ul.item-list li .avatar { 
+	height: 100px; 
+	width: 100px;
+	margin-right: 3px; 
+}
+
+.item .item-title { 
+/*	border-bottom: solid 1px;
+	border-bottom: solid 1px #e4e4e4;*/ 
+	border-bottom: none;  
+}
+
+ul.item-list li div.item-title, ul.item-list li h4 { 
+	margin-left: 112px;
+	width: 67%;  
+}
+
+.action .friendship-button { 
+	position: relative; 
+	right: 8px;
+	top: 4px;  
+}
+
+#schedule-lesson { 
+	margin-top: 20px !important;
+	left: -231px;
+	position: relative;    
+}
+
+#schedule-lesson a { 
+	position: relative;
+	left: -16px;
+} 
+
+#members-list .item-title a { 
+	text-decoration: none; 
+}  
+
+#members-directory-form h3 { 
+	color: #000000; 
+	font-size: 20pt; 
+}
+
+span.fname { 
+	display: none; 
+}
+
+p.date, p.postmetadata { 
+	font-family: Arial; 
+}  
+
+#finchBottom { 
+	margin-bottom: 24px; 
+}
+
+div#sidebar h3.widgettitle { 
+	font-size: 16px; 
+	color: #000000; 
+}  

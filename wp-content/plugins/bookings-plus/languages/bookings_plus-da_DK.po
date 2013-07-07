@@ -1,0 +1,1200 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: bookings-plus\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-02-22 19:25+0530\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: Bookings-Plus <info@bookings-plus.com>\n"
+"Language: da_DK\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: F:\\Wordpress\\bookings-plus-restricted-version\\trunk\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: bookingCalendar.php:213 bookingCalendarByBackend.php:29
+#: bookingCalendarByCustomer.php:27 bookingCalendarByIframe.php:221
+#: bookingCalendarByService.php:210
+msgid "Step 1 : Choose Service"
+msgstr "Trin 1: Vælg service"
+
+#: bookingCalendar.php:216 bookingCalendarByBackend.php:32
+#: bookingCalendarByCustomer.php:30 bookingCalendarByIframe.php:224
+#: bookingCalendarByService.php:213
+msgid "Step 2 : Choose Staff"
+msgstr "Trin 2: Vælg Staff"
+
+#: bookingCalendar.php:219 bookingCalendarByBackend.php:35
+#: bookingCalendarByCustomer.php:33 bookingCalendarByIframe.php:227
+#: bookingCalendarByService.php:216
+msgid "Step 3 : Date & Time"
+msgstr "Trin 3: Dato & tid"
+
+#: bookingCalendar.php:222 bookingCalendarByBackend.php:38
+#: bookingCalendarByCustomer.php:36 bookingCalendarByIframe.php:230
+#: bookingCalendarByService.php:219
+msgid "Step 4 : Your Information"
+msgstr "Trin 4: Dine oplysninger"
+
+#: bookingCalendar.php:225 bookingCalendarByBackend.php:41
+#: bookingCalendarByCustomer.php:39 bookingCalendarByIframe.php:233
+#: bookingCalendarByService.php:222
+msgid "Step 5 : Confirm Details"
+msgstr "Trin 5: Bekræft Detaljer"
+
+#: bookingCalendar.php:238 bookingCalendarByBackend.php:54
+#: bookingCalendarByCustomer.php:52 bookingCalendarByIframe.php:246
+#: bookingCalendarByService.php:235
+msgid "Book an Appointment Now"
+msgstr "Bestil tid nu"
+
+#: bookingCalendar.php:245 bookingCalendarByBackend.php:61
+#: bookingCalendarByCustomer.php:59 bookingCalendarByIframe.php:253
+#: bookingCalendarByService.php:242
+msgid "Thank you for Booking."
+msgstr "Tak for Booking."
+
+#: bookingCalendar.php:253 bookingCalendarByBackend.php:69
+#: bookingCalendarByCustomer.php:67 bookingCalendarByIframe.php:261
+#: bookingCalendarByService.php:250
+msgid "Choose Service"
+msgstr "Vælg service"
+
+#: bookingCalendar.php:254 bookingCalendarByBackend.php:70
+#: bookingCalendarByCustomer.php:68 bookingCalendarByIframe.php:262
+#: bookingCalendarByService.php:251
+msgid "Service Duration"
+msgstr "tjenesten Varighed"
+
+#: bookingCalendar.php:255 bookingCalendarByBackend.php:71
+#: bookingCalendarByCustomer.php:69 bookingCalendarByIframe.php:263
+#: bookingCalendarByService.php:252 leftMenus.php:318 manageServices.php:51
+msgid "Cost"
+msgstr "Omkostninger"
+
+#: bookingCalendar.php:257 bookingCalendarByBackend.php:73
+#: bookingCalendarByCustomer.php:71 bookingCalendarByIframe.php:265
+#: bookingCalendarByService.php:254 manageServices.php:46
+msgid "Service Display Order"
+msgstr "Tjenesten Visningsrækkefølge"
+
+#: bookingCalendar.php:289 bookingCalendar.php:301
+#: bookingCalendarByBackend.php:105 bookingCalendarByBackend.php:117
+#: bookingCalendarByCustomer.php:103 bookingCalendarByCustomer.php:115
+#: bookingCalendarByIframe.php:297 bookingCalendarByIframe.php:309
+#: bookingCalendarByService.php:286 bookingCalendarByService.php:298
+#: leftMenus.php:349 leftMenus.php:361 manageServices.php:103
+#: manageServices.php:115
+msgid " Mins"
+msgstr "mins"
+
+#: bookingCalendar.php:294 bookingCalendarByBackend.php:110
+#: bookingCalendarByCustomer.php:108 bookingCalendarByIframe.php:302
+#: bookingCalendarByService.php:291 leftMenus.php:354 manageServices.php:108
+msgid " Hrs"
+msgstr "Hrs"
+
+#: bookingCalendar.php:299 bookingCalendarByBackend.php:115
+#: bookingCalendarByCustomer.php:113 bookingCalendarByIframe.php:307
+#: bookingCalendarByService.php:296 leftMenus.php:359
+msgid " Hr "
+msgstr "hr"
+
+#: bookingCalendar.php:341 bookingCalendarByBackend.php:157
+#: bookingCalendarByCustomer.php:155 bookingCalendarByIframe.php:349
+#: bookingCalendarByService.php:338
+msgid "Calendar Time Zone:"
+msgstr "Kalender Time Zone:"
+
+#: bookingCalendar.php:458 bookingCalendarByBackend.php:275
+#: bookingCalendarByCustomer.php:271 bookingCalendarByIframe.php:467
+#: bookingCalendarByService.php:455
+msgid " Appointment :"
+msgstr "udnævnelse:"
+
+#: bookingCalendar.php:500 bookingCalendarByBackend.php:317
+#: bookingCalendarByCustomer.php:313 bookingCalendarByIframe.php:509
+#: bookingCalendarByService.php:497
+msgid "Back Step"
+msgstr "Tilbage Trin"
+
+#: bookingCalendar.php:501 bookingCalendarByBackend.php:318
+#: bookingCalendarByCustomer.php:314 bookingCalendarByIframe.php:510
+#: bookingCalendarByService.php:498
+msgid "Next Step"
+msgstr "Næste skridt"
+
+#: bookingCalendar.php:536 bookingCalendarByBackend.php:350
+#: bookingCalendarByCustomer.php:345 bookingCalendarByIframe.php:717
+#: bookingCalendarByService.php:530
+msgid "Please choose atleast one Service."
+msgstr "Vælg mindst én Service."
+
+#: bookingCalendarByIframe.php:584 bookings-plus.php:568
+#: manageBookings.php:453 manageCustomers.php:594
+msgid "Please choose atleast one Staff Member."
+msgstr "Vælg mindst én ansat."
+
+#: bookingCalendarByIframe.php:593 bookings-plus.php:577
+#: manageBookings.php:462 manageCustomers.php:603
+msgid "Please choose atleast Booking Date."
+msgstr "Vælg venligst atleast Booking Dato."
+
+#: bookingCalendarByIframe.php:598 bookings-plus.php:582
+#: manageBookings.php:467 manageCustomers.php:608
+msgid "Please choose atleast Booking Time."
+msgstr "Vælg venligst atleast Booking Time."
+
+#: bookingForm.php:12 leftMenus.php:70
+msgid "Booking Form Setup"
+msgstr "Booking Form Setup"
+
+#: bookingForm.php:17
+msgid "Success! The Booking Fields has been updated Successfully."
+msgstr "Succes! Booking felter er blevet opdateret."
+
+#: bookingForm.php:24
+msgid "Booking Form Fields"
+msgstr "Booking formularfelter"
+
+#: bookingForm.php:42
+msgid "Field Name"
+msgstr "feltnavn"
+
+#: bookingForm.php:43
+msgid "Visibility"
+msgstr "synlighed"
+
+#: bookingForm.php:44
+msgid "Validation"
+msgstr "validering"
+
+#: bookingForm.php:90 bookingForm.php:111
+msgid "Visible"
+msgstr "synlig"
+
+#: bookingForm.php:93 bookingForm.php:114
+msgid "Invisible"
+msgstr "usynlig"
+
+#: bookingForm.php:98 bookingForm.php:119
+msgid "Required"
+msgstr "påkrævet"
+
+#: bookingForm.php:101 bookingForm.php:122
+msgid "Not Required"
+msgstr "ikke påkrævet"
+
+#: bookingForm.php:139 leftMenus.php:162 leftMenus.php:258 leftMenus.php:386
+#: leftMenus.php:561 leftMenus.php:710 leftMenus.php:762
+#: manageCustomers.php:109 manageEmployees.php:117 manageEmployees.php:186
+#: manageEmployees.php:258 manageServices.php:155
+msgid "Processing Data..."
+msgstr "Behandling af data ..."
+
+#: bookingForm.php:139 leftMenus.php:162 leftMenus.php:258 leftMenus.php:386
+#: leftMenus.php:561 leftMenus.php:710 leftMenus.php:724 leftMenus.php:762
+#: manageCustomers.php:109 manageEmployees.php:117 manageEmployees.php:186
+#: manageEmployees.php:258 manageSettings.php:486
+msgid "Submit & Save Changes"
+msgstr "Indsend & Gem ændringer"
+
+#: bookingForm.php:149
+msgid "Booking Form Short Codes For Front End"
+msgstr "Reservationsskema korte koder for frontend"
+
+#: bookingForm.php:163
+msgid "Calendar Embed :"
+msgstr "Kalender Embed:"
+
+#: bookingForm.php:169 bookingForm.php:177 bookingForm.php:189
+#: bookingForm.php:201
+msgid "Copy to Clipboard"
+msgstr "Kopier til udklipsholder"
+
+#: bookingForm.php:173
+msgid "Booking Link Code (Single Services) :"
+msgstr "Booking link kode (enkelte services):"
+
+#: bookingForm.php:184
+msgid "Booking Link Code (All Services) :"
+msgstr "Booking link kode (Alle Services):"
+
+#: bookingForm.php:193
+msgid "Image Link Code :"
+msgstr "billedet Link kode:"
+
+#: bookingForm.php:205
+msgid "Custom Image :"
+msgstr "Tilpasset Billede:"
+
+#: bookingForm.php:215
+msgid "Upload Custom Image :"
+msgstr "Upload Brugerdefineret billede:"
+
+#: bookingForm.php:224 manageCustomers.php:208 manageSettings.php:318
+#: manageSettings.php:537 manageSettings.php:585 manageSettings.php:636
+msgid "Save Changes"
+msgstr "Gem ændringer"
+
+#: bookingForm.php:236
+msgid "Booking Form Header"
+msgstr "Reservationsblanket header"
+
+#: bookingForm.php:256
+msgid "Booking Form Footer"
+msgstr "Reservationsblanket sidefod"
+
+#: bookingForm.php:276
+msgid "Booking Form Thank you Message"
+msgstr "Reservationsblanket Tak Messagey."
+
+#: bookingForm.php:321 bookingForm.php:334 bookingForm.php:347
+msgid "Thank you for copying the Short Code."
+msgstr "Tak for Booking."
+
+#: bookingForm.php:434
+msgid "Please choose the Image to be uploaded."
+msgstr "Vælg det billede, der skal uploades."
+
+#: functions.php:75 leftMenus.php:183
+msgid "Service Name :"
+msgstr "Tjenestens navn:"
+
+#: functions.php:81
+msgid "Cost :"
+msgstr "Omkostninger:"
+
+#: functions.php:87 leftMenus.php:197
+msgid "Service Type :"
+msgstr "tjenestetype:"
+
+#: functions.php:96 functions.php:107 leftMenus.php:203
+msgid "Single Booking"
+msgstr "enkelt booking"
+
+#: functions.php:99 functions.php:110 leftMenus.php:206
+msgid "Group Bookings"
+msgstr "gruppereservationer"
+
+#: functions.php:118 leftMenus.php:212
+msgid "Max Bookings<br/>(Each Slot) :"
+msgstr "Max Bestillinger <br/> (Hver Slot):"
+
+#: functions.php:470
+msgid "Staff Member Code :"
+msgstr "Personale Medlem Code:"
+
+#: functions.php:475 leftMenus.php:124
+msgid "Staff Member Color :"
+msgstr "Personale Medlem Farve:"
+
+#: functions.php:484 leftMenus.php:136
+msgid "Staff Member Name :"
+msgstr "Personale Medlem Navn:"
+
+#: functions.php:489 leftMenus.php:144
+msgid "Staff Member Email :"
+msgstr "Personale Medlem Email:"
+
+#: functions.php:494 leftMenus.php:152
+msgid "Staff Member Phone :"
+msgstr "Personale Medlem Telefon:"
+
+#: functions.php:1092 leftMenus.php:586
+msgid "First Name :"
+msgstr "Fornavn:"
+
+#: functions.php:1096 leftMenus.php:594
+msgid "Last Name :"
+msgstr "Efternavn:"
+
+#: functions.php:1100 leftMenus.php:603
+msgid "Email :"
+msgstr "E-mail:"
+
+#: functions.php:1104 leftMenus.php:612
+msgid "Telephone :"
+msgstr "Telefon:"
+
+#: functions.php:1108 leftMenus.php:620
+msgid "Mobile :"
+msgstr "mobil:"
+
+#: functions.php:1112 leftMenus.php:628
+msgid "Address 1 :"
+msgstr "Adresse 1:"
+
+#: functions.php:1120 leftMenus.php:640
+msgid "Address 2 :"
+msgstr "Adresse 2:"
+
+#: functions.php:1124 leftMenus.php:648
+msgid "City :"
+msgstr "city:"
+
+#: functions.php:1128 leftMenus.php:656
+msgid "Post Code :"
+msgstr "Postnummer:"
+
+#: functions.php:1132 leftMenus.php:664
+msgid "Country :"
+msgstr "land:"
+
+#: functions.php:1165 leftMenus.php:698
+msgid "Comments :"
+msgstr "Kommentarer:"
+
+#: functions.php:1429
+msgid "Upcoming Day Off's"
+msgstr "Kommende dag Off s"
+
+#: functions.php:1436 functions.php:1505 manageBookings.php:38
+#: manageCustomers.php:125
+msgid "Employee"
+msgstr "medarbejder"
+
+#: functions.php:1437 functions.php:1506 manageCustomers.php:126
+msgid "Date"
+msgstr "dato"
+
+#: functions.php:1486
+msgid "Delete Day Off?"
+msgstr "Slet Day Off?"
+
+#: functions.php:1498
+msgid "Upcoming Time Off's"
+msgstr "Kommende tid Off s"
+
+#: functions.php:1507 manageBookings.php:40 manageCustomers.php:127
+msgid "Time Slot"
+msgstr "tidsslot"
+
+#: functions.php:1584
+msgid "Delete Time Off?"
+msgstr "Slet Time Off?"
+
+#: functions.php:1679
+msgid "Client Name :"
+msgstr "Klient navn:"
+
+#: functions.php:1686
+msgid "Client Mobile :"
+msgstr "Bygherre Mobil:"
+
+#: functions.php:1693 manageBookings.php:193
+msgid "Employee :"
+msgstr "medarbejder:"
+
+#: functions.php:1706
+msgid "Please Choose Employee"
+msgstr "Vælg venligst Medarbejder"
+
+#: functions.php:1720
+msgid "Service Booked :"
+msgstr "Tjenesten Reserveret:"
+
+#: functions.php:1729
+msgid "Booking Date :"
+msgstr "Booking Dato:"
+
+#: functions.php:1854 manageEmployees.php:245
+msgid "Time Slot :"
+msgstr "Tidsinterval:"
+
+#: functions.php:1858 functions.php:2734 manageEmployees.php:250
+msgid "Please Choose Time"
+msgstr "Vælg venligst tid"
+
+#: functions.php:1868 manageBookings.php:220
+msgid "Booking Status :"
+msgstr "Booking Status:"
+
+#: functions.php:2880
+msgid "Please Choose Service"
+msgstr "Vælg venligst service"
+
+#: functions.php:2980
+msgid "Employee Name"
+msgstr "medarbejder Navn"
+
+#: functions.php:2981
+msgid "Employee Email"
+msgstr "medarbejder Email"
+
+#: functions.php:2982
+msgid "Employee Phone"
+msgstr "medarbejder Phone"
+
+#: functions.php:3240
+msgid " Slots Left"
+msgstr "slots Venstre"
+
+#: functions.php:3248
+msgid "All Slots has been Booked."
+msgstr "All Slots er bestilt."
+
+#: functions.php:3254
+msgid "Day Off of the Employee. Kindly choose another Date."
+msgstr "Day Off til medarbejderen. Kindly vælge en anden dato."
+
+#: leftMenus.php:28
+msgid "Live Help"
+msgstr "Levende"
+
+#: leftMenus.php:36
+msgid "Dashboard"
+msgstr "instrumentbræt"
+
+#: leftMenus.php:42 manageBookings.php:11
+msgid "Bookings"
+msgstr "Bestillinger"
+
+#: leftMenus.php:49
+msgid "Staff"
+msgstr "personale"
+
+#: leftMenus.php:56 manageServices.php:10
+msgid "Services"
+msgstr "tjenester"
+
+#: leftMenus.php:63
+msgid "Clients"
+msgstr "klienter"
+
+#: leftMenus.php:76
+msgid "Control Panel"
+msgstr "Kontrolpanel"
+
+#: leftMenus.php:82 manageReportBug.php:11
+msgid "Report a Bug"
+msgstr "Rapporter en fejl"
+
+#: leftMenus.php:88 manageAffiliates.php:10
+msgid "Become an Affiliate"
+msgstr "Bliv samarbejdspartner"
+
+#: leftMenus.php:99 manageEmployees.php:24
+msgid "Add New Staff Member"
+msgstr "Tilføj ny medarbejder"
+
+#: leftMenus.php:104
+msgid "Success! The Staff Member has been saved Successfully."
+msgstr "Succes! Den ansatte er blevet gemt."
+
+#: leftMenus.php:107
+msgid ""
+"Error! This Email already exists in our Database. Please try with new one."
+msgstr "Fejl! Denne e-mail findes allerede i vores database. Prøv med en ny."
+
+#: leftMenus.php:110 leftMenus.php:177
+msgid ""
+"Note: You will need to Assign your Employees to the respective Services in "
+"order to allow Bookings for your Clients."
+msgstr ""
+"Bemærk: Du skal Tildel dine medarbejdere til de respektive tjenester for at "
+"give Bestillinger for dine kunder."
+
+#: leftMenus.php:116
+msgid "Staff Code :"
+msgstr "Personale Code:"
+
+#: leftMenus.php:169 manageServices.php:24
+msgid "Add New Service"
+msgstr "Tilføj ny service"
+
+#: leftMenus.php:174
+msgid "Success! The Service has been saved Successfully."
+msgstr "Succes! Tjenesten er blevet gemt."
+
+#: leftMenus.php:188
+msgid "Service Cost ("
+msgstr "Service omkostninger ("
+
+#: leftMenus.php:219
+msgid "Service Time :"
+msgstr "Tjenesten Tid:"
+
+#: leftMenus.php:266
+msgid "Assign Services to Staff"
+msgstr "Tildel Services til personale"
+
+#: leftMenus.php:271
+msgid "Success! The Service has been Assigned Successfully."
+msgstr "Succes! Tjenesten er blevet tildelt succes."
+
+#: leftMenus.php:274
+msgid "Error! Please Choose a Staff Member to Assign Services."
+msgstr "Fejl! Vælg venligst en ansat til Tildel Services."
+
+#: leftMenus.php:277
+msgid ""
+"Note: Please choose Staff Member and then tick the appropriate checkbox next "
+"to each service you wish to Assign."
+msgstr ""
+"Bemærk: Vælg ansat og derefter markere det relevante afkrydsningsfelt ud for "
+"hver tjeneste, du vil tildele."
+
+#: leftMenus.php:283 leftMenus.php:406 manageEmployees.php:136
+#: manageEmployees.php:209
+msgid "Staff Member :"
+msgstr "Personale medlem:"
+
+#: leftMenus.php:296 leftMenus.php:420 manageEmployees.php:150
+#: manageEmployees.php:223
+msgid "Please Choose Staff Member"
+msgstr "Vælg venligst Staff Member"
+
+#: leftMenus.php:316 manageServices.php:47
+msgid "Service Name"
+msgstr "Navn på service"
+
+#: leftMenus.php:317 manageServices.php:50
+msgid "Service Time"
+msgstr "tjenesten Tid"
+
+#: leftMenus.php:319 manageServices.php:52
+msgid "Type"
+msgstr "Type"
+
+#: leftMenus.php:393 manageEmployees.php:34
+msgid "Working Hours"
+msgstr "arbejdstider"
+
+#: leftMenus.php:398
+msgid "Success! The Working Hours has been updated Successfully."
+msgstr "Succes! Arbejdstiden er blevet opdateret."
+
+#: leftMenus.php:401
+msgid "Error! Please Choose a Staff Member to save Working Hours."
+msgstr "Fejl! Vælg venligst en ansat for at spare arbejdstid."
+
+#: leftMenus.php:438
+msgid "Monday"
+msgstr "Mandag"
+
+#: leftMenus.php:439
+msgid "Tuesday"
+msgstr "tirsdag"
+
+#: leftMenus.php:440
+msgid "Wednesday"
+msgstr "Onsdag"
+
+#: leftMenus.php:441
+msgid "Thursday"
+msgstr "Torsdag"
+
+#: leftMenus.php:442
+msgid "Friday"
+msgstr "Fredag"
+
+#: leftMenus.php:443
+msgid "Saturday"
+msgstr "lørdag"
+
+#: leftMenus.php:444
+msgid "Sunday"
+msgstr "søndag"
+
+#: leftMenus.php:449
+msgid "Open / Closed"
+msgstr "Åben / Lukket"
+
+#: leftMenus.php:452 leftMenus.php:460 leftMenus.php:468 leftMenus.php:476
+#: leftMenus.php:484 leftMenus.php:492 leftMenus.php:500
+msgid "Open"
+msgstr "åbent"
+
+#: leftMenus.php:455 leftMenus.php:463 leftMenus.php:471 leftMenus.php:479
+#: leftMenus.php:487 leftMenus.php:495 leftMenus.php:503
+msgid "Closed"
+msgstr "lukket"
+
+#: leftMenus.php:508
+msgid "Start Hours"
+msgstr "Start timer"
+
+#: leftMenus.php:532
+msgid "End Hours"
+msgstr "ende timer"
+
+#: leftMenus.php:568
+msgid "Add New Client"
+msgstr "Tilføj ny klient"
+
+#: leftMenus.php:572
+msgid "Success! The Client has been saved Successfully."
+msgstr "Succes! Kunden er blevet gemt."
+
+#: leftMenus.php:576
+msgid ""
+"Error! This Email Address already exists in our Database. Please try with "
+"new one."
+msgstr ""
+"Fejl! Denne e-mailadresse findes allerede i vores database. Prøv med en ny."
+
+#: leftMenus.php:718
+msgid "Success! The Booking has been updated Successfully."
+msgstr "Succes! Det Booking er blevet opdateret."
+
+#: leftMenus.php:731
+msgid "Admin Notification Settings"
+msgstr "Paypal Admin Notification Email Skabelon [Sendt til Admin]"
+
+#: leftMenus.php:737
+msgid "Success! Admin Notifications Saved"
+msgstr "Succes! Admin Meddelelser Gemte"
+
+#: leftMenus.php:740
+msgid ""
+"Note: To receive notifications of your client bookings, kindly fill in the "
+"email address."
+msgstr ""
+"Bemærk: For at modtage meddelelser om dine klient bookinger, venligst "
+"udfylde e-mail adresse."
+
+#: leftMenus.php:741
+msgid "Note: Without Email Address, the system won't work as expected."
+msgstr "Bemærk: Uden mail-adresse, vil systemet ikke fungere som forventet."
+
+#: leftMenus.php:745
+msgid "Email Address :"
+msgstr "E-mail-adresse"
+
+#: leftMenus.php:755
+msgid "Yes, I may consider buying Full Version at later stage."
+msgstr "Ja, kan jeg overveje at købe Full Version på et senere tidspunkt."
+
+#: leftMenus.php:1165 manageServices.php:305
+msgid "Please Insert Correct Max Bookings Value"
+msgstr "Vælg venligst atleast Booking Dato."
+
+#: manageAffiliates.php:15 manageReportBug.php:16
+msgid "Success! The Email has been sent Successfully."
+msgstr "Succes! E-mailen er blevet sendt."
+
+#: manageAffiliates.php:22
+msgid ""
+"Are you interested becoming an Affiliate of our Product? Shoot us an email "
+"by filling the form below, and we will setup a discussion call."
+msgstr ""
+"Er du interesseret at blive en tilknyttet virksomhed af vores produkt? Skyd "
+"os en mail ved at udfylde nedenstående formular, og vi vil sætte en "
+"diskussion opkald."
+
+#: manageAffiliates.php:26
+#, php-format
+msgid ""
+"Refer/Sell it to your contacts, and if they purchase from us, we will give "
+"you 40% of our Profits straight away.\t"
+msgstr ""
+
+#: manageAffiliates.php:34 manageReportBug.php:28
+msgid "Your Email Address :"
+msgstr "Din email adresse:"
+
+#: manageAffiliates.php:42 manageReportBug.php:36
+msgid "Subject :"
+msgstr "emne:"
+
+#: manageAffiliates.php:50
+msgid "Message :"
+msgstr "besked:"
+
+#: manageAffiliates.php:66 manageCustomers.php:173 manageReportBug.php:60
+msgid "Send Email"
+msgstr "Send e-mail"
+
+#: manageBookings.php:20
+msgid "Calendar Agenda"
+msgstr "Kalender dagsorden"
+
+#: manageBookings.php:35
+msgid "Client Name"
+msgstr "Client navn"
+
+#: manageBookings.php:36 manageCustomers.php:51
+msgid "Mobile"
+msgstr "mobil"
+
+#: manageBookings.php:37 manageCustomers.php:124
+msgid "Service"
+msgstr "tjenesten"
+
+#: manageBookings.php:39
+msgid "Booking Date"
+msgstr "booking Dato"
+
+#: manageBookings.php:41 manageCustomers.php:128
+msgid "Status"
+msgstr "status"
+
+#: manageBookings.php:68
+msgid "Booking Status : Approved"
+msgstr "Booking Status: Godkendt"
+
+#: manageBookings.php:74
+msgid "Booking Status : Disapproved"
+msgstr "Booking Status: Afvist"
+
+#: manageBookings.php:80
+msgid "Booking Status : Pending Approval"
+msgstr "Booking Status: Afventer godkendelse"
+
+#: manageBookings.php:86
+msgid "Booking Status : Cancelled"
+msgstr "Booking Status: Aflyst"
+
+#: manageBookings.php:155
+msgid "Edit Booking?"
+msgstr "Rediger Booking?"
+
+#: manageBookings.php:156
+msgid "Cancel Booking?"
+msgstr "Annuller Booking?"
+
+#: manageBookings.php:161
+msgid "Send "
+msgstr "Send"
+
+#: manageBookings.php:161
+msgid "Email Again?"
+msgstr "E-mail igen?"
+
+#: manageBookings.php:165
+msgid "Delete Booking?"
+msgstr "Slet Booking?"
+
+#: manageBookings.php:181
+msgid "Advanced Booking Calendar Filter"
+msgstr "Avanceret Booking kalender fitler"
+
+#: manageBookings.php:207
+msgid "All Employees"
+msgstr "alle ansatte"
+
+#: manageBookings.php:227
+msgid "Pending Approval"
+msgstr "Booking Status: Afventer godkendelse"
+
+#: manageBookings.php:232
+msgid "Approved"
+msgstr "godkendt"
+
+#: manageBookings.php:237
+msgid "Disapproved"
+msgstr "deaktiveret"
+
+#: manageBookings.php:242
+msgid "Cancelled"
+msgstr "Aflyst"
+
+#: manageBookings.php:251
+msgid "Day Off / Time Off :"
+msgstr "dag Off / tid Off:"
+
+#: manageBookings.php:258
+msgid "Day Off"
+msgstr "dag Offs"
+
+#: manageBookings.php:263
+msgid "Time Off"
+msgstr "Time Offs"
+
+#: manageBookings.php:271
+msgid "Book a Service :"
+msgstr "Bestil en service"
+
+#: manageBookings.php:288
+msgid "Booking Calendar"
+msgstr "Booking kalender"
+
+#: manageBookings.php:601
+msgid "Email has been Sent Successfully."
+msgstr "Succes! E-mail er blevet sendt."
+
+#: manageCustomers.php:12
+msgid "Customers"
+msgstr "kunder"
+
+#: manageCustomers.php:31
+msgid "Add New Customer"
+msgstr "Tilføj ny kunde"
+
+#: manageCustomers.php:42
+msgid ""
+"Note: Click on the Right Corner of the Settings icon to perform various "
+"actions viz. Add New Customer, Export Customers."
+msgstr ""
+"Bemærk: Klik på højre hjørne af ikonet Indstillinger for at udføre "
+"forskellige handlinger dvs. Tilføj ny Kunde, eksportkunder."
+
+#: manageCustomers.php:48
+msgid "First Name"
+msgstr "Fornavn"
+
+#: manageCustomers.php:49
+msgid "Last Name"
+msgstr "efternavn"
+
+#: manageCustomers.php:50
+msgid "Email Address"
+msgstr "E-mail-adresse"
+
+#: manageCustomers.php:52
+msgid "City"
+msgstr "by"
+
+#: manageCustomers.php:53
+msgid "Country"
+msgstr "land"
+
+#: manageCustomers.php:78
+msgid "Edit Client?"
+msgstr "Rediger klient?"
+
+#: manageCustomers.php:79
+msgid "Email Client?"
+msgstr "Mail-klient?"
+
+#: manageCustomers.php:80
+msgid "Booking Details"
+msgstr "Booking Detaljer"
+
+#: manageCustomers.php:81
+msgid "Book a Service"
+msgstr "Bestil en service"
+
+#: manageCustomers.php:82
+msgid "Delete Client"
+msgstr "Slet klient"
+
+#: manageCustomers.php:96
+msgid "Edit Customer "
+msgstr "Rediger Kunden"
+
+#: manageCustomers.php:100
+msgid "Success! The Customer has been Updated Successfully."
+msgstr "Succes! Kunden er blevet opdateret."
+
+#: manageCustomers.php:115
+msgid "Customer Bookings"
+msgstr "Kunde Bestillinger"
+
+#: manageCustomers.php:129
+msgid "Date of Booking"
+msgstr "Dato for Booking"
+
+#: manageCustomers.php:144
+msgid "Email to Customer"
+msgstr "Send til Kunden"
+
+#: manageCustomers.php:150
+msgid "Success! Email has been sent Successfully."
+msgstr "Succes! E-mail er blevet sendt."
+
+#: manageCustomers.php:156 manageSettings.php:470 manageSettings.php:521
+#: manageSettings.php:569 manageSettings.php:620
+msgid "Email Subject :"
+msgstr "Email Emne:"
+
+#: manageCustomers.php:184
+msgid "Customer Comments"
+msgstr "Kunde kommentarer"
+
+#: manageCustomers.php:190
+msgid "Success! The Comments has been saved Successfully."
+msgstr "Succes! De kommentarer er blevet gemt."
+
+#: manageCustomers.php:197
+msgid "Comments:"
+msgstr "Kommentarer:"
+
+#: manageCustomers.php:374
+msgid "You cannot delete this Customer until all Bookings have been deleted."
+msgstr ""
+"Du kan ikke slette denne kunde, indtil alle Bestillinger er blevet slettet."
+
+#: manageEmployees.php:10
+msgid "Staff Members"
+msgstr "Personale medlemmer"
+
+#: manageEmployees.php:31
+msgid "Assign Services"
+msgstr "Tildel Services"
+
+#: manageEmployees.php:37
+msgid "Day Offs"
+msgstr "dag Offs"
+
+#: manageEmployees.php:40
+msgid "Time Offs"
+msgstr "Time Offs"
+
+#: manageEmployees.php:47
+msgid ""
+"Note: Click on the Right Corner of the Settings icon to perform various "
+"actions viz. Add New Employees, Allocate Services etc."
+msgstr ""
+"Bemærk: Klik på højre hjørne af ikonet Indstillinger for at udføre "
+"forskellige handlinger dvs. Tilføje nye medarbejdere, Afsætte Services etc."
+
+#: manageEmployees.php:56
+msgid "Color Code"
+msgstr "farvekode"
+
+#: manageEmployees.php:57
+msgid "Staff Code"
+msgstr "personale Code"
+
+#: manageEmployees.php:58
+msgid "Staff Name"
+msgstr "personale navn"
+
+#: manageEmployees.php:59
+msgid "Staff Email"
+msgstr "personale Email"
+
+#: manageEmployees.php:60
+msgid "Staff Phone"
+msgstr "personale telefon"
+
+#: manageEmployees.php:87
+msgid "Edit Employee?"
+msgstr "Rediger Medarbejder?"
+
+#: manageEmployees.php:88
+msgid "Show Day Off's & Time Off's"
+msgstr "Vis dag Off s & tid Off s"
+
+#: manageEmployees.php:89
+msgid "Delete Employee?"
+msgstr "Slet Medarbejder?"
+
+#: manageEmployees.php:103
+msgid "Update Existing Staff Member"
+msgstr "Opdatere eksisterende Staff Member"
+
+#: manageEmployees.php:108
+msgid "Success! The Staff Member has been updated Successfully."
+msgstr "Succes! Den ansatte er blevet opdateret."
+
+#: manageEmployees.php:123
+msgid "Day Off Settings"
+msgstr "dag Off Indstillinger"
+
+#: manageEmployees.php:128
+msgid "Success! The Day Off has been saved Successfully."
+msgstr "Succes! The Day Off er blevet gemt."
+
+#: manageEmployees.php:131
+msgid "Error! Please choose Staff Member to take Day Off."
+msgstr "Fejl! Vælg ansat til at tage fridag."
+
+#: manageEmployees.php:163
+msgid "Start Date :"
+msgstr "Start dato:"
+
+#: manageEmployees.php:171
+msgid "End Date :"
+msgstr "Slut dato:"
+
+#: manageEmployees.php:192
+msgid "Time Off Settings"
+msgstr "Time off Indstillinger"
+
+#: manageEmployees.php:197
+msgid "Success! The Time Off has been done Successfully."
+msgstr "Succes! The Time Off er blevet gjort med succes."
+
+#: manageEmployees.php:200
+msgid "Error! Please choose Staff Member to take Time Off."
+msgstr "Fejl! Vælg ansat til at tage tid ud."
+
+#: manageEmployees.php:203
+msgid "Error! Please choose Time Slot to take Time Off."
+msgstr "Fejl! Vælg Time Slot at tage tid ud."
+
+#: manageEmployees.php:237
+msgid "Date :"
+msgstr "Dato:"
+
+#: manageEmployees.php:264
+msgid "Staff Member Day Off's & Time Off's"
+msgstr "Staff Medlem Day Off s & Time Off er"
+
+#: manageEmployees.php:267
+msgid "Success! The Staff Member Day/Time Off deleted Successfully."
+msgstr "Succes! Den ansatte Dag / Time Off slettet."
+
+#: manageEmployees.php:368
+msgid "You cannot delete this Employee until all Bookings have been deleted."
+msgstr ""
+"Du kan ikke slette denne Medarbejder indtil alle Bestillinger er blevet "
+"slettet."
+
+#: manageEmployees.php:372
+msgid ""
+"You cannot delete this Employee until all Allocated Services are de-"
+"allocated."
+msgstr ""
+"Du kan ikke slette denne Medarbejder indtil alle tildelte Services er de-"
+"allokeret."
+
+#: manageReportBug.php:44
+msgid "Bug / Issue :"
+msgstr "Bug / Problem:"
+
+#: manageServices.php:30
+msgid "Allocate Services"
+msgstr "afsætte Services"
+
+#: manageServices.php:37
+msgid ""
+"Note: Click on the Right Corner of the Settings icon to perform various "
+"actions viz. Add New Services, Allocate Services etc."
+msgstr ""
+"Bemærk: Klik på højre hjørne af ikonet Indstillinger for at udføre "
+"forskellige handlinger dvs. Tilføje nye tjenester, fordele Services mv"
+
+#: manageServices.php:40
+msgid ""
+"To change the order of Services simply drag & drop each service in order to "
+"display in the same way on the Booking Calender to your Customers."
+msgstr ""
+"Hvis du vil ændre rækkefølgen af ​​tjenesteydelser blot trække og slippe hver "
+"tjeneste for at vise på samme måde på Booking Kalender til dine kunder."
+
+#: manageServices.php:48
+msgid "Short Code"
+msgstr "kort kode"
+
+#: manageServices.php:49
+msgid "Allocated Employees"
+msgstr "allokerede medarbejdere"
+
+#: manageServices.php:113
+msgid " Hrs "
+msgstr "Hrs"
+
+#: manageServices.php:130
+msgid "Edit Service?"
+msgstr "Rediger Service?"
+
+#: manageServices.php:130
+msgid "Delete Service?"
+msgstr "Slet Service?"
+
+#: manageServices.php:143
+msgid "Update Existing Service"
+msgstr "Opdatere eksisterende service"
+
+#: manageServices.php:148
+msgid "Success! The Service has been updated Successfully."
+msgstr "Succes! Tjenesten er blevet opdateret."
+
+#: manageServices.php:155
+msgid "Save & Submit Changes"
+msgstr "Gem & Send ændringer"
+
+#: manageServices.php:206
+msgid "This Service cannot be deleted until de-allocated from the Employees."
+msgstr "Denne service kan ikke slettes, før de-allokeret fra medarbejderne."
+
+#: manageSettings.php:13
+msgid "Settings"
+msgstr "Indstillinger"
+
+#: manageSettings.php:23
+msgid "General Settings"
+msgstr "generelle indstillinger"
+
+#: manageSettings.php:35
+msgid "Success! Default Settings has been saved Successfully."
+msgstr "Succes! Standardindstillinger er blevet gemt."
+
+#: manageSettings.php:43
+msgid "Default Settings"
+msgstr "Standardindstillinger"
+
+#: manageSettings.php:50
+msgid "Default Currency :"
+msgstr "Standard Valuta:"
+
+#: manageSettings.php:94
+msgid "Default Country :"
+msgstr "Standard Land:"
+
+#: manageSettings.php:131
+msgid "Default Date Format :"
+msgstr "Standard Datoformat:"
+
+#: manageSettings.php:189
+msgid "Default Time Format :"
+msgstr "Standard tidsformat:"
+
+#: manageSettings.php:198 manageSettings.php:205
+msgid "12 Hours"
+msgstr "12 timer"
+
+#: manageSettings.php:199 manageSettings.php:206
+msgid "24 Hours"
+msgstr "24 Timer"
+
+#: manageSettings.php:217
+msgid "Default Time Zone :"
+msgstr "Standard tid Aone:"
+
+#: manageSettings.php:269
+msgid "Default Booking Slot Size :"
+msgstr "Standard Booking Slot Størrelse:"
+
+#: manageSettings.php:328
+msgid "Email Templates"
+msgstr "E-mail-skabeloner"
+
+#: manageSettings.php:344 manageSettings.php:445
+msgid "Booking Pending Confirmation Email Template [Sent to Client]"
+msgstr "Booking afventen af ​​bekræftelse E-mail skabelon [Sendt til Client]"
+
+#: manageSettings.php:352 manageSettings.php:498
+msgid "Booking Confirmation Email Template [Sent to Client]"
+msgstr "Reservationsbekræftelsen Email Skabelon [Sendt til Client]"
+
+#: manageSettings.php:360
+msgid "Booking Disapproved Email Template [Sent to Client]"
+msgstr "Booking Afvist Email Skabelon [Sendt til Client]"
+
+#: manageSettings.php:368
+msgid "Approve/Decline Booking Email Template [Sent to Admin]"
+msgstr "Godkend / Afvis Booking Email Skabelon [Sendt til Admin]"
+
+#: manageSettings.php:379
+msgid "Social Media Settings"
+msgstr "Sociale medier indstillinger"
+
+#: manageSettings.php:402
+msgid "Payment Gateway Settings"
+msgstr "Betalingsgateway Indstillinger"
+
+#: manageSettings.php:421
+msgid "Auto Responder Settings"
+msgstr "Auto Responder-indstillinger"
+
+#: manageSettings.php:452 manageSettings.php:504 manageSettings.php:554
+#: manageSettings.php:603
+msgid "Success! The Email has been saved Successfully."
+msgstr "Succes! E-mailen er blevet gemt."
+
+#: manageSettings.php:549
+msgid "Booking Decline Email Template [Sent to Client]"
+msgstr "Booking Decline Email Skabelon [Sendt til Client]"
+
+#: manageSettings.php:597
+msgid "Admin Approve/Disapprove Email Template [Sent to Admin]"
+msgstr "Admin Godkend / Afvis e-mail skabelon [Sendt til Admin]"

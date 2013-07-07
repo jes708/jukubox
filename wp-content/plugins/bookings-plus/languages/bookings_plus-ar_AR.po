@@ -1,0 +1,1197 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: bookings-plus\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-02-22 18:48+0530\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: Bookings-Plus <info@bookings-plus.com>\n"
+"Language: ar_AR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: F:\\Wordpress\\bookings-plus-restricted-version\\trunk\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: bookingCalendar.php:213 bookingCalendarByBackend.php:29
+#: bookingCalendarByCustomer.php:27 bookingCalendarByIframe.php:221
+#: bookingCalendarByService.php:210
+msgid "Step 1 : Choose Service"
+msgstr "الخطوة 1: اختيار الخدمة"
+
+#: bookingCalendar.php:216 bookingCalendarByBackend.php:32
+#: bookingCalendarByCustomer.php:30 bookingCalendarByIframe.php:224
+#: bookingCalendarByService.php:213
+msgid "Step 2 : Choose Staff"
+msgstr "الخطوة 2: اختر الموظفين"
+
+#: bookingCalendar.php:219 bookingCalendarByBackend.php:35
+#: bookingCalendarByCustomer.php:33 bookingCalendarByIframe.php:227
+#: bookingCalendarByService.php:216
+msgid "Step 3 : Date & Time"
+msgstr "الخطوة 3: التاريخ والوقت"
+
+#: bookingCalendar.php:222 bookingCalendarByBackend.php:38
+#: bookingCalendarByCustomer.php:36 bookingCalendarByIframe.php:230
+#: bookingCalendarByService.php:219
+msgid "Step 4 : Your Information"
+msgstr "الخطوة 4: معلوماتك"
+
+#: bookingCalendar.php:225 bookingCalendarByBackend.php:41
+#: bookingCalendarByCustomer.php:39 bookingCalendarByIframe.php:233
+#: bookingCalendarByService.php:222
+msgid "Step 5 : Confirm Details"
+msgstr "الخطوة 5: تأكيد تفاصيل"
+
+#: bookingCalendar.php:238 bookingCalendarByBackend.php:54
+#: bookingCalendarByCustomer.php:52 bookingCalendarByIframe.php:246
+#: bookingCalendarByService.php:235
+msgid "Book an Appointment Now"
+msgstr "حجز موعد الآن"
+
+#: bookingCalendar.php:245 bookingCalendarByBackend.php:61
+#: bookingCalendarByCustomer.php:59 bookingCalendarByIframe.php:253
+#: bookingCalendarByService.php:242
+msgid "Thank you for Booking."
+msgstr "أشكركم على الحجز."
+
+#: bookingCalendar.php:253 bookingCalendarByBackend.php:69
+#: bookingCalendarByCustomer.php:67 bookingCalendarByIframe.php:261
+#: bookingCalendarByService.php:250
+msgid "Choose Service"
+msgstr "اختيار خدمة"
+
+#: bookingCalendar.php:254 bookingCalendarByBackend.php:70
+#: bookingCalendarByCustomer.php:68 bookingCalendarByIframe.php:262
+#: bookingCalendarByService.php:251
+msgid "Service Duration"
+msgstr "خدمة المدة"
+
+#: bookingCalendar.php:255 bookingCalendarByBackend.php:71
+#: bookingCalendarByCustomer.php:69 bookingCalendarByIframe.php:263
+#: bookingCalendarByService.php:252 leftMenus.php:318 manageServices.php:51
+msgid "Cost"
+msgstr "كلف"
+
+#: bookingCalendar.php:257 bookingCalendarByBackend.php:73
+#: bookingCalendarByCustomer.php:71 bookingCalendarByIframe.php:265
+#: bookingCalendarByService.php:254 manageServices.php:46
+msgid "Service Display Order"
+msgstr "خدمة عرض ترتيب"
+
+#: bookingCalendar.php:289 bookingCalendar.php:301
+#: bookingCalendarByBackend.php:105 bookingCalendarByBackend.php:117
+#: bookingCalendarByCustomer.php:103 bookingCalendarByCustomer.php:115
+#: bookingCalendarByIframe.php:297 bookingCalendarByIframe.php:309
+#: bookingCalendarByService.php:286 bookingCalendarByService.php:298
+#: leftMenus.php:349 leftMenus.php:361 manageServices.php:103
+#: manageServices.php:115
+msgid " Mins"
+msgstr "دقيقة"
+
+#: bookingCalendar.php:294 bookingCalendarByBackend.php:110
+#: bookingCalendarByCustomer.php:108 bookingCalendarByIframe.php:302
+#: bookingCalendarByService.php:291 leftMenus.php:354 manageServices.php:108
+msgid " Hrs"
+msgstr "ساعة"
+
+#: bookingCalendar.php:299 bookingCalendarByBackend.php:115
+#: bookingCalendarByCustomer.php:113 bookingCalendarByIframe.php:307
+#: bookingCalendarByService.php:296 leftMenus.php:359
+msgid " Hr "
+msgstr "ساعة"
+
+#: bookingCalendar.php:341 bookingCalendarByBackend.php:157
+#: bookingCalendarByCustomer.php:155 bookingCalendarByIframe.php:349
+#: bookingCalendarByService.php:338
+msgid "Calendar Time Zone:"
+msgstr "المنطقة الزمنية التقويم:"
+
+#: bookingCalendar.php:458 bookingCalendarByBackend.php:275
+#: bookingCalendarByCustomer.php:271 bookingCalendarByIframe.php:467
+#: bookingCalendarByService.php:455
+msgid " Appointment :"
+msgstr "تعيين:"
+
+#: bookingCalendar.php:500 bookingCalendarByBackend.php:317
+#: bookingCalendarByCustomer.php:313 bookingCalendarByIframe.php:509
+#: bookingCalendarByService.php:497
+msgid "Back Step"
+msgstr "رجع"
+
+#: bookingCalendar.php:501 bookingCalendarByBackend.php:318
+#: bookingCalendarByCustomer.php:314 bookingCalendarByIframe.php:510
+#: bookingCalendarByService.php:498
+msgid "Next Step"
+msgstr "الخطوة التالية"
+
+#: bookingCalendar.php:536 bookingCalendarByBackend.php:350
+#: bookingCalendarByCustomer.php:345 bookingCalendarByIframe.php:717
+#: bookingCalendarByService.php:530
+msgid "Please choose atleast one Service."
+msgstr "يرجى اختيار خدمة واحدة على الاقل."
+
+#: bookingCalendarByIframe.php:584 bookings-plus.php:568
+#: manageBookings.php:453 manageCustomers.php:594
+msgid "Please choose atleast one Staff Member."
+msgstr "الرجاء اختيار الأعضاء أتلست موظفي واحد."
+
+#: bookingCalendarByIframe.php:593 bookings-plus.php:577
+#: manageBookings.php:462 manageCustomers.php:603
+msgid "Please choose atleast Booking Date."
+msgstr "تأجير أتلست اختيار تاريخ الحجز."
+
+#: bookingCalendarByIframe.php:598 bookings-plus.php:582
+#: manageBookings.php:467 manageCustomers.php:608
+msgid "Please choose atleast Booking Time."
+msgstr "تأجير أتلست اختيار تاريخ الحجز."
+
+#: bookingForm.php:12 leftMenus.php:70
+msgid "Booking Form Setup"
+msgstr "حجز نموذج الإعداد"
+
+#: bookingForm.php:17
+msgid "Success! The Booking Fields has been updated Successfully."
+msgstr "النجاح! تم تحديث الحقول الحجز بنجاح."
+
+#: bookingForm.php:24
+msgid "Booking Form Fields"
+msgstr "الحقول نموذج الحجز"
+
+#: bookingForm.php:42
+msgid "Field Name"
+msgstr "درع اسم"
+
+#: bookingForm.php:43
+msgid "Visibility"
+msgstr "رؤية"
+
+#: bookingForm.php:44
+msgid "Validation"
+msgstr "التحقق من صحة"
+
+#: bookingForm.php:90 bookingForm.php:111
+msgid "Visible"
+msgstr "مرئي"
+
+#: bookingForm.php:93 bookingForm.php:114
+msgid "Invisible"
+msgstr "خفي"
+
+#: bookingForm.php:98 bookingForm.php:119
+msgid "Required"
+msgstr "مطلوب"
+
+#: bookingForm.php:101 bookingForm.php:122
+msgid "Not Required"
+msgstr "غير مطلوب"
+
+#: bookingForm.php:139 leftMenus.php:162 leftMenus.php:258 leftMenus.php:386
+#: leftMenus.php:561 leftMenus.php:710 leftMenus.php:762
+#: manageCustomers.php:109 manageEmployees.php:117 manageEmployees.php:186
+#: manageEmployees.php:258 manageServices.php:155
+msgid "Processing Data..."
+msgstr "معالجة البيانات ..."
+
+#: bookingForm.php:139 leftMenus.php:162 leftMenus.php:258 leftMenus.php:386
+#: leftMenus.php:561 leftMenus.php:710 leftMenus.php:724 leftMenus.php:762
+#: manageCustomers.php:109 manageEmployees.php:117 manageEmployees.php:186
+#: manageEmployees.php:258 manageSettings.php:486
+msgid "Submit & Save Changes"
+msgstr "ويقدم حفظ التغييرات"
+
+#: bookingForm.php:149
+msgid "Booking Form Short Codes For Front End"
+msgstr "حجز الاسم المختصر للرموز الجبهة نهاية"
+
+#: bookingForm.php:163
+msgid "Calendar Embed :"
+msgstr "تضمين تقويم:"
+
+#: bookingForm.php:169 bookingForm.php:177 bookingForm.php:189
+#: bookingForm.php:201
+msgid "Copy to Clipboard"
+msgstr "نسخ إلى الحافظة"
+
+#: bookingForm.php:173
+msgid "Booking Link Code (Single Services) :"
+msgstr "حجز كود الرابط (خدمات واحدة):"
+
+#: bookingForm.php:184
+msgid "Booking Link Code (All Services) :"
+msgstr "حجز كود الرابط (جميع الخدمات):"
+
+#: bookingForm.php:193
+msgid "Image Link Code :"
+msgstr "رابط الصورة كود:"
+
+#: bookingForm.php:205
+msgid "Custom Image :"
+msgstr "مخصص الصورة:"
+
+#: bookingForm.php:215
+msgid "Upload Custom Image :"
+msgstr "تحميل صورة مخصصة:"
+
+#: bookingForm.php:224 manageCustomers.php:208 manageSettings.php:318
+#: manageSettings.php:537 manageSettings.php:585 manageSettings.php:636
+msgid "Save Changes"
+msgstr "حفظ التغييرات"
+
+#: bookingForm.php:236
+msgid "Booking Form Header"
+msgstr "حجز نموذج رأس"
+
+#: bookingForm.php:256
+msgid "Booking Form Footer"
+msgstr "حجز تذييل النموذج"
+
+#: bookingForm.php:276
+msgid "Booking Form Thank you Message"
+msgstr "شكرا لكم نموذج الحجز رسالة"
+
+#: bookingForm.php:321 bookingForm.php:334 bookingForm.php:347
+msgid "Thank you for copying the Short Code."
+msgstr "أشكركم على الحجز."
+
+#: bookingForm.php:434
+msgid "Please choose the Image to be uploaded."
+msgstr "يرجى اختيار صورة وسيتم تحميلها."
+
+#: functions.php:75 leftMenus.php:183
+msgid "Service Name :"
+msgstr "اسم الخدمة:"
+
+#: functions.php:81
+msgid "Cost :"
+msgstr "التكلفة:"
+
+#: functions.php:87 leftMenus.php:197
+msgid "Service Type :"
+msgstr "نوع الخدمة:"
+
+#: functions.php:96 functions.php:107 leftMenus.php:203
+msgid "Single Booking"
+msgstr "واحد الحجز"
+
+#: functions.php:99 functions.php:110 leftMenus.php:206
+msgid "Group Bookings"
+msgstr "مجموعة حجوزات"
+
+#: functions.php:118 leftMenus.php:212
+msgid "Max Bookings<br/>(Each Slot) :"
+msgstr "حجوزات ماكس <BR/> (كل فتحة):"
+
+#: functions.php:470
+msgid "Staff Member Code :"
+msgstr "موظف الرمز:"
+
+#: functions.php:475 leftMenus.php:124
+msgid "Staff Member Color :"
+msgstr "موظف اللون:"
+
+#: functions.php:484 leftMenus.php:136
+msgid "Staff Member Name :"
+msgstr "الموظفين اسم العضو:"
+
+#: functions.php:489 leftMenus.php:144
+msgid "Staff Member Email :"
+msgstr "موظف البريد الإلكتروني:"
+
+#: functions.php:494 leftMenus.php:152
+msgid "Staff Member Phone :"
+msgstr "موظف الهاتف:"
+
+#: functions.php:1092 leftMenus.php:586
+msgid "First Name :"
+msgstr "الاسم الأول:"
+
+#: functions.php:1096 leftMenus.php:594
+msgid "Last Name :"
+msgstr "اسم العائلة:"
+
+#: functions.php:1100 leftMenus.php:603
+msgid "Email :"
+msgstr "البريد الإلكتروني:"
+
+#: functions.php:1104 leftMenus.php:612
+msgid "Telephone :"
+msgstr "الهاتف:"
+
+#: functions.php:1108 leftMenus.php:620
+msgid "Mobile :"
+msgstr "الجوال:"
+
+#: functions.php:1112 leftMenus.php:628
+msgid "Address 1 :"
+msgstr "العنوان 1:"
+
+#: functions.php:1120 leftMenus.php:640
+msgid "Address 2 :"
+msgstr "العنوان 2:"
+
+#: functions.php:1124 leftMenus.php:648
+msgid "City :"
+msgstr "المدينة:"
+
+#: functions.php:1128 leftMenus.php:656
+msgid "Post Code :"
+msgstr "الرمز البريدي:"
+
+#: functions.php:1132 leftMenus.php:664
+msgid "Country :"
+msgstr "الدولة:"
+
+#: functions.php:1165 leftMenus.php:698
+msgid "Comments :"
+msgstr "التعليقات:"
+
+#: functions.php:1429
+msgid "Upcoming Day Off's"
+msgstr "القادمة يوم معطلة في"
+
+#: functions.php:1436 functions.php:1505 manageBookings.php:38
+#: manageCustomers.php:125
+msgid "Employee"
+msgstr "عامل"
+
+#: functions.php:1437 functions.php:1506 manageCustomers.php:126
+msgid "Date"
+msgstr "تاريخ"
+
+#: functions.php:1486
+msgid "Delete Day Off?"
+msgstr "حذف معطلة اليوم؟"
+
+#: functions.php:1498
+msgid "Upcoming Time Off's"
+msgstr "الزمن القادم في معطلة"
+
+#: functions.php:1507 manageBookings.php:40 manageCustomers.php:127
+msgid "Time Slot"
+msgstr "الوقت فتحة"
+
+#: functions.php:1584
+msgid "Delete Time Off?"
+msgstr "حذف الزمن معطلة؟"
+
+#: functions.php:1679
+msgid "Client Name :"
+msgstr "عميل الاسم:"
+
+#: functions.php:1686
+msgid "Client Mobile :"
+msgstr "عميل الجوال:"
+
+#: functions.php:1693 manageBookings.php:193
+msgid "Employee :"
+msgstr "الموظف:"
+
+#: functions.php:1706
+msgid "Please Choose Employee"
+msgstr "يرجى اختيار الموظفين"
+
+#: functions.php:1720
+msgid "Service Booked :"
+msgstr "حجز الخدمة:"
+
+#: functions.php:1729
+msgid "Booking Date :"
+msgstr "حجز تاريخ:"
+
+#: functions.php:1854 manageEmployees.php:245
+msgid "Time Slot :"
+msgstr "الوقت فتحة:"
+
+#: functions.php:1858 functions.php:2734 manageEmployees.php:250
+msgid "Please Choose Time"
+msgstr "الرجاء اختيار التوقيت"
+
+#: functions.php:1868 manageBookings.php:220
+msgid "Booking Status :"
+msgstr "حجز الحالة:"
+
+#: functions.php:2880
+msgid "Please Choose Service"
+msgstr "يرجى اختيار خدمة"
+
+#: functions.php:2980
+msgid "Employee Name"
+msgstr "اسم الموظف"
+
+#: functions.php:2981
+msgid "Employee Email"
+msgstr "موظف البريد الإلكتروني"
+
+#: functions.php:2982
+msgid "Employee Phone"
+msgstr "موظف الهاتف"
+
+#: functions.php:3240
+msgid " Slots Left"
+msgstr "بقي من فتحات"
+
+#: functions.php:3248
+msgid "All Slots has been Booked."
+msgstr "وقد تم حجز جميع فتحات."
+
+#: functions.php:3254
+msgid "Day Off of the Employee. Kindly choose another Date."
+msgstr "إيقاف يوم من الموظف. يرجى اختيار موعد آخر."
+
+#: leftMenus.php:28
+msgid "Live Help"
+msgstr "يعيش"
+
+#: leftMenus.php:36
+msgid "Dashboard"
+msgstr "لوحة أجهزة القياس"
+
+#: leftMenus.php:42 manageBookings.php:11
+msgid "Bookings"
+msgstr "عبر"
+
+#: leftMenus.php:49
+msgid "Staff"
+msgstr "العاملين"
+
+#: leftMenus.php:56 manageServices.php:10
+msgid "Services"
+msgstr "الخدمات"
+
+#: leftMenus.php:63
+msgid "Clients"
+msgstr "العملاء"
+
+#: leftMenus.php:76
+msgid "Control Panel"
+msgstr "لوحة التحكم"
+
+#: leftMenus.php:82 manageReportBug.php:11
+msgid "Report a Bug"
+msgstr "الإبلاغ عن خطأ"
+
+#: leftMenus.php:88 manageAffiliates.php:10
+msgid "Become an Affiliate"
+msgstr "كن حليفا"
+
+#: leftMenus.php:99 manageEmployees.php:24
+msgid "Add New Staff Member"
+msgstr "إضافة عضو جديد للموظفين"
+
+#: leftMenus.php:104
+msgid "Success! The Staff Member has been saved Successfully."
+msgstr "النجاح! تم حفظ الموظف بنجاح."
+
+#: leftMenus.php:107
+msgid ""
+"Error! This Email already exists in our Database. Please try with new one."
+msgstr ""
+"خطأ! هذا البريد الإلكتروني موجود مسبقا في قاعدة البيانات لدينا. يرجى "
+"المحاولة مع واحد جديد."
+
+#: leftMenus.php:110 leftMenus.php:177
+msgid ""
+"Note: You will need to Assign your Employees to the respective Services in "
+"order to allow Bookings for your Clients."
+msgstr ""
+"ملاحظة: سوف تحتاج إلى تعيين موظفين لخدمات منها من أجل السماح للحجوزات "
+"لعملائك."
+
+#: leftMenus.php:116
+msgid "Staff Code :"
+msgstr "الموظفين الرمز:"
+
+#: leftMenus.php:169 manageServices.php:24
+msgid "Add New Service"
+msgstr "إضافة خدمة جديدة"
+
+#: leftMenus.php:174
+msgid "Success! The Service has been saved Successfully."
+msgstr "النجاح! تم حفظ الخدمة بنجاح."
+
+#: leftMenus.php:188
+msgid "Service Cost ("
+msgstr "تكلفة الخدمة ("
+
+#: leftMenus.php:219
+msgid "Service Time :"
+msgstr "خدمة الوقت:"
+
+#: leftMenus.php:266
+msgid "Assign Services to Staff"
+msgstr "تعيين الخدمات للموظفين"
+
+#: leftMenus.php:271
+msgid "Success! The Service has been Assigned Successfully."
+msgstr "النجاح! تم تعيين الخدمة بنجاح."
+
+#: leftMenus.php:274
+msgid "Error! Please Choose a Staff Member to Assign Services."
+msgstr "خطأ! الرجاء إختيار أحد الموظفين إلى تعيين الخدمات."
+
+#: leftMenus.php:277
+msgid ""
+"Note: Please choose Staff Member and then tick the appropriate checkbox next "
+"to each service you wish to Assign."
+msgstr ""
+"ملاحظة: الرجاء اختيار الموظف ووضع علامة الاختيار المناسب ثم بجانب كل خدمة "
+"التي ترغب في تعيين."
+
+#: leftMenus.php:283 leftMenus.php:406 manageEmployees.php:136
+#: manageEmployees.php:209
+msgid "Staff Member :"
+msgstr "موظف:"
+
+#: leftMenus.php:296 leftMenus.php:420 manageEmployees.php:150
+#: manageEmployees.php:223
+msgid "Please Choose Staff Member"
+msgstr "الرجاء اختيار عضو هيئة"
+
+#: leftMenus.php:316 manageServices.php:47
+msgid "Service Name"
+msgstr "خدمة الاسم"
+
+#: leftMenus.php:317 manageServices.php:50
+msgid "Service Time"
+msgstr "خدمة الوقت"
+
+#: leftMenus.php:319 manageServices.php:52
+msgid "Type"
+msgstr "نوع"
+
+#: leftMenus.php:393 manageEmployees.php:34
+msgid "Working Hours"
+msgstr "ساعات العمل"
+
+#: leftMenus.php:398
+msgid "Success! The Working Hours has been updated Successfully."
+msgstr "النجاح! تم تحديث ساعات العمل بنجاح."
+
+#: leftMenus.php:401
+msgid "Error! Please Choose a Staff Member to save Working Hours."
+msgstr "خطأ! الرجاء إختيار أحد الموظفين لتوفير ساعات العمل."
+
+#: leftMenus.php:438
+msgid "Monday"
+msgstr "يوم الاثنين"
+
+#: leftMenus.php:439
+msgid "Tuesday"
+msgstr "الثلاثاء"
+
+#: leftMenus.php:440
+msgid "Wednesday"
+msgstr "الأربعاء"
+
+#: leftMenus.php:441
+msgid "Thursday"
+msgstr "الخميس"
+
+#: leftMenus.php:442
+msgid "Friday"
+msgstr "الجمعة"
+
+#: leftMenus.php:443
+msgid "Saturday"
+msgstr "السبت"
+
+#: leftMenus.php:444
+msgid "Sunday"
+msgstr "الأحد"
+
+#: leftMenus.php:449
+msgid "Open / Closed"
+msgstr "فتح / مغلق"
+
+#: leftMenus.php:452 leftMenus.php:460 leftMenus.php:468 leftMenus.php:476
+#: leftMenus.php:484 leftMenus.php:492 leftMenus.php:500
+msgid "Open"
+msgstr "فتح"
+
+#: leftMenus.php:455 leftMenus.php:463 leftMenus.php:471 leftMenus.php:479
+#: leftMenus.php:487 leftMenus.php:495 leftMenus.php:503
+msgid "Closed"
+msgstr "مغلق"
+
+#: leftMenus.php:508
+msgid "Start Hours"
+msgstr "بدء ساعات"
+
+#: leftMenus.php:532
+msgid "End Hours"
+msgstr "نهاية ساعات"
+
+#: leftMenus.php:568
+msgid "Add New Client"
+msgstr "إضافة عميل جديد"
+
+#: leftMenus.php:572
+msgid "Success! The Client has been saved Successfully."
+msgstr "النجاح! تم حفظ عميل بنجاح."
+
+#: leftMenus.php:576
+msgid ""
+"Error! This Email Address already exists in our Database. Please try with "
+"new one."
+msgstr ""
+"خطأ! عنوان البريد الإلكتروني هذا موجود مسبقا في قاعدة البيانات لدينا. يرجى "
+"المحاولة مع واحد جديد."
+
+#: leftMenus.php:718
+msgid "Success! The Booking has been updated Successfully."
+msgstr "النجاح! تم تحديث الحجز بنجاح."
+
+#: leftMenus.php:731
+msgid "Admin Notification Settings"
+msgstr "باي بال البريد الإلكتروني الإخطار الادارية قالب [المرسلة إلى المدير]"
+
+#: leftMenus.php:737
+msgid "Success! Admin Notifications Saved"
+msgstr "النجاح! التبليغات المشرف المحفوظة"
+
+#: leftMenus.php:740
+msgid ""
+"Note: To receive notifications of your client bookings, kindly fill in the "
+"email address."
+msgstr ""
+"ملاحظة: لتلقي الإخطارات من الحجوزات العميل الخاص بك، يرجى ملء في عنوان "
+"البريد الإلكتروني."
+
+#: leftMenus.php:741
+msgid "Note: Without Email Address, the system won't work as expected."
+msgstr "ملاحظة: بدون عنوان البريد الإلكتروني، ونظام لن تعمل كما هو متوقع."
+
+#: leftMenus.php:745
+msgid "Email Address :"
+msgstr "عنوان البريد الإلكتروني"
+
+#: leftMenus.php:755
+msgid "Yes, I may consider buying Full Version at later stage."
+msgstr "نعم، أود أن تنظر في شراء النسخة كاملة في مرحلة لاحقة."
+
+#: leftMenus.php:1165 manageServices.php:305
+msgid "Please Insert Correct Max Bookings Value"
+msgstr "تأجير أتلست اختيار تاريخ الحجز."
+
+#: manageAffiliates.php:15 manageReportBug.php:16
+msgid "Success! The Email has been sent Successfully."
+msgstr "النجاح! تم إرسال البريد الإلكتروني بنجاح."
+
+#: manageAffiliates.php:22
+msgid ""
+"Are you interested becoming an Affiliate of our Product? Shoot us an email "
+"by filling the form below, and we will setup a discussion call."
+msgstr ""
+"هل أنت مهتم أن تصبح إحدى الشركات التابعة لمنتجاتنا؟ تبادل لاطلاق النار "
+"بمراسلتنا عن طريق ملء النموذج أدناه، وسوف نقوم إعداد مكالمة المناقشة."
+
+#: manageAffiliates.php:26
+#, php-format
+msgid ""
+"Refer/Sell it to your contacts, and if they purchase from us, we will give "
+"you 40% of our Profits straight away.\t"
+msgstr ""
+
+#: manageAffiliates.php:34 manageReportBug.php:28
+msgid "Your Email Address :"
+msgstr "عنوان بريدك الإلكتروني:"
+
+#: manageAffiliates.php:42 manageReportBug.php:36
+msgid "Subject :"
+msgstr "الموضوع:"
+
+#: manageAffiliates.php:50
+msgid "Message :"
+msgstr "الرسالة:"
+
+#: manageAffiliates.php:66 manageCustomers.php:173 manageReportBug.php:60
+msgid "Send Email"
+msgstr "إرسال البريد الإلكتروني"
+
+#: manageBookings.php:20
+msgid "Calendar Agenda"
+msgstr "التقويم جدول الأعمال"
+
+#: manageBookings.php:35
+msgid "Client Name"
+msgstr "اسم العميل"
+
+#: manageBookings.php:36 manageCustomers.php:51
+msgid "Mobile"
+msgstr "متنقل"
+
+#: manageBookings.php:37 manageCustomers.php:124
+msgid "Service"
+msgstr "خدمة"
+
+#: manageBookings.php:39
+msgid "Booking Date"
+msgstr "حجز تاريخ"
+
+#: manageBookings.php:41 manageCustomers.php:128
+msgid "Status"
+msgstr "حالة"
+
+#: manageBookings.php:68
+msgid "Booking Status : Approved"
+msgstr "الحالة الحجوزات: المعتمدة"
+
+#: manageBookings.php:74
+msgid "Booking Status : Disapproved"
+msgstr "الحالة الحجوزات: مرفوض"
+
+#: manageBookings.php:80
+msgid "Booking Status : Pending Approval"
+msgstr "الحالة الحجوزات: الموافقة المعلقة"
+
+#: manageBookings.php:86
+msgid "Booking Status : Cancelled"
+msgstr "الحالة الحجوزات: ألغي"
+
+#: manageBookings.php:155
+msgid "Edit Booking?"
+msgstr "تحرير الحجز؟"
+
+#: manageBookings.php:156
+msgid "Cancel Booking?"
+msgstr "إلغاء الحجز؟"
+
+#: manageBookings.php:161
+msgid "Send "
+msgstr "إرسال"
+
+#: manageBookings.php:161
+msgid "Email Again?"
+msgstr "البريد الإلكتروني مرة أخرى؟"
+
+#: manageBookings.php:165
+msgid "Delete Booking?"
+msgstr "حذف الحجز؟"
+
+#: manageBookings.php:181
+msgid "Advanced Booking Calendar Filter"
+msgstr "المتقدمة حجز التقويم fitler"
+
+#: manageBookings.php:207
+msgid "All Employees"
+msgstr "جميع الموظفين"
+
+#: manageBookings.php:227
+msgid "Pending Approval"
+msgstr "الحالة الحجوزات: الموافقة المعلقة"
+
+#: manageBookings.php:232
+msgid "Approved"
+msgstr "وافق"
+
+#: manageBookings.php:237
+msgid "Disapproved"
+msgstr "معاق"
+
+#: manageBookings.php:242
+msgid "Cancelled"
+msgstr "إلغاء"
+
+#: manageBookings.php:251
+msgid "Day Off / Time Off :"
+msgstr "يوم عطلة / وقت معطلة:"
+
+#: manageBookings.php:258
+msgid "Day Off"
+msgstr "اليوم أوفس"
+
+#: manageBookings.php:263
+msgid "Time Off"
+msgstr "الوقت أوفس"
+
+#: manageBookings.php:271
+msgid "Book a Service :"
+msgstr "حجز خدمة"
+
+#: manageBookings.php:288
+msgid "Booking Calendar"
+msgstr "حجز التقويم"
+
+#: manageBookings.php:601
+msgid "Email has been Sent Successfully."
+msgstr "النجاح! تم إرسال البريد الإلكتروني بنجاح."
+
+#: manageCustomers.php:12
+msgid "Customers"
+msgstr "الزبائن"
+
+#: manageCustomers.php:31
+msgid "Add New Customer"
+msgstr "إضافة عميل جديد"
+
+#: manageCustomers.php:42
+msgid ""
+"Note: Click on the Right Corner of the Settings icon to perform various "
+"actions viz. Add New Customer, Export Customers."
+msgstr ""
+"ملاحظة: اضغط على الزاوية اليمنى للرمز إعدادات لأداء مختلف الأعمال بمعنى. "
+"إضافة عميل جديد، عملاء التصدير."
+
+#: manageCustomers.php:48
+msgid "First Name"
+msgstr "الاسم الأول"
+
+#: manageCustomers.php:49
+msgid "Last Name"
+msgstr "اسم العائلة"
+
+#: manageCustomers.php:50
+msgid "Email Address"
+msgstr "عنوان البريد الإلكتروني"
+
+#: manageCustomers.php:52
+msgid "City"
+msgstr "مدينة"
+
+#: manageCustomers.php:53
+msgid "Country"
+msgstr "بلد"
+
+#: manageCustomers.php:78
+msgid "Edit Client?"
+msgstr "تحرير عميل؟"
+
+#: manageCustomers.php:79
+msgid "Email Client?"
+msgstr "عميل البريد الالكتروني؟"
+
+#: manageCustomers.php:80
+msgid "Booking Details"
+msgstr "حجز تفاصيل"
+
+#: manageCustomers.php:81
+msgid "Book a Service"
+msgstr "حجز خدمة"
+
+#: manageCustomers.php:82
+msgid "Delete Client"
+msgstr "حذف عميل"
+
+#: manageCustomers.php:96
+msgid "Edit Customer "
+msgstr "تحرير العملاء"
+
+#: manageCustomers.php:100
+msgid "Success! The Customer has been Updated Successfully."
+msgstr "النجاح! تم تحديث العميل بنجاح."
+
+#: manageCustomers.php:115
+msgid "Customer Bookings"
+msgstr "الزبائن"
+
+#: manageCustomers.php:129
+msgid "Date of Booking"
+msgstr "تاريخ الحجز"
+
+#: manageCustomers.php:144
+msgid "Email to Customer"
+msgstr "البريد الإلكتروني للعميل"
+
+#: manageCustomers.php:150
+msgid "Success! Email has been sent Successfully."
+msgstr "النجاح! تم إرسال البريد الإلكتروني بنجاح."
+
+#: manageCustomers.php:156 manageSettings.php:470 manageSettings.php:521
+#: manageSettings.php:569 manageSettings.php:620
+msgid "Email Subject :"
+msgstr "موضوع الرسالة:"
+
+#: manageCustomers.php:184
+msgid "Customer Comments"
+msgstr "تعليقات العملاء"
+
+#: manageCustomers.php:190
+msgid "Success! The Comments has been saved Successfully."
+msgstr "النجاح! تم حفظ بنجاح التعليقات."
+
+#: manageCustomers.php:197
+msgid "Comments:"
+msgstr "التعليقات:"
+
+#: manageCustomers.php:374
+msgid "You cannot delete this Customer until all Bookings have been deleted."
+msgstr "لا يمكنك حذف هذا العميل حتى يتم حذف كافة الحجوزات."
+
+#: manageEmployees.php:10
+msgid "Staff Members"
+msgstr "أعضاء هيئة التدريس"
+
+#: manageEmployees.php:31
+msgid "Assign Services"
+msgstr "تعيين الخدمات"
+
+#: manageEmployees.php:37
+msgid "Day Offs"
+msgstr "اليوم أوفس"
+
+#: manageEmployees.php:40
+msgid "Time Offs"
+msgstr "الوقت أوفس"
+
+#: manageEmployees.php:47
+msgid ""
+"Note: Click on the Right Corner of the Settings icon to perform various "
+"actions viz. Add New Employees, Allocate Services etc."
+msgstr ""
+"ملاحظة: اضغط على الزاوية اليمنى للرمز إعدادات لأداء مختلف الأعمال بمعنى. "
+"إضافة موظفين جدد، وتخصيص الخدمات الخ."
+
+#: manageEmployees.php:56
+msgid "Color Code"
+msgstr "لون الرمز"
+
+#: manageEmployees.php:57
+msgid "Staff Code"
+msgstr "قانون الموظفين"
+
+#: manageEmployees.php:58
+msgid "Staff Name"
+msgstr "اسم الموظفين"
+
+#: manageEmployees.php:59
+msgid "Staff Email"
+msgstr "البريد الالكتروني للموظفين"
+
+#: manageEmployees.php:60
+msgid "Staff Phone"
+msgstr "الهاتف الموظفين"
+
+#: manageEmployees.php:87
+msgid "Edit Employee?"
+msgstr "تحرير موظف؟"
+
+#: manageEmployees.php:88
+msgid "Show Day Off's & Time Off's"
+msgstr "تظهر اليوم والوقت لإيقاف قبالة"
+
+#: manageEmployees.php:89
+msgid "Delete Employee?"
+msgstr "حذف الموظف؟"
+
+#: manageEmployees.php:103
+msgid "Update Existing Staff Member"
+msgstr "تحديث القائمة عضو هيئة"
+
+#: manageEmployees.php:108
+msgid "Success! The Staff Member has been updated Successfully."
+msgstr "النجاح! تم تحديث الموظف بنجاح."
+
+#: manageEmployees.php:123
+msgid "Day Off Settings"
+msgstr "يوم عطلة إعدادات"
+
+#: manageEmployees.php:128
+msgid "Success! The Day Off has been saved Successfully."
+msgstr "النجاح! تم حفظ معطلة اليوم بنجاح."
+
+#: manageEmployees.php:131
+msgid "Error! Please choose Staff Member to take Day Off."
+msgstr "خطأ! الرجاء اختيار الموظف أن تأخذ يوم عطلة."
+
+#: manageEmployees.php:163
+msgid "Start Date :"
+msgstr "تاريخ البدء:"
+
+#: manageEmployees.php:171
+msgid "End Date :"
+msgstr "تاريخ الإنتهاء:"
+
+#: manageEmployees.php:192
+msgid "Time Off Settings"
+msgstr "إجازة إعدادات"
+
+#: manageEmployees.php:197
+msgid "Success! The Time Off has been done Successfully."
+msgstr "النجاح! وقد تم ذلك بنجاح في وقت معطلة."
+
+#: manageEmployees.php:200
+msgid "Error! Please choose Staff Member to take Time Off."
+msgstr "خطأ! الرجاء اختيار الموظف أن أخذ إجازة."
+
+#: manageEmployees.php:203
+msgid "Error! Please choose Time Slot to take Time Off."
+msgstr "خطأ! الرجاء اختيار فتحة حان الوقت لأخذ إجازة."
+
+#: manageEmployees.php:237
+msgid "Date :"
+msgstr "تاريخ:"
+
+#: manageEmployees.php:264
+msgid "Staff Member Day Off's & Time Off's"
+msgstr "الموظفين معطلة اليوم والوقت عضو قبالة"
+
+#: manageEmployees.php:267
+msgid "Success! The Staff Member Day/Time Off deleted Successfully."
+msgstr "النجاح! الموظف يوم / الوقت حذف معطلة بنجاح."
+
+#: manageEmployees.php:368
+msgid "You cannot delete this Employee until all Bookings have been deleted."
+msgstr "لا يمكنك حذف هذا الموظف حتى يتم حذف كافة الحجوزات."
+
+#: manageEmployees.php:372
+msgid ""
+"You cannot delete this Employee until all Allocated Services are de-"
+"allocated."
+msgstr "لا يمكنك حذف هذا الموظف حتى يتم كل الخدمات المخصصة شطب المخصصة."
+
+#: manageReportBug.php:44
+msgid "Bug / Issue :"
+msgstr "تخصيص الخدمات"
+
+#: manageServices.php:30
+msgid "Allocate Services"
+msgstr "تخصيص الخدمات"
+
+#: manageServices.php:37
+msgid ""
+"Note: Click on the Right Corner of the Settings icon to perform various "
+"actions viz. Add New Services, Allocate Services etc."
+msgstr ""
+"ملاحظة: اضغط على الزاوية اليمنى للرمز إعدادات لأداء مختلف الأعمال بمعنى. "
+"إضافة خدمات جديدة، قم بتخصيص خدمات الخ."
+
+#: manageServices.php:40
+msgid ""
+"To change the order of Services simply drag & drop each service in order to "
+"display in the same way on the Booking Calender to your Customers."
+msgstr ""
+"لتغيير ترتيب خدمات ببساطة سحب وإسقاط كل خدمة لعرض بنفس الطريقة على التقويم "
+"الحجز لعملائك."
+
+#: manageServices.php:48
+msgid "Short Code"
+msgstr "كود قصيرة"
+
+#: manageServices.php:49
+msgid "Allocated Employees"
+msgstr "تخصيص الموظفين"
+
+#: manageServices.php:113
+msgid " Hrs "
+msgstr "ساعة"
+
+#: manageServices.php:130
+msgid "Edit Service?"
+msgstr "تحرير الخدمة؟"
+
+#: manageServices.php:130
+msgid "Delete Service?"
+msgstr "حذف خدمة؟"
+
+#: manageServices.php:143
+msgid "Update Existing Service"
+msgstr "تحديث الخدمات القائمة"
+
+#: manageServices.php:148
+msgid "Success! The Service has been updated Successfully."
+msgstr "النجاح! تم تحديث الخدمة بنجاح."
+
+#: manageServices.php:155
+msgid "Save & Submit Changes"
+msgstr "حفظ وإرسال التغييرات"
+
+#: manageServices.php:206
+msgid "This Service cannot be deleted until de-allocated from the Employees."
+msgstr "لا يمكن حذف هذه الخدمة حتى دو المخصصة من الموظفين."
+
+#: manageSettings.php:13
+msgid "Settings"
+msgstr "إعدادات"
+
+#: manageSettings.php:23
+msgid "General Settings"
+msgstr "إعدادات عامة"
+
+#: manageSettings.php:35
+msgid "Success! Default Settings has been saved Successfully."
+msgstr "النجاح! تم حفظ الإعدادات الافتراضية بنجاح."
+
+#: manageSettings.php:43
+msgid "Default Settings"
+msgstr "الإعدادات الافتراضية"
+
+#: manageSettings.php:50
+msgid "Default Currency :"
+msgstr "الافتراضي العملة:"
+
+#: manageSettings.php:94
+msgid "Default Country :"
+msgstr "الافتراضي الدولة:"
+
+#: manageSettings.php:131
+msgid "Default Date Format :"
+msgstr "افتراضي تاريخ الصيغة:"
+
+#: manageSettings.php:189
+msgid "Default Time Format :"
+msgstr "التوقيت الافتراضي الصيغة:"
+
+#: manageSettings.php:198 manageSettings.php:205
+msgid "12 Hours"
+msgstr "12 ساعة"
+
+#: manageSettings.php:199 manageSettings.php:206
+msgid "24 Hours"
+msgstr "24 ساعة"
+
+#: manageSettings.php:217
+msgid "Default Time Zone :"
+msgstr "المنطقة الزمنية الافتراضية:"
+
+#: manageSettings.php:269
+msgid "Default Booking Slot Size :"
+msgstr "الحجم الافتراضي الحجز فتحة:"
+
+#: manageSettings.php:328
+msgid "Email Templates"
+msgstr "البريد الإلكتروني قوالب"
+
+#: manageSettings.php:344 manageSettings.php:445
+msgid "Booking Pending Confirmation Email Template [Sent to Client]"
+msgstr "رسالة تأكيد الحجز الإلكترونية معلق قالب [المرسلة إلى عميل]"
+
+#: manageSettings.php:352 manageSettings.php:498
+msgid "Booking Confirmation Email Template [Sent to Client]"
+msgstr "قالب رسالة تأكيد الحجز الإلكترونية [المرسلة إلى عميل]"
+
+#: manageSettings.php:360
+msgid "Booking Disapproved Email Template [Sent to Client]"
+msgstr "حجز قالب البريد الإلكتروني مرفوض [المرسلة إلى عميل]"
+
+#: manageSettings.php:368
+msgid "Approve/Decline Booking Email Template [Sent to Admin]"
+msgstr "الموافقة على / رفض الحجز قالب البريد الإلكتروني [المرسلة إلى المدير]"
+
+#: manageSettings.php:379
+msgid "Social Media Settings"
+msgstr "وسائل الإعلام الاجتماعية إعدادات"
+
+#: manageSettings.php:402
+msgid "Payment Gateway Settings"
+msgstr "إعدادات بوابة الدفع"
+
+#: manageSettings.php:421
+msgid "Auto Responder Settings"
+msgstr "السيارات المستجيب إعدادات"
+
+#: manageSettings.php:452 manageSettings.php:504 manageSettings.php:554
+#: manageSettings.php:603
+msgid "Success! The Email has been saved Successfully."
+msgstr "النجاح! تم حفظ البريد الإلكتروني بنجاح."
+
+#: manageSettings.php:549
+msgid "Booking Decline Email Template [Sent to Client]"
+msgstr "قالب البريد الإلكتروني الحجز انخفاض [المرسلة إلى عميل]"
+
+#: manageSettings.php:597
+msgid "Admin Approve/Disapprove Email Template [Sent to Admin]"
+msgstr "الموافقة مشرف / أعارض قالب البريد الإلكتروني [المرسلة إلى المدير]"

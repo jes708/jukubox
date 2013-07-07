@@ -1,0 +1,281 @@
+/* custom CSS file for jschwarz */ 
+/* asdf */
+
+.f-part-divide.grey {
+background-image: url(http://jukubox.com/wp-content/uploads/2013/07/cardboard_flat2.png);
+}
+
+table thead tr {
+background-image: url(http://jukubox.com/wp-content/uploads/2013/07/cardboard_flat2.png);
+}
+
+.my-appointments.tablesorter tbody {
+background: rgba(255, 255, 255, 0.9);
+}
+
+.appointments-my-appointments {
+box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.19);
+}
+
+#post-24 .entry h3 {
+margin-top: 30px;
+}
+
+#wpadminbar {
+background: url(http://jukubox.com/wp-content/uploads/2013/07/JukuTop.jpg);
+background-size: 100% 33px;
+background-repeat: no-repeat;
+}
+
+#footer {
+background: url(http://jukubox.com/wp-content/uploads/2013/07/JukuFooter.jpg);
+background-size: 100% 329px;
+background-repeat: no-repeat;
+}
+
+#header {
+background: url(http://jukubox.com/wp-content/uploads/2013/07/JukuHeader2.jpg);
+background-size: 100% 105px;
+background-repeat: no-repeat;
+}
+
+#members-list .item-title a { 
+	font-weight: bold;
+	font-size: 13pt;  
+	position: relative;
+	z-index: 1;
+} 
+
+body.login { 
+	background: url('../../wp-content/uploads/2013/06/JukuboxBg.jpg') !important;
+	background-size: 100% !important;
+}
+
+.nf-big-header strong {
+font-weight: normal;
+}
+
+h2.posttitle a {
+font-weight: normal;
+}
+
+html,
+body {
+   margin:0;
+   padding:0;
+   height:100%;
+}
+#container {
+   min-height:64%;
+   position:relative;
+}
+
+#footer {
+   position:relative;
+   bottom:0;
+   width:100%;
+   height:auto;
+}
+
+p#field_28 {
+position: absolute;
+bottom: 0px;
+max-width: 400px;
+}
+
+#field_23 {
+position: absolute;
+bottom: 0px;
+right: -460px;
+}
+
+.fval {
+width: 440px;
+}
+
+
+td.data p {
+font-size: 14px !important;
+}
+
+table tr td.label {
+border-right: 1px solid #eaeaea;
+width: 25%;
+font-family: 'Trebuchet MS';
+font-size: 11pt;
+}
+
+.buatp_loop_column p span {
+font-size: 14px;
+}
+
+div#sidebar h3.widgettitle {
+color: rgb(71, 71, 71);
+font-weight: normal;
+}
+
+#message-threads a.button.confirm {
+position: absolute;
+margin-left: -3px;
+}
+
+#message-threads input[type="checkbox"] {
+margin-left: -12px;
+margin-right: 10px;
+}
+
+.unread-count {
+margin-left: 4px;
+margin-right: -5px;
+}
+
+.field-visibility-settings-notoggle, .field-visibility-settings-toggle {
+font-size: 11px !important;
+}
+
+div#blog-archives.page h3.pagetitle {
+color: rgba(255, 255, 255, 0);
+}
+
+/* new background stuff */
+
+body {
+background-image: url(http://jukubox.com/wp-content/uploads/2013/06/jukuback1.png);
+background-repeat: repeat;
+}
+
+div#content .padder {
+border-right: 1px solid rgba(102, 106, 107, 0.04);
+}
+
+div#container {
+background: rgba(255, 255, 255, 0);
+}
+
+div#sidebar {
+background: rgba(255, 255, 255, 0) !important;
+}
+
+li, .post, #newroomtable {
+background: rgba(255, 255, 255, 0);
+
+}
+
+table#newroomtable {
+background-color: white;
+box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.19);
+}
+
+div.type-post {
+background-color: white;
+border-style: solid;
+border-color: rgb(243, 243, 243);
+border-width: 1px;
+box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.19);
+}
+
+#members-list li {
+box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.19);
+}
+
+img.avatar {
+border-radius: 10%;
+}
+
+.register-section .editfield {
+border-bottom: solid rgba(0, 0, 0, 0.16) 1px;
+padding-bottom: 15px;
+}
+
+@-moz-document url-prefix() { 
+    .my-appointments.tablesorter img {
+        margin-right: 20px;
+    }
+}
+
+#profile-edit-form div.editfield {
+border-bottom: solid 1px rgba(0, 0, 0, 0.14);
+}
+
+.appointments-wrapper h3, .appointments-confirmation-wrapper h3 {
+font-size: 15pt;
+font-weight: 500;
+text-transform: uppercase;
+}
+
+#item-header .rating-top img {
+margin-top: 12px !important;
+}
+
+td.free, div.free {
+background: #11b9fa; /* Old browsers */
+background: -moz-linear-gradient(-45deg,  #11b9fa 0%, #009fdd 100%) !important; /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#11b9fa), color-stop(100%,#009fdd)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(-45deg,  #11b9fa 0%,#009fdd 100%) !important; /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(-45deg,  #11b9fa 0%,#009fdd 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(-45deg,  #11b9fa 0%,#009fdd 100%); /* IE10+ */
+background: linear-gradient(135deg,  #11b9fa 0%,#009fdd 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#11b9fa', endColorstr='#009fdd',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+td.notpossible, div.notpossible {
+background-image: -webkit-gradient( linear, left top, right bottom, color-stop(1, rgb(2, 18, 27)), color-stop(0.1, rgb(8, 35, 51)) ) !important;
+}
+
+td.busy, div.busy {
+background-image: -webkit-gradient( linear, left top, right bottom, color-stop(1, rgb(89, 90, 92)), color-stop(0.1, rgb(101, 110, 112)) ) !important;
+}
+
+#post-62 div.entry h3 {
+font-size: 14pt !important;
+}
+
+/* .friendship-button {
+display: inline !important;
+} */
+
+div#item-header-content div#item-meta div#item-buttons div.generic-button {
+display: inline;
+}
+
+#footer-widgets {
+text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.45);
+}
+
+.app_form.worker h3 {
+padding: 8px;
+margin-bottom: -2px;
+}
+
+.confirmdiv, #enter_app_room_wrap {
+-webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.19);
+-moz-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.19);
+box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.19);
+background: rgba(255, 255, 255, 0.79);
+}
+
+.app_monthly_schedule_wrapper table {
+box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.19);
+background: rgba(255, 255, 255, 0.76);
+}
+
+.app_monthly_schedule_wrapper tfoot {
+background-image: url(http://jukubox.com/wp-content/uploads/2013/07/cardboard_flat2.png) !important;
+}
+
+a.btn1 {
+position: relative;
+margin: 20px 10px -8px 10px;
+}
+
+.editfield:nth-last-child(3) {
+display: none;
+}
+
+table.profile-fields .field_129.field_birthdate, table.profile-fields .field_28.field_about, table.profile-fields .field_1.field_name {
+display: none;
+}
+
+#field-visibility-settings-toggle-129 {
+display: none;
+}

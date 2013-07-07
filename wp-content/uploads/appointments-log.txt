@@ -1,0 +1,206 @@
+<b>[March 2, 2013 8:24 am]</b> Status of Appointment(s) with id(s):1 changed to confirmed by user:admin
+<b>[March 4, 2013 8:37 am]</b> Notification message sent to finchman@gmail.com for appointment ID:4
+<b>[March 4, 2013 8:41 am]</b> Notification message sent to finchman@gmail.com for appointment ID:5
+<b>[March 4, 2013 9:05 am]</b> Notification message sent to finchman@gmail.com for appointment ID:6
+<b>[March 4, 2013 9:05 am]</b> Notification message sent to broseph113@gmail.com for appointment ID:6
+<b>[March 4, 2013 5:04 pm]</b> Service Provider Harvey Shapiro manually confirmed appointment with ID: 6
+<b>[March 4, 2013 5:04 pm]</b> Confirmation message sent to finchman@gmail.com for appointment ID:6
+<b>[March 4, 2013 5:04 pm]</b> Harvey Shapiro edited his working hours.
+<b>[March 5, 2013 7:52 am]</b> Notification message sent to finchman@gmail.com for appointment ID:7
+<b>[March 5, 2013 7:53 am]</b> Service Provider Richard Aaron manually confirmed appointment with ID: 2
+<b>[March 5, 2013 7:53 am]</b> Confirmation message sent to finchman@gmail.com for appointment ID:2
+<b>[March 5, 2013 7:53 am]</b> Richard Aaron edited his working hours.
+<b>[March 5, 2013 8:15 am]</b> Harvey Shapiro edited his working hours.
+<b>[March 5, 2013 8:16 am]</b> Harvey Shapiro edited his working hours.
+<b>[March 5, 2013 8:39 am]</b> Confirmation message sent to finchman@gmail.com for appointment ID:10
+<b>[March 5, 2013 5:23 pm]</b> Service Provider Harvey Shapiro manually confirmed appointment with ID: 8
+<b>[March 5, 2013 5:23 pm]</b> Confirmation message sent to finchman@gmail.com for appointment ID:8
+<b>[March 5, 2013 5:23 pm]</b> Service Provider Harvey Shapiro manually confirmed appointment with ID: 11
+<b>[March 5, 2013 5:23 pm]</b> Confirmation message sent to finchman@gmail.com for appointment ID:11
+<b>[March 5, 2013 5:23 pm]</b> Service Provider Harvey Shapiro manually confirmed appointment with ID: 12
+<b>[March 5, 2013 5:23 pm]</b> Confirmation message sent to finchman@gmail.com for appointment ID:12
+<b>[March 5, 2013 5:23 pm]</b> Harvey Shapiro edited his working hours.
+<b>[March 5, 2013 5:24 pm]</b> Service Provider Harvey Shapiro manually confirmed appointment with ID: 9
+<b>[March 5, 2013 5:24 pm]</b> Confirmation message sent to finchman@gmail.com for appointment ID:9
+<b>[March 5, 2013 5:24 pm]</b> Service Provider Harvey Shapiro manually confirmed appointment with ID: 10
+<b>[March 5, 2013 5:24 pm]</b> Confirmation message sent to finchman@gmail.com for appointment ID:10
+<b>[March 6, 2013 3:10 am]</b> Status of Appointment(s) with id(s):9 changed to removed by user:admin
+<b>[March 6, 2013 4:58 pm]</b> Harvey Shapiro edited his working hours.
+<b>[March 6, 2013 5:39 pm]</b> Richard Aaron edited his working hours.
+<b>[March 6, 2013 6:16 pm]</b> Richard Aaron edited his working hours.
+<b>[March 7, 2013 6:57 am]</b> Harvey Shapiro edited his working hours.
+<b>[March 11, 2013 4:28 pm]</b> Service Provider Nicholas Finch manually confirmed appointment with ID: 22
+<b>[March 11, 2013 4:28 pm]</b> Confirmation message sent to broseph113@gmail.com for appointment ID:22
+<b>[March 11, 2013 4:28 pm]</b> Nicholas Finch edited his working hours.
+<b>[March 11, 2013 5:07 pm]</b> Confirmation message sent to finchman@gmail.com for appointment ID:23
+<b>[March 11, 2013 6:17 pm]</b> Service Provider Nicholas Finch manually confirmed appointment with ID: 22
+<b>[March 11, 2013 6:17 pm]</b> Confirmation message sent to broseph113@gmail.com for appointment ID:22
+<b>[March 11, 2013 6:26 pm]</b> Nicholas Finch edited his working hours.
+<b>[March 11, 2013 6:28 pm]</b> Confirmation message sent to broseph113@gmail.com for appointment ID:26
+<b>[March 11, 2013 6:30 pm]</b> Service Provider Nicholas Finch manually confirmed appointment with ID: 26
+<b>[March 11, 2013 6:30 pm]</b> Confirmation message sent to broseph113@gmail.com for appointment ID:26
+<b>[March 11, 2013 6:30 pm]</b> Nicholas Finch edited his working hours.
+<b>[March 11, 2013 6:31 pm]</b> Service Provider Nicholas Finch manually confirmed appointment with ID: 22
+<b>[March 11, 2013 6:31 pm]</b> Confirmation message sent to broseph113@gmail.com for appointment ID:22
+<b>[March 11, 2013 6:31 pm]</b> Service Provider Nicholas Finch manually confirmed appointment with ID: 25
+<b>[March 11, 2013 6:31 pm]</b> Confirmation message sent to broseph113@gmail.com for appointment ID:25
+<b>[March 11, 2013 6:47 pm]</b> Service Provider Nicholas Finch manually confirmed appointment with ID: 26
+<b>[March 11, 2013 6:47 pm]</b> Confirmation message sent to broseph113@gmail.com for appointment ID:26
+<b>[March 11, 2013 6:56 pm]</b> Service Provider Harvey Shapiro manually confirmed appointment with ID: 28
+<b>[March 11, 2013 6:56 pm]</b> Confirmation message sent to finchman@gmail.com for appointment ID:28
+<b>[March 11, 2013 6:56 pm]</b> Harvey Shapiro edited his working hours.
+<b>[March 11, 2013 6:58 pm]</b> Service Provider Harvey Shapiro manually confirmed appointment with ID: 23
+<b>[March 11, 2013 6:58 pm]</b> Confirmation message sent to finchman@gmail.com for appointment ID:23
+<b>[March 11, 2013 6:58 pm]</b> Service Provider Harvey Shapiro manually confirmed appointment with ID: 24
+<b>[March 11, 2013 6:58 pm]</b> Confirmation message sent to finchman@gmail.com for appointment ID:24
+<b>[March 14, 2013 4:40 pm]</b> Nicholas Finch edited his working hours.
+<b>[March 15, 2013 7:15 am]</b> Service Provider Richard Aaron manually confirmed appointment with ID: 34
+<b>[March 15, 2013 7:15 am]</b> Confirmation message sent to finchman@gmail.com for appointment ID:34
+<b>[March 15, 2013 7:15 am]</b> Richard Aaron edited his working hours.
+<b>[March 15, 2013 6:36 pm]</b> Richard Aaron edited his working hours.
+<b>[March 21, 2013 5:33 pm]</b> Harvey Shapiro edited his working hours.
+<b>[March 21, 2013 5:45 pm]</b> Service Provider Harvey Shapiro manually confirmed appointment with ID: 35
+<b>[March 21, 2013 5:45 pm]</b> Confirmation message sent to finchman@gmail.com for appointment ID:35
+<b>[March 21, 2013 5:45 pm]</b> Harvey Shapiro edited his working hours.
+<b>[March 21, 2013 5:46 pm]</b> Service Provider Harvey Shapiro manually confirmed appointment with ID: 36
+<b>[March 21, 2013 5:46 pm]</b> Confirmation message sent to finchman@gmail.com for appointment ID:36
+<b>[March 21, 2013 5:48 pm]</b> Harvey Shapiro edited his working hours.
+<b>[March 21, 2013 5:49 pm]</b> Harvey Shapiro edited his working hours.
+<b>[March 21, 2013 5:50 pm]</b> Nicholas Finch edited his working hours.
+<b>[March 21, 2013 6:01 pm]</b> Nicholas Finch edited his working hours.
+<b>[March 21, 2013 6:04 pm]</b> Service Provider Nicholas Finch manually confirmed appointment with ID: 37
+<b>[March 21, 2013 6:04 pm]</b> Confirmation message sent to broseph113@gmail.com for appointment ID:37
+<b>[March 21, 2013 6:04 pm]</b> Nicholas Finch edited his working hours.
+<b>[March 21, 2013 7:12 pm]</b> Nicholas Finch edited his working hours.
+<b>[March 21, 2013 7:23 pm]</b> Service Provider Nicholas Finch manually confirmed appointment with ID: 38
+<b>[March 21, 2013 7:23 pm]</b> Confirmation message sent to broseph113@gmail.com for appointment ID:38
+<b>[March 21, 2013 7:23 pm]</b> Nicholas Finch edited his working hours.
+<b>[March 21, 2013 8:02 pm]</b> Nicholas Finch edited his working hours.
+<b>[March 21, 2013 8:14 pm]</b> Service Provider Nicholas Finch manually confirmed appointment with ID: 39
+<b>[March 21, 2013 8:14 pm]</b> Confirmation message sent to broseph113@gmail.com for appointment ID:39
+<b>[March 21, 2013 8:36 pm]</b> Service Provider Nicholas Finch manually confirmed appointment with ID: 40
+<b>[March 21, 2013 8:36 pm]</b> Confirmation message sent to broseph113@gmail.com for appointment ID:40
+<b>[March 21, 2013 9:03 pm]</b> Service Provider Nicholas Finch manually confirmed appointment with ID: 41
+<b>[March 21, 2013 9:03 pm]</b> Confirmation message sent to broseph113@gmail.com for appointment ID:41
+<b>[March 21, 2013 9:10 pm]</b> Service Provider Nicholas Finch manually confirmed appointment with ID: 42
+<b>[March 21, 2013 9:10 pm]</b> Confirmation message sent to broseph113@gmail.com for appointment ID:42
+<b>[March 22, 2013 3:31 am]</b> Service Provider Nicholas Finch manually confirmed appointment with ID: 43
+<b>[March 22, 2013 3:31 am]</b> Confirmation message sent to broseph113@gmail.com for appointment ID:43
+<b>[March 22, 2013 2:34 pm]</b> Service Provider Richard Aaron manually confirmed appointment with ID: 20
+<b>[March 22, 2013 2:34 pm]</b> Confirmation message sent to finchman@gmail.com for appointment ID:20
+<b>[March 22, 2013 2:34 pm]</b> Service Provider Richard Aaron manually confirmed appointment with ID: 21
+<b>[March 22, 2013 2:34 pm]</b> Confirmation message sent to finchman@gmail.com for appointment ID:21
+<b>[March 25, 2013 2:44 pm]</b> Service Provider Richard Aaron manually confirmed appointment with ID: 82
+<b>[March 25, 2013 2:44 pm]</b> Confirmation message sent to finchman@gmail.com for appointment ID:82
+<b>[March 25, 2013 2:45 pm]</b> Service Provider Richard Aaron manually confirmed appointment with ID: 91
+<b>[March 25, 2013 2:45 pm]</b> Confirmation message sent to finchman@gmail.com for appointment ID:91
+<b>[March 25, 2013 2:51 pm]</b> Service Provider Richard Aaron manually confirmed appointment with ID: 81
+<b>[March 25, 2013 2:51 pm]</b> Confirmation message sent to finchman@gmail.com for appointment ID:81
+<b>[March 25, 2013 2:52 pm]</b> Service Provider Richard Aaron manually confirmed appointment with ID: 84
+<b>[March 25, 2013 2:52 pm]</b> Confirmation message sent to finchman@gmail.com for appointment ID:84
+<b>[March 25, 2013 2:53 pm]</b> Service Provider Nicholas Finch manually confirmed appointment with ID: 95
+<b>[March 25, 2013 2:53 pm]</b> Confirmation message sent to broseph113@gmail.com for appointment ID:95
+<b>[March 25, 2013 3:05 pm]</b> Service Provider Nicholas Finch manually confirmed appointment with ID: 96
+<b>[March 25, 2013 3:05 pm]</b> Confirmation message sent to broseph113@gmail.com for appointment ID:96
+<b>[March 25, 2013 3:06 pm]</b> Service Provider Nicholas Finch manually confirmed appointment with ID: 97
+<b>[March 25, 2013 3:06 pm]</b> Confirmation message sent to broseph113@gmail.com for appointment ID:97
+<b>[March 25, 2013 3:15 pm]</b> Service Provider Nicholas Finch manually confirmed appointment with ID: 98
+<b>[March 25, 2013 3:15 pm]</b> Confirmation message sent to broseph113@gmail.com for appointment ID:98
+<b>[March 25, 2013 3:18 pm]</b> Service Provider Nicholas Finch manually confirmed appointment with ID: 99
+<b>[March 25, 2013 3:18 pm]</b> Confirmation message sent to broseph113@gmail.com for appointment ID:99
+<b>[March 25, 2013 3:27 pm]</b> Service Provider Richard Aaron manually confirmed appointment with ID: 76
+<b>[March 25, 2013 3:27 pm]</b> Confirmation message sent to finchman@gmail.com for appointment ID:76
+<b>[March 25, 2013 3:49 pm]</b> Service Provider Nicholas Finch manually confirmed appointment with ID: 103
+<b>[March 25, 2013 3:49 pm]</b> Confirmation message sent to broseph113@gmail.com for appointment ID:103
+<b>[March 25, 2013 3:54 pm]</b> Service Provider Nicholas Finch manually confirmed appointment with ID: 105
+<b>[March 25, 2013 3:54 pm]</b> Confirmation message sent to nicholas.h.finch@gmail.com for appointment ID:105
+<b>[March 25, 2013 3:57 pm]</b> Service Provider Nicholas Finch manually confirmed appointment with ID: 107
+<b>[March 25, 2013 3:57 pm]</b> Confirmation message sent to broseph113@gmail.com for appointment ID:107
+<b>[March 25, 2013 3:59 pm]</b> Service Provider Nicholas Finch manually confirmed appointment with ID: 109
+<b>[March 25, 2013 3:59 pm]</b> Confirmation message sent to nicholas.h.finch@gmail.com for appointment ID:109
+<b>[March 26, 2013 11:14 pm]</b> Confirmation message sent to nicholas.h.finch@gmail.com for appointment ID:162
+<b>[March 26, 2013 11:16 pm]</b> Service Provider Nicholas Finch manually confirmed appointment with ID: 159
+<b>[March 26, 2013 11:16 pm]</b> Confirmation message sent to nicholas.h.finch@gmail.com for appointment ID:159
+<b>[March 26, 2013 11:21 pm]</b> Service Provider Nicholas Finch manually confirmed appointment with ID: 160
+<b>[March 26, 2013 11:21 pm]</b> Confirmation message sent to nicholas.h.finch@gmail.com for appointment ID:160
+<b>[March 27, 2013 12:10 am]</b> Service Provider Nicholas Finch manually confirmed appointment with ID: 161
+<b>[March 27, 2013 12:10 am]</b> Confirmation message sent to nicholas.h.finch@gmail.com for appointment ID:161
+<b>[March 27, 2013 12:14 am]</b> Service Provider Nicholas Finch manually confirmed appointment with ID: 162
+<b>[March 27, 2013 12:14 am]</b> Confirmation message sent to nicholas.h.finch@gmail.com for appointment ID:162
+<b>[March 27, 2013 5:44 am]</b> Nicholas Finch edited his working hours.
+<b>[March 27, 2013 5:50 am]</b> Service Provider Nicholas Finch manually confirmed appointment with ID: 181
+<b>[March 27, 2013 5:50 am]</b> Confirmation message sent to nicholas.h.finch@gmail.com for appointment ID:181
+<b>[March 27, 2013 5:57 am]</b> Service Provider Nicholas Finch manually confirmed appointment with ID: 182
+<b>[March 27, 2013 5:57 am]</b> Confirmation message sent to nicholas.h.finch@gmail.com for appointment ID:182
+<b>[March 27, 2013 8:00 am]</b> Service Provider Richard Aaron manually confirmed appointment with ID: 118
+<b>[March 27, 2013 8:00 am]</b> Confirmation message sent to finchman@gmail.com for appointment ID:118
+<b>[March 28, 2013 6:22 am]</b> Service Provider Nicholas Finch manually confirmed appointment with ID: 186
+<b>[March 28, 2013 6:22 am]</b> Confirmation message sent to nicholas.h.finch@gmail.com for appointment ID:186
+<b>[March 30, 2013 8:51 pm]</b> Amanda von Goetz edited his working hours.
+<b>[March 30, 2013 8:53 pm]</b> Service Provider Amanda von Goetz manually confirmed appointment with ID: 190
+<b>[March 30, 2013 8:53 pm]</b> Confirmation message sent to finchman@gmail.com for appointment ID:190
+<b>[March 30, 2013 9:00 pm]</b> Service Provider Amanda von Goetz manually confirmed appointment with ID: 193
+<b>[March 30, 2013 9:00 pm]</b> Confirmation message sent to finchman@gmail.com for appointment ID:193
+<b>[April 1, 2013 11:04 pm]</b> Jon Schwarz edited his working hours.
+<b>[April 1, 2013 11:06 pm]</b> Nicholas Finch edited his working hours.
+<b>[April 1, 2013 11:07 pm]</b> Nicholas Finch edited his working hours.
+<b>[April 1, 2013 11:43 pm]</b> Confirmation message sent to finchman@gmail.com for appointment ID:195
+<b>[April 17, 2013 3:43 am]</b> Service Provider Nicholas Finch manually confirmed appointment with ID: 196
+<b>[April 17, 2013 3:43 am]</b> Confirmation message sent to nicholas.h.finch@gmail.com for appointment ID:196
+<b>[April 23, 2013 6:55 am]</b> Service Provider Richard Aaron manually confirmed appointment with ID: 129
+<b>[April 23, 2013 6:55 am]</b> Confirmation message sent to finchman@gmail.com for appointment ID:129
+<b>[April 23, 2013 8:58 am]</b> Service Provider Richard Aaron manually confirmed appointment with ID: 194
+<b>[April 23, 2013 8:58 am]</b> Confirmation message sent to finchman@gmail.com for appointment ID:194
+<b>[May 9, 2013 5:54 am]</b> Service Provider Richard Aaron manually confirmed appointment with ID: 203
+<b>[May 9, 2013 5:54 am]</b> Confirmation message sent to finchman@gmail.com for appointment ID:203
+<b>[May 13, 2013 4:37 am]</b> Service Provider Richard Aaron manually confirmed appointment with ID: 204
+<b>[May 13, 2013 4:37 am]</b> Confirmation message sent to finchman@gmail.com for appointment ID:204
+<b>[June 5, 2013 7:36 pm]</b> Service Provider Nicholas Finch manually confirmed appointment with ID: 213
+<b>[June 5, 2013 7:36 pm]</b> Confirmation message sent to JonSchwarz@optonline.net for appointment ID:213
+<b>[June 6, 2013 9:33 pm]</b> Jon Schwarz edited his working hours.
+<b>[June 7, 2013 3:47 am]</b> Harvey Shapiro edited his working hours.
+<b>[June 8, 2013 10:39 pm]</b> Service Provider Richard Aaron manually confirmed appointment with ID: 222
+<b>[June 8, 2013 10:39 pm]</b> Confirmation message sent to finchman@gmail.com for appointment ID:222
+<b>[June 20, 2013 2:59 am]</b> Service Provider Jon Schwarz manually confirmed appointment with ID: 236
+<b>[June 20, 2013 2:59 am]</b> Confirmation message sent to JonSchwarz@nyu.edu for appointment ID:236
+<b>[June 20, 2013 6:42 pm]</b> Service Provider Jon Schwarz manually confirmed appointment with ID: 256
+<b>[June 20, 2013 6:42 pm]</b> Confirmation message sent to JonSchwarz@nyu.edu for appointment ID:256
+<b>[June 25, 2013 6:15 pm]</b> Service Provider Jon Schwarz manually confirmed appointment with ID: 271
+<b>[June 25, 2013 6:15 pm]</b> Confirmation message sent to JonSchwarz@nyu.edu for appointment ID:271
+<b>[June 25, 2013 6:24 pm]</b> Service Provider Jon Schwarz manually confirmed appointment with ID: 272
+<b>[June 25, 2013 6:24 pm]</b> Confirmation message sent to JonSchwarz@nyu.edu for appointment ID:272
+<b>[June 27, 2013 2:09 am]</b> Confirmation message sent to finchman@gmail.com for appointment ID:277
+<b>[June 27, 2013 2:25 am]</b> Confirmation message sent to finchman@gmail.com for appointment ID:279
+<b>[June 27, 2013 2:43 am]</b> Nicholas Finch edited his working hours.
+<b>[June 27, 2013 8:51 pm]</b> Confirmation message sent to finchman@gmail.com for appointment ID:304
+<b>[June 27, 2013 8:55 pm]</b> Service Provider Richard Aaron manually confirmed appointment with ID: 304
+<b>[June 27, 2013 8:55 pm]</b> Confirmation message sent to finchman@gmail.com for appointment ID:304
+<b>[June 28, 2013 2:44 am]</b> Confirmation message sent to finchman@gmail.com for appointment ID:305
+<b>[June 28, 2013 2:58 am]</b> Service Provider Richard Aaron manually confirmed appointment with ID: 306
+<b>[June 28, 2013 2:58 am]</b> Confirmation message sent to finchman@gmail.com for appointment ID:306
+<b>[June 28, 2013 10:58 am]</b> Confirmation message sent to finchman@gmail.com for appointment ID:307
+<b>[June 28, 2013 11:04 am]</b> Confirmation message sent to finchman@gmail.com for appointment ID:308
+<b>[June 28, 2013 11:12 am]</b> Confirmation message sent to finchman@gmail.com for appointment ID:310
+<b>[June 28, 2013 11:47 am]</b> Service Provider Richard Aaron manually confirmed appointment with ID: 315
+<b>[June 28, 2013 12:01 pm]</b> Service Provider Richard Aaron manually confirmed appointment with ID: 316
+<b>[June 29, 2013 8:19 pm]</b> Service Provider Richard Aaron manually confirmed appointment with ID: 322
+<b>[June 29, 2013 8:19 pm]</b> Service Provider Richard Aaron manually confirmed appointment with ID: 323
+<b>[June 29, 2013 8:20 pm]</b> Service Provider Richard Aaron manually confirmed appointment with ID: 324
+<b>[June 29, 2013 10:53 pm]</b> Service Provider Richard Aaron manually confirmed appointment with ID: 327
+<b>[June 30, 2013 1:24 pm]</b> Service Provider Nicholas Finch manually confirmed appointment with ID: 336
+<b>[June 30, 2013 9:47 pm]</b> Service Provider Jon Schwarz manually confirmed appointment with ID: 337
+<b>[June 30, 2013 11:42 pm]</b> Service Provider Richard Aaron manually confirmed appointment with ID: 340
+<b>[June 30, 2013 11:50 pm]</b> Service Provider Richard Aaron manually confirmed appointment with ID: 341
+<b>[July 1, 2013 2:41 am]</b> Service Provider Jon Schwarz manually confirmed appointment with ID: 342
+<b>[July 1, 2013 4:52 pm]</b> Jon Schwarz edited his working hours.
+<b>[July 1, 2013 4:53 pm]</b> Jon Schwarz edited his working hours.
+<b>[July 1, 2013 4:54 pm]</b> Jon Schwarz edited his working hours.
+<b>[July 1, 2013 5:14 pm]</b> Service Provider Jon Schwarz manually confirmed appointment with ID: 344
+<b>[July 1, 2013 10:29 pm]</b> Jon Schwarz edited his working hours.
+<b>[July 1, 2013 11:24 pm]</b> Status of Appointment(s) with id(s):343 changed to confirmed by user:jeschwarz
+<b>[July 2, 2013 2:16 am]</b> Service Provider Jon Schwarz manually confirmed appointment with ID: 345
+<b>[July 2, 2013 2:30 am]</b> Status changed from completed to confirmed by jeschwarz for appointment ID:322
+<b>[July 2, 2013 3:01 pm]</b> Service Provider Richard Aaron manually confirmed appointment with ID: 347
+<b>[July 2, 2013 5:05 pm]</b> Service Provider Jon Schwarz manually confirmed appointment with ID: 351
+<b>[July 3, 2013 3:54 pm]</b> Status of Appointment(s) with id(s):322, 347 changed to removed by user:jeschwarz
+

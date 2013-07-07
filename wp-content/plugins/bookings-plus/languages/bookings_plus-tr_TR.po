@@ -1,0 +1,1194 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Bookings-Plus\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-02-22 19:02+0530\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: Bookings-Plus <info@bookings-plus.com>\n"
+"Language: tr_TR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: F:\\Wordpress\\bookings-plus-restricted-version\\trunk\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: bookingCalendar.php:213 bookingCalendarByBackend.php:29
+#: bookingCalendarByCustomer.php:27 bookingCalendarByIframe.php:221
+#: bookingCalendarByService.php:210
+msgid "Step 1 : Choose Service"
+msgstr "Adım 1: Hizmet Seçin"
+
+#: bookingCalendar.php:216 bookingCalendarByBackend.php:32
+#: bookingCalendarByCustomer.php:30 bookingCalendarByIframe.php:224
+#: bookingCalendarByService.php:213
+msgid "Step 2 : Choose Staff"
+msgstr "Adım 2: Personel seç"
+
+#: bookingCalendar.php:219 bookingCalendarByBackend.php:35
+#: bookingCalendarByCustomer.php:33 bookingCalendarByIframe.php:227
+#: bookingCalendarByService.php:216
+msgid "Step 3 : Date & Time"
+msgstr "Adım 3: Tarih ve Saat"
+
+#: bookingCalendar.php:222 bookingCalendarByBackend.php:38
+#: bookingCalendarByCustomer.php:36 bookingCalendarByIframe.php:230
+#: bookingCalendarByService.php:219
+msgid "Step 4 : Your Information"
+msgstr "Adım 4: Kişisel Bilgiler"
+
+#: bookingCalendar.php:225 bookingCalendarByBackend.php:41
+#: bookingCalendarByCustomer.php:39 bookingCalendarByIframe.php:233
+#: bookingCalendarByService.php:222
+msgid "Step 5 : Confirm Details"
+msgstr "Adım 5: Onayla Detayları"
+
+#: bookingCalendar.php:238 bookingCalendarByBackend.php:54
+#: bookingCalendarByCustomer.php:52 bookingCalendarByIframe.php:246
+#: bookingCalendarByService.php:235
+msgid "Book an Appointment Now"
+msgstr "Şimdi Randevu rezervasyonları"
+
+#: bookingCalendar.php:245 bookingCalendarByBackend.php:61
+#: bookingCalendarByCustomer.php:59 bookingCalendarByIframe.php:253
+#: bookingCalendarByService.php:242
+msgid "Thank you for Booking."
+msgstr "Rezervasyon için teşekkür ederiz."
+
+#: bookingCalendar.php:253 bookingCalendarByBackend.php:69
+#: bookingCalendarByCustomer.php:67 bookingCalendarByIframe.php:261
+#: bookingCalendarByService.php:250
+msgid "Choose Service"
+msgstr "Hizmet seçin"
+
+#: bookingCalendar.php:254 bookingCalendarByBackend.php:70
+#: bookingCalendarByCustomer.php:68 bookingCalendarByIframe.php:262
+#: bookingCalendarByService.php:251
+msgid "Service Duration"
+msgstr "Hizmet Süresi"
+
+#: bookingCalendar.php:255 bookingCalendarByBackend.php:71
+#: bookingCalendarByCustomer.php:69 bookingCalendarByIframe.php:263
+#: bookingCalendarByService.php:252 leftMenus.php:318 manageServices.php:51
+msgid "Cost"
+msgstr "maliyet"
+
+#: bookingCalendar.php:257 bookingCalendarByBackend.php:73
+#: bookingCalendarByCustomer.php:71 bookingCalendarByIframe.php:265
+#: bookingCalendarByService.php:254 manageServices.php:46
+msgid "Service Display Order"
+msgstr "Hizmet Siparişi Görüntüle"
+
+#: bookingCalendar.php:289 bookingCalendar.php:301
+#: bookingCalendarByBackend.php:105 bookingCalendarByBackend.php:117
+#: bookingCalendarByCustomer.php:103 bookingCalendarByCustomer.php:115
+#: bookingCalendarByIframe.php:297 bookingCalendarByIframe.php:309
+#: bookingCalendarByService.php:286 bookingCalendarByService.php:298
+#: leftMenus.php:349 leftMenus.php:361 manageServices.php:103
+#: manageServices.php:115
+msgid " Mins"
+msgstr "Dakikaları"
+
+#: bookingCalendar.php:294 bookingCalendarByBackend.php:110
+#: bookingCalendarByCustomer.php:108 bookingCalendarByIframe.php:302
+#: bookingCalendarByService.php:291 leftMenus.php:354 manageServices.php:108
+msgid " Hrs"
+msgstr "saat"
+
+#: bookingCalendar.php:299 bookingCalendarByBackend.php:115
+#: bookingCalendarByCustomer.php:113 bookingCalendarByIframe.php:307
+#: bookingCalendarByService.php:296 leftMenus.php:359
+msgid " Hr "
+msgstr "Hr"
+
+#: bookingCalendar.php:341 bookingCalendarByBackend.php:157
+#: bookingCalendarByCustomer.php:155 bookingCalendarByIframe.php:349
+#: bookingCalendarByService.php:338
+msgid "Calendar Time Zone:"
+msgstr "Takvim Saat Dilimi:"
+
+#: bookingCalendar.php:458 bookingCalendarByBackend.php:275
+#: bookingCalendarByCustomer.php:271 bookingCalendarByIframe.php:467
+#: bookingCalendarByService.php:455
+msgid " Appointment :"
+msgstr "Randevu:"
+
+#: bookingCalendar.php:500 bookingCalendarByBackend.php:317
+#: bookingCalendarByCustomer.php:313 bookingCalendarByIframe.php:509
+#: bookingCalendarByService.php:497
+msgid "Back Step"
+msgstr "Geri Adım"
+
+#: bookingCalendar.php:501 bookingCalendarByBackend.php:318
+#: bookingCalendarByCustomer.php:314 bookingCalendarByIframe.php:510
+#: bookingCalendarByService.php:498
+msgid "Next Step"
+msgstr "Sonraki Adım"
+
+#: bookingCalendar.php:536 bookingCalendarByBackend.php:350
+#: bookingCalendarByCustomer.php:345 bookingCalendarByIframe.php:717
+#: bookingCalendarByService.php:530
+msgid "Please choose atleast one Service."
+msgstr "Lütfen en az bir Hizmet seçiniz."
+
+#: bookingCalendarByIframe.php:584 bookings-plus.php:568
+#: manageBookings.php:453 manageCustomers.php:594
+msgid "Please choose atleast one Staff Member."
+msgstr "Lütfen en az bir Personel üyesi seçiniz."
+
+#: bookingCalendarByIframe.php:593 bookings-plus.php:577
+#: manageBookings.php:462 manageCustomers.php:603
+msgid "Please choose atleast Booking Date."
+msgstr "Atleast Rezervasyon Tarihi seçiniz."
+
+#: bookingCalendarByIframe.php:598 bookings-plus.php:582
+#: manageBookings.php:467 manageCustomers.php:608
+msgid "Please choose atleast Booking Time."
+msgstr "Atleast Rezervasyon Zaman seçiniz."
+
+#: bookingForm.php:12 leftMenus.php:70
+msgid "Booking Form Setup"
+msgstr "Rezervasyon Formu Kurulumu"
+
+#: bookingForm.php:17
+msgid "Success! The Booking Fields has been updated Successfully."
+msgstr "Başarı!Rezervasyon Alanlar Başarıyla güncellendi."
+
+#: bookingForm.php:24
+msgid "Booking Form Fields"
+msgstr "Rezervasyon Form Alanları"
+
+#: bookingForm.php:42
+msgid "Field Name"
+msgstr "Alan Adı"
+
+#: bookingForm.php:43
+msgid "Visibility"
+msgstr "görünürlük"
+
+#: bookingForm.php:44
+msgid "Validation"
+msgstr "onaylama"
+
+#: bookingForm.php:90 bookingForm.php:111
+msgid "Visible"
+msgstr "görünür"
+
+#: bookingForm.php:93 bookingForm.php:114
+msgid "Invisible"
+msgstr "görünmez"
+
+#: bookingForm.php:98 bookingForm.php:119
+msgid "Required"
+msgstr "gereken"
+
+#: bookingForm.php:101 bookingForm.php:122
+msgid "Not Required"
+msgstr "Gerekli Değil"
+
+#: bookingForm.php:139 leftMenus.php:162 leftMenus.php:258 leftMenus.php:386
+#: leftMenus.php:561 leftMenus.php:710 leftMenus.php:762
+#: manageCustomers.php:109 manageEmployees.php:117 manageEmployees.php:186
+#: manageEmployees.php:258 manageServices.php:155
+msgid "Processing Data..."
+msgstr "Veri İşleme ..."
+
+#: bookingForm.php:139 leftMenus.php:162 leftMenus.php:258 leftMenus.php:386
+#: leftMenus.php:561 leftMenus.php:710 leftMenus.php:724 leftMenus.php:762
+#: manageCustomers.php:109 manageEmployees.php:117 manageEmployees.php:186
+#: manageEmployees.php:258 manageSettings.php:486
+msgid "Submit & Save Changes"
+msgstr "Değişiklikleri Gönder ve Kaydet"
+
+#: bookingForm.php:149
+msgid "Booking Form Short Codes For Front End"
+msgstr "Ön Uç İçin Form Kısa Kodları Rezervasyon"
+
+#: bookingForm.php:163
+msgid "Calendar Embed :"
+msgstr "Takvim Embed:"
+
+#: bookingForm.php:169 bookingForm.php:177 bookingForm.php:189
+#: bookingForm.php:201
+msgid "Copy to Clipboard"
+msgstr "Panoya kopyala"
+
+#: bookingForm.php:173
+msgid "Booking Link Code (Single Services) :"
+msgstr "Rezervasyon Link Kod (Tek Hizmetleri):"
+
+#: bookingForm.php:184
+msgid "Booking Link Code (All Services) :"
+msgstr "Rezervasyon Link Kod (Tüm Hizmetler):"
+
+#: bookingForm.php:193
+msgid "Image Link Code :"
+msgstr "Resim Link Kod:"
+
+#: bookingForm.php:205
+msgid "Custom Image :"
+msgstr "Özel Fotoğraf:"
+
+#: bookingForm.php:215
+msgid "Upload Custom Image :"
+msgstr "Özel Resim Yükle:"
+
+#: bookingForm.php:224 manageCustomers.php:208 manageSettings.php:318
+#: manageSettings.php:537 manageSettings.php:585 manageSettings.php:636
+msgid "Save Changes"
+msgstr "Değişiklikleri Kaydet"
+
+#: bookingForm.php:236
+msgid "Booking Form Header"
+msgstr "Rezervasyon Üstbilgisi"
+
+#: bookingForm.php:256
+msgid "Booking Form Footer"
+msgstr "Rezervasyon Formu Altbilgi"
+
+#: bookingForm.php:276
+msgid "Booking Form Thank you Message"
+msgstr "Rezervasyon Formu Mesaj ederiz"
+
+#: bookingForm.php:321 bookingForm.php:334 bookingForm.php:347
+msgid "Thank you for copying the Short Code."
+msgstr "Rezervasyon için teşekkür ederiz."
+
+#: bookingForm.php:434
+msgid "Please choose the Image to be uploaded."
+msgstr "Yüklenecek Görüntü seçiniz."
+
+#: functions.php:75 leftMenus.php:183
+msgid "Service Name :"
+msgstr "Hizmet Adı:"
+
+#: functions.php:81
+msgid "Cost :"
+msgstr "Maliyet:"
+
+#: functions.php:87 leftMenus.php:197
+msgid "Service Type :"
+msgstr "Hizmet Türü:"
+
+#: functions.php:96 functions.php:107 leftMenus.php:203
+msgid "Single Booking"
+msgstr "Tek Rezervasyon"
+
+#: functions.php:99 functions.php:110 leftMenus.php:206
+msgid "Group Bookings"
+msgstr "Grup Rezervasyonları"
+
+#: functions.php:118 leftMenus.php:212
+msgid "Max Bookings<br/>(Each Slot) :"
+msgstr "Max Rezervasyonları (Her Slot) <br/>:"
+
+#: functions.php:470
+msgid "Staff Member Code :"
+msgstr "Personel Üye Kodu:"
+
+#: functions.php:475 leftMenus.php:124
+msgid "Staff Member Color :"
+msgstr "Personel üyesi Renk:"
+
+#: functions.php:484 leftMenus.php:136
+msgid "Staff Member Name :"
+msgstr "Personel Üye Adı:"
+
+#: functions.php:489 leftMenus.php:144
+msgid "Staff Member Email :"
+msgstr "Çalışanlar Üyesi E-posta:"
+
+#: functions.php:494 leftMenus.php:152
+msgid "Staff Member Phone :"
+msgstr "Çalışanlar Üyesi Telefon:"
+
+#: functions.php:1092 leftMenus.php:586
+msgid "First Name :"
+msgstr "İlk Adı:"
+
+#: functions.php:1096 leftMenus.php:594
+msgid "Last Name :"
+msgstr "Soyad:"
+
+#: functions.php:1100 leftMenus.php:603
+msgid "Email :"
+msgstr "e-posta:"
+
+#: functions.php:1104 leftMenus.php:612
+msgid "Telephone :"
+msgstr "Telefon:"
+
+#: functions.php:1108 leftMenus.php:620
+msgid "Mobile :"
+msgstr "Mobil:"
+
+#: functions.php:1112 leftMenus.php:628
+msgid "Address 1 :"
+msgstr "Adres 1:"
+
+#: functions.php:1120 leftMenus.php:640
+msgid "Address 2 :"
+msgstr "Adres 2:"
+
+#: functions.php:1124 leftMenus.php:648
+msgid "City :"
+msgstr "Şehir:"
+
+#: functions.php:1128 leftMenus.php:656
+msgid "Post Code :"
+msgstr "Kod Ver:"
+
+#: functions.php:1132 leftMenus.php:664
+msgid "Country :"
+msgstr "Ülke:"
+
+#: functions.php:1165 leftMenus.php:698
+msgid "Comments :"
+msgstr "Yorumlar:"
+
+#: functions.php:1429
+msgid "Upcoming Day Off's"
+msgstr "Yaklaşan Gününüzde en"
+
+#: functions.php:1436 functions.php:1505 manageBookings.php:38
+#: manageCustomers.php:125
+msgid "Employee"
+msgstr "işçi"
+
+#: functions.php:1437 functions.php:1506 manageCustomers.php:126
+msgid "Date"
+msgstr "tarih"
+
+#: functions.php:1486
+msgid "Delete Day Off?"
+msgstr "Gününüzde silinsin mi?"
+
+#: functions.php:1498
+msgid "Upcoming Time Off's"
+msgstr "Yaklaşan Off Time adlı"
+
+#: functions.php:1507 manageBookings.php:40 manageCustomers.php:127
+msgid "Time Slot"
+msgstr "Zaman Yuvası"
+
+#: functions.php:1584
+msgid "Delete Time Off?"
+msgstr "Zaman Kapalı Sil?"
+
+#: functions.php:1679
+msgid "Client Name :"
+msgstr "Müşteri Adı:"
+
+#: functions.php:1686
+msgid "Client Mobile :"
+msgstr "Müşteri Mobil:"
+
+#: functions.php:1693 manageBookings.php:193
+msgid "Employee :"
+msgstr "Çalışan:"
+
+#: functions.php:1706
+msgid "Please Choose Employee"
+msgstr "Çalışan Seçiniz"
+
+#: functions.php:1720
+msgid "Service Booked :"
+msgstr "Hizmet rezervasyon:"
+
+#: functions.php:1729
+msgid "Booking Date :"
+msgstr "Tarihi Rezervasyon:"
+
+#: functions.php:1854 manageEmployees.php:245
+msgid "Time Slot :"
+msgstr "Zaman Yuvası:"
+
+#: functions.php:1858 functions.php:2734 manageEmployees.php:250
+msgid "Please Choose Time"
+msgstr "Zaman Seçiniz"
+
+#: functions.php:1868 manageBookings.php:220
+msgid "Booking Status :"
+msgstr "Durum Rezervasyon:"
+
+#: functions.php:2880
+msgid "Please Choose Service"
+msgstr "Hizmet Seçiniz"
+
+#: functions.php:2980
+msgid "Employee Name"
+msgstr "Çalışan Adı"
+
+#: functions.php:2981
+msgid "Employee Email"
+msgstr "Çalışan e-Posta"
+
+#: functions.php:2982
+msgid "Employee Phone"
+msgstr "Çalışan Telefon"
+
+#: functions.php:3240
+msgid " Slots Left"
+msgstr "yuvaları Left"
+
+#: functions.php:3248
+msgid "All Slots has been Booked."
+msgstr "All Slots rezervasyonu olmuştur"
+
+#: functions.php:3254
+msgid "Day Off of the Employee. Kindly choose another Date."
+msgstr "Çalışan Gününüzde. Lütfen başka bir tarihi seçin."
+
+#: leftMenus.php:28
+msgid "Live Help"
+msgstr "yaşamak"
+
+#: leftMenus.php:36
+msgid "Dashboard"
+msgstr "gösterge paneli"
+
+#: leftMenus.php:42 manageBookings.php:11
+msgid "Bookings"
+msgstr "Rezervasyonları"
+
+#: leftMenus.php:49
+msgid "Staff"
+msgstr "personel"
+
+#: leftMenus.php:56 manageServices.php:10
+msgid "Services"
+msgstr "Hizmetler"
+
+#: leftMenus.php:63
+msgid "Clients"
+msgstr "Müşteriler"
+
+#: leftMenus.php:76
+msgid "Control Panel"
+msgstr "Kontrol Paneli"
+
+#: leftMenus.php:82 manageReportBug.php:11
+msgid "Report a Bug"
+msgstr "Bir Hata Raporu"
+
+#: leftMenus.php:88 manageAffiliates.php:10
+msgid "Become an Affiliate"
+msgstr "Üye olmak"
+
+#: leftMenus.php:99 manageEmployees.php:24
+msgid "Add New Staff Member"
+msgstr "Yeni Personel Üye ekle"
+
+#: leftMenus.php:104
+msgid "Success! The Staff Member has been saved Successfully."
+msgstr "Başarı!Personel üyesi Başarıyla kaydedildi."
+
+#: leftMenus.php:107
+msgid ""
+"Error! This Email already exists in our Database. Please try with new one."
+msgstr "Hata! Bu e-posta Tabanımızdaki zaten var. Yenisi ile deneyin."
+
+#: leftMenus.php:110 leftMenus.php:177
+msgid ""
+"Note: You will need to Assign your Employees to the respective Services in "
+"order to allow Bookings for your Clients."
+msgstr ""
+"Not: Sizin Müşteriler için Rezervasyonları sağlamak amacıyla ilgili "
+"Hizmetler için Çalışan atama gerekir."
+
+#: leftMenus.php:116
+msgid "Staff Code :"
+msgstr "Personel Kodu:"
+
+#: leftMenus.php:169 manageServices.php:24
+msgid "Add New Service"
+msgstr "Yeni Servis Ekle"
+
+#: leftMenus.php:174
+msgid "Success! The Service has been saved Successfully."
+msgstr "Başarı!Hizmet Başarıyla kaydedildi."
+
+#: leftMenus.php:188
+msgid "Service Cost ("
+msgstr "Hizmet Maliyeti ("
+
+#: leftMenus.php:219
+msgid "Service Time :"
+msgstr "Hizmet Süresi:"
+
+#: leftMenus.php:266
+msgid "Assign Services to Staff"
+msgstr "Çalışanlar için hizmetler atama"
+
+#: leftMenus.php:271
+msgid "Success! The Service has been Assigned Successfully."
+msgstr "Başarı!Hizmet başarıyla Atanan edilmiştir."
+
+#: leftMenus.php:274
+msgid "Error! Please Choose a Staff Member to Assign Services."
+msgstr "Hata! Hizmetler Ata bir Personel üyesi Seçiniz."
+
+#: leftMenus.php:277
+msgid ""
+"Note: Please choose Staff Member and then tick the appropriate checkbox next "
+"to each service you wish to Assign."
+msgstr ""
+"Not: Öğretim Üyesi Lütfen seçin ve ardından Ata istediğiniz her hizmetin "
+"yanındaki uygun onay kutusunu işaretleyin."
+
+#: leftMenus.php:283 leftMenus.php:406 manageEmployees.php:136
+#: manageEmployees.php:209
+msgid "Staff Member :"
+msgstr "Personel Üye:"
+
+#: leftMenus.php:296 leftMenus.php:420 manageEmployees.php:150
+#: manageEmployees.php:223
+msgid "Please Choose Staff Member"
+msgstr "Personel üyesi Seçiniz"
+
+#: leftMenus.php:316 manageServices.php:47
+msgid "Service Name"
+msgstr "Hizmet Adı"
+
+#: leftMenus.php:317 manageServices.php:50
+msgid "Service Time"
+msgstr "Hizmet Süresi"
+
+#: leftMenus.php:319 manageServices.php:52
+msgid "Type"
+msgstr "tip"
+
+#: leftMenus.php:393 manageEmployees.php:34
+msgid "Working Hours"
+msgstr "mesai saatleri"
+
+#: leftMenus.php:398
+msgid "Success! The Working Hours has been updated Successfully."
+msgstr "Başarı!Çalışma Saatleri Başarıyla güncellendi."
+
+#: leftMenus.php:401
+msgid "Error! Please Choose a Staff Member to save Working Hours."
+msgstr "Hata! Çalışma Saatleri kaydetmek için bir Personel üyesi Seçiniz."
+
+#: leftMenus.php:438
+msgid "Monday"
+msgstr "Pazartesi"
+
+#: leftMenus.php:439
+msgid "Tuesday"
+msgstr "Salı"
+
+#: leftMenus.php:440
+msgid "Wednesday"
+msgstr "Çarşamba"
+
+#: leftMenus.php:441
+msgid "Thursday"
+msgstr "Perşembe"
+
+#: leftMenus.php:442
+msgid "Friday"
+msgstr "Cuma"
+
+#: leftMenus.php:443
+msgid "Saturday"
+msgstr "Cumartesi"
+
+#: leftMenus.php:444
+msgid "Sunday"
+msgstr "Pazar"
+
+#: leftMenus.php:449
+msgid "Open / Closed"
+msgstr "Kapalı / Açık"
+
+#: leftMenus.php:452 leftMenus.php:460 leftMenus.php:468 leftMenus.php:476
+#: leftMenus.php:484 leftMenus.php:492 leftMenus.php:500
+msgid "Open"
+msgstr "açık"
+
+#: leftMenus.php:455 leftMenus.php:463 leftMenus.php:471 leftMenus.php:479
+#: leftMenus.php:487 leftMenus.php:495 leftMenus.php:503
+msgid "Closed"
+msgstr "kapalı"
+
+#: leftMenus.php:508
+msgid "Start Hours"
+msgstr "Saat başlayın"
+
+#: leftMenus.php:532
+msgid "End Hours"
+msgstr "Bitiş Saatleri"
+
+#: leftMenus.php:568
+msgid "Add New Client"
+msgstr "Yeni Müşteri Ekle"
+
+#: leftMenus.php:572
+msgid "Success! The Client has been saved Successfully."
+msgstr "Başarı!Müşteri Başarıyla kaydedildi."
+
+#: leftMenus.php:576
+msgid ""
+"Error! This Email Address already exists in our Database. Please try with "
+"new one."
+msgstr "Hata! Bu E-posta Adresi Tabanımızdaki zaten var. Yenisi ile deneyin."
+
+#: leftMenus.php:718
+msgid "Success! The Booking has been updated Successfully."
+msgstr "Başarı!Rezervasyon Başarıyla güncellendi .."
+
+#: leftMenus.php:731
+msgid "Admin Notification Settings"
+msgstr "Paypal Yönetici Bildirim E-posta Şablonu [Yönetici Gönderilen]"
+
+#: leftMenus.php:737
+msgid "Success! Admin Notifications Saved"
+msgstr "Başarı! Yönetici Bildirimler Kaydedildi"
+
+#: leftMenus.php:740
+msgid ""
+"Note: To receive notifications of your client bookings, kindly fill in the "
+"email address."
+msgstr ""
+"Not: Müşteriniz rezervasyonların bildirimlerini almak için, lütfen e-posta "
+"adresinizi girin."
+
+#: leftMenus.php:741
+msgid "Note: Without Email Address, the system won't work as expected."
+msgstr "Not: E-posta Adresi olmadan sistem beklendiği gibi çalışmaz."
+
+#: leftMenus.php:745
+msgid "Email Address :"
+msgstr "posta Adresi"
+
+#: leftMenus.php:755
+msgid "Yes, I may consider buying Full Version at later stage."
+msgstr "Evet, daha sonraki aşamada Tam Sürüm satın düşünebilirsiniz."
+
+#: leftMenus.php:1165 manageServices.php:305
+msgid "Please Insert Correct Max Bookings Value"
+msgstr "Atleast Rezervasyon Tarihi seçiniz."
+
+#: manageAffiliates.php:15 manageReportBug.php:16
+msgid "Success! The Email has been sent Successfully."
+msgstr "Başarı!E-posta başarıyla gönderildi."
+
+#: manageAffiliates.php:22
+msgid ""
+"Are you interested becoming an Affiliate of our Product? Shoot us an email "
+"by filling the form below, and we will setup a discussion call."
+msgstr ""
+"Bizim Ürün bir Ortaklık haline ilgileniyor musunuz? Aşağıdaki formu "
+"doldurarak bize bir e-posta ateş ve biz bir tartışma çağrısı kuracağız."
+
+#: manageAffiliates.php:26
+#, php-format
+msgid ""
+"Refer/Sell it to your contacts, and if they purchase from us, we will give "
+"you 40% of our Profits straight away.\t"
+msgstr ""
+
+#: manageAffiliates.php:34 manageReportBug.php:28
+msgid "Your Email Address :"
+msgstr "E-Posta Adresiniz:"
+
+#: manageAffiliates.php:42 manageReportBug.php:36
+msgid "Subject :"
+msgstr "Konu:"
+
+#: manageAffiliates.php:50
+msgid "Message :"
+msgstr "Mesaj:"
+
+#: manageAffiliates.php:66 manageCustomers.php:173 manageReportBug.php:60
+msgid "Send Email"
+msgstr "sonunda e-posta"
+
+#: manageBookings.php:20
+msgid "Calendar Agenda"
+msgstr "Takvim Gündem"
+
+#: manageBookings.php:35
+msgid "Client Name"
+msgstr "Müşteri Adı"
+
+#: manageBookings.php:36 manageCustomers.php:51
+msgid "Mobile"
+msgstr "seyyar"
+
+#: manageBookings.php:37 manageCustomers.php:124
+msgid "Service"
+msgstr "hizmet"
+
+#: manageBookings.php:39
+msgid "Booking Date"
+msgstr "Tarih rezervasyon"
+
+#: manageBookings.php:41 manageCustomers.php:128
+msgid "Status"
+msgstr "durum"
+
+#: manageBookings.php:68
+msgid "Booking Status : Approved"
+msgstr "Rezervasyon Durumu: Onaylandı"
+
+#: manageBookings.php:74
+msgid "Booking Status : Disapproved"
+msgstr "Rezervasyon Durum: Onaylanmadı"
+
+#: manageBookings.php:80
+msgid "Booking Status : Pending Approval"
+msgstr "Rezervasyon Durum: Beklemede Onay"
+
+#: manageBookings.php:86
+msgid "Booking Status : Cancelled"
+msgstr "Rezervasyon Durum: İptal Edildi"
+
+#: manageBookings.php:155
+msgid "Edit Booking?"
+msgstr "Rezervasyon Düzenle?"
+
+#: manageBookings.php:156
+msgid "Cancel Booking?"
+msgstr "Rezervasyon iptal edilsin mi?"
+
+#: manageBookings.php:161
+msgid "Send "
+msgstr "göndermek"
+
+#: manageBookings.php:161
+msgid "Email Again?"
+msgstr "Yine e-posta?"
+
+#: manageBookings.php:165
+msgid "Delete Booking?"
+msgstr "Rezervasyon Sil?"
+
+#: manageBookings.php:181
+msgid "Advanced Booking Calendar Filter"
+msgstr "Gelişmiş Rezervasyon Takvim Filtreli"
+
+#: manageBookings.php:207
+msgid "All Employees"
+msgstr "Tüm Çalışanlar"
+
+#: manageBookings.php:227
+msgid "Pending Approval"
+msgstr "Rezervasyon Durum: Beklemede Onay"
+
+#: manageBookings.php:232
+msgid "Approved"
+msgstr "onaylı"
+
+#: manageBookings.php:237
+msgid "Disapproved"
+msgstr "özürlü"
+
+#: manageBookings.php:242
+msgid "Cancelled"
+msgstr "İptal"
+
+#: manageBookings.php:251
+msgid "Day Off / Time Off :"
+msgstr "Gün Saat Açık / Kapalı:"
+
+#: manageBookings.php:258
+msgid "Day Off"
+msgstr "Gün Offs"
+
+#: manageBookings.php:263
+msgid "Time Off"
+msgstr "Zaman Offs"
+
+#: manageBookings.php:271
+msgid "Book a Service :"
+msgstr "Bir Hizmet rezervasyonları"
+
+#: manageBookings.php:288
+msgid "Booking Calendar"
+msgstr "Rezervasyon Takvimi"
+
+#: manageBookings.php:601
+msgid "Email has been Sent Successfully."
+msgstr "Başarı! E-posta başarıyla gönderildi."
+
+#: manageCustomers.php:12
+msgid "Customers"
+msgstr "Müşteriler"
+
+#: manageCustomers.php:31
+msgid "Add New Customer"
+msgstr "Yeni Müşteri Ekle"
+
+#: manageCustomers.php:42
+msgid ""
+"Note: Click on the Right Corner of the Settings icon to perform various "
+"actions viz. Add New Customer, Export Customers."
+msgstr ""
+"Not: çeşitli eylemleri yani gerçekleştirmek için Settings simgesinin Sağ "
+"Köşe tıklayın. Yeni Müşteri, İhracat Müşteriler ekleyin."
+
+#: manageCustomers.php:48
+msgid "First Name"
+msgstr "ad"
+
+#: manageCustomers.php:49
+msgid "Last Name"
+msgstr "soyadı"
+
+#: manageCustomers.php:50
+msgid "Email Address"
+msgstr "posta Adresi"
+
+#: manageCustomers.php:52
+msgid "City"
+msgstr "şehir"
+
+#: manageCustomers.php:53
+msgid "Country"
+msgstr "ülke"
+
+#: manageCustomers.php:78
+msgid "Edit Client?"
+msgstr "Müşteri düzenle?"
+
+#: manageCustomers.php:79
+msgid "Email Client?"
+msgstr "Müşteri e-posta?"
+
+#: manageCustomers.php:80
+msgid "Booking Details"
+msgstr "Rezervasyon Detayları"
+
+#: manageCustomers.php:81
+msgid "Book a Service"
+msgstr "Bir Hizmet rezervasyonları"
+
+#: manageCustomers.php:82
+msgid "Delete Client"
+msgstr "Müşteri Sil"
+
+#: manageCustomers.php:96
+msgid "Edit Customer "
+msgstr "dit Müşteri"
+
+#: manageCustomers.php:100
+msgid "Success! The Customer has been Updated Successfully."
+msgstr "Başarı!Müşteri Başarıyla Güncellendi edilmiştir."
+
+#: manageCustomers.php:115
+msgid "Customer Bookings"
+msgstr "Müşteri Rezervasyonları"
+
+#: manageCustomers.php:129
+msgid "Date of Booking"
+msgstr "Rezervasyon tarihi"
+
+#: manageCustomers.php:144
+msgid "Email to Customer"
+msgstr "Müşteriye e-posta"
+
+#: manageCustomers.php:150
+msgid "Success! Email has been sent Successfully."
+msgstr "Başarı! E-posta başarıyla gönderildi."
+
+#: manageCustomers.php:156 manageSettings.php:470 manageSettings.php:521
+#: manageSettings.php:569 manageSettings.php:620
+msgid "Email Subject :"
+msgstr "E-posta Konu:"
+
+#: manageCustomers.php:184
+msgid "Customer Comments"
+msgstr "Müşteri Yorumları"
+
+#: manageCustomers.php:190
+msgid "Success! The Comments has been saved Successfully."
+msgstr "Başarı!Yorumlar Başarıyla kaydedildi."
+
+#: manageCustomers.php:197
+msgid "Comments:"
+msgstr "Yorumlar:"
+
+#: manageCustomers.php:374
+msgid "You cannot delete this Customer until all Bookings have been deleted."
+msgstr "Tüm Rezervasyonları silinene kadar bu Müşteri silemezsiniz."
+
+#: manageEmployees.php:10
+msgid "Staff Members"
+msgstr "Personel Üyeler"
+
+#: manageEmployees.php:31
+msgid "Assign Services"
+msgstr "Hizmetler atama"
+
+#: manageEmployees.php:37
+msgid "Day Offs"
+msgstr "Gün Offs"
+
+#: manageEmployees.php:40
+msgid "Time Offs"
+msgstr "Zaman Offs"
+
+#: manageEmployees.php:47
+msgid ""
+"Note: Click on the Right Corner of the Settings icon to perform various "
+"actions viz. Add New Employees, Allocate Services etc."
+msgstr ""
+"Not: çeşitli eylemleri yani gerçekleştirmek için Settings simgesinin Sağ "
+"Köşe tıklayın. Yeni Çalışan Ekle, vb Hizmetler ayrılamadı"
+
+#: manageEmployees.php:56
+msgid "Color Code"
+msgstr "Renk Kodu"
+
+#: manageEmployees.php:57
+msgid "Staff Code"
+msgstr "Personel Kanunu"
+
+#: manageEmployees.php:58
+msgid "Staff Name"
+msgstr "Personel Adı"
+
+#: manageEmployees.php:59
+msgid "Staff Email"
+msgstr "Personel e-Posta"
+
+#: manageEmployees.php:60
+msgid "Staff Phone"
+msgstr "Personel Telefon"
+
+#: manageEmployees.php:87
+msgid "Edit Employee?"
+msgstr "Çalışan Düzenle?"
+
+#: manageEmployees.php:88
+msgid "Show Day Off's & Time Off's"
+msgstr "Göster Gününüzde kullanıcısının & Off Time adlı"
+
+#: manageEmployees.php:89
+msgid "Delete Employee?"
+msgstr "Çalışan silinsin mi?"
+
+#: manageEmployees.php:103
+msgid "Update Existing Staff Member"
+msgstr "Mevcut Personel Üye güncelleyin"
+
+#: manageEmployees.php:108
+msgid "Success! The Staff Member has been updated Successfully."
+msgstr "Başarı!Personel üyesi başarıyla güncellendi."
+
+#: manageEmployees.php:123
+msgid "Day Off Settings"
+msgstr "Ayarları Kapalı Gün"
+
+#: manageEmployees.php:128
+msgid "Success! The Day Off has been saved Successfully."
+msgstr "Başarı!Gününüzde Başarıyla kaydedildi."
+
+#: manageEmployees.php:131
+msgid "Error! Please choose Staff Member to take Day Off."
+msgstr "Hata! Gününüzde almak Personel üye seçiniz."
+
+#: manageEmployees.php:163
+msgid "Start Date :"
+msgstr "Başlangıç ​​Tarihi:"
+
+#: manageEmployees.php:171
+msgid "End Date :"
+msgstr "Bitiş Tarihi:"
+
+#: manageEmployees.php:192
+msgid "Time Off Settings"
+msgstr "Ayarlar Off Zaman"
+
+#: manageEmployees.php:197
+msgid "Success! The Time Off has been done Successfully."
+msgstr "Başarı!Zaman Kapalı başarıyla yapılmıştır."
+
+#: manageEmployees.php:200
+msgid "Error! Please choose Staff Member to take Time Off."
+msgstr "Hata! Zaman Kapalı almak Personel üye seçiniz."
+
+#: manageEmployees.php:203
+msgid "Error! Please choose Time Slot to take Time Off."
+msgstr "Hata! Zaman Kapalı almaya Zaman Dilimi seçiniz."
+
+#: manageEmployees.php:237
+msgid "Date :"
+msgstr "Tarih:"
+
+#: manageEmployees.php:264
+msgid "Staff Member Day Off's & Time Off's"
+msgstr "Personel üyesi Gününüzde kullanıcısının & Off Time adlı"
+
+#: manageEmployees.php:267
+msgid "Success! The Staff Member Day/Time Off deleted Successfully."
+msgstr "Başarı!Personel üyesi Gündüz / Off Time başarıyla silindi."
+
+#: manageEmployees.php:368
+msgid "You cannot delete this Employee until all Bookings have been deleted."
+msgstr "Tüm Rezervasyonları silinene kadar bu Çalışan silemezsiniz."
+
+#: manageEmployees.php:372
+msgid ""
+"You cannot delete this Employee until all Allocated Services are de-"
+"allocated."
+msgstr ""
+"Tüm Ayrılan Hizmetler DE-tahsis edilinceye kadar bu Çalışan silemezsiniz."
+
+#: manageReportBug.php:44
+msgid "Bug / Issue :"
+msgstr "Bug / Sayı:"
+
+#: manageServices.php:30
+msgid "Allocate Services"
+msgstr "Hizmetler ayrılamadı"
+
+#: manageServices.php:37
+msgid ""
+"Note: Click on the Right Corner of the Settings icon to perform various "
+"actions viz. Add New Services, Allocate Services etc."
+msgstr ""
+"Not: çeşitli eylemleri yani gerçekleştirmek için Settings simgesinin Sağ "
+"Köşe tıklayın. Yeni Hizmetler, Ayırma Hizmetleri vb ekle"
+
+#: manageServices.php:40
+msgid ""
+"To change the order of Services simply drag & drop each service in order to "
+"display in the same way on the Booking Calender to your Customers."
+msgstr ""
+"Hizmetler sırasını değiştirmek için sadece müşteriler için Rezervasyon "
+"Takvim aynı şekilde görüntülemek için her bir hizmet sürükle ve bırak."
+
+#: manageServices.php:48
+msgid "Short Code"
+msgstr "Kısa Kod"
+
+#: manageServices.php:49
+msgid "Allocated Employees"
+msgstr "Ayrılan Çalışan"
+
+#: manageServices.php:113
+msgid " Hrs "
+msgstr "saat"
+
+#: manageServices.php:130
+msgid "Edit Service?"
+msgstr "Hizmet Düzenle?"
+
+#: manageServices.php:130
+msgid "Delete Service?"
+msgstr "Hizmet silinsin mi?"
+
+#: manageServices.php:143
+msgid "Update Existing Service"
+msgstr "Mevcut Güncelleme Servisi"
+
+#: manageServices.php:148
+msgid "Success! The Service has been updated Successfully."
+msgstr "Başarı!Hizmet başarıyla güncellendi."
+
+#: manageServices.php:155
+msgid "Save & Submit Changes"
+msgstr "Kaydet ve Değişiklikleri Gönder"
+
+#: manageServices.php:206
+msgid "This Service cannot be deleted until de-allocated from the Employees."
+msgstr "Personelden de-tahsis kadar bu Hizmet silinemez."
+
+#: manageSettings.php:13
+msgid "Settings"
+msgstr "Ayarlar"
+
+#: manageSettings.php:23
+msgid "General Settings"
+msgstr "Genel Ayarlar"
+
+#: manageSettings.php:35
+msgid "Success! Default Settings has been saved Successfully."
+msgstr "Başarı! Varsayılan Ayarlar başarıyla kaydedildi."
+
+#: manageSettings.php:43
+msgid "Default Settings"
+msgstr "Varsayılan Ayarlar"
+
+#: manageSettings.php:50
+msgid "Default Currency :"
+msgstr "Geçerli Para Birimi:"
+
+#: manageSettings.php:94
+msgid "Default Country :"
+msgstr "Varsayılan Ülke:"
+
+#: manageSettings.php:131
+msgid "Default Date Format :"
+msgstr "Varsayılan Tarih Biçimi:"
+
+#: manageSettings.php:189
+msgid "Default Time Format :"
+msgstr "Varsayılan Saat Biçimi:"
+
+#: manageSettings.php:198 manageSettings.php:205
+msgid "12 Hours"
+msgstr "12 Saat"
+
+#: manageSettings.php:199 manageSettings.php:206
+msgid "24 Hours"
+msgstr "24 Saat"
+
+#: manageSettings.php:217
+msgid "Default Time Zone :"
+msgstr "Varsayılan Saat Dilimi:"
+
+#: manageSettings.php:269
+msgid "Default Booking Slot Size :"
+msgstr "Varsayılan Rezervasyon Yuvası Boyutu:"
+
+#: manageSettings.php:328
+msgid "Email Templates"
+msgstr "e-posta Şablonları"
+
+#: manageSettings.php:344 manageSettings.php:445
+msgid "Booking Pending Confirmation Email Template [Sent to Client]"
+msgstr "Rezervasyon Beklemede Onay E-posta Şablonu [Client Gönderilen]"
+
+#: manageSettings.php:352 manageSettings.php:498
+msgid "Booking Confirmation Email Template [Sent to Client]"
+msgstr "Rezervasyon Onay E-posta Şablonu [Client Gönderilen]"
+
+#: manageSettings.php:360
+msgid "Booking Disapproved Email Template [Sent to Client]"
+msgstr "Rezervasyon Onaylanmamış E-posta Şablonu [Client Gönderilen]"
+
+#: manageSettings.php:368
+msgid "Approve/Decline Booking Email Template [Sent to Admin]"
+msgstr "[Yönetici Gönderilen] E-posta Şablonu Rezervasyon Reddet / Onayla"
+
+#: manageSettings.php:379
+msgid "Social Media Settings"
+msgstr "Sosyal Medya Ayarları"
+
+#: manageSettings.php:402
+msgid "Payment Gateway Settings"
+msgstr "Ödeme Gateway Ayarları"
+
+#: manageSettings.php:421
+msgid "Auto Responder Settings"
+msgstr "Otomatik Yanıtlayıcı Ayarları"
+
+#: manageSettings.php:452 manageSettings.php:504 manageSettings.php:554
+#: manageSettings.php:603
+msgid "Success! The Email has been saved Successfully."
+msgstr "Başarı!E-posta başarıyla kaydedildi."
+
+#: manageSettings.php:549
+msgid "Booking Decline Email Template [Sent to Client]"
+msgstr "Rezervasyon Reddet E-posta Şablonu [Client Gönderilen]"
+
+#: manageSettings.php:597
+msgid "Admin Approve/Disapprove Email Template [Sent to Admin]"
+msgstr "Yönetici Onayla / [Yönetici Gönderilen] E-posta Şablonu Onaylamıyor"

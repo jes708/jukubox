@@ -1,0 +1,1488 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: bookings-plus\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-02-22 19:19+0530\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: Bookings-Plus <info@bookings-plus.com>\n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: F:\\Wordpress\\bookings-plus-restricted-version\\trunk\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: bookingCalendar.php:213 bookingCalendarByBackend.php:29
+#: bookingCalendarByCustomer.php:27 bookingCalendarByIframe.php:221
+#: bookingCalendarByService.php:210
+msgid "Step 1 : Choose Service"
+msgstr "Paso 1: Elija Servicio:"
+
+#: bookingCalendar.php:216 bookingCalendarByBackend.php:32
+#: bookingCalendarByCustomer.php:30 bookingCalendarByIframe.php:224
+#: bookingCalendarByService.php:213
+msgid "Step 2 : Choose Staff"
+msgstr "Paso 2: Elija Staff"
+
+#: bookingCalendar.php:219 bookingCalendarByBackend.php:35
+#: bookingCalendarByCustomer.php:33 bookingCalendarByIframe.php:227
+#: bookingCalendarByService.php:216
+msgid "Step 3 : Date & Time"
+msgstr "Paso 3: Fecha y Hora"
+
+#: bookingCalendar.php:222 bookingCalendarByBackend.php:38
+#: bookingCalendarByCustomer.php:36 bookingCalendarByIframe.php:230
+#: bookingCalendarByService.php:219
+msgid "Step 4 : Your Information"
+msgstr "Paso 4: Su Información"
+
+#: bookingCalendar.php:225 bookingCalendarByBackend.php:41
+#: bookingCalendarByCustomer.php:39 bookingCalendarByIframe.php:233
+#: bookingCalendarByService.php:222
+msgid "Step 5 : Confirm Details"
+msgstr "Paso 5: Detalles Confirmar"
+
+#: bookingCalendar.php:238 bookingCalendarByBackend.php:54
+#: bookingCalendarByCustomer.php:52 bookingCalendarByIframe.php:246
+#: bookingCalendarByService.php:235
+msgid "Book an Appointment Now"
+msgstr "Reserve su cita ahora"
+
+#: bookingCalendar.php:245 bookingCalendarByBackend.php:61
+#: bookingCalendarByCustomer.php:59 bookingCalendarByIframe.php:253
+#: bookingCalendarByService.php:242
+msgid "Thank you for Booking."
+msgstr "Gracias por reserva."
+
+#: bookingCalendar.php:253 bookingCalendarByBackend.php:69
+#: bookingCalendarByCustomer.php:67 bookingCalendarByIframe.php:261
+#: bookingCalendarByService.php:250
+msgid "Choose Service"
+msgstr "Elija Servicio"
+
+#: bookingCalendar.php:254 bookingCalendarByBackend.php:70
+#: bookingCalendarByCustomer.php:68 bookingCalendarByIframe.php:262
+#: bookingCalendarByService.php:251
+msgid "Service Duration"
+msgstr "Duración de servicio"
+
+#: bookingCalendar.php:255 bookingCalendarByBackend.php:71
+#: bookingCalendarByCustomer.php:69 bookingCalendarByIframe.php:263
+#: bookingCalendarByService.php:252 leftMenus.php:318 manageServices.php:51
+msgid "Cost"
+msgstr "costo"
+
+#: bookingCalendar.php:257 bookingCalendarByBackend.php:73
+#: bookingCalendarByCustomer.php:71 bookingCalendarByIframe.php:265
+#: bookingCalendarByService.php:254 manageServices.php:46
+msgid "Service Display Order"
+msgstr "Servicio orden de presentación"
+
+#: bookingCalendar.php:289 bookingCalendar.php:301
+#: bookingCalendarByBackend.php:105 bookingCalendarByBackend.php:117
+#: bookingCalendarByCustomer.php:103 bookingCalendarByCustomer.php:115
+#: bookingCalendarByIframe.php:297 bookingCalendarByIframe.php:309
+#: bookingCalendarByService.php:286 bookingCalendarByService.php:298
+#: leftMenus.php:349 leftMenus.php:361 manageServices.php:103
+#: manageServices.php:115
+msgid " Mins"
+msgstr "minutos"
+
+#: bookingCalendar.php:294 bookingCalendarByBackend.php:110
+#: bookingCalendarByCustomer.php:108 bookingCalendarByIframe.php:302
+#: bookingCalendarByService.php:291 leftMenus.php:354 manageServices.php:108
+msgid " Hrs"
+msgstr "Hrs"
+
+#: bookingCalendar.php:299 bookingCalendarByBackend.php:115
+#: bookingCalendarByCustomer.php:113 bookingCalendarByIframe.php:307
+#: bookingCalendarByService.php:296 leftMenus.php:359
+msgid " Hr "
+msgstr "Hr"
+
+#: bookingCalendar.php:341 bookingCalendarByBackend.php:157
+#: bookingCalendarByCustomer.php:155 bookingCalendarByIframe.php:349
+#: bookingCalendarByService.php:338
+msgid "Calendar Time Zone:"
+msgstr "Calendario Zona Horaria:"
+
+#: bookingCalendar.php:458 bookingCalendarByBackend.php:275
+#: bookingCalendarByCustomer.php:271 bookingCalendarByIframe.php:467
+#: bookingCalendarByService.php:455
+msgid " Appointment :"
+msgstr "cita:"
+
+#: bookingCalendar.php:500 bookingCalendarByBackend.php:317
+#: bookingCalendarByCustomer.php:313 bookingCalendarByIframe.php:509
+#: bookingCalendarByService.php:497
+msgid "Back Step"
+msgstr "Paso atrás"
+
+#: bookingCalendar.php:501 bookingCalendarByBackend.php:318
+#: bookingCalendarByCustomer.php:314 bookingCalendarByIframe.php:510
+#: bookingCalendarByService.php:498
+msgid "Next Step"
+msgstr "Siguiente Paso"
+
+#: bookingCalendar.php:536 bookingCalendarByBackend.php:350
+#: bookingCalendarByCustomer.php:345 bookingCalendarByIframe.php:717
+#: bookingCalendarByService.php:530
+msgid "Please choose atleast one Service."
+msgstr "Por favor, elija Atleast un servicio."
+
+#: bookingCalendarByIframe.php:584 bookings-plus.php:568
+#: manageBookings.php:453 manageCustomers.php:594
+msgid "Please choose atleast one Staff Member."
+msgstr "Por favor, elija Atleast un miembro del personal."
+
+#: bookingCalendarByIframe.php:593 bookings-plus.php:577
+#: manageBookings.php:462 manageCustomers.php:603
+msgid "Please choose atleast Booking Date."
+msgstr "Por favor, elija Fecha de Reserva Atleast."
+
+#: bookingCalendarByIframe.php:598 bookings-plus.php:582
+#: manageBookings.php:467 manageCustomers.php:608
+msgid "Please choose atleast Booking Time."
+msgstr "Por favor, elija Time Booking Atleast."
+
+#: bookingForm.php:12 leftMenus.php:70
+msgid "Booking Form Setup"
+msgstr "Reservas Formulario de configuración"
+
+#: bookingForm.php:17
+msgid "Success! The Booking Fields has been updated Successfully."
+msgstr "Éxito! Los Campos de reserva se ha actualizado con éxito."
+
+#: bookingForm.php:24
+msgid "Booking Form Fields"
+msgstr "Reservas campos de formulario"
+
+#: bookingForm.php:42
+msgid "Field Name"
+msgstr "Nombre del campo"
+
+#: bookingForm.php:43
+msgid "Visibility"
+msgstr "visibilidad"
+
+#: bookingForm.php:44
+msgid "Validation"
+msgstr "validación"
+
+#: bookingForm.php:90 bookingForm.php:111
+msgid "Visible"
+msgstr "visible"
+
+#: bookingForm.php:93 bookingForm.php:114
+msgid "Invisible"
+msgstr "invisible"
+
+#: bookingForm.php:98 bookingForm.php:119
+msgid "Required"
+msgstr "necesario"
+
+#: bookingForm.php:101 bookingForm.php:122
+msgid "Not Required"
+msgstr "No se requiere"
+
+#: bookingForm.php:139 leftMenus.php:162 leftMenus.php:258 leftMenus.php:386
+#: leftMenus.php:561 leftMenus.php:710 leftMenus.php:762
+#: manageCustomers.php:109 manageEmployees.php:117 manageEmployees.php:186
+#: manageEmployees.php:258 manageServices.php:155
+msgid "Processing Data..."
+msgstr "El procesamiento de datos ..."
+
+#: bookingForm.php:139 leftMenus.php:162 leftMenus.php:258 leftMenus.php:386
+#: leftMenus.php:561 leftMenus.php:710 leftMenus.php:724 leftMenus.php:762
+#: manageCustomers.php:109 manageEmployees.php:117 manageEmployees.php:186
+#: manageEmployees.php:258 manageSettings.php:486
+msgid "Submit & Save Changes"
+msgstr "Enviar y Guardar cambios"
+
+#: bookingForm.php:149
+msgid "Booking Form Short Codes For Front End"
+msgstr "Reserva Códigos forma abreviada de Front End"
+
+#: bookingForm.php:163
+msgid "Calendar Embed :"
+msgstr "Calendario Embed:"
+
+#: bookingForm.php:169 bookingForm.php:177 bookingForm.php:189
+#: bookingForm.php:201
+msgid "Copy to Clipboard"
+msgstr "Copiar al portapapeles"
+
+#: bookingForm.php:173
+msgid "Booking Link Code (Single Services) :"
+msgstr "Código de Reserva Link (Servicios individuales):"
+
+#: bookingForm.php:184
+msgid "Booking Link Code (All Services) :"
+msgstr "Código de Reserva Link (Todos los servicios):"
+
+#: bookingForm.php:193
+msgid "Image Link Code :"
+msgstr "Imagen Código Enlace:"
+
+#: bookingForm.php:205
+msgid "Custom Image :"
+msgstr "Imagen personalizada:"
+
+#: bookingForm.php:215
+msgid "Upload Custom Image :"
+msgstr "Subir imagen personalizada:"
+
+#: bookingForm.php:224 manageCustomers.php:208 manageSettings.php:318
+#: manageSettings.php:537 manageSettings.php:585 manageSettings.php:636
+msgid "Save Changes"
+msgstr "Guardar cambios"
+
+#: bookingForm.php:236
+msgid "Booking Form Header"
+msgstr "Encabezado del formulario de reserva"
+
+#: bookingForm.php:256
+msgid "Booking Form Footer"
+msgstr "Reservas pie de formulario"
+
+#: bookingForm.php:276
+msgid "Booking Form Thank you Message"
+msgstr "Formulario de reserva mensaje de agradecimiento"
+
+#: bookingForm.php:321 bookingForm.php:334 bookingForm.php:347
+msgid "Thank you for copying the Short Code."
+msgstr "Gracias por reserva."
+
+#: bookingForm.php:434
+msgid "Please choose the Image to be uploaded."
+msgstr "Por favor, elija la imagen que desea cargar."
+
+#: functions.php:75 leftMenus.php:183
+msgid "Service Name :"
+msgstr "Nombre del Servicio:"
+
+#: functions.php:81
+msgid "Cost :"
+msgstr "Costo:"
+
+#: functions.php:87 leftMenus.php:197
+msgid "Service Type :"
+msgstr "Tipo de servicio:"
+
+#: functions.php:96 functions.php:107 leftMenus.php:203
+msgid "Single Booking"
+msgstr "Reserva individual"
+
+#: functions.php:99 functions.php:110 leftMenus.php:206
+msgid "Group Bookings"
+msgstr "reservas para grupos"
+
+#: functions.php:118 leftMenus.php:212
+msgid "Max Bookings<br/>(Each Slot) :"
+msgstr "Reservas Max <br/> (cada ranura):"
+
+#: functions.php:470
+msgid "Staff Member Code :"
+msgstr "Personal Código del miembro:"
+
+#: functions.php:475 leftMenus.php:124
+msgid "Staff Member Color :"
+msgstr "Personal Color de usuario:"
+
+#: functions.php:484 leftMenus.php:136
+msgid "Staff Member Name :"
+msgstr "Personal Nombre de usuario:"
+
+#: functions.php:489 leftMenus.php:144
+msgid "Staff Member Email :"
+msgstr "Personal de un miembro Correo electrónico:"
+
+#: functions.php:494 leftMenus.php:152
+msgid "Staff Member Phone :"
+msgstr "Staff Member Teléfono:"
+
+#: functions.php:1092 leftMenus.php:586
+msgid "First Name :"
+msgstr "Nombre:"
+
+#: functions.php:1096 leftMenus.php:594
+msgid "Last Name :"
+msgstr "Apellido:"
+
+#: functions.php:1100 leftMenus.php:603
+msgid "Email :"
+msgstr "Email:"
+
+#: functions.php:1104 leftMenus.php:612
+msgid "Telephone :"
+msgstr "Teléfono:"
+
+#: functions.php:1108 leftMenus.php:620
+msgid "Mobile :"
+msgstr "móvil:"
+
+#: functions.php:1112 leftMenus.php:628
+msgid "Address 1 :"
+msgstr "Dirección 1:"
+
+#: functions.php:1120 leftMenus.php:640
+msgid "Address 2 :"
+msgstr "Dirección 2:"
+
+#: functions.php:1124 leftMenus.php:648
+msgid "City :"
+msgstr "Ciudad:"
+
+#: functions.php:1128 leftMenus.php:656
+msgid "Post Code :"
+msgstr "Código Postal:"
+
+#: functions.php:1132 leftMenus.php:664
+msgid "Country :"
+msgstr "País:"
+
+#: functions.php:1165 leftMenus.php:698
+msgid "Comments :"
+msgstr "Comentarios:"
+
+#: functions.php:1429
+msgid "Upcoming Day Off's"
+msgstr "Próximos Días Off"
+
+#: functions.php:1436 functions.php:1505 manageBookings.php:38
+#: manageCustomers.php:125
+msgid "Employee"
+msgstr "empleado"
+
+#: functions.php:1437 functions.php:1506 manageCustomers.php:126
+msgid "Date"
+msgstr "fecha"
+
+#: functions.php:1486
+msgid "Delete Day Off?"
+msgstr "Eliminar Day Off?"
+
+#: functions.php:1498
+msgid "Upcoming Time Off's"
+msgstr "Próximos Time Off"
+
+#: functions.php:1507 manageBookings.php:40 manageCustomers.php:127
+msgid "Time Slot"
+msgstr "El intervalo de tiempo"
+
+#: functions.php:1584
+msgid "Delete Time Off?"
+msgstr "Eliminar tiempo libre?"
+
+#: functions.php:1679
+msgid "Client Name :"
+msgstr "Nombre del cliente:"
+
+#: functions.php:1686
+msgid "Client Mobile :"
+msgstr "Cliente móvil:"
+
+#: functions.php:1693 manageBookings.php:193
+msgid "Employee :"
+msgstr "Empleado:"
+
+#: functions.php:1706
+msgid "Please Choose Employee"
+msgstr "Por favor, Elija Empleado"
+
+#: functions.php:1720
+msgid "Service Booked :"
+msgstr "Servicio de Reservas:"
+
+#: functions.php:1729
+msgid "Booking Date :"
+msgstr "Fecha de Reserva:"
+
+#: functions.php:1854 manageEmployees.php:245
+msgid "Time Slot :"
+msgstr "Intervalo de tiempo:"
+
+#: functions.php:1858 functions.php:2734 manageEmployees.php:250
+msgid "Please Choose Time"
+msgstr "Por favor, elija Hora"
+
+#: functions.php:1868 manageBookings.php:220
+msgid "Booking Status :"
+msgstr "Estado de la reservación:"
+
+#: functions.php:2880
+msgid "Please Choose Service"
+msgstr "Por favor, elija Servicio"
+
+#: functions.php:2980
+msgid "Employee Name"
+msgstr "Nombre del empleado"
+
+#: functions.php:2981
+msgid "Employee Email"
+msgstr "Empleado de correo electrónico"
+
+#: functions.php:2982
+msgid "Employee Phone"
+msgstr "Empleado teléfono"
+
+#: functions.php:3240
+msgid " Slots Left"
+msgstr "ranuras de la izquierda"
+
+#: functions.php:3248
+msgid "All Slots has been Booked."
+msgstr "Todas las franjas horarias ha sido reservado."
+
+#: functions.php:3254
+msgid "Day Off of the Employee. Kindly choose another Date."
+msgstr "Día Libre del Empleado. Por favor elija otra fecha."
+
+#: leftMenus.php:28
+msgid "Live Help"
+msgstr "vivir"
+
+#: leftMenus.php:36
+msgid "Dashboard"
+msgstr "salpicadero"
+
+#: leftMenus.php:42 manageBookings.php:11
+msgid "Bookings"
+msgstr "reservas"
+
+#: leftMenus.php:49
+msgid "Staff"
+msgstr "personal"
+
+#: leftMenus.php:56 manageServices.php:10
+msgid "Services"
+msgstr "servicios"
+
+#: leftMenus.php:63
+msgid "Clients"
+msgstr "clientela"
+
+#: leftMenus.php:76
+msgid "Control Panel"
+msgstr "Panel de control"
+
+#: leftMenus.php:82 manageReportBug.php:11
+msgid "Report a Bug"
+msgstr "Reportar un Error"
+
+#: leftMenus.php:88 manageAffiliates.php:10
+msgid "Become an Affiliate"
+msgstr "Programa de afiliación"
+
+#: leftMenus.php:99 manageEmployees.php:24
+msgid "Add New Staff Member"
+msgstr "Añadir nuevo miembro del personal"
+
+#: leftMenus.php:104
+msgid "Success! The Staff Member has been saved Successfully."
+msgstr "Éxito! El miembro del personal ha sido guardado con éxito."
+
+#: leftMenus.php:107
+msgid ""
+"Error! This Email already exists in our Database. Please try with new one."
+msgstr ""
+"Error! Este correo electrónico ya existe en nuestra base de datos. Por "
+"favor, inténtelo de nuevo."
+
+#: leftMenus.php:110 leftMenus.php:177
+msgid ""
+"Note: You will need to Assign your Employees to the respective Services in "
+"order to allow Bookings for your Clients."
+msgstr ""
+"Nota: Usted tendrá que asignar a sus empleados a los Servicios respectivos a "
+"fin de permitir reservas para sus clientes."
+
+#: leftMenus.php:116
+msgid "Staff Code :"
+msgstr "Personal Código:"
+
+#: leftMenus.php:169 manageServices.php:24
+msgid "Add New Service"
+msgstr "Agregar nuevo servicio"
+
+#: leftMenus.php:174
+msgid "Success! The Service has been saved Successfully."
+msgstr "Éxito! El Servicio ha sido guardado con éxito."
+
+#: leftMenus.php:188
+msgid "Service Cost ("
+msgstr "Servicio de costes ("
+
+#: leftMenus.php:219
+msgid "Service Time :"
+msgstr "Tiempo de Servicio:"
+
+#: leftMenus.php:266
+msgid "Assign Services to Staff"
+msgstr "Asignación de servicios al personal"
+
+#: leftMenus.php:271
+msgid "Success! The Service has been Assigned Successfully."
+msgstr "Éxito! El servicio se ha asignado correctamente."
+
+#: leftMenus.php:274
+msgid "Error! Please Choose a Staff Member to Assign Services."
+msgstr ""
+"Error! Por favor, elija un miembro del personal para asignar servicios."
+
+#: leftMenus.php:277
+msgid ""
+"Note: Please choose Staff Member and then tick the appropriate checkbox next "
+"to each service you wish to Assign."
+msgstr ""
+"Nota: Por favor, elija un miembro del personal y luego marque la casilla de "
+"verificación correspondiente al lado de cada servicio que desea asignar."
+
+#: leftMenus.php:283 leftMenus.php:406 manageEmployees.php:136
+#: manageEmployees.php:209
+msgid "Staff Member :"
+msgstr "Miembro del Personal:"
+
+#: leftMenus.php:296 leftMenus.php:420 manageEmployees.php:150
+#: manageEmployees.php:223
+msgid "Please Choose Staff Member"
+msgstr "Por favor, elija un miembro del personal"
+
+#: leftMenus.php:316 manageServices.php:47
+msgid "Service Name"
+msgstr "Servicio de nombres"
+
+#: leftMenus.php:317 manageServices.php:50
+msgid "Service Time"
+msgstr "Servicio horario"
+
+#: leftMenus.php:319 manageServices.php:52
+msgid "Type"
+msgstr "tipo"
+
+#: leftMenus.php:393 manageEmployees.php:34
+msgid "Working Hours"
+msgstr "Horas de Trabajo"
+
+#: leftMenus.php:398
+msgid "Success! The Working Hours has been updated Successfully."
+msgstr "Éxito! Las horas de trabajo se ha actualizado con éxito."
+
+#: leftMenus.php:401
+msgid "Error! Please Choose a Staff Member to save Working Hours."
+msgstr ""
+"Error! Por favor, elija un miembro del personal para ahorrar horas de "
+"trabajo."
+
+#: leftMenus.php:438
+msgid "Monday"
+msgstr "lunes"
+
+#: leftMenus.php:439
+msgid "Tuesday"
+msgstr "martes"
+
+#: leftMenus.php:440
+msgid "Wednesday"
+msgstr "miércoles"
+
+#: leftMenus.php:441
+msgid "Thursday"
+msgstr "jueves"
+
+#: leftMenus.php:442
+msgid "Friday"
+msgstr "viernes"
+
+#: leftMenus.php:443
+msgid "Saturday"
+msgstr "sábado"
+
+#: leftMenus.php:444
+msgid "Sunday"
+msgstr "domingo"
+
+#: leftMenus.php:449
+msgid "Open / Closed"
+msgstr "Abierto / Cerrado"
+
+#: leftMenus.php:452 leftMenus.php:460 leftMenus.php:468 leftMenus.php:476
+#: leftMenus.php:484 leftMenus.php:492 leftMenus.php:500
+msgid "Open"
+msgstr "Abierto"
+
+#: leftMenus.php:455 leftMenus.php:463 leftMenus.php:471 leftMenus.php:479
+#: leftMenus.php:487 leftMenus.php:495 leftMenus.php:503
+msgid "Closed"
+msgstr "cerrado"
+
+#: leftMenus.php:508
+msgid "Start Hours"
+msgstr "Comience Horas"
+
+#: leftMenus.php:532
+msgid "End Hours"
+msgstr "Horas finales"
+
+#: leftMenus.php:568
+msgid "Add New Client"
+msgstr "Añadir Nuevo Cliente"
+
+#: leftMenus.php:572
+msgid "Success! The Client has been saved Successfully."
+msgstr "Éxito! El cliente ha sido guardado con éxito."
+
+#: leftMenus.php:576
+msgid ""
+"Error! This Email Address already exists in our Database. Please try with "
+"new one."
+msgstr ""
+"Error! Esta dirección de correo electrónico ya existe en nuestra base de "
+"datos. Por favor, inténtelo de nuevo."
+
+#: leftMenus.php:718
+msgid "Success! The Booking has been updated Successfully."
+msgstr "Éxito! La reserva se ha actualizado con éxito."
+
+#: leftMenus.php:731
+msgid "Admin Notification Settings"
+msgstr "Configuraciones de admin notificación"
+
+#: leftMenus.php:737
+msgid "Success! Admin Notifications Saved"
+msgstr "Éxito! Notificaciones admin Guardado"
+
+#: leftMenus.php:740
+msgid ""
+"Note: To receive notifications of your client bookings, kindly fill in the "
+"email address."
+msgstr ""
+"Nota: Para recibir notificaciones de reservas de su cliente, por favor "
+"rellene la dirección de correo electrónico."
+
+#: leftMenus.php:741
+msgid "Note: Without Email Address, the system won't work as expected."
+msgstr ""
+"Nota: Sin su dirección electrónica, el sistema no funciona como se esperaba."
+
+#: leftMenus.php:745
+msgid "Email Address :"
+msgstr "Dirección de correo electrónico"
+
+#: leftMenus.php:755
+msgid "Yes, I may consider buying Full Version at later stage."
+msgstr ""
+"Sí, puede considerar la compra de la versión completa en una etapa posterior."
+
+#: leftMenus.php:1165 manageServices.php:305
+msgid "Please Insert Correct Max Bookings Value"
+msgstr "Por favor, elija Fecha de Reserva Atleast."
+
+#: manageAffiliates.php:15 manageReportBug.php:16
+msgid "Success! The Email has been sent Successfully."
+msgstr "Éxito! El correo electrónico ha sido enviado con éxito."
+
+#: manageAffiliates.php:22
+msgid ""
+"Are you interested becoming an Affiliate of our Product? Shoot us an email "
+"by filling the form below, and we will setup a discussion call."
+msgstr ""
+"¿Te interesa ser un afiliado de nuestro producto? Dispara un correo "
+"electrónico rellenando el siguiente formulario, y vamos a configurar una "
+"llamada de discusión."
+
+#: manageAffiliates.php:26
+#, php-format
+msgid ""
+"Refer/Sell it to your contacts, and if they purchase from us, we will give "
+"you 40% of our Profits straight away.\t"
+msgstr ""
+"Consulte / Venta a tus contactos, y si compran de nosotros, le daremos "
+"40% de nuestras ganancias de inmediato."
+
+#: manageAffiliates.php:34 manageReportBug.php:28
+msgid "Your Email Address :"
+msgstr "Su dirección de correo electrónico:"
+
+#: manageAffiliates.php:42 manageReportBug.php:36
+msgid "Subject :"
+msgstr "Tema:"
+
+#: manageAffiliates.php:50
+msgid "Message :"
+msgstr "Mensaje:"
+
+#: manageAffiliates.php:66 manageCustomers.php:173 manageReportBug.php:60
+msgid "Send Email"
+msgstr "enviar correo electrónico"
+
+#: manageBookings.php:20
+msgid "Calendar Agenda"
+msgstr "agenda calendario"
+
+#: manageBookings.php:35
+msgid "Client Name"
+msgstr "Nombre del cliente"
+
+#: manageBookings.php:36 manageCustomers.php:51
+msgid "Mobile"
+msgstr "móvil"
+
+#: manageBookings.php:37 manageCustomers.php:124
+msgid "Service"
+msgstr "servicio"
+
+#: manageBookings.php:39
+msgid "Booking Date"
+msgstr "Reservas Fecha"
+
+#: manageBookings.php:41 manageCustomers.php:128
+msgid "Status"
+msgstr "estado"
+
+#: manageBookings.php:68
+msgid "Booking Status : Approved"
+msgstr "Estado de la reservación: Aprobado"
+
+#: manageBookings.php:74
+msgid "Booking Status : Disapproved"
+msgstr "Estado de la reservación: Rechazado"
+
+#: manageBookings.php:80
+msgid "Booking Status : Pending Approval"
+msgstr "Estado de la reservación: Pendiente de aprobación"
+
+#: manageBookings.php:86
+msgid "Booking Status : Cancelled"
+msgstr "Estado de la reservación: Cancelado"
+
+#: manageBookings.php:155
+msgid "Edit Booking?"
+msgstr "Editar reservar?"
+
+#: manageBookings.php:156
+msgid "Cancel Booking?"
+msgstr "Cancelar reserva?"
+
+#: manageBookings.php:161
+msgid "Send "
+msgstr "enviar"
+
+#: manageBookings.php:161
+msgid "Email Again?"
+msgstr "Correo electrónico de nuevo?"
+
+#: manageBookings.php:165
+msgid "Delete Booking?"
+msgstr "Delete Booking?"
+
+#: manageBookings.php:181
+msgid "Advanced Booking Calendar Filter"
+msgstr "calendario de reservaciones Fitler"
+
+#: manageBookings.php:207
+msgid "All Employees"
+msgstr "Todos los Empleados"
+
+#: manageBookings.php:227
+msgid "Pending Approval"
+msgstr "Estado de la reservación: Pendiente de aprobación"
+
+#: manageBookings.php:232
+msgid "Approved"
+msgstr "aprobado"
+
+#: manageBookings.php:237
+msgid "Disapproved"
+msgstr "discapacitado"
+
+#: manageBookings.php:242
+msgid "Cancelled"
+msgstr "Cancelado"
+
+#: manageBookings.php:251
+msgid "Day Off / Time Off :"
+msgstr "Día libre / Tiempo Libre:"
+
+#: manageBookings.php:258
+msgid "Day Off"
+msgstr "Offs día"
+
+#: manageBookings.php:263
+msgid "Time Off"
+msgstr "Offs tiempo"
+
+#: manageBookings.php:271
+msgid "Book a Service :"
+msgstr "Reserva un Servicio"
+
+#: manageBookings.php:288
+msgid "Booking Calendar"
+msgstr "Reserva calendario"
+
+#: manageBookings.php:601
+msgid "Email has been Sent Successfully."
+msgstr "Éxito! El correo electrónico ha sido enviado con éxito."
+
+#: manageCustomers.php:12
+msgid "Customers"
+msgstr "Clientes"
+
+#: manageCustomers.php:31
+msgid "Add New Customer"
+msgstr "Añadir Nuevo Cliente"
+
+#: manageCustomers.php:42
+msgid ""
+"Note: Click on the Right Corner of the Settings icon to perform various "
+"actions viz. Add New Customer, Export Customers."
+msgstr ""
+"Nota: Haga clic en la esquina derecha del icono de Configuración para "
+"realizar diversas acciones a saber. Añadir nuevo cliente, los clientes de "
+"exportación."
+
+#: manageCustomers.php:48
+msgid "First Name"
+msgstr "primer nombre"
+
+#: manageCustomers.php:49
+msgid "Last Name"
+msgstr "apellido"
+
+#: manageCustomers.php:50
+msgid "Email Address"
+msgstr "Dirección de correo electrónico"
+
+#: manageCustomers.php:52
+msgid "City"
+msgstr "ciudad"
+
+#: manageCustomers.php:53
+msgid "Country"
+msgstr "país"
+
+#: manageCustomers.php:78
+msgid "Edit Client?"
+msgstr "Editar cliente?"
+
+#: manageCustomers.php:79
+msgid "Email Client?"
+msgstr "Cliente de correo electrónico?"
+
+#: manageCustomers.php:80
+msgid "Booking Details"
+msgstr "Detalles de Reserva"
+
+#: manageCustomers.php:81
+msgid "Book a Service"
+msgstr "Reserva un Servicio"
+
+#: manageCustomers.php:82
+msgid "Delete Client"
+msgstr "Eliminar Client"
+
+#: manageCustomers.php:96
+msgid "Edit Customer "
+msgstr "Editar cliente"
+
+#: manageCustomers.php:100
+msgid "Success! The Customer has been Updated Successfully."
+msgstr "Éxito! El cliente se ha actualizado correctamente."
+
+#: manageCustomers.php:115
+msgid "Customer Bookings"
+msgstr "reservas de clientes"
+
+#: manageCustomers.php:129
+msgid "Date of Booking"
+msgstr "Fecha de la reserva"
+
+#: manageCustomers.php:144
+msgid "Email to Customer"
+msgstr "Enviar por correo electrónico a los clientes"
+
+#: manageCustomers.php:150
+msgid "Success! Email has been sent Successfully."
+msgstr "Éxito! El correo electrónico ha sido enviado con éxito."
+
+#: manageCustomers.php:156 manageSettings.php:470 manageSettings.php:521
+#: manageSettings.php:569 manageSettings.php:620
+msgid "Email Subject :"
+msgstr "Asunto del correo electrónico:"
+
+#: manageCustomers.php:184
+msgid "Customer Comments"
+msgstr "Comentarios de los clientes"
+
+#: manageCustomers.php:190
+msgid "Success! The Comments has been saved Successfully."
+msgstr "Éxito! Los comentarios se ha guardado correctamente."
+
+#: manageCustomers.php:197
+msgid "Comments:"
+msgstr "Comentarios:"
+
+#: manageCustomers.php:374
+msgid "You cannot delete this Customer until all Bookings have been deleted."
+msgstr ""
+"No se puede eliminar este cliente hasta que todas las reservas se han "
+"eliminado."
+
+#: manageEmployees.php:10
+msgid "Staff Members"
+msgstr "Miembros del Personal"
+
+#: manageEmployees.php:31
+msgid "Assign Services"
+msgstr "Asignar Servicios"
+
+#: manageEmployees.php:37
+msgid "Day Offs"
+msgstr "Offs día"
+
+#: manageEmployees.php:40
+msgid "Time Offs"
+msgstr "Offs tiempo"
+
+#: manageEmployees.php:47
+msgid ""
+"Note: Click on the Right Corner of the Settings icon to perform various "
+"actions viz. Add New Employees, Allocate Services etc."
+msgstr ""
+"Nota: Haga clic en la esquina derecha del icono de Configuración para "
+"realizar diversas acciones a saber. Agregar nuevos empleados, asignar los "
+"servicios, etc"
+
+#: manageEmployees.php:56
+msgid "Color Code"
+msgstr "código de colores"
+
+#: manageEmployees.php:57
+msgid "Staff Code"
+msgstr "Personal Código"
+
+#: manageEmployees.php:58
+msgid "Staff Name"
+msgstr "Personal Nombre"
+
+#: manageEmployees.php:59
+msgid "Staff Email"
+msgstr "El personal de correo electrónico"
+
+#: manageEmployees.php:60
+msgid "Staff Phone"
+msgstr "Personal de teléfono"
+
+#: manageEmployees.php:87
+msgid "Edit Employee?"
+msgstr "Editar empleado?"
+
+#: manageEmployees.php:88
+msgid "Show Day Off's & Time Off's"
+msgstr "Mostrar Day Off y del Tiempo Libre"
+
+#: manageEmployees.php:89
+msgid "Delete Employee?"
+msgstr "Eliminar empleado?"
+
+#: manageEmployees.php:103
+msgid "Update Existing Staff Member"
+msgstr "Actualizar miembro del personal existente"
+
+#: manageEmployees.php:108
+msgid "Success! The Staff Member has been updated Successfully."
+msgstr "Éxito! El miembro del personal se ha actualizado con éxito."
+
+#: manageEmployees.php:123
+msgid "Day Off Settings"
+msgstr "Día Libre Configuración"
+
+#: manageEmployees.php:128
+msgid "Success! The Day Off has been saved Successfully."
+msgstr "Éxito! El día libre ha sido guardado con éxito."
+
+#: manageEmployees.php:131
+msgid "Error! Please choose Staff Member to take Day Off."
+msgstr "Error! Por favor, elija un miembro del personal a tomar el día libre."
+
+#: manageEmployees.php:163
+msgid "Start Date :"
+msgstr "Fecha de inicio:"
+
+#: manageEmployees.php:171
+msgid "End Date :"
+msgstr "Fecha de finalización:"
+
+#: manageEmployees.php:192
+msgid "Time Off Settings"
+msgstr "Tiempo Libre Configuración"
+
+#: manageEmployees.php:197
+msgid "Success! The Time Off has been done Successfully."
+msgstr "Éxito! El Tiempo de apagado se ha hecho con éxito."
+
+#: manageEmployees.php:200
+msgid "Error! Please choose Staff Member to take Time Off."
+msgstr "Error! Por favor, elija un miembro del personal a tomar tiempo libre."
+
+#: manageEmployees.php:203
+msgid "Error! Please choose Time Slot to take Time Off."
+msgstr "Error! Elija período de tiempo libre para tomar tiempo libre."
+
+#: manageEmployees.php:237
+msgid "Date :"
+msgstr "Fecha:"
+
+#: manageEmployees.php:264
+msgid "Staff Member Day Off's & Time Off's"
+msgstr "Miembro del Personal Day Off y del Tiempo Libre"
+
+#: manageEmployees.php:267
+msgid "Success! The Staff Member Day/Time Off deleted Successfully."
+msgstr ""
+"Éxito! El miembro del personal de día / Tiempo Libre eliminado correctamente."
+
+#: manageEmployees.php:368
+msgid "You cannot delete this Employee until all Bookings have been deleted."
+msgstr ""
+"No se puede eliminar este empleado hasta que todas las reservas se han "
+"eliminado."
+
+#: manageEmployees.php:372
+msgid ""
+"You cannot delete this Employee until all Allocated Services are de-"
+"allocated."
+msgstr ""
+"No se puede eliminar este empleado hasta que todos los servicios que tienen "
+"atribuciones se de-asignado."
+
+#: manageReportBug.php:44
+msgid "Bug / Issue :"
+msgstr "Bug / Edición:"
+
+#: manageServices.php:30
+msgid "Allocate Services"
+msgstr "Asignar Servicios"
+
+#: manageServices.php:37
+msgid ""
+"Note: Click on the Right Corner of the Settings icon to perform various "
+"actions viz. Add New Services, Allocate Services etc."
+msgstr ""
+"Nota: Haga clic en la esquina derecha del icono de Configuración para "
+"realizar diversas acciones a saber. Agregar nuevos servicios, Servicios "
+"Asignar etc"
+
+#: manageServices.php:40
+msgid ""
+"To change the order of Services simply drag & drop each service in order to "
+"display in the same way on the Booking Calender to your Customers."
+msgstr ""
+"Para cambiar el orden de los Servicios sólo tiene que arrastrar y soltar "
+"cada servicio con el fin de mostrar de la misma manera en el Calendario de "
+"Reservas a sus clientes."
+
+#: manageServices.php:48
+msgid "Short Code"
+msgstr "Código de acceso"
+
+#: manageServices.php:49
+msgid "Allocated Employees"
+msgstr "Los empleados asignados"
+
+#: manageServices.php:113
+msgid " Hrs "
+msgstr "Hrs"
+
+#: manageServices.php:130
+msgid "Edit Service?"
+msgstr "Editar servicio?"
+
+#: manageServices.php:130
+msgid "Delete Service?"
+msgstr "Suprimir el servicio?"
+
+#: manageServices.php:143
+msgid "Update Existing Service"
+msgstr "Servicio de actualización existente"
+
+#: manageServices.php:148
+msgid "Success! The Service has been updated Successfully."
+msgstr "Éxito! El servicio se ha actualizado con éxito."
+
+#: manageServices.php:155
+msgid "Save & Submit Changes"
+msgstr "Guardar y Enviar cambios"
+
+#: manageServices.php:206
+msgid "This Service cannot be deleted until de-allocated from the Employees."
+msgstr "Este servicio no se puede borrar hasta desasigna de los empleados."
+
+#: manageSettings.php:13
+msgid "Settings"
+msgstr "Configuración"
+
+#: manageSettings.php:23
+msgid "General Settings"
+msgstr "Configuración general"
+
+#: manageSettings.php:35
+msgid "Success! Default Settings has been saved Successfully."
+msgstr "Éxito! Configuración predeterminada se ha guardado correctamente."
+
+#: manageSettings.php:43
+msgid "Default Settings"
+msgstr "Configuración predeterminada"
+
+#: manageSettings.php:50
+msgid "Default Currency :"
+msgstr "Moneda predeterminada:"
+
+#: manageSettings.php:94
+msgid "Default Country :"
+msgstr "Por defecto País:"
+
+#: manageSettings.php:131
+msgid "Default Date Format :"
+msgstr "Por defecto Formato de fecha:"
+
+#: manageSettings.php:189
+msgid "Default Time Format :"
+msgstr "Por defecto Formato de hora:"
+
+#: manageSettings.php:198 manageSettings.php:205
+msgid "12 Hours"
+msgstr "12 Horas"
+
+#: manageSettings.php:199 manageSettings.php:206
+msgid "24 Hours"
+msgstr "24 Horas"
+
+#: manageSettings.php:217
+msgid "Default Time Zone :"
+msgstr "Zona horaria predeterminada:"
+
+#: manageSettings.php:269
+msgid "Default Booking Slot Size :"
+msgstr "Reserva defecto ranura Tamaño:"
+
+#: manageSettings.php:328
+msgid "Email Templates"
+msgstr "Plantillas de correo electrónico"
+
+#: manageSettings.php:344 manageSettings.php:445
+msgid "Booking Pending Confirmation Email Template [Sent to Client]"
+msgstr ""
+"Solicitud de reserva plantilla de correo electrónico de confirmación "
+"[Enviado a cliente]"
+
+#: manageSettings.php:352 manageSettings.php:498
+msgid "Booking Confirmation Email Template [Sent to Client]"
+msgstr ""
+"Confirmación de la reserva Plantilla de correo electrónico [Enviado a "
+"cliente]"
+
+#: manageSettings.php:360
+msgid "Booking Disapproved Email Template [Sent to Client]"
+msgstr "Reserva Plantilla rechazados correo electrónico [Enviado a cliente]"
+
+#: manageSettings.php:368
+msgid "Approve/Decline Booking Email Template [Sent to Admin]"
+msgstr ""
+"Aprobar / Rechazar Reserva Plantilla de correo electrónico [al administrador]"
+
+#: manageSettings.php:379
+msgid "Social Media Settings"
+msgstr "Configuración de Medios Sociales"
+
+#: manageSettings.php:402
+msgid "Payment Gateway Settings"
+msgstr "Configuración de puerta de enlace de pago"
+
+#: manageSettings.php:421
+msgid "Auto Responder Settings"
+msgstr "Configuración de respuesta automática"
+
+#: manageSettings.php:452 manageSettings.php:504 manageSettings.php:554
+#: manageSettings.php:603
+msgid "Success! The Email has been saved Successfully."
+msgstr "Éxito! El correo electrónico ha sido guardado con éxito."
+
+#: manageSettings.php:549
+msgid "Booking Decline Email Template [Sent to Client]"
+msgstr ""
+"Disminución de reservas de plantillas de correo electrónico [Enviado a "
+"cliente]"
+
+#: manageSettings.php:597
+msgid "Admin Approve/Disapprove Email Template [Sent to Admin]"
+msgstr ""
+"Administración aprueba / desaprueba Plantilla de correo electrónico [al "
+"administrador]"
+
+#~ msgid "Success! Booking form header has been updated Successfully."
+#~ msgstr ""
+#~ "Éxito! Encabezado Formulario de reserva se ha actualizado con éxito."
+
+#~ msgid "Success! Booking form footer message has been updated Successfully."
+#~ msgstr ""
+#~ "Éxito! Formulario de reserva mensaje de pie de página se ha actualizado "
+#~ "con éxito."
+
+#~ msgid "Success! Thank you message has been updated Successfully."
+#~ msgstr "Éxito! Gracias mensaje ha sido actualizado con éxito."
+
+#~ msgid "New Feature!"
+#~ msgstr "Nueva función!"
+
+#~ msgid "Add Employees"
+#~ msgstr "Añadir Empleados"
+
+#~ msgid "Add Staff Member"
+#~ msgstr "Agregar un miembro del personal"
+
+#~ msgid "Add Services"
+#~ msgstr "Agregar servicios"
+
+#~ msgid "Add Clients"
+#~ msgstr "Agregar clientes"
+
+#~ msgid "Upcoming Bookings (Next 15 Days)"
+#~ msgstr "Reservas Próximo (15 días)"
+
+#~ msgid "Payment Recieved"
+#~ msgstr "Detalles del pago"
+
+#~ msgid "Payment Cancelled"
+#~ msgstr "Pago mensaje de cancelación:"
+
+#~ msgid "Awaiting Payment"
+#~ msgstr "En espera de pago"
+
+#~ msgid "Statistics - Bookings (Next 15 Days)"
+#~ msgstr "Estadísticas - Manuel (15 días)"
+
+#~ msgid "Upcoming Day Off's (Next 15 Days)"
+#~ msgstr "Próximos Días Off (Las próximas 15 Dias)"
+
+#~ msgid "Phone"
+#~ msgstr "teléfono"
+
+#~ msgid "Upcoming Time Off's (Next 15 Days)"
+#~ msgstr "Tiempo Próximos Off (Las próximas 15 Dias)"
+
+#~ msgid "CountryName :"
+#~ msgstr "Nombre del país:"
+
+#~ msgid "CurrencyName :"
+#~ msgstr "Moneda Nombre:"
+
+#~ msgid "CurrencyCode :"
+#~ msgstr "Código de moneda:"
+
+#~ msgid "CurrencySymbol :"
+#~ msgstr "Símbolo de moneda:"
+
+#~ msgid "Payment Status :"
+#~ msgstr "Estado del pago:"
+
+#~ msgid "Transaction ID :"
+#~ msgstr "Id. de transacción:"
+
+#~ msgid "Payment Date :"
+#~ msgstr "Fecha de Pago:"
+
+#~ msgid "Group Bookings ("
+#~ msgstr "reservas para grupos"
+
+#~ msgid "Are you sure you want to delete this Day Off?"
+#~ msgstr "¿Está seguro que desea eliminar este día libre?"
+
+#~ msgid "Are you sure you want to delete this Time Off?"
+#~ msgstr "¿Está seguro que desea eliminar este tiempo libre?"
+
+#~ msgid "Are you sure you want to Cancel this Booking?"
+#~ msgstr "¿Está seguro de que desea cancelar esta reserva?"
+
+#~ msgid "Are you sure you want to delete this Booking?"
+#~ msgstr "¿Está seguro que desea eliminar esta reserva?"
+
+#~ msgid "Export Customers"
+#~ msgstr "Los clientes de exportación"
+
+#~ msgid "Payment Details"
+#~ msgstr "Detalles del pago"
+
+#~ msgid "Payment Status"
+#~ msgstr "Comprobar el estado del"
+
+#~ msgid "Trns. ID"
+#~ msgstr "Trns. identificación"
+
+#~ msgid "Trns. Date"
+#~ msgstr "Trns. fecha"
+
+#~ msgid "Thank you for exporting your Customers Data."
+#~ msgstr "Gracias por exportar los datos de los clientes."
+
+#~ msgid ""
+#~ "You will need to Add New Employees and then Allocate them to the "
+#~ "respective Services in order to allow Bookings for your Customers."
+#~ msgstr ""
+#~ "Nota: Usted tendrá que asignar a sus empleados a los Servicios "
+#~ "respectivos a fin de permitir reservas para sus clientes."
+
+#~ msgid "Staff Management :"
+#~ msgstr "Miembro del Personal:"
+
+#~ msgid "On"
+#~ msgstr "Abierto"
+
+#~ msgid "Off"
+#~ msgstr "de"
+
+#~ msgid "PayPal Payment Notification Email Template [Sent to Admin]"
+#~ msgstr ""
+#~ "Notificación de pago PayPal Plantilla de correo electrónico [al "
+#~ "administrador]"
+
+#~ msgid "PayPal Cancellation Notification Email Template [Sent to Admin]"
+#~ msgstr ""
+#~ "Cancelación PayPal Notificación Plantilla de correo electrónico [al "
+#~ "administrador]"
+
+#~ msgid "Success! Facebook Settings has been saved Successfully."
+#~ msgstr "Éxito! Ajustes Facebook ha sido guardado con éxito."
+
+#~ msgid "Facebook Settings"
+#~ msgstr "Configuración facebook"
+
+#~ msgid "Facebook Connect :"
+#~ msgstr "Facebook Connect:"
+
+#~ msgid "Enabled"
+#~ msgstr "Habilitado"
+
+#~ msgid "Disabled"
+#~ msgstr "discapacitado"
+
+#~ msgid "Facebook App Id :"
+#~ msgstr "Facebook App Id:"
+
+#~ msgid "Facebook Secret Key :"
+#~ msgstr "Facebook clave secreta:"
+
+#~ msgid "Success! Paypal Settings has been saved Successfully."
+#~ msgstr "Éxito! Configuración de PayPal ha sido guardado con éxito."
+
+#~ msgid "PayPal Settings"
+#~ msgstr "Configuración de PayPal"
+
+#~ msgid "PayPal :"
+#~ msgstr "PayPal:"
+
+#~ msgid "PayPal Url :"
+#~ msgstr "Url PayPal:"
+
+#~ msgid "Sandbox"
+#~ msgstr "arenero"
+
+#~ msgid "Merchant Email Address :"
+#~ msgstr "Merchant Dirección de correo electrónico:"
+
+#~ msgid "Thank You Page Url :"
+#~ msgstr "Gracias Url de la página:"
+
+#~ msgid "IPN Url :"
+#~ msgstr "IPN Url:"
+
+#~ msgid "Payment Cancellation Message :"
+#~ msgstr "Pago mensaje de cancelación:"
+
+#~ msgid "Success! Mail Chimp Settings has been saved Successfully."
+#~ msgstr ""
+#~ "Éxito! Configuración de correo chimpancé ha sido guardado con éxito."
+
+#~ msgid "Mail Chimp Settings"
+#~ msgstr "Configuración de correo chimpancé"
+
+#~ msgid "Mail Chimp :"
+#~ msgstr "Correo chimpancé:"
+
+#~ msgid "Api Key :"
+#~ msgstr "Api clave:"
+
+#~ msgid "List Unique Id :"
+#~ msgstr "Enumerar ID:"
+
+#~ msgid "Double Opt-In :"
+#~ msgstr "Doble opt-in:"
+
+#~ msgid "Welcome Email :"
+#~ msgstr "Bienvenido Email:"
+
+#~ msgid "Success! The Currency has been saved Successfully."
+#~ msgstr "Éxito! La moneda ha sido guardado con éxito."
+
+#~ msgid "Add New Currency"
+#~ msgstr "Añadir nueva moneda"
+
+#~ msgid "Currency Name :"
+#~ msgstr "Moneda Nombre:"
+
+#~ msgid "Currency Code :"
+#~ msgstr "Código de moneda:"
+
+#~ msgid "Currency Sign :"
+#~ msgstr "Moneda Zodiaco:"
+
+#~ msgid "Success! The Country has been saved Successfully."
+#~ msgstr "Éxito! El país ha sido guardado con éxito."
+
+#~ msgid "Add New Country"
+#~ msgstr "Añadir Nuevo País"
+
+#~ msgid "Country Name :"
+#~ msgstr "Nombre del país:"
+
+#~ msgid "Success! The Country has been Edit Successfully."
+#~ msgstr "Éxito! El país ha sido Editar éxito."
+
+#~ msgid "Update Existing Country"
+#~ msgstr "Actualizar existente del país"
+
+#~ msgid "Paypal Cancellation Notification Email Template [Sent to Admin]"
+#~ msgstr ""
+#~ "Notificación de Cancelación Paypal Plantilla de correo electrónico [al "
+#~ "administrador]"
+
+#~ msgid "Success! The Currency has been Edit Successfully."
+#~ msgstr "Éxito! La moneda ha sido Editar éxito."
+
+#~ msgid "Update Existing Currency"
+#~ msgstr "Actualización de divisas existente"
+
+#~ msgid "Edit this Booking?"
+#~ msgstr "Modifier Cette Réservation?"
+
+#~ msgid "Quick Start"
+#~ msgstr "Démarrage Rapide"
+
+#~ msgid "Max Bookings"
+#~ msgstr "Réservations Max"
+
+#~ msgid "Error! Please choose Start Time to take Time Off."
+#~ msgstr "Erreur! S'il vous plaît choisissez Démarrer Temps de prendre congé."
+
+#~ msgid "Start Time :"
+#~ msgstr "Heure de Départ:"
+
+#~ msgid "End Time :"
+#~ msgstr "Heure de Fin:"
+
+#~ msgid "Payment Image Url :"
+#~ msgstr "URL de l'image de Paiement:"

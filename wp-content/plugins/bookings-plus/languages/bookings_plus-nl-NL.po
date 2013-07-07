@@ -1,0 +1,1465 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: bookings-plus\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-02-22 19:08+0530\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: Bookings-Plus <info@bookings-plus.com>\n"
+"Language: nl_NL\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: F:\\Wordpress\\bookings-plus-restricted-version\\trunk\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: bookingCalendar.php:213 bookingCalendarByBackend.php:29
+#: bookingCalendarByCustomer.php:27 bookingCalendarByIframe.php:221
+#: bookingCalendarByService.php:210
+msgid "Step 1 : Choose Service"
+msgstr "Stap 1: Kies Dienst"
+
+#: bookingCalendar.php:216 bookingCalendarByBackend.php:32
+#: bookingCalendarByCustomer.php:30 bookingCalendarByIframe.php:224
+#: bookingCalendarByService.php:213
+msgid "Step 2 : Choose Staff"
+msgstr "Stap 2: Kies Personeel"
+
+#: bookingCalendar.php:219 bookingCalendarByBackend.php:35
+#: bookingCalendarByCustomer.php:33 bookingCalendarByIframe.php:227
+#: bookingCalendarByService.php:216
+msgid "Step 3 : Date & Time"
+msgstr "Stap 3: Datum & tijd"
+
+#: bookingCalendar.php:222 bookingCalendarByBackend.php:38
+#: bookingCalendarByCustomer.php:36 bookingCalendarByIframe.php:230
+#: bookingCalendarByService.php:219
+msgid "Step 4 : Your Information"
+msgstr "Stap 4: Uw gegevens"
+
+#: bookingCalendar.php:225 bookingCalendarByBackend.php:41
+#: bookingCalendarByCustomer.php:39 bookingCalendarByIframe.php:233
+#: bookingCalendarByService.php:222
+msgid "Step 5 : Confirm Details"
+msgstr "Stap 5: Bevestig informatie"
+
+#: bookingCalendar.php:238 bookingCalendarByBackend.php:54
+#: bookingCalendarByCustomer.php:52 bookingCalendarByIframe.php:246
+#: bookingCalendarByService.php:235
+msgid "Book an Appointment Now"
+msgstr "Nu een afspraak"
+
+#: bookingCalendar.php:245 bookingCalendarByBackend.php:61
+#: bookingCalendarByCustomer.php:59 bookingCalendarByIframe.php:253
+#: bookingCalendarByService.php:242
+msgid "Thank you for Booking."
+msgstr "Dank u voor uw boeking."
+
+#: bookingCalendar.php:253 bookingCalendarByBackend.php:69
+#: bookingCalendarByCustomer.php:67 bookingCalendarByIframe.php:261
+#: bookingCalendarByService.php:250
+msgid "Choose Service"
+msgstr "Kies Dienst"
+
+#: bookingCalendar.php:254 bookingCalendarByBackend.php:70
+#: bookingCalendarByCustomer.php:68 bookingCalendarByIframe.php:262
+#: bookingCalendarByService.php:251
+msgid "Service Duration"
+msgstr "dienst Duur"
+
+#: bookingCalendar.php:255 bookingCalendarByBackend.php:71
+#: bookingCalendarByCustomer.php:69 bookingCalendarByIframe.php:263
+#: bookingCalendarByService.php:252 leftMenus.php:318 manageServices.php:51
+msgid "Cost"
+msgstr "kosten"
+
+#: bookingCalendar.php:257 bookingCalendarByBackend.php:73
+#: bookingCalendarByCustomer.php:71 bookingCalendarByIframe.php:265
+#: bookingCalendarByService.php:254 manageServices.php:46
+msgid "Service Display Order"
+msgstr "Dienst Weergavevolgorde"
+
+#: bookingCalendar.php:289 bookingCalendar.php:301
+#: bookingCalendarByBackend.php:105 bookingCalendarByBackend.php:117
+#: bookingCalendarByCustomer.php:103 bookingCalendarByCustomer.php:115
+#: bookingCalendarByIframe.php:297 bookingCalendarByIframe.php:309
+#: bookingCalendarByService.php:286 bookingCalendarByService.php:298
+#: leftMenus.php:349 leftMenus.php:361 manageServices.php:103
+#: manageServices.php:115
+msgid " Mins"
+msgstr "mins"
+
+#: bookingCalendar.php:294 bookingCalendarByBackend.php:110
+#: bookingCalendarByCustomer.php:108 bookingCalendarByIframe.php:302
+#: bookingCalendarByService.php:291 leftMenus.php:354 manageServices.php:108
+msgid " Hrs"
+msgstr "uur"
+
+#: bookingCalendar.php:299 bookingCalendarByBackend.php:115
+#: bookingCalendarByCustomer.php:113 bookingCalendarByIframe.php:307
+#: bookingCalendarByService.php:296 leftMenus.php:359
+msgid " Hr "
+msgstr "hr"
+
+#: bookingCalendar.php:341 bookingCalendarByBackend.php:157
+#: bookingCalendarByCustomer.php:155 bookingCalendarByIframe.php:349
+#: bookingCalendarByService.php:338
+msgid "Calendar Time Zone:"
+msgstr "Kalender Tijdzone:"
+
+#: bookingCalendar.php:458 bookingCalendarByBackend.php:275
+#: bookingCalendarByCustomer.php:271 bookingCalendarByIframe.php:467
+#: bookingCalendarByService.php:455
+msgid " Appointment :"
+msgstr "afspraak:"
+
+#: bookingCalendar.php:500 bookingCalendarByBackend.php:317
+#: bookingCalendarByCustomer.php:313 bookingCalendarByIframe.php:509
+#: bookingCalendarByService.php:497
+msgid "Back Step"
+msgstr "en stap terug"
+
+#: bookingCalendar.php:501 bookingCalendarByBackend.php:318
+#: bookingCalendarByCustomer.php:314 bookingCalendarByIframe.php:510
+#: bookingCalendarByService.php:498
+msgid "Next Step"
+msgstr "Volgende stap"
+
+#: bookingCalendar.php:536 bookingCalendarByBackend.php:350
+#: bookingCalendarByCustomer.php:345 bookingCalendarByIframe.php:717
+#: bookingCalendarByService.php:530
+msgid "Please choose atleast one Service."
+msgstr "Kies tenminste een dienst."
+
+#: bookingCalendarByIframe.php:584 bookings-plus.php:568
+#: manageBookings.php:453 manageCustomers.php:594
+msgid "Please choose atleast one Staff Member."
+msgstr "Kies minstens een personeelslid."
+
+#: bookingCalendarByIframe.php:593 bookings-plus.php:577
+#: manageBookings.php:462 manageCustomers.php:603
+msgid "Please choose atleast Booking Date."
+msgstr "Kies atleast boekingsdatum."
+
+#: bookingCalendarByIframe.php:598 bookings-plus.php:582
+#: manageBookings.php:467 manageCustomers.php:608
+msgid "Please choose atleast Booking Time."
+msgstr "Kies atleast Boeking Tijd."
+
+#: bookingForm.php:12 leftMenus.php:70
+msgid "Booking Form Setup"
+msgstr "Boekingsformulier Setup"
+
+#: bookingForm.php:17
+msgid "Success! The Booking Fields has been updated Successfully."
+msgstr "Succes! De boeking Fields is succesvol bijgewerkt."
+
+#: bookingForm.php:24
+msgid "Booking Form Fields"
+msgstr "Inschrijfformulier Velden"
+
+#: bookingForm.php:42
+msgid "Field Name"
+msgstr "Veldnaam"
+
+#: bookingForm.php:43
+msgid "Visibility"
+msgstr "zichtbaarheid"
+
+#: bookingForm.php:44
+msgid "Validation"
+msgstr "bevestiging"
+
+#: bookingForm.php:90 bookingForm.php:111
+msgid "Visible"
+msgstr "zichtbaar"
+
+#: bookingForm.php:93 bookingForm.php:114
+msgid "Invisible"
+msgstr "onzichtbaar"
+
+#: bookingForm.php:98 bookingForm.php:119
+msgid "Required"
+msgstr "nodig"
+
+#: bookingForm.php:101 bookingForm.php:122
+msgid "Not Required"
+msgstr "niet vereist"
+
+#: bookingForm.php:139 leftMenus.php:162 leftMenus.php:258 leftMenus.php:386
+#: leftMenus.php:561 leftMenus.php:710 leftMenus.php:762
+#: manageCustomers.php:109 manageEmployees.php:117 manageEmployees.php:186
+#: manageEmployees.php:258 manageServices.php:155
+msgid "Processing Data..."
+msgstr "Het verwerken van gegevens ..."
+
+#: bookingForm.php:139 leftMenus.php:162 leftMenus.php:258 leftMenus.php:386
+#: leftMenus.php:561 leftMenus.php:710 leftMenus.php:724 leftMenus.php:762
+#: manageCustomers.php:109 manageEmployees.php:117 manageEmployees.php:186
+#: manageEmployees.php:258 manageSettings.php:486
+msgid "Submit & Save Changes"
+msgstr "Verzend & Wijzigingen opslaan"
+
+#: bookingForm.php:149
+msgid "Booking Form Short Codes For Front End"
+msgstr "Inschrijfformulier korte codes voor front-end"
+
+#: bookingForm.php:163
+msgid "Calendar Embed :"
+msgstr "Kalender insluiten:"
+
+#: bookingForm.php:169 bookingForm.php:177 bookingForm.php:189
+#: bookingForm.php:201
+msgid "Copy to Clipboard"
+msgstr "Kopiëren naar klembord"
+
+#: bookingForm.php:173
+msgid "Booking Link Code (Single Services) :"
+msgstr "Reservering link code (single diensten):"
+
+#: bookingForm.php:184
+msgid "Booking Link Code (All Services) :"
+msgstr "Reservering koppeling Code (Alle diensten):"
+
+#: bookingForm.php:193
+msgid "Image Link Code :"
+msgstr "afbeelding Koppel code:"
+
+#: bookingForm.php:205
+msgid "Custom Image :"
+msgstr "Aangepaste afbeelding:"
+
+#: bookingForm.php:215
+msgid "Upload Custom Image :"
+msgstr "Upload Aangepaste afbeelding:"
+
+#: bookingForm.php:224 manageCustomers.php:208 manageSettings.php:318
+#: manageSettings.php:537 manageSettings.php:585 manageSettings.php:636
+msgid "Save Changes"
+msgstr "Wijzigingen opslaan"
+
+#: bookingForm.php:236
+msgid "Booking Form Header"
+msgstr "boekingsformulier Header"
+
+#: bookingForm.php:256
+msgid "Booking Form Footer"
+msgstr "Boekingsformulier Footer"
+
+#: bookingForm.php:276
+msgid "Booking Form Thank you Message"
+msgstr "Boekingsformulier Dank u Bericht"
+
+#: bookingForm.php:321 bookingForm.php:334 bookingForm.php:347
+msgid "Thank you for copying the Short Code."
+msgstr "Dank u voor uw boeking."
+
+#: bookingForm.php:434
+msgid "Please choose the Image to be uploaded."
+msgstr "Kies de afbeelding te uploaden."
+
+#: functions.php:75 leftMenus.php:183
+msgid "Service Name :"
+msgstr "dienst Naam:"
+
+#: functions.php:81
+msgid "Cost :"
+msgstr "kosten:"
+
+#: functions.php:87 leftMenus.php:197
+msgid "Service Type :"
+msgstr "type dienst:"
+
+#: functions.php:96 functions.php:107 leftMenus.php:203
+msgid "Single Booking"
+msgstr "enkele boeken"
+
+#: functions.php:99 functions.php:110 leftMenus.php:206
+msgid "Group Bookings"
+msgstr "groepsreserveringen"
+
+#: functions.php:118 leftMenus.php:212
+msgid "Max Bookings<br/>(Each Slot) :"
+msgstr "Max Boekingen <br/> (Elke sleuf):"
+
+#: functions.php:470
+msgid "Staff Member Code :"
+msgstr "Medewerker Code:"
+
+#: functions.php:475 leftMenus.php:124
+msgid "Staff Member Color :"
+msgstr "Medewerker Kleur:"
+
+#: functions.php:484 leftMenus.php:136
+msgid "Staff Member Name :"
+msgstr "Medewerker Naam:"
+
+#: functions.php:489 leftMenus.php:144
+msgid "Staff Member Email :"
+msgstr "Medewerker E-mail:"
+
+#: functions.php:494 leftMenus.php:152
+msgid "Staff Member Phone :"
+msgstr "personeel Lid Telefoon:"
+
+#: functions.php:1092 leftMenus.php:586
+msgid "First Name :"
+msgstr "Voornaam:"
+
+#: functions.php:1096 leftMenus.php:594
+msgid "Last Name :"
+msgstr "Achternaam ::"
+
+#: functions.php:1100 leftMenus.php:603
+msgid "Email :"
+msgstr "e-mail:"
+
+#: functions.php:1104 leftMenus.php:612
+msgid "Telephone :"
+msgstr "Telefoon:"
+
+#: functions.php:1108 leftMenus.php:620
+msgid "Mobile :"
+msgstr "Mobile:"
+
+#: functions.php:1112 leftMenus.php:628
+msgid "Address 1 :"
+msgstr "Adres 1:"
+
+#: functions.php:1120 leftMenus.php:640
+msgid "Address 2 :"
+msgstr "Adres 2:"
+
+#: functions.php:1124 leftMenus.php:648
+msgid "City :"
+msgstr "Plaats:"
+
+#: functions.php:1128 leftMenus.php:656
+msgid "Post Code :"
+msgstr "Bericht Code:"
+
+#: functions.php:1132 leftMenus.php:664
+msgid "Country :"
+msgstr "land:"
+
+#: functions.php:1165 leftMenus.php:698
+msgid "Comments :"
+msgstr "Commentaar:"
+
+#: functions.php:1429
+msgid "Upcoming Day Off's"
+msgstr "Aankomende dagen Off's"
+
+#: functions.php:1436 functions.php:1505 manageBookings.php:38
+#: manageCustomers.php:125
+msgid "Employee"
+msgstr "werknemer"
+
+#: functions.php:1437 functions.php:1506 manageCustomers.php:126
+msgid "Date"
+msgstr "datum"
+
+#: functions.php:1486
+msgid "Delete Day Off?"
+msgstr "Verwijder dag uit?"
+
+#: functions.php:1498
+msgid "Upcoming Time Off's"
+msgstr "Aankomende tijd Off's"
+
+#: functions.php:1507 manageBookings.php:40 manageCustomers.php:127
+msgid "Time Slot"
+msgstr "tijdvak"
+
+#: functions.php:1584
+msgid "Delete Time Off?"
+msgstr "Tijd verwijderen uit?"
+
+#: functions.php:1679
+msgid "Client Name :"
+msgstr "Opdrachtgever Naam:"
+
+#: functions.php:1686
+msgid "Client Mobile :"
+msgstr "opdrachtgever Mobile:"
+
+#: functions.php:1693 manageBookings.php:193
+msgid "Employee :"
+msgstr "werknemer:"
+
+#: functions.php:1706
+msgid "Please Choose Employee"
+msgstr "Maak uw keuze Medewerker"
+
+#: functions.php:1720
+msgid "Service Booked :"
+msgstr "Dienst geboekt:"
+
+#: functions.php:1729
+msgid "Booking Date :"
+msgstr "Boekdatum:"
+
+#: functions.php:1854 manageEmployees.php:245
+msgid "Time Slot :"
+msgstr "Tijdvak:"
+
+#: functions.php:1858 functions.php:2734 manageEmployees.php:250
+msgid "Please Choose Time"
+msgstr "Maak uw keuze Tijd"
+
+#: functions.php:1868 manageBookings.php:220
+msgid "Booking Status :"
+msgstr "Boeken staat:"
+
+#: functions.php:2880
+msgid "Please Choose Service"
+msgstr "Maak uw keuze Dienst"
+
+#: functions.php:2980
+msgid "Employee Name"
+msgstr "Naam werknemer"
+
+#: functions.php:2981
+msgid "Employee Email"
+msgstr "Medewerker E-mail"
+
+#: functions.php:2982
+msgid "Employee Phone"
+msgstr "werknemer Telefoon"
+
+#: functions.php:3240
+msgid " Slots Left"
+msgstr "sleuven links"
+
+#: functions.php:3248
+msgid "All Slots has been Booked."
+msgstr "alle slots is geboekt."
+
+#: functions.php:3254
+msgid "Day Off of the Employee. Kindly choose another Date."
+msgstr "dag van de medewerker. Gelieve kies een andere datum."
+
+#: leftMenus.php:28
+msgid "Live Help"
+msgstr "wonen"
+
+#: leftMenus.php:36
+msgid "Dashboard"
+msgstr "dashboard"
+
+#: leftMenus.php:42 manageBookings.php:11
+msgid "Bookings"
+msgstr "boekingen"
+
+#: leftMenus.php:49
+msgid "Staff"
+msgstr "personeel"
+
+#: leftMenus.php:56 manageServices.php:10
+msgid "Services"
+msgstr "diensten"
+
+#: leftMenus.php:63
+msgid "Clients"
+msgstr "klanten"
+
+#: leftMenus.php:76
+msgid "Control Panel"
+msgstr "bedieningspaneel"
+
+#: leftMenus.php:82 manageReportBug.php:11
+msgid "Report a Bug"
+msgstr "Een bug melden"
+
+#: leftMenus.php:88 manageAffiliates.php:10
+msgid "Become an Affiliate"
+msgstr "Word een affiliate"
+
+#: leftMenus.php:99 manageEmployees.php:24
+msgid "Add New Staff Member"
+msgstr "Toevoegen nieuwe stafmedewerker"
+
+#: leftMenus.php:104
+msgid "Success! The Staff Member has been saved Successfully."
+msgstr "Succes! De medewerker is met succes opgeslagen."
+
+#: leftMenus.php:107
+msgid ""
+"Error! This Email already exists in our Database. Please try with new one."
+msgstr "Fout! Dit E-mail bestaat al in onze database. Probeer een nieuwe."
+
+#: leftMenus.php:110 leftMenus.php:177
+msgid ""
+"Note: You will need to Assign your Employees to the respective Services in "
+"order to allow Bookings for your Clients."
+msgstr ""
+"Opmerking: U moet uw werknemers toewijzen aan de respectieve diensten om "
+"boekingen voor uw klanten mogelijk te maken."
+
+#: leftMenus.php:116
+msgid "Staff Code :"
+msgstr "Personeel code:"
+
+#: leftMenus.php:169 manageServices.php:24
+msgid "Add New Service"
+msgstr "Nieuwe dienst toevoegen"
+
+#: leftMenus.php:174
+msgid "Success! The Service has been saved Successfully."
+msgstr "Succes! De Service is succesvol opgeslagen."
+
+#: leftMenus.php:188
+msgid "Service Cost ("
+msgstr "Diensttijd ("
+
+#: leftMenus.php:219
+msgid "Service Time :"
+msgstr "Dienst Tijd:"
+
+#: leftMenus.php:266
+msgid "Assign Services to Staff"
+msgstr "Wijs diensten aan personeel"
+
+#: leftMenus.php:271
+msgid "Success! The Service has been Assigned Successfully."
+msgstr "Succes! De service is succesvol toegewezen."
+
+#: leftMenus.php:274
+msgid "Error! Please Choose a Staff Member to Assign Services."
+msgstr "Fout! Kies een Medewerker om diensten toewijzen."
+
+#: leftMenus.php:277
+msgid ""
+"Note: Please choose Staff Member and then tick the appropriate checkbox next "
+"to each service you wish to Assign."
+msgstr ""
+"Opmerking: Kies Staf en vervolgens vinkt u het betreffende vakje naast elke "
+"dienst die u wilt toewijzen."
+
+#: leftMenus.php:283 leftMenus.php:406 manageEmployees.php:136
+#: manageEmployees.php:209
+msgid "Staff Member :"
+msgstr "personeelslid:"
+
+#: leftMenus.php:296 leftMenus.php:420 manageEmployees.php:150
+#: manageEmployees.php:223
+msgid "Please Choose Staff Member"
+msgstr "Maak uw keuze stafmedewerker"
+
+#: leftMenus.php:316 manageServices.php:47
+msgid "Service Name"
+msgstr "dienst Naam"
+
+#: leftMenus.php:317 manageServices.php:50
+msgid "Service Time"
+msgstr "dienst Tijd"
+
+#: leftMenus.php:319 manageServices.php:52
+msgid "Type"
+msgstr "type"
+
+#: leftMenus.php:393 manageEmployees.php:34
+msgid "Working Hours"
+msgstr "Arbeidstijdenwet"
+
+#: leftMenus.php:398
+msgid "Success! The Working Hours has been updated Successfully."
+msgstr "Succes! De Arbeidstijdenwet is succesvol bijgewerkt."
+
+#: leftMenus.php:401
+msgid "Error! Please Choose a Staff Member to save Working Hours."
+msgstr "Fout! Kies een personeelslid te Arbeidstijdenwet op te slaan."
+
+#: leftMenus.php:438
+msgid "Monday"
+msgstr "maandag"
+
+#: leftMenus.php:439
+msgid "Tuesday"
+msgstr "dinsdag"
+
+#: leftMenus.php:440
+msgid "Wednesday"
+msgstr "woensdag"
+
+#: leftMenus.php:441
+msgid "Thursday"
+msgstr "donderdag"
+
+#: leftMenus.php:442
+msgid "Friday"
+msgstr "vrijdag"
+
+#: leftMenus.php:443
+msgid "Saturday"
+msgstr "zaterdag"
+
+#: leftMenus.php:444
+msgid "Sunday"
+msgstr "zondag"
+
+#: leftMenus.php:449
+msgid "Open / Closed"
+msgstr "Open / Gesloten"
+
+#: leftMenus.php:452 leftMenus.php:460 leftMenus.php:468 leftMenus.php:476
+#: leftMenus.php:484 leftMenus.php:492 leftMenus.php:500
+msgid "Open"
+msgstr "Open"
+
+#: leftMenus.php:455 leftMenus.php:463 leftMenus.php:471 leftMenus.php:479
+#: leftMenus.php:487 leftMenus.php:495 leftMenus.php:503
+msgid "Closed"
+msgstr "gesloten"
+
+#: leftMenus.php:508
+msgid "Start Hours"
+msgstr "beginnen uur"
+
+#: leftMenus.php:532
+msgid "End Hours"
+msgstr "einde uur"
+
+#: leftMenus.php:568
+msgid "Add New Client"
+msgstr "Toevoegen nieuwe klant"
+
+#: leftMenus.php:572
+msgid "Success! The Client has been saved Successfully."
+msgstr "Succes! De Opdrachtgever is succesvol opgeslagen."
+
+#: leftMenus.php:576
+msgid ""
+"Error! This Email Address already exists in our Database. Please try with "
+"new one."
+msgstr ""
+"Fout! Dit e-mail adres bestaat al in onze database. Probeer een nieuwe."
+
+#: leftMenus.php:718
+msgid "Success! The Booking has been updated Successfully."
+msgstr "Succes! De boeking is succesvol bijgewerkt."
+
+#: leftMenus.php:731
+msgid "Admin Notification Settings"
+msgstr "Admin Meldingsinstellingen"
+
+#: leftMenus.php:737
+msgid "Success! Admin Notifications Saved"
+msgstr "Succes! Admin Kennisgevingen Opgeslagen"
+
+#: leftMenus.php:740
+msgid ""
+"Note: To receive notifications of your client bookings, kindly fill in the "
+"email address."
+msgstr ""
+"Opmerking: Om meldingen van uw klant boekingen ontvangen, vriendelijk vul "
+"het e-mailadres."
+
+#: leftMenus.php:741
+msgid "Note: Without Email Address, the system won't work as expected."
+msgstr ""
+"Opmerking: Zonder e-mail adres, zal het systeem niet werken zoals verwacht."
+
+#: leftMenus.php:745
+msgid "Email Address :"
+msgstr "e-mail adres"
+
+#: leftMenus.php:755
+msgid "Yes, I may consider buying Full Version at later stage."
+msgstr ""
+"Ja, mag ik overwegen de aanschaf van de volledige versie in een later "
+"stadium."
+
+#: leftMenus.php:1165 manageServices.php:305
+msgid "Please Insert Correct Max Bookings Value"
+msgstr "Kies atleast boekingsdatum."
+
+#: manageAffiliates.php:15 manageReportBug.php:16
+msgid "Success! The Email has been sent Successfully."
+msgstr "Succes! De E-mail is verzonden."
+
+#: manageAffiliates.php:22
+msgid ""
+"Are you interested becoming an Affiliate of our Product? Shoot us an email "
+"by filling the form below, and we will setup a discussion call."
+msgstr ""
+"Bent u geïnteresseerd om een ​​affiliate van ons product? Stuur ons een e-mail "
+"door het invullen van onderstaand formulier, en wij zullen een discussie "
+"oproepen instellen."
+
+#: manageAffiliates.php:26
+#, php-format
+msgid ""
+"Refer/Sell it to your contacts, and if they purchase from us, we will give "
+"you 40% of our Profits straight away.\t"
+msgstr ""
+
+#: manageAffiliates.php:34 manageReportBug.php:28
+msgid "Your Email Address :"
+msgstr "Uw e-mailadres:"
+
+#: manageAffiliates.php:42 manageReportBug.php:36
+msgid "Subject :"
+msgstr "Onderwerp:"
+
+#: manageAffiliates.php:50
+msgid "Message :"
+msgstr "bericht:"
+
+#: manageAffiliates.php:66 manageCustomers.php:173 manageReportBug.php:60
+msgid "Send Email"
+msgstr "E-mail verzenden"
+
+#: manageBookings.php:20
+msgid "Calendar Agenda"
+msgstr "Kalender Agenda"
+
+#: manageBookings.php:35
+msgid "Client Name"
+msgstr "opdrachtgever Naam"
+
+#: manageBookings.php:36 manageCustomers.php:51
+msgid "Mobile"
+msgstr "mobiel"
+
+#: manageBookings.php:37 manageCustomers.php:124
+msgid "Service"
+msgstr "dienst"
+
+#: manageBookings.php:39
+msgid "Booking Date"
+msgstr "boekingsdatum"
+
+#: manageBookings.php:41 manageCustomers.php:128
+msgid "Status"
+msgstr "staat"
+
+#: manageBookings.php:68
+msgid "Booking Status : Approved"
+msgstr "Reservering Status: Goedgekeurd"
+
+#: manageBookings.php:74
+msgid "Booking Status : Disapproved"
+msgstr "Reservering Status: Afgekeurd"
+
+#: manageBookings.php:80
+msgid "Booking Status : Pending Approval"
+msgstr "Reservering Status: In afwachting van goedkeuring"
+
+#: manageBookings.php:86
+msgid "Booking Status : Cancelled"
+msgstr "Reservering Status: Geannuleerd"
+
+#: manageBookings.php:155
+msgid "Edit Booking?"
+msgstr "Bewerk boeken?"
+
+#: manageBookings.php:156
+msgid "Cancel Booking?"
+msgstr "Boeking annuleren?"
+
+#: manageBookings.php:161
+msgid "Send "
+msgstr "sturen"
+
+#: manageBookings.php:161
+msgid "Email Again?"
+msgstr "E-mail weer?"
+
+#: manageBookings.php:165
+msgid "Delete Booking?"
+msgstr "Verwijder het boeken?"
+
+#: manageBookings.php:181
+msgid "Advanced Booking Calendar Filter"
+msgstr "Geavanceerde Boeking Kalender fitler"
+
+#: manageBookings.php:207
+msgid "All Employees"
+msgstr "Alle medewerkers"
+
+#: manageBookings.php:227
+msgid "Pending Approval"
+msgstr "Reservering Status: In afwachting van goedkeuring"
+
+#: manageBookings.php:232
+msgid "Approved"
+msgstr "aangenomen"
+
+#: manageBookings.php:237
+msgid "Disapproved"
+msgstr "invalide"
+
+#: manageBookings.php:242
+msgid "Cancelled"
+msgstr "geannuleerd"
+
+#: manageBookings.php:251
+msgid "Day Off / Time Off :"
+msgstr "Day Off / tijd Uit:"
+
+#: manageBookings.php:258
+msgid "Day Off"
+msgstr "dag Offs"
+
+#: manageBookings.php:263
+msgid "Time Off"
+msgstr "tijd Offs"
+
+#: manageBookings.php:271
+msgid "Book a Service :"
+msgstr "Boek een dienst"
+
+#: manageBookings.php:288
+msgid "Booking Calendar"
+msgstr "Boeking Kalender"
+
+#: manageBookings.php:601
+msgid "Email has been Sent Successfully."
+msgstr "Succes! E-mail is verzonden."
+
+#: manageCustomers.php:12
+msgid "Customers"
+msgstr "klanten"
+
+#: manageCustomers.php:31
+msgid "Add New Customer"
+msgstr "Toevoegen nieuwe klant"
+
+#: manageCustomers.php:42
+msgid ""
+"Note: Click on the Right Corner of the Settings icon to perform various "
+"actions viz. Add New Customer, Export Customers."
+msgstr ""
+"Opmerking: Klik op in de rechterhoek van het pictogram Instellingen om "
+"verschillende acties te weten uit te voeren. Toevoegen nieuwe klant, Export "
+"klanten."
+
+#: manageCustomers.php:48
+msgid "First Name"
+msgstr "Voornaam"
+
+#: manageCustomers.php:49
+msgid "Last Name"
+msgstr "achternaam"
+
+#: manageCustomers.php:50
+msgid "Email Address"
+msgstr "e-mail adres"
+
+#: manageCustomers.php:52
+msgid "City"
+msgstr "stad"
+
+#: manageCustomers.php:53
+msgid "Country"
+msgstr "land"
+
+#: manageCustomers.php:78
+msgid "Edit Client?"
+msgstr "Bewerk klant?"
+
+#: manageCustomers.php:79
+msgid "Email Client?"
+msgstr "E-mail client?"
+
+#: manageCustomers.php:80
+msgid "Booking Details"
+msgstr "boekingsgegevens"
+
+#: manageCustomers.php:81
+msgid "Book a Service"
+msgstr "Boek een dienst"
+
+#: manageCustomers.php:82
+msgid "Delete Client"
+msgstr "Verwijder client"
+
+#: manageCustomers.php:96
+msgid "Edit Customer "
+msgstr "Bewerk Klant"
+
+#: manageCustomers.php:100
+msgid "Success! The Customer has been Updated Successfully."
+msgstr "Succes! De Klant is bijgewerkt."
+
+#: manageCustomers.php:115
+msgid "Customer Bookings"
+msgstr "klant Boekingen"
+
+#: manageCustomers.php:129
+msgid "Date of Booking"
+msgstr "Datum van boeking"
+
+#: manageCustomers.php:144
+msgid "Email to Customer"
+msgstr "E-mail aan de Klant"
+
+#: manageCustomers.php:150
+msgid "Success! Email has been sent Successfully."
+msgstr "Succes! E-mail is verzonden."
+
+#: manageCustomers.php:156 manageSettings.php:470 manageSettings.php:521
+#: manageSettings.php:569 manageSettings.php:620
+msgid "Email Subject :"
+msgstr "E-mail Onderwerp:"
+
+#: manageCustomers.php:184
+msgid "Customer Comments"
+msgstr "klant Reacties"
+
+#: manageCustomers.php:190
+msgid "Success! The Comments has been saved Successfully."
+msgstr "Succes! De opmerkingen met succes is opgeslagen."
+
+#: manageCustomers.php:197
+msgid "Comments:"
+msgstr "Commentaar:"
+
+#: manageCustomers.php:374
+msgid "You cannot delete this Customer until all Bookings have been deleted."
+msgstr ""
+"Kunt u niet verwijderen deze Klant totdat alle Boekingen zijn verwijderd."
+
+#: manageEmployees.php:10
+msgid "Staff Members"
+msgstr "medewerkers"
+
+#: manageEmployees.php:31
+msgid "Assign Services"
+msgstr "Wijs Diensten"
+
+#: manageEmployees.php:37
+msgid "Day Offs"
+msgstr "dag Offs"
+
+#: manageEmployees.php:40
+msgid "Time Offs"
+msgstr "tijd Offs"
+
+#: manageEmployees.php:47
+msgid ""
+"Note: Click on the Right Corner of the Settings icon to perform various "
+"actions viz. Add New Employees, Allocate Services etc."
+msgstr ""
+"Opmerking: Klik op in de rechterhoek van het pictogram Instellingen om "
+"verschillende acties te weten uit te voeren. Toevoegen nieuwe medewerkers, "
+"toewijzen Diensten etc."
+
+#: manageEmployees.php:56
+msgid "Color Code"
+msgstr "Kleurcode"
+
+#: manageEmployees.php:57
+msgid "Staff Code"
+msgstr "personeel code"
+
+#: manageEmployees.php:58
+msgid "Staff Name"
+msgstr "medewerkers Naam"
+
+#: manageEmployees.php:59
+msgid "Staff Email"
+msgstr "personeel E-mail"
+
+#: manageEmployees.php:60
+msgid "Staff Phone"
+msgstr "personeel Telefoon"
+
+#: manageEmployees.php:87
+msgid "Edit Employee?"
+msgstr "Bewerk Medewerker?"
+
+#: manageEmployees.php:88
+msgid "Show Day Off's & Time Off's"
+msgstr "Toon dagen Off's & tijd Off's"
+
+#: manageEmployees.php:89
+msgid "Delete Employee?"
+msgstr "Verwijder Medewerker?"
+
+#: manageEmployees.php:103
+msgid "Update Existing Staff Member"
+msgstr "Werk Bestaande Medewerker"
+
+#: manageEmployees.php:108
+msgid "Success! The Staff Member has been updated Successfully."
+msgstr "Succes! De Medewerker is succesvol bijgewerkt."
+
+#: manageEmployees.php:123
+msgid "Day Off Settings"
+msgstr "Day Off-instellingen"
+
+#: manageEmployees.php:128
+msgid "Success! The Day Off has been saved Successfully."
+msgstr "Succes! De dag Uit is succesvol opgeslagen."
+
+#: manageEmployees.php:131
+msgid "Error! Please choose Staff Member to take Day Off."
+msgstr "Fout! Kies Staf te nemen vrije dag."
+
+#: manageEmployees.php:163
+msgid "Start Date :"
+msgstr "Startdatum:"
+
+#: manageEmployees.php:171
+msgid "End Date :"
+msgstr "Einddatum:"
+
+#: manageEmployees.php:192
+msgid "Time Off Settings"
+msgstr "tijd Off-instellingen"
+
+#: manageEmployees.php:197
+msgid "Success! The Time Off has been done Successfully."
+msgstr "Succes! De tijd Off is met succes gedaan."
+
+#: manageEmployees.php:200
+msgid "Error! Please choose Staff Member to take Time Off."
+msgstr "Fout! Kies Staf verlof te nemen."
+
+#: manageEmployees.php:203
+msgid "Error! Please choose Time Slot to take Time Off."
+msgstr "Fout! Kies tijd Slot verlof te nemen."
+
+#: manageEmployees.php:237
+msgid "Date :"
+msgstr "datum:"
+
+#: manageEmployees.php:264
+msgid "Staff Member Day Off's & Time Off's"
+msgstr "Medewerker dag Off's & tijd Off's"
+
+#: manageEmployees.php:267
+msgid "Success! The Staff Member Day/Time Off deleted Successfully."
+msgstr "Succes! De Medewerker dag / tijd Uit Succesvol verwijderd."
+
+#: manageEmployees.php:368
+msgid "You cannot delete this Employee until all Bookings have been deleted."
+msgstr ""
+"Kunt u niet verwijderen deze werknemer tot alle Boekingen zijn verwijderd."
+
+#: manageEmployees.php:372
+msgid ""
+"You cannot delete this Employee until all Allocated Services are de-"
+"allocated."
+msgstr ""
+"Kunt u niet verwijderen deze werknemer tot alle Toegewezen Diensten zijn "
+"afgemeld toegewezen."
+
+#: manageReportBug.php:44
+msgid "Bug / Issue :"
+msgstr "bug / Uitgave:"
+
+#: manageServices.php:30
+msgid "Allocate Services"
+msgstr "Wijs Diensten"
+
+#: manageServices.php:37
+msgid ""
+"Note: Click on the Right Corner of the Settings icon to perform various "
+"actions viz. Add New Services, Allocate Services etc."
+msgstr ""
+"Opmerking: Klik op in de rechterhoek van het pictogram Instellingen om "
+"verschillende acties te weten uit te voeren. Nieuwe diensten toevoegt, "
+"toewijzen Diensten etc."
+
+#: manageServices.php:40
+msgid ""
+"To change the order of Services simply drag & drop each service in order to "
+"display in the same way on the Booking Calender to your Customers."
+msgstr ""
+"Om de volgorde van de Diensten te wijzigen gewoon slepen en neerzetten elke "
+"dienst om weer te geven op dezelfde manier op de reserveringsbevestiging "
+"Kalender om uw klanten."
+
+#: manageServices.php:48
+msgid "Short Code"
+msgstr "korte Code"
+
+#: manageServices.php:49
+msgid "Allocated Employees"
+msgstr "toegewezen Medewerkers"
+
+#: manageServices.php:113
+msgid " Hrs "
+msgstr "uur"
+
+#: manageServices.php:130
+msgid "Edit Service?"
+msgstr "Bewerk Service?"
+
+#: manageServices.php:130
+msgid "Delete Service?"
+msgstr "verwijderen Service?"
+
+#: manageServices.php:143
+msgid "Update Existing Service"
+msgstr "Update bestaande service"
+
+#: manageServices.php:148
+msgid "Success! The Service has been updated Successfully."
+msgstr "Succes! De Service is bijgewerkt."
+
+#: manageServices.php:155
+msgid "Save & Submit Changes"
+msgstr "Opslaan & Voeg veranderingen"
+
+#: manageServices.php:206
+msgid "This Service cannot be deleted until de-allocated from the Employees."
+msgstr ""
+"Deze service kan pas worden verwijderd als de-toegewezen uit de Werknemers."
+
+#: manageSettings.php:13
+msgid "Settings"
+msgstr "Instellingen"
+
+#: manageSettings.php:23
+msgid "General Settings"
+msgstr "algemene instellingen"
+
+#: manageSettings.php:35
+msgid "Success! Default Settings has been saved Successfully."
+msgstr "Succes! Standaardinstellingen met succes is opgeslagen."
+
+#: manageSettings.php:43
+msgid "Default Settings"
+msgstr "standaardinstellingen"
+
+#: manageSettings.php:50
+msgid "Default Currency :"
+msgstr "Standaard valuta:"
+
+#: manageSettings.php:94
+msgid "Default Country :"
+msgstr "Standaard Land:"
+
+#: manageSettings.php:131
+msgid "Default Date Format :"
+msgstr "Standaard Datumnotatie:"
+
+#: manageSettings.php:189
+msgid "Default Time Format :"
+msgstr "Standaard Tijd Formaat:"
+
+#: manageSettings.php:198 manageSettings.php:205
+msgid "12 Hours"
+msgstr "12 uur"
+
+#: manageSettings.php:199 manageSettings.php:206
+msgid "24 Hours"
+msgstr "24 uur"
+
+#: manageSettings.php:217
+msgid "Default Time Zone :"
+msgstr "Standaard Tijdzone:"
+
+#: manageSettings.php:269
+msgid "Default Booking Slot Size :"
+msgstr "Standaard Boeking Slot Afmetingen:"
+
+#: manageSettings.php:328
+msgid "Email Templates"
+msgstr "e-mail Templates"
+
+#: manageSettings.php:344 manageSettings.php:445
+msgid "Booking Pending Confirmation Email Template [Sent to Client]"
+msgstr ""
+"Reservering in afwachting van bevestiging e-mail sjabloon [Verzonden naar "
+"Client]"
+
+#: manageSettings.php:352 manageSettings.php:498
+msgid "Booking Confirmation Email Template [Sent to Client]"
+msgstr "Reserveringsbevestiging Template [Verzonden naar Client]"
+
+#: manageSettings.php:360
+msgid "Booking Disapproved Email Template [Sent to Client]"
+msgstr "Boeken Afgekeurd E-mail sjabloon [Verzonden naar Client]"
+
+#: manageSettings.php:368
+msgid "Approve/Decline Booking Email Template [Sent to Admin]"
+msgstr ""
+"Goedkeuren / Afwijzen Reserveringsvoorwaarden E-mail sjabloon [Verzonden "
+"naar Admin]"
+
+#: manageSettings.php:379
+msgid "Social Media Settings"
+msgstr "sociale media-instellingen"
+
+#: manageSettings.php:402
+msgid "Payment Gateway Settings"
+msgstr "betaling gateway-instellingen"
+
+#: manageSettings.php:421
+msgid "Auto Responder Settings"
+msgstr "Auto Responder-instellingen"
+
+#: manageSettings.php:452 manageSettings.php:504 manageSettings.php:554
+#: manageSettings.php:603
+msgid "Success! The Email has been saved Successfully."
+msgstr "Succes! De E-mail is succesvol opgeslagen."
+
+#: manageSettings.php:549
+msgid "Booking Decline Email Template [Sent to Client]"
+msgstr "Boeking Daling E-mail sjabloon [Verzonden naar Client]"
+
+#: manageSettings.php:597
+msgid "Admin Approve/Disapprove Email Template [Sent to Admin]"
+msgstr "Admin Goedkeuren / afkeuren E-mail sjabloon [Verzonden naar Admin]"
+
+#~ msgid "Success! Booking form header has been updated Successfully."
+#~ msgstr "Succes! Boekingsformulier header is succesvol bijgewerkt."
+
+#~ msgid "Success! Booking form footer message has been updated Successfully."
+#~ msgstr ""
+#~ "Succes! Boekingsformulier voettekst bericht is succesvol bijgewerkt."
+
+#~ msgid "Success! Thank you message has been updated Successfully."
+#~ msgstr "Succes! Dank je bericht is succesvol bijgewerkt."
+
+#~ msgid "New Feature!"
+#~ msgstr "Nieuwe functie!"
+
+#~ msgid "Add Employees"
+#~ msgstr "Voeg Medewerkers"
+
+#~ msgid "Add Staff Member"
+#~ msgstr "Voeg Medewerker"
+
+#~ msgid "Add Services"
+#~ msgstr "Voeg Diensten"
+
+#~ msgid "Add Clients"
+#~ msgstr "Voeg Clients"
+
+#~ msgid "Upcoming Bookings (Next 15 Days)"
+#~ msgstr "Aankomende Boekingen (Volgende 15 dagen)"
+
+#~ msgid "Payment Recieved"
+#~ msgstr "Betalingsgegevens"
+
+#~ msgid "Payment Cancelled"
+#~ msgstr "Betalen Annuleren Bericht:"
+
+#~ msgid "Awaiting Payment"
+#~ msgstr "Nog niet betaald"
+
+#~ msgid "Statistics - Bookings (Next 15 Days)"
+#~ msgstr "Statistieken - Boekingen (Volgende 15 dagen)"
+
+#~ msgid "Upcoming Day Off's (Next 15 Days)"
+#~ msgstr "Aankomende dagen Off's (Volgende 15 dagen)"
+
+#~ msgid "Phone"
+#~ msgstr "telefoon"
+
+#~ msgid "Upcoming Time Off's (Next 15 Days)"
+#~ msgstr "Aankomende tijd Off's (Volgende 15 dagen)"
+
+#~ msgid "CountryName :"
+#~ msgstr "Naam van het land:"
+
+#~ msgid "CurrencyName :"
+#~ msgstr "Naam van de munt:"
+
+#~ msgid "CurrencyCode :"
+#~ msgstr "De Code van de:"
+
+#~ msgid "CurrencySymbol :"
+#~ msgstr "Valutasymbool:"
+
+#~ msgid "Payment Status :"
+#~ msgstr "Status van de betaling:"
+
+#~ msgid "Transaction ID :"
+#~ msgstr "Transactie ID:"
+
+#~ msgid "Payment Date :"
+#~ msgstr "Betaaldatum:"
+
+#~ msgid "Group Bookings ("
+#~ msgstr "groepsreserveringen"
+
+#~ msgid "Are you sure you want to delete this Day Off?"
+#~ msgstr "Weet u zeker dat u deze Dag verwijderen uit?"
+
+#~ msgid "Are you sure you want to delete this Time Off?"
+#~ msgstr "Weet u zeker dat u dit wilt verwijderen Time Off?"
+
+#~ msgid "Are you sure you want to Cancel this Booking?"
+#~ msgstr "Weet u zeker dat u deze boeking annuleren?"
+
+#~ msgid "Are you sure you want to delete this Booking?"
+#~ msgstr "Weet u zeker dat u deze boeking wilt verwijderen?"
+
+#~ msgid "Export Customers"
+#~ msgstr "export klanten"
+
+#~ msgid "Payment Details"
+#~ msgstr "Betalingsgegevens"
+
+#~ msgid "Payment Status"
+#~ msgstr "status van de betaling"
+
+#~ msgid "Trns. ID"
+#~ msgstr "Trns. ID"
+
+#~ msgid "Trns. Date"
+#~ msgstr "Trns. datum"
+
+#~ msgid "Thank you for exporting your Customers Data."
+#~ msgstr "Dank u voor het exporteren van uw klanten gegevens."
+
+#~ msgid ""
+#~ "You will need to Add New Employees and then Allocate them to the "
+#~ "respective Services in order to allow Bookings for your Customers."
+#~ msgstr ""
+#~ "Opmerking: U moet uw werknemers toewijzen aan de respectieve diensten om "
+#~ "boekingen voor uw klanten mogelijk te maken."
+
+#~ msgid "Staff Management :"
+#~ msgstr "personeelslid:"
+
+#~ msgid "On"
+#~ msgstr "Open"
+
+#~ msgid "Off"
+#~ msgstr "uit"
+
+#~ msgid "PayPal Payment Notification Email Template [Sent to Admin]"
+#~ msgstr "PayPal Payment Notification E-mail sjabloon [Verzonden naar Admin]"
+
+#~ msgid "PayPal Cancellation Notification Email Template [Sent to Admin]"
+#~ msgstr "PayPal Annulering Melding e-mail sjabloon [Verzonden naar Admin]"
+
+#~ msgid "Success! Facebook Settings has been saved Successfully."
+#~ msgstr "Succes! Facebook Instellingen met succes is opgeslagen."
+
+#~ msgid "Facebook Settings"
+#~ msgstr "Facebook instellingen"
+
+#~ msgid "Facebook Connect :"
+#~ msgstr "Facebook Connect:"
+
+#~ msgid "Enabled"
+#~ msgstr "ingeschakeld"
+
+#~ msgid "Disabled"
+#~ msgstr "invalide"
+
+#~ msgid "Facebook App Id :"
+#~ msgstr "Facebook App Id:"
+
+#~ msgid "Facebook Secret Key :"
+#~ msgstr "Facebook Geheime sleutel:"
+
+#~ msgid "Success! Paypal Settings has been saved Successfully."
+#~ msgstr "Succes! Paypal Instellingen met succes is opgeslagen."
+
+#~ msgid "PayPal Settings"
+#~ msgstr "PayPal-instellingen"
+
+#~ msgid "PayPal :"
+#~ msgstr "PayPal:"
+
+#~ msgid "PayPal Url :"
+#~ msgstr "PayPal Url:"
+
+#~ msgid "Sandbox"
+#~ msgstr "zandbak"
+
+#~ msgid "Merchant Email Address :"
+#~ msgstr "koopman E-mailadres:"
+
+#~ msgid "Thank You Page Url :"
+#~ msgstr "Bedankt pagina Url:"
+
+#~ msgid "IPN Url :"
+#~ msgstr "IPN Url:"
+
+#~ msgid "Payment Cancellation Message :"
+#~ msgstr "Betalen Annuleren Bericht:"
+
+#~ msgid "Success! Mail Chimp Settings has been saved Successfully."
+#~ msgstr "Succes! Mail chimpansee Instellingen met succes is opgeslagen."
+
+#~ msgid "Mail Chimp Settings"
+#~ msgstr "Mail chimpansee-instellingen"
+
+#~ msgid "Mail Chimp :"
+#~ msgstr "Mail chimpansee:"
+
+#~ msgid "Api Key :"
+#~ msgstr "Api Sleutel:"
+
+#~ msgid "List Unique Id :"
+#~ msgstr "Lijst Unieke Id:"
+
+#~ msgid "Double Opt-In :"
+#~ msgstr "Dubbele Opt-In:"
+
+#~ msgid "Welcome Email :"
+#~ msgstr "Welkom E-mail:"
+
+#~ msgid "Success! The Currency has been saved Successfully."
+#~ msgstr "Succes! De valuta is succesvol opgeslagen."
+
+#~ msgid "Add New Currency"
+#~ msgstr "Toevoegen nieuwe Munt"
+
+#~ msgid "Currency Name :"
+#~ msgstr "Naam van de munt:"
+
+#~ msgid "Currency Code :"
+#~ msgstr "De Code van de:"
+
+#~ msgid "Currency Sign :"
+#~ msgstr "Valuta teken:"
+
+#~ msgid "Success! The Country has been saved Successfully."
+#~ msgstr "Succes! Het land is succesvol opgeslagen."
+
+#~ msgid "Add New Country"
+#~ msgstr "Toevoegen nieuwe Land"
+
+#~ msgid "Country Name :"
+#~ msgstr "Naam van het land:"
+
+#~ msgid "Success! The Country has been Edit Successfully."
+#~ msgstr "Succes! Het land is succesvol bewerken."
+
+#~ msgid "Update Existing Country"
+#~ msgstr "Werk Bestaande Land"
+
+#~ msgid "Paypal Cancellation Notification Email Template [Sent to Admin]"
+#~ msgstr "Paypal Annulering Melding e-mail sjabloon [Verzonden naar Admin]"
+
+#~ msgid "Success! The Currency has been Edit Successfully."
+#~ msgstr "Succes! De valuta is succesvol bewerken."
+
+#~ msgid "Update Existing Currency"
+#~ msgstr "Update bestaande Valuta"
+
+#~ msgid "Edit this Booking?"
+#~ msgstr "Modifier Cette Réservation?"
+
+#~ msgid "Quick Start"
+#~ msgstr "Démarrage Rapide"
+
+#~ msgid "Max Bookings"
+#~ msgstr "Réservations Max"
+
+#~ msgid "Error! Please choose Start Time to take Time Off."
+#~ msgstr "Erreur! S'il vous plaît choisissez Démarrer Temps de prendre congé."
+
+#~ msgid "Start Time :"
+#~ msgstr "Heure de Départ:"
+
+#~ msgid "End Time :"
+#~ msgstr "Heure de Fin:"
+
+#~ msgid "Payment Image Url :"
+#~ msgstr "URL de l'image de Paiement:"

@@ -1,0 +1,385 @@
+<?xml version="1.0"?>
+<slider>
+  <name><![CDATA[Lightbox]]></name>
+  <settings>
+    <slide_width>715</slide_width>
+    <slide_height>399</slide_height>
+    <width>981</width>
+    <height>451</height>
+    <responsive>0</responsive>
+    <aspect_ratio>-1</aspect_ratio>
+    <skin>glossy-curved-black</skin>
+    <include_skin>0</include_skin>
+    <align_type>centerCenter</align_type>
+    <scale_type>outsideFit</scale_type>
+    <allow_scale_up>0</allow_scale_up>
+    <lazy_loading>0</lazy_loading>
+    <preload_nearby_images>0</preload_nearby_images>
+    <shuffle>0</shuffle>
+    <slide_start>0</slide_start>
+    <shadow>1</shadow>
+    <slide_buttons>0</slide_buttons>
+    <effect_type>slice</effect_type>
+    <thumbnail_type>scroller</thumbnail_type>
+    <thumbnail_width>90</thumbnail_width>
+    <thumbnail_height>60</thumbnail_height>
+    <thumbnail_orientation>vertical</thumbnail_orientation>
+    <thumbnail_layers>2</thumbnail_layers>
+    <thumbnail_arrows>0</thumbnail_arrows>
+    <custom_class>lightbox-slider</custom_class>
+    <enable_custom_js>0</enable_custom_js>
+    <enable_custom_css>1</enable_custom_css>
+  </settings>
+  <panels_state>
+    <publish>opened</publish>
+    <general>opened</general>
+    <slideshow>closed</slideshow>
+    <slide_navigation_controls>opened</slide_navigation_controls>
+    <lightbox>closed</lightbox>
+    <fullscreen>closed</fullscreen>
+    <timer_animation>closed</timer_animation>
+    <transition_effects>opened</transition_effects>
+    <thumbnails>opened</thumbnails>
+    <video>closed</video>
+    <image_resizing>closed</image_resizing>
+    <slides_order>closed</slides_order>
+    <custom_js_css>opened</custom_js_css>
+  </panels_state>
+  <custom_css><![CDATA[.lightbox-slider .layer {
+	font-family: Verdana;
+	font-size: 14px;
+	text-align: center;
+}]]></custom_css>
+  <slides>
+    <slide>
+      <id>330</id>
+      <slider_id>6</slider_id>
+      <name><![CDATA[YouTube lightbox]]></name>
+      <content>
+        <image><![CDATA[http://dev.bqworks.com/wp-content/uploads/2012/06/image102.jpg]]></image>
+        <alt><![CDATA[Nuit Blanche - Arev Manoukian]]></alt>
+        <title><![CDATA[]]></title>
+        <thumbnail_image><![CDATA[]]></thumbnail_image>
+        <thumbnail_alt><![CDATA[]]></thumbnail_alt>
+        <thumbnail_title><![CDATA[]]></thumbnail_title>
+        <thumbnail_content><![CDATA[]]></thumbnail_content>
+        <layer_1_content><![CDATA[Click on the slide to open the lightbox which will contain a Youtube video.]]></layer_1_content>
+        <slide_link_path><![CDATA[http://www.youtube.com/watch?v=JVuUwvUUPro?width=700&amp;height=400]]></slide_link_path>
+        <slide_link_title><![CDATA[Nuit Blanche explores a fleeting moment between two strangers.]]></slide_link_title>
+        <thumbnail_link_path><![CDATA[]]></thumbnail_link_path>
+        <thumbnail_link_title><![CDATA[]]></thumbnail_link_title>
+      </content>
+      <settings>
+        <layers_num>1</layers_num>
+        <layers_ids>+1+</layers_ids>
+        <layer_1_settings>layer_transition=up+layer_offset=50+layer_easing=swing+layer_duration=400+layer_delay=0+layer_position=bottomLeft+layer_horizontal=0+layer_vertical=0+layer_width=100%+layer_height=auto+layer_preset_styles=black</layer_1_settings>
+        <slide_link_target>_self</slide_link_target>
+        <slide_link_lightbox>1</slide_link_lightbox>
+        <thumbnail_link_target>_self</thumbnail_link_target>
+        <thumbnail_link_lightbox>0</thumbnail_link_lightbox>
+        <slide_type>static</slide_type>
+      </settings>
+      <position>1</position>
+      <panel_state>opened</panel_state>
+      <selected_tab>0</selected_tab>
+      <visibility>enabled</visibility>
+    </slide>
+    <slide>
+      <id>331</id>
+      <slider_id>6</slider_id>
+      <name><![CDATA[Vimeo lightbox]]></name>
+      <content>
+        <image><![CDATA[http://dev.bqworks.com/wp-content/uploads/2012/06/image92.jpg]]></image>
+        <alt><![CDATA[Pixels]]></alt>
+        <title><![CDATA[]]></title>
+        <thumbnail_image><![CDATA[]]></thumbnail_image>
+        <thumbnail_alt><![CDATA[]]></thumbnail_alt>
+        <thumbnail_title><![CDATA[]]></thumbnail_title>
+        <thumbnail_content><![CDATA[]]></thumbnail_content>
+        <layer_1_content><![CDATA[Click on the slide to open the lightbox which will contain a Vimeo video.]]></layer_1_content>
+        <slide_link_path><![CDATA[http://vimeo.com/10829255?width=700&amp;height=400]]></slide_link_path>
+        <slide_link_title><![CDATA[New York invasion by 8-bits creatures ! PIXELS is Patrick Jean\' latest short film, shot on location in New York.]]></slide_link_title>
+        <thumbnail_link_path><![CDATA[]]></thumbnail_link_path>
+        <thumbnail_link_title><![CDATA[]]></thumbnail_link_title>
+      </content>
+      <settings>
+        <layers_num>1</layers_num>
+        <layers_ids>+1+</layers_ids>
+        <layer_1_settings>layer_transition=up+layer_offset=50+layer_easing=swing+layer_duration=400+layer_delay=0+layer_position=bottomRight+layer_horizontal=0+layer_vertical=0+layer_width=100%+layer_height=auto+layer_preset_styles=white</layer_1_settings>
+        <slide_link_target>_self</slide_link_target>
+        <slide_link_lightbox>1</slide_link_lightbox>
+        <thumbnail_link_target>_self</thumbnail_link_target>
+        <thumbnail_link_lightbox>0</thumbnail_link_lightbox>
+        <slide_type>static</slide_type>
+      </settings>
+      <position>2</position>
+      <panel_state>opened</panel_state>
+      <selected_tab>0</selected_tab>
+      <visibility>enabled</visibility>
+    </slide>
+    <slide>
+      <id>332</id>
+      <slider_id>6</slider_id>
+      <name><![CDATA[Flash lightbox]]></name>
+      <content>
+        <image><![CDATA[http://dev.bqworks.com/wp-content/uploads/2012/06/image82.jpg]]></image>
+        <alt><![CDATA[Flash]]></alt>
+        <title><![CDATA[]]></title>
+        <thumbnail_image><![CDATA[]]></thumbnail_image>
+        <thumbnail_alt><![CDATA[]]></thumbnail_alt>
+        <thumbnail_title><![CDATA[]]></thumbnail_title>
+        <thumbnail_content><![CDATA[]]></thumbnail_content>
+        <layer_1_content><![CDATA[Click on the slide to open the lightbox which will contain a flash movie.]]></layer_1_content>
+        <slide_link_path><![CDATA[http://www.adobe.com/jp/events/cs3_web_edition_tour/swfs/perform.swf?width=792&amp;height=294]]></slide_link_path>
+        <slide_link_title><![CDATA[This is a sample of flash content.]]></slide_link_title>
+        <thumbnail_link_path><![CDATA[]]></thumbnail_link_path>
+        <thumbnail_link_title><![CDATA[]]></thumbnail_link_title>
+      </content>
+      <settings>
+        <layers_num>1</layers_num>
+        <layers_ids>+1+</layers_ids>
+        <layer_1_settings>layer_transition=up+layer_offset=50+layer_easing=swing+layer_duration=400+layer_delay=0+layer_position=bottomLeft+layer_horizontal=0+layer_vertical=0+layer_width=100%+layer_height=auto+layer_preset_styles=black,static</layer_1_settings>
+        <slide_link_target>_self</slide_link_target>
+        <slide_link_lightbox>1</slide_link_lightbox>
+        <thumbnail_link_target>_self</thumbnail_link_target>
+        <thumbnail_link_lightbox>0</thumbnail_link_lightbox>
+        <slide_type>static</slide_type>
+      </settings>
+      <position>3</position>
+      <panel_state>opened</panel_state>
+      <selected_tab>0</selected_tab>
+      <visibility>enabled</visibility>
+    </slide>
+    <slide>
+      <id>333</id>
+      <slider_id>6</slider_id>
+      <name><![CDATA[YouTube lightbox]]></name>
+      <content>
+        <image><![CDATA[http://dev.bqworks.com/wp-content/uploads/2012/06/image72.jpg]]></image>
+        <alt><![CDATA[Nuit Blanche - Arev Manoukian]]></alt>
+        <title><![CDATA[]]></title>
+        <thumbnail_image><![CDATA[]]></thumbnail_image>
+        <thumbnail_alt><![CDATA[]]></thumbnail_alt>
+        <thumbnail_title><![CDATA[]]></thumbnail_title>
+        <thumbnail_content><![CDATA[]]></thumbnail_content>
+        <layer_1_content><![CDATA[Click on the slide to open the lightbox which will contain a Youtube video.]]></layer_1_content>
+        <slide_link_path><![CDATA[http://www.youtube.com/watch?v=JVuUwvUUPro?width=700&amp;height=400]]></slide_link_path>
+        <slide_link_title><![CDATA[Nuit Blanche explores a fleeting moment between two strangers.]]></slide_link_title>
+        <thumbnail_link_path><![CDATA[]]></thumbnail_link_path>
+        <thumbnail_link_title><![CDATA[]]></thumbnail_link_title>
+      </content>
+      <settings>
+        <layers_num>1</layers_num>
+        <layers_ids>+1+</layers_ids>
+        <layer_1_settings>layer_transition=up+layer_offset=50+layer_easing=swing+layer_duration=400+layer_delay=0+layer_position=bottomLeft+layer_horizontal=0+layer_vertical=0+layer_width=100%+layer_height=auto+layer_preset_styles=white</layer_1_settings>
+        <slide_link_target>_self</slide_link_target>
+        <slide_link_lightbox>1</slide_link_lightbox>
+        <thumbnail_link_target>_self</thumbnail_link_target>
+        <thumbnail_link_lightbox>0</thumbnail_link_lightbox>
+        <slide_type>static</slide_type>
+      </settings>
+      <position>4</position>
+      <panel_state>opened</panel_state>
+      <selected_tab>0</selected_tab>
+      <visibility>enabled</visibility>
+    </slide>
+    <slide>
+      <id>334</id>
+      <slider_id>6</slider_id>
+      <name><![CDATA[Vimeo lightbox]]></name>
+      <content>
+        <image><![CDATA[http://dev.bqworks.com/wp-content/uploads/2012/06/image61.jpg]]></image>
+        <alt><![CDATA[Pixels]]></alt>
+        <title><![CDATA[]]></title>
+        <thumbnail_image><![CDATA[]]></thumbnail_image>
+        <thumbnail_alt><![CDATA[]]></thumbnail_alt>
+        <thumbnail_title><![CDATA[]]></thumbnail_title>
+        <thumbnail_content><![CDATA[]]></thumbnail_content>
+        <layer_1_content><![CDATA[Click on the slide to open the lightbox which will contain a Vimeo video.]]></layer_1_content>
+        <slide_link_path><![CDATA[http://vimeo.com/10829255?width=700&amp;height=400]]></slide_link_path>
+        <slide_link_title><![CDATA[New York invasion by 8-bits creatures ! PIXELS is Patrick Jean\' latest short film, shot on location in New York.]]></slide_link_title>
+        <thumbnail_link_path><![CDATA[]]></thumbnail_link_path>
+        <thumbnail_link_title><![CDATA[]]></thumbnail_link_title>
+      </content>
+      <settings>
+        <layers_num>1</layers_num>
+        <layers_ids>+1+</layers_ids>
+        <layer_1_settings>layer_transition=up+layer_offset=50+layer_easing=swing+layer_duration=400+layer_delay=0+layer_position=bottomLeft+layer_horizontal=0+layer_vertical=0+layer_width=100%+layer_height=auto+layer_preset_styles=black</layer_1_settings>
+        <slide_link_target>_self</slide_link_target>
+        <slide_link_lightbox>1</slide_link_lightbox>
+        <thumbnail_link_target>_self</thumbnail_link_target>
+        <thumbnail_link_lightbox>0</thumbnail_link_lightbox>
+        <slide_type>static</slide_type>
+      </settings>
+      <position>5</position>
+      <panel_state>opened</panel_state>
+      <selected_tab>0</selected_tab>
+      <visibility>enabled</visibility>
+    </slide>
+    <slide>
+      <id>335</id>
+      <slider_id>6</slider_id>
+      <name><![CDATA[Image lightbox]]></name>
+      <content>
+        <image><![CDATA[http://dev.bqworks.com/wp-content/uploads/2012/06/image51.jpg]]></image>
+        <alt><![CDATA[Image title]]></alt>
+        <title><![CDATA[]]></title>
+        <thumbnail_image><![CDATA[]]></thumbnail_image>
+        <thumbnail_alt><![CDATA[]]></thumbnail_alt>
+        <thumbnail_title><![CDATA[]]></thumbnail_title>
+        <thumbnail_content><![CDATA[]]></thumbnail_content>
+        <layer_1_content><![CDATA[Click on the slide to open the lightbox which will contain an image.]]></layer_1_content>
+        <slide_link_path><![CDATA[http://dev.bqworks.com/wp-content/uploads/2012/06/image51.jpg]]></slide_link_path>
+        <slide_link_title><![CDATA[Some description of the image.]]></slide_link_title>
+        <thumbnail_link_path><![CDATA[]]></thumbnail_link_path>
+        <thumbnail_link_title><![CDATA[]]></thumbnail_link_title>
+      </content>
+      <settings>
+        <layers_num>1</layers_num>
+        <layers_ids>+1+</layers_ids>
+        <layer_1_settings>layer_transition=up+layer_offset=50+layer_easing=swing+layer_duration=400+layer_delay=0+layer_position=bottomLeft+layer_horizontal=0+layer_vertical=0+layer_width=100%+layer_height=auto+layer_preset_styles=white,static</layer_1_settings>
+        <slide_link_target>_self</slide_link_target>
+        <slide_link_lightbox>1</slide_link_lightbox>
+        <thumbnail_link_target>_self</thumbnail_link_target>
+        <thumbnail_link_lightbox>0</thumbnail_link_lightbox>
+        <slide_type>static</slide_type>
+      </settings>
+      <position>6</position>
+      <panel_state>opened</panel_state>
+      <selected_tab>0</selected_tab>
+      <visibility>enabled</visibility>
+    </slide>
+    <slide>
+      <id>336</id>
+      <slider_id>6</slider_id>
+      <name><![CDATA[Flash lightbox]]></name>
+      <content>
+        <image><![CDATA[http://dev.bqworks.com/wp-content/uploads/2012/06/image41.jpg]]></image>
+        <alt><![CDATA[Flash content]]></alt>
+        <title><![CDATA[]]></title>
+        <thumbnail_image><![CDATA[]]></thumbnail_image>
+        <thumbnail_alt><![CDATA[]]></thumbnail_alt>
+        <thumbnail_title><![CDATA[]]></thumbnail_title>
+        <thumbnail_content><![CDATA[]]></thumbnail_content>
+        <layer_1_content><![CDATA[Click on the slide to open the lightbox which will contain a flash movie.]]></layer_1_content>
+        <slide_link_path><![CDATA[http://www.adobe.com/jp/events/cs3_web_edition_tour/swfs/perform.swf?width=792&amp;height=294]]></slide_link_path>
+        <slide_link_title><![CDATA[This is a sample of flash content.]]></slide_link_title>
+        <thumbnail_link_path><![CDATA[]]></thumbnail_link_path>
+        <thumbnail_link_title><![CDATA[]]></thumbnail_link_title>
+      </content>
+      <settings>
+        <layers_num>1</layers_num>
+        <layers_ids>+1+</layers_ids>
+        <layer_1_settings>layer_transition=up+layer_offset=50+layer_easing=swing+layer_duration=400+layer_delay=0+layer_position=bottomLeft+layer_horizontal=0+layer_vertical=0+layer_width=100%+layer_height=auto+layer_preset_styles=black</layer_1_settings>
+        <slide_link_target>_self</slide_link_target>
+        <slide_link_lightbox>1</slide_link_lightbox>
+        <thumbnail_link_target>_self</thumbnail_link_target>
+        <thumbnail_link_lightbox>0</thumbnail_link_lightbox>
+        <slide_type>static</slide_type>
+      </settings>
+      <position>7</position>
+      <panel_state>opened</panel_state>
+      <selected_tab>0</selected_tab>
+      <visibility>enabled</visibility>
+    </slide>
+    <slide>
+      <id>337</id>
+      <slider_id>6</slider_id>
+      <name><![CDATA[Image lightbox]]></name>
+      <content>
+        <image><![CDATA[http://dev.bqworks.com/wp-content/uploads/2012/06/image31.jpg]]></image>
+        <alt><![CDATA[Image title]]></alt>
+        <title><![CDATA[]]></title>
+        <thumbnail_image><![CDATA[]]></thumbnail_image>
+        <thumbnail_alt><![CDATA[]]></thumbnail_alt>
+        <thumbnail_title><![CDATA[]]></thumbnail_title>
+        <thumbnail_content><![CDATA[]]></thumbnail_content>
+        <layer_1_content><![CDATA[Click on the slide to open the lightbox which will contain an image.]]></layer_1_content>
+        <slide_link_path><![CDATA[http://dev.bqworks.com/wp-content/uploads/2012/06/image31.jpg]]></slide_link_path>
+        <slide_link_title><![CDATA[Some description of the image.]]></slide_link_title>
+        <thumbnail_link_path><![CDATA[]]></thumbnail_link_path>
+        <thumbnail_link_title><![CDATA[]]></thumbnail_link_title>
+      </content>
+      <settings>
+        <layers_num>1</layers_num>
+        <layers_ids>+1+</layers_ids>
+        <layer_1_settings>layer_transition=up+layer_offset=50+layer_easing=swing+layer_duration=400+layer_delay=0+layer_position=bottomLeft+layer_horizontal=0+layer_vertical=0+layer_width=100%+layer_height=auto+layer_preset_styles=white</layer_1_settings>
+        <slide_link_target>_self</slide_link_target>
+        <slide_link_lightbox>1</slide_link_lightbox>
+        <thumbnail_link_target>_self</thumbnail_link_target>
+        <thumbnail_link_lightbox>0</thumbnail_link_lightbox>
+        <slide_type>static</slide_type>
+      </settings>
+      <position>8</position>
+      <panel_state>opened</panel_state>
+      <selected_tab>0</selected_tab>
+      <visibility>enabled</visibility>
+    </slide>
+    <slide>
+      <id>338</id>
+      <slider_id>6</slider_id>
+      <name><![CDATA[Image lightbox]]></name>
+      <content>
+        <image><![CDATA[http://dev.bqworks.com/wp-content/uploads/2012/06/image21.jpg]]></image>
+        <alt><![CDATA[Image title]]></alt>
+        <title><![CDATA[]]></title>
+        <thumbnail_image><![CDATA[]]></thumbnail_image>
+        <thumbnail_alt><![CDATA[]]></thumbnail_alt>
+        <thumbnail_title><![CDATA[]]></thumbnail_title>
+        <thumbnail_content><![CDATA[]]></thumbnail_content>
+        <layer_1_content><![CDATA[Click on the slide to open the lightbox which will contain an image.]]></layer_1_content>
+        <slide_link_path><![CDATA[http://dev.bqworks.com/wp-content/uploads/2012/06/image21.jpg]]></slide_link_path>
+        <slide_link_title><![CDATA[Some description of the image.]]></slide_link_title>
+        <thumbnail_link_path><![CDATA[]]></thumbnail_link_path>
+        <thumbnail_link_title><![CDATA[]]></thumbnail_link_title>
+      </content>
+      <settings>
+        <layers_num>1</layers_num>
+        <layers_ids>+1+</layers_ids>
+        <layer_1_settings>layer_transition=up+layer_offset=50+layer_easing=swing+layer_duration=400+layer_delay=0+layer_position=bottomLeft+layer_horizontal=0+layer_vertical=0+layer_width=100%+layer_height=auto+layer_preset_styles=black,static</layer_1_settings>
+        <slide_link_target>_self</slide_link_target>
+        <slide_link_lightbox>1</slide_link_lightbox>
+        <thumbnail_link_target>_self</thumbnail_link_target>
+        <thumbnail_link_lightbox>0</thumbnail_link_lightbox>
+        <slide_type>static</slide_type>
+      </settings>
+      <position>9</position>
+      <panel_state>opened</panel_state>
+      <selected_tab>0</selected_tab>
+      <visibility>enabled</visibility>
+    </slide>
+    <slide>
+      <id>339</id>
+      <slider_id>6</slider_id>
+      <name><![CDATA[Image lightbox]]></name>
+      <content>
+        <image><![CDATA[http://dev.bqworks.com/wp-content/uploads/2012/06/image11.jpg]]></image>
+        <alt><![CDATA[Image title]]></alt>
+        <title><![CDATA[]]></title>
+        <thumbnail_image><![CDATA[]]></thumbnail_image>
+        <thumbnail_alt><![CDATA[]]></thumbnail_alt>
+        <thumbnail_title><![CDATA[]]></thumbnail_title>
+        <thumbnail_content><![CDATA[]]></thumbnail_content>
+        <layer_1_content><![CDATA[Click on the slide to open the lightbox which will contain an image.]]></layer_1_content>
+        <slide_link_path><![CDATA[http://dev.bqworks.com/wp-content/uploads/2012/06/image11.jpg]]></slide_link_path>
+        <slide_link_title><![CDATA[Some description of the image.]]></slide_link_title>
+        <thumbnail_link_path><![CDATA[]]></thumbnail_link_path>
+        <thumbnail_link_title><![CDATA[]]></thumbnail_link_title>
+      </content>
+      <settings>
+        <layers_num>1</layers_num>
+        <layers_ids>+1+</layers_ids>
+        <layer_1_settings>layer_transition=up+layer_offset=50+layer_easing=swing+layer_duration=400+layer_delay=0+layer_position=bottomLeft+layer_horizontal=0+layer_vertical=0+layer_width=100%+layer_height=auto+layer_preset_styles=white</layer_1_settings>
+        <slide_link_target>_self</slide_link_target>
+        <slide_link_lightbox>1</slide_link_lightbox>
+        <thumbnail_link_target>_self</thumbnail_link_target>
+        <thumbnail_link_lightbox>0</thumbnail_link_lightbox>
+        <slide_type>static</slide_type>
+      </settings>
+      <position>10</position>
+      <panel_state>opened</panel_state>
+      <selected_tab>0</selected_tab>
+      <visibility>enabled</visibility>
+    </slide>
+  </slides>
+</slider>

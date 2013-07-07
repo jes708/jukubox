@@ -1,0 +1,1202 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Bookings-Plus\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-02-22 19:05+0530\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: Bookings-Plus <info@bookings-plus.com>\n"
+"Language: sv_SE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: F:\\Wordpress\\bookings-plus-restricted-version\\trunk\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: bookingCalendar.php:213 bookingCalendarByBackend.php:29
+#: bookingCalendarByCustomer.php:27 bookingCalendarByIframe.php:221
+#: bookingCalendarByService.php:210
+msgid "Step 1 : Choose Service"
+msgstr "Steg 1: Välj service"
+
+#: bookingCalendar.php:216 bookingCalendarByBackend.php:32
+#: bookingCalendarByCustomer.php:30 bookingCalendarByIframe.php:224
+#: bookingCalendarByService.php:213
+msgid "Step 2 : Choose Staff"
+msgstr "Steg 2: Välj Personal"
+
+#: bookingCalendar.php:219 bookingCalendarByBackend.php:35
+#: bookingCalendarByCustomer.php:33 bookingCalendarByIframe.php:227
+#: bookingCalendarByService.php:216
+msgid "Step 3 : Date & Time"
+msgstr "Steg 3: Datum & Tid"
+
+#: bookingCalendar.php:222 bookingCalendarByBackend.php:38
+#: bookingCalendarByCustomer.php:36 bookingCalendarByIframe.php:230
+#: bookingCalendarByService.php:219
+msgid "Step 4 : Your Information"
+msgstr "Steg 4: Din information"
+
+#: bookingCalendar.php:225 bookingCalendarByBackend.php:41
+#: bookingCalendarByCustomer.php:39 bookingCalendarByIframe.php:233
+#: bookingCalendarByService.php:222
+msgid "Step 5 : Confirm Details"
+msgstr "Steg 5: bekräfta uppgifterna"
+
+#: bookingCalendar.php:238 bookingCalendarByBackend.php:54
+#: bookingCalendarByCustomer.php:52 bookingCalendarByIframe.php:246
+#: bookingCalendarByService.php:235
+msgid "Book an Appointment Now"
+msgstr "Boka ett möte nu"
+
+#: bookingCalendar.php:245 bookingCalendarByBackend.php:61
+#: bookingCalendarByCustomer.php:59 bookingCalendarByIframe.php:253
+#: bookingCalendarByService.php:242
+msgid "Thank you for Booking."
+msgstr "Tack för bokning."
+
+#: bookingCalendar.php:253 bookingCalendarByBackend.php:69
+#: bookingCalendarByCustomer.php:67 bookingCalendarByIframe.php:261
+#: bookingCalendarByService.php:250
+msgid "Choose Service"
+msgstr "Välj service"
+
+#: bookingCalendar.php:254 bookingCalendarByBackend.php:70
+#: bookingCalendarByCustomer.php:68 bookingCalendarByIframe.php:262
+#: bookingCalendarByService.php:251
+msgid "Service Duration"
+msgstr "tjänsten Varaktighet"
+
+#: bookingCalendar.php:255 bookingCalendarByBackend.php:71
+#: bookingCalendarByCustomer.php:69 bookingCalendarByIframe.php:263
+#: bookingCalendarByService.php:252 leftMenus.php:318 manageServices.php:51
+msgid "Cost"
+msgstr "Kostnad"
+
+#: bookingCalendar.php:257 bookingCalendarByBackend.php:73
+#: bookingCalendarByCustomer.php:71 bookingCalendarByIframe.php:265
+#: bookingCalendarByService.php:254 manageServices.php:46
+msgid "Service Display Order"
+msgstr "Service Display Order"
+
+#: bookingCalendar.php:289 bookingCalendar.php:301
+#: bookingCalendarByBackend.php:105 bookingCalendarByBackend.php:117
+#: bookingCalendarByCustomer.php:103 bookingCalendarByCustomer.php:115
+#: bookingCalendarByIframe.php:297 bookingCalendarByIframe.php:309
+#: bookingCalendarByService.php:286 bookingCalendarByService.php:298
+#: leftMenus.php:349 leftMenus.php:361 manageServices.php:103
+#: manageServices.php:115
+msgid " Mins"
+msgstr "mins"
+
+#: bookingCalendar.php:294 bookingCalendarByBackend.php:110
+#: bookingCalendarByCustomer.php:108 bookingCalendarByIframe.php:302
+#: bookingCalendarByService.php:291 leftMenus.php:354 manageServices.php:108
+msgid " Hrs"
+msgstr "tim"
+
+#: bookingCalendar.php:299 bookingCalendarByBackend.php:115
+#: bookingCalendarByCustomer.php:113 bookingCalendarByIframe.php:307
+#: bookingCalendarByService.php:296 leftMenus.php:359
+msgid " Hr "
+msgstr "Hr"
+
+#: bookingCalendar.php:341 bookingCalendarByBackend.php:157
+#: bookingCalendarByCustomer.php:155 bookingCalendarByIframe.php:349
+#: bookingCalendarByService.php:338
+msgid "Calendar Time Zone:"
+msgstr "Kalender Tidszon:"
+
+#: bookingCalendar.php:458 bookingCalendarByBackend.php:275
+#: bookingCalendarByCustomer.php:271 bookingCalendarByIframe.php:467
+#: bookingCalendarByService.php:455
+msgid " Appointment :"
+msgstr "utnämning:"
+
+#: bookingCalendar.php:500 bookingCalendarByBackend.php:317
+#: bookingCalendarByCustomer.php:313 bookingCalendarByIframe.php:509
+#: bookingCalendarByService.php:497
+msgid "Back Step"
+msgstr "Tillbaka Steg"
+
+#: bookingCalendar.php:501 bookingCalendarByBackend.php:318
+#: bookingCalendarByCustomer.php:314 bookingCalendarByIframe.php:510
+#: bookingCalendarByService.php:498
+msgid "Next Step"
+msgstr "Nästa steg"
+
+#: bookingCalendar.php:536 bookingCalendarByBackend.php:350
+#: bookingCalendarByCustomer.php:345 bookingCalendarByIframe.php:717
+#: bookingCalendarByService.php:530
+msgid "Please choose atleast one Service."
+msgstr "Vänligen välj minst en service."
+
+#: bookingCalendarByIframe.php:584 bookings-plus.php:568
+#: manageBookings.php:453 manageCustomers.php:594
+msgid "Please choose atleast one Staff Member."
+msgstr "Vänligen välj minst en anställd."
+
+#: bookingCalendarByIframe.php:593 bookings-plus.php:577
+#: manageBookings.php:462 manageCustomers.php:603
+msgid "Please choose atleast Booking Date."
+msgstr "Vänligen välj minst bokningsdag."
+
+#: bookingCalendarByIframe.php:598 bookings-plus.php:582
+#: manageBookings.php:467 manageCustomers.php:608
+msgid "Please choose atleast Booking Time."
+msgstr "Vänligen välj minst Bokningstid."
+
+#: bookingForm.php:12 leftMenus.php:70
+msgid "Booking Form Setup"
+msgstr "Bokningsformuläret Setup"
+
+#: bookingForm.php:17
+msgid "Success! The Booking Fields has been updated Successfully."
+msgstr "Framgång! Bokningen Fält har uppdaterats."
+
+#: bookingForm.php:24
+msgid "Booking Form Fields"
+msgstr "Bokning formulärfält"
+
+#: bookingForm.php:42
+msgid "Field Name"
+msgstr "Fältnamn"
+
+#: bookingForm.php:43
+msgid "Visibility"
+msgstr "synlighet"
+
+#: bookingForm.php:44
+msgid "Validation"
+msgstr "validering"
+
+#: bookingForm.php:90 bookingForm.php:111
+msgid "Visible"
+msgstr "synlig"
+
+#: bookingForm.php:93 bookingForm.php:114
+msgid "Invisible"
+msgstr "osynlig"
+
+#: bookingForm.php:98 bookingForm.php:119
+msgid "Required"
+msgstr "krävs"
+
+#: bookingForm.php:101 bookingForm.php:122
+msgid "Not Required"
+msgstr "krävs ej"
+
+#: bookingForm.php:139 leftMenus.php:162 leftMenus.php:258 leftMenus.php:386
+#: leftMenus.php:561 leftMenus.php:710 leftMenus.php:762
+#: manageCustomers.php:109 manageEmployees.php:117 manageEmployees.php:186
+#: manageEmployees.php:258 manageServices.php:155
+msgid "Processing Data..."
+msgstr "Bearbeta data ..."
+
+#: bookingForm.php:139 leftMenus.php:162 leftMenus.php:258 leftMenus.php:386
+#: leftMenus.php:561 leftMenus.php:710 leftMenus.php:724 leftMenus.php:762
+#: manageCustomers.php:109 manageEmployees.php:117 manageEmployees.php:186
+#: manageEmployees.php:258 manageSettings.php:486
+msgid "Submit & Save Changes"
+msgstr "Skicka & Spara ändringar"
+
+#: bookingForm.php:149
+msgid "Booking Form Short Codes For Front End"
+msgstr "Bokningsformuläret Korta koder för Front End"
+
+#: bookingForm.php:163
+msgid "Calendar Embed :"
+msgstr "Kalender Embed:"
+
+#: bookingForm.php:169 bookingForm.php:177 bookingForm.php:189
+#: bookingForm.php:201
+msgid "Copy to Clipboard"
+msgstr "Kopiera till Urklipp"
+
+#: bookingForm.php:173
+msgid "Booking Link Code (Single Services) :"
+msgstr "Bokning Länk kod (Single Services):"
+
+#: bookingForm.php:184
+msgid "Booking Link Code (All Services) :"
+msgstr "Bokning Länk kod (Alla tjänster):"
+
+#: bookingForm.php:193
+msgid "Image Link Code :"
+msgstr "Bildlänk Kod:"
+
+#: bookingForm.php:205
+msgid "Custom Image :"
+msgstr "Anpassad Bild:"
+
+#: bookingForm.php:215
+msgid "Upload Custom Image :"
+msgstr "Ladda Anpassad bild:"
+
+#: bookingForm.php:224 manageCustomers.php:208 manageSettings.php:318
+#: manageSettings.php:537 manageSettings.php:585 manageSettings.php:636
+msgid "Save Changes"
+msgstr "Spara ändringar"
+
+#: bookingForm.php:236
+msgid "Booking Form Header"
+msgstr "Bokningsformuläret Header"
+
+#: bookingForm.php:256
+msgid "Booking Form Footer"
+msgstr "Bokningsformuläret Sidfot"
+
+#: bookingForm.php:276
+msgid "Booking Form Thank you Message"
+msgstr "Bokningsformuläret Tack Meddelande"
+
+#: bookingForm.php:321 bookingForm.php:334 bookingForm.php:347
+msgid "Thank you for copying the Short Code."
+msgstr "Tack för bokning."
+
+#: bookingForm.php:434
+msgid "Please choose the Image to be uploaded."
+msgstr "Välj den bild som ska laddas upp."
+
+#: functions.php:75 leftMenus.php:183
+msgid "Service Name :"
+msgstr "Service Name:"
+
+#: functions.php:81
+msgid "Cost :"
+msgstr "kostnad:"
+
+#: functions.php:87 leftMenus.php:197
+msgid "Service Type :"
+msgstr "Typ av tjänst:"
+
+#: functions.php:96 functions.php:107 leftMenus.php:203
+msgid "Single Booking"
+msgstr "enda bokning"
+
+#: functions.php:99 functions.php:110 leftMenus.php:206
+msgid "Group Bookings"
+msgstr "gruppbokningar"
+
+#: functions.php:118 leftMenus.php:212
+msgid "Max Bookings<br/>(Each Slot) :"
+msgstr "Max Bokning <br/> (varje kortplats):"
+
+#: functions.php:470
+msgid "Staff Member Code :"
+msgstr "Personal Kod:"
+
+#: functions.php:475 leftMenus.php:124
+msgid "Staff Member Color :"
+msgstr "Personal Färg:"
+
+#: functions.php:484 leftMenus.php:136
+msgid "Staff Member Name :"
+msgstr "Personal Medlemsnamn:"
+
+#: functions.php:489 leftMenus.php:144
+msgid "Staff Member Email :"
+msgstr "Personal E-post:"
+
+#: functions.php:494 leftMenus.php:152
+msgid "Staff Member Phone :"
+msgstr "Personal Telefon:"
+
+#: functions.php:1092 leftMenus.php:586
+msgid "First Name :"
+msgstr "Förnamn:"
+
+#: functions.php:1096 leftMenus.php:594
+msgid "Last Name :"
+msgstr "Efternamn:"
+
+#: functions.php:1100 leftMenus.php:603
+msgid "Email :"
+msgstr "e-post:"
+
+#: functions.php:1104 leftMenus.php:612
+msgid "Telephone :"
+msgstr "Telefon:"
+
+#: functions.php:1108 leftMenus.php:620
+msgid "Mobile :"
+msgstr "mobil:"
+
+#: functions.php:1112 leftMenus.php:628
+msgid "Address 1 :"
+msgstr "Adress 1:"
+
+#: functions.php:1120 leftMenus.php:640
+msgid "Address 2 :"
+msgstr "Adress 2:"
+
+#: functions.php:1124 leftMenus.php:648
+msgid "City :"
+msgstr "stad:"
+
+#: functions.php:1128 leftMenus.php:656
+msgid "Post Code :"
+msgstr "Postnummer:"
+
+#: functions.php:1132 leftMenus.php:664
+msgid "Country :"
+msgstr "land:"
+
+#: functions.php:1165 leftMenus.php:698
+msgid "Comments :"
+msgstr "Kommentarer:"
+
+#: functions.php:1429
+msgid "Upcoming Day Off's"
+msgstr "Kommande Day Off är"
+
+#: functions.php:1436 functions.php:1505 manageBookings.php:38
+#: manageCustomers.php:125
+msgid "Employee"
+msgstr "anställd"
+
+#: functions.php:1437 functions.php:1506 manageCustomers.php:126
+msgid "Date"
+msgstr "datum"
+
+#: functions.php:1486
+msgid "Delete Day Off?"
+msgstr "Ta bort fridag?"
+
+#: functions.php:1498
+msgid "Upcoming Time Off's"
+msgstr "Kommande Time Off är"
+
+#: functions.php:1507 manageBookings.php:40 manageCustomers.php:127
+msgid "Time Slot"
+msgstr "tidslucka"
+
+#: functions.php:1584
+msgid "Delete Time Off?"
+msgstr "Radera ledigt?"
+
+#: functions.php:1679
+msgid "Client Name :"
+msgstr "Kund Namn:"
+
+#: functions.php:1686
+msgid "Client Mobile :"
+msgstr "Kund Mobil:"
+
+#: functions.php:1693 manageBookings.php:193
+msgid "Employee :"
+msgstr "anställd:"
+
+#: functions.php:1706
+msgid "Please Choose Employee"
+msgstr "Vänligen Välj Anställd"
+
+#: functions.php:1720
+msgid "Service Booked :"
+msgstr "Tjänsten Bokad:"
+
+#: functions.php:1729
+msgid "Booking Date :"
+msgstr "Bokning Datum:"
+
+#: functions.php:1854 manageEmployees.php:245
+msgid "Time Slot :"
+msgstr "Tidslucka:"
+
+#: functions.php:1858 functions.php:2734 manageEmployees.php:250
+msgid "Please Choose Time"
+msgstr "Vänligen Välj Tid"
+
+#: functions.php:1868 manageBookings.php:220
+msgid "Booking Status :"
+msgstr "Bokning Status:"
+
+#: functions.php:2880
+msgid "Please Choose Service"
+msgstr "Vänligen Välj service"
+
+#: functions.php:2980
+msgid "Employee Name"
+msgstr "anställdes namn"
+
+#: functions.php:2981
+msgid "Employee Email"
+msgstr "anställd E"
+
+#: functions.php:2982
+msgid "Employee Phone"
+msgstr "anställd Telefon"
+
+#: functions.php:3240
+msgid " Slots Left"
+msgstr "Slots Vänster"
+
+#: functions.php:3248
+msgid "All Slots has been Booked."
+msgstr "All Slots har bokats."
+
+#: functions.php:3254
+msgid "Day Off of the Employee. Kindly choose another Date."
+msgstr "Day Off för den anställde. Vänligen välj ett annat datum."
+
+#: leftMenus.php:28
+msgid "Live Help"
+msgstr "Live"
+
+#: leftMenus.php:36
+msgid "Dashboard"
+msgstr "instrumentbräda"
+
+#: leftMenus.php:42 manageBookings.php:11
+msgid "Bookings"
+msgstr "bokning"
+
+#: leftMenus.php:49
+msgid "Staff"
+msgstr "personal"
+
+#: leftMenus.php:56 manageServices.php:10
+msgid "Services"
+msgstr "tjänster"
+
+#: leftMenus.php:63
+msgid "Clients"
+msgstr "kunder"
+
+#: leftMenus.php:76
+msgid "Control Panel"
+msgstr "Kontrollpanelen"
+
+#: leftMenus.php:82 manageReportBug.php:11
+msgid "Report a Bug"
+msgstr "Rapportera ett fel"
+
+#: leftMenus.php:88 manageAffiliates.php:10
+msgid "Become an Affiliate"
+msgstr "Anslut dig"
+
+#: leftMenus.php:99 manageEmployees.php:24
+msgid "Add New Staff Member"
+msgstr "Lägg till ny medarbetare"
+
+#: leftMenus.php:104
+msgid "Success! The Staff Member has been saved Successfully."
+msgstr "Framgång! Den anställde har sparats."
+
+#: leftMenus.php:107
+msgid ""
+"Error! This Email already exists in our Database. Please try with new one."
+msgstr "Fel! Denna post finns redan i vår databas. Försök med nya."
+
+#: leftMenus.php:110 leftMenus.php:177
+msgid ""
+"Note: You will need to Assign your Employees to the respective Services in "
+"order to allow Bookings for your Clients."
+msgstr ""
+"Obs: Du måste Tilldela dina anställda till respektive tjänster så att "
+"Bokningar för dina kunder."
+
+#: leftMenus.php:116
+msgid "Staff Code :"
+msgstr "Personal Kod:"
+
+#: leftMenus.php:169 manageServices.php:24
+msgid "Add New Service"
+msgstr "Lägg till ny tjänst"
+
+#: leftMenus.php:174
+msgid "Success! The Service has been saved Successfully."
+msgstr "Framgång! Tjänsten har sparats."
+
+#: leftMenus.php:188
+msgid "Service Cost ("
+msgstr "Kostnader för tjänstgöring ("
+
+#: leftMenus.php:219
+msgid "Service Time :"
+msgstr "Service Tid:"
+
+#: leftMenus.php:266
+msgid "Assign Services to Staff"
+msgstr "Tilldela tjänster till personal"
+
+#: leftMenus.php:271
+msgid "Success! The Service has been Assigned Successfully."
+msgstr "Framgång! Tjänsten har tilldelats framgångsrikt."
+
+#: leftMenus.php:274
+msgid "Error! Please Choose a Staff Member to Assign Services."
+msgstr "Fel! Vänligen Välj en anställd Tilldela tjänster."
+
+#: leftMenus.php:277
+msgid ""
+"Note: Please choose Staff Member and then tick the appropriate checkbox next "
+"to each service you wish to Assign."
+msgstr ""
+"Obs: Välj anställd och sedan markera lämplig kryssruta bredvid varje tjänst "
+"du vill tilldela."
+
+#: leftMenus.php:283 leftMenus.php:406 manageEmployees.php:136
+#: manageEmployees.php:209
+msgid "Staff Member :"
+msgstr "Personal:"
+
+#: leftMenus.php:296 leftMenus.php:420 manageEmployees.php:150
+#: manageEmployees.php:223
+msgid "Please Choose Staff Member"
+msgstr "Vänligen Välj Personal Medlem"
+
+#: leftMenus.php:316 manageServices.php:47
+msgid "Service Name"
+msgstr "service Name"
+
+#: leftMenus.php:317 manageServices.php:50
+msgid "Service Time"
+msgstr "tjänstgöringstiden"
+
+#: leftMenus.php:319 manageServices.php:52
+msgid "Type"
+msgstr "typ"
+
+#: leftMenus.php:393 manageEmployees.php:34
+msgid "Working Hours"
+msgstr "aRBETSTID"
+
+#: leftMenus.php:398
+msgid "Success! The Working Hours has been updated Successfully."
+msgstr "Framgång! Arbetstidslagen har uppdaterats."
+
+#: leftMenus.php:401
+msgid "Error! Please Choose a Staff Member to save Working Hours."
+msgstr "Fel! Vänligen Välj en anställd för att spara arbetstid."
+
+#: leftMenus.php:438
+msgid "Monday"
+msgstr "Måndag"
+
+#: leftMenus.php:439
+msgid "Tuesday"
+msgstr "tisdag"
+
+#: leftMenus.php:440
+msgid "Wednesday"
+msgstr "onsdag"
+
+#: leftMenus.php:441
+msgid "Thursday"
+msgstr "Torsdag"
+
+#: leftMenus.php:442
+msgid "Friday"
+msgstr "fredag"
+
+#: leftMenus.php:443
+msgid "Saturday"
+msgstr "Lördag"
+
+#: leftMenus.php:444
+msgid "Sunday"
+msgstr "Söndag"
+
+#: leftMenus.php:449
+msgid "Open / Closed"
+msgstr "Öppen / Stängd"
+
+#: leftMenus.php:452 leftMenus.php:460 leftMenus.php:468 leftMenus.php:476
+#: leftMenus.php:484 leftMenus.php:492 leftMenus.php:500
+msgid "Open"
+msgstr "öppet"
+
+#: leftMenus.php:455 leftMenus.php:463 leftMenus.php:471 leftMenus.php:479
+#: leftMenus.php:487 leftMenus.php:495 leftMenus.php:503
+msgid "Closed"
+msgstr "stängt"
+
+#: leftMenus.php:508
+msgid "Start Hours"
+msgstr "starta timmar"
+
+#: leftMenus.php:532
+msgid "End Hours"
+msgstr "End timmar"
+
+#: leftMenus.php:568
+msgid "Add New Client"
+msgstr "Lägg till ny klient"
+
+#: leftMenus.php:572
+msgid "Success! The Client has been saved Successfully."
+msgstr "Framgång! Kunden har sparats."
+
+#: leftMenus.php:576
+msgid ""
+"Error! This Email Address already exists in our Database. Please try with "
+"new one."
+msgstr "Fel! Denna e-postadress finns redan i vår databas. Försök med nya."
+
+#: leftMenus.php:718
+msgid "Success! The Booking has been updated Successfully."
+msgstr "Framgång! Den Boka har uppdaterats."
+
+#: leftMenus.php:731
+msgid "Admin Notification Settings"
+msgstr "Admin Meddelandeinställningar"
+
+#: leftMenus.php:737
+msgid "Success! Admin Notifications Saved"
+msgstr "Framgång! Admin Anmälningar Sparade"
+
+#: leftMenus.php:740
+msgid ""
+"Note: To receive notifications of your client bookings, kindly fill in the "
+"email address."
+msgstr ""
+"OBS: För att få meddelanden om din klient bokningar, vänligen fyll i e-"
+"postadressen."
+
+#: leftMenus.php:741
+msgid "Note: Without Email Address, the system won't work as expected."
+msgstr ""
+"Obs: Utan E-postadress, kommer systemet inte att fungera som förväntat."
+
+#: leftMenus.php:745
+msgid "Email Address :"
+msgstr "E-postadress"
+
+#: leftMenus.php:755
+msgid "Yes, I may consider buying Full Version at later stage."
+msgstr ""
+"Ja, jag överväga att köpa den fullständiga versionen i ett senare skede."
+
+#: leftMenus.php:1165 manageServices.php:305
+msgid "Please Insert Correct Max Bookings Value"
+msgstr "Vänligen välj minst bokningsdag."
+
+#: manageAffiliates.php:15 manageReportBug.php:16
+msgid "Success! The Email has been sent Successfully."
+msgstr "Framgång! Den e-post har skickats."
+
+#: manageAffiliates.php:22
+msgid ""
+"Are you interested becoming an Affiliate of our Product? Shoot us an email "
+"by filling the form below, and we will setup a discussion call."
+msgstr ""
+"Är du intresserad att bli en affiliate av vår produkt? Skjut oss ett mail "
+"genom att fylla i formuläret nedan och vi kommer sätta upp en diskussion "
+"samtal."
+
+#: manageAffiliates.php:26
+#, php-format
+msgid ""
+"Refer/Sell it to your contacts, and if they purchase from us, we will give "
+"you 40% of our Profits straight away.\t"
+msgstr ""
+
+#: manageAffiliates.php:34 manageReportBug.php:28
+msgid "Your Email Address :"
+msgstr "Din e-postadress:"
+
+#: manageAffiliates.php:42 manageReportBug.php:36
+msgid "Subject :"
+msgstr "Ämne:"
+
+#: manageAffiliates.php:50
+msgid "Message :"
+msgstr "meddelande:"
+
+#: manageAffiliates.php:66 manageCustomers.php:173 manageReportBug.php:60
+msgid "Send Email"
+msgstr "Skicka e-post"
+
+#: manageBookings.php:20
+msgid "Calendar Agenda"
+msgstr "Kalender agendan"
+
+#: manageBookings.php:35
+msgid "Client Name"
+msgstr "klient Namn"
+
+#: manageBookings.php:36 manageCustomers.php:51
+msgid "Mobile"
+msgstr "mobil"
+
+#: manageBookings.php:37 manageCustomers.php:124
+msgid "Service"
+msgstr "tjänsten"
+
+#: manageBookings.php:39
+msgid "Booking Date"
+msgstr "Bokning Datum"
+
+#: manageBookings.php:41 manageCustomers.php:128
+msgid "Status"
+msgstr "status"
+
+#: manageBookings.php:68
+msgid "Booking Status : Approved"
+msgstr "Bokning: Godkänd"
+
+#: manageBookings.php:74
+msgid "Booking Status : Disapproved"
+msgstr "Bokning Status: Ej godkänd"
+
+#: manageBookings.php:80
+msgid "Booking Status : Pending Approval"
+msgstr "Bokning Status: väntar på godkännande"
+
+#: manageBookings.php:86
+msgid "Booking Status : Cancelled"
+msgstr "Bokning Status: Borttagen"
+
+#: manageBookings.php:155
+msgid "Edit Booking?"
+msgstr "Redigera bokning?"
+
+#: manageBookings.php:156
+msgid "Cancel Booking?"
+msgstr "Avboka?"
+
+#: manageBookings.php:161
+msgid "Send "
+msgstr "Skicka"
+
+#: manageBookings.php:161
+msgid "Email Again?"
+msgstr "E-post igen?"
+
+#: manageBookings.php:165
+msgid "Delete Booking?"
+msgstr "Ta bort bokning?"
+
+#: manageBookings.php:181
+msgid "Advanced Booking Calendar Filter"
+msgstr "Avancerad bokningskalender Fitler"
+
+#: manageBookings.php:207
+msgid "All Employees"
+msgstr "Alla anställda"
+
+#: manageBookings.php:227
+msgid "Pending Approval"
+msgstr "Bokning Status: väntar på godkännande"
+
+#: manageBookings.php:232
+msgid "Approved"
+msgstr "godkänd"
+
+#: manageBookings.php:237
+msgid "Disapproved"
+msgstr "Disabled"
+
+#: manageBookings.php:242
+msgid "Cancelled"
+msgstr "AVBRUTEN"
+
+#: manageBookings.php:251
+msgid "Day Off / Time Off :"
+msgstr "Day Off / tid Av:"
+
+#: manageBookings.php:258
+msgid "Day Off"
+msgstr "dag off"
+
+#: manageBookings.php:263
+msgid "Time Off"
+msgstr "Time off"
+
+#: manageBookings.php:271
+msgid "Book a Service :"
+msgstr "Boka en tjänst"
+
+#: manageBookings.php:288
+msgid "Booking Calendar"
+msgstr "bokningskalender"
+
+#: manageBookings.php:601
+msgid "Email has been Sent Successfully."
+msgstr "Framgång! E har skickats."
+
+#: manageCustomers.php:12
+msgid "Customers"
+msgstr "kunderna"
+
+#: manageCustomers.php:31
+msgid "Add New Customer"
+msgstr "Lägg till ny kund"
+
+#: manageCustomers.php:42
+msgid ""
+"Note: Click on the Right Corner of the Settings icon to perform various "
+"actions viz. Add New Customer, Export Customers."
+msgstr ""
+"Obs: Klicka på högra hörnet på ikonen Inställningar för att utföra olika "
+"åtgärder dvs. Lägg till ny kund exportkunder."
+
+#: manageCustomers.php:48
+msgid "First Name"
+msgstr "FÖRNAMN"
+
+#: manageCustomers.php:49
+msgid "Last Name"
+msgstr "efternamn"
+
+#: manageCustomers.php:50
+msgid "Email Address"
+msgstr "E-postadress"
+
+#: manageCustomers.php:52
+msgid "City"
+msgstr "stad"
+
+#: manageCustomers.php:53
+msgid "Country"
+msgstr "land"
+
+#: manageCustomers.php:78
+msgid "Edit Client?"
+msgstr "Redigera klient?"
+
+#: manageCustomers.php:79
+msgid "Email Client?"
+msgstr "E-postklient?"
+
+#: manageCustomers.php:80
+msgid "Booking Details"
+msgstr "bokning Detaljer"
+
+#: manageCustomers.php:81
+msgid "Book a Service"
+msgstr "Boka en tjänst"
+
+#: manageCustomers.php:82
+msgid "Delete Client"
+msgstr "Ta bort klient"
+
+#: manageCustomers.php:96
+msgid "Edit Customer "
+msgstr "Redigera Kund"
+
+#: manageCustomers.php:100
+msgid "Success! The Customer has been Updated Successfully."
+msgstr "Framgång! Kunden har uppdaterats."
+
+#: manageCustomers.php:115
+msgid "Customer Bookings"
+msgstr "Customer Bokning"
+
+#: manageCustomers.php:129
+msgid "Date of Booking"
+msgstr "Datum bokning"
+
+#: manageCustomers.php:144
+msgid "Email to Customer"
+msgstr "E-post till kunden"
+
+#: manageCustomers.php:150
+msgid "Success! Email has been sent Successfully."
+msgstr "Framgång! E har skickats."
+
+#: manageCustomers.php:156 manageSettings.php:470 manageSettings.php:521
+#: manageSettings.php:569 manageSettings.php:620
+msgid "Email Subject :"
+msgstr "E-post Angående:"
+
+#: manageCustomers.php:184
+msgid "Customer Comments"
+msgstr "Customer Comments"
+
+#: manageCustomers.php:190
+msgid "Success! The Comments has been saved Successfully."
+msgstr "Framgång! De kommentarer har sparats."
+
+#: manageCustomers.php:197
+msgid "Comments:"
+msgstr "Kommentarer:"
+
+#: manageCustomers.php:374
+msgid "You cannot delete this Customer until all Bookings have been deleted."
+msgstr ""
+"Du kan inte ta bort den här kunden förrän alla bokningar har tagits bort."
+
+#: manageEmployees.php:10
+msgid "Staff Members"
+msgstr "anställda"
+
+#: manageEmployees.php:31
+msgid "Assign Services"
+msgstr "tilldela tjänster"
+
+#: manageEmployees.php:37
+msgid "Day Offs"
+msgstr "dag off"
+
+#: manageEmployees.php:40
+msgid "Time Offs"
+msgstr "Time off"
+
+#: manageEmployees.php:47
+msgid ""
+"Note: Click on the Right Corner of the Settings icon to perform various "
+"actions viz. Add New Employees, Allocate Services etc."
+msgstr ""
+"Obs: Klicka på högra hörnet på ikonen Inställningar för att utföra olika "
+"åtgärder dvs. Lägg till nya medarbetare, Tilldela tjänster etc."
+
+#: manageEmployees.php:56
+msgid "Color Code"
+msgstr "färgkod"
+
+#: manageEmployees.php:57
+msgid "Staff Code"
+msgstr "personal kod"
+
+#: manageEmployees.php:58
+msgid "Staff Name"
+msgstr "personal Namn"
+
+#: manageEmployees.php:59
+msgid "Staff Email"
+msgstr "personal E"
+
+#: manageEmployees.php:60
+msgid "Staff Phone"
+msgstr "personal Phone"
+
+#: manageEmployees.php:87
+msgid "Edit Employee?"
+msgstr "Redigera anställd?"
+
+#: manageEmployees.php:88
+msgid "Show Day Off's & Time Off's"
+msgstr "Visa Day Off är och tid Av s"
+
+#: manageEmployees.php:89
+msgid "Delete Employee?"
+msgstr "Ta bort anställd?"
+
+#: manageEmployees.php:103
+msgid "Update Existing Staff Member"
+msgstr "Uppdatera befintlig personal medlem"
+
+#: manageEmployees.php:108
+msgid "Success! The Staff Member has been updated Successfully."
+msgstr "Framgång! Den anställde har uppdaterats."
+
+#: manageEmployees.php:123
+msgid "Day Off Settings"
+msgstr "Day Off Inställningar"
+
+#: manageEmployees.php:128
+msgid "Success! The Day Off has been saved Successfully."
+msgstr "Framgång! Ledigt har sparats."
+
+#: manageEmployees.php:131
+msgid "Error! Please choose Staff Member to take Day Off."
+msgstr "Fel! Välj anställd att ta ledig dag."
+
+#: manageEmployees.php:163
+msgid "Start Date :"
+msgstr "Startdatum:"
+
+#: manageEmployees.php:171
+msgid "End Date :"
+msgstr "Slutdatum:"
+
+#: manageEmployees.php:192
+msgid "Time Off Settings"
+msgstr "Tid från Inställningar"
+
+#: manageEmployees.php:197
+msgid "Success! The Time Off has been done Successfully."
+msgstr "Framgång! Time Off har gjorts med framgång."
+
+#: manageEmployees.php:200
+msgid "Error! Please choose Staff Member to take Time Off."
+msgstr "Fel! Välj anställd att ta ledigt."
+
+#: manageEmployees.php:203
+msgid "Error! Please choose Time Slot to take Time Off."
+msgstr "Fel! Välj tidslucka att ta ledigt."
+
+#: manageEmployees.php:237
+msgid "Date :"
+msgstr "Datum:"
+
+#: manageEmployees.php:264
+msgid "Staff Member Day Off's & Time Off's"
+msgstr "Anställd Day Off är och tid Av s"
+
+#: manageEmployees.php:267
+msgid "Success! The Staff Member Day/Time Off deleted Successfully."
+msgstr "Framgång! Den anställde dag / tid Av raderats."
+
+#: manageEmployees.php:368
+msgid "You cannot delete this Employee until all Bookings have been deleted."
+msgstr ""
+"Du kan inte ta bort den anställde förrän alla bokningar har tagits bort."
+
+#: manageEmployees.php:372
+msgid ""
+"You cannot delete this Employee until all Allocated Services are de-"
+"allocated."
+msgstr ""
+"Du kan inte ta bort den anställde tills alla tilldelade tjänster är "
+"avallokeras."
+
+#: manageReportBug.php:44
+msgid "Bug / Issue :"
+msgstr "Bug / Utgåva:"
+
+#: manageServices.php:30
+msgid "Allocate Services"
+msgstr "tilldela tjänster"
+
+#: manageServices.php:37
+msgid ""
+"Note: Click on the Right Corner of the Settings icon to perform various "
+"actions viz. Add New Services, Allocate Services etc."
+msgstr ""
+"Obs: Klicka på högra hörnet på ikonen Inställningar för att utföra olika "
+"åtgärder dvs. Lägga till nya tjänster, tilldela tjänster mm"
+
+#: manageServices.php:40
+msgid ""
+"To change the order of Services simply drag & drop each service in order to "
+"display in the same way on the Booking Calender to your Customers."
+msgstr ""
+"Om du vill ändra ordningen på tjänster helt enkelt dra och släppa varje "
+"tjänst för att visa på samma sätt på bokningsbekräftelsen Kalender till dina "
+"kunder."
+
+#: manageServices.php:48
+msgid "Short Code"
+msgstr "kort kod"
+
+#: manageServices.php:49
+msgid "Allocated Employees"
+msgstr "tilldelade anställda"
+
+#: manageServices.php:113
+msgid " Hrs "
+msgstr "tim"
+
+#: manageServices.php:130
+msgid "Edit Service?"
+msgstr "Redigera Service?"
+
+#: manageServices.php:130
+msgid "Delete Service?"
+msgstr "Ta bort Service?"
+
+#: manageServices.php:143
+msgid "Update Existing Service"
+msgstr "Uppdatera befintlig service"
+
+#: manageServices.php:148
+msgid "Success! The Service has been updated Successfully."
+msgstr "Framgång! Tjänsten har uppdaterats."
+
+#: manageServices.php:155
+msgid "Save & Submit Changes"
+msgstr "Spara och Skicka ändringar"
+
+#: manageServices.php:206
+msgid "This Service cannot be deleted until de-allocated from the Employees."
+msgstr ""
+"Den här tjänsten kan inte tas bort förrän de har avdelats från de anställda."
+
+#: manageSettings.php:13
+msgid "Settings"
+msgstr "inställningar"
+
+#: manageSettings.php:23
+msgid "General Settings"
+msgstr "allmänna inställningar"
+
+#: manageSettings.php:35
+msgid "Success! Default Settings has been saved Successfully."
+msgstr "Framgång! Standardinställningar har sparats."
+
+#: manageSettings.php:43
+msgid "Default Settings"
+msgstr "Standardinställningar"
+
+#: manageSettings.php:50
+msgid "Default Currency :"
+msgstr "Default Valuta:"
+
+#: manageSettings.php:94
+msgid "Default Country :"
+msgstr "Standardinställning Land:"
+
+#: manageSettings.php:131
+msgid "Default Date Format :"
+msgstr "Default Datumformat:"
+
+#: manageSettings.php:189
+msgid "Default Time Format :"
+msgstr "Default Tidsformat:"
+
+#: manageSettings.php:198 manageSettings.php:205
+msgid "12 Hours"
+msgstr "12 timmar"
+
+#: manageSettings.php:199 manageSettings.php:206
+msgid "24 Hours"
+msgstr "24 timmar"
+
+#: manageSettings.php:217
+msgid "Default Time Zone :"
+msgstr "Default Tidszon:"
+
+#: manageSettings.php:269
+msgid "Default Booking Slot Size :"
+msgstr "Default bokning Slot storlek:"
+
+#: manageSettings.php:328
+msgid "Email Templates"
+msgstr "e-mallar"
+
+#: manageSettings.php:344 manageSettings.php:445
+msgid "Booking Pending Confirmation Email Template [Sent to Client]"
+msgstr "Bokning i avvaktan på bekräftelse E Mall [Skickat till klient]"
+
+#: manageSettings.php:352 manageSettings.php:498
+msgid "Booking Confirmation Email Template [Sent to Client]"
+msgstr "Bokning i avvaktan på bekräftelse E Mall [Skickat till klient]"
+
+#: manageSettings.php:360
+msgid "Booking Disapproved Email Template [Sent to Client]"
+msgstr "Bokning godkänd E Mall [Skickat till klient]"
+
+#: manageSettings.php:368
+msgid "Approve/Decline Booking Email Template [Sent to Admin]"
+msgstr "Godkänn / nedgång Bokning E Mall [Skickat till Admin]"
+
+#: manageSettings.php:379
+msgid "Social Media Settings"
+msgstr "Sociala medier inställningar"
+
+#: manageSettings.php:402
+msgid "Payment Gateway Settings"
+msgstr "Payment Gateway-inställningar"
+
+#: manageSettings.php:421
+msgid "Auto Responder Settings"
+msgstr "Auto responder inställningar"
+
+#: manageSettings.php:452 manageSettings.php:504 manageSettings.php:554
+#: manageSettings.php:603
+msgid "Success! The Email has been saved Successfully."
+msgstr "Framgång! Den e-post har sparats."
+
+#: manageSettings.php:549
+msgid "Booking Decline Email Template [Sent to Client]"
+msgstr "Bokning Nedgång E Mall [Skickat till klient]"
+
+#: manageSettings.php:597
+msgid "Admin Approve/Disapprove Email Template [Sent to Admin]"
+msgstr "Admin Godkänn / ogillar E Mall [Skickat till Admin]"
