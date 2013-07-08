@@ -4676,7 +4676,7 @@ class Appointments {
 		// end NHF generate pricing table
 		// NHF - generate tab for redirect to schedule
 		// Generate this tab only if allowed
-		if ( $this->is_worker( $user_id ) && isset($this->options["allow_worker_wh"]) && 'yes' == $this->options["allow_worker_wh"] ) {
+		/*if ( $this->is_worker( $user_id ) && isset($this->options["allow_worker_wh"]) && 'yes' == $this->options["allow_worker_wh"] ) {
 			bp_core_new_subnav_item( array(
 				'name' => __(   'See Your Schedule', 'appointments' ),
 				'slug' => '?app_provider_id=' . $user_id . '&app_service_id=1',
@@ -4684,7 +4684,7 @@ class Appointments {
 				'parent_slug' => 'appointments',
 				'screen_function' => array( &$this, 'tab_template_app_pricing_settings' )
 			) );
-		}
+		} */ 
 		// end NHF generate pricing table
 	}
 

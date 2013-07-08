@@ -272,10 +272,52 @@ margin: 20px 10px -8px 10px;
 display: none;
 }
 
-table.profile-fields .field_129.field_birthdate, table.profile-fields .field_28.field_about, table.profile-fields .field_1.field_name {
+table.profile-fields .field_129.field_birthdate, table.profile-fields .field_1.field_name {
 display: none;
 }
 
 #field-visibility-settings-toggle-129 {
 display: none;
+}
+
+#members-list #field_23 {
+margin-right: 3px !important;
+}
+
+
+@media screen and (max-device-width: 480px){
+    #members-list {
+	min-width: 1000px !important;
+    }
+#container {
+min-width: 1000px;
+}
+#members-list li {
+min-width: 780px;
+}
+#members-list #field_23 {
+margin-right: -55px !important;
+}
+#members-list #field_28 span.fval {
+font-size: 9px !important;
+margin-bottom: -8px;
+margin-left: -14px;
+}
+#members-list #field_2 span.fval {
+font-size: 7px !important;
+margin-left: -14px;
+}
+#members-list .item {
+margin-top: -7px;
+}
+#members-list #field_23 span {
+font-size: 9px;
+}
+#members-list .action {
+margin-top: -7px;
+}
+#members-list span.fval {
+margin-bottom: -7px;
+margin-top: 7px;
+}
 }
