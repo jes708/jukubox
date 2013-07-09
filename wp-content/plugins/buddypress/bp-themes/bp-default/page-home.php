@@ -162,7 +162,7 @@ wp_reset_query();
     <section class="f-part-wrap" style="max-width: 1000px;">
     	<h1 class="nf-big-header">Features</h1>
 	<div class="gk-features gk-perspective">
-	    <a href="http://opentok.com/" target="_blank" class="gk-rocket" data-animation="flip" data-delay="0">
+	    <a href="how-it-works/" target="_blank" class="gk-rocket" data-animation="flip" data-delay="0">
 		<span></span>
 		The Latest Online Video Technology
 	    </a>	    
