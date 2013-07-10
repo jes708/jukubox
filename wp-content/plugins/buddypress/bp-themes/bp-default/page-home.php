@@ -7,7 +7,7 @@
 
 <section class="f-part-divide"> 
     <section class="f-part-wrap" style="max-width: 1500px; margin: 0 auto;"> 
-    	<div  style="background: /*url('wp-content/uploads/2013/05/violin.png')*/ /* url('wp-content/uploads/2013/05/violin-2RE.jpg')*/ url('wp-content/uploads/2013/05/Backdrop4CroppedColoredRe.jpg')  no-repeat center top; height: 400px; /*height: 650px;*/  /*background-position: 0% 20%;*/  padding: 40px; margin: 0 auto; background-size: 1500px; background-position: right 43%;" id="top_slide">
+    	<div style="background:/*url('wp-content/uploads/2013/05/Backdrop4CroppedColoredRe.jpg')*/   url('wp-content/uploads/2013/07/Backdrop4CroppedColoredRe-1Lower.jpg') no-repeat center top; height: 400px; /*height: 650px;*/  /*background-position: 0% 20%;*/  padding: 40px; margin: 0 auto; background-size: 1500px; background-position: right 43%;" id="top_slide">
 	    <div style="width: 1000px; margin: 0 auto;" >
 		<h1 style="color: white; font-size: 34px; margin-top: 15px;">Welcome to Jukubox!</h1>
 		<h3 style="color: white; width: 390px; line-height: 1.2em; margin-bottom: 0px;">Study music online with your browser and a webcam.</h3>

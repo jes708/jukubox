@@ -720,6 +720,10 @@ p {
 text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.6);
 }
 
+#top_slide { 
+	/*background: url('../../../../uploads/2013/07/Backdrop4CroppedColoredRe-1LowerTrue.jpg') no-repeat center top !important; */ 
+} 
+
 .bx-viewport { 
 
 	-webkit-box-shadow:  rgba(0, 0, 0, 0.6) 3px 3px 8px !important;
