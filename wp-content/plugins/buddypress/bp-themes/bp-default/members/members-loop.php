@@ -58,8 +58,15 @@ if( $select_teachers == '' ) {
 //$new_order = '3,2,1';  	
 	$string = 'include=' . $select_teachers . '&' . $string;
 //	echo '<h1> STring - ' . $string . '</h1>'; 
- } // end if isset 
-if( isset($_POST['instrument']) && isset($_POST['rating_filter'])  ) { 
+?>
+<script>
+jQuery('#search-by-instrument').ready(function() { 
+	jQuery('#search-by-instrument optgroup option[value="<?php echo $instrument; ?>"]').attr('selected', 'selected'); 
+
+}); // end ready
+</script>
+<?php  } // end if isset  ?>
+<?php if( isset($_POST['instrument']) && isset($_POST['rating_filter'])  ) { 
 	// this is for later if we can filter by rating and price
  } // end if isset 
  
