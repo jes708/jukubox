@@ -29,7 +29,7 @@
   
 if( isset($_REQUEST['instrument']) ) { 
 //echo '<h1>' . $_POST['instrument'] . '</h1>'; 
-	$instrument = mysql_real_escape_string(htmlentities($_POST['instrument'])); 
+	$instrument = mysql_real_escape_string(htmlentities($_REQUEST['instrument'])); 
 	$string_array = explode('&', $string); 
 //	print_r($string_array);
 	unset($string_array[0]);  // get rid of first two exclude statements
