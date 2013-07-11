@@ -107,10 +107,11 @@ body {
 	 
 /*	background: #333;
 	color: #fff; */ 
-	background: none; 
+/*	background: none;*/  
 	color: #cacaca; 
 }
 
+#nav ul {  border-color: #cacaca !important; } 
   
  #nav .sfhover ul li a:active, #nav :hover ul li a:active, #nav li a:active {
 /*	background-color: black; */ 
