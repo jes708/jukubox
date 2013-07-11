@@ -27,7 +27,7 @@
 	$string = implode('&', $string_first_array); 
 	
   
-if( isset($_POST['instrument']) ) { 
+if( isset($_REQUEST['instrument']) ) { 
 //echo '<h1>' . $_POST['instrument'] . '</h1>'; 
 	$instrument = mysql_real_escape_string(htmlentities($_POST['instrument'])); 
 	$string_array = explode('&', $string); 
