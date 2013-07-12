@@ -177,7 +177,7 @@ class BP_XProfile_Component extends BP_Component {
 			'position'        => 20
 		);
 
-		// Change Avatar
+		// Change Avatar   // NHF edited
 		$sub_nav[] = array(
 			'name'            => __( 'Change Profile Picture', 'buddypress' ),
 			'slug'            => 'change-avatar',
