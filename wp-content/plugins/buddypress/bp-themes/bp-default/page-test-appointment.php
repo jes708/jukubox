@@ -53,7 +53,7 @@ $worker_name = bp_get_profile_field_data('field=1&user_id=' . $worker_id . '') ;
 								<script>
 									jQuery('.app_select_services').ready( function() { 
 										jQuery('.app_select_services option[value="3"]').remove(); 
-										jQuery('.app_select_services option[value="2"]').attr("selected", "selected");
+										//jQuery('.app_select_services option[value="2"]').attr("selected", "selected");
 									}); // end ready  
 								</script> 
 								<?php  $_REQUEST['app_service_id'] = 2;   ?>
