@@ -4953,7 +4953,7 @@ function screen_content_app_pricing_settings() {
 		if( !isCurrency($hourPrice) ) { 
 			echo '<h4>Not a valid price! Must be in 0.00 format!</h4>'; 
 		}
-		elseif( $hourPrice < 5 ) { 
+		elseif( $hourPrice < 5 || $halfHourPrice < 5 ) { 
 			echo '<h4>Cannot charge less than $5 for a lesson!</h4>'; 
 		}  
 		else { 
