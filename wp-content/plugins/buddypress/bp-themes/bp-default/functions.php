@@ -1590,3 +1590,18 @@ function get_cur_teacher_price($user_id) {
         $price = $get_price_array[0]['price'];                  
         return $price;                                  
 }
+
+function get_halfhour_price($worker) {
+	$get_halfhour_sql = "SELECT
+					price_half_hour
+				FROM
+					wp_app_workers
+				WHERE
+					ID='" . $worker . "'
+				"; 
+	$get_halfhour_array = finch_mysql_query($get_halfhour_sql, "return"); 
+
+	$halfhour_price = $get_halfhour_array[0]['price_half_hour']; 
+	return $halfhour_price; 
+
+} 

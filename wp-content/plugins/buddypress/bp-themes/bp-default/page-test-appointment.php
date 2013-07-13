@@ -56,7 +56,7 @@ $worker_name = bp_get_profile_field_data('field=1&user_id=' . $worker_id . '') ;
 										//jQuery('.app_select_services option[value="2"]').attr("selected", "selected");
 									}); // end ready  
 								</script> 
-								<?php  $_REQUEST['app_service_id'] = 2;   ?>
+								<?php  //$_REQUEST['app_service_id'] = 2;   ?>
 						<?php } // end ifelse had_first_lesson ?>
 						<?php echo do_shortcode('[app_services]');  ?>
 						<?php   // NHF - commented this out, don't want people choosing different providers on 

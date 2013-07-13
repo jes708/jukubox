@@ -1888,7 +1888,7 @@ class Appointments {
 		if ( is_user_logged_in() || 'yes' != $this->options["login_required"] ) {
 			$script .= '$(".appointments-list table td.free, .app_timetable div.free").not(".app_monthly_schedule_wrapper table td.free").click(function(){';
 			// NHF EDIT nastiness 3
-
+			//$script .= 'alert("HELLO");'; 
 			$script .= '$(this).attr("id", "finch_temp_cell");';
 			$script .= 'var finch_temp_cell = $("#finch_temp_cell");';   
 			$script .= 'var app_val = $(this).children("input").attr("value");';
@@ -2159,7 +2159,15 @@ class Appointments {
 		$this->get_lsw();
 
 		$price = $this->get_price( );
-			
+		// NHF - allowed personal half hour prices, added variables for console.log
+		$price_raw = $price; 
+		$worker_raw = $worker;
+		if( $service == 4 ) { // if this is a half-hour lesson
+			$price_raw = get_halfhour_price($worker);
+			$price = (double)$price_raw; 		
+		}  
+		// end NHF
+	 
 		// It is possible to apply special discounts
 		$price = apply_filters( 'app_display_amount', $price, $service, $worker );
 		$price = apply_filters( 'app_pre_confirmation_price', $price, $service, $worker, $start, $end );
@@ -2230,7 +2238,10 @@ class Appointments {
 							'address'	=> $ask_address,
 							'city'		=> $ask_city,
 							'note'		=> $ask_note,
-							'gcal'		=> $ask_gcal
+							'gcal'		=> $ask_gcal, 
+							'price_raw'	=> $price_raw, 
+							'worker_raw'    => $worker_raw,
+							'price_type'    => gettype($price_raw) 
 						); 
 			
 		$reply_array = apply_filters( 'app_pre_confirmation_reply', $reply_array );
