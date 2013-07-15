@@ -377,3 +377,8 @@ div#sidebar {
 position: relative;
 z-index: 5;
 }
+
+#jukulogo {
+width: /*330px;*/ 343px;
+margin-top: -27px;
+}
