@@ -28,6 +28,9 @@ echo $nowie;*/
 		<?php wp_enqueue_script( 'color', get_template_directory_uri() . '/jquery-color-master/jquery.color.js' ); ?>
 		
 		<?php wp_enqueue_script( 'price', get_template_directory_uri() . '/jquery-price-format/jquery.price_format.1.8.min.js' ); ?>
+		
+		<?php wp_enqueue_style( 'bootstrap_css', get_template_directory_uri() . '/bootstrap/css/bootstrap.min.css' ); ?>	
+		<?php wp_enqueue_script( 'bootstrap_js', get_template_directory_uri() . '/bootstrap/js/bootstrap.min.js' ); ?>
 		<?php wp_head(); ?>
 		
 		
