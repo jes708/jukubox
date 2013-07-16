@@ -1888,7 +1888,7 @@ class Appointments {
 		if ( is_user_logged_in() || 'yes' != $this->options["login_required"] ) {
 			$script .= '$(".appointments-list table td.free, .app_timetable div.free").not(".app_monthly_schedule_wrapper table td.free").click(function(){';
 			// NHF EDIT nastiness 3
-
+			//$script .= 'alert("HELLO");'; 
 			$script .= '$(this).attr("id", "finch_temp_cell");';
 			$script .= 'var finch_temp_cell = $("#finch_temp_cell");';   
 			$script .= 'var app_val = $(this).children("input").attr("value");';
@@ -2159,7 +2159,15 @@ class Appointments {
 		$this->get_lsw();
 
 		$price = $this->get_price( );
-			
+		// NHF - allowed personal half hour prices, added variables for console.log
+		$price_raw = $price; 
+		$worker_raw = $worker;
+		if( $service == 4 ) { // if this is a half-hour lesson
+			$price_raw = get_halfhour_price($worker);
+			$price = (double)$price_raw; 		
+		}  
+		// end NHF
+	 
 		// It is possible to apply special discounts
 		$price = apply_filters( 'app_display_amount', $price, $service, $worker );
 		$price = apply_filters( 'app_pre_confirmation_price', $price, $service, $worker, $start, $end );
@@ -2230,7 +2238,10 @@ class Appointments {
 							'address'	=> $ask_address,
 							'city'		=> $ask_city,
 							'note'		=> $ask_note,
-							'gcal'		=> $ask_gcal
+							'gcal'		=> $ask_gcal, 
+							'price_raw'	=> $price_raw, 
+							'worker_raw'    => $worker_raw,
+							'price_type'    => gettype($price_raw) 
 						); 
 			
 		$reply_array = apply_filters( 'app_pre_confirmation_reply', $reply_array );
@@ -4938,17 +4949,19 @@ function screen_content_app_pricing_settings() {
 	
 	if( isset($_POST['hourPRice']) ) { 
 		$hourPrice = mysql_real_escape_string(htmlentities( $_POST['hourPRice'] ) );
+		$halfHourPrice = mysql_real_escape_string(htmlentities( $_POST['halfHourPRice'] ) );
 		if( !isCurrency($hourPrice) ) { 
 			echo '<h4>Not a valid price! Must be in 0.00 format!</h4>'; 
 		}
-		elseif( $hourPrice < 5 ) { 
+		elseif( $hourPrice < 5 || $halfHourPrice < 5 ) { 
 			echo '<h4>Cannot charge less than $5 for a lesson!</h4>'; 
 		}  
 		else { 
 			$set_price = "UPDATE 
 						wp_app_workers 
 					SET 
-						price = " . $hourPrice . "
+						price = " . $hourPrice . ", 
+						price_half_hour = " . $halfHourPrice . "
 					WHERE
 						ID = " . $user_id . "
 					";
@@ -5005,7 +5018,7 @@ function screen_content_app_pricing_settings() {
 	} 		
 		// NHF Code - get current price, if none exist, current price = 0.00
 		$get_current_price = "SELECT 
-					ID, price
+					ID, price, price_half_hour
 				FROM
 					wp_app_workers
 				WHERE
@@ -5013,13 +5026,21 @@ function screen_content_app_pricing_settings() {
 				"; 
 		$get_current_price_query = finch_mysql_query($get_current_price, "return");
 		$previous_price = $get_current_price_query[0]['price'];
+		$previous_halfhour_price = $get_current_price_query[0]['price_half_hour']; 
 
 		if( !empty($previous_price) ) {  
-			echo '<h4>Your current price: <span id="priceNum">$' . $previous_price . '/ hour lesson</span></h4>';  
+			echo '<h4>Your current price per hour: <span id="priceNum">$' . $previous_price . '/ hour lesson</span></h4>';  
 			$init_price = $previous_price; 
 		} 
 		else {  
 			$init_price = 0.00; 
+		} 
+		if( !empty($previous_halfhour_price) ) { 			
+			echo '<h4>Your current price per half hour: <span id="priceNum">$' . $previous_halfhour_price . '/ hour lesson</span></h4>';  
+			$init_halfhour_price = $previous_halfhour_price; 
+		} 
+		else { 
+			$init_halfhour_price = 0.00; 
 		} 
  
 			do_action( 'app_before_bp_app_settings', $user_id );
@@ -5027,7 +5048,8 @@ function screen_content_app_pricing_settings() {
 			?>
 		<h4>Set the price you wish to charge for lessons</h4>
 		<form method="post" id="priceForm">
-			<p>Price for One Hour Lesson ($ USD):  <input type="text" name="hourPRice" value="<?php echo $init_price; ?>" id="SetHourPrice" /></p>
+			<p>Price for One Hour Lesson ($ USD):  <input type="text" name="hourPRice" value="<?php echo $init_price; ?>" class="SetHourPrice" /></p>
+			<p>Price for One Half-Hour Lesson ($ USD):  <input type="text" name="halfHourPRice" value="<?php echo $init_halfhour_price; ?>" class="SetHourPrice" /></p>
 			<input type="hidden" name="worker_id" value="<?php echo $user_id; ?>" />
 			<p><input type="submit" value="Change Price" />			
 

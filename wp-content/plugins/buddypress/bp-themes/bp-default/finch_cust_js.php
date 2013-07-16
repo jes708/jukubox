@@ -322,8 +322,8 @@ jQuery(document).ready( function() {
 
 
 }); // end ready
-jQuery('#priceForm').ready( function () { 
-	jQuery('#SetHourPrice').priceFormat({ 
+jQuery('.priceForm').ready( function () { 
+	jQuery('.SetHourPrice').priceFormat({ 
 		limit:5, 
 		clearPrefix: true,
 		thousandsSeparator: '',
