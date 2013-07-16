@@ -382,3 +382,49 @@ z-index: 5;
 width: /*330px;*/ 343px;
 margin-top: -27px;
 }
+
+#search-submit {
+margin: 2px 5px 0px -7px;
+padding: 5px 10px 4px 9px;
+position: relative;
+bottom: 2px;
+}
+
+#search-which {
+padding: 1px 1px 1px 1px;
+height: 26px;
+margin-right: 28px;
+margin-left: 3px;
+}
+
+#footer-menu {
+margin-right: 18px;
+}
+
+p, div.entry ul li {
+font-size: 14px !important;
+line-height: 20px !important;
+font-family: "open sans" sans-serif;
+}
+
+div.entry ul li {
+margin-left: 26px;
+font-family: "open sans" sans-serif;
+}
+
+#field_28, #field_23 {
+bottom: -21px !important;
+}
+
+#members-list li {
+height: 120px;
+}
+
+#buatp_members.list_view ul.item-list li .avatar {
+height: 106px;
+width: 106px;
+margin-right: 3px;
+margin-top: 5px !important;
+margin-left: -7px !important;
+box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.29);
+}
