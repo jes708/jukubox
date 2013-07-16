@@ -28,6 +28,9 @@ echo $nowie;*/
 		<?php wp_enqueue_script( 'color', get_template_directory_uri() . '/jquery-color-master/jquery.color.js' ); ?>
 		
 		<?php wp_enqueue_script( 'price', get_template_directory_uri() . '/jquery-price-format/jquery.price_format.1.8.min.js' ); ?>
+		
+		<?php // wp_enqueue_style( 'bootstrap_css', get_template_directory_uri() . '/bootstrap/css/bootstrap.min.css' ); ?>	
+		<?php // wp_enqueue_script( 'bootstrap_js', get_template_directory_uri() . '/bootstrap/js/bootstrap.min.js' ); ?>
 		<?php wp_head(); ?>
 		
 		
@@ -95,7 +98,7 @@ echo '</pre>'; */
 		<div id="header">
 			<div id="search-bar" role="search">
 				<div class="padder">
-					<h1 id="logo" role="banner"><a href="<?php echo home_url(); ?>" title="<?php _ex( 'Home', 'Home page banner link title', 'buddypress' ); ?>"><img id="jukulogo" src="<?php echo get_home_url(); ?>/wp-content/uploads/2013/04/final_nosloganRE.png" /><?php /*bp_site_name();*/  ?></a></h1>
+					<h1 id="logo" role="banner"><a href="<?php echo home_url(); ?>" title="<?php _ex( 'Home', 'Home page banner link title', 'buddypress' ); ?>"><img id="jukulogo" src="<?php echo get_home_url(); ?>/wp-content/uploads/2013/07/Beta.png" /><?php /*bp_site_name();*/  ?></a></h1>
 
 						<form action="<?php echo bp_search_form_action(); ?>" method="post" id="search-form">
 							<label for="search-terms" class="accessibly-hidden"><?php _e( 'Search for:', 'buddypress' ); ?></label>
