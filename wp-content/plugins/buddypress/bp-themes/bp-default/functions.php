@@ -1607,15 +1607,61 @@ function get_halfhour_price($worker) {
 }
 
 // get buttons to toggle lessons
-function generate_lessontoggle() { 
+function generate_lessontoggle($userId, $services='') { 
 
-	$get_services_query = "SELECT
-					*
+	
+	$avail_serv_query = "SELECT 
+					ID, name
 				FROM
-					wp_users
-				"; 
-	$get_services_array = finch_mysql_query($get_serivces_query, "display"); 
-	//$services_string = $get_services_query[0]['services_provided']; 
-	//return $services_string; 
+					wp_app_services
+			     "; 
+	$avail_serv_array = finch_mysql_query($avail_serv_query, "return"); 
+	foreach( $avail_serv_array as $key => $value ) { 
+		echo $value['ID'];
+		$avail_serv_hash[ $value['ID'] ] = 'service';   
+	}
+	//print_r($avail_serv_hash);  
+	
+	$get_services = "SELECT
+				services_provided
+			FROM
+				wp_app_workers
+			WHERE
+				ID=" . $userId . " 
+			"; 
+	$get_services_query = finch_mysql_query($get_services, "return");  
+	$services_string = $get_services_query[0]['services_provided'];
 
+	
+	$services_garray = explode(':', $services_string);
+	array_pop($services_garray); 
+	array_shift($services_garray);  
+	//print_r($services_garray); 
+	foreach( $services_garray as $key => $value ) { 
+		$service_hash[$value] = 'element'; 
+	}  
+	//print_r($service_hash); 
+
+	
+	// proces submitting new service form
+	if( !empty($services) ) { 
+		// do things
+
+	 
+	} 
+
+	echo '<h4>Services I Teach</h4>';
+	echo '<form method="post" id="serviceForm" action="">'; 
+	echo '<input type="hidden" name="serviceToggled" value="" />';  		
+	foreach( $avail_serv_array as $key => $value ) {
+		if( !empty( $service_hash[$value['ID']] ) ) { 
+			$checkedOrNo = "checked"; 
+		} else { 
+			$checkedOrNo = ""; 
+		}   
+		echo '<input type="checkbox" name="services[]" value="' . $value['ID'] . '" ' . $checkedOrNo . ' /> <strong>' . $value['name'] . '</strong><br />'; 
+		
+	} 
+	echo '<input type="submit" value="Change My Services" />';  
+	echo '</form>'; 
 }  
