@@ -14,6 +14,7 @@ echo $nowie;*/
 		<meta property=”og:image” content=”<?php echo get_home_url(); ?>/wp-content/uploads/2013/07/Juku_J_logo4.jpg” /> 
 		<title><?php wp_title( '|', true, 'right' ); bloginfo( 'name' ); ?></title>
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
 
 		<?php do_action( 'bp_head' ); ?>
 	
