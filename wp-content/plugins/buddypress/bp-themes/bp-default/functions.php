@@ -1557,7 +1557,7 @@ function had_first_lesson($user_id, $worker_id) {
     function test_head() { 
 	
 	  echo'  
-		<div class="generic-button friend_slab_' . bp_get_member_user_id() . '" id="test-button"><a href="' . get_home_url() . '/test-appointment/?app_provider_id=' . bp_get_member_user_id() . '&app_service_id=1" title="Schedule a private lesson with this user." class="send-message">Schedule a Lesson!</a></div>'; 
+		<div class="generic-button friend_slab_' . bp_get_member_user_id() . '" id="test-button"><a href="' . get_home_url() . '/test-appointment/?app_provider_id=' . bp_get_member_user_id() . '&app_service_id=1" title="Schedule a private lesson with this user." class="btn btn-primary send-message">Schedule a Lesson!</a></div>'; 
 
 	  
 

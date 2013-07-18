@@ -2428,7 +2428,7 @@ function bp_send_public_message_button( $args = '' ) {
 			'link_href'         => bp_get_send_public_message_link(),
 			'link_title'        => __( 'Send a public message on your activity stream.', 'buddypress' ),
 			'link_text'         => __( 'Public Message', 'buddypress' ),
-			'link_class'        => 'activity-button mention'
+			'link_class'        => 'btn btn-primary activity-button mention'
 		);
 
 		$button = wp_parse_args( $args, $defaults );

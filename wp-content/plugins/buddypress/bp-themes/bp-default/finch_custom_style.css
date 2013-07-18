@@ -336,7 +336,6 @@ input[type=submit],
 input[type=button],
 input[type=reset],
 ul.button-nav li a,
-div.generic-button a,
 .comment-reply-link { 
 /*color: #d7d7d7;
 background: #333;
@@ -384,7 +383,6 @@ input[type=button]:hover,
 input[type=reset]:hover,
 ul.button-nav li a:hover,
 ul.button-nav li.current a,
-div.generic-button a:hover,
 .comment-reply-link:hover { 
 color: #fff;
 text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
@@ -409,7 +407,6 @@ input[type=button]:active,
 input[type=reset]:active,
 ul.button-nav li a:active,
 ul.button-nav li.current a:active,
-div.generic-button a:active,
 .comment-reply-link:active {
     color: #666;
     background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#444));
@@ -431,7 +428,7 @@ background: -moz-linear-gradient(top, #023467, #4da1cd);
 
 }
 
-a.button, input[type=submit], input[type=button], input[type=reset], ul.button-nav li a, div.generic-button a, .comment-reply-link { 
+a.button, input[type=submit], input[type=button], input[type=reset], ul.button-nav li a, .comment-reply-link { 
 	/*-webkit-box-shadow: #ccc 2px 2px 10px;
 -moz-box-shadow: #ccc 2px 2px 10px;
 box-shadow: #ccc 2px 2px 10px; */ 
@@ -1170,11 +1167,11 @@ p#field_28 {
 	margin-top: 5px !important; 
 }
 
-/*button, a.button, input[type=submit], input[type=button], input[type=reset], ul.button-nav li a, div.generic-button a, .comment-reply-link { 
+/*button, a.button, input[type=submit], input[type=button], input[type=reset], ul.button-nav li a, .comment-reply-link { 
 	border: none; 
 }   
 
-button:hover, a.button:hover, input[type=submit]:hover, input[type=button]:hover, input[type=reset]:hover, ul.button-nav li a:hover, div.generic-button a:hover, .comment-reply-link:hover { 
+button:hover, a.button:hover, input[type=submit]:hover, input[type=button]:hover, input[type=reset]:hover, ul.button-nav li a:hover, .comment-reply-link:hover { 
 	border: none; 
 } */
 

@@ -1710,7 +1710,6 @@ input[type=submit],
 input[type=button],
 input[type=reset],
 ul.button-nav li a,
-div.generic-button a,
 .comment-reply-link {
 	background: #fff; /* Old browsers */
 	background: -moz-linear-gradient(top, #ffffff 0%, #ededed 100%); /* FF3.6+ */
@@ -1741,7 +1740,6 @@ input[type=button]:hover,
 input[type=reset]:hover,
 ul.button-nav li a:hover,
 ul.button-nav li.current a,
-div.generic-button a:hover,
 .comment-reply-link:hover {
 	background: #ededed;
 	background: -moz-linear-gradient(top, #ffffff 0%, #e0e0e0 100%); /* FF3.6+ */
