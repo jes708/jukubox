@@ -5027,6 +5027,9 @@ function screen_content_app_pricing_settings() {
 		$get_current_price_query = finch_mysql_query($get_current_price, "return");
 		$previous_price = $get_current_price_query[0]['price'];
 		$previous_halfhour_price = $get_current_price_query[0]['price_half_hour']; 
+		
+		// NHF - attempt at toggle button
+		//generate_lessontoggle(); 
 
 		if( !empty($previous_price) ) {  
 			echo '<h4>Your current price per hour: <span id="priceNum">$' . $previous_price . '/ hour lesson</span></h4>';  

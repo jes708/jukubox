@@ -1604,4 +1604,18 @@ function get_halfhour_price($worker) {
 	$halfhour_price = $get_halfhour_array[0]['price_half_hour']; 
 	return $halfhour_price; 
 
-} 
+}
+
+// get buttons to toggle lessons
+function generate_lessontoggle() { 
+
+	$get_services_query = "SELECT
+					*
+				FROM
+					wp_users
+				"; 
+	$get_services_array = finch_mysql_query($get_serivces_query, "display"); 
+	//$services_string = $get_services_query[0]['services_provided']; 
+	//return $services_string; 
+
+}  
