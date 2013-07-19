@@ -1605,11 +1605,9 @@ function get_halfhour_price($worker) {
 	return $halfhour_price; 
 
 }
-
-// get buttons to toggle lessons
-function generate_lessontoggle($userId, $services='') { 
-
-	
+// generate hashes for possible lessons
+function serivces_hash($Total_or_worker, $userId='') { 
+    if($Total_or_worker == "total" ) { 
 	$avail_serv_query = "SELECT 
 					ID, name
 				FROM
@@ -1617,11 +1615,14 @@ function generate_lessontoggle($userId, $services='') {
 			     "; 
 	$avail_serv_array = finch_mysql_query($avail_serv_query, "return"); 
 	foreach( $avail_serv_array as $key => $value ) { 
-		echo $value['ID'];
 		$avail_serv_hash[ $value['ID'] ] = 'service';   
 	}
-	//print_r($avail_serv_hash);  
-	
+	$avail_serv_both['array'] = $avail_serv_array; 
+	$avail_serv_both['hash'] = $avail_serv_hash; 
+	//print_r($avail_serv_hash);
+	return $avail_serv_both; 
+    } 
+    else if($Total_or_worker == "worker" ){ 
 	$get_services = "SELECT
 				services_provided
 			FROM
@@ -1641,11 +1642,53 @@ function generate_lessontoggle($userId, $services='') {
 		$service_hash[$value] = 'element'; 
 	}  
 	//print_r($service_hash); 
+	return $serivce_hash; 
+    } 					
 
+    
+	 
+} 
+
+function get_user_services_hash($userId) { 
+
+	 $get_services = "SELECT
+				services_provided
+			FROM
+				wp_app_workers
+			WHERE
+				ID=" . $userId . " 
+			"; 
+	$get_services_query = finch_mysql_query($get_services, "return");  
+	$services_string = $get_services_query[0]['services_provided'];
+
+	
+	$services_garray = explode(':', $services_string);
+	array_pop($services_garray); 
+	array_shift($services_garray);  
+	foreach( $services_garray as $key => $value ) { 
+		$service_hash[$value] = 'element'; 
+	}    
+
+	return $service_hash; 
+} 
+
+// get buttons to toggle lessons
+function generate_lessontoggle($userId, $services='') { 
+
+	
+	$avail_serv = serivces_hash('total', '');
+	$avail_serv_array = $avail_serv['array']; 
+	$avail_serv_hash = $avail_serv['hash'];  
+	
+	$service_hash = get_user_services_hash($userId); 	
 	
 	// proces submitting new service form
 	if( !empty($services) ) { 
-		// do things
+		// generate new lesson string
+		//$new_lesson_string = implode(':', $services); 
+		//array_unshift($new_lesson_string, ':'); 
+		//$new_lesson_string[] = ':'; 
+		//echo $new_lesson_string; 
 
 	 
 	} 
@@ -1659,7 +1702,7 @@ function generate_lessontoggle($userId, $services='') {
 		} else { 
 			$checkedOrNo = ""; 
 		}   
-		echo '<input type="checkbox" name="services[]" value="' . $value['ID'] . '" ' . $checkedOrNo . ' /> <strong>' . $value['name'] . '</strong><br />'; 
+		echo '<input type="checkbox" name="services[' . $value['ID'] . ']" value="' . $value['ID'] . '" ' . $checkedOrNo . ' /> <strong>' . $value['name'] . '</strong><br />'; 
 		
 	} 
 	echo '<input type="submit" value="Change My Services" />';  

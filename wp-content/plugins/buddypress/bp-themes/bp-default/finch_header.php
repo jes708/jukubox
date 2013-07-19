@@ -1,6 +1,6 @@
 <?php
 //echo get_halfhour_price(9); 
-//print_r($_POST); 
+print_r($_POST); 
 function fTest_mail() { 
 
 //	$fromheader = "From: finchman@gmail.com"; 
