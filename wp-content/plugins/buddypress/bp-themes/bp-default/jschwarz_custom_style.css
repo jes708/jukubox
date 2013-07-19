@@ -471,3 +471,16 @@ width: 67%;
 .btn.btn-mini.btn-inverse.fav.bp-secondary-action, .btn.btn-mini.btn-inverse.item-button.bp-secondary-action.delete-activity {
 padding: 0 6px;
 }
+
+#sidebar-login-form button {
+float: left;
+margin-right: 7px;
+}
+
+.pagination {
+margin-top: 0px !important;
+}
+
+#header {
+margin-top: 0 !important;
+}

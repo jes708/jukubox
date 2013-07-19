@@ -397,3 +397,11 @@ jQuery('.editfield input[name="field_28"]').ready(function() {
  */ 
 
 </script>
+
+// JSchwarz logged out attempt
+<script>
+	jQuery(document).ready(function() {
+		jQuery('.generic-button a').addClass('btn');
+		jQuery('.generic-button a').addClass('btn-primary');
+});
+</script>
