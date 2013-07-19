@@ -5029,7 +5029,7 @@ function screen_content_app_pricing_settings() {
 		<form method="post" id="priceForm">
 			<p>Price for One Hour Lesson ($ USD):  <input type="text" name="hourPRice" value="<?php echo $init_price; ?>" id="SetHourPrice" /></p>
 			<input type="hidden" name="worker_id" value="<?php echo $user_id; ?>" />
-			<p><input type="submit" value="Change Price" />			
+			<p><button type="submit" class="btn btn-primary">Change Price</button>			
 
 
 		</form>
@@ -9118,7 +9118,7 @@ PLACEHOLDER
 			$form .= $day;
 			$form .= '</td>';
 			$form .= '<td>';
-			$form .= '<select name="'.$status.'['.$day.'][active]">';
+			$form .= '<select name="'.$status.'['.$day.'][active]" class="span2">';
 			if ( isset($whours[$day]['active']) && 'yes' == $whours[$day]['active'] )
 				$s = " selected='selected'";
 			else $s = '';
@@ -9127,7 +9127,7 @@ PLACEHOLDER
 			$form .= '</select>';
 			$form .= '</td>';
 			$form .= '<td>';
-			$form .= '<select name="'.$status.'['.$day.'][start]">';
+			$form .= '<select name="'.$status.'['.$day.'][start]" class="span2">';
 			for ( $t=0; $t<3600*24; $t=$t+$min_secs ) {
 				$dhours = $this->secs2hours( $t ); // Hours in 08:30 format
 				if ( isset($whours[$day]['start']) && $dhours == $whours[$day]['start'] )
@@ -9142,7 +9142,7 @@ PLACEHOLDER
 			$form .= '</td>';
 			
 			$form .= '<td>';
-			$form .= '<select name="'.$status.'['.$day.'][end]">';
+			$form .= '<select name="'.$status.'['.$day.'][end]" class="span2">';
 			for ( $t=$min_secs; $t<=3600*24; $t=$t+$min_secs ) {
 				$dhours = $this->secs2hours( $t ); // Hours in 08:30 format
 				if ( isset($whours[$day]['end']) && $dhours == $whours[$day]['end'] )
