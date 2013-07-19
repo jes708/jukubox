@@ -55,8 +55,8 @@
 
 				<?php do_action( 'bp_group_after_edit_forum_topic' ); ?>
 
-				<p class="submit"><input type="submit" name="save_changes" id="save_changes" value="<?php _e( 'Save Changes', 'buddypress' ); ?>" /></p>
-
+				<p class="submit"><button type="submit" name="save_changes" id="save_changes"><?php _e( 'Save Changes', 'buddypress' ); ?></button></p>
+<!-- jschwarz edit -->
 				<?php wp_nonce_field( 'bp_forums_edit_topic' ); ?>
 
 			</div>
@@ -71,8 +71,8 @@
 
 				<?php do_action( 'bp_group_after_edit_forum_post' ); ?>
 
-				<p class="submit"><input type="submit" name="save_changes" id="save_changes" value="<?php _e( 'Save Changes', 'buddypress' ); ?>" /></p>
-
+				<p class="submit"><button type="submit" name="save_changes" id="save_changes"><?php _e( 'Save Changes', 'buddypress' ); ?></button></p>
+<!-- jschwarz edit -->
 				<?php wp_nonce_field( 'bp_forums_edit_post' ); ?>
 
 			</div>
