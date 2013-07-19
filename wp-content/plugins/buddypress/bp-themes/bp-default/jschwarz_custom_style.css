@@ -168,11 +168,6 @@ position: absolute;
 margin-left: -3px;
 }
 
-#message-threads input[type="checkbox"] {
-margin-left: -12px;
-margin-right: 10px;
-}
-
 .unread-count {
 margin-left: 4px;
 margin-right: -5px;
@@ -483,4 +478,21 @@ margin-top: 0px !important;
 
 #header {
 margin-top: 0 !important;
+}
+
+img {
+max-width: none;
+}
+
+.btn.btn-small.btn-primary.confirm {
+font-weight: normal;
+}
+
+.message-search form div.input-append button {
+height: 30px;
+}
+
+#message-threads input[type="checkbox"] {
+margin-left: -4px;
+margin-right: 4px;
 }

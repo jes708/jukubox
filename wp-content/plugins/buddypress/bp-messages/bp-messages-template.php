@@ -368,9 +368,11 @@ function bp_message_search_form() {
 	$default_search_value = bp_get_search_default_text( 'messages' );
 	$search_value         = !empty( $_REQUEST['s'] ) ? stripslashes( $_REQUEST['s'] ) : $default_search_value; ?>
 
-	<form action="" method="get" id="search-message-form">
-		<label><input type="text" name="s" id="messages_search" <?php if ( $search_value === $default_search_value ) : ?>placeholder="<?php echo esc_html( $search_value ); ?>"<?php endif; ?> <?php if ( $search_value !== $default_search_value ) : ?>value="<?php echo esc_html( $search_value ); ?>"<?php endif; ?> /></label>
-		<input type="submit" id="messages_search_submit" name="messages_search_submit" value="<?php _e( 'Search', 'buddypress' ) ?>" />
+	<form action="" method="get" class="form-search" id="search-message-form">
+		<div class="input-append">
+			<label><input type="text" name="s" id="messages_search" <?php if ( $search_value === $default_search_value ) : ?>placeholder="<?php echo esc_html( $search_value ); ?>"<?php endif; ?> <?php if ( $search_value !== $default_search_value ) : ?>value="<?php echo esc_html( $search_value ); ?>"<?php endif; ?> /></label>
+			<button type="submit" class="btn btn-small btn-primary" id="messages_search_submit" name="messages_search_submit"><i class="icon-search icon-white"></i></button>
+		</div>
 	</form>
 
 <?php
