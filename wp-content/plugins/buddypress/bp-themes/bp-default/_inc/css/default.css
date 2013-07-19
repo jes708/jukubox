@@ -1312,10 +1312,6 @@ div.activity-meta {
 body.activity-permalink div.activity-meta {
 	margin-bottom: 6px;
 }
-div.activity-meta a {
-	font: normal 11px/20px Arial, Tahoma, Verdana, sans-serif;
-	padding: 4px 8px;
-}
 a.activity-time-since {
 	color: #aaa;
 	text-decoration: none;

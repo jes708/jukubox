@@ -2062,7 +2062,7 @@ function bp_activity_delete_link() {
 			$class = 'delete-activity-single';
 		}
 
-		$link = '<a href="' . wp_nonce_url( $url, 'bp_activity_delete_link' ) . '" class="button item-button bp-secondary-action ' . $class . ' confirm" rel="nofollow">' . __( 'Delete', 'buddypress' ) . '</a>';
+		$link = '<a href="' . wp_nonce_url( $url, 'bp_activity_delete_link' ) . '" class="btn btn-mini btn-inverse  item-button bp-secondary-action ' . $class . ' confirm" rel="nofollow">' . __( 'Delete', 'buddypress' ) . '</a>';
 		return apply_filters( 'bp_get_activity_delete_link', $link );
 	}
 

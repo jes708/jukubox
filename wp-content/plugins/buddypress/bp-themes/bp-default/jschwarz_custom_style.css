@@ -467,3 +467,7 @@ ul.item-list li div.item-title, ul.item-list li h4 {
 margin-left: 114px;
 width: 67%;
 }
+
+.btn.btn-mini.btn-inverse.fav.bp-secondary-action, .btn.btn-mini.btn-inverse.item-button.bp-secondary-action.delete-activity {
+padding: 0 6px;
+}
