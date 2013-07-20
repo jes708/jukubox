@@ -5031,33 +5031,57 @@ function screen_content_app_pricing_settings() {
 		// NHF - attempt at toggle button
 	 	generate_lessontoggle($user_id, $_POST['services']);
 		//echo $services_given;
-		if( !empty($previous_price) ) {  
-			echo '<h4>Your current price per hour: <span id="priceNum">$' . $previous_price . '/ hour lesson</span></h4>';  
-			$init_price = $previous_price; 
-		} 
-		else {  
-			$init_price = 0.00; 
-		} 
-		if( !empty($previous_halfhour_price) ) { 			
-			echo '<h4>Your current price per half hour: <span id="priceNum">$' . $previous_halfhour_price . '/ hour lesson</span></h4>';  
-			$init_halfhour_price = $previous_halfhour_price; 
-		} 
-		else { 
-			$init_halfhour_price = 0.00; 
+	
+		
+		// check for whhich services this user is registered
+				// if they set a price and deregistered the service - will remain in db
+			$services_hash = get_user_services_hash($user_id); 
+			//print_r($services_hash); 
+	?>
+		
+	<?php if( (array_key_exists(1, $services_hash)) || (array_key_exists(4, $services_hash))  ) : ?> 
+		<h4>Set the price you wish to charge for lessons</h4>
+		<form method="post" id="priceForm">
+	<?php endif; ?>
+<?php 	
+		if( array_key_exists(1, $services_hash) ) { 
+			if( !empty($previous_price) ) {  
+				echo '<h4>Your current price per hour: <span id="priceNum">$' . $previous_price . '/ hour lesson</span></h4>';  
+				$init_price = $previous_price; 
+			} 
+			else {  
+				$init_price = 0.00; 
+			}  ?>
+
+			<p>Price for One Hour Lesson ($ USD):  <input type="text" name="hourPRice" value="<?php echo $init_price; ?>" class="SetHourPrice" /></p>
+		<?php  
+		}
+		 
+		if( array_key_exists(4, $services_hash) ) { 
+			if( !empty($previous_halfhour_price) ) { 			
+				echo '<h4>Your current price per half hour: <span id="priceNum">$' . $previous_halfhour_price . '/ hour lesson</span></h4>';  
+				$init_halfhour_price = $previous_halfhour_price; 
+			} 
+			else { 
+				$init_halfhour_price = 0.00; 
+			} ?>
+				 
+			<p>Price for One Half-Hour Lesson ($ USD):  <input type="text" name="halfHourPRice" value="<?php echo $init_halfhour_price; ?>" class="SetHourPrice" /></p>
+		<?php 
 		} 
  
 			do_action( 'app_before_bp_app_settings', $user_id );
 			
 			?>
-		<h4>Set the price you wish to charge for lessons</h4>
-		<form method="post" id="priceForm">
-			<p>Price for One Hour Lesson ($ USD):  <input type="text" name="hourPRice" value="<?php echo $init_price; ?>" class="SetHourPrice" /></p>
-			<p>Price for One Half-Hour Lesson ($ USD):  <input type="text" name="halfHourPRice" value="<?php echo $init_halfhour_price; ?>" class="SetHourPrice" /></p>
+
+		
+	<?php if( (array_key_exists(1, $services_hash)) || (array_key_exists(4, $services_hash))  ) : ?> 
 			<input type="hidden" name="worker_id" value="<?php echo $user_id; ?>" />
 			<p><input type="submit" value="Change Price" />			
 
 
 		</form>
+	<?php endif; ?>
 		<!-- NHF - name your own price html --> 	
 			<?php
 			do_action( 'app_after_bp_app_settings', $user_id );
