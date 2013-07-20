@@ -1673,25 +1673,46 @@ function get_user_services_hash($userId) {
 } 
 
 // get buttons to toggle lessons
-function generate_lessontoggle($userId, $services='') { 
-
-	
-	$avail_serv = serivces_hash('total', '');
-	$avail_serv_array = $avail_serv['array']; 
-	$avail_serv_hash = $avail_serv['hash'];  
+function generate_lessontoggle($userId, $services='') { // takes has of lesson services from $_POST 
 	
 	$service_hash = get_user_services_hash($userId); 	
 	
 	// proces submitting new service form
 	if( !empty($services) ) { 
-		// generate new lesson string
-		//$new_lesson_string = implode(':', $services); 
-		//array_unshift($new_lesson_string, ':'); 
-		//$new_lesson_string[] = ':'; 
-		//echo $new_lesson_string; 
-
-	 
+		//echo '<h1>Hello</h1>'; 
+		$sub_service_hash = $services; 
+		//print_r($sub_service_hash); 
+		$num_after =  count($sub_service_hash);  echo '<br />'; 
+		//print_r($service_hash);  		
+		$num_before = count($service_hash); 
+		if( $num_before > $num_after ) {  // deleting a service
+			$new_serve_string = ':'; 
+			foreach( $sub_service_hash as $key => $value ) { 
+				if( ( !$sub_service_hash[$key] )  && ( $key == 1 || $key == 4 ) )  { 
+					echo '<h1>' . $key . '</h1>';
+					// crazy db stuff 
+				} 
+				$new_serve_string .= $key . ':'; 
+			} 
+			echo $new_serve_string; 
+		}
+		elseif( $num_before < $num_after ) { // adding a service
+			$new_serv_string = ':'; 
+			foreach( $sub_service_hash as $key => $value ) { 
+				if( ( !$service_hash[$key] ) && ( $key == 1 || $key == 4 ) ) { 
+					// crazy db stuff
+				} 
+				$new_serv_string .= $key . ':'; 
+			} 
+			echo $new_serv_string; 
+		}  	
+ 
 	} 
+
+	
+	$avail_serv = serivces_hash('total', '');
+	$avail_serv_array = $avail_serv['array']; 
+	$avail_serv_hash = $avail_serv['hash'];  
 
 	echo '<h4>Services I Teach</h4>';
 	echo '<form method="post" id="serviceForm" action="">'; 
