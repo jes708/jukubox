@@ -524,3 +524,7 @@ box-shadow: none;
 font-weight: normal !important;
 font-size: 11px !important;
 }
+
+.btn.btn-primary.conf_app {
+margin: 0 0px 7px 13px;
+}
