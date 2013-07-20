@@ -528,3 +528,11 @@ font-size: 11px !important;
 .btn.btn-primary.conf_app {
 margin: 0 0px 7px 13px;
 }
+
+#enterRoomPass {
+margin-bottom: -13px;
+}
+
+.all_see p {
+margin-bottom: 32px;
+}
