@@ -517,3 +517,10 @@ margin-right: 10px;
 button#signup_submit {
 margin-top: 12px;
 }
+
+.register-section span.label {
+margin-left: -32px;
+box-shadow: none;
+font-weight: normal !important;
+font-size: 11px !important;
+}

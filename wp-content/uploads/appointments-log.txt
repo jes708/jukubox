@@ -203,4 +203,6 @@
 <b>[July 2, 2013 3:01 pm]</b> Service Provider Richard Aaron manually confirmed appointment with ID: 347
 <b>[July 2, 2013 5:05 pm]</b> Service Provider Jon Schwarz manually confirmed appointment with ID: 351
 <b>[July 3, 2013 3:54 pm]</b> Status of Appointment(s) with id(s):322, 347 changed to removed by user:jeschwarz
+<b>[July 20, 2013 2:17 am]</b> Status changed from pending to confirmed by jeschwarz for appointment ID:356
+<b>[July 20, 2013 2:25 am]</b> Status changed from completed to pending by jeschwarz for appointment ID:356
 

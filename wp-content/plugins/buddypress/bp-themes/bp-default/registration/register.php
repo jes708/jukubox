@@ -141,15 +141,15 @@
 										<label for="<?php bp_the_profile_field_input_name(); ?>_day"><?php bp_the_profile_field_name(); ?> <?php if ( bp_get_the_profile_field_is_required() ) : ?><?php _e( '(required)', 'buddypress' ); ?><?php endif; ?></label>
 										<?php do_action( 'bp_' . bp_get_the_profile_field_input_name() . '_errors' ); ?>
 
-										<select name="<?php bp_the_profile_field_input_name(); ?>_day" id="<?php bp_the_profile_field_input_name(); ?>_day">
+										<select name="<?php bp_the_profile_field_input_name(); ?>_day" class="span1" id="<?php bp_the_profile_field_input_name(); ?>_day">
 											<?php bp_the_profile_field_options( 'type=day' ); ?>
 										</select>
 
-										<select name="<?php bp_the_profile_field_input_name(); ?>_month" id="<?php bp_the_profile_field_input_name(); ?>_month">
+										<select name="<?php bp_the_profile_field_input_name(); ?>_month" class="span2" id="<?php bp_the_profile_field_input_name(); ?>_month">
 											<?php bp_the_profile_field_options( 'type=month' ); ?>
 										</select>
 
-										<select name="<?php bp_the_profile_field_input_name(); ?>_year" id="<?php bp_the_profile_field_input_name(); ?>_year">
+										<select name="<?php bp_the_profile_field_input_name(); ?>_year" class="span2" id="<?php bp_the_profile_field_input_name(); ?>_year">
 											<?php bp_the_profile_field_options( 'type=year' ); ?>
 										</select>
 									</div>
