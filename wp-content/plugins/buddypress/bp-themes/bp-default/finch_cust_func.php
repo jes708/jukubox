@@ -206,8 +206,8 @@ function get_upcoming_lessons($user_id, $time_interval, $StudentOrTeacher) {
 	
 		if( (time() >= $beg_enter_time) /*&& (time() <= $end_enter_time)*/   ) { 
 			$can_enter = TRUE;
-			$take_lesson_html = 'The Room is Open!<br /><input type="button" class="enter_room" value="Enter the Lesson Room!" goto="' . get_home_url() . '/lesson-room/?lesson_id=' . $lesson_id . '" />
-			';  
+			$take_lesson_html = 'The Room is Open!<br /><button type="button" class="enter_room btn btn-primary" goto="' . get_home_url() . '/lesson-room/?lesson_id=' . $lesson_id . '">Enter Room</button>
+			'; 
 			$enterable_lessons[] = "yes";  
 		} 
 		else { 
