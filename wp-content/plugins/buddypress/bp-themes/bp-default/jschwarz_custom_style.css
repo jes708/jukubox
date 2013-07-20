@@ -536,3 +536,9 @@ margin-bottom: -13px;
 .all_see p {
 margin-bottom: 32px;
 }
+
+.generic-button.friendship-button.is_friend, .generic-button.friendship-button.not_friends, .generic-button.friendship-button.pending_friend.add, .generic-button.friendship-button.pending_friend {
+position: relative;
+right: 14px;
+top: 5px;
+}
