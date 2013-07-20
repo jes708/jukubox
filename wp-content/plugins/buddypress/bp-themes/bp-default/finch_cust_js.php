@@ -361,6 +361,23 @@ jQuery('.editfield input[name="field_28"]').ready(function() {
 		} 
          }); 
 }); // ready
+
+// forces teachers to be signed up for at least one service
+jQuery('#serviceForm').ready(function() { 
+	jQuery('.serv_check').click( function() { 
+	 	var jj = 0;
+		jQuery('.serv_check').each( function() { 
+			if( jQuery(this).is(':checked') ) { 
+				jj++; 
+			} 
+		}); // end each  
+		if( jj < 1 ) { 
+			alert('You must be registered for one type of service');
+			return false;  
+		}  
+	}); // end click
+}); // end ready
+
 /* jQuery('#signup_form, #profile-edit-form').ready(function() {
 	
 //	alert('hello!'); 

@@ -5059,7 +5059,7 @@ function screen_content_app_pricing_settings() {
 		 
 		if( array_key_exists(4, $services_hash) ) { 
 			if( !empty($previous_halfhour_price) ) { 			
-				echo '<h4>Your current price per half hour: <span id="priceNum">$' . $previous_halfhour_price . '/ hour lesson</span></h4>';  
+				echo '<h4>Your current price per half hour: <span id="priceNum">$' . $previous_halfhour_price . '/ half hour lesson</span></h4>';  
 				$init_halfhour_price = $previous_halfhour_price; 
 			} 
 			else { 
