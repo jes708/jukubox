@@ -1877,8 +1877,8 @@ class Appointments {
 		$ret .= '<div style="clear:both"></div>';
 		$ret .= '<div class="appointments-confirmation-buttons">';
 		$ret .= '<input type="hidden" class="appointments-confirmation-final-value" />';
-		$ret .= '<input type="button" class="appointments-confirmation-button" value="'.$button_text.'" />';
-		$ret .= '<input type="button" class="appointments-confirmation-cancel-button" value="'.__('Cancel', 'appointments').'" />';
+		$ret .= '<button type="button" class="btn btn-primary appointments-confirmation-button">'.$button_text.'</button>';
+		$ret .= '<button type="button" class="btn appointments-confirmation-cancel-button">'.__('Cancel', 'appointments').'</button>';
 		$ret .= '</div>';
 		$ret .= '</fieldset></div>';
 		$ret  = apply_filters( 'app_confirmation_fields', $ret );

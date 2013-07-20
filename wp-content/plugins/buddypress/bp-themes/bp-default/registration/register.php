@@ -240,8 +240,8 @@
 				<?php do_action( 'bp_before_registration_submit_buttons' ); ?>
 
 				<div class="submit">
-					<div class="subtext">By clicking Complete Sign Up, I agree to the Jukubox <a href="http://jukubox.com/terms-of-use/">Terms of Use</a>, including the <a href="http://jukubox.com/privacy-policy/">Privacy Policy</a> and <a href="http://jukubox.com/teachers-manual/">Teacher's Manual</a></div>
-					<input type="submit" name="signup_submit" id="signup_submit" value="<?php _e( 'Complete Sign Up', 'buddypress' ); ?>" />
+					<div class="subtext">By clicking Complete Registration, I agree to the Jukubox <a href="http://jukubox.com/terms-of-use/">Terms of Use</a>, including the <a href="http://jukubox.com/privacy-policy/">Privacy Policy</a> and <a href="http://jukubox.com/teachers-manual/">Teacher's Manual</a></div>
+					<button type="submit" name="signup_submit" class="btn btn-large btn-primary" id="signup_submit"><?php _e( 'Complete Registration', 'buddypress' ); ?></button>
 				</div>
 
 				<?php do_action( 'bp_after_registration_submit_buttons' ); ?>
