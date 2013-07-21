@@ -4691,7 +4691,7 @@ class Appointments {
 			bp_core_new_subnav_item( array(
 				'name' => __(   'See Your Schedule', 'appointments' ),
 				'slug' => '?app_provider_id=' . $user_id . '&app_service_id=1&placeholder=place',
-				'parent_url' => 'http://jukubox.com/test-appointment/', 
+				'parent_url' => get_home_url() . '/test-appointment/', 
 				'parent_slug' => 'appointments',
 				'screen_function' => array( &$this, 'tab_template_app_pricing_settings' )
 			) );
