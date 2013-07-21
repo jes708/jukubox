@@ -4677,7 +4677,7 @@ class Appointments {
 		// Generate this tab only if allowed
 		if ( $this->is_worker( $user_id ) && isset($this->options["allow_worker_wh"]) && 'yes' == $this->options["allow_worker_wh"] ) {
 			bp_core_new_subnav_item( array(
-				'name' => __( /* NHF EDIT */ /*'Appointments Settings',*/ /* end NHF edit */  'Name Your Price', 'appointments' ),
+				'name' => __( /* NHF EDIT */ /*'Appointments Settings',*/ /* end NHF edit */  'Prices and Services', 'appointments' ),
 				'slug' => 'name-your-price',
 				'parent_url' => $link, 
 				'parent_slug' => 'appointments',
