@@ -131,7 +131,8 @@ body {
 	line-height: normal;
 	margin-left: /*63px;*/ -52px; 
 	margin-top: /*34px;*/  /*55px;*/ 23px; 
-	width: 530px;  
+	width: 530px; 
+	height: 82px;  
 } 
 
 .buatp_loop_column  #field_2 { 
@@ -1276,4 +1277,31 @@ li.widget_displaytweetswidget p {
 }
 #footer-cp-area { 
 	float: left; 
+}
+.servWrap { 
+	float: left; 
+} 
+.priceWrap { 
+	float: right; 
+	min-height: 138px;
+	position: relative;  
 }  
+#PriceSubmit { 
+	position: absolute; 
+	bottom: 0; 
+} 
+#field_221 { 
+	position: absolute;
+	right: -57px;
+	bottom: 19px;
+} 
+#field_221 .fname { 
+	display: inline; 
+} 
+#field_221 .fval { 
+	display: inline; 
+}
+
+#field_28 .fval { 
+	width: 432px !important; 
+}   

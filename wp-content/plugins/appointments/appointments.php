@@ -5030,6 +5030,7 @@ function screen_content_app_pricing_settings() {
 		
 		// NHF - attempt at toggle button
 	 	generate_lessontoggle($user_id, $_POST['services']);
+	//	echo '<br /><br />';  
 		//echo $services_given;
 	
 		
@@ -5038,7 +5039,7 @@ function screen_content_app_pricing_settings() {
 			$services_hash = get_user_services_hash($user_id); 
 			//print_r($services_hash); 
 	?>
-		
+	<div class="priceWrap">	
 	<?php if( (array_key_exists(1, $services_hash)) || (array_key_exists(4, $services_hash))  ) : ?> 
 		<h4>Set the price you wish to charge for lessons</h4>
 		<form method="post" id="priceForm">
@@ -5046,7 +5047,7 @@ function screen_content_app_pricing_settings() {
 <?php 	
 		if( array_key_exists(1, $services_hash) ) { 
 			if( !empty($previous_price) ) {  
-				echo '<h4>Your current price per hour: <span id="priceNum">$' . $previous_price . '/ hour lesson</span></h4>';  
+				//echo '<h4>Your current price per hour: <span id="priceNum">$' . $previous_price . '/ hour lesson</span></h4>';  
 				$init_price = $previous_price; 
 			} 
 			else {  
@@ -5059,14 +5060,14 @@ function screen_content_app_pricing_settings() {
 		 
 		if( array_key_exists(4, $services_hash) ) { 
 			if( !empty($previous_halfhour_price) ) { 			
-				echo '<h4>Your current price per half hour: <span id="priceNum">$' . $previous_halfhour_price . '/ half hour lesson</span></h4>';  
+				//echo '<h4>Your current price per half hour: <span id="priceNum">$' . $previous_halfhour_price . '/ half hour lesson</span></h4>';  
 				$init_halfhour_price = $previous_halfhour_price; 
 			} 
 			else { 
 				$init_halfhour_price = 0.00; 
 			} ?>
 				 
-			<p>Price for One Half-Hour Lesson ($ USD):  <input type="text" name="halfHourPRice" value="<?php echo $init_halfhour_price; ?>" class="SetHourPrice" /></p>
+			<p style="margin-bottom: 12px;">Price for One Half-Hour Lesson ($ USD):  <input type="text" name="halfHourPRice" value="<?php echo $init_halfhour_price; ?>" class="SetHourPrice" /></p>
 		<?php 
 		} 
  
@@ -5077,11 +5078,12 @@ function screen_content_app_pricing_settings() {
 		
 	<?php if( (array_key_exists(1, $services_hash)) || (array_key_exists(4, $services_hash))  ) : ?> 
 			<input type="hidden" name="worker_id" value="<?php echo $user_id; ?>" />
-			<p><input type="submit" value="Change Price" />			
+			<p><input type="submit" value="Change Price" id="PriceSubmit" />			
 
 
 		</form>
 	<?php endif; ?>
+	</div>
 		<!-- NHF - name your own price html --> 	
 			<?php
 			do_action( 'app_after_bp_app_settings', $user_id );

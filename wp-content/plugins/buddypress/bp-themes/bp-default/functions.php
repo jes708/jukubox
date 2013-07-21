@@ -1739,89 +1739,78 @@ function generate_lessontoggle($userId, $services='') { // takes has of lesson s
 		$num_after =  count($sub_service_hash);  echo '<br />'; 
 		//print_r($service_hash);  		
 		$num_before = count($service_hash); 
-		if( $num_before > $num_after ) {  // deleting a service
-			$new_serve_string .= ':'; 
-			foreach( $service_hash as $key => $value ) { 
-				if(  !$sub_service_hash[$key] )    {  
+		
+		// deleting a service	
+		$new_serv_string .= ':'; 
+		foreach( $service_hash as $key => $value ) { 
+			if(  !$sub_service_hash[$key] )    {  
 					// service removed - delete from xprofile data if a paid service
-					   // and do not add it to the new string
-					//echo '<h1>' . $key . '</h1>';
-					// crazy db stuff
-					// profile fields necessary to edit - price half hour id 221
-						// price hour - 23
-					if ( ($key == 1) || ($key == 4) ) { 
-						if( $key == 1 ) { // delete hour price
-							$fieldID = 23; 	
-						} 
-						elseif( $key == 4 ) { // delete half hour price
-							$fieldID = 221; 
-						}
- 
-						$xprof_exist = does_xprofileprice_exist($fieldID, $userId);
-						if( !$xprof_exist ) { // field doesn't exist - no need to delete
-							echo 'Service doesn\'t exist!'; 
-						} 
-						else { // need to delete
-							$delete_service = "DELETE FROM
-										wp_bp_xprofile_data
-									WHERE
-										field_id = " . $fieldID . "
-									AND
-										user_id = " . $userId . "
-									"; 
-							finch_mysql_noreturn_query($delete_service); 
-						}
-					}    
-				} 	
-				else { 
-					$new_serve_string .= $key . ':'; 		
-				}  
-			} 
-			//echo $new_serve_string;
-			insert_new_service_string( $new_serve_string, $userId );  
-		}
-		elseif( $num_before < $num_after ) { // adding a service
-			$new_serv_string = ':'; 
-			foreach( $sub_service_hash as $key => $value ) { 
-				if( ( !$service_hash[$key] ) && ( $key == 1 || $key == 4 ) ) { 	
-					if( $key == 1 ) { // add hour price
+				if ( ($key == 1) || ($key == 4) ) { 
+					if( $key == 1 ) { // delete hour price
 						$fieldID = 23; 	
 					} 
-					elseif( $key == 4 ) { // add half hour price
+					elseif( $key == 4 ) { // delete half hour price
 						$fieldID = 221; 
 					}
-					 
-					$price = get_service_prices($userId, $key); 
-					if( $price == '' ) { 
-						$price = '0.00'; 
-					}
-					//echo '<h1>' . $fieldID . '</h1>';  
+ 
 					$xprof_exist = does_xprofileprice_exist($fieldID, $userId);
-					//echo '<pre>'; print_r($xprof_exist);  echo '</pre>'; 
-					if( !$xprof_exist ) { // service xprofiledata doesn't exist - create!
-						//echo '<h1>DOESNT EXIST!</h1>'; 
-						$insert_price = "INSERT INTO
-									wp_bp_xprofile_data(
-										field_id, 
-										user_id, 
-										value, 
-										last_updated) 
-									VALUES( 
-										" . $fieldID . ", 
-										" . $userId . ", 
-										" . $price . ", 
-										NOW()
-									) 
-								"; 
-						finch_mysql_noreturn_query($insert_price); 					
+					if( !$xprof_exist ) { // field doesn't exist - no need to delete
+						echo 'Service doesn\'t exist!'; 
 					} 
-				
+					else { // need to delete
+						$delete_service = "DELETE FROM
+									wp_bp_xprofile_data
+								WHERE
+									field_id = " . $fieldID . "
+								AND
+									user_id = " . $userId . "
+								"; 
+						finch_mysql_noreturn_query($delete_service); 
+					}
+				}    
+			} 	
+		} // end foreach
+		foreach( $sub_service_hash as $key => $value ) { 
+			if( ( !$service_hash[$key] ) && ( $key == 1 || $key == 4 ) ) { 	
+				if( $key == 1 ) { // add hour price
+					$fieldID = 23; 	
 				} 
-				$new_serv_string .= $key . ':'; 
+				elseif( $key == 4 ) { // add half hour price
+					$fieldID = 221; 
+				}
+					 
+				$price = get_service_prices($userId, $key); 
+				if( $price == '' ) { 
+					$price = '0.00'; 
+				}
+					//echo '<h1>' . $fieldID . '</h1>';  
+				$xprof_exist = does_xprofileprice_exist($fieldID, $userId);
+					//echo '<pre>'; print_r($xprof_exist);  echo '</pre>'; 
+				if( !$xprof_exist ) { // service xprofiledata doesn't exist - create!
+					//echo '<h1>DOESNT EXIST!</h1>'; 
+					$insert_price = "INSERT INTO
+								wp_bp_xprofile_data(
+									field_id, 
+									user_id, 
+									value, 
+									last_updated) 
+								VALUES( 
+									" . $fieldID . ", 
+									" . $userId . ", 
+									" . $price . ", 
+									NOW()
+								) 
+							"; 
+					finch_mysql_noreturn_query($insert_price); 					
+				} 
+				
 			} 
-			//echo $new_serv_string;
-			insert_new_service_string( $new_serv_string, $userId );  
-		}  
+			$new_serv_string .= $key . ':'; 
+		 
+		} // end foreach
+		  
+		//echo $new_serv_string;
+		insert_new_service_string( $new_serv_string, $userId );  
  
 	} 
 
@@ -1832,7 +1821,8 @@ function generate_lessontoggle($userId, $services='') { // takes has of lesson s
 
 	// reset server hash - to get newset updated services available	
 	$service_hash = get_user_services_hash($userId); 	
-	//echo '<pre>'; print_r($service_hash); echo '</pre>'; 
+	//echo '<pre>'; print_r($service_hash); echo '</pre>';
+	echo '<div class="servWrap">'; 
 	echo '<h4>Services I Teach</h4>';
 	echo '<form method="post" id="serviceForm" action="">'; 
 	echo '<input type="hidden" name="serviceToggled" value="" />';  		
@@ -1847,4 +1837,5 @@ function generate_lessontoggle($userId, $services='') { // takes has of lesson s
 	} 
 	echo '<input type="submit" value="Change My Services" />';  
 	echo '</form>'; 
+	echo '</div>'; 
 }  
