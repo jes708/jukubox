@@ -1841,7 +1841,6 @@ function generate_lessontoggle($userId, $services='') { // takes has of lesson s
 }
 
 function get_deletable_services( $userId ) { 
-
 	$user_services = get_user_services_hash($userId);
 	//print_r($user_services); 
 	$avail_serv = serivces_hash('total', '');
@@ -1857,5 +1856,5 @@ function get_deletable_services( $userId ) {
 	//echo '<pre>'; 
 	//print_r($serv_remove); 
 	//echo '</pre>'; 
-	return $serv_remove; 
+	return $serv_remove;  
 }   

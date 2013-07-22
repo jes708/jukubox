@@ -39,39 +39,24 @@ $worker_name = bp_get_profile_field_data('field=1&user_id=' . $worker_id . '') ;
 					// if not you can only see their schedule ?>
 
 					<?php if(friends_check_friendship_status( $user_id,$worker_id) == 'is_friend' ) { ?>
- 						<?php
-							$serv_remove = $get_deletable_services($worker_id);  
-							//$user_services = get_user_services_hash($worker_id);
-							//print_r($user_services); 
-							// $avail_serv = serivces_hash('total', '');
-							//$avail_serv_hash = $avail_serv['hash']; 
-							//print_r($avail_serv_hash);  
-							//$possible_services = services_hash('total', ''); 
-							 /* foreach( $avail_serv_hash as $key => $value ) {
-								if(!$user_services[$key]) { 
-									$serv_remove[$key] = "elm_remove"; 
-								}  
-								
-							}   */ 
-							//echo '<pre>'; 
-							//print_r($serv_remove); 
-							//echo '</pre>'; 
+ 						<?php  
+							$serv_remove = get_deletable_services( $worker_id ); 
+							
 						?>
 						<!-- remove options not authorized --> 
 						<script>
 							jQuery('app_select_services').ready(function() { 
 							<?php foreach($serv_remove as $key => $value) : ?>
-								alert('hello!'); 
 								 jQuery('.app_select_services option[value="<?php echo $key; ?>"]').remove();
-							
 							<?php endforeach; ?>
 							}); // end ready
 						</script>
 						
 							<?php if( had_first_lesson($user_id, $worker_id) ) { ?>
 								<script>
+									// commented this out for now - depends on toggling
 									jQuery('.app_select_services').ready( function() { 	
-										jQuery('.app_select_services option[value="2"]').remove();
+									//	jQuery('.app_select_services option[value="2"]').remove();
 									}); // end ready  
 								</script>  
 							<?php } 
@@ -80,7 +65,7 @@ $worker_name = bp_get_profile_field_data('field=1&user_id=' . $worker_id . '') ;
 								 
 								<script>
 									jQuery('.app_select_services').ready( function() { 
-										jQuery('.app_select_services option[value="3"]').remove(); 
+										//jQuery('.app_select_services option[value="3"]').remove(); 
 										//jQuery('.app_select_services option[value="2"]').attr("selected", "selected");
 									}); // end ready  
 								</script> 
