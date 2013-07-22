@@ -225,13 +225,19 @@ jQuery('.publisherContainer').ready( function() {
 jQuery('#aboutFounders').ready( function() {
     jQuery('#aboutFounders .founder_div a img').each( function() {  
 	var origWidth = jQuery(this).outerHeight();
-	var origHeight = jQuery(this).outerWidth();  
+	var origHeight = jQuery(this).outerWidth(); 
+
+	//var origWidth = 100; 
+	//var origHeight = 100;  
 	//alert(origWidth + ' x ' + origHeight);
 	var changeAmount = 8; 
 	var newWidth = origWidth + changeAmount;  
 	var newHeight = origHeight + changeAmount; 		
  	var margAmount = changeAmount / 2; 
-	//alert(margAmount); 
+	//alert(margAmount);
+
+	//var newWidth = 108; 
+	//var newHeight = 108;  
 	
 	jQuery(this).parent('a').parent('div').css({ height: newHeight + "px", width: newWidth + "px"}); 	
 

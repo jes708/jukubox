@@ -1263,4 +1263,9 @@ li.widget_displaytweetswidget p {
 }
 #footer-cp-area { 
 	float: left; 
-}  
+} 
+.founder_div img { 
+	height: 100px;
+	width: 100px; 
+} 
+ 
