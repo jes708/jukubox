@@ -1838,4 +1838,24 @@ function generate_lessontoggle($userId, $services='') { // takes has of lesson s
 	echo '<input type="submit" value="Change My Services" />';  
 	echo '</form>'; 
 	echo '</div>'; 
-}  
+}
+
+function get_deletable_services( $userId ) { 
+
+	$user_services = get_user_services_hash($userId);
+	//print_r($user_services); 
+	$avail_serv = serivces_hash('total', '');
+	$avail_serv_hash = $avail_serv['hash']; 
+	//print_r($avail_serv_hash);  
+	//$possible_services = services_hash('total', ''); 
+	 foreach( $avail_serv_hash as $key => $value ) {
+		if(!$user_services[$key]) { 
+			$serv_remove[$key] = "elm_remove"; 
+		}  
+								
+	}  
+	//echo '<pre>'; 
+	//print_r($serv_remove); 
+	//echo '</pre>'; 
+	return $serv_remove; 
+}   
