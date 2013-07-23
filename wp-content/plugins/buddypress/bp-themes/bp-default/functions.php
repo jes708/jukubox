@@ -1859,6 +1859,55 @@ function get_deletable_services( $userId ) {
 	return $serv_remove;  
 }  
 
+function submit_new_appointments_prices($newPrice, $field_ids, $userId ) { 
+
+	$newPrice = mysql_real_escape_string(htmlentities( $newPrice ) );
+	 
+	if( !isCurrency($newPrice)  ) {
+               echo '<h4>Not a valid price! Must be in 0.00 format!</h4>';
+		return false; 
+        }
+        elseif( $newPrice < 5  ) {
+               echo '<h4>Cannot charge less than $5 for a lesson!</h4>';
+		return false; 
+        }
+	
+	$fieldID = $field_ids['field_id'];
+	$serv_num = $field_ids['serv_num'];
+	$column_name = $field_ids['table_column']; 
+
+	update_app_table_price($newPrice, $userId, $column_name); 
+ 
+	$price = get_service_prices($userId, $serv_num);
+	//echo 'Price is ' . $price; 
+
+	if( $price == '' ) { 
+		$price = 0.00; 
+	} 
+ 
+	$exist_test = does_xprofileprice_exist($fieldID, $userId);
+	if( !$exist_test ) { 
+		create_xprofile_price( $fieldID, $price, $userId ); 
+	} 
+	else { 
+		update_xprofile_price( $fieldID, $price, $userId ); 
+	} 
+
+
+} 
+
+function update_app_table_price ($newPrice, $userId, $column_name) { 
+
+	$set_price = "UPDATE 
+				wp_app_workers 
+			SET 
+				" . $column_name . " = " . $newPrice . " 
+			WHERE
+				ID = " . $userId . "
+			";
+	$set_price_query = finch_mysql_noreturn_query($set_price); 
+
+} 
 
 function all_xprofile_prices($hourPrice="", $halfHourPrice="", $field_ids, $userId) {  
 
