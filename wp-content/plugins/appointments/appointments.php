@@ -4948,7 +4948,7 @@ function screen_content_app_pricing_settings() {
 // NHF - code to let teachers set their price
 	
 	if( isset($_POST['hourPRice']) ) { 
-		$hourPrice = mysql_real_escape_string(htmlentities( $_POST['hourPRice'] ) );
+		/*$hourPrice = mysql_real_escape_string(htmlentities( $_POST['hourPRice'] ) );
 		$halfHourPrice = mysql_real_escape_string(htmlentities( $_POST['halfHourPRice'] ) );
 		if( !isCurrency($hourPrice) ) { 
 			echo '<h4>Not a valid price! Must be in 0.00 format!</h4>'; 
@@ -5014,7 +5014,7 @@ function screen_content_app_pricing_settings() {
 			else { 
 				echo '<h4>Error submitting price!</h4>'; 
 			}  
-		} 
+		} */ 
 	} 		
 		// NHF Code - get current price, if none exist, current price = 0.00
 		$get_current_price = "SELECT 

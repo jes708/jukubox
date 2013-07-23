@@ -1785,7 +1785,7 @@ function generate_lessontoggle($userId, $services='') { // takes has of lesson s
 				}
 					//echo '<h1>' . $fieldID . '</h1>';  
 				$xprof_exist = does_xprofileprice_exist($fieldID, $userId);
-					//echo '<pre>'; print_r($xprof_exist);  echo '</pre>'; 
+					echo '<pre>'; print_r($xprof_exist);  echo '</pre>'; 
 				if( !$xprof_exist ) { // service xprofiledata doesn't exist - create!
 					//echo '<h1>DOESNT EXIST!</h1>'; 
 					$insert_price = "INSERT INTO
@@ -1857,4 +1857,83 @@ function get_deletable_services( $userId ) {
 	//print_r($serv_remove); 
 	//echo '</pre>'; 
 	return $serv_remove;  
+}  
+
+
+function all_xprofile_prices($hourPrice="", $halfHourPrice="", $field_ids, $userId) {  
+
+	$hourPrice = mysql_real_escape_string(htmlentities( $hourPrice ) );
+        $halfHourPrice = mysql_real_escape_string(htmlentities( $halfHourPrice ) );
+
+	if( !isCurrency($hourPrice) || !isCurrency($halfHourPrice) ) {
+               echo '<h4>Not a valid price! Must be in 0.00 format!</h4>';
+        }
+        elseif( $hourPrice < 5 || $halfHourPrice < 5 ) {
+               echo '<h4>Cannot charge less than $5 for a lesson!</h4>';
+        }
+
+	
+	$set_price = "UPDATE 
+				wp_app_workers 
+			SET 
+				price = " . $hourPrice . ", 
+				price_half_hour = " . $halfHourPrice . "
+			WHERE
+				ID = " . $userId . "
+			";
+	$set_price_query = finch_mysql_noreturn_query($set_price); 
+	
+	foreach( $field_ids as $key => $value ) { 
+		
+		$fieldID = $value['field_id'];
+		$serv_num = $value['serv_num']; 
+		$price = get_service_prices($userId, $serv_num); 
+		$exist_test = does_xprofileprice_exist($fieldID, $userId);
+		if( !$exist_test ) { 
+			create_xprofile_price( $fieldID, $price, $userId ); 
+		} 
+		else { 
+			update_xprofile_price( $fieldID, $price, $userId ); 
+		} 
+		 
+	}   
 }   
+function blank() { 
+
+} 
+function create_xprofile_price( $fieldID, $price, $userId ) { 
+
+
+	$insert_price = "INSERT INTO
+				wp_bp_xprofile_data(
+					field_id, 
+					user_id, 
+					value, 
+					last_updated) 
+				VALUES( 
+					" . $fieldID . ",  						
+					" . $userId . ", 
+					" . $price . ", 
+					NOW()
+				) 
+			"; 
+	finch_mysql_noreturn_query($insert_price); 					
+} 
+ 
+
+function update_xprofile_price( $fieldID, $price, $userId ) {
+
+	$update_xprofile_price = " 
+		UPDATE
+			wp_bp_xprofile_data
+		SET
+			value = " . $price . ", 
+			last_updated = NOW() 
+		WHERE 
+			user_id = " . $userId . " 
+		AND
+			field_id = " . $fieldID . "
+		";  
+	finch_mysql_noreturn_query($update_xprofile_price); 
+	 
+}  
