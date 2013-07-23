@@ -1887,7 +1887,11 @@ function all_xprofile_prices($hourPrice="", $halfHourPrice="", $field_ids, $user
 		
 		$fieldID = $value['field_id'];
 		$serv_num = $value['serv_num']; 
-		$price = get_service_prices($userId, $serv_num); 
+		$price = get_service_prices($userId, $serv_num);
+		if( $price = '' ) { 
+			$price = 0.00; 
+		} 
+ 
 		$exist_test = does_xprofileprice_exist($fieldID, $userId);
 		if( !$exist_test ) { 
 			create_xprofile_price( $fieldID, $price, $userId ); 

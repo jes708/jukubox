@@ -4946,8 +4946,17 @@ function screen_content_app_pricing_settings() {
 			else
 				$result["closed"] = null;
 // NHF - code to let teachers set their price
+
+	// set field ids with service numbers
+	$field_ids = Array(); 
+	$first_field_id = Array('field_id' => '23', 'serv_num' => '1'); 
+	$second_field_id = Array('field_id' => '221', 'serv_num' => '4'); 
+	$field_ids[] = $first_field_id; 
+	$field_ids[] = $second_field_id;
+	//print_r($field_ids);  
 	
 	if( isset($_POST['hourPRice']) ) { 
+		all_xprofile_prices($_POST['hourPRice'], $_POST['halfHourPRice'], $field_ids, $user_id); 
 		/*$hourPrice = mysql_real_escape_string(htmlentities( $_POST['hourPRice'] ) );
 		$halfHourPrice = mysql_real_escape_string(htmlentities( $_POST['halfHourPRice'] ) );
 		if( !isCurrency($hourPrice) ) { 
