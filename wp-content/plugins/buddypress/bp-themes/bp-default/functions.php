@@ -1590,3 +1590,47 @@ function get_cur_teacher_price($user_id) {
         $price = $get_price_array[0]['price'];                  
         return $price;                                  
 }
+
+//Schwarz Add - redirect to edit profile for new users
+
+// Send new users to a special page
+function redirectOnFirstLogin( $redirect_to, $requested_redirect_to, $user ) {
+
+// URL to redirect to 
+$redirect_url = get_home_url() . '/members/' . $user->user_login . '/profile/edit/group/1/' ; 
+// How many times to redirect the user 
+$num_redirects = 1; 
+// If implementing this on an existing site, this is here so that existing users don't suddenly get the "first login" treatment 
+// On a new site, you might remove this setting and the associated check 
+// Alternative approach: run a script to assign the "already redirected" property to all existing users 
+// Alternative approach: use a date-based check so that all registered users before a certain date are ignored 
+// 172800 seconds = 48 hours 
+$message_period = 172800; 
+
+// If they're on the login page, don't do anything 
+if( !isset( $user->user_login ) ) 
+{
+	return $redirect_to; 
+}
+
+$key_name = 'redirect_on_first_login'; 
+// Third parameter ensures that the result is a string 
+$current_redirect_value = get_user_meta( $user->ID, $key_name, true ); 
+if( strtotime( $user->user_registered ) > ( time() - $message_period ) 
+	&& ( '' == $current_redirect_value || intval( $current_redirect_value ) < $num_redirects ) 
+) 
+{ 
+	if( '' != $current_redirect_value ) 
+	{ 
+		$num_redirects = intval( $current_redirect_value ) + 1; 
+	} 
+	update_user_meta( $user->ID, $key_name, $num_redirects ); 
+	return $redirect_url; 
+	} 
+	else 
+	{ 
+		return $redirect_to; 
+	} 
+} 
+
+add_filter( 'login_redirect', 'redirectOnFirstLogin', 10, 3 ); 
