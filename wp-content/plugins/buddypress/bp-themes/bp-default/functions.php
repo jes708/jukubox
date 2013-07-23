@@ -1867,9 +1867,11 @@ function all_xprofile_prices($hourPrice="", $halfHourPrice="", $field_ids, $user
 
 	if( !isCurrency($hourPrice) || !isCurrency($halfHourPrice) ) {
                echo '<h4>Not a valid price! Must be in 0.00 format!</h4>';
+		return false; 
         }
         elseif( $hourPrice < 5 || $halfHourPrice < 5 ) {
                echo '<h4>Cannot charge less than $5 for a lesson!</h4>';
+		return false; 
         }
 
 	
@@ -1888,7 +1890,9 @@ function all_xprofile_prices($hourPrice="", $halfHourPrice="", $field_ids, $user
 		$fieldID = $value['field_id'];
 		$serv_num = $value['serv_num']; 
 		$price = get_service_prices($userId, $serv_num);
-		if( $price = '' ) { 
+		//echo 'Price is ' . $price; 
+
+		if( $price == '' ) { 
 			$price = 0.00; 
 		} 
  
@@ -1926,7 +1930,6 @@ function create_xprofile_price( $fieldID, $price, $userId ) {
  
 
 function update_xprofile_price( $fieldID, $price, $userId ) {
-
 	$update_xprofile_price = " 
 		UPDATE
 			wp_bp_xprofile_data

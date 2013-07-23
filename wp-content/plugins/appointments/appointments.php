@@ -4949,8 +4949,8 @@ function screen_content_app_pricing_settings() {
 
 	// set field ids with service numbers
 	$field_ids = Array(); 
-	$first_field_id = Array('field_id' => '23', 'serv_num' => '1'); 
-	$second_field_id = Array('field_id' => '221', 'serv_num' => '4'); 
+	$first_field_id = Array('field_id' => '23', 'serv_num' => '1', 'table_column' => 'price'); 
+	$second_field_id = Array('field_id' => '221', 'serv_num' => '4', 'table_column' => 'price_half_hour');  
 	$field_ids[] = $first_field_id; 
 	$field_ids[] = $second_field_id;
 	//print_r($field_ids);  
