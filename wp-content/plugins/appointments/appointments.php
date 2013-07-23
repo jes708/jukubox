@@ -4948,90 +4948,18 @@ function screen_content_app_pricing_settings() {
 // NHF - code to let teachers set their price
 
 	// set field ids with service numbers
-	$field_ids = Array();
 	// data for hour long lessons 
 	$first_field_id = Array('field_id' => '23', 'serv_num' => '1', 'table_column' => 'price');
 	// data for half hour long lessons 
 	$second_field_id = Array('field_id' => '221', 'serv_num' => '4', 'table_column' => 'price_half_hour');  
-	$field_ids[] = $first_field_id; 
-	$field_ids[] = $second_field_id;
-	//print_r($field_ids);  
+	
 	if( isset($_POST['halfHourPRice']) ) { 
 		submit_new_appointments_prices( $_POST['halfHourPRice'], $second_field_id, $user_id); 
 	} 	
-	if( isset($_POST['hourPRice']) ) {
-		
+	if( isset($_POST['hourPRice']) ) {	
 		submit_new_appointments_prices( $_POST['hourPRice'], $first_field_id, $user_id); 
-	 
-		//all_xprofile_prices($_POST['hourPRice'], $_POST['halfHourPRice'], $field_ids, $user_id); 
-		/*$hourPrice = mysql_real_escape_string(htmlentities( $_POST['hourPRice'] ) );
-		$halfHourPrice = mysql_real_escape_string(htmlentities( $_POST['halfHourPRice'] ) );
-		if( !isCurrency($hourPrice) ) { 
-			echo '<h4>Not a valid price! Must be in 0.00 format!</h4>'; 
-		}
-		elseif( $hourPrice < 5 || $halfHourPrice < 5 ) { 
-			echo '<h4>Cannot charge less than $5 for a lesson!</h4>'; 
-		}  
-		else { 
-			$set_price = "UPDATE 
-						wp_app_workers 
-					SET 
-						price = " . $hourPrice . ", 
-						price_half_hour = " . $halfHourPrice . "
-					WHERE
-						ID = " . $user_id . "
-					";
-			// set price 2 - updates xprofile data
-			$set_price_2 = "SELECT * FROM
-						wp_bp_xprofile_data
-					WHERE
-						field_id = 23
-					AND
-						user_id = " . $user_id . "
-					"; 
-			$set_price_2_array = finch_mysql_query($set_price_2, "return");
-			if(!$set_price_2_array) {  
-				// update the xprofile field for price 
-				$update_xprofile_price = "
-					INSERT INTO 
-						wp_bp_xprofile_data( 
-							field_id, 
-							user_id, 
-							value,
-							last_updated) 
-						VALUES( 
-							23, 
-							" . $user_id . ", 
-							" . $hourPrice . ",
-							NOW()
-						)"; 
-				finch_mysql_noreturn_query($update_xprofile_price); 
-						
- 			} 
-			else { 
-				$update_xprofile_price = " 
-					UPDATE
-						wp_bp_xprofile_data
-					SET
-						value = " . $hourPrice . ", 
-						last_updated = NOW() 
-					WHERE 
-						user_id = " . $user_id . " 
-					AND
-						field_id = 23
-					";  
-				finch_mysql_noreturn_query($update_xprofile_price); 
-			} 
-
-			if( finch_mysql_noreturn_query($set_price) == 'success' ) { 
-					 
-				echo '<h4>Price of ' . $hourPrice . ' submitted!</h4>';
-			} 
-			else { 
-				echo '<h4>Error submitting price!</h4>'; 
-			}  
-		} */ 
 	} 		
+
 		// NHF Code - get current price, if none exist, current price = 0.00
 		$get_current_price = "SELECT 
 					ID, price, price_half_hour
