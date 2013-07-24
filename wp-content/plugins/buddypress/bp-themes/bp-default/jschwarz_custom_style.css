@@ -555,3 +555,11 @@ margin-right: 26px;
 .standard-form #basic-details-section input[type=password] {
 width: 139px;
 }
+
+.editfield .description {
+font-size: 11px !important;
+}
+
+#field-visibility-settings-toggle-1 {
+display: none;
+}
