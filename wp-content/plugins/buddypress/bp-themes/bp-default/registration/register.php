@@ -43,15 +43,16 @@
 					<label for="signup_email"><?php _e( 'Email Address', 'buddypress' ); ?> <?php _e( '(required - parent\'s email address if under the age of 14)', 'buddypress' ); ?></label>
 					<?php do_action( 'bp_signup_email_errors' ); ?>
 					<input type="text" name="signup_email" id="signup_email" value="<?php bp_signup_email_value(); ?>" />
-
+<div id="su_pw">
 					<label for="signup_password"><?php _e( 'Choose a Password', 'buddypress' ); ?> <?php _e( '(required)', 'buddypress' ); ?></label>
 					<?php do_action( 'bp_signup_password_errors' ); ?>
 					<input type="password" name="signup_password" id="signup_password" value="" />
-
+</div>
+<div id="su_pw_cf">
 					<label for="signup_password_confirm"><?php _e( 'Confirm Password', 'buddypress' ); ?> <?php _e( '(required)', 'buddypress' ); ?></label>
 					<?php do_action( 'bp_signup_password_confirm_errors' ); ?>
 					<input type="password" name="signup_password_confirm" id="signup_password_confirm" value="" />
-
+</div>
 				</div><!-- #basic-details-section -->
 
 				<?php do_action( 'bp_after_account_details_fields' ); ?>

@@ -546,3 +546,12 @@ top: 5px;
 div.register-section div.editfield:nth-of-type(3), div.register-section div.editfield:nth-of-type(4), div.register-section div.editfield:nth-of-type(5), div.register-section div.editfield:nth-of-type(6), div.register-section div.editfield:nth-of-type(7) {
 display: none;
 }
+
+div#su_pw {
+float: left;
+margin-right: 26px;
+}
+
+.standard-form #basic-details-section input[type=password] {
+width: 139px;
+}
