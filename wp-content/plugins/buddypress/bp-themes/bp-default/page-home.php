@@ -6,8 +6,8 @@
 <?php if( !is_user_logged_in() ) : ?>
 
 <section class="f-part-divide"> 
-    <section class="f-part-wrap" style="max-width: 1500px; margin: 0 auto;"> 
-	<div class="fr-page-banner" id="top-slide" style="background: url(http://jukubox.com/wp-content/uploads/2013/07/Video_Laptop.png) no-repeat left top; height: 500px; width: 700px; padding: 40px; margin: 0 0 0 260px; background-size: 600px 338px; background-position: left 15%;">
+    <section class="f-part-wrap" style="max-width: 1000px; margin: 0 auto;"> 
+	<div class="fr-page-banner" id="top-slide" style="background: url(http://jukubox.com/wp-content/uploads/2013/07/Video_Laptop.png) no-repeat left top; height: 500px; width: 700px; padding: 40px; background-size: 600px 338px; background-position: left 15%;">
 		 <iframe width="444" height="264" src="//www.youtube.com/embed/C6Z0N5V9tw0" style="padding: 21px 0 0 39px;" frameborder="0" allowfullscreen></iframe>
 
 <div id="selling-points" style="width: 300px; margin-right: -220px; float: right;">
@@ -33,68 +33,36 @@
 	<a href="#" class="btn1">Become a Teacher</a> --> 
 	
 
-<?php // get latest articles
-	$article_args = array( 
-		'showposts' => 4, 
-		'orderby' => 'date',
-		'order' => 'DESC'
-	); 
+<script> 
+	jQuery('.bx-viewport').each(function() { 
+	var height2 = jQuery(this).height(); 
+	//alert(height2); 
+	}); 
+	jQuery('.bx-viewport').each(function() { 
+		jQuery(this).height(height2);
+	}); // end each
+</script>
+ 
+	</div>
+    </section>
+<section class="f-part-divide grey"> 
+    <section class="f-part-wrap dos">
+<!--Schwarz Add-->
 
-	$get_articles = new WP_Query($article_args);
-	$get_articles = objectToArray($get_articles); 
-//	print_r($get_articles);  
-	$all_arts = $get_articles['posts']; 
-	$all_arts_array = Array();
-	$n = 0;  
-	foreach( $all_arts as $key => $value ) { 
-		$post_id = $value['ID']; 
-		$text = $value['post_content']; 
-		$title = $value['post_title']; 
-		$author_id = $value['post_author']; 
-		$link = $value['guid']; 
-		
-		$all_arts_array[$n]['author_id'] = $author_id;  	
-		$all_arts_array[$n]['title'] = $title; 
-		$all_arts_array[$n]['text'] = $text; 	
-		$all_arts_array[$n]['link'] = $link;  
-		$all_arts_array[$n]['post_id'] = $post_id; 
-
-		$n++;  
-	} 
-wp_reset_query();
-//	echo '<pre>'; print_r($all_arts_array); echo '</pre>'; 
-?>
-
-	<div id="teach_prof_titles" style="text-align: center; margin-top: 50px;"> 
-	
-			<h2 style="float: left; width: 50%; color: white; margin-top: 40px; margin-bottom: 0px;">Featured Teachers</h2>
-			<h2 style="float:right; width: 50%; color: white; margin-top: 40px; margin-bottom: 0px;">Latest Articles</h2>
-	</div> <!-- end teach_prof_titles --> 
-<div id="bottom_stuff">
-
-<div align="center">
-		<?php  /*echo do_shortcode("[nivoslider id='182']");*/ /* echo do_shortcode("[slider_pro id='4']");*/   //echo slider_pro(2);    ?>
-		
-</div>
-
-<table><tbody>
-	<tr><td class="teach_prof">
-
-
-	
 <div id="teach_prof_div">
 	<?php $string = get_random_teachers();
 	//	echo $string; ?>
 
-			<ul class="bxslider">
+			<ul>
 
 <?php $j = 0; ?>
-<?php	   if ( bp_has_members( $string  ) ) : // NHF CODE CODE ?>
+
+  <?php	   if ( bp_has_members( $string  ) ) : // NHF CODE CODE ?>
 
 		
 	<?php while ( bp_members() ) : bp_the_member(); ?>
 		<li>
-			<div style="float: left; width: 50%">
+			<div style="float: left; width: 33%">
 			<div style="float: left;"><?php  bp_member_avatar(); ?></div>
 			<div class="finchsizer">  
 			<h4><?php  bp_member_name(); ?>, 
@@ -111,7 +79,7 @@ wp_reset_query();
 				//print_r( $user_instruments_raw);  ?> 
 			    </h4>
 				<p style="margin-right: 53px;"><?php 
-				$user_bio = bp_get_profile_field_data('field=6&user_id=' . bp_get_member_user_id()  .   '') ;   echo finch_excerpt( $user_bio, 30 );  
+				$user_about = bp_get_profile_field_data('field=28&user_id=' . bp_get_member_user_id()  .   '') ;   echo finch_excerpt( $user_about, 30 );  
 				  ?></p>
 			</div><!-- finchsizer --> 
 				<a href="<?php bp_member_permalink(); ?>profile">Read More...</a> 
@@ -119,54 +87,13 @@ wp_reset_query();
 			<?php $curr_id = $all_arts_array[$j]['post_id']; //echo $curr_id; 
 				$art_thumb = get_the_post_thumbnail( $curr_id, 'thumbnail' );  
 			?>
-			<div style="float: left; "></div>
-			<div style="float: right: width: 50%; ">
-				<div style="float: right; ">  
-					<?php echo $art_thumb; ?>
-				</div> 
-				<div class="finchsizer"> 	
-				<h4><?php echo $all_arts_array[$j]['title']; ?>!</h4>
-				<p><?php echo strip_tags( finch_excerpt($all_arts_array[$j]['text'], 30 ) ); ?> </p>
-			</div><!-- finchsizer --> 
-				<a href="<?php echo $all_arts_array[$j]['link']; ?>">Read More...</a>
-			</div>
 		</li> 
 		
 		<?php $j++; ?>
 		<!-- 'type=full&width=125&height=125' --> 
 	<?php endwhile; ?>
 <?php endif; ?>
-		 
-			</ul>
-			</div>
-		
-                 </div><!-- teach_prof_div --> 
-	    </td>
-	    </tr>
-	
-	</tbody></table>
-</div> <!-- bottom_stuff -->
-<script> 
-	jQuery('.bx-viewport').each(function() { 
-	var height2 = jQuery(this).height(); 
-	//alert(height2); 
-	}); 
-	jQuery('.bx-viewport').each(function() { 
-		jQuery(this).height(height2);
-	}); // end each
-</script>
- 
-	</div>
-    </section>
-<section class="f-part-divide grey"> 
-    <section class="f-part-wrap dos">
-	<div class="vertical-column-45">
-		<h2 class="nf-big-header">THE ULTIMATE ONLINE MUSIC LESSON NETWORK</h2>
-	</div><!-- column 45 --> 
-	<div class="vertical-column-55">
-		<h3>Jukubox is THE resource for the best music lessons online</h3>
-			<p id="frontpar" style="/*background: url('../../../../uploads/2013/05/violinIco.png') no-repeat 0 0;*/  ">Find the absolute best teachers available anywhere in the world - all you need is Google Chrome, a web cam, and a love of music. Our teachers come from places such as The Juilliard School, The New England Conservatory, and the Berklee College of Music.</p>
-	</div><!-- column 55 --> 
+<!--End Schwarz Add-->
     </section>
 </section>
 
