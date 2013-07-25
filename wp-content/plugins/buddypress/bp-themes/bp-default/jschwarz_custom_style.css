@@ -594,3 +594,17 @@ margin-top: 5px;
 .finchsizer p {
 overflow: visible !important;
 }
+
+#teach_prof_div {
+position: relative;
+bottom: 109px;
+height: auto !important;
+}
+
+#teach_prof_div h1 {
+margin-bottom: 10px;
+}
+
+#teach_prof_div p {
+clear: both;
+}

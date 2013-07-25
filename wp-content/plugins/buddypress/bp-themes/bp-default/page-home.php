@@ -7,8 +7,8 @@
 
 <section class="f-part-divide"> 
     <section class="f-part-wrap" style="max-width: 1000px; margin: 0 auto;"> 
-	<div class="fr-page-banner" id="top-slide" style="background: url(http://jukubox.com/wp-content/uploads/2013/07/Video_Laptop.png) no-repeat left top; height: 500px; width: 700px; padding: 40px; background-size: 600px 338px; background-position: left 15%;">
-		 <iframe width="444" height="264" src="//www.youtube.com/embed/C6Z0N5V9tw0" style="padding: 21px 0 0 39px;" frameborder="0" allowfullscreen></iframe>
+	<div class="fr-page-banner" id="top-slide" style="background: url(http://jukubox.com/wp-content/uploads/2013/07/Video_Laptop.png) no-repeat left top; height: 350px; width: 74%; margin-top: 35px; margin-bottom: 25px; background-size: 600px 338px; background-position: left 15%;">
+		 <iframe width="444" height="264" src="//www.youtube.com/embed/C6Z0N5V9tw0" style="padding: 26px 0 0 79px;" frameborder="0" allowfullscreen></iframe>
 
 <div id="selling-points" style="width: 300px; margin-right: -220px; float: right;">
 	<h1>STUDY WITH THE BEST</h1>
@@ -63,10 +63,10 @@
 	<?php while ( bp_members() ) : bp_the_member(); ?>
 		<li>
 			<div style="float: left; width: 33%">
-			<a href="<?php bp_member_permalink(); ?>profile"> <div style="float: left;"><?php  bp_member_avatar(); ?></div> </a>
 			<div class="finchsizer">  
 			<a href="<?php bp_member_permalink(); ?>profile"> <h1><?php  bp_member_name(); ?></h1> </a> 
-		        <h4> <?php $user_instruments_raw = bp_get_profile_field_data('field=2&user_id=' . bp_get_member_user_id() . ''); 
+		        <a href="<?php bp_member_permalink(); ?>profile"> <div style="float: left;"><?php  bp_member_avatar(); ?></div> </a>
+			<h4> <?php $user_instruments_raw = bp_get_profile_field_data('field=2&user_id=' . bp_get_member_user_id() . ''); 
 					$end_inst = end($user_instruments_raw); 
 					foreach( $user_instruments_raw as $key => $value ) { 
 						$tag = ', '; 
