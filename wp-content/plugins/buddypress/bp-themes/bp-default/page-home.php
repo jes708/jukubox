@@ -63,17 +63,17 @@
 	<?php while ( bp_members() ) : bp_the_member(); ?>
 		<li>
 			<div style="float: left; width: 33%">
-			<div style="float: left;"><?php  bp_member_avatar(); ?></div>
+			<a href="<?php bp_member_permalink(); ?>profile"> <div style="float: left;"><?php  bp_member_avatar(); ?></div> </a>
 			<div class="finchsizer">  
 			<a href="<?php bp_member_permalink(); ?>profile"> <h1><?php  bp_member_name(); ?></h1> </a> 
 		        <h4> <?php $user_instruments_raw = bp_get_profile_field_data('field=2&user_id=' . bp_get_member_user_id() . ''); 
 					$end_inst = end($user_instruments_raw); 
 					foreach( $user_instruments_raw as $key => $value ) { 
 						$tag = ', '; 
-						if( $value == $end_inst ) {  	
-							$tag = '. '; 
-						} 
-						echo $value .  $tag; 
+						if( $value == $end_inst ) {
+						$tag = '';
+					} 	
+						echo $value . $tag; 
 						
 					} 
 				//print_r( $user_instruments_raw);  ?> 
@@ -84,7 +84,7 @@
 			</div><!-- finchsizer --> 
 			</div>
 			<?php $curr_id = $all_arts_array[$j]['post_id']; //echo $curr_id; 
-				$art_thumb = get_the_post_thumbnail( $curr_id, 'thumbnail' );  
+				$art_thumb = get_the_post_thumbnail( $curr_id, 'thumbnail' ); 
 			?>
 		</li> 
 		
