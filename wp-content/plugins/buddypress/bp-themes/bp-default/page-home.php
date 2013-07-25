@@ -57,7 +57,7 @@
 
 <?php $j = 0; ?>
 
-  <?php	   if ( bp_has_members( $string  ) ) : // NHF CODE CODE ?>
+  <?php	   if ( bp_has_members( 'include=44,42,32' ) ) : // NHF CODE CODE ?>
 
 		
 	<?php while ( bp_members() ) : bp_the_member(); ?>

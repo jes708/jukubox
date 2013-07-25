@@ -537,7 +537,7 @@ margin-bottom: -13px;
 margin-bottom: 32px;
 }
 
-.generic-button.friendship-button.is_friend, .generic-button.friendship-button.not_friends, .generic-button.friendship-button.pending_friend.add, .generic-button.friendship-button.pending_friend {
+#members-list .generic-button.friendship-button.is_friend, #members-list .generic-button.friendship-button.not_friends, #members-list .generic-button.friendship-button.pending_friend.add, #members-list .generic-button.friendship-button.pending_friend {
 position: relative;
 right: 14px;
 top: 5px;
