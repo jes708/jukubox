@@ -11,7 +11,7 @@
 		 <iframe width="444" height="264" src="//www.youtube.com/embed/C6Z0N5V9tw0" style="padding: 26px 0 0 79px;" frameborder="0" allowfullscreen></iframe>
 
 <div id="selling-points" style="width: 300px; margin-right: -220px; float: right;">
-	<h1>STUDY WITH THE BEST</h1>
+	<h1>Study with the Best</h1>
 	<div><i class="icon-music"></i> <p>Musical Videoconferencing</p></div>
 	<div><i class="icon-volume-up"></i> <p>Amazing Audio Quality</p></div>
 	<div><i class="icon-globe"></i> <p>World-Renowned Experts</p></div>
@@ -48,7 +48,7 @@
 <section class="f-part-divide grey"> 
     <section class="f-part-wrap dos">
 <!--Schwarz Add-->
-
+<h1 class="jes-big-header">Featured Teachers</h1>
 <div id="teach_prof_div">
 	<?php $string = get_random_teachers();
 	//	echo $string; ?>
