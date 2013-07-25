@@ -69,7 +69,7 @@
 			<h4> <?php $user_instruments_raw = bp_get_profile_field_data('field=2&user_id=' . bp_get_member_user_id() . ''); 
 					$end_inst = end($user_instruments_raw); 
 					foreach( $user_instruments_raw as $key => $value ) { 
-						$tag = ', '; 
+						$tag = '</br> '; 
 						if( $value == $end_inst ) {
 						$tag = '';
 					} 	

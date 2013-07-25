@@ -597,14 +597,26 @@ overflow: visible !important;
 
 #teach_prof_div {
 position: relative;
-bottom: 109px;
+bottom: 125px;
 height: auto !important;
+}
+
+#teach_prof_div img {
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 #teach_prof_div h1 {
 margin-bottom: 10px;
 }
 
+#teach_prof_div h4 {
+line-height: 30px;
+position: relative;
+left: 10px;
+}
+
 #teach_prof_div p {
 clear: both;
+position: relative;
+top: 9px;
 }
