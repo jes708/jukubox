@@ -377,3 +377,31 @@ div#sidebar {
 position: relative;
 z-index: 5;
 }
+
+#jukulogo {
+width: /*330px;*/ 343px;
+margin-top: -27px;
+}
+
+.label, .badge {
+display: inline-block;
+padding: 2px 54px 1px 6px;
+font-size: 11.844px;
+font-weight: bold;
+line-height: 14px;
+color: #000;
+text-shadow: 0 0px 0 rgba(0, 0, 0, 0);
+white-space: normal;
+vertical-align: baseline;
+background-color: rgba(138, 43, 43, 0);
+box-shadow: 0px 0px 0px transparent;
+border: solid 0px transparent;
+}
+
+.profile .editfield.field_23.field_pricehour.alt {
+display: none;
+}
+
+.profile-fields .field_1.field_full-name {
+display: none;
+}
