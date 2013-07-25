@@ -65,8 +65,8 @@
 			<div style="float: left; width: 33%">
 			<div style="float: left;"><?php  bp_member_avatar(); ?></div>
 			<div class="finchsizer">  
-			<h4><?php  bp_member_name(); ?>, 
-			    <?php $user_instruments_raw = bp_get_profile_field_data('field=2&user_id=' . bp_get_member_user_id() . ''); 
+			<a href="<?php bp_member_permalink(); ?>profile"> <h1><?php  bp_member_name(); ?></h1> </a> 
+		        <h4> <?php $user_instruments_raw = bp_get_profile_field_data('field=2&user_id=' . bp_get_member_user_id() . ''); 
 					$end_inst = end($user_instruments_raw); 
 					foreach( $user_instruments_raw as $key => $value ) { 
 						$tag = ', '; 
@@ -82,7 +82,6 @@
 				$user_about = bp_get_profile_field_data('field=28&user_id=' . bp_get_member_user_id()  .   '') ;   echo finch_excerpt( $user_about, 30 );  
 				  ?></p>
 			</div><!-- finchsizer --> 
-				<a href="<?php bp_member_permalink(); ?>profile">Read More...</a> 
 			</div>
 			<?php $curr_id = $all_arts_array[$j]['post_id']; //echo $curr_id; 
 				$art_thumb = get_the_post_thumbnail( $curr_id, 'thumbnail' );  

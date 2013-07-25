@@ -590,3 +590,7 @@ margin-right: 10px;
 #selling-points button {
 margin-top: 5px;
 }
+
+.finchsizer p {
+overflow: visible !important;
+}
