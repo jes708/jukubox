@@ -10,6 +10,15 @@
 	<div class="fr-page-banner" id="top-slide" style="background: url(http://jukubox.com/wp-content/uploads/2013/07/Video_Laptop.png) no-repeat left top; height: 500px; width: 700px; padding: 40px; margin: 0 0 0 260px; background-size: 600px 338px; background-position: left 15%;">
 		 <iframe width="444" height="264" src="//www.youtube.com/embed/C6Z0N5V9tw0" style="padding: 21px 0 0 39px;" frameborder="0" allowfullscreen></iframe>
 
+<div id="selling-points" style="width: 300px; margin-right: -220px; float: right;">
+	<h1>STUDY WITH THE BEST</h1>
+	<div><i class="icon-music"></i> <p>Musical Videoconferencing</p></div>
+	<div><i class="icon-volume-up"></i> <p>Amazing Audio Quality</p></div>
+	<div><i class="icon-globe"></i> <p>World-Renowned Experts</p></div>
+	<div><i class="icon-home"></i> <p>World-Class Convenience</p></div>	
+	<button class="btn btn-large btn-primary" onclick="window.location='<?php echo get_home_url(); ?>/wp-login.php'">Sign In</button>
+        <button class="btn btn-large btn-primary" onclick="window.location='<?php echo get_home_url(); ?>/register'">Sign Up</button>
+</div>
 
 <!--    	<div style="background:/*url('wp-content/uploads/2013/05/Backdrop4CroppedColoredRe.jpg')*/   url('wp-content/uploads/2013/07/Backdrop4CroppedColoredRe-1Lower.jpg') no-repeat center top; height: 400px; /*height: 650px;*/  /*background-position: 0% 20%;*/  padding: 40px; margin: 0 auto; background-size: 1500px; background-position: right 43%;" id="top_slide">
 	    <div style="width: 1000px; margin: 0 auto;" >

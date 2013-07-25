@@ -563,3 +563,30 @@ font-size: 11px !important;
 #field-visibility-settings-toggle-1 {
 display: none;
 }
+
+#selling-points p {
+font-size: 21px !important;
+line-height: 30px !important;
+font-weight: 200;
+margin-bottom: 20px;
+}
+
+#selling-points i {
+float: left;
+position: relative;
+bottom: -7px;
+margin-right: 7px;
+}
+
+#selling-points h1 {
+font-size: 35px !important;
+}
+
+#selling-points button:nth-of-type(1) {
+margin-left: 30px;
+margin-right: 10px;
+}
+
+#selling-points button {
+margin-top: 5px;
+}
