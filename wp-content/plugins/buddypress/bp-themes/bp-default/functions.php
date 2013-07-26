@@ -2022,7 +2022,7 @@ function bp_get_lesson_button( $potential_friend_id = 0, $friend_status = false 
 				$button = array(
 					'id'                => 'pending',
 					'component'         => 'friends',
-					'must_be_logged_in' => false, // NHF EDIT true,
+					'must_be_logged_in' => false, 
 					'block_self'        => true,
 					'wrapper_class'     => 'friendship-button pending_friend',
 					'wrapper_id'        => 'friendship-button-' . $potential_friend_id,

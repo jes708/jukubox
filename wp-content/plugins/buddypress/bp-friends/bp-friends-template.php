@@ -277,7 +277,7 @@ function bp_add_friend_button( $potential_friend_id = 0, $friend_status = false 
 				$button = array(
 					'id'                => 'pending',
 					'component'         => 'friends',
-					'must_be_logged_in' => false, // NHF EDIT true,
+					'must_be_logged_in' => true, // NHF EDIT true,
 					'block_self'        => true,
 					'wrapper_class'     => 'friendship-button pending_friend',
 					'wrapper_id'        => 'friendship-button-' . $potential_friend_id,
@@ -294,8 +294,8 @@ function bp_add_friend_button( $potential_friend_id = 0, $friend_status = false 
 				$button = array(
 					'id'                => 'is_friend',
 					'component'         => 'friends',
-					'must_be_logged_in' => false,// NHF EDIT true,
-					'block_self'        => false,
+					'must_be_logged_in' => true, // NHF EDIT true,
+					'block_self'        => true,
 					'wrapper_class'     => 'friendship-button is_friend',
 					'wrapper_id'        => 'friendship-button-' . $potential_friend_id,
 					'link_href'         => wp_nonce_url( bp_loggedin_user_domain() . bp_get_friends_slug() . '/remove-friend/' . $potential_friend_id . '/', 'friends_remove_friend' ),
@@ -311,7 +311,7 @@ function bp_add_friend_button( $potential_friend_id = 0, $friend_status = false 
 				$button = array(
 					'id'                => 'not_friends',
 					'component'         => 'friends',
-					'must_be_logged_in' => false, // NHF EDIT true,
+					'must_be_logged_in' => true, // NHF EDIT true,
 					'block_self'        => true,
 					'wrapper_class'     => 'friendship-button not_friends',
 					'wrapper_id'        => 'friendship-button-' . $potential_friend_id,
