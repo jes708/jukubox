@@ -1831,11 +1831,12 @@ function generate_lessontoggle($userId, $services='') { // takes has of lesson s
 			$checkedOrNo = "checked"; 
 		} else { 
 			$checkedOrNo = ""; 
-		}   
-		echo '<input class="serv_check" type="checkbox" name="services[' . $value['ID'] . ']" value="' . $value['ID'] . '" ' . $checkedOrNo . ' /> <strong>' . $value['name'] . '</strong><br />'; 
-		
+		}
+		if( $value['ID'] != 2 ) {  // can't toggle free first lesson - introduction from new students  
+			echo '<input class="serv_check" type="checkbox" name="services[' . $value['ID'] . ']" value="' . $value['ID'] . '" ' . $checkedOrNo . ' /> <strong>' . $value['name'] . '</strong><br />'; 
+		} 
 	} 
-	echo '<input type="submit" value="Change My Services" />';  
+	echo '<input type="submit" value="Change My Services" id="serveChangeSubmit" />';  
 	echo '</form>'; 
 	echo '</div>'; 
 }

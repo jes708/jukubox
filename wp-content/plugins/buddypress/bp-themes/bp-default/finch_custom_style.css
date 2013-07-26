@@ -1279,17 +1279,19 @@ li.widget_displaytweetswidget p {
 	float: left; 
 }
 .servWrap { 
-	float: left; 
+	float: left;
+	position: relative; 
+	min-height: 138px;  
 } 
 .priceWrap { 
 	float: right; 
 	min-height: 138px;
 	position: relative;  
 }  
-#PriceSubmit { 
+#PriceSubmit, #serveChangeSubmit {  
 	position: absolute; 
 	bottom: 0; 
-} 
+}
 #field_221 { 
 	position: absolute;
 	right: -57px;
