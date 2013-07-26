@@ -633,3 +633,11 @@ text-align: center;
 bottom: 135px;
 position: relative;
 }
+
+.jes-big-header-2 {
+text-transform: none !important;
+color: #363636;
+line-height: 1.2;
+font-size: 35px;
+text-align: center;
+}

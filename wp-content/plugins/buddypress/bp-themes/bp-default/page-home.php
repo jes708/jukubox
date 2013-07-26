@@ -8,7 +8,7 @@
 <section class="f-part-divide"> 
     <section class="f-part-wrap" style="max-width: 1000px; margin: 0 auto;"> 
 	<div class="fr-page-banner" id="top-slide" style="background: url(http://jukubox.com/wp-content/uploads/2013/07/Video_Laptop.png) no-repeat left top; height: 350px; width: 74%; margin-top: 35px; margin-bottom: 25px; background-size: 600px 338px; background-position: left 15%;">
-		 <iframe width="444" height="264" src="//www.youtube.com/embed/C6Z0N5V9tw0" style="padding: 26px 0 0 79px;" frameborder="0" allowfullscreen></iframe>
+		 <iframe width="444" height="265" src="//www.youtube.com/embed/C6Z0N5V9tw0" style="padding: 26px 0 0 79px;" frameborder="0" allowfullscreen></iframe>
 
 <div id="selling-points" style="width: 300px; margin-right: -220px; float: right;">
 	<h1>Study with the Best</h1>
@@ -50,9 +50,6 @@
 <!--Schwarz Add-->
 <h1 class="jes-big-header">Featured Teachers</h1>
 <div id="teach_prof_div">
-	<?php $string = get_random_teachers();
-	//	echo $string; ?>
-
 			<ul>
 
 <?php $j = 0; ?>
@@ -83,9 +80,6 @@
 				  ?></p>
 			</div><!-- finchsizer --> 
 			</div>
-			<?php $curr_id = $all_arts_array[$j]['post_id']; //echo $curr_id; 
-				$art_thumb = get_the_post_thumbnail( $curr_id, 'thumbnail' ); 
-			?>
 		</li> 
 		
 		<?php $j++; ?>
@@ -99,73 +93,106 @@
 
 <section class="f-part-divide"> 
     <section class="f-part-wrap" style="max-width: 1000px;">
-    	<h1 class="nf-big-header">Features</h1>
+    	<h1 class="jes-big-header-2">Testimonials</h1>
 	<div class="gk-features gk-perspective">
-	    <a href="how-it-works/" target="_blank" class="gk-rocket" data-animation="flip" data-delay="0">
-		<span></span>
-		The Latest Online Video Technology
-	    </a>	    
-
-	    <a href="teachers/" class="gk-badges"  data-animation="flip" data-delay="150">
-		<span></span>
-		The Best Teacher Network Online
-	    </a>	    
-	    <a href="how-it-works/" class="gk-mouse"  data-animation="flip" data-delay="300">
-		<span></span>
-		Easy to Use Interface
-	    </a>	    
-	    <a href="teachers/" class="gk-piggy"  data-animation="flip" data-delay="450">
-		<span></span>
-		A true free market for lessons
-	    </a>	    
-
+		<p>"Jukubox is awesome!"</p>
 	</div>
     </section>
 </section>
 
 <section class="f-part-divide grey"> 
     <section class="f-part-wrap">
-      <div class="vertical-column-45">
-	<h3 class="nf-big-header">Built by musicians.<br />  Built for <strong>you.</strong> </h3>
-	<p style="margin-right: 44px;"><small>We ARE the music community.  And we have nothing but the best teachers on the web</small></p>
-      </div> <!-- end column 45 -->
-      <div class="vertical-column-55">
-	<div id="aboutFounders">
-	    <div class="founder_wrap"> 	
-		<div class="founder_div" style="text-align: center;">
-		    <a href="about-us/#rachel" >
-			<img id="eric" src="wp-content/uploads/2013/05/Rachel-Re.jpg" height="100" width="100" style="margin: 0 auto;" />
-		    </a>	
-		</div>	
-		<h3>Rachel</h3>
-	    </div>
-	    <div class="founder_wrap"> 	
-		<div class="founder_div" style="text-align: center;">
-		    <a href="about-us/#eric" >
-			<img id="eric" src="wp-content/uploads/2013/05/Eric-Re.jpg" height="100" width="100" style="margin: 0 auto;" />	
-		    </a>
-		</div>	
-		<h3>Eric</h3>
-	    </div>
-	    <div class="founder_wrap"> 	
-		<div class="founder_div" style="text-align: center;">
-			<!-- <img id="eric" src="wp-content/uploads/2013/05/John-Re.jpg" height="100" width="100" style="margin: 0 auto;" /> -->
-		    <a href="about-us/#jon">
-			<img id="eric" src="wp-content/uploads/2013/06/Jon_HeadShot.jpg" height="100" width="100" style="margin: 0 auto;" />	
-		    </a>
-		</div>	
-		<h3>Jon</h3>
-	    </div>
-	    <div class="founder_wrap"> 	
-		<div class="founder_div" style="text-align: center;">
-		    <a href="about-us/#nick">
-			<img id="eric" src="wp-content/uploads/2013/05/Finch-Re.jpg" height="100" width="100" style="margin: 0 auto;" />	
-		    </a>
-		</div>	
-		<h3>Nick</h3>
-	    </div>
-	</div><!-- end aboutFounders --> 
-      </div><!-- end vertical column 55 -->
+
+        <h1 class="jes-big-header-2">Articles</h1>
+        <div>
+
+<?php // get latest articles
+        $article_args = array(
+                'showposts' => 2,
+                'orderby' => 'date',
+                'order' => 'DESC'
+        );
+
+        $get_articles = new WP_Query($article_args);
+        $get_articles = objectToArray($get_articles);
+//      print_r($get_articles);  
+        $all_arts = $get_articles['posts'];
+        $all_arts_array = Array();
+        $n = 0;
+        foreach( $all_arts as $key => $value ) {                $post_id = $value['ID'];
+                $text = $value['post_content'];
+                $title = $value['post_title'];
+                $author_id = $value['post_author'];
+                $link = $value['guid'];
+
+                $all_arts_array[$n]['author_id'] = $author_id;
+                $all_arts_array[$n]['title'] = $title;                $all_arts_array[$n]['text'] = $text;
+                $all_arts_array[$n]['link'] = $link;
+                $all_arts_array[$n]['post_id'] = $post_id;
+
+                $n++;
+        }
+wp_reset_query();
+//      echo '<pre>'; print_r($all_arts_array); echo '</pre>'; 
+?>
+
+
+<?php $j = 0; ?>
+<?php	   if ( bp_has_members( $string  ) ) : // NHF CODE CODE ?>
+
+		
+	<?php while ( bp_members() ) : bp_the_member(); ?>
+		<li>
+			<div style="float: left; width: 50%">
+			<div style="float: left;"><?php  bp_member_avatar(); ?></div>
+			<div class="finchsizer">  
+			<h4><?php  bp_member_name(); ?>, 
+			    <?php $user_instruments_raw = bp_get_profile_field_data('field=2&user_id=' . bp_get_member_user_id() . ''); 
+					$end_inst = end($user_instruments_raw); 
+					foreach( $user_instruments_raw as $key => $value ) { 
+						$tag = ', '; 
+						if( $value == $end_inst ) {  	
+							$tag = '. '; 
+						} 
+						echo $value .  $tag; 
+						
+					} 
+				//print_r( $user_instruments_raw);  ?> 
+			    </h4>
+				<p style="margin-right: 53px;"><?php 
+				$user_bio = bp_get_profile_field_data('field=6&user_id=' . bp_get_member_user_id()  .   '') ;   echo finch_excerpt( $user_bio, 30 );  
+				  ?></p>
+			</div><!-- finchsizer --> 
+				<a href="<?php bp_member_permalink(); ?>profile">Read More...</a> 
+			</div>
+			<?php $curr_id = $all_arts_array[$j]['post_id']; //echo $curr_id; 
+				$art_thumb = get_the_post_thumbnail( $curr_id, 'thumbnail' );  
+			?>
+			<div style="float: left; "></div>
+			<div style="float: right: width: 50%; ">
+				<div style="float: right; ">  
+					<?php echo $art_thumb; ?>
+				</div> 
+				<div class="finchsizer"> 	
+				<h4><?php echo $all_arts_array[$j]['title']; ?>!</h4>
+				<p><?php echo strip_tags( finch_excerpt($all_arts_array[$j]['text'], 30 ) ); ?> </p>
+			</div><!-- finchsizer --> 
+				<a href="<?php echo $all_arts_array[$j]['link']; ?>">Read More...</a>
+			</div>
+		</li> 
+		
+		<?php $j++; ?>
+		<!-- 'type=full&width=125&height=125' --> 
+	<?php endwhile; ?>
+<?php endif; ?>
+		 
+			</ul>
+			</div>
+		
+                 </div><!-- teach_prof_div --> 
+
+    
+
     </section>
 </section>
 
