@@ -86,11 +86,11 @@ jQuery('#search-by-instrument').ready(function() {
 
 <?php  elseif ( bp_has_members( $string  ) ) : // NHF CODE CODE ?>
 
-	<?php // if( !is_user_logged_in() ) : ?>
-		<!-- <style>
+	<?php  if( !is_user_logged_in() ) : ?>
+		 <style>
 			.friendship-button { display: none; } 
-		</style>  --> 
-	<?php // endif; ?>
+		</style>   
+	<?php  endif; ?>
 	
 <?php bp_member_user_id(); ?>
 <h1><?php if( $instrument != 'notApplicable' ) { 
