@@ -1172,20 +1172,25 @@ button:hover, a.button:hover, input[type=submit]:hover, input[type=button]:hover
 	border: none; 
 } */
 
-#footer-bottom-menu { 
+#menu-footer-menu { 
 /*	padding: 20px 0px;*/ 
-	padding-top: 30px; 
-	padding-bottom: 10px;  
 }
-#footer-menu { 
-	float: right; 
+#menu-footer-menu { 
+	float: left;
+	width: 500px;
+	position: relative;
+	left: 275px;
 } 
  
-#footer-bottom-menu .widgettitle { 
+#footer-widgets .widgettitle { 
 	display: none; 
 }
 
-#footer-menu .menu  li { 
+.textwidget {
+width: 500px;
+}
+
+#menu-footer-menu  li { 
 	float: left;
 	padding: 0px 10px;
 	padding-left: 0px;  
@@ -1194,16 +1199,16 @@ button:hover, a.button:hover, input[type=submit]:hover, input[type=button]:hover
 /* #footer-menu li ul li { 
 	border-right: solid white 1px; 
 } */ 
-#footer-menu li ul li a { 
+#menu-footer-menu li a { 
 	border-right: solid white 1px;
 	padding-right: 11px; 
 }
 
- #footer-menu li ul li a:hover { 
+#menu-footer-menu li a:hover { 
 	border-right: solid transparent 1px; 
 }
 #footer-widget-area { 
-	min-height: 155px;
+	min-height: 30px;
 	min-width: 1000px;
 }  
 
