@@ -1293,7 +1293,7 @@ li.widget_displaytweetswidget p {
 #field_221 { 
 	position: absolute;
 	right: -57px;
-	bottom: 19px;
+	bottom: /*19px;*/ 12px; 
 } 
 #field_221 .fname { 
 	display: inline; 
@@ -1304,4 +1304,7 @@ li.widget_displaytweetswidget p {
 
 #field_28 .fval { 
 	width: 432px !important; 
+} 
+.lesson-button { 
+	top: 16px !important; 
 }   

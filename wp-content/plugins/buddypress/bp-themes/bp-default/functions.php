@@ -1992,4 +1992,49 @@ function update_xprofile_price( $fieldID, $price, $userId ) {
 		";  
 	finch_mysql_noreturn_query($update_xprofile_price); 
 	 
-}  
+}
+
+
+  
+function bp_member_add_lesson_button() {
+	global $members_template;
+
+	if ( !isset( $members_template->member->is_friend ) || null === $members_template->member->is_friend )
+		$friend_status = 'not_friends';
+	else
+		$friend_status = ( 0 == $members_template->member->is_friend ) ? 'pending' : 'is_friend';
+
+	echo bp_get_lesson_button( $members_template->member->id, $friend_status );
+}
+add_action( 'bp_directory_members_actions', 'bp_member_add_lesson_button' );
+
+
+function bp_get_lesson_button( $potential_friend_id = 0, $friend_status = false ) {
+
+		if ( empty( $potential_friend_id ) )
+			$potential_friend_id = bp_get_potential_friend_id( $potential_friend_id );
+
+		$is_friend = bp_is_friend( $potential_friend_id );
+
+/*		if ( empty( $is_friend ) )
+			return false; */ 
+
+				$button = array(
+					'id'                => 'pending',
+					'component'         => 'friends',
+					'must_be_logged_in' => false, // NHF EDIT true,
+					'block_self'        => true,
+					'wrapper_class'     => 'friendship-button pending_friend',
+					'wrapper_id'        => 'friendship-button-' . $potential_friend_id,
+					'link_href'         => wp_nonce_url('/test-appointment/?app_provider_id=' . $potential_friend_id . '&app_service_id=1', 'friends_withdraw_friendship' ),
+					'link_text'         => __( 'Schedule a Lesson', 'buddypress' ),
+					'link_title'        => __( 'Schedule a Lesson', 'buddypress' ),
+					'link_id'			=> 'friend-' . $potential_friend_id,
+					'link_rel'			=> 'remove',
+					'link_class'        => 'lesson-button friendship-button pending_friend requested'
+				);
+
+
+		// Filter and return the HTML button
+		return bp_get_button( apply_filters( 'bp_get_lesson_button', $button ) );
+}
