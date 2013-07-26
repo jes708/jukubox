@@ -2024,7 +2024,7 @@ function bp_get_lesson_button( $potential_friend_id = 0, $friend_status = false 
 					'component'         => 'friends',
 					'must_be_logged_in' => false, 
 					'block_self'        => true,
-					'wrapper_class'     => 'friendship-button pending_friend',
+					'wrapper_class'     => 'lesson-button-wrapper friendship-button pending_friend',
 					'wrapper_id'        => 'friendship-button-' . $potential_friend_id,
 					'link_href'         => wp_nonce_url('/test-appointment/?app_provider_id=' . $potential_friend_id . '&app_service_id=1', 'friends_withdraw_friendship' ),
 					'link_text'         => __( 'Schedule a Lesson', 'buddypress' ),

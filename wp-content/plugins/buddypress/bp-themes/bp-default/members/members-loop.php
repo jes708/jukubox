@@ -86,9 +86,9 @@ jQuery('#search-by-instrument').ready(function() {
 
 <?php  elseif ( bp_has_members( $string  ) ) : // NHF CODE CODE ?>
 
-	<?php  if( !is_user_logged_in() ) : ?>
+	<?php  if( !is_user_logged_in() ) : // hide friendship buttons when logged out, but not from user profiles NHF  ?>
 		 <style>
-			.friendship-button { display: none; } 
+			.friendship-button:not(.lesson-button-wrapper):not(.lesson-button) { display: none; } 
 		</style>   
 	<?php  endif; ?>
 	
