@@ -108,12 +108,14 @@ $worker_name = bp_get_profile_field_data('field=1&user_id=' . $worker_id . '') ;
  
 						<?php the_content( __( '<p class="serif">Read the rest of this page &rarr;</p>', 'buddypress' ) ); ?>
 					
-					<?php   // for now - don't need to be friends for this to come up 
+					<?php   
+						if(is_user_logged_in() ) { 	
+						// for now - don't need to be friends for this to come up 
 						// if( friends_check_friendship_status( $user_id,$worker_id) == 'is_friend' )  { ?>
 						
 						<?php echo do_shortcode('[app_confirmation button_text = "Make Appointment" city="Time zone" ]');  ?>  
 						<?php echo do_shortcode('[app_paypal ]');  ?> 
-					<?php // } // endif ?>  
+					<?php } // endif ?>  
 
 						<?php wp_link_pages( array( 'before' => '<div class="page-link"><p>' . __( 'Pages: ', 'buddypress' ), 'after' => '</p></div>', 'next_or_number' => 'number' ) ); ?>
 						<?php edit_post_link( __( 'Edit this page.', 'buddypress' ), '<p class="edit-link">', '</p>'); ?>
