@@ -144,7 +144,7 @@ wp_reset_query();
 <ul>
 
 <?php $j = 0; ?>
-  <?php    if ( bp_has_members( 'include=9' ) ) : // NHF CODE CODE ?>
+<!--  <?php    if ( bp_has_members( 'include=9' ) ) : // NHF CODE CODE ?> -->
 
 		
 	<?php while ($j <=1): ?>
@@ -155,8 +155,10 @@ wp_reset_query();
 			?>
 			<div style="float: left; "></div>
 				<div class="home_thumb" style="float: left; ">  
-					<?php echo $art_thumb; ?>
-			<h4><?php echo $all_arts_array[$j]['title']; ?></h4>                                <a href="<?php bp_member_permalink(); ?>profile"> <h1><?php  bp_member_name(); ?></h1> </a>                        <a href="<?php bp_member_permalink(); ?>profile"> <div style="float: left;"><?php  bp_member_avatar(); ?></div> </a>
+			<a href="<?php echo $all_arts_array[$j]['link']; ?>"><?php echo $art_thumb; ?></a>
+			<a href="<?php echo $all_arts_array[$j]['link']; ?>"><h4><?php echo $all_arts_array[$j]['title']; ?></h4></a>
+                        <a href="<?php bp_member_permalink(); ?>profile"> <h1><?php  bp_member_name(); ?></h1> </a>
+                        <a href="<?php bp_member_permalink(); ?>profile"> <div style="float: left;"><?php  bp_member_avatar(); ?></div> </a>
 
 <?php $userlink =  bp_core_get_user_domain( $all_arts_array[$j][author_id] ) . "profile/" ; /*echo $userlink;*/
    ?>  
@@ -174,7 +176,7 @@ wp_reset_query();
 		<?php $j++; ?>
 		<!-- 'type=full&width=125&height=125' --> 
 	<?php endwhile; ?>
-<?php endif; ?>
+<!-- <?php endif; ?> -->
 		 
 			</ul>
 			</div>
