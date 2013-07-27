@@ -682,6 +682,40 @@ width: 200px;
 
 .home_thumb h4, .home_thumb .author-box {
 position: relative;
-left: 7px;
-max-width: 290px;
+left: 6px;
+width: 290px;
+height: 40px;
+}
+
+.home_thumb .author-box {
+bottom: 13px;
+}
+
+.home_thumb p.date {
+bottom: 15px;
+position: relative;
+left: 5px;
+font-size: 8.5px !important;
+}
+
+div.home_thumb {
+position: relative;
+left: 92px;
+}
+
+div.author-box p:nth-of-type(1) {
+position: relative;
+bottom: 5px;
+left: 4px;
+font-size: 11px !important;
+}
+
+#footer-widget-area a:hover {
+color: #1fb3dd;
+}
+
+.home_thumb h4 {
+color: #00A3FF;
+position: relative;
+top: 1px;
 }
