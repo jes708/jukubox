@@ -104,8 +104,8 @@
     <section class="f-part-wrap">
 
         <h1 class="jes-big-header-2">Articles</h1>
-                <div style="container-fluid">
-                <div style="row-fluid">
+                <div class="container-fluid">
+                <div class="row-fluid">
 
 
 <?php // get latest articles
@@ -126,12 +126,13 @@
                 $title = $value['post_title'];
                 $author_id = $value['post_author'];
                 $link = $value['guid'];
+		$p_date = $value['post_date'];
 
                 $all_arts_array[$n]['author_id'] = $author_id;
                 $all_arts_array[$n]['title'] = $title;                $all_arts_array[$n]['text'] = $text;
                 $all_arts_array[$n]['link'] = $link;
                 $all_arts_array[$n]['post_id'] = $post_id;
-		
+		$all_arts_array[$n]['p_date'] = $p_date;
 		
 
                 $n++;
@@ -155,22 +156,18 @@ wp_reset_query();
 			<div style="float: left; "></div>
 				<div class="home_thumb" style="float: left; ">  
 					<?php echo $art_thumb; ?>
-				</div> 
-				<div class="finchsizer"> 	
-				<h4><?php echo $all_arts_array[$j]['title']; ?></h4>
-				<a href="<?php bp_member_permalink(); ?>profile"> <h1><?php  bp_member_name(); ?></h1> </a>
-                        <a href="<?php bp_member_permalink(); ?>profile"> <div style="float: left;"><?php  bp_member_avatar(); ?></div> </a>
+			<h4><?php echo $all_arts_array[$j]['title']; ?></h4>                                <a href="<?php bp_member_permalink(); ?>profile"> <h1><?php  bp_member_name(); ?></h1> </a>                        <a href="<?php bp_member_permalink(); ?>profile"> <div style="float: left;"><?php  bp_member_avatar(); ?></div> </a>
+
+<?php $userlink =  bp_core_get_user_domain( $all_arts_array[$j][author_id] ) . "profile/" ; /*echo $userlink;*/
+   ?>  
+                                                <div class="author-box">                                                        <a href="<?php echo $userlink; ?>"><?php echo get_avatar( $all_arts_array[$j][author_id] ); ?></a>                                                        <p><?php printf( _x( 'by %s', 'Post written by...', 'buddypress' ), bp_core_get_userlink( $all_arts_array[$j][author_id] ) ); ?></p>
+
+<p class="date"><?php printf( __( '%s', 'buddypress' ), mysql2date('M j Y', $all_arts_array[$j][p_date]) ); ?></p>			</div> 
+			</div>
+			<!--	<div class="finchsizer"> -->	
+<!--						</div> -->
 
 
-<?php $userlink =  bp_core_get_user_domain( $all_arts_array[$j][author_id] ) . "profile/" ; /*echo $userlink;*/   ?>  
-						<div class="author-box">
-							<a href="<?php echo $userlink; ?>"><?php echo get_avatar( $all_arts_array[$j][author_id] ); ?></a>
-							<p><?php printf( _x( 'by %s', 'Post written by...', 'buddypress' ), bp_core_get_userlink( $all_arts_array[$j][author_id] ) ); ?></p>
-						</div>
-
-
-			</div><!-- finchsizer --> 
-				<a href="<?php echo $all_arts_array[$j]['link']; ?>">Read More...</a>
 			</div>
 		</li> 
 		
