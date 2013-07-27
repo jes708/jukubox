@@ -104,7 +104,9 @@
     <section class="f-part-wrap">
 
         <h1 class="jes-big-header-2">Articles</h1>
-        <div>
+                <div style="container-fluid">
+                <div style="row-fluid">
+
 
 <?php // get latest articles
         $article_args = array(
@@ -129,6 +131,8 @@
                 $all_arts_array[$n]['title'] = $title;                $all_arts_array[$n]['text'] = $text;
                 $all_arts_array[$n]['link'] = $link;
                 $all_arts_array[$n]['post_id'] = $post_id;
+		
+		
 
                 $n++;
         }
@@ -136,46 +140,35 @@ wp_reset_query();
 //      echo '<pre>'; print_r($all_arts_array); echo '</pre>'; 
 ?>
 
+<ul>
 
 <?php $j = 0; ?>
-<?php	   if ( bp_has_members( $string  ) ) : // NHF CODE CODE ?>
+  <?php    if ( bp_has_members( 'include=9' ) ) : // NHF CODE CODE ?>
 
 		
-	<?php while ( bp_members() ) : bp_the_member(); ?>
+	<?php while ($j <=1): ?>
 		<li>
-			<div style="float: left; width: 50%">
-			<div style="float: left;"><?php  bp_member_avatar(); ?></div>
-			<div class="finchsizer">  
-			<h4><?php  bp_member_name(); ?>, 
-			    <?php $user_instruments_raw = bp_get_profile_field_data('field=2&user_id=' . bp_get_member_user_id() . ''); 
-					$end_inst = end($user_instruments_raw); 
-					foreach( $user_instruments_raw as $key => $value ) { 
-						$tag = ', '; 
-						if( $value == $end_inst ) {  	
-							$tag = '. '; 
-						} 
-						echo $value .  $tag; 
-						
-					} 
-				//print_r( $user_instruments_raw);  ?> 
-			    </h4>
-				<p style="margin-right: 53px;"><?php 
-				$user_bio = bp_get_profile_field_data('field=6&user_id=' . bp_get_member_user_id()  .   '') ;   echo finch_excerpt( $user_bio, 30 );  
-				  ?></p>
-			</div><!-- finchsizer --> 
-				<a href="<?php bp_member_permalink(); ?>profile">Read More...</a> 
-			</div>
+		<div class="span6" style="float: left: width: 50%; ">
 			<?php $curr_id = $all_arts_array[$j]['post_id']; //echo $curr_id; 
-				$art_thumb = get_the_post_thumbnail( $curr_id, 'thumbnail' );  
+				$art_thumb = get_the_post_thumbnail( $curr_id, 'medium' );  
 			?>
 			<div style="float: left; "></div>
-			<div style="float: right: width: 50%; ">
-				<div style="float: right; ">  
+				<div class="home_thumb" style="float: left; ">  
 					<?php echo $art_thumb; ?>
 				</div> 
 				<div class="finchsizer"> 	
-				<h4><?php echo $all_arts_array[$j]['title']; ?>!</h4>
-				<p><?php echo strip_tags( finch_excerpt($all_arts_array[$j]['text'], 30 ) ); ?> </p>
+				<h4><?php echo $all_arts_array[$j]['title']; ?></h4>
+				<a href="<?php bp_member_permalink(); ?>profile"> <h1><?php  bp_member_name(); ?></h1> </a>
+                        <a href="<?php bp_member_permalink(); ?>profile"> <div style="float: left;"><?php  bp_member_avatar(); ?></div> </a>
+
+
+<?php $userlink =  bp_core_get_user_domain( $all_arts_array[$j][author_id] ) . "profile/" ; /*echo $userlink;*/   ?>  
+						<div class="author-box">
+							<a href="<?php echo $userlink; ?>"><?php echo get_avatar( $all_arts_array[$j][author_id] ); ?></a>
+							<p><?php printf( _x( 'by %s', 'Post written by...', 'buddypress' ), bp_core_get_userlink( $all_arts_array[$j][author_id] ) ); ?></p>
+						</div>
+
+
 			</div><!-- finchsizer --> 
 				<a href="<?php echo $all_arts_array[$j]['link']; ?>">Read More...</a>
 			</div>
@@ -189,7 +182,7 @@ wp_reset_query();
 			</ul>
 			</div>
 		
-                 </div><!-- teach_prof_div --> 
+                 </div>
 
     
 
