@@ -5,7 +5,7 @@
 
     // include opentok sdk
 	$get_lesson_id = htmlentities(mysql_real_escape_string($_GET['lesson_id'])); 
-	$post_newroom_id = $_POST['room_key']; 
+	$post_newroom_id = $_REQUEST['room_key']; 
 	
 	if( isset($post_newroom_id) )  { 
 		$check_id = "SELECT 

@@ -118,7 +118,11 @@ jQuery('#newroomtable').ready(function() {
 		if( !keyInput ) { 
 			alert('You must input a room key code!'); 
 			return false; 
-		} // end if 	
+		} // end if 
+		else { 
+			window.open('' + window['finch_home_url'] + '/lesson-room/?room_key=' + keyInput + '', '_blank' ); 
+			return false; 
+		} 	
 	}); // end click  
 
 }); // end ready
