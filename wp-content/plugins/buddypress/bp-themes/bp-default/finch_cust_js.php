@@ -97,9 +97,10 @@ jQuery('#newroomtable').ready(function() {
 		
 		function Loggy(response) { 
 			console.log(response);
-			var newkey = response.passcode; 
+			var newkey = response.passcode;
+ 			var newLink = window['finch_home_url'] + '/lesson-room/?room_key=' + newkey + ''; 
 			//alert(newkey);
-			jQuery('#newkey').html(newkey);
+			jQuery('#newkey').html(newkey + '<br /><br /><strong>LINK TO SHARE:</strong><br /><br /><a href="' + newLink + '" >' + newLink + '</a>');
 			jQuery('#enter_room_key').attr("value", "" + newkey + "");   
 			jQuery('#remindtext').show();  
 		} 
