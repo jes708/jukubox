@@ -106,14 +106,16 @@ echo '</pre>'; */
 							<label for="search-terms" class="accessibly-hidden"><?php _e( 'Search for:', 'buddypress' ); ?></label>
 							<input class="span3 search-query" type="text" id="search-terms" name="search-terms" value="<?php echo isset( $_REQUEST['s'] ) ? esc_attr( $_REQUEST['s'] ) : ''; ?>" />
 
-							<?php // echo bp_search_form_type_select(); ?>
+
+<button type="submit" class="btn btn-primary" name="search-submit" id="search-submit" value="Search">
+<i class="icon-search icon-white"></i>
+</button>
+
+							<?php  echo bp_search_form_type_select(); ?>
 
 							<!-- <input type="submit" name="search-submit" id="search-submit" value="<?php _e( 'Search', 'buddypress' ); ?>" /> -->
 
-							<?php //wp_nonce_field( 'bp_search_form' ); ?>
-
-<i class="icon-search icon-white"></i>
-</button>
+							<?php wp_nonce_field( 'bp_search_form' ); ?>
 
 							<?php //echo bp_search_form_type_select(); ?>
 							<?php //wp_nonce_field( 'bp_search_form' ); ?>
