@@ -4,13 +4,13 @@
 @import url(http://fonts.googleapis.com/css?family=Contrail+One);
 @import url(http://fonts.googleapis.com/css?family=Merriweather+Sans);
 @import url(http://fonts.googleapis.com/css?family=Oswald);*/
-/*@import url(http://fonts.googleapis.com/css?family=Open+Sans);
-@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+/*@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed);
 @import url(http://fonts.googleapis.com/css?family=Noto+Sans);*/
-/*@import url(http://fonts.googleapis.com/css?family=BenchNine);
+@import url(http://fonts.googleapis.com/css?family=BenchNine);
 @import url(http://fonts.googleapis.com/css?family=Comfortaa);  
 @import url(http://fonts.googleapis.com/css?family=Fjalla+One);  
-*/
+
 /*@font-face {
         font-family: Comfortaa;
         src: url('qLBu5CQmSMt1H43OiWJ77bO3LdcAZYWl9Si6vvxL-qU.woff');
@@ -132,6 +132,7 @@ body {
 	margin-left: /*63px;*/ -52px; 
 	margin-top: /*34px;*/  /*55px;*/ 23px; 
 	width: 530px; 
+	height: 82px;  
 } 
 
 .buatp_loop_column  #field_2 { 
@@ -243,7 +244,7 @@ body {
 }  
 
 h1, h2, h3, h4, h5, h6 { 
-	font-family: 'Montserrat', 'Helvetica Neue', 'Arial' !important;
+	font-family: 'Fjalla One', 'Helvetica Neue', 'Comfortaa', 'BenchNine', 'Arial' !important;
 	font-weight: normal; 
 } 
 
@@ -329,7 +330,7 @@ div#container {
 	padding: 20px;
 	text-align: center;
 }
-/*
+
 button,
 a.button,
 input[type=submit],
@@ -338,10 +339,10 @@ input[type=reset],
 ul.button-nav li a,
 div.generic-button a,
 .comment-reply-link { 
-color: #d7d7d7;
+/*color: #d7d7d7;
 background: #333;
 background: -webkit-gradient(linear, left top, left bottom, from(#666), to(#000));
-background: -moz-linear-gradient(top, #666, #000);  
+background: -moz-linear-gradient(top, #666, #000); */ 
 
 
 
@@ -350,12 +351,12 @@ background: -webkit-gradient(linear, left top, left bottom, from(#59a9ff), to(#5
 background: -moz-linear-gradient(top, #59a9ff, #5495f3);
 
 
-background: #1161a0;
+/*background: #1161a0;
 background: -webkit-gradient(linear, left top, left bottom, from(#2395ee), to(#2eb1e9));
-background: -moz-linear-gradient(top, #2395ee, #2eb1e9);  
+background: -moz-linear-gradient(top, #2395ee, #2eb1e9); */ 
 
 
-1c90cd  
+/*1c90cd */ 
 background: #1161a0;
 background: -webkit-gradient(linear, left top, left bottom, from(#1161a0), to(#4da1cd));
 
@@ -366,16 +367,16 @@ background: #1161a0;
 background: -webkit-gradient(linear, left top, left bottom, from(#4da1cd), to(#1161a0) );
 
 background: -moz-linear-gradient(top, #4da1cd, #1161a0);
-*/
-/*color: white !important;
+
+color: white !important;
 font-family: "Lucida Grande" sans-serif;
-padding: 0px 7px 0px 7px;   
+/* padding: 0px 7px 0px 7px;  */ 
 padding-right: 13px; 
 padding-left: 13px; 
-border: none;  
+/*border: none; */  
 
-} */  
-/*
+}  
+
 button:hover,
 a.button:hover,
 a.button:focus,
@@ -407,7 +408,7 @@ background: -webkit-gradient(linear, left top, left bottom, from(#1161a0), to(#4
 
 background: -moz-linear-gradient(top, #1161a0, #4da1cd);
 }
-/*
+
 button:active,
 a.button:active,
 a.button:active,
@@ -426,14 +427,14 @@ div.generic-button a:active,
     color: #666;
     background: -webkit-gradient(linear, left top, left bottom, from(#3d96f1), to(#517ded));
     background: -moz-linear-gradient(top,  #3d96f1,  #517ded);
-*/ 
+
 /* 267eac */ 
 
 
-/*background: #1161a0;
+background: #1161a0;
 background: -webkit-gradient(linear, left top, left bottom, from(#023467), to(#4da1cd));
 
-background: -moz-linear-gradient(top, #023467, #4da1cd); */ 
+background: -moz-linear-gradient(top, #023467, #4da1cd);
 
 
 }
@@ -1198,25 +1199,21 @@ button:hover, a.button:hover, input[type=submit]:hover, input[type=button]:hover
 	display: none; 
 }
 
-.textwidget {
-width: 500px;
-}
-
-#menu-footer-menu li { 
+#footer-menu .menu  li { 
 	float: left;
 	padding: 0px 10px;
 	padding-left: 0px;  
 }   
 
-#footer-menu li ul li { 
+/* #footer-menu li ul li { 
 	border-right: solid white 1px; 
-}  
-#menu-footer-menu li a { 
+} */ 
+#footer-menu li ul li a { 
 	border-right: solid white 1px;
 	padding-right: 11px; 
 }
 
- #menu-footer-menu li ul li a:hover { 
+ #footer-menu li ul li a:hover { 
 	border-right: solid transparent 1px; 
 }
 #footer-widget-area { 
@@ -1281,10 +1278,6 @@ li.widget_displaytweetswidget p {
 #footer-cp-area { 
 	float: left; 
 }
-.founder_div img { 
-	height: 100px;
-	width: 100px; 
-} 
 .servWrap { 
 	float: left;
 	position: relative; 

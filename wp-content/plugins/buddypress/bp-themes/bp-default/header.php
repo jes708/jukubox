@@ -116,7 +116,7 @@ echo '</pre>'; */
 </button>
 
 							<?php //echo bp_search_form_type_select(); ?>
-							<?php wp_nonce_field( 'bp_search_form' ); ?>
+							<?php //wp_nonce_field( 'bp_search_form' ); ?>
 </div>
 						</form><!-- #search-form -->
 
