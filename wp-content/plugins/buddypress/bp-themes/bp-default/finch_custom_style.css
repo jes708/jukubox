@@ -1188,8 +1188,8 @@ button:hover, a.button:hover, input[type=submit]:hover, input[type=button]:hover
 
 #footer-bottom-menu { 
 /*	padding: 20px 0px;*/ 
-	padding-top: 30px; 
-	padding-bottom: 10px;  
+	padding-top: /*30px;*/ 0px;  
+	padding-bottom: 14px;  
 }
 #footer-menu { 
 	float: right; 
@@ -1217,8 +1217,9 @@ button:hover, a.button:hover, input[type=submit]:hover, input[type=button]:hover
 	border-right: solid transparent 1px; 
 }
 #footer-widget-area { 
-	min-height: 155px;
+	/*min-height: 155px; */ 
 	min-width: 1000px;
+	display: none; 
 }  
 
 li.widget_displaytweetswidget { 
