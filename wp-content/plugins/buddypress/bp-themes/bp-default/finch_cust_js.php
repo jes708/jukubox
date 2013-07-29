@@ -415,7 +415,6 @@ jQuery('#serviceForm').ready(function() {
 
 </script>
 
-// JSchwarz logged out attempt
 <script>
 	jQuery(document).ready(function() {
 		jQuery('.generic-button a').addClass('btn');
