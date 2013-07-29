@@ -1829,7 +1829,7 @@ function generate_lessontoggle($userId, $services='') { // takes has of lesson s
 				}
 					//echo '<h1>' . $fieldID . '</h1>';  
 				$xprof_exist = does_xprofileprice_exist($fieldID, $userId);
-					echo '<pre>'; print_r($xprof_exist);  echo '</pre>'; 
+				//	echo '<pre>'; print_r($xprof_exist);  echo '</pre>'; 
 				if( !$xprof_exist ) { // service xprofiledata doesn't exist - create!
 					//echo '<h1>DOESNT EXIST!</h1>'; 
 					$insert_price = "INSERT INTO
