@@ -399,12 +399,12 @@ margin-right: 18px;
 p, div.entry ul li {
 font-size: 14px !important;
 line-height: 20px !important;
-font-family: "open sans" sans-serif;
+font-family: "open sans" sans-serif !important;
 }
 
 div.entry ul li {
 margin-left: 26px;
-font-family: "open sans" sans-serif;
+font-family: "open sans" sans-serif !important;
 }
 
 #field_28, #field_23 {
@@ -455,7 +455,7 @@ border-radius: 10px;
 }
 
 body {
-font-family: 'open sans' sans-serif;
+font-family: 'open sans' sans-serif !important;
 }
 
 ul.item-list li div.item-title, ul.item-list li h4 {
@@ -1995,4 +1995,9 @@ input[type="submit"].btn.btn-mini {
 .founder_div img { 
 	height: 100px;
 	width: 100px; 
+}
+
+h1, h2, h3, h4, h5, h6 {
+        font-family: 'Montserrat', 'Helvetica Neue', 'Arial' !important;
+        font-weight: normal;
 } 

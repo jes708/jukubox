@@ -419,5 +419,9 @@ jQuery('#serviceForm').ready(function() {
 	jQuery(document).ready(function() {
 		jQuery('.generic-button a').addClass('btn');
 		jQuery('.generic-button a').addClass('btn-primary');
+		jQuery('#members-list .generic-button a').addClass('btn-small');
 });
+
 </script>
+
+
