@@ -1208,9 +1208,9 @@ width: 500px;
 	padding-left: 0px;  
 }   
 
-/* #footer-menu li ul li { 
+#footer-menu li ul li { 
 	border-right: solid white 1px; 
-} */ 
+}  
 #menu-footer-menu li a { 
 	border-right: solid white 1px;
 	padding-right: 11px; 
