@@ -2159,7 +2159,15 @@ class Appointments {
 		$this->get_lsw();
 
 		$price = $this->get_price( );
-			
+		// NHF - allowed personal half hour prices, added variables for console.log
+		$price_raw = $price; 
+		$worker_raw = $worker;
+		if( $service == 4 ) { // if this is a half-hour lesson
+			$price_raw = get_halfhour_price($worker);
+			$price = (double)$price_raw; 		
+		}  
+		// end NHF
+	 
 		// It is possible to apply special discounts
 		$price = apply_filters( 'app_display_amount', $price, $service, $worker );
 		$price = apply_filters( 'app_pre_confirmation_price', $price, $service, $worker, $start, $end );
@@ -2230,7 +2238,10 @@ class Appointments {
 							'address'	=> $ask_address,
 							'city'		=> $ask_city,
 							'note'		=> $ask_note,
-							'gcal'		=> $ask_gcal
+							'gcal'		=> $ask_gcal, 
+							'price_raw'	=> $price_raw, 
+							'worker_raw'    => $worker_raw,
+							'price_type'    => gettype($price_raw) 
 						); 
 			
 		$reply_array = apply_filters( 'app_pre_confirmation_reply', $reply_array );
@@ -4666,7 +4677,7 @@ class Appointments {
 		// Generate this tab only if allowed
 		if ( $this->is_worker( $user_id ) && isset($this->options["allow_worker_wh"]) && 'yes' == $this->options["allow_worker_wh"] ) {
 			bp_core_new_subnav_item( array(
-				'name' => __( /* NHF EDIT */ /*'Appointments Settings',*/ /* end NHF edit */  'Name Your Price', 'appointments' ),
+				'name' => __( /* NHF EDIT */ /*'Appointments Settings',*/ /* end NHF edit */  'Prices and Services', 'appointments' ),
 				'slug' => 'name-your-price',
 				'parent_url' => $link, 
 				'parent_slug' => 'appointments',
@@ -4935,77 +4946,23 @@ function screen_content_app_pricing_settings() {
 			else
 				$result["closed"] = null;
 // NHF - code to let teachers set their price
-	
-	if( isset($_POST['hourPRice']) ) { 
-		$hourPrice = mysql_real_escape_string(htmlentities( $_POST['hourPRice'] ) );
-		if( !isCurrency($hourPrice) ) { 
-			echo '<h4>Not a valid price! Must be in 0.00 format!</h4>'; 
-		}
-		elseif( $hourPrice < 5 ) { 
-			echo '<h4>Cannot charge less than $5 for a lesson!</h4>'; 
-		}  
-		else { 
-			$set_price = "UPDATE 
-						wp_app_workers 
-					SET 
-						price = " . $hourPrice . "
-					WHERE
-						ID = " . $user_id . "
-					";
-			// set price 2 - updates xprofile data
-			$set_price_2 = "SELECT * FROM
-						wp_bp_xprofile_data
-					WHERE
-						field_id = 23
-					AND
-						user_id = " . $user_id . "
-					"; 
-			$set_price_2_array = finch_mysql_query($set_price_2, "return");
-			if(!$set_price_2_array) {  
-				// update the xprofile field for price 
-				$update_xprofile_price = "
-					INSERT INTO 
-						wp_bp_xprofile_data( 
-							field_id, 
-							user_id, 
-							value,
-							last_updated) 
-						VALUES( 
-							23, 
-							" . $user_id . ", 
-							" . $hourPrice . ",
-							NOW()
-						)"; 
-				finch_mysql_noreturn_query($update_xprofile_price); 
-						
- 			} 
-			else { 
-				$update_xprofile_price = " 
-					UPDATE
-						wp_bp_xprofile_data
-					SET
-						value = " . $hourPrice . ", 
-						last_updated = NOW() 
-					WHERE 
-						user_id = " . $user_id . " 
-					AND
-						field_id = 23
-					";  
-				finch_mysql_noreturn_query($update_xprofile_price); 
-			} 
 
-			if( finch_mysql_noreturn_query($set_price) == 'success' ) { 
-					 
-				echo '<h4>Price of ' . $hourPrice . ' submitted!</h4>';
-			} 
-			else { 
-				echo '<h4>Error submitting price!</h4>'; 
-			}  
-		} 
+	// set field ids with service numbers
+	// data for hour long lessons 
+	$first_field_id = Array('field_id' => '23', 'serv_num' => '1', 'table_column' => 'price');
+	// data for half hour long lessons 
+	$second_field_id = Array('field_id' => '221', 'serv_num' => '4', 'table_column' => 'price_half_hour');  
+	
+	if( isset($_POST['halfHourPRice']) ) { 
+		submit_new_appointments_prices( $_POST['halfHourPRice'], $second_field_id, $user_id); 
+	} 	
+	if( isset($_POST['hourPRice']) ) {	
+		submit_new_appointments_prices( $_POST['hourPRice'], $first_field_id, $user_id); 
 	} 		
+
 		// NHF Code - get current price, if none exist, current price = 0.00
 		$get_current_price = "SELECT 
-					ID, price
+					ID, price, price_half_hour
 				FROM
 					wp_app_workers
 				WHERE
@@ -5013,26 +4970,64 @@ function screen_content_app_pricing_settings() {
 				"; 
 		$get_current_price_query = finch_mysql_query($get_current_price, "return");
 		$previous_price = $get_current_price_query[0]['price'];
+		$previous_halfhour_price = $get_current_price_query[0]['price_half_hour']; 
+		
+		// NHF - attempt at toggle button
+	 	generate_lessontoggle($user_id, $_POST['services']);
+	//	echo '<br /><br />';  
+		//echo $services_given;
+	
+		
+		// check for whhich services this user is registered
+				// if they set a price and deregistered the service - will remain in db
+			$services_hash = get_user_services_hash($user_id); 
+			//print_r($services_hash); 
+	?>
+	<div class="priceWrap">	
+	<?php if( (array_key_exists(1, $services_hash)) || (array_key_exists(4, $services_hash))  ) : ?> 
+		<h4>Set the price you wish to charge for lessons</h4>
+		<form method="post" id="priceForm">
+	<?php endif; ?>
+<?php 	
+		if( array_key_exists(1, $services_hash) ) { 
+			if( !empty($previous_price) ) {  
+				//echo '<h4>Your current price per hour: <span id="priceNum">$' . $previous_price . '/ hour lesson</span></h4>';  
+				$init_price = $previous_price; 
+			} 
+			else {  
+				$init_price = 0.00; 
+			}  ?>
 
-		if( !empty($previous_price) ) {  
-			echo '<h4>Your current price: <span id="priceNum">$' . $previous_price . '/ hour lesson</span></h4>';  
-			$init_price = $previous_price; 
-		} 
-		else {  
-			$init_price = 0.00; 
+			<p>Price for One Hour Lesson ($ USD):  <input type="text" name="hourPRice" value="<?php echo $init_price; ?>" class="SetHourPrice" /></p>
+		<?php  
+		}
+		 
+		if( array_key_exists(4, $services_hash) ) { 
+			if( !empty($previous_halfhour_price) ) { 			
+				//echo '<h4>Your current price per half hour: <span id="priceNum">$' . $previous_halfhour_price . '/ half hour lesson</span></h4>';  
+				$init_halfhour_price = $previous_halfhour_price; 
+			} 
+			else { 
+				$init_halfhour_price = 0.00; 
+			} ?>
+				 
+			<p style="margin-bottom: 12px;">Price for One Half-Hour Lesson ($ USD):  <input type="text" name="halfHourPRice" value="<?php echo $init_halfhour_price; ?>" class="SetHourPrice" /></p>
+		<?php 
 		} 
  
 			do_action( 'app_before_bp_app_settings', $user_id );
 			
 			?>
-		<h4>Set the price you wish to charge for lessons</h4>
-		<form method="post" id="priceForm">
-			<p>Price for One Hour Lesson ($ USD):  <input type="text" name="hourPRice" value="<?php echo $init_price; ?>" id="SetHourPrice" /></p>
+
+		
+	<?php if( (array_key_exists(1, $services_hash)) || (array_key_exists(4, $services_hash))  ) : ?> 
 			<input type="hidden" name="worker_id" value="<?php echo $user_id; ?>" />
-			<p><button type="submit" class="btn btn-primary">Change Price</button>			
+			<p><button type="submit" class="btn btn-primary">Change Price</button></p>
 
 
 		</form>
+	<?php endif; ?>
+	</div>
 		<!-- NHF - name your own price html --> 	
 			<?php
 			do_action( 'app_after_bp_app_settings', $user_id );

@@ -86,12 +86,11 @@ jQuery('#search-by-instrument').ready(function() {
 
 <?php  elseif ( bp_has_members( $string  ) ) : // NHF CODE CODE ?>
 
-<!-- <h1><?php //echo $string; ?></h1> -->
-	<?php if( !is_user_logged_in() ) : ?>
-		<style>
-			.friendship-button { display: none; } 
-		</style>
-	<?php endif; ?>
+	<?php  if( !is_user_logged_in() ) : // hide friendship buttons when logged out, but not from user profiles NHF  ?>
+		 <style>
+			.friendship-button:not(.lesson-button-wrapper):not(.lesson-button) { display: none; } 
+		</style>   
+	<?php  endif; ?>
 	
 <?php bp_member_user_id(); ?>
 <h1><?php if( $instrument != 'notApplicable' ) { 

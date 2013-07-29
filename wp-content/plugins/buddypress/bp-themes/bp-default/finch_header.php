@@ -1,6 +1,12 @@
 <?php
+//echo get_halfhour_price(9); 
+//print_r($_POST);
+if( (is_page('home')) && (!is_user_logged_in()) ) { 
 
-//print_r($_POST); 
+echo '<script>window.location="wp-login.php";</script>'; 
+
+} 
+ 
 function fTest_mail() { 
 
 //	$fromheader = "From: finchman@gmail.com"; 

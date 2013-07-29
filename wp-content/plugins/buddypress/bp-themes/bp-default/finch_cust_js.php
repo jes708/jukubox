@@ -226,18 +226,12 @@ jQuery('#aboutFounders').ready( function() {
     jQuery('#aboutFounders .founder_div a img').each( function() {  
 	var origWidth = jQuery(this).outerHeight();
 	var origHeight = jQuery(this).outerWidth(); 
-
-	//var origWidth = 100; 
-	//var origHeight = 100;  
 	//alert(origWidth + ' x ' + origHeight);
 	var changeAmount = 8; 
 	var newWidth = origWidth + changeAmount;  
 	var newHeight = origHeight + changeAmount; 		
  	var margAmount = changeAmount / 2; 
 	//alert(margAmount);
-
-	//var newWidth = 108; 
-	//var newHeight = 108;  
 	
 	jQuery(this).parent('a').parent('div').css({ height: newHeight + "px", width: newWidth + "px"}); 	
 
@@ -328,8 +322,8 @@ jQuery(document).ready( function() {
 
 
 }); // end ready
-jQuery('#priceForm').ready( function () { 
-	jQuery('#SetHourPrice').priceFormat({ 
+jQuery('.priceForm').ready( function () { 
+	jQuery('.SetHourPrice').priceFormat({ 
 		limit:5, 
 		clearPrefix: true,
 		thousandsSeparator: '',
@@ -367,6 +361,23 @@ jQuery('.editfield input[name="field_28"]').ready(function() {
 		} 
          }); 
 }); // ready
+
+// forces teachers to be signed up for at least one service
+jQuery('#serviceForm').ready(function() { 
+	jQuery('.serv_check').click( function() { 
+	 	var jj = 0;
+		jQuery('.serv_check').each( function() { 
+			if( jQuery(this).is(':checked') ) { 
+				jj++; 
+			} 
+		}); // end each  
+		if( jj < 1 ) { 
+			alert('You must be registered for one type of service');
+			return false;  
+		}  
+	}); // end click
+}); // end ready
+
 /* jQuery('#signup_form, #profile-edit-form').ready(function() {
 	
 //	alert('hello!'); 

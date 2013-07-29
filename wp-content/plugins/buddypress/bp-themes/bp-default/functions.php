@@ -1634,3 +1634,452 @@ if( strtotime( $user->user_registered ) > ( time() - $message_period )
 } 
 
 add_filter( 'login_redirect', 'redirectOnFirstLogin', 10, 3 ); 
+
+function get_halfhour_price($worker) {
+	$get_halfhour_sql = "SELECT
+					price_half_hour
+				FROM
+					wp_app_workers
+				WHERE
+					ID='" . $worker . "'
+				"; 
+	$get_halfhour_array = finch_mysql_query($get_halfhour_sql, "return"); 
+
+	$halfhour_price = $get_halfhour_array[0]['price_half_hour']; 
+	return $halfhour_price; 
+
+}
+// generate hashes for possible lessons
+function serivces_hash($Total_or_worker, $userId='') { 
+    if($Total_or_worker == "total" ) { 
+	$avail_serv_query = "SELECT 
+					ID, name
+				FROM
+					wp_app_services
+			     "; 
+	$avail_serv_array = finch_mysql_query($avail_serv_query, "return"); 
+	foreach( $avail_serv_array as $key => $value ) { 
+		$avail_serv_hash[ $value['ID'] ] = 'service';   
+	}
+	$avail_serv_both['array'] = $avail_serv_array; 
+	$avail_serv_both['hash'] = $avail_serv_hash; 
+	//print_r($avail_serv_hash);
+	return $avail_serv_both; 
+    } 
+    else if($Total_or_worker == "worker" ){ 
+	$get_services = "SELECT
+				services_provided
+			FROM
+				wp_app_workers
+			WHERE
+				ID=" . $userId . " 
+			"; 
+	$get_services_query = finch_mysql_query($get_services, "return");  
+	$services_string = $get_services_query[0]['services_provided'];
+
+	
+	$services_garray = explode(':', $services_string);
+	array_pop($services_garray); 
+	array_shift($services_garray);  
+	//print_r($services_garray); 
+	foreach( $services_garray as $key => $value ) { 
+		$service_hash[$value] = 'element'; 
+	}  
+	//print_r($service_hash); 
+	return $serivce_hash; 
+    } 					
+
+    
+	 
+} 
+
+function get_user_services_hash($userId) { 
+
+	 $get_services = "SELECT
+				services_provided
+			FROM
+				wp_app_workers
+			WHERE
+				ID=" . $userId . " 
+			"; 
+	$get_services_query = finch_mysql_query($get_services, "return");  
+	$services_string = $get_services_query[0]['services_provided'];
+
+	
+	$services_garray = explode(':', $services_string);
+	array_pop($services_garray); 
+	array_shift($services_garray);  
+	foreach( $services_garray as $key => $value ) { 
+		$service_hash[$value] = 'element'; 
+	}    
+
+	return $service_hash; 
+}
+
+function does_xprofileprice_exist($fieldID, $userId) { 
+	
+	$get_hour_q = "SELECT
+				*	
+			FROM
+				wp_bp_xprofile_data
+			WHERE
+				field_id = " . $fieldID . "
+			AND
+				user_id = " . $userId . "
+			"; 
+	$get_hour_ar = finch_mysql_query($get_hour_q, "return"); 
+
+	return $get_hour_ar; 
+/*
+	if(!$get_hour_ar) { 
+		return 'yes'; 
+	} 
+	else { 
+		return 'no'; 
+	} */  
+}  
+
+function get_service_prices($userId, $serv_num) { 
+	if( $serv_num == 1 ) { $column = 'price'; } 
+	elseif( $serv_num == 4 ) { $column = 'price_half_hour'; }
+	else { echo 'Error getting price!'; return false; }  
+	
+	$get_price = "SELECT
+				" . $column . "
+			FROM
+				wp_app_workers
+			WHERE
+				ID = " . $userId . "
+			"; 
+	$price_arr = finch_mysql_query($get_price, "return"); 
+
+	$price = $price_arr[0][$column]; 
+	return $price; 
+} 
+
+function insert_new_service_string( $new_serv_string, $userId ) { 
+	//echo '<h1>FINAL NEW SERV STRING: ' . $new_serv_string . '</h1>'; 	
+	// finally - update the wp_app_workers table to reflect new service availability
+	$update_serv_q = "UPDATE 
+				wp_app_workers
+			SET
+				services_provided = '" . $new_serv_string . "'
+			WHERE
+				ID = " . $userId . "
+			"; 
+	finch_mysql_noreturn_query($update_serv_q); 	
+}  
+
+// get buttons to toggle lessons
+function generate_lessontoggle($userId, $services='') { // takes has of lesson services from $_POST 
+	
+	$service_hash = get_user_services_hash($userId); 	
+	
+	// proces submitting new service form
+	if( !empty($services) ) { 
+		//echo '<h1>Hello</h1>'; 
+		$sub_service_hash = $services; 
+		//print_r($sub_service_hash); 
+		$num_after =  count($sub_service_hash);  echo '<br />'; 
+		//print_r($service_hash);  		
+		$num_before = count($service_hash); 
+		
+		// deleting a service	
+		$new_serv_string .= ':'; 
+		foreach( $service_hash as $key => $value ) { 
+			if(  !$sub_service_hash[$key] )    {  
+					// service removed - delete from xprofile data if a paid service
+				if ( ($key == 1) || ($key == 4) ) { 
+					if( $key == 1 ) { // delete hour price
+						$fieldID = 23; 	
+					} 
+					elseif( $key == 4 ) { // delete half hour price
+						$fieldID = 221; 
+					}
+ 
+					$xprof_exist = does_xprofileprice_exist($fieldID, $userId);
+					if( !$xprof_exist ) { // field doesn't exist - no need to delete
+						echo 'Service doesn\'t exist!'; 
+					} 
+					else { // need to delete
+						$delete_service = "DELETE FROM
+									wp_bp_xprofile_data
+								WHERE
+									field_id = " . $fieldID . "
+								AND
+									user_id = " . $userId . "
+								"; 
+						finch_mysql_noreturn_query($delete_service); 
+					}
+				}    
+			} 	
+		} // end foreach
+		foreach( $sub_service_hash as $key => $value ) { 
+			if( ( !$service_hash[$key] ) && ( $key == 1 || $key == 4 ) ) { 	
+				if( $key == 1 ) { // add hour price
+					$fieldID = 23; 	
+				} 
+				elseif( $key == 4 ) { // add half hour price
+					$fieldID = 221; 
+				}
+					 
+				$price = get_service_prices($userId, $key); 
+				if( $price == '' ) { 
+					$price = '0.00'; 
+				}
+					//echo '<h1>' . $fieldID . '</h1>';  
+				$xprof_exist = does_xprofileprice_exist($fieldID, $userId);
+					echo '<pre>'; print_r($xprof_exist);  echo '</pre>'; 
+				if( !$xprof_exist ) { // service xprofiledata doesn't exist - create!
+					//echo '<h1>DOESNT EXIST!</h1>'; 
+					$insert_price = "INSERT INTO
+								wp_bp_xprofile_data(
+									field_id, 
+									user_id, 
+									value, 
+									last_updated) 
+								VALUES( 
+									" . $fieldID . ", 
+									" . $userId . ", 
+									" . $price . ", 
+									NOW()
+								) 
+							"; 
+					finch_mysql_noreturn_query($insert_price); 					
+				} 
+				
+			} 
+			$new_serv_string .= $key . ':'; 
+		 
+		} // end foreach
+		  
+		//echo $new_serv_string;
+		insert_new_service_string( $new_serv_string, $userId );  
+ 
+	} 
+
+	
+	$avail_serv = serivces_hash('total', '');
+	$avail_serv_array = $avail_serv['array']; 
+	$avail_serv_hash = $avail_serv['hash'];  
+
+	// reset server hash - to get newset updated services available	
+	$service_hash = get_user_services_hash($userId); 	
+	//echo '<pre>'; print_r($service_hash); echo '</pre>';
+	echo '<div class="servWrap">'; 
+	echo '<h4>Services I Teach</h4>';
+	echo '<form method="post" id="serviceForm" action="">'; 
+	echo '<input type="hidden" name="serviceToggled" value="" />';  		
+	foreach( $avail_serv_array as $key => $value ) {
+		if( !empty( $service_hash[$value['ID']] ) ) { 
+			$checkedOrNo = "checked"; 
+		} else { 
+			$checkedOrNo = ""; 
+		}
+		if( $value['ID'] != 2 ) {  // can't toggle free first lesson - introduction from new students  
+			echo '<input class="serv_check" type="checkbox" name="services[' . $value['ID'] . ']" value="' . $value['ID'] . '" ' . $checkedOrNo . ' /> <strong>' . $value['name'] . '</strong><br />'; 
+		} 
+	} 
+	echo '<input type="submit" value="Change My Services" id="serveChangeSubmit" />';  
+	echo '</form>'; 
+	echo '</div>'; 
+}
+
+function get_deletable_services( $userId ) { 
+	$user_services = get_user_services_hash($userId);
+	//print_r($user_services); 
+	$avail_serv = serivces_hash('total', '');
+	$avail_serv_hash = $avail_serv['hash']; 
+	//print_r($avail_serv_hash);  
+	//$possible_services = services_hash('total', ''); 
+	 foreach( $avail_serv_hash as $key => $value ) {
+		if(!$user_services[$key]) { 
+			$serv_remove[$key] = "elm_remove"; 
+		}  
+								
+	}  
+	//echo '<pre>'; 
+	//print_r($serv_remove); 
+	//echo '</pre>'; 
+	return $serv_remove;  
+}  
+
+function submit_new_appointments_prices($newPrice, $field_ids, $userId ) { 
+
+	$newPrice = mysql_real_escape_string(htmlentities( $newPrice ) );
+	 
+	if( !isCurrency($newPrice)  ) {
+               echo '<h4>Not a valid price! Must be in 0.00 format!</h4>';
+		return false; 
+        }
+        elseif( $newPrice < 5  ) {
+               echo '<h4>Cannot charge less than $5 for a lesson!</h4>';
+		return false; 
+        }
+	
+	$fieldID = $field_ids['field_id'];
+	$serv_num = $field_ids['serv_num'];
+	$column_name = $field_ids['table_column']; 
+
+	update_app_table_price($newPrice, $userId, $column_name); 
+ 
+	$price = get_service_prices($userId, $serv_num);
+	//echo 'Price is ' . $price; 
+
+	if( $price == '' ) { 
+		$price = 0.00; 
+	} 
+ 
+	$exist_test = does_xprofileprice_exist($fieldID, $userId);
+	if( !$exist_test ) { 
+		create_xprofile_price( $fieldID, $price, $userId ); 
+	} 
+	else { 
+		update_xprofile_price( $fieldID, $price, $userId ); 
+	} 
+
+
+} 
+
+function update_app_table_price ($newPrice, $userId, $column_name) { 
+
+	$set_price = "UPDATE 
+				wp_app_workers 
+			SET 
+				" . $column_name . " = " . $newPrice . " 
+			WHERE
+				ID = " . $userId . "
+			";
+	$set_price_query = finch_mysql_noreturn_query($set_price); 
+
+} 
+
+function all_xprofile_prices($hourPrice="", $halfHourPrice="", $field_ids, $userId) {  
+
+	$hourPrice = mysql_real_escape_string(htmlentities( $hourPrice ) );
+        $halfHourPrice = mysql_real_escape_string(htmlentities( $halfHourPrice ) );
+
+	if( !isCurrency($hourPrice) || !isCurrency($halfHourPrice) ) {
+               echo '<h4>Not a valid price! Must be in 0.00 format!</h4>';
+		return false; 
+        }
+        elseif( $hourPrice < 5 || $halfHourPrice < 5 ) {
+               echo '<h4>Cannot charge less than $5 for a lesson!</h4>';
+		return false; 
+        }
+
+	
+	$set_price = "UPDATE 
+				wp_app_workers 
+			SET 
+				price = " . $hourPrice . ", 
+				price_half_hour = " . $halfHourPrice . "
+			WHERE
+				ID = " . $userId . "
+			";
+	$set_price_query = finch_mysql_noreturn_query($set_price); 
+	
+	foreach( $field_ids as $key => $value ) { 
+		
+		$fieldID = $value['field_id'];
+		$serv_num = $value['serv_num']; 
+		$price = get_service_prices($userId, $serv_num);
+		//echo 'Price is ' . $price; 
+
+		if( $price == '' ) { 
+			$price = 0.00; 
+		} 
+ 
+		$exist_test = does_xprofileprice_exist($fieldID, $userId);
+		if( !$exist_test ) { 
+			create_xprofile_price( $fieldID, $price, $userId ); 
+		} 
+		else { 
+			update_xprofile_price( $fieldID, $price, $userId ); 
+		} 
+		 
+	}   
+}   
+function blank() { 
+
+} 
+function create_xprofile_price( $fieldID, $price, $userId ) { 
+
+
+	$insert_price = "INSERT INTO
+				wp_bp_xprofile_data(
+					field_id, 
+					user_id, 
+					value, 
+					last_updated) 
+				VALUES( 
+					" . $fieldID . ",  						
+					" . $userId . ", 
+					" . $price . ", 
+					NOW()
+				) 
+			"; 
+	finch_mysql_noreturn_query($insert_price); 					
+} 
+ 
+
+function update_xprofile_price( $fieldID, $price, $userId ) {
+	$update_xprofile_price = " 
+		UPDATE
+			wp_bp_xprofile_data
+		SET
+			value = " . $price . ", 
+			last_updated = NOW() 
+		WHERE 
+			user_id = " . $userId . " 
+		AND
+			field_id = " . $fieldID . "
+		";  
+	finch_mysql_noreturn_query($update_xprofile_price); 
+	 
+}
+
+
+  
+function bp_member_add_lesson_button() {
+	global $members_template;
+
+	if ( !isset( $members_template->member->is_friend ) || null === $members_template->member->is_friend )
+		$friend_status = 'not_friends';
+	else
+		$friend_status = ( 0 == $members_template->member->is_friend ) ? 'pending' : 'is_friend';
+
+	echo bp_get_lesson_button( $members_template->member->id, $friend_status );
+}
+add_action( 'bp_directory_members_actions', 'bp_member_add_lesson_button' );
+
+
+function bp_get_lesson_button( $potential_friend_id = 0, $friend_status = false ) {
+
+		if ( empty( $potential_friend_id ) )
+			$potential_friend_id = bp_get_potential_friend_id( $potential_friend_id );
+
+		$is_friend = bp_is_friend( $potential_friend_id );
+
+/*		if ( empty( $is_friend ) )
+			return false; */ 
+
+				$button = array(
+					'id'                => 'pending',
+					'component'         => 'friends',
+					'must_be_logged_in' => false, 
+					'block_self'        => true,
+					'wrapper_class'     => 'lesson-button-wrapper friendship-button pending_friend',
+					'wrapper_id'        => 'friendship-button-' . $potential_friend_id,
+					'link_href'         => wp_nonce_url('/test-appointment/?app_provider_id=' . $potential_friend_id . '&app_service_id=1', 'friends_withdraw_friendship' ),
+					'link_text'         => __( 'Schedule a Lesson', 'buddypress' ),
+					'link_title'        => __( 'Schedule a Lesson', 'buddypress' ),
+					'link_id'			=> 'friend-' . $potential_friend_id,
+					'link_rel'			=> 'remove',
+					'link_class'        => 'lesson-button friendship-button pending_friend requested'
+				);
+
+
+		// Filter and return the HTML button
+		return bp_get_button( apply_filters( 'bp_get_lesson_button', $button ) );
+}
