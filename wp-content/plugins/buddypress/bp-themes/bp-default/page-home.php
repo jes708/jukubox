@@ -50,6 +50,9 @@
 <!--Schwarz Add-->
 <h1 class="jes-big-header">Featured Teachers</h1>
 <div id="teach_prof_div">
+<div class="container-fluid">
+                <div class="row-fluid">
+
 			<ul>
 
 <?php $j = 0; ?>
@@ -59,11 +62,12 @@
 		
 	<?php while ( bp_members() ) : bp_the_member(); ?>
 		<li>
-			<div style="float: left; width: 33%">
-			<div class="finchsizer">  
-			<a href="<?php bp_member_permalink(); ?>profile"> <h1><?php  bp_member_name(); ?></h1> </a> 
+			<div class="span4" style="float: left;">
+			<div class="finchsizer">
 		        <a href="<?php bp_member_permalink(); ?>profile"> <div style="float: left;"><?php  bp_member_avatar(); ?></div> </a>
-			<h4> <?php $user_instruments_raw = bp_get_profile_field_data('field=2&user_id=' . bp_get_member_user_id() . ''); 
+			<div class="featured-info">
+			<a href="<?php bp_member_permalink(); ?>profile"> <h4><?php  bp_member_name(); ?></h4> </a>			
+			<h5> <?php $user_instruments_raw = bp_get_profile_field_data('field=2&user_id=' . bp_get_member_user_id() . ''); 
 					$end_inst = end($user_instruments_raw); 
 					foreach( $user_instruments_raw as $key => $value ) { 
 						$tag = '</br> '; 
@@ -74,10 +78,14 @@
 						
 					} 
 				//print_r( $user_instruments_raw);  ?> 
-			    </h4>
-				<p style="margin-right: 53px;"><?php 
+			    </h5>
+			</div>
+				<div class="generic-button" id="schedule-lesson"><a href="<?php echo get_home_url() . "/test-appointment/?app_provider_id=" . bp_get_member_user_id() . "&app_service_id=1" ?>" title="Schedule a private lesson with this user." class="btn btn-mini btn-primary send-message">Schedule a Lesson</a> </div>
+				<div class="featured-about">
+				<p><?php 
 				$user_about = bp_get_profile_field_data('field=28&user_id=' . bp_get_member_user_id()  .   '') ;   echo finch_excerpt( $user_about, 30 );  
 				  ?></p>
+				</div>
 			</div><!-- finchsizer --> 
 			</div>
 		</li> 
@@ -86,6 +94,13 @@
 		<!-- 'type=full&width=125&height=125' --> 
 	<?php endwhile; ?>
 <?php endif; ?>
+
+</ul>
+
+</div>
+</div>
+</div>
+
 <!--End Schwarz Add-->
     </section>
 </section>
@@ -95,7 +110,8 @@
     <section class="f-part-wrap" style="max-width: 1000px;">
     	<h1 class="jes-big-header-2">Testimonials</h1>
 	<div class="gk-features gk-perspective">
-		<p>"Jukubox is awesome!"</p>
+		<h4>Coming Soon!</h4>
+		<p> Email us at general@jukubox.com if you would like us to feature your endorsement of Jukubox on our homepage!</p>
 	</div>
     </section>
 </section>
@@ -110,7 +126,7 @@
 
 <?php // get latest articles
         $article_args = array(
-                'showposts' => 2,
+                'showposts' => 3,
                 'orderby' => 'date',
                 'order' => 'DESC'
         );
@@ -147,9 +163,9 @@ wp_reset_query();
 <!--  <?php    if ( bp_has_members( 'include=9' ) ) : // NHF CODE CODE ?> -->
 
 		
-	<?php while ($j <=1): ?>
+	<?php while ($j <=2): ?>
 		<li>
-		<div class="span6" style="float: left: width: 50%; ">
+		<div class="span4" style="float: left; ">
 			<?php $curr_id = $all_arts_array[$j]['post_id']; //echo $curr_id; 
 				$art_thumb = get_the_post_thumbnail( $curr_id, 'medium' );  
 			?>
