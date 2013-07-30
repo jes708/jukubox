@@ -1542,30 +1542,9 @@ input[type="submit"].btn.btn-mini {
   *margin-right: .3em;
   line-height: 14px;
   vertical-align: text-top;
-  background-image: url("../img/glyphicons-halflings.png");
   background-position: 14px 14px;
   background-repeat: no-repeat;
   margin-top: 1px;
-}
-/* White icons with optional class, or on hover/focus/active states of certain elements */
-.icon-white,
-.nav-pills > .active > a > [class^="icon-"],
-.nav-pills > .active > a > [class*=" icon-"],
-.nav-list > .active > a > [class^="icon-"],
-.nav-list > .active > a > [class*=" icon-"],
-.navbar-inverse .nav > .active > a > [class^="icon-"],
-.navbar-inverse .nav > .active > a > [class*=" icon-"],
-.dropdown-menu > li > a:hover > [class^="icon-"],
-.dropdown-menu > li > a:focus > [class^="icon-"],
-.dropdown-menu > li > a:hover > [class*=" icon-"],
-.dropdown-menu > li > a:focus > [class*=" icon-"],
-.dropdown-menu > .active > a > [class^="icon-"],
-.dropdown-menu > .active > a > [class*=" icon-"],
-.dropdown-submenu:hover > a > [class^="icon-"],
-.dropdown-submenu:focus > a > [class^="icon-"],
-.dropdown-submenu:hover > a > [class*=" icon-"],
-.dropdown-submenu:focus > a > [class*=" icon-"] {
-  background-image: url("../img/glyphicons-halflings-white.png");
 }
 
 .icon-glass {
@@ -2000,4 +1979,31 @@ input[type="submit"].btn.btn-mini {
 h1, h2, h3, h4, h5, h6 {
         font-family: 'Montserrat', 'Helvetica Neue', 'Arial' !important;
         font-weight: normal;
+}
+
+div.input-append {
+position: relative;
+bottom: -5px;
+}
+
+#header #search-bar {
+margin-top: 25px;
+text-align: right;
+width: 100%;
+}
+
+#navigation {
+position: relative;
+top: -12px;
+width: 100%;
+}
+
+#search-bar .input-append {
+top: 2px;
+}
+
+#search-which {
+top: -4px;
+position: relative;
+height: 25px;
 } 
