@@ -63,11 +63,14 @@ function login_header($title = 'Log In', $message = '', $wp_error = '') {
 	<head>
 	<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 	<title><?php bloginfo('name'); ?> &rsaquo; <?php echo $title; ?></title>
+
+	<link rel="shortcut icon" type="image/x-icon" href="../../../../wp-content/uploads/2013/06/favicon.ico?v=2">
+
 	<?php
 
 	wp_admin_css( 'wp-admin', true );
 	wp_admin_css( 'colors-fresh', true );
-
+	
 	if ( wp_is_mobile() ) { ?>
 		<meta name="viewport" content="width=320; initial-scale=0.9; maximum-scale=1.0; user-scalable=0;" /><?php
 	}
