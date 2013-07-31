@@ -26,7 +26,7 @@
 
 			<!--	<p><?php _e( 'Registering for this site is easy, just fill in the fields below and we\'ll get a new account set up for you in no time.', 'buddypress' ); ?></p>  -->
 
-				<p><?php _e( 'Fill out the fields below to start working with the web\'s best musicians!', 'buddypress' ); ?></p>
+<!--				<p><?php _e( 'Fill out the fields below to start working with the web\'s best musicians!', 'buddypress' ); ?></p> -->
 
 				<?php do_action( 'bp_before_account_details_fields' ); ?>
 
@@ -34,7 +34,7 @@
 
 					<?php /***** Basic Account Details ******/ ?>
 
-					<h4><?php _e( 'Account Details', 'buddypress' ); ?></h4>
+<!--					<h4><?php _e( 'Account Details', 'buddypress' ); ?></h4> -->
 
 					<label for="signup_username"><?php _e( 'Username', 'buddypress' ); ?> <?php _e( '(required)', 'buddypress' ); ?></label>
 					<?php do_action( 'bp_signup_username_errors' ); ?>
@@ -43,15 +43,16 @@
 					<label for="signup_email"><?php _e( 'Email Address', 'buddypress' ); ?> <?php _e( '(required - parent\'s email address if under the age of 14)', 'buddypress' ); ?></label>
 					<?php do_action( 'bp_signup_email_errors' ); ?>
 					<input type="text" name="signup_email" id="signup_email" value="<?php bp_signup_email_value(); ?>" />
-
+<div id="su_pw">
 					<label for="signup_password"><?php _e( 'Choose a Password', 'buddypress' ); ?> <?php _e( '(required)', 'buddypress' ); ?></label>
 					<?php do_action( 'bp_signup_password_errors' ); ?>
 					<input type="password" name="signup_password" id="signup_password" value="" />
-
+</div>
+<div id="su_pw_cf">
 					<label for="signup_password_confirm"><?php _e( 'Confirm Password', 'buddypress' ); ?> <?php _e( '(required)', 'buddypress' ); ?></label>
 					<?php do_action( 'bp_signup_password_confirm_errors' ); ?>
 					<input type="password" name="signup_password_confirm" id="signup_password_confirm" value="" />
-
+</div>
 				</div><!-- #basic-details-section -->
 
 				<?php do_action( 'bp_after_account_details_fields' ); ?>
@@ -64,7 +65,7 @@
 
 					<div class="register-section" id="profile-details-section">
 
-						<h4><?php _e( 'Profile Details', 'buddypress' ); ?></h4>
+<!--						<h4><?php _e( 'Profile Details', 'buddypress' ); ?></h4> -->
 
 						<?php /* Use the profile field loop to render input fields for the 'base' profile field group */ ?>
 						<?php if ( bp_is_active( 'xprofile' ) ) : if ( bp_has_profile( 'profile_group_id=1' ) ) : while ( bp_profile_groups() ) : bp_the_profile_group(); ?>
@@ -141,15 +142,15 @@
 										<label for="<?php bp_the_profile_field_input_name(); ?>_day"><?php bp_the_profile_field_name(); ?> <?php if ( bp_get_the_profile_field_is_required() ) : ?><?php _e( '(required)', 'buddypress' ); ?><?php endif; ?></label>
 										<?php do_action( 'bp_' . bp_get_the_profile_field_input_name() . '_errors' ); ?>
 
-										<select name="<?php bp_the_profile_field_input_name(); ?>_day" id="<?php bp_the_profile_field_input_name(); ?>_day">
+										<select name="<?php bp_the_profile_field_input_name(); ?>_day" class="span1" id="<?php bp_the_profile_field_input_name(); ?>_day">
 											<?php bp_the_profile_field_options( 'type=day' ); ?>
 										</select>
 
-										<select name="<?php bp_the_profile_field_input_name(); ?>_month" id="<?php bp_the_profile_field_input_name(); ?>_month">
+										<select name="<?php bp_the_profile_field_input_name(); ?>_month" class="span2" id="<?php bp_the_profile_field_input_name(); ?>_month">
 											<?php bp_the_profile_field_options( 'type=month' ); ?>
 										</select>
 
-										<select name="<?php bp_the_profile_field_input_name(); ?>_year" id="<?php bp_the_profile_field_input_name(); ?>_year">
+										<select name="<?php bp_the_profile_field_input_name(); ?>_year" class="span2" id="<?php bp_the_profile_field_input_name(); ?>_year">
 											<?php bp_the_profile_field_options( 'type=year' ); ?>
 										</select>
 									</div>
@@ -240,8 +241,8 @@
 				<?php do_action( 'bp_before_registration_submit_buttons' ); ?>
 
 				<div class="submit">
-					<div class="subtext">By clicking Complete Sign Up, I agree to the Jukubox <a href="http://jukubox.com/terms-of-use/">Terms of Use</a>, including the <a href="http://jukubox.com/privacy-policy/">Privacy Policy</a> and <a href="http://jukubox.com/teachers-manual/">Teacher's Manual</a></div>
-					<input type="submit" name="signup_submit" id="signup_submit" value="<?php _e( 'Complete Sign Up', 'buddypress' ); ?>" />
+					<div class="subtext">By clicking Complete Registration, I agree to the Jukubox <a href="http://jukubox.com/terms-of-use/">Terms of Use</a>, including the <a href="http://jukubox.com/privacy-policy/">Privacy Policy</a> and <a href="http://jukubox.com/teachers-manual/">Teacher's Manual</a></div>
+					<button type="submit" name="signup_submit" class="btn btn-large btn-primary" id="signup_submit"><?php _e( 'Complete Registration', 'buddypress' ); ?></button>
 				</div>
 
 				<?php do_action( 'bp_after_registration_submit_buttons' ); ?>

@@ -282,11 +282,11 @@ function bp_add_friend_button( $potential_friend_id = 0, $friend_status = false 
 					'wrapper_class'     => 'friendship-button pending_friend',
 					'wrapper_id'        => 'friendship-button-' . $potential_friend_id,
 					'link_href'         => wp_nonce_url( bp_loggedin_user_domain() . bp_get_friends_slug() . '/requests/cancel/' . $potential_friend_id . '/', 'friends_withdraw_friendship' ),
-					'link_text'         => __( 'Cancel Friendship Request', 'buddypress' ),
+					'link_text'         => __( 'Cancel Request', 'buddypress' ),
 					'link_title'        => __( 'Cancel Friendship Requested', 'buddypress' ),
 					'link_id'			=> 'friend-' . $potential_friend_id,
 					'link_rel'			=> 'remove',
-					'link_class'        => 'friendship-button pending_friend requested'
+					'link_class'        => 'btn btn-primary friendship-button pending_friend requested'
 				);
 				break;
 
@@ -303,7 +303,7 @@ function bp_add_friend_button( $potential_friend_id = 0, $friend_status = false 
 					'link_title'        => __( 'Cancel Friendship', 'buddypress' ),
 					'link_id'           => 'friend-' . $potential_friend_id,
 					'link_rel'          => 'remove',
-					'link_class'        => 'friendship-button is_friend remove'
+					'link_class'        => 'btn btn-primary friendship-button is_friend remove'
 				);
 				break;
 
@@ -320,7 +320,7 @@ function bp_add_friend_button( $potential_friend_id = 0, $friend_status = false 
 					'link_title'        => __( 'Add Friend', 'buddypress' ),
 					'link_id'           => 'friend-' . $potential_friend_id,
 					'link_rel'          => 'add',
-					'link_class'        => 'friendship-button not_friends add'
+					'link_class'        => 'btn btn-primary friendship-button not_friends add'
 				);
 				break;
 		}

@@ -225,13 +225,13 @@ jQuery('.publisherContainer').ready( function() {
 jQuery('#aboutFounders').ready( function() {
     jQuery('#aboutFounders .founder_div a img').each( function() {  
 	var origWidth = jQuery(this).outerHeight();
-	var origHeight = jQuery(this).outerWidth();  
+	var origHeight = jQuery(this).outerWidth(); 
 	//alert(origWidth + ' x ' + origHeight);
 	var changeAmount = 8; 
 	var newWidth = origWidth + changeAmount;  
 	var newHeight = origHeight + changeAmount; 		
  	var margAmount = changeAmount / 2; 
-	//alert(margAmount); 
+	//alert(margAmount);
 	
 	jQuery(this).parent('a').parent('div').css({ height: newHeight + "px", width: newWidth + "px"}); 	
 
@@ -414,3 +414,14 @@ jQuery('#serviceForm').ready(function() {
  */ 
 
 </script>
+
+<script>
+	jQuery(document).ready(function() {
+		jQuery('.generic-button a').addClass('btn');
+		jQuery('.generic-button a').addClass('btn-primary');
+		jQuery('#members-list .generic-button a').addClass('btn-small');
+});
+
+</script>
+
+

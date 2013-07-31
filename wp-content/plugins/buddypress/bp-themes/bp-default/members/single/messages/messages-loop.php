@@ -48,7 +48,7 @@
 
 				<td width="13%" class="thread-options">
 					<input type="checkbox" name="message_ids[]" value="<?php bp_message_thread_id(); ?>" />
-					<a class="button confirm" href="<?php bp_message_thread_delete_link(); ?>" title="<?php _e( "Delete Message", "buddypress" ); ?>"><?php _e( 'Delete', 'buddypress' ); ?></a> &nbsp;
+					<a class="btn btn-small btn-primary confirm" href="<?php bp_message_thread_delete_link(); ?>" title="<?php _e( "Delete Message", "buddypress" ); ?>"><?php _e( 'Delete', 'buddypress' ); ?></a> &nbsp;
 				</td>
 			</tr>
 

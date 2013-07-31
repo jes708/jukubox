@@ -527,7 +527,7 @@ function bp_dtheme_blog_comments( $comment, $args, $depth ) {
 					<?php endif; ?>
 
 					<?php if ( current_user_can( 'edit_comment', $comment->comment_ID ) ) : ?>
-						<?php printf( '<a class="button comment-edit-link bp-secondary-action" href="%1$s" title="%2$s">%3$s</a> ', get_edit_comment_link( $comment->comment_ID ), esc_attr__( 'Edit comment', 'buddypress' ), __( 'Edit', 'buddypress' ) ); ?>
+						<?php printf( '<a class="btn btn-mini btn-inverse comment-edit-link bp-secondary-action" href="%1$s" title="%2$s">%3$s</a> ', get_edit_comment_link( $comment->comment_ID ), esc_attr__( 'Edit comment', 'buddypress' ), __( 'Edit', 'buddypress' ) ); ?>
 					<?php endif; ?>
 
 			</div>
@@ -1557,7 +1557,7 @@ function had_first_lesson($user_id, $worker_id) {
     function test_head() { 
 	
 	  echo'  
-		<div class="generic-button friend_slab_' . bp_get_member_user_id() . '" id="test-button"><a href="' . get_home_url() . '/test-appointment/?app_provider_id=' . bp_get_member_user_id() . '&app_service_id=1" title="Schedule a private lesson with this user." class="send-message">Schedule a Lesson!</a></div>'; 
+		<div class="generic-button friend_slab_' . bp_get_member_user_id() . '" id="test-button"><a href="' . get_home_url() . '/test-appointment/?app_provider_id=' . bp_get_member_user_id() . '&app_service_id=1" title="Schedule a private lesson with this user." class="btn btn-primary send-message">Schedule a Lesson!</a></div>'; 
 
 	  
 
@@ -1590,6 +1590,50 @@ function get_cur_teacher_price($user_id) {
         $price = $get_price_array[0]['price'];                  
         return $price;                                  
 }
+
+//Schwarz Add - redirect to edit profile for new users
+
+// Send new users to a special page
+function redirectOnFirstLogin( $redirect_to, $requested_redirect_to, $user ) {
+
+// URL to redirect to 
+$redirect_url = get_home_url() . '/members/' . $user->user_login . '/profile/edit/group/1/' ; 
+// How many times to redirect the user 
+$num_redirects = 1; 
+// If implementing this on an existing site, this is here so that existing users don't suddenly get the "first login" treatment 
+// On a new site, you might remove this setting and the associated check 
+// Alternative approach: run a script to assign the "already redirected" property to all existing users 
+// Alternative approach: use a date-based check so that all registered users before a certain date are ignored 
+// 172800 seconds = 48 hours 
+$message_period = 172800; 
+
+// If they're on the login page, don't do anything 
+if( !isset( $user->user_login ) ) 
+{
+	return $redirect_to; 
+}
+
+$key_name = 'redirect_on_first_login'; 
+// Third parameter ensures that the result is a string 
+$current_redirect_value = get_user_meta( $user->ID, $key_name, true ); 
+if( strtotime( $user->user_registered ) > ( time() - $message_period ) 
+	&& ( '' == $current_redirect_value || intval( $current_redirect_value ) < $num_redirects ) 
+) 
+{ 
+	if( '' != $current_redirect_value ) 
+	{ 
+		$num_redirects = intval( $current_redirect_value ) + 1; 
+	} 
+	update_user_meta( $user->ID, $key_name, $num_redirects ); 
+	return $redirect_url; 
+	} 
+	else 
+	{ 
+		return $redirect_to; 
+	} 
+} 
+
+add_filter( 'login_redirect', 'redirectOnFirstLogin', 10, 3 ); 
 
 function get_halfhour_price($worker) {
 	$get_halfhour_sql = "SELECT

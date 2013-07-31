@@ -1877,8 +1877,8 @@ class Appointments {
 		$ret .= '<div style="clear:both"></div>';
 		$ret .= '<div class="appointments-confirmation-buttons">';
 		$ret .= '<input type="hidden" class="appointments-confirmation-final-value" />';
-		$ret .= '<input type="button" class="appointments-confirmation-button" value="'.$button_text.'" />';
-		$ret .= '<input type="button" class="appointments-confirmation-cancel-button" value="'.__('Cancel', 'appointments').'" />';
+		$ret .= '<button type="button" class="btn btn-primary appointments-confirmation-button">'.$button_text.'</button>';
+		$ret .= '<button type="button" class="btn appointments-confirmation-cancel-button">'.__('Cancel', 'appointments').'</button>';
 		$ret .= '</div>';
 		$ret .= '</fieldset></div>';
 		$ret  = apply_filters( 'app_confirmation_fields', $ret );
@@ -1888,7 +1888,7 @@ class Appointments {
 		if ( is_user_logged_in() || 'yes' != $this->options["login_required"] ) {
 			$script .= '$(".appointments-list table td.free, .app_timetable div.free").not(".app_monthly_schedule_wrapper table td.free").click(function(){';
 			// NHF EDIT nastiness 3
-			//$script .= 'alert("HELLO");'; 
+
 			$script .= '$(this).attr("id", "finch_temp_cell");';
 			$script .= 'var finch_temp_cell = $("#finch_temp_cell");';   
 			$script .= 'var app_val = $(this).children("input").attr("value");';
@@ -5022,7 +5022,7 @@ function screen_content_app_pricing_settings() {
 		
 	<?php if( (array_key_exists(1, $services_hash)) || (array_key_exists(4, $services_hash))  ) : ?> 
 			<input type="hidden" name="worker_id" value="<?php echo $user_id; ?>" />
-			<p><input type="submit" value="Change Price" id="PriceSubmit" />			
+			<p><button type="submit" class="btn btn-primary">Change Price</button></p>
 
 
 		</form>
@@ -9113,7 +9113,7 @@ PLACEHOLDER
 			$form .= $day;
 			$form .= '</td>';
 			$form .= '<td>';
-			$form .= '<select name="'.$status.'['.$day.'][active]">';
+			$form .= '<select name="'.$status.'['.$day.'][active]" class="span2">';
 			if ( isset($whours[$day]['active']) && 'yes' == $whours[$day]['active'] )
 				$s = " selected='selected'";
 			else $s = '';
@@ -9122,7 +9122,7 @@ PLACEHOLDER
 			$form .= '</select>';
 			$form .= '</td>';
 			$form .= '<td>';
-			$form .= '<select name="'.$status.'['.$day.'][start]">';
+			$form .= '<select name="'.$status.'['.$day.'][start]" class="span2">';
 			for ( $t=0; $t<3600*24; $t=$t+$min_secs ) {
 				$dhours = $this->secs2hours( $t ); // Hours in 08:30 format
 				if ( isset($whours[$day]['start']) && $dhours == $whours[$day]['start'] )
@@ -9137,7 +9137,7 @@ PLACEHOLDER
 			$form .= '</td>';
 			
 			$form .= '<td>';
-			$form .= '<select name="'.$status.'['.$day.'][end]">';
+			$form .= '<select name="'.$status.'['.$day.'][end]" class="span2">';
 			for ( $t=$min_secs; $t<=3600*24; $t=$t+$min_secs ) {
 				$dhours = $this->secs2hours( $t ); // Hours in 08:30 format
 				if ( isset($whours[$day]['end']) && $dhours == $whours[$day]['end'] )

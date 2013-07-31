@@ -100,7 +100,7 @@ if ($options['profile'] == "profile") {
             ?>
             <div class="generic-button" style="float:left;position:relative;/*top:-5px*/">
                <!--  <a class="add-reviews button" title="Add reviews for this user." --> 
-		<a class="add-reviews" title="Add reviews for this user."
+		<a class="btn btn-primary add-reviews" title="Add reviews for this user."
                     href="<?php /*bp_get_displayed_user_link()*/ // hack to make button work
 				$curr_url = $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]; 
 				//echo $curr_url; 

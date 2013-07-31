@@ -2062,7 +2062,7 @@ function bp_activity_delete_link() {
 			$class = 'delete-activity-single';
 		}
 
-		$link = '<a href="' . wp_nonce_url( $url, 'bp_activity_delete_link' ) . '" class="button item-button bp-secondary-action ' . $class . ' confirm" rel="nofollow">' . __( 'Delete', 'buddypress' ) . '</a>';
+		$link = '<a href="' . wp_nonce_url( $url, 'bp_activity_delete_link' ) . '" class="btn btn-mini btn-inverse  item-button bp-secondary-action ' . $class . ' confirm" rel="nofollow">' . __( 'Delete', 'buddypress' ) . '</a>';
 		return apply_filters( 'bp_get_activity_delete_link', $link );
 	}
 
@@ -2428,7 +2428,7 @@ function bp_send_public_message_button( $args = '' ) {
 			'link_href'         => bp_get_send_public_message_link(),
 			'link_title'        => __( 'Send a public message on your activity stream.', 'buddypress' ),
 			'link_text'         => __( 'Public Message', 'buddypress' ),
-			'link_class'        => 'activity-button mention'
+			'link_class'        => 'btn btn-primary activity-button mention'
 		);
 
 		$button = wp_parse_args( $args, $defaults );

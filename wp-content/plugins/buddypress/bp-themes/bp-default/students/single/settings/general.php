@@ -69,7 +69,7 @@ get_header( 'buddypress' ); ?>
 					<?php do_action( 'bp_core_general_settings_before_submit' ); ?>
 
 					<div class="submit">
-						<input type="submit" name="submit" value="<?php _e( 'Save Changes', 'buddypress' ); ?>" id="submit" class="auto" />
+						<button type="submit" name="submit" id="submit" class="auto btn btn-primary"><?php _e( 'Save Changes', 'buddypress' ); ?></button>
 					</div>
 
 					<?php do_action( 'bp_core_general_settings_after_submit' ); ?>

@@ -206,8 +206,8 @@ function get_upcoming_lessons($user_id, $time_interval, $StudentOrTeacher) {
 	
 		if( (time() >= $beg_enter_time) /*&& (time() <= $end_enter_time)*/   ) { 
 			$can_enter = TRUE;
-			$take_lesson_html = 'The Room is Open!<br /><input type="button" class="enter_room" value="Enter the Lesson Room!" goto="' . get_home_url() . '/lesson-room/?lesson_id=' . $lesson_id . '" />
-			';  
+			$take_lesson_html = 'The Room is Open!<br /><button type="button" class="enter_room btn btn-primary" goto="' . get_home_url() . '/lesson-room/?lesson_id=' . $lesson_id . '">Enter Room</button>
+			'; 
 			$enterable_lessons[] = "yes";  
 		} 
 		else { 
@@ -385,7 +385,7 @@ function appointments_to_confirm_as_teacher($UserId) {
 
 	$titleMessage = "You have " . $num_confirm_appointments . " requested " . $apptext . " to confirm!";
 
-	$confirmLink =  '<input type="button" class="conf_app" value="Confirm Appointments" goto="' . get_home_url() . '/members/' . $current_user->user_login . '/appointments/my-appointments/" style="margin-top: -6px; margin-left: 12px;"/>';
+	$confirmLink =  '<button type="button" class="btn btn-primary conf_app" goto="' . get_home_url() . '/members/' . $current_user->user_login . '/appointments/my-appointments/">Details</button>';
 	$confirmLink .= '<script>
 				jQuery(".conf_app").click( function() { 
 					var link = jQuery(this).attr("goto"); 

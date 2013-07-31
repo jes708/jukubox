@@ -15,7 +15,7 @@
 			</a>
 
 			<h4><?php echo bp_core_get_userlink( bp_loggedin_user_id() ); ?></h4>
-			<a class="button logout" href="<?php echo wp_logout_url( wp_guess_url() ); ?>"><?php _e( 'Log Out', 'buddypress' ); ?></a>
+			<a class="btn btn-primary" href="<?php echo wp_logout_url( wp_guess_url() ); ?>"><?php _e( 'Log Out', 'buddypress' ); ?></a>
 
 			<?php do_action( 'bp_sidebar_me' ); ?>
 		</div>
@@ -50,10 +50,10 @@
 			<p class="forgetmenot"><label><input name="rememberme" type="checkbox" id="sidebar-rememberme" value="forever" tabindex="99" /> <?php _e( 'Remember Me', 'buddypress' ); ?></label></p>
 
 			<?php do_action( 'bp_sidebar_login_form' ); ?>
-			<input type="submit" name="wp-submit" id="sidebar-wp-submit" value="<?php _e( 'Sign In!', 'buddypress' ); ?>" tabindex="100" />
+			<button type="submit" class="btn btn-primary" name="wp-submit" id="sidebar-wp-submit" value="<?php _e( 'Sign In', 'buddypress' ); ?>" tabindex="100">Sign In</button>
 			<input type="hidden" name="testcookie" value="1" />
 		</form>
-		<input type="button" value="Sign up, it's free!" id="login_butt"onclick="window.location='<?php echo get_home_url(); ?>/register'" />
+		<button class="btn btn-primary" onclick="window.location='<?php echo get_home_url(); ?>/register'">Sign Up</button>
 		<?php do_action( 'bp_after_sidebar_login_form' ); ?>
 
 	<?php endif; ?>
