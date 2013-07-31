@@ -2043,4 +2043,21 @@ bottom: 1px;
 .finchsizer img {
 position: relative;
 z-index: 10000;
+}
+
+#field_221 {
+position: absolute;
+right: -45px;
+bottom: /*19px;*/ 0px;
+}
+
+.action .friendship-button {
+position: relative;
+right: 4px;
+top: -2px;
+}
+
+.lesson-button-wrapper a {
+position: relative;
+top: 3px !important;
 } 
