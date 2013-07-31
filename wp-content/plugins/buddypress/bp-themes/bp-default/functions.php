@@ -1880,7 +1880,7 @@ function generate_lessontoggle($userId, $services='') { // takes has of lesson s
 			echo '<input class="serv_check" type="checkbox" name="services[' . $value['ID'] . ']" value="' . $value['ID'] . '" ' . $checkedOrNo . ' /> <strong>' . $value['name'] . '</strong><br />'; 
 		} 
 	} 
-	echo '<input type="submit" value="Change My Services" id="serveChangeSubmit" />';  
+	echo '<button type="submit" id="serveChangeSubmit" class="btn btn-primary">Change My Services</button>';  
 	echo '</form>'; 
 	echo '</div>'; 
 }
