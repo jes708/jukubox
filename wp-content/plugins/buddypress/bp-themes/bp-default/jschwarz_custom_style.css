@@ -2060,4 +2060,8 @@ top: -2px;
 .lesson-button-wrapper a {
 position: relative;
 top: 3px !important;
+}
+
+.profile .editfield.field_221.field_pricehalf-hour {
+display: none;
 } 
