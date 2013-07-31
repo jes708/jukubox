@@ -2064,4 +2064,13 @@ top: 3px !important;
 
 .profile .editfield.field_221.field_pricehalf-hour {
 display: none;
+}
+
+div#teach_prof_div {
+position: relative;
+top: -135px;
+}
+
+.f-part-divide.grey {
+height: 415px;
 } 
