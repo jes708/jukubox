@@ -2044,3 +2044,33 @@ bottom: 1px;
 position: relative;
 z-index: 10000;
 } 
+
+#field_221 {
+position: absolute;
+right: -53px;
+bottom: /*19px;*/ 0px;
+}
+
+.action .friendship-button {
+position: relative;
+right: 4px;
+top: -2px;
+}
+
+.lesson-button-wrapper a {
+position: relative;
+top: 3px !important;
+}
+
+.profile .editfield.field_221.field_pricehalf-hour {
+display: none;
+}
+
+div#teach_prof_div {
+position: relative;
+top: -135px;
+}
+
+.f-part-divide.grey {
+height: 415px;
+}
