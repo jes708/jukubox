@@ -109,7 +109,7 @@ $worker_name = bp_get_profile_field_data('field=1&user_id=' . $worker_id . '') ;
 						<?php the_content( __( '<p class="serif">Read the rest of this page &rarr;</p>', 'buddypress' ) ); ?>
 					
 					<?php   
-						if(is_user_logged_in() ) { 	
+						if( (is_user_logged_in()) && ( $user_id != $worker_id ) ) { 	
 						// for now - don't need to be friends for this to come up 
 						// if( friends_check_friendship_status( $user_id,$worker_id) == 'is_friend' )  { ?>
 						
