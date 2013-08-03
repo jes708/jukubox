@@ -100,7 +100,7 @@ jQuery('#newroomtable').ready(function() {
 			var newkey = response.passcode;
  			var newLink = window['finch_home_url'] + '/lesson-room/?room_key=' + newkey + ''; 
 			//alert(newkey);
-			jQuery('#newkey').html(newkey + '<br /><br /><strong>LINK TO SHARE:</strong><br /><br /><a href="' + newLink + '" >' + newLink + '</a>');
+			jQuery('#newkey').html(newkey + '<br /><br /><strong>LINK TO SHARE:</strong><br /><br /><a href="' + newLink + '" target="_blank">' + newLink + '</a>');
 			jQuery('#enter_room_key').attr("value", "" + newkey + "");   
 			jQuery('#remindtext').show();  
 		} 
