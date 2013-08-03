@@ -103,7 +103,10 @@ $worker_name = bp_get_profile_field_data('field=1&user_id=' . $worker_id . '') ;
 					<?php } // end ifelse ?>
 
 				
-				<?php echo do_shortcode('[app_services]');  ?>
+				<?php if( (is_user_logged_in()) && ( $user_id != $worker_id ) ) { 	
+					echo do_shortcode('[app_services]');  
+				} 
+				?>
 			<?php } // end if user_not_logged_in ?>	
  
 						<?php the_content( __( '<p class="serif">Read the rest of this page &rarr;</p>', 'buddypress' ) ); ?>
