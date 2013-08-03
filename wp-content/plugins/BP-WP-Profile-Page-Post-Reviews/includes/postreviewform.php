@@ -121,7 +121,7 @@ if (is_user_logged_in()) {
                 <input type="hidden" value="<?php echo bp_displayed_user_id(); ?>" id="rating_id" name="rating_member_id">
                 <input type="hidden" value="<?php echo bp_core_get_user_displayname(bp_displayed_user_id()); //bp_core_get_username(bp_displayed_user_id()); ?>" id="rating_name" name="rating_member_name">
                 <span class="ajax-loader"></span>
-                <input type="submit" value="Post My Review" id="whats-new-submit" name="review_member_submit">
+                <button type="submit" id="whats-new-submit" class="btn btn-primary" name="review_member_submit">Post Review</button>
             </div>
             <?php
             if ($options['anonymous']) {
