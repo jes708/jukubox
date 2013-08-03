@@ -97,9 +97,10 @@ jQuery('#newroomtable').ready(function() {
 		
 		function Loggy(response) { 
 			console.log(response);
-			var newkey = response.passcode; 
+			var newkey = response.passcode;
+ 			var newLink = window['finch_home_url'] + '/lesson-room/?room_key=' + newkey + ''; 
 			//alert(newkey);
-			jQuery('#newkey').html(newkey);
+			jQuery('#newkey').html(newkey + '<br /><br /><strong>LINK TO SHARE:</strong><br /><br /><a href="' + newLink + '" target="_blank">' + newLink + '</a>');
 			jQuery('#enter_room_key').attr("value", "" + newkey + "");   
 			jQuery('#remindtext').show();  
 		} 
@@ -118,7 +119,11 @@ jQuery('#newroomtable').ready(function() {
 		if( !keyInput ) { 
 			alert('You must input a room key code!'); 
 			return false; 
-		} // end if 	
+		} // end if 
+		else { 
+			window.open('' + window['finch_home_url'] + '/lesson-room/?room_key=' + keyInput + '', '_blank' ); 
+			return false; 
+		} 	
 	}); // end click  
 
 }); // end ready

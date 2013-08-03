@@ -253,7 +253,7 @@ div#container {
 
 <?php if( is_page('lesson-room') ):  ?>
 <style>
-#sidebar { 
+#sidebar, #header, #wpadminbar, #footer { 
 	display: none; 
 }
 .padder{ 
