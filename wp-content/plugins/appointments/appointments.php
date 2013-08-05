@@ -1363,7 +1363,7 @@ class Appointments {
 		$ret  = apply_filters( 'app_my_appointments_after_table', $ret );
 		if ( $this->bp && $allow_confirm ) {
 			$ret .='<div class="submit">
-						<input type="submit" name="app_bp_settings_submit" value="'.__('Submit Confirm', 'appointments').'" class="auto">
+						<button type="submit" name="app_bp_settings_submit" class="auto btn btn-primary">'.__('Submit Confirm', 'appointments').'</button>
 						<input type="hidden" name="app_bp_settings_user" value="'. $bp->displayed_user->id .'">';
 			$ret .= wp_nonce_field('app_bp_settings_submit','app_bp_settings_submit', true, false );
 			$ret .= '</div>
@@ -4890,6 +4890,8 @@ class Appointments {
 			?>
 			<div class="standard-form">
 				<form method="post">
+					<h2>Please choose times based on <strong>Eastern Time (ET)</strong>.</h2>
+					<h3>Do not choose times based on your own time zone, if different.</h3>
 					<h4><?php /* _e('My Working Hours', 'appointments');*/ _e('Weekly Lesson Schedule', 'appointments'); ?></h4>
 					<?php echo $this->working_hour_form('open'); ?>
 					<h4><?php /* _e('My Break Hours', 'appointments');*/  _e('Break Hours', 'appointments'); ?></h4>
@@ -4903,7 +4905,7 @@ class Appointments {
 					
 					<input class="datepick" id="closed_datepick" type="text" style="width:100%" name="closed[exceptional_days]" value="<?php if (isset($result["closed"])) echo $result["closed"]?>" />
 					<div class="submit">
-						<input type="submit" name="app_bp_settings_submit" value="<?php _e('Save Changes', 'appointments')?>" class="auto">
+						<button type="submit" name="app_bp_settings_submit" class="auto btn btn-primary"><?php _e('Save Changes', 'appointments')?></button>
 						<input type="hidden" name="app_bp_settings_user" value="<?php echo $user_id ?>">
 						<?php wp_nonce_field('app_bp_settings_submit','app_bp_settings_submit'); ?>
 					</div>
