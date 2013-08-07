@@ -948,7 +948,7 @@ function requestLessonApproval() {
 	$lesson_start_readable = date("l, F j, Y, g:i a", $lesson_start_timestamp); 
   
 
-	$fromEmail = "Jukubox <jukubox@jukubox.com>"; 
+	$fromEmail = "Jukubox <no-reply@jukubox.com>"; 
 	$subjectTag = "[Jukubox]"; 	
 	$clientTo = $client_name . ' <' .  $client_email . '>'; 
 	$workerTo = $worker_name . ' <' . $worker_email . '>';
