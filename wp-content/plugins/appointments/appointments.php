@@ -1363,8 +1363,8 @@ class Appointments {
 		$ret  = apply_filters( 'app_my_appointments_after_table', $ret );
 		if ( $this->bp && $allow_confirm ) {
 			$ret .='<div class="submit">
-						<button type="submit" name="app_bp_settings_submit" class="auto btn btn-primary">'.__('Submit Confirm', 'appointments').'</button>
-						<input type="hidden" name="app_bp_settings_user" value="'. $bp->displayed_user->id .'">';
+					<input type="submit" name="app_bp_settings_submit" value="'.__('Submit Confirm', 'appointments').'" class="auto">	
+					<input type="hidden" name="app_bp_settings_user" value="'. $bp->displayed_user->id .'">';
 			$ret .= wp_nonce_field('app_bp_settings_submit','app_bp_settings_submit', true, false );
 			$ret .= '</div>
 				</form>';
