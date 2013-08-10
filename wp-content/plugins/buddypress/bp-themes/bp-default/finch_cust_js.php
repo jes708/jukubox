@@ -114,7 +114,7 @@ jQuery('#newroomtable').ready(function() {
 
 	jQuery('#enterRoomPass').attr('action', '' +  window['finch_home_url'] + '/lesson-room/');
 
-	jQuery('#enterRoomPass input[type="submit"]').click( function () {
+	jQuery('#enterRoomPass button[type="submit"]').click( function () {
 		var keyInput = jQuery('#enter_room_key').val();
 		if( !keyInput ) { 
 			alert('You must input a room key code!'); 
