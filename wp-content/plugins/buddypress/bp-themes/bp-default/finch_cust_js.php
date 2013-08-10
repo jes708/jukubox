@@ -429,8 +429,9 @@ jQuery('#serviceForm').ready(function() {
 		jQuery('#members-list .generic-button a').addClass('btn-small');
 });
 
-	jQuery('.field_220').ready(function() {
-		jQuery('a').attr('target', '_blank');
+	jQuery(document).ready(function() {
+		jQuery('.field_220 a').attr('target', '_blank');
+		jQuery('.field_6 a').attr('target', '_blank');
 });
 </script>
 
