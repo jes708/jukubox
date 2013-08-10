@@ -420,6 +420,8 @@ jQuery('#serviceForm').ready(function() {
 
 </script>
 
+<!-- Schwarz Script -->
+
 <script>
 	jQuery(document).ready(function() {
 		jQuery('.generic-button a').addClass('btn');
@@ -427,6 +429,9 @@ jQuery('#serviceForm').ready(function() {
 		jQuery('#members-list .generic-button a').addClass('btn-small');
 });
 
+	jQuery('.field_220').ready(function() {
+		jQuery('a').attr('target', '_blank');
+});
 </script>
 
 
