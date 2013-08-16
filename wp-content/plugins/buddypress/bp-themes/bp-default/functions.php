@@ -1154,7 +1154,7 @@ Jukubox";
 
 
 "; 
-		$workerMessage = "Below is a copy of what what sent to your client
+		$workerMessage = "Below is a copy of what was sent to your client
 		
 
 ";
