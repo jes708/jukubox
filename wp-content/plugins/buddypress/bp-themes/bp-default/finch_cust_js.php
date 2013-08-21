@@ -433,6 +433,35 @@ jQuery('#serviceForm').ready(function() {
 		jQuery('.field_220 a').attr('target', '_blank');
 		jQuery('.field_6 a').attr('target', '_blank');
 });
+
+
+
+jQuery(document).ready(function() { 
+        jQuery('button[name="apply_to_teach"]').click(function() {
+            if(window['finch_user_type'] == "Teacher") {
+                alert("You are already a teacher!");
+            } else if(window['finch_user_type'] == "Student") {
+<?php
+
+   $att_current_user = wp_get_current_user();
+   $att_current_name = $att_current_user->user_firstname . " " . $att_current_user->user_lastname;
+   $att_current_id = $att_current_user->user_login;
+   $att_current_email = $att_current_user->user_email;   
+
+   $att_subject = $att_current_name . ' would like to teach.';
+   $att_message = $att_current_name . ' would like to teach.' . "\r\n\r\n";
+   $att_message .= sprintf(__('Username: %s'), $att_current_id) . "\r\n\r\n";
+   $att_message .= sprintf(__('E-mail: %s'), $att_current_email) . "\r\n";
+   
+   wp_mail('teach@jukubox.com', $att_subject, $att_message);
+?> 
+
+	    } else {
+		alert("Please log in to apply as a Jukubox teacher.");
+	    }
+	})
+});
+
 </script>
 
 
