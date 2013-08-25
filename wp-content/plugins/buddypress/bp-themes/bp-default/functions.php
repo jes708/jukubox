@@ -2076,7 +2076,7 @@ function bp_get_lesson_button( $potential_friend_id = 0, $friend_status = false 
 					'link_title'        => __( 'Schedule a Lesson', 'buddypress' ),
 					'link_id'			=> 'friend-' . $potential_friend_id,
 					'link_rel'			=> 'remove',
-					'link_class'        => 'lesson-button friendship-button pending_friend requested'
+					'link_class'        => 'btn btn-primary lesson-button friendship-button pending_friend requested'
 				);
 
 
