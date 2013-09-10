@@ -2074,3 +2074,17 @@ top: -135px;
 .f-part-divide.grey {
 height: 415px;
 }
+
+div.register-section:nth-of-type(3) {
+width: 48%;
+bottom: -15px;
+position: relative;
+}
+
+.standard-form#signup_form div.submit {
+width: 48%;
+text-align: center;
+position: relative;
+top: -175px;
+z-index: 5;
+}
