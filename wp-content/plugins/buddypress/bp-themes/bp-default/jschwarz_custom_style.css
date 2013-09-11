@@ -2081,10 +2081,14 @@ bottom: -15px;
 position: relative;
 }
 
-.standard-form#signup_form div.submit {
+/* .standard-form#signup_form div.submit {
 width: 48%;
 text-align: center;
 position: relative;
 top: -175px;
 z-index: 5;
+} */
+
+#recaptcha_response_field {
+line-height: 1 !important;
 }
