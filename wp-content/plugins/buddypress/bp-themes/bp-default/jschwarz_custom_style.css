@@ -2074,3 +2074,12 @@ top: -135px;
 .f-part-divide.grey {
 height: 415px;
 }
+
+#recaptcha_response_field {
+line-height: 1 !important;
+}
+
+.standard-form#signup_form div.submit {
+bottom: 20px;
+position: relative;
+}
