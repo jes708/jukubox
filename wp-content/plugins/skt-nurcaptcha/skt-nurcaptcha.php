@@ -149,9 +149,9 @@ function nurCaptchaMU_extra($errors = array()) {
 * 
 ****/
 function nurCaptchaMU_extra_output($error_msg = '') {
-	echo '<div class="error" style="font-weight:300"><strong>';
-	echo __('NURCaptcha ERROR', 'Skt_nurcaptcha') .'</strong>: ';
-	echo $error_msg . '</div>';	
+        echo '<div class="error" style="font-weight:300">';
+//      echo __('NURCaptcha ERROR', 'Skt_nurcaptcha') .'</strong>: ';
+        echo $error_msg . '</div>';
 }
 /****
 *
