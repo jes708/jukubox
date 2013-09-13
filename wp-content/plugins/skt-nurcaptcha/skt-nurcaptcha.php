@@ -382,7 +382,7 @@ function sktnurc_reCaptcha_help_text(){
  *************/
 function nurc_recaptcha_challenge() {
 		?>
-		<p><label><?php _e('Fill the Captcha below', 'Skt_nurcaptcha') ?><?php nurc_reCaptcha_help(); ?></label></p>
+		 <p><label style="font-size: 11px; margin-bottom:-10px;"><?php _e('Enter the code below', 'Skt_nurcaptcha') ?><?php nurc_reCaptcha_help(); ?></label></p>
 
 		<script type="text/javascript">
 		 var RecaptchaOptions = {
