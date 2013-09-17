@@ -2089,6 +2089,43 @@ top: -175px;
 z-index: 5;
 } */
 
-#recaptcha_response_field {
-line-height: 1 !important;
+#selling-points p {
+font-size: 19px !important;
+line-height: 19px !important;
+font-weight: 200;
+margin-bottom: 20px;
+}
+
+h2 {
+font-size: 23px;
+margin-bottom: 20px;
+font-weight: 600 !important;
+color: rgb(35, 63, 150);
+}
+
+#selling-points p {
+font-size: 19px !important;
+line-height: 19px !important;
+font-weight: 200;
+margin-bottom: 20px;
+left: -20px;
+position: relative;
+}
+
+#selling-points i {
+float: left;
+position: relative;
+bottom: -2px;
+margin-right: 7px;
+left: -20px;
+}
+
+.jes-big-header {
+color: rgb(35, 63, 150);
+font-size: 23px;
+line-height: 1.2;
+text-align: center;
+bottom: 135px;
+position: relative;
+right: 29px;
 }

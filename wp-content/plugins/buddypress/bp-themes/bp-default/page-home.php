@@ -7,17 +7,23 @@
 
 <section class="f-part-divide"> 
     <section class="f-part-wrap" style="max-width: 1000px; margin: 0 auto;"> 
-	<div class="fr-page-banner" id="top-slide" style="background: url(http://jukubox.com/wp-content/uploads/2013/07/Video_Laptop.png) no-repeat left top; height: 350px; width: 74%; margin-top: 35px; margin-bottom: 25px; background-size: 600px 338px; background-position: left 15%;">
-		 <iframe width="444" height="265" src="//www.youtube.com/embed/C6Z0N5V9tw0" style="padding: 26px 0 0 79px;" frameborder="0" allowfullscreen></iframe>
+	<div class="fr-page-banner" id="top-slide" style="background: url(http://jukubox.com/wp-content/uploads/2013/07/Video_Laptop.png) no-repeat left top; height: 350px; width: 100%; margin-top: 35px; margin-bottom: 25px; background-size: 600px 338px; background-position: right 15%;">
 
-<div id="selling-points" style="width: 300px; margin-right: -220px; float: right;">
-	<h1>Study with the Best</h1>
-	<div><i class="icon-music"></i> <p>Musical Videoconferencing</p></div>
-	<div><i class="icon-volume-up"></i> <p>Amazing Audio Quality</p></div>
-	<div><i class="icon-globe"></i> <p>World-Renowned Experts</p></div>
-	<div><i class="icon-home"></i> <p>World-Class Convenience</p></div>	
+<div id="selling-points" style="width: 400px; margin-right: -220px; float: left;">
+	<h2>What is Jukubox?</h2>
+	<div><i class="icon-music"></i> <p>One-on-one musical videoconferencing</p></div>
+	<div><i class="icon-headphones"></i> <p>Professional-grade audio quality</p></div>
+	<div><i class="icon-globe"></i> <p>A roster of world-renowned experts</p></div>
+	<div><i class="icon-home"></i> <p>From the comfort of your home</p></div>
+	<div><i class="icon-wrench"></i> <p>Built by musicians for musicians</p></div>	
 	<button class="btn btn-large btn-primary" onclick="window.location='<?php echo get_home_url(); ?>/wp-login.php'">Sign In</button>
         <button class="btn btn-large btn-primary" onclick="window.location='<?php echo get_home_url(); ?>/register'">Sign Up</button>
+
+</div>
+
+<div id="home-vid" style="float:right; margin-right: 77px;">
+                 <iframe width="444" height="265" src="//www.youtube.com/embed/C6Z0N5V9tw0" style="padding: 26px 0 0 79px;" frameborder="0" allowfullscreen></iframe>
+
 </div>
 
 <!--    	<div style="background:/*url('wp-content/uploads/2013/05/Backdrop4CroppedColoredRe.jpg')*/   url('wp-content/uploads/2013/07/Backdrop4CroppedColoredRe-1Lower.jpg') no-repeat center top; height: 400px; /*height: 650px;*/  /*background-position: 0% 20%;*/  padding: 40px; margin: 0 auto; background-size: 1500px; background-position: right 43%;" id="top_slide">
@@ -48,7 +54,7 @@
 <section class="f-part-divide grey"> 
     <section class="f-part-wrap dos">
 <!--Schwarz Add-->
-<h1 class="jes-big-header">Featured Teachers</h1>
+<h2 class="jes-big-header">Featured Teachers</h2>
 <div id="teach_prof_div">
 <div class="container-fluid">
                 <div class="row-fluid">
