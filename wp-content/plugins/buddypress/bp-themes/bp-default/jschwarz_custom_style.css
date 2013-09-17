@@ -2129,3 +2129,75 @@ bottom: 135px;
 position: relative;
 right: 29px;
 }
+
+#header, #footer {
+position: relative;
+color: #fff;
+background: #020031 !important;
+background: -moz-radial-gradient(center 135px, cover, rgb(3, 187, 245) 5%, rgb(25, 40, 104) 100%) !important;
+background: -webkit-gradient(radial, center center, 135px, center center, 100%, color-stop(0%, rgb(3, 187, 245)), color-stop(100%, rgb(25, 187, 245))) !important;
+background: -webkit-radial-gradient(center 135px, cover, rgb(3, 187, 245) 5%, rgb(25, 40, 104) 100%) !important;
+background: -o-radial-gradient(center 135px, cover, rgb(3, 187, 245) 5%, rgb(25, 40, 104) 100%) !important;
+background: -ms-radial-gradient(center 135px, cover, rgb(3, 187, 245) 5%, rgb(25, 40, 104) 100%) !important;
+background: radial-gradient(center 135px, cover, rgb(3, 187, 245) 5%, rgb(25, 40, 104) 100%) !important;
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#020031', endColorstr='#6d3353',GradientType=1 ) !important;
+-webkit-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2) !important;
+-moz-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2) !important;
+box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2) !important;
+}
+
+div.finchsizer {
+border: none;
+height: 300px;
+width: 300px;
+background-color: white;
+border-radius: 0;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
+}
+
+.page-id-4 div#container {
+margin-left: 0;
+margin-right: 0;
+width: 100% !important;
+}
+
+.page-id-4 div.entry div:nth-of-type(4) {
+position: absolute;
+top: 0;
+left: 0;
+height: 98%;
+width: 99%;
+}
+
+.page-id-4 div.entry div#subscribers {
+height: 100%;
+width: 100%;
+margin-top: 0;
+}
+
+div.OT_mirrored.OT_root.OT_subscriber {
+width: 100% !important;
+height: 100% !important;
+}
+
+div.publisherContainer#myCamera {
+z-index: 10;
+}
+
+div#links button {
+position: relative;
+z-index: 11;
+}
+
+div.OT_video-container:nth-child(2) {
+width: 100%
+height: 100%
+}
+
+div.OT_video-container{
+width: 100% !important;
+height: 100% !important;
+top: 0 !important;
+left: 0 !important;
+}
+
