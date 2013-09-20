@@ -2203,6 +2203,7 @@ left: 0 !important;
 
 #header {
 bottom: 41px;
+margin-bottom: -120px;
 }
 
 #wpadminbar {
@@ -2232,7 +2233,7 @@ z-index: 2000;
 }
 
 #navigation {
-top: -113px;
+top: -21px;
 background-color: transparent;
 border-bottom: transparent;
 -webkit-box-shadow: none;
