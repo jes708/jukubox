@@ -2265,3 +2265,26 @@ color: whiteSmoke;
 margin-left: -8px;
 font-weight: 400;
 }
+
+#members-list li {
+background: none;
+box-shadow: none;
+border-right: none;
+border-left: none;
+width: 100%;
+right: 20px;
+padding: 20px;
+}
+
+#members-list li, .post, #newroomtable {
+margin-bottom: -6px;
+}
+
+#members-list .item-title a {
+font-size: 16px;
+font-family: 'open sans' !important;
+margin-bottom: 20px;
+font-weight: 700 !important;
+color: rgb(35, 63, 150);
+left: 8px;
+}
