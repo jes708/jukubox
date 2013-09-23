@@ -4745,8 +4745,14 @@ class Appointments {
 		     	
 		if( is_teacher($user_id)===TRUE ) {
 			$price = get_cur_teacher_price($user_id);
-			if(!$price) { 
-				echo '<h2 align="center">You haven\'t set your price yet!  Choose Lessons -> Name Your Price to do so.</h2><br />'; 
+			
+// Schwarz Add
+
+global $current_user;
+      get_currentuserinfo();
+
+		if(!$price) { 
+			echo '<h2 align="center">Enter your price <a href="' . get_home_url() . '/members/' . $current_user->user_login . '/appointments/name-your-price">here</a>!</h2>'; 
 			} else { 
 				echo '<h2 align="center">Your current price is: $' . $price . ' dollars per hour.</h2>';
 				echo '<p align="center"><a href="' . get_home_url() . '/teachers-manual/#comPolicies" >See Pricing Policies Here</a></p>';  

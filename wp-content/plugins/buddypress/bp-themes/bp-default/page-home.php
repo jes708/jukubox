@@ -263,7 +263,7 @@ wp_reset_query();
 						if( is_teacher($user_id)===TRUE ) {
 							$price = get_cur_teacher_price($user_id);
 							if( !$price || $price == '' || $price==0 ) { 
-								echo '<h2 align="center">You have not yet entered a price!  Do so <a href="' . get_home_url() . '/members/' . $current_user->user_login . '/appointments/name-your-price">here</a></h2>'; 
+								echo '<h2 align="center">Enter your price <a href="' . get_home_url() . '/members/' . $current_user->user_login . '/appointments/name-your-price">here</a>!</h2>';
 							} else { 
 								echo '<h2 align="center">Your current lesson price is: $' . $price . ' per hour.</h2>'; 
 							}
