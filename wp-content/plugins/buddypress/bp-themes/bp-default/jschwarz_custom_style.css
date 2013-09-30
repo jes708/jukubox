@@ -2083,3 +2083,7 @@ line-height: 1 !important;
 bottom: 20px;
 position: relative;
 }
+
+.recaptchatable a, .recaptchatable a:hover {
+line-height: 1;
+}
