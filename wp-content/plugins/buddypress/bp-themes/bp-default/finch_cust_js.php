@@ -458,24 +458,24 @@ jQuery('#serviceForm').ready(function() {
 
 
 
-jQuery("#apply_to_teach").ready(function() { 
-        jQuery('button').click(function() {
-            if(window['finch_user_type'] == "Teacher") {
-                alert("You are already a teacher!");
-            } else if(window['finch_user_type'] == "Student") {
+//jQuery("#apply_to_teach").ready(function() { 
+//        jQuery('button').click(function() {
+//            if(window['finch_user_type'] == "Teacher") {
+//                alert("You are already a teacher!");
+//            } else if(window['finch_user_type'] == "Student") {
 //	jQuery.get('apply_to_teach.php')
 
-	jQuery.ajax({
-		url: '" .  get_home_url() . "/wp-content/plugins/buddypress/bp-themes/bp-default/apply_to_teach.php',
+//	jQuery.ajax({
+//		url: '" .  get_home_url() . "/wp-content/plugins/buddypress/bp-themes/bp-default/apply_to_teach.php',
   //  	success: function(response) {
 //		alert("placeholder");
 //		}
-	});
-	    } else {
-		alert("Please log in to apply as a Jukubox teacher.");
-	    }
-	});
-});
+//	});
+//	    } else {
+//		alert("Please log in to apply as a Jukubox teacher.");
+//	    }
+//	});
+//});
 
 </script>
 
