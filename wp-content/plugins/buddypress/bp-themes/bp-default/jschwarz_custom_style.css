@@ -2075,6 +2075,7 @@ top: -135px;
 height: 415px;
 }
 
+<<<<<<< HEAD
 div.register-section:nth-of-type(3) {
 width: 48%;
 bottom: -15px;
@@ -2341,3 +2342,15 @@ opacity: .18;
 z-index: 1;
 }
 
+#recaptcha_response_field {
+line-height: 1 !important;
+}
+
+.standard-form#signup_form div.submit {
+bottom: 20px;
+position: relative;
+}
+
+.recaptchatable a, .recaptchatable a:hover {
+line-height: 1;
+}
