@@ -108,8 +108,8 @@ echo '</pre>'; */
 							<input class="span3 search-query" type="text" id="search-terms" name="search-terms" value="<?php echo isset( $_REQUEST['s'] ) ? esc_attr( $_REQUEST['s'] ) : ''; ?>" />
 
 
-<button type="submit" class="btn btn-primary" name="search-submit" id="search-submit" value="Search">
-<i class="icon-search icon-white"></i>
+<button type="submit" class="btn btn-invisible" name="search-submit" id="search-submit" value="Search">
+<i class="icon-search"></i>
 </button>
 </div>
 							<?php  echo bp_search_form_type_select(); ?>
