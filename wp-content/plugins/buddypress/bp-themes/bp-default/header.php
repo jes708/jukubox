@@ -40,6 +40,7 @@ echo $nowie;*/
 		 
 		<link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri(); ?>/jschwarz_custom_style.css" /> 
 		<link rel="shortcut icon" type="image/x-icon" href="../../../../wp-content/uploads/2013/06/favicon.ico?v=2"> 
+		<link rel="stylesheet" href="../../../../wp-content/plugins/buddypress/bp-themes/bp-default/font-awesome/css/font-awesome.min.css">
 
 	</head>
 <body <?php body_class(); ?> id="bp-default">
@@ -105,7 +106,7 @@ echo '</pre>'; */
 						<form class="form-search" action="<?php echo bp_search_form_action(); ?>" method="post" id="search-form">
 <div class="input-append"/>
 							<label for="search-terms" class="accessibly-hidden"><?php _e( 'Search for:', 'buddypress' ); ?></label>
-							<input class="span3 search-query" type="text" id="search-terms" name="search-terms" value="<?php echo isset( $_REQUEST['s'] ) ? esc_attr( $_REQUEST['s'] ) : ''; ?>" />
+							<input class="span3 search-query" type="text" id="search-terms" placeholder="Search teachers" name="search-terms" value="<?php echo isset( $_REQUEST['s'] ) ? esc_attr( $_REQUEST['s'] ) : ''; ?>" />
 
 
 <button type="submit" class="btn btn-invisible" name="search-submit" id="search-submit" value="Search">
