@@ -3099,3 +3099,15 @@ margin-right: 10px;
 #field_23 {
 right: -492px;
 }
+
+.btn-inverse {
+background-image: none !important;
+}
+
+.btn-inverse:hover {
+color: white !important;
+}
+
+.btn {
+background-image: none !important;
+}
