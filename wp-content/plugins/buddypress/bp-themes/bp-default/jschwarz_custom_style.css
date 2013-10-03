@@ -2356,7 +2356,7 @@ line-height: 1;
 }
 
 .btn {
-  display: inline-block !important;
+  display: inline-block;
   padding: 6px 12px !important;
   margin-bottom: 0 !important;
   font-weight: normal !important;
@@ -3111,3 +3111,30 @@ color: white !important;
 .btn {
 background-image: none !important;
 }
+
+button#connectLink, button#publishLink, button#unpublishLink {
+left: 20px;
+top: 23px;
+}
+
+button#disconnectLink {
+left: 138px;
+top: -16px;
+}
+
+div#links p:last-child {
+position: absolute;
+bottom: 8px;
+right: 10px;
+font-size: 13px !important;
+z-index: 10;
+}
+
+div#links p:nth-of-type(1) {
+position: absolute;
+bottom: 26px;
+right: 11px;
+font-size: 13px !important;
+z-index: 10;
+}
+
