@@ -70,27 +70,27 @@
 		<li>
 			<div class="span4" style="float: left;">
 			<div class="finchsizer">
-		        <a href="<?php bp_member_permalink(); ?>profile"> <div style="float: left;"><?php  bp_member_avatar(); ?></div> </a>
-			<div class="featured-info">
-			<a href="<?php bp_member_permalink(); ?>profile"> <h4><?php  bp_member_name(); ?></h4> </a>			
-			<h5> <?php $user_instruments_raw = bp_get_profile_field_data('field=2&user_id=' . bp_get_member_user_id() . ''); 
-					$end_inst = end($user_instruments_raw); 
-					foreach( $user_instruments_raw as $key => $value ) { 
-						$tag = '</br> '; 
-						if( $value == $end_inst ) {
-						$tag = '';
-					} 	
-						echo $value . $tag; 
-						
-					} 
-				//print_r( $user_instruments_raw);  ?> 
-			    </h5>
-			</div>
-				<div class="generic-button" id="schedule-lesson"><a href="<?php echo get_home_url() . "/test-appointment/?app_provider_id=" . bp_get_member_user_id() . "&app_service_id=1" ?>" title="Schedule a private lesson with this user." class="btn btn-mini btn-primary send-message">Schedule a Lesson</a> </div>
+                        <a href="<?php bp_member_permalink(); ?>profile"> <div style="float: left;"><?php  bp_member_avatar(); ?></div> </a>                        
 				<div class="featured-about">
+				                        <div class="featured-info">
+			<a href="<?php bp_member_permalink(); ?>profile"> <h4><?php  bp_member_name(); ?></h4> </a>
+                        <h5> <?php $user_instruments_raw = bp_get_profile_field_data('field=2&user_id=' . bp_get_member_user_id() . '');
+                                        $end_inst = end($user_instruments_raw);
+                                        foreach( $user_instruments_raw as $key => $value ) {
+                                                $tag = '</br> ';
+                                                if( $value == $end_inst ) {
+                                                $tag = '';
+                                        }
+                                                echo $value . $tag;
+
+                                        }
+                                //print_r( $user_instruments_raw);  ?> 
+                            </h5>
+                        </div>
 				<p><?php 
-				$user_about = bp_get_profile_field_data('field=28&user_id=' . bp_get_member_user_id()  .   '') ;   echo finch_excerpt( $user_about, 30 );  
+				$user_about = bp_get_profile_field_data('field=6&user_id=' . bp_get_member_user_id()  .   '') ;   echo finch_excerpt( $user_about, 25 );  
 				  ?></p>
+				<a href="<?php bp_member_permalink(); ?>profile" class="home_view_profile">View Profile</a>
 				</div>
 			</div><!-- finchsizer --> 
 			</div>
