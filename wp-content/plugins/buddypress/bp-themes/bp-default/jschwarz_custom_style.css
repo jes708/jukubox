@@ -3076,7 +3076,7 @@ z-index: 5000;
 #search-bar .input-append {
 position: relative;
 top: -22px;
-left: -500px;
+left: -525px;
 z-index: 2000;
 }
 
@@ -3143,4 +3143,12 @@ position: absolute;
 top: 23px;
 right: 460px;
 z-index: 10;
+}
+
+#jukulogo {
+position: relative;
+width: 212px;
+margin-left: 0px;
+margin-top: 10px;
+z-index: 2000;
 }

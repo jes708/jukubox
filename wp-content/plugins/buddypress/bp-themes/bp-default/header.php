@@ -101,7 +101,7 @@ echo '</pre>'; */
 		<div id="header">
 			<div id="search-bar" role="search">
 				<div class="padder">
-					<h1 id="logo" role="banner"><a href="<?php echo home_url(); ?>" title="<?php _ex( 'Home', 'Home page banner link title', 'buddypress' ); ?>"><img id="jukulogo" src="<?php echo get_home_url(); ?>/wp-content/uploads/2013/07/Beta.png" /><?php /*bp_site_name();*/  ?></a></h1>
+					<h1 id="logo" role="banner"><a href="<?php echo home_url(); ?>" title="<?php _ex( 'Home', 'Home page banner link title', 'buddypress' ); ?>"><img id="jukulogo" src="<?php echo get_home_url(); ?>/wp-content/uploads/2013/10/jukubox-logo-fixed-beta.png" /><?php /*bp_site_name();*/  ?></a></h1>
 
 						<form class="form-search" action="<?php echo bp_search_form_action(); ?>" method="post" id="search-form">
 <div class="input-append"/>
