@@ -177,8 +177,8 @@ jQuery('.bx-viewport').ready( function () {
 // Schwarz Add
 
 jQuery(document).ready(function() {
-	jQuery('#menu-item-848').addClass('loggedout_menu');
-	jQuery('#menu-item-849').addClass('loggedin_menu schwarz-logout-app');
+	jQuery('#menu-item-867').addClass('loggedout_menu');
+	jQuery('#menu-item-868').addClass('loggedin_menu schwarz-logout-app');
 });
 
 <?php if( is_user_logged_in() ) : ?>
