@@ -63,18 +63,18 @@
 
 <?php $j = 0; ?>
 
-  <?php	   if ( bp_has_members( 'include=44,42,32' ) ) : // NHF CODE CODE ?>
+  <?php	   if ( bp_has_members( 'include=8' ) ) : // NHF CODE CODE ?>
 
 		
 	<?php while ( bp_members() ) : bp_the_member(); ?>
 		<li>
 			<div class="span4" style="float: left;">
 			<div class="finchsizer">
-                        <a href="<?php bp_member_permalink(); ?>profile"> <div style="float: left;"><?php  bp_member_avatar(); ?></div> </a>                        
+                        <a href="<?php bp_member_permalink(); ?>profile"><img class="fTeachImage" src="../../../../wp-content/uploads/2013/10/christine-lamprea-feature.jpg"></a>                        
 				<div class="featured-about">
 				                        <div class="featured-info">
 			<a href="<?php bp_member_permalink(); ?>profile"> <h4><?php  bp_member_name(); ?></h4> </a>
-                        <h5> <?php $user_instruments_raw = bp_get_profile_field_data('field=2&user_id=' . bp_get_member_user_id() . '');
+                        <p class="inst_ital"> <?php $user_instruments_raw = bp_get_profile_field_data('field=2&user_id=' . bp_get_member_user_id() . '');
                                         $end_inst = end($user_instruments_raw);
                                         foreach( $user_instruments_raw as $key => $value ) {
                                                 $tag = '</br> ';
@@ -85,7 +85,7 @@
 
                                         }
                                 //print_r( $user_instruments_raw);  ?> 
-                            </h5>
+                            </p>
                         </div>
 				<p><?php 
 				$user_about = bp_get_profile_field_data('field=6&user_id=' . bp_get_member_user_id()  .   '') ;   echo finch_excerpt( $user_about, 25 );  
@@ -100,6 +100,83 @@
 		<!-- 'type=full&width=125&height=125' --> 
 	<?php endwhile; ?>
 <?php endif; ?>
+
+  <?php    if ( bp_has_members( 'include=32' ) ) : // NHF CODE CODE ?>
+
+
+        <?php while ( bp_members() ) : bp_the_member(); ?>
+                <li>
+                        <div class="span4" style="float: left;">
+                        <div class="finchsizer">
+                        <a href="<?php bp_member_permalink(); ?>profile"><img class="fTeachImage" src="../../../../wp-content/uploads/2013/10/Charles-Feature.jpg"></a>
+                                <div class="featured-about">
+                                                        <div class="featured-info">
+                        <a href="<?php bp_member_permalink(); ?>profile"> <h4><?php  bp_member_name(); ?></h4> </a>
+                        <p class="inst_ital"> <?php $user_instruments_raw = bp_get_profile_field_data('field=2&user_id=' . bp_get_member_user_id() . '');
+                                        $end_inst = end($user_instruments_raw);
+                                        foreach( $user_instruments_raw as $key => $value ) {
+                                                $tag = '</br> ';
+                                                if( $value == $end_inst ) {
+                                                $tag = '';
+                                        }
+                                                echo $value . $tag;
+
+                                        }
+                                //print_r( $user_instruments_raw);  ?> 
+                            </p>
+                        </div>
+                                <p><?php 
+                                $user_about = bp_get_profile_field_data('field=6&user_id=' . bp_get_member_user_id()  .   '') ;   echo finch_excerpt( $user_about, 25 );
+                                  ?></p>
+                                <a href="<?php bp_member_permalink(); ?>profile" class="home_view_profile">View Profile</a>
+                                </div>
+                        </div><!-- finchsizer -->
+                        </div>
+                </li>
+
+                <?php $j++; ?>
+                <!-- 'type=full&width=125&height=125' -->
+        <?php endwhile; ?>
+<?php endif; ?>
+
+  <?php    if ( bp_has_members( 'include=31' ) ) : // NHF CODE CODE ?>
+
+
+        <?php while ( bp_members() ) : bp_the_member(); ?>
+                <li>
+                        <div class="span4" style="float: left;">
+                        <div class="finchsizer">
+                        <a href="<?php bp_member_permalink(); ?>profile"><img class="fTeachImage" src="../../../../wp-content/uploads/2013/10/David-Feature-small.jpg"></a>
+                                <div class="featured-about">
+                                                        <div class="featured-info">
+                        <a href="<?php bp_member_permalink(); ?>profile"> <h4><?php  bp_member_name(); ?></h4> </a>
+                        <p class="inst_ital"> <?php $user_instruments_raw = bp_get_profile_field_data('field=2&user_id=' . bp_get_member_user_id() . '');
+                                        $end_inst = end($user_instruments_raw);
+                                        foreach( $user_instruments_raw as $key => $value ) {
+                                                $tag = '</br> ';
+                                                if( $value == $end_inst ) {
+                                                $tag = '';
+                                        }
+                                                echo $value . $tag;
+
+                                        }
+                                //print_r( $user_instruments_raw);  ?> 
+                            </p>
+                        </div>
+                                <p><?php 
+                                $user_about = bp_get_profile_field_data('field=6&user_id=' . bp_get_member_user_id()  .   '') ;   echo finch_excerpt( $user_about, 25 );
+                                  ?></p>
+                                <a href="<?php bp_member_permalink(); ?>profile" class="home_view_profile">View Profile</a>
+                                </div>
+                        </div><!-- finchsizer -->
+                        </div>
+                </li>
+
+                <?php $j++; ?>
+                <!-- 'type=full&width=125&height=125' -->
+        <?php endwhile; ?>
+<?php endif; ?>
+
 
 </ul>
 

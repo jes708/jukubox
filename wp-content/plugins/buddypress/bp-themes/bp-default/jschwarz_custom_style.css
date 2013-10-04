@@ -3152,3 +3152,24 @@ margin-left: 0px;
 margin-top: 10px;
 z-index: 2000;
 }
+
+.fTeachImage {
+height: 168px;
+width: 300px;
+box-shadow: none;
+}
+
+div.finchsizer {
+border-radius: 0;
+box-shadow: none;
+}
+
+#teach_prof_div img {
+box-shadow: none;
+}
+
+.inst_ital {
+font-style: italic;
+font-size: 11px !important;
+color: dimGray;
+}
