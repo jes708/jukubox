@@ -90,7 +90,7 @@
                             </p>
                         </div>
 				<p class="feat_bio"><?php 
-				$user_about = bp_get_profile_field_data('field=6&user_id=' . bp_get_member_user_id()  .   '') ;   echo substr( $user_about, 0, 185 ) . "...";  
+				$user_about = bp_get_profile_field_data('field=6&user_id=' . bp_get_member_user_id()  .   '') ;   echo substr( $user_about, 0, 165 ) . "...";  
 				  ?></p>
 				<a href="<?php bp_member_permalink(); ?>profile" class="home_view_profile">View Profile</a>
 				</div>
@@ -130,7 +130,7 @@
                             </p>
                         </div>
                                 <p class="feat_bio"><?php 
-                                $user_about = bp_get_profile_field_data('field=6&user_id=' . bp_get_member_user_id()  .   '') ;   echo substr( $user_about, 0, 185 ) . "...";
+                                $user_about = bp_get_profile_field_data('field=6&user_id=' . bp_get_member_user_id()  .   '') ;   echo substr( $user_about, 0, 165 ) . "...";
                                   ?></p>
                                 <a href="<?php bp_member_permalink(); ?>profile" class="home_view_profile">View Profile</a>
                                 </div>
@@ -169,7 +169,7 @@
                             </p>
                         </div>
                                 <p class="feat_bio"><?php 
-                                $user_about = bp_get_profile_field_data('field=6&user_id=' . bp_get_member_user_id()  .   '') ;   echo substr( $user_about, 0, 185 ) . "...";
+                                $user_about = bp_get_profile_field_data('field=6&user_id=' . bp_get_member_user_id()  .   '') ;   echo substr( $user_about, 0, 165 ) . "...";
                                   ?></p>
                                 <a href="<?php bp_member_permalink(); ?>profile" class="home_view_profile">View Profile</a>
                                 </div>
@@ -196,18 +196,20 @@
 
 <section class="f-part-divide"> 
     <section class="f-part-wrap" style="max-width: 1000px;">
+	<div id="testimonials">
     	<h1 class="jes-big-header-2">Testimonials</h1>
 	<div class="gk-features gk-perspective">
 		<h4>Coming Soon!</h4>
-		<p> Email us at general@jukubox.com if you would like us to feature your endorsement of Jukubox on our homepage!</p>
+		<p> Email general@jukubox.com if you would like your endorsement of Jukubox featured on our homepage!</p>
 	</div>
-    </section>
-</section>
+	</div>
+<!--    </section>
+</section> -->
 
-<section class="f-part-divide grey"> 
-    <section class="f-part-wrap">
-
-        <h1 class="jes-big-header-2">Articles</h1>
+<!-- <section class="f-part-divide grey"> 
+    <section class="f-part-wrap"> -->
+<div id="LatestBlog">
+        <p class="HomeBlogHead">Latest from the Blog</p>
                 <div class="container-fluid">
                 <div class="row-fluid">
 
@@ -253,28 +255,21 @@ wp_reset_query();
 		
 	<?php while ($j <=2): ?>
 		<li>
-		<div class="span4" style="float: left; ">
 			<?php $curr_id = $all_arts_array[$j]['post_id']; //echo $curr_id; 
 				$art_thumb = get_the_post_thumbnail( $curr_id, 'medium' );  
 			?>
-			<div style="float: left; "></div>
-				<div class="home_thumb" style="float: left; ">  
-			<a href="<?php echo $all_arts_array[$j]['link']; ?>"><?php echo $art_thumb; ?></a>
-			<a href="<?php echo $all_arts_array[$j]['link']; ?>"><h4><?php echo $all_arts_array[$j]['title']; ?></h4></a>
+			<a href="<?php echo $all_arts_array[$j]['link']; ?>"><p class="homeartnames"><?php echo $all_arts_array[$j]['title']; ?></p></a>
                         <a href="<?php bp_member_permalink(); ?>profile"> <h1><?php  bp_member_name(); ?></h1> </a>
-                        <a href="<?php bp_member_permalink(); ?>profile"> <div style="float: left;"><?php  bp_member_avatar(); ?></div> </a>
 
 <?php $userlink =  bp_core_get_user_domain( $all_arts_array[$j][author_id] ) . "profile/" ; /*echo $userlink;*/
    ?>  
-                                                <div class="author-box">                                                        <a href="<?php echo $userlink; ?>"><?php echo get_avatar( $all_arts_array[$j][author_id] ); ?></a>                                                        <p><?php printf( _x( 'by %s', 'Post written by...', 'buddypress' ), bp_core_get_userlink( $all_arts_array[$j][author_id] ) ); ?></p>
 
-<p class="date"><?php printf( __( '%s', 'buddypress' ), mysql2date('M j Y', $all_arts_array[$j][p_date]) ); ?></p>			</div> 
-			</div>
+<p class="date"><?php printf( __( '%s', 'buddypress' ), mysql2date('M j Y', $all_arts_array[$j][p_date]) ); printf( _x( ' by %s', 'Post written by...', 'buddypress' ), bp_core_get_userlink( $all_arts_array[$j][author_id] ) ); ?></p> 
+
 			<!--	<div class="finchsizer"> -->	
 <!--						</div> -->
 
 
-			</div>
 		</li> 
 		
 		<?php $j++; ?>
@@ -288,7 +283,8 @@ wp_reset_query();
                  </div>
 
     
-
+	</div>
+</div>
     </section>
 </section>
 

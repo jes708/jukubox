@@ -3183,6 +3183,7 @@ top: 1px;
 left: 15px;
 font-size: 15px !important;
 font-weight: 600;
+float: left;
 }
 
 #search-terms::-webkit-input-placeholder {
@@ -3235,4 +3236,41 @@ left: 15px;
 position: relative;
 font-style: italic;
 color: rgb(5, 160, 247) !important;
+}
+
+.homeartnames {
+font-weight: 700;
+color: black;
+font-size: 12px !important;
+}
+
+#LatestBlog li {
+display: table;
+}
+
+p.date {
+border: 0;
+margin: auto;
+margin-bottom: -28px;
+top: -29px !important;
+position: relative;
+font-size: 11px !important;
+}
+
+div#LatestBlog {
+float: right;
+width: 300px;
+}
+
+div#testimonials {
+float: left;
+width: 66%;
+}
+
+p.HomeBlogHead {
+font-weight: 700;
+color: rgb(35, 63, 150) !important;
+position: relative;
+left: 0px !important;
+top: 10px;
 }
