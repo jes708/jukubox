@@ -75,9 +75,10 @@
 				                        <div class="featured-info">
 			<a href="<?php bp_member_permalink(); ?>profile"> <h4><?php  bp_member_name(); ?></h4> </a>
                         <p class="inst_ital"> <?php $user_instruments_raw = bp_get_profile_field_data('field=2&user_id=' . bp_get_member_user_id() . '');
-                                        $end_inst = end($user_instruments_raw);
+                                        $user_instruments_raw = array_slice( $user_instruments_raw, 0, 4);                                        
+					$end_inst = end($user_instruments_raw);
                                         foreach( $user_instruments_raw as $key => $value ) {
-                                                $tag = '</br> ';
+                                                $tag = ', ';
                                                 if( $value == $end_inst ) {
                                                 $tag = '';
                                         }
@@ -87,8 +88,8 @@
                                 //print_r( $user_instruments_raw);  ?> 
                             </p>
                         </div>
-				<p><?php 
-				$user_about = bp_get_profile_field_data('field=6&user_id=' . bp_get_member_user_id()  .   '') ;   echo finch_excerpt( $user_about, 25 );  
+				<p class="feat_bio"><?php 
+				$user_about = bp_get_profile_field_data('field=6&user_id=' . bp_get_member_user_id()  .   '') ;   echo substr( $user_about, 0, 185 ) . "...";  
 				  ?></p>
 				<a href="<?php bp_member_permalink(); ?>profile" class="home_view_profile">View Profile</a>
 				</div>
@@ -113,9 +114,10 @@
                                                         <div class="featured-info">
                         <a href="<?php bp_member_permalink(); ?>profile"> <h4><?php  bp_member_name(); ?></h4> </a>
                         <p class="inst_ital"> <?php $user_instruments_raw = bp_get_profile_field_data('field=2&user_id=' . bp_get_member_user_id() . '');
-                                        $end_inst = end($user_instruments_raw);
+                                        $user_instruments_raw = array_slice( $user_instruments_raw, 0, 4);                                        
+					$end_inst = end($user_instruments_raw);
                                         foreach( $user_instruments_raw as $key => $value ) {
-                                                $tag = '</br> ';
+                                                $tag = ', ';
                                                 if( $value == $end_inst ) {
                                                 $tag = '';
                                         }
@@ -125,8 +127,8 @@
                                 //print_r( $user_instruments_raw);  ?> 
                             </p>
                         </div>
-                                <p><?php 
-                                $user_about = bp_get_profile_field_data('field=6&user_id=' . bp_get_member_user_id()  .   '') ;   echo finch_excerpt( $user_about, 25 );
+                                <p class="feat_bio"><?php 
+                                $user_about = bp_get_profile_field_data('field=6&user_id=' . bp_get_member_user_id()  .   '') ;   echo substr( $user_about, 0, 185 ) . "...";
                                   ?></p>
                                 <a href="<?php bp_member_permalink(); ?>profile" class="home_view_profile">View Profile</a>
                                 </div>
@@ -151,9 +153,10 @@
                                                         <div class="featured-info">
                         <a href="<?php bp_member_permalink(); ?>profile"> <h4><?php  bp_member_name(); ?></h4> </a>
                         <p class="inst_ital"> <?php $user_instruments_raw = bp_get_profile_field_data('field=2&user_id=' . bp_get_member_user_id() . '');
-                                        $end_inst = end($user_instruments_raw);
+                                        $user_instruments_raw = array_slice( $user_instruments_raw, 0, 4);
+					$end_inst = end($user_instruments_raw);
                                         foreach( $user_instruments_raw as $key => $value ) {
-                                                $tag = '</br> ';
+                                                $tag = ', ';
                                                 if( $value == $end_inst ) {
                                                 $tag = '';
                                         }
@@ -163,8 +166,8 @@
                                 //print_r( $user_instruments_raw);  ?> 
                             </p>
                         </div>
-                                <p><?php 
-                                $user_about = bp_get_profile_field_data('field=6&user_id=' . bp_get_member_user_id()  .   '') ;   echo finch_excerpt( $user_about, 25 );
+                                <p class="feat_bio"><?php 
+                                $user_about = bp_get_profile_field_data('field=6&user_id=' . bp_get_member_user_id()  .   '') ;   echo substr( $user_about, 0, 185 ) . "...";
                                   ?></p>
                                 <a href="<?php bp_member_permalink(); ?>profile" class="home_view_profile">View Profile</a>
                                 </div>

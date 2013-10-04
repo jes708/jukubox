@@ -3057,6 +3057,7 @@ background-image: none !important;
 
 #header #search-bar input[type=text] {
 padding-right: 38px !important;
+width: 225px;
 }
 
 input[type=text] {
@@ -3076,7 +3077,7 @@ z-index: 5000;
 #search-bar .input-append {
 position: relative;
 top: -22px;
-left: -525px;
+left: -510px;
 z-index: 2000;
 }
 
@@ -3162,6 +3163,7 @@ box-shadow: none;
 div.finchsizer {
 border-radius: 0;
 box-shadow: none;
+height: 340px !important;
 }
 
 #teach_prof_div img {
@@ -3178,12 +3180,16 @@ color: dimGray;
 color: rgb(35, 63, 150);
 position: relative;
 top: 1px;
-left: 10px;
+left: 15px;
 font-size: 15px !important;
 font-weight: 600;
 }
 
 #search-terms::-webkit-input-placeholder {
+font-size: 12px !important;
+}
+
+#search-terms::-moz-placeholder {
 font-size: 12px !important;
 }
 
@@ -3201,4 +3207,32 @@ top: -45px;
 
 div#header {
 margin-bottom: 0;
+}
+
+.finchsizer a:focus, .finchsizer a:hover, .finchsizer h4:focus, .finchsizer h4:hover {
+text-decoration: none !important;
+}
+
+div.featured-about {
+border-top: none;
+top: 7px;
+}
+
+#teach_prof_div p {
+top: -13px;
+left: 15px;
+}
+
+.feat_bio {
+font-size: 12px !important;
+width: 270px !important;
+top: -62px !important;
+}
+
+.home_view_profile {
+top: -75px !important;
+left: 15px;
+position: relative;
+font-style: italic;
+color: rgb(5, 160, 247) !important;
 }
