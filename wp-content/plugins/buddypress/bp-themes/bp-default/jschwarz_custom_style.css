@@ -3248,7 +3248,7 @@ font-size: 12px !important;
 display: table;
 }
 
-p.date {
+p.date-2 {
 border: 0;
 margin: auto;
 margin-bottom: -28px;
@@ -3273,4 +3273,28 @@ color: rgb(35, 63, 150) !important;
 position: relative;
 left: 0px !important;
 top: 10px;
+}
+
+#field_221 {
+right: -85px;
+bottom: -2px
+}
+
+.page-id-28 .action .friendship-button {
+font-size: 10px;
+}
+
+span.fname, span.fval {
+z-index: 10;
+position: relative;
+}
+
+#post-115 img {
+position: relative;
+top: 9px;
+}
+
+#PriceSubmit, #serveChangeSubmit {
+position: absolute;
+bottom: -47px;
 }

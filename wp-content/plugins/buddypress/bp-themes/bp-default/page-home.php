@@ -264,7 +264,7 @@ wp_reset_query();
 <?php $userlink =  bp_core_get_user_domain( $all_arts_array[$j][author_id] ) . "profile/" ; /*echo $userlink;*/
    ?>  
 
-<p class="date"><?php printf( __( '%s', 'buddypress' ), mysql2date('M j Y', $all_arts_array[$j][p_date]) ); printf( _x( ' by %s', 'Post written by...', 'buddypress' ), bp_core_get_userlink( $all_arts_array[$j][author_id] ) ); ?></p> 
+<p class="date-2"><?php printf( __( '%s', 'buddypress' ), mysql2date('M j Y', $all_arts_array[$j][p_date]) ); printf( _x( ' by %s', 'Post written by...', 'buddypress' ), bp_core_get_userlink( $all_arts_array[$j][author_id] ) ); ?></p> 
 
 			<!--	<div class="finchsizer"> -->	
 <!--						</div> -->
