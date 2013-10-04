@@ -63,7 +63,7 @@
 
 <?php $j = 0; ?>
 
-  <?php	   if ( bp_has_members( 'include=8' ) ) : // NHF CODE CODE ?>
+  <?php	   if ( bp_has_members( 'include=67' ) ) : // NHF CODE CODE ?>
 
 		
 	<?php while ( bp_members() ) : bp_the_member(); ?>
@@ -82,7 +82,8 @@
                                                 if( $value == $end_inst ) {
                                                 $tag = '';
                                         }
-                                                echo $value . $tag;
+						?> <a href="<?php echo get_home_url() . '/members/?s=' . $value ?>"><?php echo $value . $tag;?></a>
+<?php
 
                                         }
                                 //print_r( $user_instruments_raw);  ?> 
@@ -121,7 +122,8 @@
                                                 if( $value == $end_inst ) {
                                                 $tag = '';
                                         }
-                                                echo $value . $tag;
+						?> <a href="<?php echo get_home_url() . '/members/?s=' . $value ?>"><?php echo $value . $tag;?></a>
+<?php
 
                                         }
                                 //print_r( $user_instruments_raw);  ?> 
@@ -160,8 +162,8 @@
                                                 if( $value == $end_inst ) {
                                                 $tag = '';
                                         }
-                                                echo $value . $tag;
-
+                                               ?> <a href="<?php echo get_home_url() . '/members/?s=' . $value ?>"><?php echo $value . $tag;?></a>
+<?php
                                         }
                                 //print_r( $user_instruments_raw);  ?> 
                             </p>
