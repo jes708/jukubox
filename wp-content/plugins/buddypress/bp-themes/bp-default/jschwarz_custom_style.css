@@ -3173,3 +3173,32 @@ font-style: italic;
 font-size: 11px !important;
 color: dimGray;
 }
+
+.finchsizer h4 {
+color: rgb(35, 63, 150);
+position: relative;
+top: 1px;
+left: 10px;
+font-size: 15px !important;
+font-weight: 600;
+}
+
+#search-terms::-webkit-input-placeholder {
+font-size: 12px !important;
+}
+
+#navigation {
+top: 30px;
+position: absolute;
+box-shadow: none !important;
+-webkit-box-shadow: none !important;
+-moz-box-shadow: none !important;
+}
+
+#nav {
+top: -45px;
+}
+
+div#header {
+margin-bottom: 0;
+}
