@@ -179,6 +179,8 @@ jQuery('.bx-viewport').ready( function () {
 jQuery(document).ready(function() {
 	jQuery('#menu-item-867').addClass('loggedout_menu');
 	jQuery('#menu-item-868').addClass('loggedin_menu schwarz-logout-app');
+        jQuery('#menu-item-843').addClass('loggedout_menu');	
+	jQuery('#menu-item-844').addClass('loggedin_menu schwarz-logout-app');
 });
 
 <?php if( is_user_logged_in() ) : ?>
@@ -187,9 +189,9 @@ jQuery(document).ready(function() {
 }); // document.ready
 <?php endif; ?>
 
-        var schwarzLogout = "<?php echo wp_logout_url( wp_guess_url() ); ?><?php _e( 'Log Out', 'buddypress' ); ?>";
+        var schwarzLogout = "<?php echo wp_logout_url( wp_guess_url() ); ?>";
         jQuery('#nav').ready( function() {  
-                jQuery('.schwarz-logout-app a').attr("href", "" + schwarzLogout + "");     
+                jQuery('.schwarz-logout-app a').attr("href", "" + schwarzLogout + "");
         });
          
 
