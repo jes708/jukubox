@@ -2081,5 +2081,7 @@ function bp_get_lesson_button( $potential_friend_id = 0, $friend_status = false 
 
 
 		// Filter and return the HTML button
+	if( is_teacher( $potential_friend_id )===TRUE ) :
 		return bp_get_button( apply_filters( 'bp_get_lesson_button', $button ) );
+	endif;
 }
