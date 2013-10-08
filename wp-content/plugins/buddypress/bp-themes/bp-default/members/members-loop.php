@@ -120,11 +120,11 @@ jQuery('#search-by-instrument').ready(function() {
 	<?php while ( bp_members() ) : bp_the_member(); ?>
 <?php // $newId = bp_get_member_user_id(); echo  $newId; echo bp_get_profile_field_data('field=7&user_id=' . $newId . '') ;//is_teacher_two($newId) ; ?>
 		<li>
-	<?php //if( !is_teacher( bp_get_member_user_id() ) ): ?>
+	<?php // if( !is_teacher( bp_get_member_user_id() ) ): ?>
 	<!--	<style>
 			.friend_slab_<?php echo bp_get_member_user_id(); ?> { display: none; } 
 		</style>  --> 
-	<?php //endif; ?>
+	<?php // endif; ?>
 			<div class="item-avatar">
 				<a href="<?php bp_member_permalink(); ?>profile"><?php bp_member_avatar(); ?></a>
 			</div>
