@@ -3058,6 +3058,7 @@ background-image: none !important;
 #header #search-bar input[type=text] {
 padding-right: 38px !important;
 width: 225px;
+padding-left: 10px !important;
 }
 
 input[type=text] {
@@ -3187,11 +3188,11 @@ float: left;
 }
 
 #search-terms::-webkit-input-placeholder {
-font-size: 12px !important;
+font-size: 13px !important;
 }
 
 #search-terms::-moz-placeholder {
-font-size: 12px !important;
+font-size: 13px !important;
 }
 
 #navigation {
@@ -3306,30 +3307,30 @@ bottom: -47px;
 height: 414px;
 overflow: hidden;
 color: #fff;
-background: #303030;
-background: -moz-linear-gradient(top, #303030 0%, #000000 100%) !important;
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#18365b), color-stop(100%,#0d1b33)) !important;
-background: -webkit-linear-gradient(top, #303030 0%,#000000 100%) !important;
-background: -o-linear-gradient(top, #303030 0%,#000000 100%) !important;
-background: -ms-linear-gradient(top, #303030 0%,#000000 100%) !important;
-background: linear-gradient(to bottom, #303030 0%,#000000 100%) !important;
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#303030', endColorstr='#000000',GradientType=0 ) !important;
+background: #616364;
+background: -moz-linear-gradient(top, #616364 0%, #424446 100%) !important;
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#616364), color-stop(100%,#424446)) !important;
+background: -webkit-linear-gradient(top, #616364 0%,#424446 100%) !important;
+background: -o-linear-gradient(top, #616364 0%,#424446 100%) !important;
+background: -ms-linear-gradient(top, #616364 0%,#424446 100%) !important;
+background: linear-gradient(to bottom, #616364 0%,#424446 100%) !important;
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#616364', endColorstr='#424446',GradientType=0 ) !important;
 }
 
 #style_footer p, #inst_footer dt, #inst_footer p {
-font-size: 11px !important;
+font-size: 12px !important;
 font-weight: 600;
 margin-bottom: 10px;
 }
 
 #inst_footer dd {
-font-size: 11px !important;
+font-size: 12px !important;
 font-weight: 300;
 line-height: 5px;
 }
 
 #style_footer li {
-font-size: 11px !important;
+font-size: 12px !important;
 font-weight: 300;
 line-height: 19px;
 }
@@ -3427,3 +3428,91 @@ color: rgba(255, 255, 255, 0.81);
 text-decoration: none;
 color: white;
 }
+
+#footer:after {
+background: none;
+}
+
+#footer {
+background: url(../../../../uploads/2013/10/cardboard_flat8.jpg) repeat center center !important;
+background-size: initial !important;
+}
+
+div#whats-new-options {
+height: 50px !important;
+}
+
+body.bp-user div#sidebar {
+display: none;
+}
+
+body.bp-user div#content .padder {
+border: none;
+}
+
+body.bp-user div#members-only-header {
+background: url(../../../../uploads/2013/07/cardboard_flat2.png);
+width: 100%;
+height: 168px;
+position: relative;
+z-index: -5;
+top: -13px;
+margin-bottom: -186px;
+display: block !important;
+}
+
+body.bp-user img.avatar {
+border-radius: 0;
+border: 1px solid rgba(163, 163, 163, 0.38);
+padding: 6px;
+top: 12px;
+background-color: white;
+position: relative;
+width: 135px;
+height: 135px;
+}
+
+div#item-header h2 a {
+color: #000;
+text-decoration: none;
+text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.93);
+font-size: 23px;
+position: relative;
+top: 25px;
+left: -6px;
+}
+
+#whats-new-avatar img, .activity-avatar img {
+height: 48px !important;
+width: 48px !important;
+padding: 2px !important;
+top: 3px !important;
+}
+
+.activity-header img {
+height: 20px !important;
+width: 20px !important;
+padding: 2px !important;
+top: 3px !important;
+}
+
+.profile.new_avatar.activity-item.mini .activity-avatar, .friends.friendship_created.activity-item.mini .activity-avatar {
+position: relative;
+left: -30px;
+}
+
+.profile.new_avatar.activity-item.mini .activity-meta, .friends.friendship_created.activity-item.mini .activity-meta {
+position: relative;
+left: -24px;
+}
+
+.profile.new_avatar.activity-item.mini .activity-header, .friends.friendship_created.activity-item.mini .activity-header {
+position: relative;
+left: -24px;
+}
+
+.rating-top img, .ratingtop img {
+height: 12px !important;
+width: 12px !important;
+}
+

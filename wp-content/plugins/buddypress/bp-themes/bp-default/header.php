@@ -106,7 +106,7 @@ echo '</pre>'; */
 						<form class="form-search" action="<?php echo bp_search_form_action(); ?>" method="post" id="search-form">
 <div class="input-append"/>
 							<label for="search-terms" class="accessibly-hidden"><?php _e( 'Search for:', 'buddypress' ); ?></label>
-							<input class="span3 search-query" type="text" id="search-terms" placeholder="Search by name, instrument, genre, etc" name="search-terms" value="<?php echo isset( $_REQUEST['s'] ) ? esc_attr( $_REQUEST['s'] ) : ''; ?>" />
+							<input class="span3 search-query" type="text" id="search-terms" placeholder="Search teacher, style or instrument" name="search-terms" value="<?php echo isset( $_REQUEST['s'] ) ? esc_attr( $_REQUEST['s'] ) : ''; ?>" />
 
 
 <button type="submit" class="btn btn-invisible" name="search-submit" id="search-submit" value="Search">
@@ -134,6 +134,9 @@ echo '</pre>'; */
 				<?php wp_nav_menu( array( 'container' => false, 'menu_id' => 'nav', 'theme_location' => 'primary', 'fallback_cb' => 'bp_dtheme_main_nav' ) ); ?>
 			    </div><!-- end nav_wrapper --> 
 			</div>
+
+<div id="members-only-header" style="display:none;">
+</div>
 
 			<?php do_action( 'bp_header' ); ?>
 

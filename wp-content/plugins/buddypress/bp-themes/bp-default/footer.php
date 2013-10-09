@@ -83,7 +83,7 @@ $foot_col_4 = array_slice($instruments_array, 28, 14);
 
                         ?>
 
-                <div style="overflow:hidden; width:450px; height:370px; left:270px; bottom:25px; color:white; position:relative; z-index:9999999;" id="inst_footer">
+                <div style="overflow:hidden; width:460px; height:370px; left:260px; bottom:25px; color:white; position:relative; z-index:9999999;" id="inst_footer">
                         <p>Browse by Instrument<p>
                                <div style="float:left; margin-right:60px;" id="foot_col_2">
                                  <?php foreach( $foot_col_2 as $key => $value ): ?>

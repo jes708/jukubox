@@ -29,23 +29,23 @@
 		<a href="<?php bp_displayed_user_link(); ?>"><?php bp_displayed_user_fullname(); ?></a>	
 	</h2>
 
-	<span class="user-nicename">@<?php bp_displayed_user_username(); ?></span>
+<!--	<span class="user-nicename">@<?php // bp_displayed_user_username(); ?></span> -->
 	<span class="activity"><?php bp_last_activity( bp_displayed_user_id() ); ?></span>
 
 	<?php do_action( 'bp_before_member_header_meta' ); ?>
 
 	<div id="item-meta">
 
-		<?php if ( bp_is_active( 'activity' ) ) : ?>
+<!--		<?php //  if ( bp_is_active( 'activity' ) ) : ?>
 
 			<div id="latest-update">
 
-				<?php bp_activity_latest_update( bp_displayed_user_id() ); ?>
+				<?php // bp_activity_latest_update( bp_displayed_user_id() ); ?>
 
 			</div>
 
-		<?php endif; ?>
-
+		<?php // endif; ?>
+-->
 		<div id="item-buttons">
 			<?php /* echo 'BLAH!'; echo friends_check_friendship_status( $user_id, $disp_user_id );*/  ?>
 			<?php do_action( 'bp_member_header_actions' ); ?>
