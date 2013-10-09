@@ -3303,7 +3303,8 @@ bottom: -47px;
 }
 
 #footer {
-height: 403px;
+height: 414px;
+overflow: hidden;
 color: #fff;
 background: #303030;
 background: -moz-linear-gradient(top, #303030 0%, #000000 100%) !important;
@@ -3349,4 +3350,13 @@ top: -639px;
 border-bottom: solid 1px rgba(255, 255, 255, 0.08);
 padding-bottom: 4px;
 margin-bottom: -5px;
+}
+
+.footer-instruments {
+right: 90px;
+position:relative;
+}
+
+.footer-instruments dd, .footer-instruments li {
+color: rgba(255, 255, 255, 0.81);
 }

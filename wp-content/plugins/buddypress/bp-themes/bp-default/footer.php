@@ -10,7 +10,7 @@
 				</div>
 			<?php endif; ?>
 
-                        <div id="violintestlink">
+                        <div style="width:1000px; margin:0 auto; position:relative;" id="violintestlink">
 <?php $select_teachers = filter_by_role_and_instrument('Teacher', 'violin') ?>                                
 <a style="position:absolute; z-index:99999999999999;" href="http://jukubox.com/teachers">violin</a>
 
@@ -56,7 +56,7 @@ $foot_col_4 = array_slice($instruments_array, 28, 14);
 
                         ?>
 
-                <div style="overflow:hidden; width:450px; height:370px; left:430px; bottom:5px; color:white; position:absolute; z-index:9999999;" id="inst_footer">
+                <div style="overflow:hidden; width:450px; height:370px; left:430px; bottom:25px; color:white; position:relative; z-index:9999999;" id="inst_footer">
                         <p>Browse by Instrument<p>
                                <div style="float:left; margin-right:60px;" id="foot_col_2">
                                  <?php foreach( $foot_col_2 as $key => $value ): ?>
@@ -105,7 +105,7 @@ $foot_col_4 = array_slice($instruments_array, 28, 14);
                         </div>
 		</div> <!-- end inst_holder -->
 
-                <div style="width:120px; height:200px; left:910px; bottom:175px; color:white; position:absolute; z-index:9999999;" id="style_footer">
+                <div style="width:120px; height:200px; left:910px; bottom:195px; color:white; position:absolute; z-index:9999999;" id="style_footer">
                         <p>Browse by Style<p>
                                 <?php foreach( array_slice($instruments_array, 0, 3) as $key => $value ): ?>
                                         <?php  $instrument_name = $value['name'];
