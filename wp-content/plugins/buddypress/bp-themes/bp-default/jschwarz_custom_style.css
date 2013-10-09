@@ -3301,3 +3301,52 @@ top: 9px;
 position: absolute;
 bottom: -47px;
 }
+
+#footer {
+height: 403px;
+color: #fff;
+background: #303030;
+background: -moz-linear-gradient(top, #303030 0%, #000000 100%) !important;
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#18365b), color-stop(100%,#0d1b33)) !important;
+background: -webkit-linear-gradient(top, #303030 0%,#000000 100%) !important;
+background: -o-linear-gradient(top, #303030 0%,#000000 100%) !important;
+background: -ms-linear-gradient(top, #303030 0%,#000000 100%) !important;
+background: linear-gradient(to bottom, #303030 0%,#000000 100%) !important;
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#303030', endColorstr='#000000',GradientType=0 ) !important;
+}
+
+#style_footer p, #inst_footer dt, #inst_footer p {
+font-size: 11px !important;
+font-weight: 600;
+margin-bottom: 10px;
+}
+
+#inst_footer dd {
+font-size: 11px !important;
+font-weight: 300;
+line-height: 5px;
+}
+
+#style_footer li {
+font-size: 11px !important;
+font-weight: 300;
+line-height: 19px;
+}
+
+#inst_footer dl:nth-of-type(5), #inst_footer dl:nth-of-type(4) {
+left: 160px;
+position: relative;
+top: -305px;
+}
+
+#inst_footer dl:nth-of-type(6) {
+position: relative;
+left: 320px;
+top: -639px;
+}
+
+#style_footer p:nth-of-type(1), #inst_footer p:nth-of-type(1) {
+border-bottom: solid 1px rgba(255, 255, 255, 0.08);
+padding-bottom: 4px;
+margin-bottom: -5px;
+}

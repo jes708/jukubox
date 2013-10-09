@@ -2079,9 +2079,8 @@ function bp_get_lesson_button( $potential_friend_id = 0, $friend_status = false 
 					'link_class'        => 'btn btn-primary lesson-button friendship-button pending_friend requested'
 				);
 
-
 		// Filter and return the HTML button
-	if( is_teacher( $potential_friend_id )===TRUE ) :
+//	if( is_teacher( $potential_friend_id )===TRUE )
 		return bp_get_button( apply_filters( 'bp_get_lesson_button', $button ) );
-	endif;
+//	endif;
 }
