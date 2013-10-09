@@ -3360,3 +3360,59 @@ position:relative;
 .footer-instruments dd, .footer-instruments li {
 color: rgba(255, 255, 255, 0.81);
 }
+
+.circle_div {
+background-color: white;
+border-radius: 100%;
+height: 20px;
+width: 20px;
+float: left;
+margin-right: 5px;
+}
+
+#foot_follow .icon-facebook {
+color: black;
+position: relative;
+left: 7px;
+top: 3px;
+}
+
+#foot_follow .icon-twitter {
+color: black;
+position: relative;
+left: 4px;
+top: 3px;
+}
+
+#foot_follow .icon-youtube-play {
+color: black;
+position: relative;
+left: 3px;
+top: 3px;
+}
+
+#foot_men a {
+color: rgba(255, 255, 255, 0.81);
+font-size: 13px !important;
+font-weight: 300;
+line-height: 26px;
+}
+
+div#foot_men {
+margin-bottom: 18px;
+}
+
+#foot_buttons {
+position: relative;
+top: -8px;
+}
+
+#jukucopyright p {
+color: rgba(255, 255, 255, 0.81);
+font-size: 11px !important;
+font-weight: 300;
+position: relative;
+float: left;
+top: 22px;
+line-height: 4px !important;
+}

@@ -10,9 +10,36 @@
 				</div>
 			<?php endif; ?>
 
-                        <div style="width:1000px; margin:0 auto; position:relative;" id="violintestlink">
-<?php $select_teachers = filter_by_role_and_instrument('Teacher', 'violin') ?>                                
-<a style="position:absolute; z-index:99999999999999;" href="http://jukubox.com/teachers">violin</a>
+                        <div style="width:1000px; margin:0 auto; position:relative;" id="footer_sizer">
+
+			<div id="foot_col_1" style="float:left; position:relative; z-index:100;">
+			<div id="foot_men">
+				<a href="<?php echo get_home_url() . '/teachers' ?>">Find a Teacher</a>
+                                <br>
+				<a href="<?php echo get_home_url() . '/category/articles' ?>">Blog</a>
+                                <br>
+				<a href="<?php echo get_home_url() . '/about-us' ?>">About Jukubox</a>
+                                <br>
+				<a href="<?php echo get_home_url() . '/become-a-teacher' ?>">Become a Teacher</a>
+                                <br>
+				<a href="<?php echo get_home_url() . '/troubleshooting' ?>">Troubleshooting/FAQ</a>
+                                <br>
+				<a href="<?php echo get_home_url() . '/terms-of-use' ?>">Legal</a>
+			</div>
+			<div id="foot_follow">
+				<p>Follow us</p>
+				<div id="foot_buttons">
+				<a href="https://www.facebook.com/JukuboxOfficial"><div class="circle_div"><i class="icon-facebook icon-large"></i></div></a>
+                                <a href="https://twitter.com/jukuboxofficial"><div class="circle_div"><i class="icon-twitter icon-large"></i></div></a>
+                                <a href="http://www.youtube.com/jukuboxofficial"><div class="circle_div"><i class="icon-youtube-play icon-large"></i></div></a>
+				</div>
+			</div>
+			<div id="jukucopyright">
+			<p>Copyright © 2013 Jukubox LLC.</p>
+			<br>
+			<p>All rights reserved.</p>
+			</div>
+			</div>
 
                         <div class="footer-instruments" role="navigation">
 
@@ -56,7 +83,7 @@ $foot_col_4 = array_slice($instruments_array, 28, 14);
 
                         ?>
 
-                <div style="overflow:hidden; width:450px; height:370px; left:430px; bottom:25px; color:white; position:relative; z-index:9999999;" id="inst_footer">
+                <div style="overflow:hidden; width:450px; height:370px; left:270px; bottom:25px; color:white; position:relative; z-index:9999999;" id="inst_footer">
                         <p>Browse by Instrument<p>
                                <div style="float:left; margin-right:60px;" id="foot_col_2">
                                  <?php foreach( $foot_col_2 as $key => $value ): ?>
@@ -73,7 +100,7 @@ $foot_col_4 = array_slice($instruments_array, 28, 14);
                                                 <?php endif; ?>
                                 <?php endforeach; ?>
                         </div>
-                        <div id="foot_col_3" style="float:left; margin-right:60px;">
+                        <div id="foot_col_3" style="float:left; margin-right:85px;">
                                  <?php foreach( $foot_col_3 as $key => $value ): ?>
                                         <?php  $instrument_name = $value['name'];
                                                $first_label = $begin_end['firsts'][$instrument_name];
