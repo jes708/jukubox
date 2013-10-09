@@ -122,7 +122,7 @@
                                                 if( $value == $end_inst ) {
                                                 $tag = '';
                                         }
-						?> <a href="<?php echo get_home_url() . '/teachers' ?>"><?php echo $value . $tag;?></a>
+					?>	<a href="<?php echo get_home_url() . '/members/?s=' . $value ?>"><?php echo $value . $tag;?></a>
 <?php
 
                                         }

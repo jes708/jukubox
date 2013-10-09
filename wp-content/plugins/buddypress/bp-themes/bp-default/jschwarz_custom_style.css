@@ -3357,7 +3357,7 @@ right: 90px;
 position:relative;
 }
 
-.footer-instruments dd, .footer-instruments li {
+.footer-instruments a, .footer-instruments dd, .footer-instruments li {
 color: rgba(255, 255, 255, 0.81);
 }
 
@@ -3399,7 +3399,7 @@ line-height: 26px;
 }
 
 div#foot_men {
-margin-bottom: 18px;
+margin-bottom: 17px;
 }
 
 #foot_buttons {
@@ -3415,4 +3415,15 @@ position: relative;
 float: left;
 top: 22px;
 line-height: 4px !important;
+}
+
+#foot_follow p {
+font-size: 13px !important;
+font-weight: 300;
+color: rgba(255, 255, 255, 0.81);
+}
+
+#footer a:hover {
+text-decoration: none;
+color: white;
 }

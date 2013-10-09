@@ -93,8 +93,8 @@ $foot_col_4 = array_slice($instruments_array, 28, 14);
                                         <dl>
                                         <dt value="<?php echo $first_label; ?>"><?php echo $first_label; ?></dt>
                                                 <?php endif; ?>
-                                        <dd value="<?php echo $value['name']; ?>"><?php echo $value['name']; ?><dd>
-                                        <?php $last_label = $begin_end['lasts'];
+					<a href="<?php echo get_home_url() . '/members/?s=' . $value['name'] ?>"><dd value="<?php echo $value['name']; ?>"><?php echo $value['name']; ?><dd></a>                                       
+ 					<?php $last_label = $begin_end['lasts'];
                                                 if(!empty( $last_label[$instrument_name] ) ) : ?>
                                         </dl>
                                                 <?php endif; ?>
@@ -108,7 +108,7 @@ $foot_col_4 = array_slice($instruments_array, 28, 14);
                                         <dl>
                                         <dt value="<?php echo $first_label; ?>"><?php echo $first_label; ?></dt>
                                                 <?php endif; ?>
-                                        <dd value="<?php echo $value['name']; ?>"><?php echo $value['name']; ?><dd>
+                                 <a href="<?php echo get_home_url() . '/members/?s=' . $value['name'] ?>"><dd value="<?php echo $value['name']; ?>"><?php echo $value['name']; ?><dd></a>
                                         <?php $last_label = $begin_end['lasts'];
                                                 if(!empty( $last_label[$instrument_name] ) ) : ?>
                                         </dl>
@@ -123,8 +123,8 @@ $foot_col_4 = array_slice($instruments_array, 28, 14);
                                         <dl>
                                         <dt value="<?php echo $first_label; ?>"><?php echo $first_label; ?></dt>
                                                 <?php endif; ?>
-                                        <dd value="<?php echo $value['name']; ?>"><?php echo $value['name']; ?><dd>
-                                        <?php $last_label = $begin_end['lasts'];
+                                       <a href="<?php echo get_home_url() . '/members/?s=' . $value['name'] ?>"><dd value="<?php echo $value['name']; ?>"><?php echo $value['name']; ?><dd></a>
+					 <?php $last_label = $begin_end['lasts'];
                                                 if(!empty( $last_label[$instrument_name] ) ) : ?>
                                         </dl>
                                                 <?php endif; ?>
@@ -138,7 +138,7 @@ $foot_col_4 = array_slice($instruments_array, 28, 14);
                                         <?php  $instrument_name = $value['name'];
                                                $first_label = $begin_end['firsts'][$instrument_name]; ?>
                                         <ul>
-					<li value="<?php echo $value['name']; ?>"><?php echo $value['name']; ?></li>
+					<a href="<?php echo get_home_url() . '/members/?s=' . $value['name'] ?>"><li value="<?php echo $value['name']; ?>"><?php echo $value['name']; ?></li></a>
                                         <?php $last_label = $begin_end['lasts'];
                                                 if(!empty( $last_label[$instrument_name] ) ) : ?>
                                         </ul>
