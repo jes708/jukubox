@@ -3520,10 +3520,15 @@ a#add_review_1, div#post-mention a {
 display: none;
 }
 
-.generic-button.friendship-button a.btn.friendship-button.is_friend.remove.btn-small, .generic-button.friendship-button a.btn.friendship-button.pending_friend.requested.btn-small, .generic-button.friendship-button.not_friends a, #send-private-message a {
+/* .btn-gray .generic-button.friendship-button a.btn.friendship-button.is_friend.remove.btn-small, .generic-button.friendship-button a.btn.friendship-button.pending_friend.requested.btn-small, .generic-button.friendship-button.not_friends a, #send-private-message a {
 color: black !important;
-}
+} */
 
 .generic-button.lesson-button-wrapper a.btn.friendship-button.is_friend.remove.btn-small, .generic-button.lesson-button-wrapper a.btn.friendship-button.pending_friend.requested.btn-small {
 color: white !important;
 }
+
+.btn-gray {
+color: black !important;
+}
+

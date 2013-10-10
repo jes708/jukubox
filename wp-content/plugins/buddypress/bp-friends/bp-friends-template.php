@@ -286,7 +286,7 @@ function bp_add_friend_button( $potential_friend_id = 0, $friend_status = false 
 					'link_title'        => __( 'Cancel Friendship Requested', 'buddypress' ),
 					'link_id'			=> 'friend-' . $potential_friend_id,
 					'link_rel'			=> 'remove',
-					'link_class'        => 'btn friendship-button pending_friend requested'
+					'link_class'        => 'btn btn-gray friendship-button pending_friend requested'
 				);
 				break;
 
@@ -303,7 +303,7 @@ function bp_add_friend_button( $potential_friend_id = 0, $friend_status = false 
 					'link_title'        => __( 'Cancel Friendship', 'buddypress' ),
 					'link_id'           => 'friend-' . $potential_friend_id,
 					'link_rel'          => 'remove',
-					'link_class'        => 'btn friendship-button is_friend remove'
+					'link_class'        => 'btn btn-gray friendship-button is_friend remove'
 				);
 				break;
 
@@ -320,7 +320,7 @@ function bp_add_friend_button( $potential_friend_id = 0, $friend_status = false 
 					'link_title'        => __( 'Add Friend', 'buddypress' ),
 					'link_id'           => 'friend-' . $potential_friend_id,
 					'link_rel'          => 'add',
-					'link_class'        => 'btn friendship-button not_friends add'
+					'link_class'        => 'btn btn-gray friendship-button not_friends add'
 				);
 				break;
 		}

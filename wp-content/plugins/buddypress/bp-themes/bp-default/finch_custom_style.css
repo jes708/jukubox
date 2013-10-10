@@ -337,7 +337,7 @@ input[type=submit],
 input[type=button],
 input[type=reset],
 ul.button-nav li a,
-div.generic-button a,
+/* div.generic-button a, */
 .comment-reply-link { 
 /*color: #d7d7d7;
 background: #333;
