@@ -86,7 +86,7 @@ if ($options['profile'] == "profile") {
                     }
                 }
             }
-            echo ' (Based on '.count($check_content_loop_count).' reviews)</span>';
+            echo ' ('.count($check_content_loop_count).')</span>';
         } else {
             echo '<span class="rating-top" style="position:relative;top:-5px;font-weight:bold">No Reviews</span>';
         }
@@ -114,12 +114,12 @@ if ($options['profile'] == "profile") {
 				$member_id_num = $member_id->ID;
 				echo get_home_url() . '/members/' . $member_slug . '/';   
 				// NHF EDIT - review button not going to the proper place.  
-				 ?>reviews/" id="add_review_<?php echo $member_id_num; ?>">Add Review</a>
+				 ?>reviews/" id="add_review_<?php echo  $member_id_num; ?>">Add Review</a>
             </div>
             <?php
        /* } */ 
     }
-    add_action('bp_member_header_actions', 'prorevs_member_header');
+//    add_action('bp_member_header_actions', 'prorevs_member_header');
 
     //
     // Add the "reviews" tab
