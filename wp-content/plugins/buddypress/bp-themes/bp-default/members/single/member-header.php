@@ -105,7 +105,7 @@ style="top:13px;"
 			<script>
 				jQuery('#item-buttons a').not('#schedule-lesson a').removeClass(); 
 				jQuery('#item-buttons a').not('#schedule-lesson a').removeAttr("id"); 	
-				jQuery('#item-buttons .generic-button').css("color", "white"); 
+//				jQuery('#item-buttons .generic-button').css("color", "white"); 
 				jQuery('#item-buttons a').not('#schedule-lesson a').attr("href", window['finch_home_url'] + "/wp-login.php");  
 
 			</script>

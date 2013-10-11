@@ -47,7 +47,7 @@ function prorevs_add_review($user_id, $component, $type, $action, $content,
 $options = get_option('reviews_options');
 
 if ($options['profile'] == "profile") {
-    add_action('bp_after_member_header','prorevs_add_star_loop_header');
+    add_action('bp_before_member_header_meta','prorevs_add_star_loop_header');
     add_action('bp_directory_members_actions','prorevs_add_star_loop_content');
 
     function prorevs_add_star_loop_header()
@@ -73,7 +73,7 @@ if ($options['profile'] == "profile") {
         if ($check_content_loop[0]->Average != "") {
             $check_show_star_loop = $check_content_loop[0]->Average;
             $demss = 0;
-            echo '<span class="rating-top" style="position:relative;top:-10px"> ';
+            echo '<span class="rating-top" style="position:relative;top:8px"> ';
             for ($dem = 1; $dem < 6 ; $dem ++){
                 if ($dem <= $check_show_star_loop) {
                     echo '<img alt="1 star" src="'.DEPROURL.'/images/star.png">';
@@ -88,7 +88,7 @@ if ($options['profile'] == "profile") {
             }
             echo ' ('.count($check_content_loop_count).')</span>';
         } else {
-            echo '<span class="rating-top" style="position:relative;top:-5px;font-weight:bold">No Reviews</span>';
+            echo '<span class="rating-top" style="position:relative;top:22px;font-weight:bold">No Reviews</span>';
         }
     }
 
