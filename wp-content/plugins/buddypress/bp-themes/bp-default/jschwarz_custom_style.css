@@ -3589,7 +3589,7 @@ div#item-buttons {
 position: relative;
 float: right;
 top: -47px;
-left: 4px;
+left: 7px;
 }
 
 div#item-buttons #schedule-lesson a {
@@ -3637,19 +3637,19 @@ position: relative;
 clear: both;
 }
 
-div#r_i_inst p.inst_ital a {
+div#r_i_inst p, div#r_i_inst p.inst_ital a {
 color: gray;
 font-size: 13px !important;
 }
 
 div#rates_instruments {
-width: 340px;
+width: 385px;
 height: 40px;
 }
 
 @-moz-document url-prefix() {
 .bp-user #container {
-top: -15px;
+top: -14px;
 overflow: inherit;
 	}
 }
@@ -3665,10 +3665,84 @@ margin-top: 0 !important;
 
 div#item-nav {
 position: relative;
-top: -49px;
+top: -34px;
 left: 165px;
 }
 
 div.item-list-tabs {
 background: transparent;
+}
+
+#field_23 .fval {
+display: inline;
+}
+
+#field_23 {
+right: -88px;
+}
+
+#item-header {
+height: 153px;
+width: 102%;
+}
+
+#members-list .item-avatar img {
+box-shadow: 0 0 1px rgb(228, 228, 228) !important;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+position: relative;
+border-radius: 0;
+border: 1px solid rgba(163, 163, 163, 0.38);
+padding: 6px;
+background-color: white;
+position: relative;
+width: 135px;
+height: 135px;
+}
+
+tr.field_33 iframe {
+width:789px;
+height:444px;
+}
+
+.bp-user div#container {
+left: -22px;
+}
+
+#message-threads td img {
+height: 48px !important;
+width: 48px !important;
+top: 0 !important;
+right: 0;
+left: 0;
+bottom: 0;
+position: relative;
+padding: 2px;
+}
+
+table#message-threads {
+position: relative;
+left: 20px;
+}
+
+div.messages {
+overflow: hidden;
+}
+
+div#messages-dir-count {
+left: 15px;
+position: relative;
+}
+
+div.message-metadata img {
+height: 30px !important;
+width: 30px !important;
+top: 0 !important;
+right: 0;
+left: 0;
+bottom: 0;
+position: relative;
+padding: 2px !important;
 }
