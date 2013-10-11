@@ -55,7 +55,7 @@
                                 ?>
                             </p>
 				<?php endif; ?>
-                                  <?php $half_rates_raw = bp_get_profile_field_data('field=23&user_id=' . bp_displayed_user_id() . '');
+                                  <?php $half_rates_raw = bp_get_profile_field_data('field=221&user_id=' . bp_displayed_user_id() . '');
                                 if(!empty($half_rates_raw)) :                               
 				 ?><p class="half_rates_p"><?php echo "($" . $half_rates_raw . "/half hour)";
 
@@ -66,7 +66,7 @@
 		</div>
 		<div id="r_i_inst">
 		                        <p class="inst_ital"
-<?php if((empty($hour_rates_raw)) && (empty($half_rates_raw))) : ?>
+<?php if((empty($hour_rates_raw)) || (empty($half_rates_raw))) : ?>
 style="top:13px;"
 <?php endif; ?>
 > <?php $user_instruments_raw = bp_get_profile_field_data('field=2&user_id=' . bp_displayed_user_id() . '');
