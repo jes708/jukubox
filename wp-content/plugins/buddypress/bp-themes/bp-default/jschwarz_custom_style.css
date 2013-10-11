@@ -3434,7 +3434,7 @@ background: none;
 }
 
 #footer {
-background: url(../../../../uploads/2013/10/cardboard_flat8.jpg) repeat center center !important;
+background: url(../../../../uploads/2013/10/cardboard_flat9.jpg) repeat center center !important;
 background-size: initial !important;
 }
 
@@ -3579,3 +3579,68 @@ a[title="Add Friend"]:hover, a[title="Send a private message to this user."]:hov
   background-color: #e5e5e5 !important;
 }
 
+.bp-user div#content .padder {
+    margin-right: 0;
+}
+
+div#item-buttons {
+position: relative;
+float: right;
+top: -47px;
+left: 4px;
+}
+
+div#item-buttons #schedule-lesson a {
+position: relative;
+left: -20px;
+top: -10px;
+}
+
+div#item-buttons #send-private-message a {
+margin-left: -14px;
+}
+
+div#item-header div#item-meta {
+left: -5px;
+position: relative;
+}
+
+.hour_rates_p {
+color: black;
+float: left;
+font-weight: 700;
+font-size: 14px !important;
+letter-spacing: -.2px;
+position: relative;
+}
+
+.half_rates_p {
+color: gray;
+float: left;
+font-weight: 400;
+font-size: 13px !important;
+letter-spacing: -.2px;
+position: relative;
+left: 7px;
+}
+
+#r_i_rates {
+top: 13px;
+position: relative;
+float: left;
+}
+
+div#r_i_inst .inst_ital {
+position: relative;
+clear: both;
+}
+
+div#r_i_inst p.inst_ital a {
+color: gray;
+font-size: 13px !important;
+}
+
+div#rates_instruments {
+width: 340px;
+height: 40px;
+}

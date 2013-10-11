@@ -82,7 +82,7 @@
                                                 if( $value == $end_inst ) {
                                                 $tag = '';
                                         }
-						?> <a href="<?php echo get_home_url() . '/teachers/?instrument=' . $value ?>"><?php echo $value . $tag;?></a>
+						?> <a href="<?php echo get_home_url() . '/teachers/?instrument=' . $value ?>"><?php echo $value;?></a><?php echo $tag;?>
 <?php
 
                                         }
@@ -122,7 +122,7 @@
                                                 if( $value == $end_inst ) {
                                                 $tag = '';
                                         }
-					?>	<a href="<?php echo get_home_url() . '/teachers/instrument=' . $value ?>"><?php echo $value . $tag;?></a>
+					?>	<a href="<?php echo get_home_url() . '/teachers/instrument=' . $value ?>"><?php echo $value;?></a><?php echo $tag;?>
 <?php
 
                                         }
@@ -162,7 +162,7 @@
                                                 if( $value == $end_inst ) {
                                                 $tag = '';
                                         }
-                                               ?> <a href="<?php echo get_home_url() . '/teachers/?instrument=' . $value ?>"><?php echo $value . $tag;?></a>
+                                               ?> <a href="<?php echo get_home_url() . '/teachers/?instrument=' . $value ?>"><?php echo $value;?></a><?php echo $tag;?>
 <?php
                                         }
                                 //print_r( $user_instruments_raw);  ?> 

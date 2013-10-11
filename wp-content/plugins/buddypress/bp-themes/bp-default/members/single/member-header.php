@@ -46,6 +46,46 @@
 
 		<?php // endif; ?>
 -->
+	<div id="rates_instruments">
+		<div id="r_i_rates">
+		                  <?php $hour_rates_raw = bp_get_profile_field_data('field=23&user_id=' . bp_displayed_user_id() . '');
+                                if(!empty($hour_rates_raw)) : 
+				 ?><p class="hour_rates_p"><?php echo "$" . $hour_rates_raw . "/hour";
+
+                                ?>
+                            </p>
+				<?php endif; ?>
+                                  <?php $half_rates_raw = bp_get_profile_field_data('field=23&user_id=' . bp_displayed_user_id() . '');
+                                if(!empty($half_rates_raw)) :                               
+				 ?><p class="half_rates_p"><?php echo "($" . $half_rates_raw . "/half hour)";
+
+                                ?>
+                            </p>
+				<?php endif; ?>
+
+		</div>
+		<div id="r_i_inst">
+		                        <p class="inst_ital"
+<?php if((empty($hour_rates_raw)) && (empty($half_rates_raw))) : ?>
+style="top:13px;"
+<?php endif; ?>
+> <?php $user_instruments_raw = bp_get_profile_field_data('field=2&user_id=' . bp_displayed_user_id() . '');
+                                        $user_instruments_raw = array_slice( $user_instruments_raw, 0, 8);
+                                        $end_inst = end($user_instruments_raw);
+                                        foreach( $user_instruments_raw as $key => $value ) {
+                                                $tag = ', ';
+                                                if( $value == $end_inst ) {
+                                                $tag = '';
+                                        }
+                                                ?> <a href="<?php echo get_home_url() . '/teachers/?instrument=' . $value ?>"><?php echo $value;?></a><?php echo $tag;?>
+<?php
+
+                                        }
+                                //print_r( $user_instruments_raw);  ?>
+                            </p>
+		</div>
+	</div>
+
 		<div id="item-buttons">
 			<?php /* echo 'BLAH!'; echo friends_check_friendship_status( $user_id, $disp_user_id );*/  ?>
 			<?php do_action( 'bp_member_header_actions' ); ?>
