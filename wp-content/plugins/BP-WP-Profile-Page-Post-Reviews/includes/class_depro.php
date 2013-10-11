@@ -73,7 +73,7 @@ if ($options['profile'] == "profile") {
         if ($check_content_loop[0]->Average != "") {
             $check_show_star_loop = $check_content_loop[0]->Average;
             $demss = 0;
-            echo '<span class="rating-top" style="position:relative;top:8px"> ';
+            echo '<span class="rating-top" style="position:relative;top:20px"> ';
             for ($dem = 1; $dem < 6 ; $dem ++){
                 if ($dem <= $check_show_star_loop) {
                     echo '<img alt="1 star" src="'.DEPROURL.'/images/star.png">';
