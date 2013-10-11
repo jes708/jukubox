@@ -2072,7 +2072,7 @@ function bp_get_lesson_button( $potential_friend_id = 0, $friend_status = false 
 					'wrapper_class'     => 'lesson-button-wrapper friendship-button pending_friend',
 					'wrapper_id'        => 'friendship-button-' . $potential_friend_id,
 					'link_href'         => wp_nonce_url('/test-appointment/?app_provider_id=' . $potential_friend_id . '&app_service_id=1', 'friends_withdraw_friendship' ),
-					'link_text'         => __( 'Schedule a Lesson', 'buddypress' ),
+					'link_text'         => __( '<i class="icon-book icon-large"></i> Book Lesson', 'buddypress' ),
 					'link_title'        => __( 'Schedule a Lesson', 'buddypress' ),
 					'link_id'			=> 'friend-' . $potential_friend_id,
 					'link_rel'			=> 'remove',

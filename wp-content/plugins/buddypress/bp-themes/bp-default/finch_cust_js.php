@@ -458,6 +458,10 @@ jQuery('#serviceForm').ready(function() {
 		jQuery('.field_6 a').attr('target', '_blank');
 });
 
+//        jQuery(document).ready(function() {
+//                jQuery('.btn.btn-primary.lesson-button.friendship-button.pending_friend.requested.btn-small').prepend('<i class="icon-book"></i>');
+// });
+
 
 
 //jQuery("#apply_to_teach").ready(function() { 

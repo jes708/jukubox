@@ -47,7 +47,7 @@
 			<?php do_action( 'bp_member_header_actions' ); ?>
 			<!-- FINCH CUSTOM JS to change form --> 
 			<script>
-				var schedule_button = '<div class="generic-button" id="schedule-lesson"><a href="" title="Schedule a private lesson with this user." class="btn btn-primary send-message">Schedule a Lesson</a></div>'; 
+				var schedule_button = '<div class="generic-button" id="schedule-lesson"><a href="" title="Schedule a private lesson with this user." class="btn btn-primary send-message"><i class="icon-book"></i> Book Lesson</a></div>'; 
 				jQuery('#send-private-message').after(schedule_button); 			
 
 				alert('hello!'); 
