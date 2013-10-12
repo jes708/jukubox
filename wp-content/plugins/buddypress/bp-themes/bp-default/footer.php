@@ -14,24 +14,24 @@
 
 			<div id="foot_col_1" style="float:left; position:relative; z-index:100;">
 			<div id="foot_men">
-				<a href="<?php echo get_home_url() . '/teachers' ?>">Find a Teacher</a>
+				<a href="<?php echo get_home_url() . '/teachers'; ?>">Find a Teacher</a>
                                 <br>
-				<a href="<?php echo get_home_url() . '/category/articles' ?>">Blog</a>
+				<a href="<?php echo get_home_url() . '/category/articles'; ?>">Blog</a>
                                 <br>
-				<a href="<?php echo get_home_url() . '/about-us' ?>">About Jukubox</a>
+				<a href="<?php echo get_home_url() . '/about-us'; ?>">About Jukubox</a>
                                 <br>
-				<a href="<?php echo get_home_url() . '/become-a-teacher' ?>">Become a Teacher</a>
+				<a href="<?php echo get_home_url() . '/become-a-teacher'; ?>">Become a Teacher</a>
                                 <br>
-				<a href="<?php echo get_home_url() . '/troubleshooting' ?>">Troubleshooting/FAQ</a>
+				<a href="<?php echo get_home_url() . '/troubleshooting'; ?>">Troubleshooting/FAQ</a>
                                 <br>
-				<a href="<?php echo get_home_url() . '/terms-of-use' ?>">Legal</a>
+				<a href="<?php echo get_home_url() . '/terms-of-use'; ?>">Legal</a>
 			</div>
 			<div id="foot_follow">
 				<p>Follow us</p>
 				<div id="foot_buttons">
-				<a href="https://www.facebook.com/JukuboxOfficial"><div class="circle_div"><i class="icon-facebook icon-large"></i></div></a>
-                                <a href="https://twitter.com/jukuboxofficial"><div class="circle_div"><i class="icon-twitter icon-large"></i></div></a>
-                                <a href="http://www.youtube.com/jukuboxofficial"><div class="circle_div"><i class="icon-youtube-play icon-large"></i></div></a>
+				<a href="https://www.facebook.com/JukuboxOfficial"><img src="../../../../wp-content/uploads/2013/10/FBButton.png"></a>
+                                <a href="https://twitter.com/jukuboxofficial"><img src="../../../../wp-content/uploads/2013/10/TwitterButton.png"></a>
+                                <a href="http://www.youtube.com/jukuboxofficial"><img src="../../../../wp-content/uploads/2013/10/YoutubeButton.png"></a>
 				</div>
 			</div>
 			<div id="jukucopyright">

@@ -3790,3 +3790,25 @@ border-bottom-color: rgb(253, 253, 253);
 div#header {
 background-size: 100%;
 }
+
+#item-body {
+position: relative;
+bottom: 15px;
+}
+
+div.item-list-tabs#subnav {
+background: transparent;
+font-size 13px;
+font-family: 'open sans' sans-serif;
+}
+
+div#foot_follow img {
+width: 23px;
+height: 23px;
+float: left;
+margin-right: 4px;
+}
+
+#navigation {
+top: 35px;
+}

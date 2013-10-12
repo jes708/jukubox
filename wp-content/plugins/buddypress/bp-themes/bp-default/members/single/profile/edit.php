@@ -1,3 +1,5 @@
+<link rel="shortcut icon" type="image/x-icon" href="../../../../wp-content/uploads/2013/06/favicon.ico?v=2"> 
+
 <?php do_action( 'bp_before_profile_edit_content' );
 
 if ( bp_has_profile( 'profile_group_id=' . bp_get_current_profile_group_id() ) ) :
