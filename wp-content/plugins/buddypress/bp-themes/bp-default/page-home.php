@@ -11,11 +11,11 @@
 
 <div id="selling-points" style="width: 400px; margin-right: -220px; float: left;">
 	<h2>What is Jukubox?</h2>
-	<div><i class="icon-music"></i> <p>One-on-one musical videoconferencing</p></div>
-	<div><i class="icon-headphones"></i> <p>Professional-grade audio quality</p></div>
-	<div><i class="icon-globe"></i> <p>A roster of world-renowned experts</p></div>
-	<div><i class="icon-home"></i> <p>From the comfort of your home</p></div>
-	<div><i class="icon-wrench"></i> <p>Built by musicians for musicians</p></div>	
+	<div><i class="icon-music icon-large"></i> <p>1-on-1 music lessons via videoconferencing</p></div>
+	<div><i class="icon-headphones icon-large"></i> <p>Professional-grade audio quality</p></div>
+	<div><i class="icon-globe icon-large"></i> <p>A roster of world-renowned experts</p></div>
+	<div><i class="icon-home icon-large"></i> <p>Convenience and accessibility</p></div>
+	<div><i class="icon-wrench icon-large"></i> <p>Built by musicians, for musicians</p></div>	
 	<button class="btn btn-large btn-primary" onclick="window.location='<?php echo get_home_url(); ?>/wp-login.php'">Sign In</button>
         <button class="btn btn-large btn-primary" onclick="window.location='<?php echo get_home_url(); ?>/register'">Sign Up</button>
 
@@ -103,14 +103,14 @@
 	<?php endwhile; ?>
 <?php endif; ?>
 
-  <?php    if ( bp_has_members( 'include=32' ) ) : // NHF CODE CODE ?>
+  <?php    if ( bp_has_members( 'include=399' ) ) : // NHF CODE CODE ?>
 
 
         <?php while ( bp_members() ) : bp_the_member(); ?>
                 <li>
                         <div class="span4" style="float: left;">
                         <div class="finchsizer">
-                        <a href="<?php bp_member_permalink(); ?>profile"><img class="fTeachImage" src="../../../../wp-content/uploads/2013/10/Charles-Feature.jpg"></a>
+                        <a href="<?php bp_member_permalink(); ?>profile"><img class="fTeachImage" src="../../../../wp-content/uploads/2013/10/dicterow_headshot_juku.jpg"></a>
                                 <div class="featured-about">
                                                         <div class="featured-info">
                         <a href="<?php bp_member_permalink(); ?>profile"> <h4><?php  bp_member_name(); ?></h4> </a>

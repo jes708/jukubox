@@ -3062,6 +3062,7 @@ padding-left: 10px !important;
 }
 
 input[type=text] {
+font-family: 'open sans' sans-serif;
 border-radius: 5px !important;
 padding: 5px !important;
 }
@@ -3189,9 +3190,11 @@ float: left;
 
 #search-terms::-webkit-input-placeholder {
 font-size: 13px !important;
+font-family: 'open sans' sans-serif;
 }
 
 #search-terms::-moz-placeholder {
+font-family: 'open sans' sans-serif;
 font-size: 13px !important;
 }
 
@@ -3462,7 +3465,7 @@ display: block !important;
 border-bottom: 1px solid rgba(163, 163, 163, 0.38);
 }
 
-body.bp-user img.avatar {
+div#item-header img.avatar {
 border-radius: 0;
 border: 1px solid rgba(163, 163, 163, 0.38);
 padding: 6px;
@@ -3498,17 +3501,17 @@ padding: 2px !important;
 top: 3px !important;
 }
 
-.profile.new_avatar.activity-item.mini .activity-avatar, .friends.friendship_created.activity-item.mini .activity-avatar {
+.xprofile.new_member.activity-item.mini .activity-avatar, .profile.new_avatar.activity-item.mini .activity-avatar, .friends.friendship_created.activity-item.mini .activity-avatar {
 position: relative;
 left: -30px;
 }
 
-.profile.new_avatar.activity-item.mini .activity-meta, .friends.friendship_created.activity-item.mini .activity-meta {
+.xprofile.new_member.activity-item.mini .activity-meta, .profile.new_avatar.activity-item.mini .activity-meta, .friends.friendship_created.activity-item.mini .activity-meta {
 position: relative;
 left: -24px;
 }
 
-.profile.new_avatar.activity-item.mini .activity-header, .friends.friendship_created.activity-item.mini .activity-header {
+.xprofile.new_member.activity-item.mini .activity-header, .profile.new_avatar.activity-item.mini .activity-header, .friends.friendship_created.activity-item.mini .activity-header {
 position: relative;
 left: -24px;
 }
@@ -3665,7 +3668,7 @@ margin-top: 0 !important;
 
 div#item-nav {
 position: relative;
-top: -34px;
+top: -42px;
 left: 165px;
 }
 
@@ -3695,7 +3698,7 @@ right: 0;
 position: relative;
 border-radius: 0;
 border: 1px solid rgba(163, 163, 163, 0.38);
-padding: 6px;
+padding: 4px;
 background-color: white;
 position: relative;
 width: 135px;
@@ -3720,6 +3723,9 @@ left: 0;
 bottom: 0;
 position: relative;
 padding: 2px;
+border-radius: 0;
+border: 1px solid rgba(163, 163, 163, 0.38);
+background-color: white;
 }
 
 table#message-threads {
@@ -3745,4 +3751,42 @@ left: 0;
 bottom: 0;
 position: relative;
 padding: 2px !important;
+border-radius: 0;
+border: 1px solid rgba(163, 163, 163, 0.38);
+background-color: white;
+}
+
+div.item-list-tabs ul li a span {
+background: rgb(5, 160, 247) !important;
+}
+
+#loggedin_div img {
+border-radius: 0;
+border: 1px solid rgba(163, 163, 163, 0.38);
+padding: 4px;
+top: 12px;
+background-color: white;
+position: relative;
+width: 135px;
+height: 135px;
+}
+
+#object-nav li {
+background-image: url(http://jukubox.com/wp-content/uploads/2013/06/jukuback1.png);
+border: 1px solid rgba(163, 163, 163, 0.38);
+font-size: 12px !important;
+padding-left: 5px;
+position: relative;
+padding-right: 5px;
+margin-right: -6px;
+padding-top: 3px;
+padding-bottom: 3px;
+}
+
+#object-nav li.current.selected {
+border-bottom-color: rgb(253, 253, 253);
+}
+
+div#header {
+background-size: 100%;
 }
