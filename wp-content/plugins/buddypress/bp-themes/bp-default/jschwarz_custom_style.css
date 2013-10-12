@@ -3591,7 +3591,7 @@ a[title="Add Friend"]:hover, a[title="Send a private message to this user."]:hov
 div#item-buttons {
 position: relative;
 float: right;
-top: -47px;
+top: -87px;
 left: 7px;
 }
 
@@ -3647,7 +3647,7 @@ font-size: 13px !important;
 
 div#rates_instruments {
 width: 385px;
-height: 40px;
+height: 80px;
 }
 
 @-moz-document url-prefix() {
@@ -3810,5 +3810,17 @@ margin-right: 4px;
 }
 
 #navigation {
-top: 35px;
+top: 33px !important;
+}
+
+#jukulogo {
+margin-top: 13px !important;
+}
+
+#search-bar .input-append {
+top: -19px;
+}
+
+.rating-top {
+font-size: 12px;
 }
