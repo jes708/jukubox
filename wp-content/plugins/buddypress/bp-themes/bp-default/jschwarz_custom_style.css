@@ -3657,6 +3657,12 @@ overflow: inherit;
 	}
 }
 
+@-moz-document url-prefix() {
+body.bp-user div#members-only-header {
+top: -10px;
+	}
+}
+
 #item-header-content span.rating-top {
 position: relative;
 left: 3px;
