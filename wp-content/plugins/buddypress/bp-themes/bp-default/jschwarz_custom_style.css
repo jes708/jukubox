@@ -336,7 +336,7 @@ margin-right: 3px !important;
 }
 
 
-@media screen and (max-device-width: 480px){
+/* @media screen and (max-device-width: 480px){
     #members-list {
 	min-width: 1000px !important;
     }
@@ -372,6 +372,8 @@ margin-bottom: -7px;
 margin-top: 7px;
 }
 }
+
+*/
 
 /* New changes, pre-30min lesson */
 
