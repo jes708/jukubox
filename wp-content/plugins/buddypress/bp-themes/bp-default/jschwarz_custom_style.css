@@ -3846,7 +3846,10 @@ display: none;
 }
 
 body.page-id-28 div#sidebar {
-/* display: none; */
+width: 175px;
+float: left;
+position: relative;
+left: 225px;
 }
 
 body.page-id-28 div#content .padder {
@@ -3857,8 +3860,11 @@ position: relative;
 }
 
 body.page-id-28 div#content {
+float: right;
 width: 825px !important;
 position: relative;
 }
 
-
+.inst_expander dd {
+/* display: none; */
+}

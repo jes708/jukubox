@@ -457,6 +457,13 @@ jQuery('#serviceForm').ready(function() {
 		jQuery('.field_220 a').attr('target', '_blank');
 		jQuery('.field_6 a').attr('target', '_blank');
 });
+jQuery(document).ready(function() {
+    jQuery('.inst_expander dd').hide();
+    jQuery('.inst_expander dt').click(function(){
+    jQuery(this).nextUntil('dt').slideToggle();
+});
+});
+
 
 //        jQuery(document).ready(function() {
 //                jQuery('.btn.btn-primary.lesson-button.friendship-button.pending_friend.requested.btn-small').prepend('<i class="icon-book"></i>');

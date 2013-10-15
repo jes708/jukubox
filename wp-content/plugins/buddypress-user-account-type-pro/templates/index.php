@@ -152,5 +152,5 @@
 
 	<?php do_action( 'bp_after_directory_members_page' ); ?>
 
-<?php // get_sidebar( 'buddypress' ); ?>
+<?php // get_sidebar( 'teachers', 'buddypress' ); ?>
 <?php get_footer( 'buddypress' ); ?>
