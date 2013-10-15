@@ -10,6 +10,7 @@
 ?>
 
 <?php get_header( 'buddypress' ); ?>
+<?php get_sidebar( 'teachers', 'buddypress' ); ?>
 
 	<?php do_action( 'bp_before_directory_members_page' ); ?>
 
@@ -121,6 +122,15 @@
 				</ul>
 			</div>
 
+<?php echo buatp_get_dir_name() ;?>
+<?php if (buatp_get_dir_name() === "Teacher") : ?>
+<div id="filter_sidebar">
+<?php echo buatp_get_dir_name() ;?>
+
+</div>
+<?php endif; ?>
+
+
 			<div id="members-dir-list" class="members dir-list">
 
 				<?php locate_template( array( 'members/members-loop.php' ), true ); ?>
@@ -142,5 +152,5 @@
 
 	<?php do_action( 'bp_after_directory_members_page' ); ?>
 
-<?php get_sidebar( 'buddypress' ); ?>
+<?php // get_sidebar( 'buddypress' ); ?>
 <?php get_footer( 'buddypress' ); ?>

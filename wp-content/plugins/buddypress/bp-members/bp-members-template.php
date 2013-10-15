@@ -342,14 +342,54 @@ function bp_members_pagination_count() {
 		$to_num    = bp_core_number_format( ( $start_num + ( $members_template->pag_num - 1 ) > $members_template->total_member_count ) ? $members_template->total_member_count : $start_num + ( $members_template->pag_num - 1 ) );
 		$total     = bp_core_number_format( $members_template->total_member_count );
 
+$schwurl = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
+if (( strpos($schwurl,'teachers') !== false ) || ( strpos($schwurl,'admin-ajax.php') !== false )) {   
+	$viewing_group = 'teachers';
+} elseif ( strpos($schwurl,'students') !== false ) {
+	$viewing_group = 'students';
+} else {
+	$viewing_group = 'members';
+}
+
+
+
+
+
+
+
+
+
+
+
+
 		if ( 'active' == $members_template->type )
-			$pag = sprintf( __( 'Viewing member %1$s to %2$s (of %3$s active members)', 'buddypress' ), $from_num, $to_num, $total );
+//			$pag = sprintf( __( 'Viewing member %1$s to %2$s (of %3$s active members)', 'buddypress' ), $from_num, $to_num, $total );
+	if ($total === 1) {
+$pag = sprintf( __( '1 result for %1$s', 'buddypress' ), $viewing_group );
+	} else {
+$pag = sprintf( __( '%1$s results for %2$s %3$s', 'buddypress' ), $total, $viewing_group, $instrument );
+}
 		else if ( 'popular' == $members_template->type )
-			$pag = sprintf( __( 'Viewing member %1$s to %2$s (of %3$s members with friends)', 'buddypress' ), $from_num, $to_num, $total );
+        if ($total === 1) {
+$pag = sprintf( __( '1 result for %1$s with friends', 'buddypress' ), $viewing_group );
+        } else {
+$pag = sprintf( __( '%1$s results for %2$s with friends', 'buddypress' ), $total, $viewing_group );
+}
+//			$pag = sprintf( __( 'Viewing member %1$s to %2$s (of %3$s members with friends)', 'buddypress' ), $from_num, $to_num, $total );
 		else if ( 'online' == $members_template->type )
-			$pag = sprintf( __( 'Viewing member %1$s to %2$s (of %3$s members online)', 'buddypress' ), $from_num, $to_num, $total );
+        if ($total === 1) {
+$pag = sprintf( __( '1 result for %1$s online', 'buddypress' ), $viewing_group );
+        } else {
+$pag = sprintf( __( '%1$s results for %2$s online', 'buddypress' ), $total, $viewing_group );
+}
+//			$pag = sprintf( __( 'Viewing member %1$s to %2$s (of %3$s members online)', 'buddypress' ), $from_num, $to_num, $total );
 		else
-			$pag = sprintf( __( 'Viewing member %1$s to %2$s (of %3$s members)', 'buddypress' ), $from_num, $to_num, $total );
+        if ($total === 1) {
+$pag = sprintf( __( '1 result for %1$s', 'buddypress' ), $viewing_group );
+        } else {
+$pag = sprintf( __( '%1$s results for %2$s', 'buddypress' ), $total, $viewing_group );
+}
+//			$pag = sprintf( __( 'Viewing member %1$s to %2$s (of %3$s members)', 'buddypress' ), $from_num, $to_num, $total );
 
 		return apply_filters( 'bp_members_pagination_count', $pag );
 	}

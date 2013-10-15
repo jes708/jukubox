@@ -3832,3 +3832,33 @@ top: -19px;
 .rating-top {
 font-size: 12px;
 }
+
+body.page-id-28 {
+background-image: url(http://jukubox.com/wp-content/uploads/2013/07/cardboard_flat2.png);
+}
+
+body.page-id-28 div#container {
+background: rgba(255, 255, 255, 1);
+}
+
+#members-directory-form h3 {
+display: none;
+}
+
+body.page-id-28 div#sidebar {
+/* display: none; */
+}
+
+body.page-id-28 div#content .padder {
+border-right: none;
+margin-right: 0;
+width: 787px !important;
+position: relative;
+}
+
+body.page-id-28 div#content {
+width: 825px !important;
+position: relative;
+}
+
+
