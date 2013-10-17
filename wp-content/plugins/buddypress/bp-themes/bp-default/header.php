@@ -32,7 +32,7 @@ echo $nowie;*/
 		
 		<?php wp_enqueue_style( 'bootstrap_css', get_template_directory_uri() . '/bootstrap/css/bootstrap.min.css' ); ?>	
 		<?php wp_enqueue_script( 'bootstrap_js', get_template_directory_uri() . '/bootstrap/js/bootstrap.min.js' ); ?>
-		<?php wp_head(); ?>
+	<?php wp_head(); ?>
 		
 		
 		<link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri(); ?>/finch_custom_style.css" />
@@ -120,6 +120,17 @@ echo '</pre>'; */
 
 							<?php //echo bp_search_form_type_select(); ?>
 							<?php //wp_nonce_field( 'bp_search_form' ); ?>
+
+
+<?php if( is_user_logged_in() ) :
+      global $current_user;
+      get_currentuserinfo();
+      $username_for_envelope = $current_user->user_login; ?>
+
+<a id="header_messages" href="<?php echo get_home_url() . '/members/' . $username_for_envelope . '/messages'; ?>"<i class="icon-envelope icon-2x"></i><div id="header_unread"><?php echo messages_get_unread_count(); ?></div></a>
+
+<?php endif; ?>
+
 </div>
 						</form><!-- #search-form -->
 
