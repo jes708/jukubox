@@ -81,7 +81,7 @@
 			?>
 
 		<div id="inst_holder"> 	
-			<label for="search-by-instrument">Instrument:</label>	 
+<!--			<label for="search-by-instrument">Instrument:</label>	--> 
 			<select id="search-by-instrument">
 				<option value="none"> </option>	
 				<?php foreach( $instruments_array as $key => $value ): ?>
@@ -121,15 +121,6 @@
 					</li>
 				</ul>
 			</div>
-
-<?php echo buatp_get_dir_name() ;?>
-<?php if (buatp_get_dir_name() === "Teacher") : ?>
-<div id="filter_sidebar">
-<?php echo buatp_get_dir_name() ;?>
-
-</div>
-<?php endif; ?>
-
 
 			<div id="members-dir-list" class="members dir-list">
 

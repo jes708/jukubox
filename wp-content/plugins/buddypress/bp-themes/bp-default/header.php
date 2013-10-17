@@ -18,7 +18,6 @@ echo $nowie;*/
 		<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 
 		<?php do_action( 'bp_head' ); ?>
-	
 		
 		<?php wp_enqueue_script( 'carouFredSel', get_template_directory_uri() . '/carouFredSel-6.2.1/jquery.carouFredSel-6.2.1-packed.js' ); ?>
 				

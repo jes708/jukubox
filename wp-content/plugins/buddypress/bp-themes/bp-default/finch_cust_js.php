@@ -457,10 +457,32 @@ jQuery('#serviceForm').ready(function() {
 		jQuery('.field_220 a').attr('target', '_blank');
 		jQuery('.field_6 a').attr('target', '_blank');
 });
+
+
+//jQuery(document).ready(function() {
+//    jQuery('.inst_expander > dt.now_expanded').click(function(){
+//    jQuery(this)nextUntil('dt').slideToggle();
+//    jQuery(this).addClass('now_closed');
+//    jQuery(this).removeClass('now_expanded');
+//};
+//});
+
 jQuery(document).ready(function() {
-    jQuery('.inst_expander dd').hide();
-    jQuery('.inst_expander dt').click(function(){
+    jQuery('.inst_expander > dt.now_expanded').click(function(){
     jQuery(this).nextUntil('dt').slideToggle();
+//    jQuery(this).toggleClass('now_expanded now_closed');
+    return false;
+});
+});
+
+
+jQuery(document).ready(function() {
+    jQuery('.inst_expander > dt').click(function(){
+//    jQuery('dt.now_expanded').nextUntil('dt').slideToggle();
+//    jQuery('dt.now_expanded').toggleClass('now_closed now_expanded');
+    jQuery(this).nextUntil('dt').slideToggle();
+    jQuery(this).toggleClass('now_expanded now_closed');
+    jQuery(this).find('a > i').toggleClass('icon-plus-sign-alt icon-minus-sign-alt');
 });
 });
 

@@ -3837,34 +3837,89 @@ body.page-id-28 {
 background-image: url(http://jukubox.com/wp-content/uploads/2013/07/cardboard_flat2.png);
 }
 
-body.page-id-28 div#container {
-background: rgba(255, 255, 255, 1);
-}
-
 #members-directory-form h3 {
 display: none;
 }
 
 body.page-id-28 div#sidebar {
+background: transparent;
 width: 175px;
 float: left;
 position: relative;
-left: 225px;
+left: 210px;
 }
 
 body.page-id-28 div#content .padder {
 border-right: none;
 margin-right: 0;
-width: 787px !important;
+width: 802px !important;
 position: relative;
+/*top: -81px;
+overflow: hidden;
+background: white;*/
 }
 
 body.page-id-28 div#content {
+background: white;
+margin-top: -81px;
 float: right;
-width: 825px !important;
+width: 840px !important;
 position: relative;
 }
 
-.inst_expander dd {
-/* display: none; */
+/* body.page-id-28 div#sidebar dt {
+margin-left: 1px;
+} */
+
+body.page-id-28 div#sidebar dt {
+font-size: 13px;
+margin-bottom: 5px;
 }
+
+body.page-id-28 div#sidebar dd a {
+color: black;
+line-height: 10px;
+font-size: 13px;
+left: 10px;
+position: relative;
+}
+
+body.page-id-28 div#sidebar dd a:hover {
+color: gray;
+text-decoration: none;
+}
+
+#navigation {
+left: 15px;
+}
+
+#side_inst_list dd {
+display: none;
+margin-top: 10px;
+top: 2px;
+}
+
+.see_dd i {
+float: right;
+top: 3px;
+position: relative;
+color: rgb(146, 146, 146);
+text-decoration: none;
+cursor: pointer;
+}
+
+#search-by-instrument {
+display: none;
+}
+
+body.page-id-28 div#subnav {
+position: relative;
+top: 68px;
+z-index: 10;
+border-bottom: none;
+}
+
+#finchTeachTab {
+display: none;
+}
+

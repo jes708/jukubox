@@ -24,7 +24,7 @@
 
 		</div>
 
-		<div class="pagination-links" id="member-dir-pag-top">
+			<div class="pagination-links" id="member-dir-pag-top">
 
 			<?php bp_members_pagination_links(); ?>
 
@@ -32,7 +32,7 @@
 
 	</div>
 
-	<?php do_action( 'bp_before_directory_members_list' ); ?>
+<?php do_action( 'bp_before_directory_members_list' ); ?>
 <h1>TEST!</h1>	
 	<ul id="members-list" class="item-list" role="main">
 
