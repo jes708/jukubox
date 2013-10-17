@@ -127,7 +127,17 @@ echo '</pre>'; */
       get_currentuserinfo();
       $username_for_envelope = $current_user->user_login; ?>
 
-<a id="header_messages" href="<?php echo get_home_url() . '/members/' . $username_for_envelope . '/messages'; ?>"<i class="icon-envelope icon-2x"></i><div id="header_unread"><?php echo messages_get_unread_count(); ?></div></a>
+<a id="header_messages" href="<?php echo get_home_url() . '/members/' . $username_for_envelope . '/messages'; ?>"<i class="icon-envelope icon-2x"></i>
+
+<?php $head_unread_msg = messages_get_unread_count();
+if($head_unread_msg !== 0) :
+ ?>
+
+<div id="header_unread"><?php echo $head_unread_msg; ?></div>
+
+<?php endif; ?>
+
+</a>
 
 <?php endif; ?>
 

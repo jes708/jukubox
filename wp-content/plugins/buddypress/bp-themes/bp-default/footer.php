@@ -29,9 +29,9 @@
 			<div id="foot_follow">
 				<p>Follow us</p>
 				<div id="foot_buttons">
-				<a href="https://www.facebook.com/JukuboxOfficial"><div id="follow_fb"></div></a>
-                                <a href="https://twitter.com/jukuboxofficial"><div id="follow_tw"></div></a>
-                                <a href="http://www.youtube.com/jukuboxofficial"><div id="follow_yt"></div></a>
+				<h1 id="fb_link_button" role="button"><a href="https://www.facebook.com/JukuboxOfficial"><img src="<?php echo get_home_url(); ?>/wp-content/uploads/2013/10/FBButton.png"></a></h1>
+				<h1 id="tw_link_button" role="button"><a href="https://twitter.com/JukuboxOfficial"><img src="<?php echo get_home_url(); ?>/wp-content/uploads/2013/10/TwitterButton.png"></a></h1>
+                                <h1 id="yt_link_button" role="button"><a href="https://www.youtube.com/JukuboxOfficial"><img src="<?php echo get_home_url(); ?>/wp-content/uploads/2013/10/YoutubeButton.png"></a></h1>
 				</div>
 			</div>
 			<div id="jukucopyright">
