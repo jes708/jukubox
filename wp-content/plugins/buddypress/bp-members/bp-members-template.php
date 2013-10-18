@@ -367,7 +367,7 @@ if (( strpos($schwurl,'teachers') !== false ) || ( strpos($schwurl,'admin-ajax.p
 	if ($total === 1) {
 $pag = sprintf( __( '1 result for %1$s', 'buddypress' ), $viewing_group );
 	} else {
-$pag = sprintf( __( '%1$s results for %2$s %3$s', 'buddypress' ), $total, $viewing_group, $instrument );
+$pag = sprintf( __( '%1$s results for %2$s', 'buddypress' ), $total, $viewing_group );
 }
 		else if ( 'popular' == $members_template->type )
         if ($total === 1) {

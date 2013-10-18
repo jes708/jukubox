@@ -99,27 +99,28 @@
 			</select>
 		</div> <!-- end inst_holder --> 
 
-				<ul>
+                               <ul>
 
-					<?php do_action( 'bp_members_directory_member_sub_types' ); ?>
-					<li id="members-order-select" class="last filter">
+                                        <?php do_action( 'bp_members_directory_member_sub_types' ); ?>
+                                        <li id="members-order-select" class="last filter">
 
-						<label for="members-order-by"><?php _e( 'Order By:', 'buddypress' ); ?></label>
-						<select id="members-order-by">
-							<option value="active"><?php _e( 'Last Active', 'buddypress' ); ?></option>
-							<option value="newest"><?php _e( 'Newest', 'buddypress' ); ?></option>
+                                                <label for="members-order-by"><?php _e( 'Sort:', 'buddypress' ); ?></label>
+                                                <select id="members-order-by">
+                                                        <option value="active"><?php _e( 'Last Active', 'buddypress' ); ?></option>
+                                                        <option value="newest"><?php _e( 'Newest', 'buddypress' ); ?></option>
 
-							<?php if ( bp_is_active( 'xprofile' ) ) : ?>
+                                                        <?php if ( bp_is_active( 'xprofile' ) ) : ?>
 
-								<option value="alphabetical"><?php _e( 'Alphabetical', 'buddypress' ); ?></option>
+                                                                <option value="alphabetical"><?php _e( 'Alphabetical', 'buddypress' ); ?></option>
 
-							<?php endif; ?>
+                                                        <?php endif; ?>
 
-							<?php do_action( 'bp_members_directory_order_options' ); ?>
+                                                        <?php do_action( 'bp_members_directory_order_options' ); ?>
 
-						</select>
-					</li>
-				</ul>
+                                                </select>
+                                        </li>
+                                </ul>
+
 			</div>
 
 			<div id="members-dir-list" class="members dir-list">

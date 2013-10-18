@@ -50,7 +50,7 @@ get_header( 'buddypress' ); ?>
 
 					<li id="members-order-select" class="last filter">
 
-						<label for="members-order-by"><?php _e( 'Order By:', 'buddypress' ); ?></label>
+						<label for="members-order-by"><?php _e( 'Order:', 'buddypress' ); ?></label>
 						<select id="members-order-by">
 							<option value="active"><?php _e( 'Last Active', 'buddypress' ); ?></option>
 							<option value="newest"><?php _e( 'Newest Registered', 'buddypress' ); ?></option>

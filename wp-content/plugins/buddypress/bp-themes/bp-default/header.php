@@ -139,6 +139,22 @@ if($head_unread_msg !== 0) :
 
 </a>
 
+
+<a id="header_friends" href="<?php echo get_home_url() . '/members/' . $username_for_envelope . '/friends/requests'; ?>"<i class="icon-user icon-2x"></i>
+
+<?php $head_requests = bp_friend_get_total_requests_count();
+if( $head_requests !== 0) :
+ ?>
+
+<div id="header_requested"><?php echo $head_requests; ?></div>
+
+<?php endif; ?>
+
+</a>
+
+
+
+
 <?php endif; ?>
 
 </div>

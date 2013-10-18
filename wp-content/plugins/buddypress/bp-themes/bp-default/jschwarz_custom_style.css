@@ -3948,7 +3948,32 @@ top: -27px;
 left: 13px;
 }
 
-div#header a#header_messages:hover, #header_unread:hover {
+div#header a#header_friends {
+position: relative;
+float: left;
+color: white;
+left: 277px;
+bottom: 11px;
+z-index: 999999999;
+}
+
+#header_requested {
+background: rgba(194, 50, 50, 0.92);
+border: solid 1px rgb(51, 10, 10);
+text-align: center;
+font-family: 'montserrat';
+font-weight: 700;
+border-radius: 3px;
+font-size: 12px;
+text-shadow: 1px 1px 2px rgb(37, 3, 3);
+padding: 0 1px 1px 1px;
+width: 14px;
+height: 14px;
+top: -27px;
+left: 13px;
+}
+
+div#header a#header_friends:hover, #header_friends:hover, div#header a#header_messages:hover, #header_unread:hover {
 text-decoration: none;
 }
 
@@ -5409,3 +5434,81 @@ div#foot_follow img {
 margin-right: 3px;
 }
 
+div#item-nav {
+top: -41px;
+}
+
+#item-header {
+top: 1px;
+position: relative;
+}
+
+#post-62 div.appointments-wrapper img {
+border-radius: 0;
+border: none;
+padding: 0;
+top: 0;
+background-color: transparent;
+position: relative;
+width: auto;
+height: auto;
+}
+
+#navigation {
+left: 33px;
+}
+
+#members-list li {
+padding: 20px 80px 20px 26px;
+}
+
+div.pagination {
+background: transparent;
+color: black;
+font-size: 13px;
+width: 400px;
+}
+
+div#pag-top {
+height: 20px;
+z-index: 10;
+}
+
+div.pagination .pag-count {
+float: left;
+top: 10px;
+position: relative;
+}
+
+#members-order-by {
+width: 125px;
+left: 11px;
+position: relative;
+}
+
+li#members-order-select label {
+font-size: 13px;
+position: relative;
+top: 25px;
+right: 25px;
+}
+
+#field_2 .fval {
+margin-top: -17px;
+color: #000;
+font-size: 13px;
+width: 170px;
+left: 325px;
+letter-spacing: 0.2px;
+}
+
+#field_28 .fval {
+width: 297px !important;
+left: -241px;
+font-size: 13px;
+letter-spacing: 0.2px;
+}
+
+#field_23 {
+right: -138px;
+}

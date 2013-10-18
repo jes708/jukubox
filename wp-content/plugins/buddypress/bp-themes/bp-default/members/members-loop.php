@@ -93,10 +93,10 @@ jQuery('#search-by-instrument').ready(function() {
 	<?php  endif; ?>
 	
 <?php bp_member_user_id(); ?>
-<h1><?php if( $instrument != 'notApplicable' ) { 
-		echo $instrument; 
-	  } ?>
-</h1>
+<?php if( $instrument != 'notApplicable' ) : ?>
+               <?php // echo $instrument;?>
+          <?php endif; ?>
+
 	<div id="pag-top" class="pagination">
 		<div class="pag-count" id="member-dir-count-top">
 
