@@ -5497,18 +5497,22 @@ right: 25px;
 margin-top: -17px;
 color: #000;
 font-size: 13px;
-width: 170px;
+width: 193px;
 left: 325px;
 letter-spacing: 0.2px;
 }
 
 #field_28 .fval {
 width: 297px !important;
-left: -241px;
+left: -263px;
 font-size: 13px;
 letter-spacing: 0.2px;
 }
 
 #field_23 {
 right: -138px;
+}
+
+#field_28 {
+bottom: auto !important;
 }
