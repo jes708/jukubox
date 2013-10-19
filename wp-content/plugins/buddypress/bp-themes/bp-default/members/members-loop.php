@@ -104,11 +104,11 @@ jQuery('#search-by-instrument').ready(function() {
 
 		</div>
 
-		<div class="pagination-links" id="member-dir-pag-top">
+<!--		<div class="pagination-links" id="member-dir-pag-top">
 
-			<?php bp_members_pagination_links(); ?>
+			<?php // bp_members_pagination_links(); ?>
 
-		</div>
+		</div> -->
 
 	</div>
 

@@ -3833,7 +3833,7 @@ top: -19px;
 font-size: 12px;
 }
 
-body.page-id-28 {
+body.page-id-28, body.directory.members {
 background-image: url(http://jukubox.com/wp-content/uploads/2013/07/cardboard_flat2.png);
 }
 
@@ -3841,7 +3841,7 @@ background-image: url(http://jukubox.com/wp-content/uploads/2013/07/cardboard_fl
 display: none;
 }
 
-body.page-id-28 div#sidebar {
+body.directory.members div#sidebar, body.page-id-28 div#sidebar {
 background: transparent;
 width: 175px;
 float: left;
@@ -3849,7 +3849,7 @@ position: relative;
 left: 210px;
 }
 
-body.page-id-28 div#content .padder {
+body.directory.members div#content .padder, body.page-id-28 div#content .padder {
 border-right: none;
 margin-right: 0;
 width: 802px !important;
@@ -3859,7 +3859,7 @@ overflow: hidden;
 background: white;*/
 }
 
-body.page-id-28 div#content {
+body.directory.members div#content, body.page-id-28 div#content {
 background: white;
 margin-top: -81px;
 float: right;
@@ -3871,12 +3871,12 @@ position: relative;
 margin-left: 1px;
 } */
 
-body.page-id-28 div#sidebar dt {
+body.directory.members div#sidebar dt, body.page-id-28 div#sidebar dt {
 font-size: 13px;
 margin-bottom: 5px;
 }
 
-body.page-id-28 div#sidebar dd a {
+body.directory.members div#sidebar dd a, body.page-id-28 div#sidebar dd a {
 color: black;
 line-height: 10px;
 font-size: 13px;
@@ -3884,7 +3884,7 @@ left: 10px;
 position: relative;
 }
 
-body.page-id-28 div#sidebar dd a:hover {
+body.directory.members div#sidebar dd a:hover, body.page-id-28 div#sidebar dd a:hover {
 color: gray;
 text-decoration: none;
 }
@@ -3912,7 +3912,7 @@ cursor: pointer;
 display: none;
 }
 
-body.page-id-28 div#subnav {
+body.directory.members div#subnav, body.page-id-28 div#subnav {
 position: relative;
 top: 68px;
 z-index: 10;
@@ -5480,7 +5480,7 @@ top: 10px;
 position: relative;
 }
 
-#members-order-by {
+#members-friends, #members-order-by {
 width: 125px;
 left: 11px;
 position: relative;
@@ -5494,11 +5494,9 @@ right: 25px;
 }
 
 #field_2 .fval {
-margin-top: -17px;
 color: #000;
 font-size: 13px;
 width: 193px;
-left: 325px;
 letter-spacing: 0.2px;
 }
 
@@ -5516,3 +5514,93 @@ right: -138px;
 #field_28 {
 bottom: auto !important;
 }
+
+body.friends.bp-user #members-all, body.directory.members #members-all {
+display: none;
+}
+
+body.directory.members div#content {
+margin-top: -106px;
+}
+
+body.friends.bp-user div.lesson-button-wrapper a, body.directory.members div.lesson-button-wrapper a {
+display: none;
+}
+
+.bp-user div#container {
+left: 0px;
+}
+
+body.friends.bp-user .action .rating-top, body.directory.members .action .rating-top, body.page-id-28 .action .rating-top {
+right: 19px !important;
+top: 107px !important;
+}
+
+body.page-id-28 div.generic-button {
+top: -9px !important;
+}
+
+body.friends.bp-user #field_23, body.page-id-28 #field_23, body.directory.members #field_23 {
+bottom: 13px !important;
+}
+
+body.friends.bp-user p#field_2, body.page-id-28 p#field_2, body.directory.members p#field_2 {
+left: 325px;
+position: relative;
+height: 119px;
+top: -17px;
+overflow: hidden;
+}
+
+body.friends.bp-user .action .rating-top, body.directory.members .action .rating-top, body.page-id-28 .action .rating-top {
+right: -492px !important;
+top: 107px !important;
+float: left;
+}
+
+#members-list #field_23 {
+float: left;
+position: relative;
+top: 49px;
+left: 231px;
+}
+
+body.page-id-28 div.generic-button a.btn-gray {
+float: left;
+clear: both;
+left: 506px;
+}
+
+body.page-id-28 div.generic-button a.btn-primary {
+float: left;
+clear: both;
+left: 506px;
+}
+
+body.friends.bp-user div.generic-button a.btn-gray, body.directory.members div.generic-button a.btn-gray {
+float: left;
+clear: both;
+left: 506px;
+}   
+    
+body.friends.bp-user div.generic-button a.btn-primary, body.directory.members div.generic-button a.btn-primary {
+float: left; 
+clear: both;
+left: 506px;
+}
+
+body.friends.bp-user #members-list .action .btn, body.directory.members #members-list .action .btn {
+top: -16px;
+}
+
+body.page-id-28 #members-list .action .btn {
+top: -2px !important;
+}
+
+body.logged-in.page-id-28 div.generic-button a.btn-primary {
+margin-top: 4px !important;
+}
+
+div#pag-bottom .pag-count {
+top: 13px;
+}    

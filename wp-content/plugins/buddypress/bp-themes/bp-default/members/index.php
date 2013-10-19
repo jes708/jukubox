@@ -8,6 +8,7 @@
  */
 
 get_header( 'buddypress' ); ?>
+<?php get_sidebar( 'members', 'buddypress' ); ?>
 
 	<?php do_action( 'bp_before_directory_members_page' ); ?>
 
@@ -50,7 +51,7 @@ get_header( 'buddypress' ); ?>
 
 					<li id="members-order-select" class="last filter">
 
-						<label for="members-order-by"><?php _e( 'Order:', 'buddypress' ); ?></label>
+						<label for="members-order-by"><?php _e( 'Sort:', 'buddypress' ); ?></label>
 						<select id="members-order-by">
 							<option value="active"><?php _e( 'Last Active', 'buddypress' ); ?></option>
 							<option value="newest"><?php _e( 'Newest Registered', 'buddypress' ); ?></option>
@@ -89,5 +90,5 @@ get_header( 'buddypress' ); ?>
 
 	<?php do_action( 'bp_after_directory_members_page' ); ?>
 
-<?php get_sidebar( 'buddypress' ); ?>
+<?php // get_sidebar( 'buddypress' ); ?>
 <?php get_footer( 'buddypress' ); ?>
