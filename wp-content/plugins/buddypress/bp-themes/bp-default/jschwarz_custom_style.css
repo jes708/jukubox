@@ -5443,15 +5443,15 @@ top: 1px;
 position: relative;
 }
 
-#post-62 div.appointments-wrapper img {
+img.wait_img, #post-62 div.appointments-wrapper img {
 border-radius: 0;
 border: none;
 padding: 0;
 top: 0;
 background-color: transparent;
 position: relative;
-width: auto;
-height: auto;
+width: auto !important;
+height: auto !important;
 }
 
 #navigation {
@@ -5558,9 +5558,10 @@ top: 107px !important;
 float: left;
 }
 
-#members-list #field_23 {
+#members-list #field_221, #members-list #field_23 {
 float: left;
 position: relative;
+clear: both;
 top: 49px;
 left: 231px;
 }
@@ -5623,6 +5624,10 @@ position: relative;
 top: 66px;
 }
 
+#members-list #field_221 {
+top: 86px;
+}
+
 body.friends.bp-user p#field_2, body.page-id-28 p#field_2, body.directory.members p#field_2 {
 left: 315px;
 }
@@ -5635,12 +5640,12 @@ right: -484px !important;
 right: 22px;
 }
 
-#members-list #field_23 {
+#members-list #field_221, #members-list #field_23 {
 left: 223px;
 }
 
 @-moz-document url-prefix() {
-body.friends.bp-user #field_23 .fval, body.directory.members #field_23 .fval, body.page-id-28  #field_23 .fval, body.friends.bp-user #field_28 .fval, body.directory.members #field_28 .fval, body.page-id-28  #field_28 .fval, body.friends.bp-user #field_2 .fval, body.directory.members #field_2 .fval, body.page-id-28  #field_2 .fval {
+body.friends.bp-user #field_221 .fval, body.directory.members #field_221 .fval, body.page-id-28  #field_221 .fval, body.friends.bp-user #field_23 .fval, body.directory.members #field_23 .fval, body.page-id-28  #field_23 .fval, body.friends.bp-user #field_28 .fval, body.directory.members #field_28 .fval, body.page-id-28  #field_28 .fval, body.friends.bp-user #field_2 .fval, body.directory.members #field_2 .fval, body.page-id-28  #field_2 .fval {
     letter-spacing: -0.3px;
 }    
 }
@@ -5702,4 +5707,89 @@ cursor: initial;
 #subnav ul a {
 color: rgb(35, 63, 150);
 font-size: 13px;
+}
+
+p#field_28 {
+position: relative;
+bottom: 121px !important;
+max-width: 400px;
+left: -12px
+}
+
+#field_28 .fval {
+width: 297px !important;
+font-size: 13px;
+letter-spacing: 0.2px;
+left: 0;
+}
+
+#members-list #field_221 {
+top: 83px;
+}
+
+#members-list #field_23 {
+top: 65px;
+}
+
+#members-list #field_221, #members-list #field_23 {
+left: 536px;
+position: absolute;
+}
+
+#profile-edit-form .editfield.field_23, #profile-edit-form .editfield.field_221 {
+display: none;
+}
+
+body.friends.bp-user #members-order-select label {
+left: -199px;
+}
+
+body.friends.bp-user.my-account select#members-friends {
+left: -165px;
+}
+
+body.directory.members li#members-order-select label {
+right: 34px;
+cursor: initial;
+}
+
+#post-62 img {
+border-radius: 0;
+border: none;
+padding: 0;
+top: 0;
+background-color: transparent;
+position: relative;
+width: auto;
+height: auto;
+}
+
+#post-62 img.avatar {
+border-radius: 0;
+border: 1px solid rgba(163, 163, 163, 0.38);
+padding: 4px;
+top: 12px;
+background-color: white;
+position: relative;
+width: 135px;
+height: 135px;
+}
+
+#post-62 img.wait_img {
+left: 5px;
+}
+
+@-moz-document url-prefix() {
+body.bp-user div#members-only-header {
+    top: -15px;
+}
+body.bp-user div#content .padder {
+    border: medium none;
+    top: -8px;
+    position: relative;
+}
+}
+
+body.xprofile.bp-user.profile div.profile tr.field_23, body.xprofile.bp-user.profile div.profile tr.field_221 {
+display: none;
 }
