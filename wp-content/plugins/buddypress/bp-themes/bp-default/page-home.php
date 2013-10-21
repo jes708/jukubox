@@ -143,14 +143,14 @@
         <?php endwhile; ?>
 <?php endif; ?>
 
-  <?php    if ( bp_has_members( 'include=31' ) ) : // NHF CODE CODE ?>
+  <?php    if ( bp_has_members( 'include=406' ) ) : // NHF CODE CODE ?>
 
 
         <?php while ( bp_members() ) : bp_the_member(); ?>
                 <li>
                         <div class="span4" style="float: left;">
                         <div class="finchsizer">
-                        <a href="<?php bp_member_permalink(); ?>profile"><img class="fTeachImage" src="../../../../wp-content/uploads/2013/10/David-Feature-small.jpg"></a>
+                        <a href="<?php bp_member_permalink(); ?>profile"><img class="fTeachImage" src="../../../../wp-content/uploads/2013/10/Bob_Ferrel.jpg"></a>
                                 <div class="featured-about">
                                                         <div class="featured-info">
                         <a href="<?php bp_member_permalink(); ?>profile"> <h4><?php  bp_member_name(); ?></h4> </a>

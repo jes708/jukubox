@@ -5435,7 +5435,7 @@ margin-right: 3px;
 }
 
 div#item-nav {
-top: -41px;
+top: -42px;
 }
 
 #item-header {
@@ -5598,9 +5598,108 @@ top: -2px !important;
 }
 
 body.logged-in.page-id-28 div.generic-button a.btn-primary {
-margin-top: 4px !important;
+margin-top: 5px !important;
 }
 
 div#pag-bottom .pag-count {
 top: 13px;
+}
+
+body.friends.bp-user .action .rating-top, body.directory.members .action .rating-top, body.page-id-28 .action .rating-top {
+top: 6px !important;
+}
+
+.rating-top img {
+top: 1px;
+position: relative;
+}
+
+body.directory.members .action div.generic-button, body.page-id-28 .action div.generic-button {
+margin-top: 37px !important;
+position: relative;
+}
+
+#members-list #field_23 {
+top: 66px;
+}
+
+body.friends.bp-user p#field_2, body.page-id-28 p#field_2, body.directory.members p#field_2 {
+left: 315px;
+}
+
+body.friends.bp-user .action .rating-top, body.directory.members .action .rating-top, body.page-id-28 .action .rating-top {
+right: -484px !important;
+}
+
+#members-list .generic-button.friendship-button.is_friend, #members-list .generic-button.friendship-button.not_friends, #members-list .generic-button.friendship-button.pending_friend.add, #members-list .generic-button.friendship-button.pending_friend {
+right: 22px;
+}
+
+#members-list #field_23 {
+left: 223px;
+}
+
+@-moz-document url-prefix() {
+body.friends.bp-user #field_23 .fval, body.directory.members #field_23 .fval, body.page-id-28  #field_23 .fval, body.friends.bp-user #field_28 .fval, body.directory.members #field_28 .fval, body.page-id-28  #field_28 .fval, body.friends.bp-user #field_2 .fval, body.directory.members #field_2 .fval, body.page-id-28  #field_2 .fval {
+    letter-spacing: -0.3px;
 }    
+}
+
+#members-order-by {
+left: 178px;
+}
+
+#members-friends {
+left: 7px;
+}
+
+body.directory.members #members-order-by {
+left: 170px;
+}
+
+li#members-order-select label {
+right: 29px;
+cursor: initial;
+}
+
+#header #search-bar input[type=text] {
+border: none;
+}
+
+#jukulogo {
+margin-top: 16px !important;
+}
+
+#search-bar .input-append {
+top: -13px;
+}
+
+div#header a#header_friends, div#header a#header_messages {
+bottom: 4px;
+}
+
+#nav {
+top: -49px;
+}
+
+#header #search-bar {
+margin-top: 16px;
+}
+
+#item-body {
+position: relative;
+bottom: 40px;
+}
+
+#subnav li:nth-of-type(1) {
+text-indent: 171px;
+}
+
+body.friends.bp-user li#members-order-select label {
+cursor: initial;
+}
+
+#subnav ul a {
+color: rgb(35, 63, 150);
+font-size: 13px;
+}
