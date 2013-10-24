@@ -162,6 +162,7 @@ if( $head_requests !== 0) :
 
 				<?php do_action( 'bp_search_login_bar' ); ?>
 
+
 				</div><!-- .padder -->
 			</div><!-- #search-bar -->
 
@@ -170,9 +171,11 @@ if( $head_requests !== 0) :
 				<?php wp_nav_menu( array( 'container' => false, 'menu_id' => 'nav', 'theme_location' => 'primary', 'fallback_cb' => 'bp_dtheme_main_nav' ) ); ?>
 			    </div><!-- end nav_wrapper --> 
 			</div>
-
-<div id="login_fancy">
+<div id="loginFancyBox">
+	<div class="login_padder">
+	<img src="../../../../wp-content/uploads/2013/10/LoginBox2.png">
 	<?php echo do_shortcode("[sp_login_shortcode]"); ?>
+	</div>
 </div>
 
 <div id="members-only-header" style="display:none;">

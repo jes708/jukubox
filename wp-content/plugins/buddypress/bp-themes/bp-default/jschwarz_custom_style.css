@@ -5793,3 +5793,97 @@ body.bp-user div#content .padder {
 body.xprofile.bp-user.profile div.profile tr.field_23, body.xprofile.bp-user.profile div.profile tr.field_221 {
 display: none;
 }
+
+#loginFancyBox img {
+width: 305px;
+height: 205px;
+opacity: .9;
+opacity: .95;
+position: relative;
+left: 700px;
+bottom: 55px;
+z-index: 1000;
+}
+
+#loginFancyBox {
+height: 0;
+}
+
+#pw_login_widget-2 {
+position: relative;
+z-index: 1001;
+left: 407px;
+bottom: 85px;
+}
+
+.sp-widget-login-div input#user_login {
+width: 248px;
+height: 22px;
+position: relative;
+top: 12px;
+padding-left: 9px !important;
+}
+
+.sp-widget-login-div input#user_pass {
+width: 247px;
+height: 24px;
+position: relative;
+top: -3px;
+padding-left: 9px;
+}
+
+.sp-widget-login-div .btn.btn-primary {
+width: 264px;
+height: 40px;
+position: relative;
+bottom: 6px;
+}
+
+#pw_login_widget-2 a {
+color: rgb(5, 160, 247) !important;
+font-size: 13px;
+letter-spacing: -0.2px;
+text-decoration: none;
+}
+
+.sp-widget-login-div ul {
+position: relative;
+left: 40px;
+}
+
+.login_padder {
+width: 1000px;
+margin: 0 auto !important;
+padding: 19px;
+}
+
+.sp-widget-lost_pass-div .btn.btn-primary {
+width: 264px;
+height: 40px;
+position: relative; 
+bottom: 6px;
+}
+
+#lost_pass_u_or_e {
+width: 248px;
+height: 22px;
+position: relative;
+top: -3px;
+padding-left: 9px !important;
+}
+
+.sp-widget-lost_pass-div ul {
+position: relative;
+left: 94px;
+}
+
+#pw_login_widget-2 input::-webkit-input-placeholder {
+font-size: 13px !important;
+font-family: 'open sans' sans-serif;
+}
+
+#pw_login_widget-2 input::-moz-placeholder {
+font-family: 'open sans' sans-serif;
+font-size: 13px !important;
+}
+

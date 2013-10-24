@@ -420,14 +420,14 @@ class Pw_Login_Widget extends WP_Widget
 					</div>
 					<div class='sp-widget-login-div' <?php echo $hide_login_div; ?>>
 					<form method="post" action="<?php bloginfo('url') ?>/wp-login.php" class="wp-user-form">
-					<p><label for='user_login'><?php _e('Username: ', 'pwLogWi') ?></label></p>
-					<p ><input id='user_login' type='text' name='log' required='required' /></p>
-					<p ><label for='user_pass'><?php _e('Password: ', 'pwLogWi') ?></label></p>
-					<p ><input id='user_pass' type='password' name='pwd' required='required' /></p>
+<!--					<p><label for='user_login'><?php // _e('Username: ', 'pwLogWi') ?></label></p> -->
+					<p ><input id='user_login' type='text' name='log' placeholder="Username" required='required' /></p>
+<!--					<p ><label for='user_pass'><?php // _e('Password: ', 'pwLogWi') ?></label></p> -->
+					<p ><input id='user_pass' type='password' name='pwd' placeholder="Password" required='required' /></p>
 					<?php if ($include_remember_me){?>
 					<p ><label for='rememberme1' ><input type='checkbox' name='rememberme' value='forever' <?php if ($instance['remember_me_def']=='check_by_default') echo "checked='checked'"; ?> id='rememberme1' /> <?php _e(' Remember me', 'pwLogWi') ?></label></p>
 					<?php }?>
-					<p ><input type="submit" name="user-submit" value="<?php _e('Login', 'pwLogWi')?>" /></p>
+					<p ><input type="submit" class="btn btn-primary" name="user-submit" value="<?php _e('Sign In', 'pwLogWi')?>" /></p>
 					<?php do_action('login_form'); ?>
 					<p>
 					<input type="hidden" name="action" value="login">
@@ -447,7 +447,7 @@ class Pw_Login_Widget extends WP_Widget
 					<?php endif; ?>
 
 <!-- End Schwarz Edit -->
-
+					<li style="font-weight:700; color:rgb(146, 146, 146);">&middot;</li>
 					<li><a class="sp-flipping-link" href='#lost-pass' ><?php _e('Lost your password?', 'pwLogWi') ?></a></li>
 					</ul>
 					
@@ -477,10 +477,10 @@ class Pw_Login_Widget extends WP_Widget
 					<div class='sp-widget-lost_pass-div' style='display:none;'>
 			
 					<form method="post" action='<?php echo site_url('wp-login.php?action=lostpassword', 'login_post'); ?>'>
-					<p ><label for='user_login'><?php _e('Enter your username or email: ', 'pwLogWi') ?></label></p>
-					<p ><input type="text" name="user_login" value="" size="20" id="user_login" /></p>
+<!--					<p ><label for='user_login'><?php // _e('Enter your username or email: ', 'pwLogWi') ?></label></p> -->
+					<p ><input type="text" id="lost_pass_u_or_e" name="user_login" value="" placeholder="Username or email" size="20" id="user_login" /></p>
 					<?php do_action('login_form', 'resetpass')?>
-					<p><input type="submit" name="user-submit" value="<?php _e('Reset my password', 'pwLogWi') ?>"  /></p>
+					<p><input type="submit" class="btn btn-primary" name="user-submit" value="<?php _e('Reset my password', 'pwLogWi') ?>"  /></p>
 					<p>
 					<input type="hidden" name="action" value="lostpassword">
 					<input type="hidden" name="redirect_to" value="<?php echo empty($_GET)? $_SERVER['REQUEST_URI']."?reset=true" : $_SERVER['REQUEST_URI']."&reset=true"; ?>" />
