@@ -5855,6 +5855,7 @@ left: 40px;
 width: 1000px;
 margin: 0 auto !important;
 padding: 19px;
+display: none;
 }
 
 .sp-widget-lost_pass-div .btn.btn-primary {
@@ -5887,3 +5888,6 @@ font-family: 'open sans' sans-serif;
 font-size: 13px !important;
 }
 
+.loggedout_menu a {
+cursor:pointer;
+}

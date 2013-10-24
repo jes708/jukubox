@@ -185,6 +185,13 @@ jQuery(document).ready(function() {
 	jQuery('#menu-item-844').addClass('loggedin_menu schwarz-logout-app');
 });
 
+jQuery(document).ready(function() {
+        jQuery('.loggedout_menu a').click(function() {
+		jQuery('div.login_padder').toggle();
+	});
+});
+
+
 <?php if( is_user_logged_in() ) : ?>
 jQuery(document).ready(function() { 
         jQuery('.loggedout_menu').remove(); 
