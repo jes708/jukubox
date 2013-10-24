@@ -171,6 +171,10 @@ if( $head_requests !== 0) :
 			    </div><!-- end nav_wrapper --> 
 			</div>
 
+<div id="login_fancy">
+	<?php echo do_shortcode("[sp_login_shortcode]"); ?>
+</div>
+
 <div id="members-only-header" style="display:none;">
 </div>
 
