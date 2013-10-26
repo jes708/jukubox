@@ -178,6 +178,16 @@ if( $head_requests !== 0) :
 	</div>
 </div>
 
+<div id="fade_allow">
+<div id="loginCenterFancyBox">
+</div>
+        <div class="login_center_padder">
+        	<div class="login_contain">
+			<?php echo do_shortcode("[sp_login_shortcode]"); ?>
+        	</div>
+	</div>
+</div>
+
 <div id="members-only-header" style="display:none;">
 </div>
 

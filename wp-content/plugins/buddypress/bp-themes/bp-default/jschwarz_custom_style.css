@@ -5851,7 +5851,7 @@ position: relative;
 left: 40px;
 }
 
-.login_padder {
+.login_padder, .login_center_padder {
 width: 1000px;
 margin: 0 auto !important;
 padding: 19px;
@@ -5890,4 +5890,56 @@ font-size: 13px !important;
 
 .loggedout_menu a {
 cursor:pointer;
+}
+
+div.login_contain {
+width: 304px;
+height: 204px;
+opacity: 1;
+position: fixed;
+bottom: 55px;
+z-index: 10000001;
+background: black;
+border: solid 1px gray;
+border-radius: 15px;
+top: 50%;
+left: 50%;
+margin-top: -102px;
+margin-left: -152px;
+}
+
+#loginCenterFancyBox {
+height: 100%;
+width: 100%;
+background: black;
+opacity: 0.4;
+position: fixed;
+z-index: 10000000;
+top: 0;
+display: none;
+}
+
+div#fade_allow {
+z-index: 10000000;
+height: 0;
+}
+
+#pw_login_widget-2 {
+position: relative;
+z-index: 10000002;
+left: 15px;
+bottom: 8px;
+}
+
+.sp-widget-lost_pass-div {
+top: 51px;
+position: relative;
+}
+
+#navigation {
+left: 0 !important;
+}
+
+#nav {
+left: 20px;
 }

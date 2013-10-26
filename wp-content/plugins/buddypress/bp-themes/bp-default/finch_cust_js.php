@@ -187,8 +187,22 @@ jQuery(document).ready(function() {
 
 jQuery(document).ready(function() {
         jQuery('.loggedout_menu a').click(function() {
-		jQuery('div.login_padder').toggle();
+                jQuery('div#loginCenterFancyBox').fadeToggle();
+		jQuery('div#loginCenterFancyBox').queue(function() {
+                jQuery('div.login_center_padder').toggle();
+		jQuery(this).dequeue();
+		});
 	});
+});
+
+jQuery(document).ready(function() {
+        jQuery('div#loginCenterFancyBox').click(function() {
+                jQuery('div.login_center_padder').toggle();
+                jQuery('div.login_center_padder').queue(function() {
+                jQuery('div#loginCenterFancyBox').fadeToggle();
+		jQuery(this).dequeue();
+                });
+        });
 });
 
 
