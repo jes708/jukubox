@@ -205,6 +205,28 @@ jQuery(document).ready(function() {
         });
 });
 
+<?php if( ! is_user_logged_in() ) : ?>
+jQuery(document).ready(function() { 
+	jQuery('div#item-header-content div#item-buttons div.generic-button a:not(.btn-primary)').removeAttr("href"); 
+        jQuery('div#item-header-content div#item-buttons div.generic-button a:not(.btn-primary)').click(function() {
+                jQuery('div#loginCenterFancyBox').fadeToggle();
+                jQuery('div#loginCenterFancyBox').queue(function() {
+                jQuery('div.login_center_padder').toggle();
+                jQuery(this).dequeue();
+                });
+	});
+}); // document.ready
+<?php endif; ?>
+
+jQuery(document).ready(function() { 
+        jQuery('button.login-callup').click(function() {
+                jQuery('div#loginCenterFancyBox').fadeToggle();
+                jQuery('div#loginCenterFancyBox').queue(function() {
+                jQuery('div.login_center_padder').toggle();
+                jQuery(this).dequeue();
+                });
+        });
+}); // document.ready
 
 <?php if( is_user_logged_in() ) : ?>
 jQuery(document).ready(function() { 

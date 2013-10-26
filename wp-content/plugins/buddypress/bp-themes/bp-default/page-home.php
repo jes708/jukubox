@@ -16,8 +16,8 @@
 	<div><i class="icon-globe icon-large"></i> <p>A roster of world-renowned experts</p></div>
 	<div><i class="icon-home icon-large"></i> <p>Convenience and accessibility</p></div>
 	<div><i class="icon-wrench icon-large"></i> <p>Built by musicians, for musicians</p></div>	
-	<button class="btn btn-large btn-primary" onclick="window.location='<?php echo get_home_url(); ?>/wp-login.php'">Sign In</button>
-        <button class="btn btn-large btn-primary" onclick="window.location='<?php echo get_home_url(); ?>/register'">Sign Up</button>
+	<button class="btn btn-large btn-primary login-callup">Sign In</button>
+        <button class="btn btn-large btn-primary" onclick="window.location='<?php echo get_home_url(); ?>/register'">Register</button>
 
 </div>
 
