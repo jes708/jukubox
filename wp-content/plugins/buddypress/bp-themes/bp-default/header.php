@@ -184,6 +184,7 @@ if( $head_requests !== 0) :
         <div class="login_center_padder">
         	<div class="login_contain">
 			<?php echo do_shortcode("[sp_login_shortcode]"); ?>
+			<div id="login_x_out"><p>&#10006</p></div>
         	</div>
 	</div>
 </div>

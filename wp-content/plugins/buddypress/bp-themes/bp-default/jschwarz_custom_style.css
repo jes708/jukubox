@@ -5899,8 +5899,8 @@ opacity: 1;
 position: fixed;
 bottom: 55px;
 z-index: 10000001;
-background: black;
-border: solid 1px gray;
+background: rgba(0, 0, 0, 0.9);
+border: none;
 border-radius: 15px;
 top: 50%;
 left: 50%;
@@ -5942,4 +5942,70 @@ left: 0 !important;
 
 #nav {
 left: 20px;
+}
+
+#login_x_out {
+background: rgb(250, 250, 250);
+border: solid 3px black;
+height: 16px;
+width: 16px;
+border-radius: 100%;
+position: relative;
+z-index: 10000003;
+font-size: 18px;
+text-align: center;
+bottom: 279px;
+left: 285px;
+cursor: pointer;
+}
+
+#login_x_out p {
+position: relative;
+font-size: 13px !important;
+cursor: pointer;
+bottom: 2px;
+}
+
+@-moz-document url-prefix() {
+body.directory.members div#sidebar, body.page-id-28 div#sidebar {
+clear: both;	
+}
+div#container {
+overflow: visible;
+}
+}
+
+
+#members-order-by {
+left: 6px;
+float: right
+}
+
+li#members-order-select label {
+right: 128px;
+cursor: initial;
+}
+
+body.directory.members #members-order-by {
+left: -1px;
+}
+
+body.directory.members li#members-order-select label {
+right: 134px;
+cursor: initial;
+}
+
+#members-friends {
+left: 8px;
+float: right;
+}
+
+body.friends.bp-user #members-order-select label {
+left: auto;
+}
+
+label#members-friends {
+width: 50px;
+right: 300px;
+position: relative;
 }

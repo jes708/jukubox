@@ -196,7 +196,7 @@ jQuery(document).ready(function() {
 });
 
 jQuery(document).ready(function() {
-        jQuery('div#loginCenterFancyBox').click(function() {
+        jQuery('div#loginCenterFancyBox, #login_x_out').click(function() {
                 jQuery('div.login_center_padder').toggle();
                 jQuery('div.login_center_padder').queue(function() {
                 jQuery('div#loginCenterFancyBox').fadeToggle();
@@ -204,6 +204,8 @@ jQuery(document).ready(function() {
                 });
         });
 });
+
+
 
 <?php if( ! is_user_logged_in() ) : ?>
 jQuery(document).ready(function() { 
