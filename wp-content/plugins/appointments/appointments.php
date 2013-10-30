@@ -4754,7 +4754,7 @@ global $current_user;
 		if(!$price) { 
 			echo '<h2 align="center">Enter your price <a href="' . get_home_url() . '/members/' . $current_user->user_login . '/appointments/name-your-price">here</a>!</h2>'; 
 			} else { 
-				echo '<h2 align="center">Your current price is: $' . $price . ' dollars per hour.</h2>';
+				echo '<h2 align="center">Your current rate is:<a id="appointmentspage_price" href="' . get_home_url() . '/members/' . $current_user->user_login . '/appointments/name-your-price"> $' . $price . '/hour.</a></h2>';
 				echo '<p align="center"><a href="' . get_home_url() . '/teachers-manual/#comPolicies" >See Pricing Policies Here</a></p>';  
 			} // end if/else price
 		} // end if teacher

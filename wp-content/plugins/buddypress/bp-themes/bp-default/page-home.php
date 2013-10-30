@@ -5,6 +5,11 @@
 
 <?php if( !is_user_logged_in() ) : ?>
 
+<section class="f-part-divide black">
+    <section class="f-part-wrap-preamble" style="max-width: 1000px; margin: 0 auto;">
+	
+    </section>
+</section>
 <section class="f-part-divide"> 
     <section class="f-part-wrap" style="max-width: 1000px; margin: 0 auto;"> 
 	<div class="fr-page-banner" id="top-slide" style="background: url(http://jukubox.com/wp-content/uploads/2013/07/Video_Laptop.png) no-repeat left top; height: 350px; width: 100%; margin-top: 35px; margin-bottom: 25px; background-size: 600px 338px; background-position: right 15%;">
@@ -51,6 +56,7 @@
  
 	</div>
     </section>
+</section>
 <section class="f-part-divide grey"> 
     <section class="f-part-wrap dos">
 <!--Schwarz Add-->
@@ -349,7 +355,7 @@ wp_reset_query();
 							if( !$price || $price == '' || $price==0 ) { 
 								echo '<h2 align="center">Enter your price <a href="' . get_home_url() . '/members/' . $current_user->user_login . '/appointments/name-your-price">here</a>!</h2>';
 							} else { 
-								echo '<h2 align="center">Your current lesson price is: $' . $price . ' per hour.</h2>'; 
+								echo '<h2 align="center">Your current rate is:<a id="homepage_price" href="' . get_home_url() . '/members/' . $current_user->user_login . '/appointments/name-your-price"> $' . $price . '/hour.</a></h2>'; 
 							}
 							echo '<p class="homePlaceHold"></p>';   
 							echo '<h3 align="center">Lessons To Teach</h3>';

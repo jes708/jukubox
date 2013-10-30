@@ -39,8 +39,26 @@
 					<label for="signup_username"><?php _e( 'Username', 'buddypress' ); ?> <?php _e( '(required)', 'buddypress' ); ?></label>
 					<?php do_action( 'bp_signup_username_errors' ); ?>
 					<input type="text" name="signup_username" id="signup_username" value="<?php bp_signup_username_value(); ?>" />
+
+
+
+<script>
+jQuery("input#signup_username").on({
+  keydown: function(e) {
+    if (e.which === 32)
+      return false;
+  },
+  change: function() {
+    this.value = this.value.replace(/\s/g, "");
+  }
+});
+</script>
+
+
+
+
 					<!-- NHF edit - included statement about parents if under the age of 14 --> 
-					<label for="signup_email"><?php _e( 'Email Address', 'buddypress' ); ?> <?php _e( '(required - parent\'s email address if under the age of 14)', 'buddypress' ); ?></label>
+					<label for="signup_email"><?php _e( 'Email Address', 'buddypress' ); ?> <?php _e( '(required - parent\'s email if under age 14)', 'buddypress' ); ?></label>
 					<?php do_action( 'bp_signup_email_errors' ); ?>
 					<input type="text" name="signup_email" id="signup_email" value="<?php bp_signup_email_value(); ?>" />
 <div id="su_pw">

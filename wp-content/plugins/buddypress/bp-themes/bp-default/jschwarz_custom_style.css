@@ -6017,3 +6017,12 @@ width: 50px;
 right: 300px;
 position: relative;
 }
+
+a#homepage_price, a#appointmentspage_price {
+color: rgb(5, 160, 247) !important;
+text-decoration: none;
+}
+
+.f-part-divide.black {
+background: black;
+}
