@@ -6025,4 +6025,50 @@ text-decoration: none;
 
 .f-part-divide.black {
 background: black;
+height: 430px;
+}
+
+body.page-id-24 #search-form {
+margin-bottom: -41px;
+}
+
+#Amber_header {
+color: rgb(243, 211, 143);
+float: left;
+position: relative;
+top: 107px;
+font-size: 33px;
+letter-spacing: -0.4px;
+}
+
+#Amber_p {
+color: rgb(243, 211, 143);
+font-weight: 600 !important;
+float: right;
+position: relative;
+left: 278px;
+top: 254px;
+text-align: right;
+text-shadow: 1px 1px 1px black;
+line-height: 18px !important;
+font-size: 14px !important;
+}
+
+#White_home_p {
+color: white;
+float: left;
+position: relative;
+width: 460px;
+clear: both;
+top: 95px;
+font-size: 18px !important;
+line-height: 28px !important;
+font-weight: 300 !important;
+font-family: 'open sans' !important;
+}
+
+div.login_contain {
+background: rgba(16, 18, 43, 0.9);
+border: solid 2px rgb(35, 35, 36);
+box-shadow: 0 0 12px rgba(185, 185, 185, 0);
 }

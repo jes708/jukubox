@@ -5,13 +5,16 @@
 
 <?php if( !is_user_logged_in() ) : ?>
 
-<section class="f-part-divide black">
-    <section class="f-part-wrap-preamble" style="max-width: 1000px; margin: 0 auto;">
-	
+<a href="<?php echo get_home_url() . '/teachers'; ?>"><section class="f-part-divide black">
+    <section class="f-part-wrap preamble" style="max-width: 1000px; margin: 0 auto;">
+	<h1 id="Amber_header">Live-video music lessons </br>with the world's best teachers.</h1>
+	<p id="White_home_p">Our faculty consists of the world's most respected instructors from the top musical conservatories, orchestras, and enterprises.</p>
+	<img style="bottom:110px; height:430px; position:relative; float:right; right:14px;" src="../../../../../wp-content/uploads/2013/10/Dicterow-Header.jpg"> 	
+	<p id="Amber_p">Glenn Dicterow</br><em>Jukubox star faculty</em> member</p>
     </section>
-</section>
+</section></a>
 <section class="f-part-divide"> 
-    <section class="f-part-wrap" style="max-width: 1000px; margin: 0 auto;"> 
+    <section class="f-part-wrap" style="max-width: 1049px; margin: 0 auto; position:relative; left:22px;"> 
 	<div class="fr-page-banner" id="top-slide" style="background: url(http://jukubox.com/wp-content/uploads/2013/07/Video_Laptop.png) no-repeat left top; height: 350px; width: 100%; margin-top: 35px; margin-bottom: 25px; background-size: 600px 338px; background-position: right 15%;">
 
 <div id="selling-points" style="width: 400px; margin-right: -220px; float: left;">
