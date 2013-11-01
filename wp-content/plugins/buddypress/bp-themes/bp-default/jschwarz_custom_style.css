@@ -6072,3 +6072,14 @@ background: rgba(16, 18, 43, 0.9);
 border: solid 2px rgb(35, 35, 36);
 box-shadow: 0 0 12px rgba(185, 185, 185, 0);
 }
+
+@-moz-document url-prefix() { 
+.f-part-divide.black {
+    top: -16px;
+    position: relative;
+}
+}
+
+body.page-id-24 div#content a:first-child {
+text-decoration: none;
+}

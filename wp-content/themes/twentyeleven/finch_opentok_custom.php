@@ -36,8 +36,8 @@
     require_once 'Opentok-PHP-SDK-master/OpenTokArchive.php';
     require_once 'Opentok-PHP-SDK-master/OpenTokSession.php';
 
-    $apiKey = '22459472'; 
-    $apiSecret = '2b9e5d40340c61dfd5a3d65862a167e895aa0538'; 
+    $apiKey = '13712412'; 
+    $apiSecret = 'cfb5605dadf94424ecbb0602dbb5356e0f5e5f4c'; 
 
     // Creating an OpenTok Object
     $apiObj = new OpenTokSDK($apiKey, $apiSecret); 
