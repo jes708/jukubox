@@ -9,7 +9,7 @@
     <section class="f-part-wrap preamble" style="max-width: 1000px; margin: 0 auto;">
 	<h1 id="Amber_header">Live-video music lessons </br>with the world's best teachers.</h1>
 	<p id="White_home_p">Our faculty consists of the world's most respected instructors from the top musical conservatories, orchestras, and enterprises.</p>
-	<img style="bottom:110px; height:430px; position:relative; float:right; right:14px;" src="../../../../../wp-content/uploads/2013/10/Dicterow-Header.jpg"> 	
+	<img style="bottom:110px; height:430px; position:relative; float:right; right:14px;" src="../../../../../wp-content/uploads/2013/11/Dicterow-Header.jpg"> 	
 	<p id="Amber_p">Glenn Dicterow</br><em>Jukubox star faculty</em> member</p>
     </section>
 </section></a>
@@ -112,14 +112,14 @@
 	<?php endwhile; ?>
 <?php endif; ?>
 
-  <?php    if ( bp_has_members( 'include=399' ) ) : // NHF CODE CODE ?>
+  <?php    if ( bp_has_members( 'include=31' ) ) : // NHF CODE CODE ?>
 
 
         <?php while ( bp_members() ) : bp_the_member(); ?>
                 <li>
                         <div class="span4" style="float: left;">
                         <div class="finchsizer">
-                        <a href="<?php bp_member_permalink(); ?>profile"><img class="fTeachImage" src="../../../../wp-content/uploads/2013/10/dicterow_headshot_juku.jpg"></a>
+                        <a href="<?php bp_member_permalink(); ?>profile"><img class="fTeachImage" src="../../../../wp-content/uploads/2013/10/David-Feature-small.jpg"></a>
                                 <div class="featured-about">
                                                         <div class="featured-info">
                         <a href="<?php bp_member_permalink(); ?>profile"> <h4><?php  bp_member_name(); ?></h4> </a>
