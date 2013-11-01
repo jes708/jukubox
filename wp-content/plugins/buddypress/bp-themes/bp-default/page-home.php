@@ -8,9 +8,9 @@
 <a href="<?php echo get_home_url() . '/teachers'; ?>"><section class="f-part-divide black">
     <section class="f-part-wrap preamble" style="max-width: 1000px; margin: 0 auto;">
 	<h1 id="Amber_header">Live-video music lessons </br>with the world's best teachers.</h1>
-	<p id="White_home_p">Our faculty consists of the world's most respected instructors from the top musical conservatories, orchestras, and enterprises.</p>
+	<p id="White_home_p">Our faculty consists of the world's most respected instructors from the top musical conservatories and orchestras.</p>
 	<img style="bottom:110px; height:430px; position:relative; float:right; right:14px;" src="../../../../../wp-content/uploads/2013/11/Dicterow-Header.jpg"> 	
-	<p id="Amber_p">Glenn Dicterow</br><em>Jukubox star faculty</em> member</p>
+	<p id="Amber_p">Glenn Dicterow</br><em>Jukubox faculty</em> member</p>
     </section>
 </section></a>
 <section class="f-part-divide"> 
