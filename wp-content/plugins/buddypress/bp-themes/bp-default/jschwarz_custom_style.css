@@ -6083,3 +6083,9 @@ box-shadow: 0 0 12px rgba(185, 185, 185, 0);
 body.page-id-24 div#content a:first-child {
 text-decoration: none;
 }
+
+.app_services_dropdown_select input {
+display: inline;
+position: relative;
+bottom: 5px;
+}

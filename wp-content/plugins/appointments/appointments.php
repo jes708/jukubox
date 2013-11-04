@@ -1477,7 +1477,7 @@ class Appointments {
 		// when someone switche services
 		$f_provider_id = htmlentities(mysql_real_escape_string($_GET['app_provider_id'])); 		
 
-		$s .= '<input type="button" provider="'.$f_provider_id.'" class="app_services_button" value="'.$show.'">';
+		$s .= '<input type="button" provider="'.$f_provider_id.'" class="btn btn-primary app_services_button" value="'.$show.'">';
 		// end NHF edit
 		$s .= '</div>';
 		$s .= '</div>';
@@ -1516,6 +1516,8 @@ class Appointments {
 		$script .= "var selected_service=$('.app_select_services option:selected').val();";
 		// NHF edit - get the value of the current provider in the input button
 		$script .= "var current_provider = $(this).attr('provider'); /*alert(current_provider);*/"; 
+                // JES add
+                // $script .= "var show_available_clicked = true;";
 		// end NHF
 		// NHF - commented out original line below before edit
 		$script .= "window.location.href='".$href.";";
