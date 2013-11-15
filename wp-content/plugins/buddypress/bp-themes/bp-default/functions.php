@@ -828,14 +828,20 @@ function finch_mysql_query($QueryString, $display_or_return) {
 // NHF - this makes certain services free
 // free services are First lessons, make up lessons (ids 2 and 3) 
 
-function reset_price( $price, $service, $worker, $user ) {
+//function reset_price( $price, $service, $worker, $user ) {
 // Replace 3 with your free service ID
-if ( 2 == $service || 3 == $service   )
-$price = 0;
-return $price;
-}
-add_filter( 'app_paypal_amount', 'reset_price', 10, 4 );
-add_filter( 'app_get_price', 'reset_price', 10, 4 );
+//if ( 2 == $service || 3 == $service || 5 == $service ) {
+//$price = 0;
+//return $price; }
+//elseif ( 4 == $service) {
+//$price = get_halfhour_price($worker);
+//return $price; }
+//elseif ( 1 == $service) {
+//$price = get_price($worker);
+//return $price; }
+//}
+//add_filter( 'app_paypal_amount', 'reset_price', 10, 4 );
+//add_filter( 'app_get_price', 'reset_price', 10, 4 );
 
 
 //NHF CUSTOM AJAX FUNCTIONS
@@ -1649,7 +1655,43 @@ function get_halfhour_price($worker) {
 	return $halfhour_price; 
 
 }
+
+function get_fullhour_price($worker) {
+        $get_fullhour_sql = "SELECT
+                                        price
+                                FROM
+                                        wp_app_workers
+                                WHERE
+                                        ID='" . $worker . "'
+                                ";
+        $get_fullhour_array = finch_mysql_query($get_fullhour_sql, "return");
+
+        $fullhour_price = $get_fullhour_array[0]['price'];
+        return $fullhour_price;
+
+}
+
 // generate hashes for possible lessons
+
+
+function reset_price( $price, $service, $worker, $user ) {
+// Replace 3 with your free service ID
+if ( 2 == $service || 3 == $service || 5 == $service ) {
+$price = 0;
+return $price; }
+elseif ( 4 == $service) {
+$price = get_halfhour_price($worker);
+return $price; }
+elseif ( 1 == $service) {
+$price = get_fullhour_price($worker);
+return $price; }
+}
+add_filter( 'app_paypal_amount', 'reset_price', 10, 4 );
+add_filter( 'app_get_price', 'reset_price', 10, 4 );
+
+
+
+
 function serivces_hash($Total_or_worker, $userId='') { 
     if($Total_or_worker == "total" ) { 
 	$avail_serv_query = "SELECT 
@@ -2071,7 +2113,7 @@ function bp_get_lesson_button( $potential_friend_id = 0, $friend_status = false 
 					'block_self'        => true,
 					'wrapper_class'     => 'lesson-button-wrapper friendship-button pending_friend',
 					'wrapper_id'        => 'friendship-button-' . $potential_friend_id,
-					'link_href'         => wp_nonce_url('/test-appointment/?app_provider_id=' . $potential_friend_id . '&app_service_id=1', 'friends_withdraw_friendship' ),
+					'link_href'         => wp_nonce_url('/test-appointment/?app_provider_id=' . $potential_friend_id . '&app_service_id=0', 'friends_withdraw_friendship' ),
 					'link_text'         => __( '<i class="icon-book icon-large"></i> Book Lesson', 'buddypress' ),
 					'link_title'        => __( 'Schedule a Lesson', 'buddypress' ),
 					'link_id'			=> 'friend-' . $potential_friend_id,
