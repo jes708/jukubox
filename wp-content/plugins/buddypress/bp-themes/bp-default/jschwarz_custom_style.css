@@ -6089,3 +6089,44 @@ display: inline;
 position: relative;
 bottom: 5px;
 }
+
+@media (max-width: 767px){
+#nav {
+display: inline-flex;
+position: relative;
+}
+div#header {
+background-size: 100%;
+top: -15px;
+margin-bottom: 26px;
+}
+#nav li {
+margin-left: -4px !important;
+position: relative;
+}
+body.directory.members #sidebar, body.page-id-28 #sidebar {
+left: -17px !important;
+top: 214px;
+margin-top: -213px;
+}
+}
+
+@media (max-width: 480px) {
+body.directory.members #members-order-by, #members-order-by {
+left: -15px;
+float: right;
+}
+body.directory.members li#members-order-select label, li#members-order-select label {
+right: -479px;
+cursor: initial;
+}
+#subnav li {
+text-indent: 168px !important;
+}
+}
+
+@media only screen and (max-width: 768px) {
+html {
+background-color: transparent !important;
+}
+}
