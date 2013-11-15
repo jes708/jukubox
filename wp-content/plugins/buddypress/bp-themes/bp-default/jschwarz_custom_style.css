@@ -6130,3 +6130,38 @@ html {
 background-color: transparent !important;
 }
 }
+
+.red_hil {
+outline: 4px ridge red;
+}
+
+.btn.btn-primary.app_services_button {
+display: none;
+}
+
+img.new_loader {
+position: relative;
+float: right;
+right: 345px;
+top: 10px !important;
+display: none;
+}
+
+p.new_loader {
+position: relative;
+float: right;
+right: 239px;
+top: 8px !important;
+color: black;
+display: none;
+}
+
+a#homepage_price_2 {
+color: rgb(5, 160, 247) !important;
+text-decoration: none;
+}
+
+input[readonly] {
+cursor: pointer;
+}
+
