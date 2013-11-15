@@ -1404,7 +1404,7 @@ class Appointments {
 		$this->get_lsw();
 		
 		extract( shortcode_atts( array(
-		'select'			=> __('Please select a service:', 'appointments'),
+		'select'			=> __('', 'appointments'),
 		'show'				=> __('Show available times', 'appointments'),
 		'description'		=> 'excerpt',
 		'thumb_size'		=> '96,96',
