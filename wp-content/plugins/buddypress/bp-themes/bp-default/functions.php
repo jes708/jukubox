@@ -508,7 +508,7 @@ function bp_dtheme_blog_comments( $comment, $args, $depth ) {
 				<p>
 					<?php
 						/* translators: 1: comment author url, 2: comment author name, 3: comment permalink, 4: comment date/timestamp*/
-						printf( __( '<a href="%1$s" rel="nofollow">%2$s</a> said on <a href="%3$s"><span class="time-since">%4$s</span></a>', 'buddypress' ), get_comment_author_url(), get_comment_author(), get_comment_link(), get_comment_date() );
+						printf( __( '<a href="%1$s" rel="nofollow">%2$s</a> <!--said on--> <a href="%3$s" style="float:right; padding-right:20px;"><span class="time-since">%4$s</span></a>', 'buddypress' ), get_comment_author_url(), get_comment_author(), get_comment_link(), get_comment_date('F j, Y \a\t g:i a') );
 					?>
 				</p>
 			</div>
@@ -661,16 +661,16 @@ function bp_dtheme_comment_form( $default_labels ) {
 	$req       = get_option( 'require_name_email' );
 	$aria_req  = ( $req ? " aria-required='true'" : '' );
 	$fields    =  array(
-		'author' => '<p class="comment-form-author">' . '<label for="author">' . __( 'Name', 'buddypress' ) . ( $req ? '<span class="required"> *</span>' : '' ) . '</label> ' .
-		            '<input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30"' . $aria_req . ' /></p>',
-		'email'  => '<p class="comment-form-email"><label for="email">' . __( 'Email', 'buddypress' ) . ( $req ? '<span class="required"> *</span>' : '' ) . '</label> ' .
-		            '<input id="email" name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) . '" size="30"' . $aria_req . ' /></p>',
-		'url'    => '<p class="comment-form-url"><label for="url">' . __( 'Website', 'buddypress' ) . '</label>' .
-		            '<input id="url" name="url" type="text" value="' . esc_attr( $commenter['comment_author_url'] ) . '" size="30" /></p>',
+		'author' => '<p class="comment-form-author">' . '<!--<label for="author">' . __( 'Name', 'buddypress' ) . ( $req ? '<span class="required"> *</span>' : '' ) . '</label> -->' .
+		            '<input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30"' . $aria_req . ' placeholder="Name" /></p>',
+		'email'  => '<p class="comment-form-email"><!--<label for="email">' . __( 'Email', 'buddypress' ) . ( $req ? '<span class="required"> *</span>' : '' ) . '</label> -->' .
+		            '<input id="email" name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) . '" size="30"' . $aria_req . ' placeholder="Email (hidden)" /></p>',
+		'url'    => '<p class="comment-form-url"><!--<label for="url">' . __( 'Website', 'buddypress' ) . '</label>-->' .
+		            '<input id="url" name="url" type="text" value="' . esc_attr( $commenter['comment_author_url'] ) . '" size="30" placeholder="Website (optional)" /></p>',
 	);
 
 	$new_labels = array(
-		'comment_field'  => '<p class="form-textarea"><textarea name="comment" id="comment" cols="60" rows="10" aria-required="true"></textarea></p>',
+		'comment_field'  => '<p class="form-textarea"><textarea name="comment" id="comment" cols="60" rows="10" aria-required="true" placeholder="Comment"></textarea></p>',
 		'fields'         => apply_filters( 'comment_form_default_fields', $fields ),
 		'logged_in_as'   => '',
 		'must_log_in'    => '<p class="alert">' . sprintf( __( 'You must be <a href="%1$s">logged in</a> to post a comment.', 'buddypress' ), wp_login_url( get_permalink() ) )	. '</p>',
@@ -698,10 +698,10 @@ function bp_dtheme_before_comment_form() {
 		<div class="avb">
 			<?php if ( bp_loggedin_user_id() ) : ?>
 				<a href="<?php echo bp_loggedin_user_domain(); ?>">
-					<?php echo get_avatar( bp_loggedin_user_id(), 50 ); ?>
+					<?php echo get_avatar( bp_loggedin_user_id(), 64 ); ?>
 				</a>
 			<?php else : ?>
-				<?php echo get_avatar( 0, 50 ); ?>
+				<?php echo get_avatar( 0, 64 ); ?>
 			<?php endif; ?>
 		</div>
 	</div>

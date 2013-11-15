@@ -18,11 +18,11 @@
 					<?php do_action( 'bp_before_blog_post' ); ?>
 					<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<h2 class="posttitle"><a href="<?php the_permalink(); ?>" ><!-- <a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php _e( 'Permanent Link to', 'buddypress' ); ?>--><?php the_title(); ?></a></h2>
-			<span class="alignright" style="margin-top: -34px;"><?php echo get_avatar( get_the_author_meta( 'user_email' ), '50' ); ?></span>
+			<!--<span class="alignright" style="margin-top: -34px;"><?php /*echo get_avatar( get_the_author_meta( 'user_email' ), '50' );*/ ?></span>-->
 			
 			
 			<p class="date">
-				<?php printf( __( '%1$s <!--<span>in %2$s</span>-->', 'buddypress' ), get_the_date(), get_the_category_list( ', ' ) ); ?> | <?php printf( _x( 'by %s', 'Post written by...', 'buddypress' ), str_replace( '<a href=', '<a rel="author" href=', bp_core_get_userlink( $post->post_author ) ) ); ?>
+				<?php printf( _x( 'by %s', 'Post written by...', 'buddypress' ), str_replace( '<a href=', '<a rel="author" href=', bp_core_get_userlink( $post->post_author ) ) ); ?> . <?php printf( __( '%1$s <!--<span>in %2$s</span>-->', 'buddypress' ), get_the_date(), get_the_category_list( ', ' ) ); ?>
 				 
 				<span class="post-utility alignright"><?php edit_post_link( __( 'Edit this entry', 'buddypress' ) ); ?></span>
 			</p>

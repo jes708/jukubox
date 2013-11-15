@@ -12,11 +12,11 @@
 				<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					
 			<h2 class="posttitle"><?php the_title(); ?>
-			<span class="alignright"><?php echo get_avatar( get_the_author_meta( 'user_email' ), '50' ); ?></span></h2>
+			<!--<span class="alignright"><?php /*echo get_avatar( get_the_author_meta( 'user_email' ), '50' );*/ ?></span>--></h2>
 			
 			
 			<p class="date">
-				<?php printf( __( '%1$s <!--<span>in %2$s</span>-->', 'buddypress' ), get_the_date(), get_the_category_list( ', ' ) ); ?> | <?php printf( _x( 'by %s', 'Post written by...', 'buddypress' ), str_replace( '<a href=', '<a rel="author" href=', bp_core_get_userlink( $post->post_author ) ) ); ?>
+				<?php printf( _x( 'by %s', 'Post written by...', 'buddypress' ), str_replace( '<a href=', '<a rel="author" href=', bp_core_get_userlink( $post->post_author ) ) ); ?> . <?php printf( __( '%1$s <!--<span>in %2$s</span>-->', 'buddypress' ), get_the_date(), get_the_category_list( ', ' ) ); ?> . <?php comments_number('No comments', 'One comment', '% Comments'); ?>
 				 
 				<span class="post-utility alignright"><?php edit_post_link( __( 'Edit this entry', 'buddypress' ) ); ?></span>
 			</p>
