@@ -1479,6 +1479,7 @@ class Appointments {
 		$f_provider_id = htmlentities(mysql_real_escape_string($_GET['app_provider_id'])); 		
 
 		$s .= '<input type="button" provider="'.$f_provider_id.'" class="btn btn-primary app_services_button" value="'.$show.'">';
+                echo '<img class="new_loader" src="' . get_home_url() . '/wp-content/uploads/2013/11/ajax-loader.gif"><p class="new_loader">Please wait...</p>';		
 		// end NHF edit
 		$s .= '</div>';
 		$s .= '</div>';
