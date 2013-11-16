@@ -6184,7 +6184,7 @@ body.bp-user div#content {
     position: absolute;
 }
 body.bp-user div#object-nav.item-list-tabs {
-    top: 1px;
+/*    top: 1px; */
     position: relative;
 }
 body.bp-user div#footer {
