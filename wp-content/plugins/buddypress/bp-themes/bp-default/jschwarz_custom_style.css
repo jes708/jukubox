@@ -6178,13 +6178,17 @@ color: rgb(5, 160, 247) !important;
 text-decoration: none;
 }
 
+div#item-nav {
+top: -41px;
+}
+
 @-moz-document url-prefix() {
 body.bp-user div#content {
     top: 20px;
     position: absolute;
 }
 body.bp-user div#object-nav.item-list-tabs {
-/*    top: 1px; */
+    top: 1px;
     position: relative;
 }
 body.bp-user div#footer {
@@ -6193,11 +6197,21 @@ display:none;
 .hour_rates_p {
     bottom: 0px;
 }
+#teach_prof_div p {
+    letter-spacing: -.1px !important;
+}
+#selling-points p {
+    letter-spacing: -.8px !important;
+}
 }
 
 body.my-friends .half_rates_pmem, body.my-friends .hour_rates_pmem {
 top: 7px;
 left: 484px;
+}
+
+.half_rates_p {
+top: 1px;
 }
 
 .half_rates_pmem, .hour_rates_pmem {
