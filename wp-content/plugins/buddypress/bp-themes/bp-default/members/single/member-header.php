@@ -48,14 +48,14 @@
 -->
 	<div id="rates_instruments">
 		<div id="r_i_rates">
-		                  <?php $hour_rates_raw = bp_get_profile_field_data('field=23&user_id=' . bp_displayed_user_id() . '');
+		                  <?php $hour_rates_raw = get_fullhour_price($disp_user_id);
                                 if(!empty($hour_rates_raw)) : 
 				 ?><p class="hour_rates_p"><?php echo "$" . $hour_rates_raw . "/hour";
 
                                 ?>
                             </p>
 				<?php endif; ?>
-                                  <?php $half_rates_raw = bp_get_profile_field_data('field=221&user_id=' . bp_displayed_user_id() . '');
+                                  <?php $half_rates_raw = get_halfhour_price($disp_user_id);
                                 if(!empty($half_rates_raw)) :                               
 				 ?><p class="half_rates_p"><?php echo "($" . $half_rates_raw . "/half hour)";
 

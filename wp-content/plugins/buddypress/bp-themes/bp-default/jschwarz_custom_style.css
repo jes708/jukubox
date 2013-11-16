@@ -6165,3 +6165,16 @@ input[readonly] {
 cursor: pointer;
 }
 
+body.name-your-price .hour_rates_p, body.name-your-price .half_rates_p {
+display:none;
+}
+
+body.name-your-price div#r_i_inst p, body.name-your-price div#r_i_inst p.inst_ital a {
+margin-top: 10px;
+}
+
+a#appointmentspage_price_2 {
+color: rgb(5, 160, 247) !important;
+text-decoration: none;
+}
+

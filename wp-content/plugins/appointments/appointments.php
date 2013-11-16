@@ -4754,13 +4754,32 @@ class Appointments {
 
 global $current_user;
       get_currentuserinfo();
-
-		if(!$price) { 
+$cur_us_id = $current_user->ID;
+$raw_hour = get_fullhour_price($cur_us_id);
+$raw_half = get_halfhour_price($cur_us_id);
+$us_serv_str = get_us_services($cur_us_id);
+$pos_hour = false;
+$pos_half = false;
+if (strpos($us_serv_str, ":1:") !== false) {
+	$pos_hour = true;
+}
+if (strpos($us_serv_str, ":4:") !== false) {
+        $pos_half = true;
+}
+//		if(( !$raw_hour || $raw_hour == '' || $raw_hour==0 ) && ( !$raw_half || $raw_half == '' || $raw_half==0 )) { 
+		if( !$pos_hour && !$pos_half) { 
 			echo '<h2 align="center">Enter your price <a href="' . get_home_url() . '/members/' . $current_user->user_login . '/appointments/name-your-price">here</a>!</h2>'; 
-			} else { 
-				echo '<h2 align="center">Your current rate is:<a id="appointmentspage_price" href="' . get_home_url() . '/members/' . $current_user->user_login . '/appointments/name-your-price"> $' . $price . '/hour.</a></h2>';
+//			} elseif (($raw_hour > 0) && ($raw_half > 0)) { 
+                        } elseif ( $pos_hour && $pos_half ) { 
+				echo '<h2 align="center">Your current rate is:<a id="appointmentspage_price" href="' . get_home_url() . '/members/' . $current_user->user_login . '/appointments/name-your-price"> $' . $raw_half . '/30min</a> and <a id="appointmentspage_price_2" href="' . get_home_url() . '/members/' . $current_user->user_login . '/appointments/name-your-price"> $' . $raw_hour . '/hour.</a></h2>';
+//                        } elseif ($raw_hour > 0) { 
+                        } elseif ($pos_hour) { 
+                                echo '<h2 align="center">Your current rate is: <a id="appointmentspage_price" href="' . get_home_url() . '/members/' . $current_user->user_login . '/appointments/name-your-price"> $' . $raw_hour . '/hour.</a></h2>';
+//                        } elseif ($raw_half > 0) { 
+                        } elseif ($pos_half) { 
+                                echo '<h2 align="center">Your current rate is: <a id="appointmentspage_price" href="' . get_home_url() . '/members/' . $current_user->user_login . '/appointments/name-your-price"> $' . $raw_half . '/30min.</a></h2>';
+                        } // end if/else price^M
 				echo '<p align="center"><a href="' . get_home_url() . '/teachers-manual/#comPolicies" >See Pricing Policies Here</a></p>';  
-			} // end if/else price
 		} // end if teacher
 		
 		if( is_teacher($user_id)===TRUE ) {

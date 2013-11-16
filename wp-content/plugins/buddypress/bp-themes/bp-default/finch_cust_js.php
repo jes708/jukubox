@@ -400,9 +400,10 @@ jQuery(document).ready( function() {
 }); // end ready
 jQuery('.priceForm').ready( function () { 
 	jQuery('.SetHourPrice').priceFormat({ 
-		limit:5, 
+		limit:3, 
 		clearPrefix: true,
 		thousandsSeparator: '',
+		centsLimit: 0,
 	}); 
 
 }); // end ready

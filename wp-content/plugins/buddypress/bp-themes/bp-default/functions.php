@@ -1758,6 +1758,21 @@ function get_user_services_hash($userId) {
 	return $service_hash; 
 }
 
+function get_us_services($userId) {
+
+         $get_services = "SELECT
+                                services_provided
+                        FROM
+                                wp_app_workers
+                        WHERE
+                                ID=" . $userId . " 
+                        ";
+        $get_services_query = finch_mysql_query($get_services, "return");
+        $services_string = $get_services_query[0]['services_provided'];
+
+        return $services_string;
+}
+
 function does_xprofileprice_exist($fieldID, $userId) { 
 	
 	$get_hour_q = "SELECT
