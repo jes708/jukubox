@@ -6178,3 +6178,39 @@ color: rgb(5, 160, 247) !important;
 text-decoration: none;
 }
 
+@-moz-document url-prefix() {
+body.bp-user div#content {
+    top: 20px;
+    position: absolute;
+}
+body.bp-user div#object-nav.item-list-tabs {
+    top: 1px;
+    position: relative;
+}
+body.bp-user div#footer {
+display:none;
+}
+.hour_rates_p {
+    bottom: 0px;
+}
+}
+
+body.my-friends .half_rates_pmem, body.my-friends .hour_rates_pmem {
+top: 7px;
+left: 484px;
+}
+
+.half_rates_pmem, .hour_rates_pmem {
+font-weight: 700;
+font-size: 13px !important;
+position: relative;
+float: left;
+clear: both;
+top: -6px;
+left: 485px;
+margin-bottom: -2px;
+}
+
+#members-dir-list .rating-top {
+margin-bottom: 13px;
+}

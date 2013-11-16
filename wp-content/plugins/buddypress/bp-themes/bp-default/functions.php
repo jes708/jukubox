@@ -1652,6 +1652,7 @@ function get_halfhour_price($worker) {
 	$get_halfhour_array = finch_mysql_query($get_halfhour_sql, "return"); 
 
 	$halfhour_price = $get_halfhour_array[0]['price_half_hour']; 
+        $halfhour_price = number_format($halfhour_price);
 	return $halfhour_price; 
 
 }
@@ -1667,6 +1668,7 @@ function get_fullhour_price($worker) {
         $get_fullhour_array = finch_mysql_query($get_fullhour_sql, "return");
 
         $fullhour_price = $get_fullhour_array[0]['price'];
+        $fullhour_price = number_format($fullhour_price);
         return $fullhour_price;
 
 }
@@ -2107,6 +2109,31 @@ function bp_member_add_lesson_button() {
 		$friend_status = ( 0 == $members_template->member->is_friend ) ? 'pending' : 'is_friend';
 
 	echo bp_get_lesson_button( $members_template->member->id, $friend_status );
+        $membId = $members_template->member->id;
+	$hour_rates_raw = get_fullhour_price($membId);
+        $half_rates_raw = get_halfhour_price($membId);
+	$us_serv_str = get_us_services($membId);
+	$pos_hour = false;
+	$pos_half = false;
+	if (strpos($us_serv_str, ":1:") !== false) {
+        	$pos_hour = true;
+	}
+	if (strpos($us_serv_str, ":4:") !== false) {
+        	$pos_half = true;
+	}
+
+                                if($pos_hour && !empty($hour_rates_raw)) :
+                                 ?><p class="hour_rates_pmem"><?php echo "$" . $hour_rates_raw . "/hour";?>
+                            </p>
+                                <?php endif; ?>
+                                  <?php 
+                                if($pos_half && !empty($half_rates_raw)) :
+                                 ?><p class="half_rates_pmem"><?php echo "$" . $half_rates_raw . "/30min";?>
+                            </p>
+                                <?php endif; ?>
+
+<?php
+
 }
 add_action( 'bp_directory_members_actions', 'bp_member_add_lesson_button' );
 
