@@ -400,9 +400,10 @@ jQuery(document).ready( function() {
 }); // end ready
 jQuery('.priceForm').ready( function () { 
 	jQuery('.SetHourPrice').priceFormat({ 
-		limit:5, 
+		limit:3, 
 		clearPrefix: true,
 		thousandsSeparator: '',
+		centsLimit: 0,
 	}); 
 
 }); // end ready
@@ -559,6 +560,26 @@ jQuery(document).ready(function() {
 //	});
 //});
 
+jQuery(document).ready(function() {
+    if ( document.location.href.indexOf('app_service_id=0') > -1 ) {
+        jQuery('.appointments_take_appointment').remove();
+    }
+});       
+         
+jQuery(document).ready(function() {
+    if ( document.location.href.indexOf('app_service_id=0') > -1 ) {
+        jQuery('div.app_timetable_cell.free').click(function() {
+                jQuery('select.app_select_services').addClass('red_hil');
+                jQuery("html, body").animate({ scrollTop: 0 }, "fast");
+                return false;
+        }); 
+    }
+}); 
+
+jQuery(document).ready(function() {
+        jQuery('select.app_select_services').change(function() {
+                jQuery('.new_loader').show();               
+        });  
+});  
+
 </script>
-
-

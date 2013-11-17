@@ -81,7 +81,7 @@ $worker_name = bp_get_profile_field_data('field=1&user_id=' . $worker_id . '') ;
 							<!-- <h3 style="width: 63%">You are not yet friends with <?php echo $worker_name; ?>: Send a message and request friendship to be able to book a lesson!</h3> --> 
 							<?php 
 									
-								$_REQUEST['app_service_id'] = 2;
+//								$_REQUEST['app_service_id'] = 2;
 								//echo 	$_REQUEST['app_service_id'];  
 								// user is logged in but not friends w worker
 								// they can only book a free lesson	

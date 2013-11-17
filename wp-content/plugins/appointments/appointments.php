@@ -1404,7 +1404,7 @@ class Appointments {
 		$this->get_lsw();
 		
 		extract( shortcode_atts( array(
-		'select'			=> __('Please select a service:', 'appointments'),
+		'select'			=> __('', 'appointments'),
 		'show'				=> __('Show available times', 'appointments'),
 		'description'		=> 'excerpt',
 		'thumb_size'		=> '96,96',
@@ -1447,6 +1447,7 @@ class Appointments {
 		$s .= '<div class="app_services_dropdown_select">';
 		$s .= '<select name="app_select_services" class="app_select_services">';
 		if ( $services ) {
+			$s .= '<option value="0" selected="selected">Please select a service</option>';
 			foreach ( $services as $service ) {
 				// Check if this is the first service, so it would be displayed by default
 				if ( $service->ID == $this->service ) {
@@ -1478,6 +1479,7 @@ class Appointments {
 		$f_provider_id = htmlentities(mysql_real_escape_string($_GET['app_provider_id'])); 		
 
 		$s .= '<input type="button" provider="'.$f_provider_id.'" class="btn btn-primary app_services_button" value="'.$show.'">';
+                echo '<img class="new_loader" src="' . get_home_url() . '/wp-content/uploads/2013/11/ajax-loader.gif"><p class="new_loader">Please wait...</p>';		
 		// end NHF edit
 		$s .= '</div>';
 		$s .= '</div>';
@@ -4752,13 +4754,32 @@ class Appointments {
 
 global $current_user;
       get_currentuserinfo();
-
-		if(!$price) { 
+$cur_us_id = $current_user->ID;
+$raw_hour = get_fullhour_price($cur_us_id);
+$raw_half = get_halfhour_price($cur_us_id);
+$us_serv_str = get_us_services($cur_us_id);
+$pos_hour = false;
+$pos_half = false;
+if (strpos($us_serv_str, ":1:") !== false) {
+	$pos_hour = true;
+}
+if (strpos($us_serv_str, ":4:") !== false) {
+        $pos_half = true;
+}
+//		if(( !$raw_hour || $raw_hour == '' || $raw_hour==0 ) && ( !$raw_half || $raw_half == '' || $raw_half==0 )) { 
+		if( !$pos_hour && !$pos_half) { 
 			echo '<h2 align="center">Enter your price <a href="' . get_home_url() . '/members/' . $current_user->user_login . '/appointments/name-your-price">here</a>!</h2>'; 
-			} else { 
-				echo '<h2 align="center">Your current rate is:<a id="appointmentspage_price" href="' . get_home_url() . '/members/' . $current_user->user_login . '/appointments/name-your-price"> $' . $price . '/hour.</a></h2>';
+//			} elseif (($raw_hour > 0) && ($raw_half > 0)) { 
+                        } elseif ( $pos_hour && $pos_half ) { 
+				echo '<h2 align="center">Your current rate is:<a id="appointmentspage_price" href="' . get_home_url() . '/members/' . $current_user->user_login . '/appointments/name-your-price"> $' . $raw_half . '/30min</a> and <a id="appointmentspage_price_2" href="' . get_home_url() . '/members/' . $current_user->user_login . '/appointments/name-your-price"> $' . $raw_hour . '/hour.</a></h2>';
+//                        } elseif ($raw_hour > 0) { 
+                        } elseif ($pos_hour) { 
+                                echo '<h2 align="center">Your current rate is: <a id="appointmentspage_price" href="' . get_home_url() . '/members/' . $current_user->user_login . '/appointments/name-your-price"> $' . $raw_hour . '/hour.</a></h2>';
+//                        } elseif ($raw_half > 0) { 
+                        } elseif ($pos_half) { 
+                                echo '<h2 align="center">Your current rate is: <a id="appointmentspage_price" href="' . get_home_url() . '/members/' . $current_user->user_login . '/appointments/name-your-price"> $' . $raw_half . '/30min.</a></h2>';
+                        } // end if/else price^M
 				echo '<p align="center"><a href="' . get_home_url() . '/teachers-manual/#comPolicies" >See Pricing Policies Here</a></p>';  
-			} // end if/else price
 		} // end if teacher
 		
 		if( is_teacher($user_id)===TRUE ) {

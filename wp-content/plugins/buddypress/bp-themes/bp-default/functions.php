@@ -661,16 +661,16 @@ function bp_dtheme_comment_form( $default_labels ) {
 	$req       = get_option( 'require_name_email' );
 	$aria_req  = ( $req ? " aria-required='true'" : '' );
 	$fields    =  array(
-		'author' => '<p class="comment-form-author">' . '<!--<label for="author">' . __( 'Name', 'buddypress' ) . ( $req ? '<span class="required"> *</span>' : '' ) . '</label> -->' .
-		            '<input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30"' . $aria_req . ' placeholder="Name" /></p>',
-		'email'  => '<p class="comment-form-email"><!--<label for="email">' . __( 'Email', 'buddypress' ) . ( $req ? '<span class="required"> *</span>' : '' ) . '</label> -->' .
-		            '<input id="email" name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) . '" size="30"' . $aria_req . ' placeholder="Email (hidden)" /></p>',
-		'url'    => '<p class="comment-form-url"><!--<label for="url">' . __( 'Website', 'buddypress' ) . '</label>-->' .
-		            '<input id="url" name="url" type="text" value="' . esc_attr( $commenter['comment_author_url'] ) . '" size="30" placeholder="Website (optional)" /></p>',
+                'author' => '<p class="comment-form-author">' . '<!--<label for="author">' . __( 'Name', 'buddypress' ) . ( $req ? '<span class="required"> *</span>' : '' ) . '</label> -->' .
+                            '<input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30"' . $aria_req . ' placeholder="Name" /></p>',
+                'email'  => '<p class="comment-form-email"><!--<label for="email">' . __( 'Email', 'buddypress' ) . ( $req ? '<span class="required"> *</span>' : '' ) . '</label> -->' .
+                            '<input id="email" name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) . '" size="30"' . $aria_req . ' placeholder="Email (hidden)" /></p>',
+                'url'    => '<p class="comment-form-url"><!--<label for="url">' . __( 'Website', 'buddypress' ) . '</label>-->' .
+                            '<input id="url" name="url" type="text" value="' . esc_attr( $commenter['comment_author_url'] ) . '" size="30" placeholder="Website (optional)" /></p>',
 	);
 
 	$new_labels = array(
-		'comment_field'  => '<p class="form-textarea"><textarea name="comment" id="comment" cols="60" rows="10" aria-required="true" placeholder="Comment"></textarea></p>',
+                'comment_field'  => '<p class="form-textarea"><textarea name="comment" id="comment" cols="60" rows="10" aria-required="true" placeholder="Comment"></textarea></p>',
 		'fields'         => apply_filters( 'comment_form_default_fields', $fields ),
 		'logged_in_as'   => '',
 		'must_log_in'    => '<p class="alert">' . sprintf( __( 'You must be <a href="%1$s">logged in</a> to post a comment.', 'buddypress' ), wp_login_url( get_permalink() ) )	. '</p>',
@@ -828,14 +828,20 @@ function finch_mysql_query($QueryString, $display_or_return) {
 // NHF - this makes certain services free
 // free services are First lessons, make up lessons (ids 2 and 3) 
 
-function reset_price( $price, $service, $worker, $user ) {
+//function reset_price( $price, $service, $worker, $user ) {
 // Replace 3 with your free service ID
-if ( 2 == $service || 3 == $service   )
-$price = 0;
-return $price;
-}
-add_filter( 'app_paypal_amount', 'reset_price', 10, 4 );
-add_filter( 'app_get_price', 'reset_price', 10, 4 );
+//if ( 2 == $service || 3 == $service || 5 == $service ) {
+//$price = 0;
+//return $price; }
+//elseif ( 4 == $service) {
+//$price = get_halfhour_price($worker);
+//return $price; }
+//elseif ( 1 == $service) {
+//$price = get_price($worker);
+//return $price; }
+//}
+//add_filter( 'app_paypal_amount', 'reset_price', 10, 4 );
+//add_filter( 'app_get_price', 'reset_price', 10, 4 );
 
 
 //NHF CUSTOM AJAX FUNCTIONS
@@ -1646,10 +1652,48 @@ function get_halfhour_price($worker) {
 	$get_halfhour_array = finch_mysql_query($get_halfhour_sql, "return"); 
 
 	$halfhour_price = $get_halfhour_array[0]['price_half_hour']; 
+        $halfhour_price = number_format($halfhour_price);
 	return $halfhour_price; 
 
 }
+
+function get_fullhour_price($worker) {
+        $get_fullhour_sql = "SELECT
+                                        price
+                                FROM
+                                        wp_app_workers
+                                WHERE
+                                        ID='" . $worker . "'
+                                ";
+        $get_fullhour_array = finch_mysql_query($get_fullhour_sql, "return");
+
+        $fullhour_price = $get_fullhour_array[0]['price'];
+        $fullhour_price = number_format($fullhour_price);
+        return $fullhour_price;
+
+}
+
 // generate hashes for possible lessons
+
+
+function reset_price( $price, $service, $worker, $user ) {
+// Replace 3 with your free service ID
+if ( 2 == $service || 3 == $service || 5 == $service ) {
+$price = 0;
+return $price; }
+elseif ( 4 == $service) {
+$price = get_halfhour_price($worker);
+return $price; }
+elseif ( 1 == $service) {
+$price = get_fullhour_price($worker);
+return $price; }
+}
+add_filter( 'app_paypal_amount', 'reset_price', 10, 4 );
+add_filter( 'app_get_price', 'reset_price', 10, 4 );
+
+
+
+
 function serivces_hash($Total_or_worker, $userId='') { 
     if($Total_or_worker == "total" ) { 
 	$avail_serv_query = "SELECT 
@@ -1714,6 +1758,21 @@ function get_user_services_hash($userId) {
 	}    
 
 	return $service_hash; 
+}
+
+function get_us_services($userId) {
+
+         $get_services = "SELECT
+                                services_provided
+                        FROM
+                                wp_app_workers
+                        WHERE
+                                ID=" . $userId . " 
+                        ";
+        $get_services_query = finch_mysql_query($get_services, "return");
+        $services_string = $get_services_query[0]['services_provided'];
+
+        return $services_string;
 }
 
 function does_xprofileprice_exist($fieldID, $userId) { 
@@ -2050,6 +2109,31 @@ function bp_member_add_lesson_button() {
 		$friend_status = ( 0 == $members_template->member->is_friend ) ? 'pending' : 'is_friend';
 
 	echo bp_get_lesson_button( $members_template->member->id, $friend_status );
+        $membId = $members_template->member->id;
+	$hour_rates_raw = get_fullhour_price($membId);
+        $half_rates_raw = get_halfhour_price($membId);
+	$us_serv_str = get_us_services($membId);
+	$pos_hour = false;
+	$pos_half = false;
+	if (strpos($us_serv_str, ":1:") !== false) {
+        	$pos_hour = true;
+	}
+	if (strpos($us_serv_str, ":4:") !== false) {
+        	$pos_half = true;
+	}
+
+                                if($pos_hour && !empty($hour_rates_raw)) :
+                                 ?><p class="hour_rates_pmem"><?php echo "$" . $hour_rates_raw . "/hour";?>
+                            </p>
+                                <?php endif; ?>
+                                  <?php 
+                                if($pos_half && !empty($half_rates_raw)) :
+                                 ?><p class="half_rates_pmem"><?php echo "$" . $half_rates_raw . "/30min";?>
+                            </p>
+                                <?php endif; ?>
+
+<?php
+
 }
 add_action( 'bp_directory_members_actions', 'bp_member_add_lesson_button' );
 
@@ -2071,7 +2155,7 @@ function bp_get_lesson_button( $potential_friend_id = 0, $friend_status = false 
 					'block_self'        => true,
 					'wrapper_class'     => 'lesson-button-wrapper friendship-button pending_friend',
 					'wrapper_id'        => 'friendship-button-' . $potential_friend_id,
-					'link_href'         => wp_nonce_url('/test-appointment/?app_provider_id=' . $potential_friend_id . '&app_service_id=1', 'friends_withdraw_friendship' ),
+					'link_href'         => wp_nonce_url('/test-appointment/?app_provider_id=' . $potential_friend_id . '&app_service_id=0', 'friends_withdraw_friendship' ),
 					'link_text'         => __( '<i class="icon-book icon-large"></i> Book Lesson', 'buddypress' ),
 					'link_title'        => __( 'Schedule a Lesson', 'buddypress' ),
 					'link_id'			=> 'friend-' . $potential_friend_id,

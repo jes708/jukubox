@@ -351,15 +351,33 @@ wp_reset_query();
 					<br />
 
 <!-- Schwarz Edit -->
-	
-						<?php // NHF Code 
-						if( is_teacher($user_id)===TRUE ) {
-							$price = get_cur_teacher_price($user_id);
-							if( !$price || $price == '' || $price==0 ) { 
-								echo '<h2 align="center">Enter your price <a href="' . get_home_url() . '/members/' . $current_user->user_login . '/appointments/name-your-price">here</a>!</h2>';
-							} else { 
-								echo '<h2 align="center">Your current rate is:<a id="homepage_price" href="' . get_home_url() . '/members/' . $current_user->user_login . '/appointments/name-your-price"> $' . $price . '/hour.</a></h2>'; 
-							}
+
+                                                <?php // NHF Code 
+                                                if( is_teacher($user_id)===TRUE ) {
+
+$hour_rate_raw = get_fullhour_price($user_id);
+$half_rate_raw = get_halfhour_price($user_id);
+$us_serv_str = get_us_services($user_id);
+$pos_hour = false;
+$pos_half = false;
+if (strpos($us_serv_str, ":1:") !== false) {
+        $pos_hour = true;
+}
+if (strpos($us_serv_str, ":4:") !== false) {
+        $pos_half = true;
+}
+
+							if ( !$pos_hour && !$pos_half) {
+                                                                echo '<h2 align="center">Enter your price <a href="' . get_home_url() . '/members/' . $current_user->user_login . '/appointments/name-your-price">here</a>!</h2>';
+                                                        } elseif ( $pos_hour && $pos_half ) {
+                                                                echo '<h2 align="center">Your current rate is:<a id="homepage_price" href="' . get_home_url() . '/members/' . $current_user->user_login . '/appointments/name-your-price"> $' . $half_rate_raw . '/30min</a> and <a id="homepage_price_2" href="' 
+. get_home_url() . '/members/' . $current_user->user_login . '/appointments/name-your-price">$' . $hour_rate_raw . '/hour</a>.</h2>';
+                                                        } elseif ($pos_hour) {
+                                                                echo '<h2 align="center">Your current rate is:<a id="homepage_price" href="' . get_home_url() . '/members/' . $current_user->user_login . '/appointments/name-your-price"> $' . $hour_rate_raw . '/hour</a>.</h2>';
+                                                        } elseif ($pos_half) {
+                                                                echo '<h2 align="center">Your current rate is:<a id="homepage_price" href="' . get_home_url() . '/members/' . $current_user->user_login . '/appointments/name-your-price"> $' . $half_rate_raw . '/30min</a>.</h2>';
+                                                        }
+
 							echo '<p class="homePlaceHold"></p>';   
 							echo '<h3 align="center">Lessons To Teach</h3>';
 							echo '<div id="teacher_apps">';  

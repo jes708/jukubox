@@ -48,14 +48,14 @@
 -->
 	<div id="rates_instruments">
 		<div id="r_i_rates">
-		                  <?php $hour_rates_raw = bp_get_profile_field_data('field=23&user_id=' . bp_displayed_user_id() . '');
+		                  <?php $hour_rates_raw = get_fullhour_price($disp_user_id);
                                 if(!empty($hour_rates_raw)) : 
 				 ?><p class="hour_rates_p"><?php echo "$" . $hour_rates_raw . "/hour";
 
                                 ?>
                             </p>
 				<?php endif; ?>
-                                  <?php $half_rates_raw = bp_get_profile_field_data('field=221&user_id=' . bp_displayed_user_id() . '');
+                                  <?php $half_rates_raw = get_halfhour_price($disp_user_id);
                                 if(!empty($half_rates_raw)) :                               
 				 ?><p class="half_rates_p"><?php echo "($" . $half_rates_raw . "/half hour)";
 
@@ -94,7 +94,7 @@ style="top:13px;"
 		<?php if( is_teacher( $disp_user_id )===TRUE ) : ?>	
 			<script>
 			<?php /* if( bp_is_my_friend($disp_user_id) ) { */  ?>
-				var schedule_button = '<div class="generic-button" id="schedule-lesson"><a href="<?php echo get_home_url(); ?>/test-appointment/?app_provider_id=<?php echo $disp_user_id; ?>&app_service_id=1" title="Schedule a private lesson with this user." class="btn btn-primary send-message"><i class="icon-book"></i> Book Lesson</a></div>';
+				var schedule_button = '<div class="generic-button" id="schedule-lesson"><a href="<?php echo get_home_url(); ?>/test-appointment/?app_provider_id=<?php echo $disp_user_id; ?>&app_service_id=0" title="Schedule a private lesson with this user." class="btn btn-primary send-message"><i class="icon-book"></i> Book Lesson</a></div>';
 			
 		 
 				//alert(thingie);  
