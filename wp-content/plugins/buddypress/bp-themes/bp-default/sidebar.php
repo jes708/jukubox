@@ -92,16 +92,18 @@
                 
                 
 					<?php
-                        $argsp = array( 'numberposts' => '3' );
+                        $argsp = array( 'numberposts' => '3', 'post_status' => 'publish' );
                         $recent_postso = wp_get_recent_posts( $argsp );
                         foreach( $recent_postso as $recento ){
 							?>
                             <li>
-                            <p><a href="<?php echo get_permalink($recento["ID"]); ?>" title="Look <?php echo esc_attr($recento["post_title"]); ?>" ><?php echo $recento["post_title"]; ?></a></p>
+                            <p><a href="<?php echo get_permalink($recento["ID"]); ?>" title="<?php echo esc_attr($recento["post_title"]); ?>" ><?php echo $recento["post_title"]; ?></a></p>
+
+                            <p><?php echo get_the_time('F j, Y ', $recento["ID"]).' by <a href="'.get_the_author_meta( 'user_url', $recento["post_author"]).'" title="">'.get_the_author_meta( 'display_name', $recento["post_author"]).'</a>'; ?></p>
+
+
                             
-                            <p><?php echo get_the_time('F j, Y ', $recento["ID"]).' by <a href="'.get_the_author_meta( 'user_url', $recento["post_autho"]).'" title="">'.get_the_author_meta( 'display_name', $recento["post_autho"]).'</a>'; ?></p>
-                            
-                            
+                         
                             
                             </li>
                             
@@ -150,9 +152,9 @@
 					?>
                             <li>
                             
-                            <p><a href="<?php echo get_permalink($commento->comment_post_ID); ?>" title="Look <?php echo($commento->comment_author); ?>" ><?php echo($commento->comment_author); ?></a></p>
+                            <p><a href="<?php echo get_permalink($commento->comment_post_ID); ?>" title="<?php echo($commento->comment_author); ?>" ><?php echo($commento->comment_author); ?></a></p>
                             
-                            <p><a href="<?php echo get_permalink($commento->comment_post_ID); ?>" title="Look <?php echo($commento->comment_author); ?>" ><?php echo get_comment_excerpt( $commento->comment_ID ); ?></a></p>
+                            <p><a href="<?php echo get_permalink($commento->comment_post_ID); ?>" title="<?php echo($commento->comment_author); ?>" ><?php echo get_comment_excerpt( $commento->comment_ID ); ?></a></p>
 							
                             </li>
                             
