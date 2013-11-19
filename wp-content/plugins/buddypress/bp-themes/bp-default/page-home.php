@@ -517,7 +517,7 @@ if (strpos($us_serv_str, ":4:") !== false) {
 
 
 
-	<?php if ( is_user_logged_in() ) { get_sidebar(); }  ?>
+	<?php //if ( is_user_logged_in() ) { get_sidebar(); }  ?>
 
 
 <?php get_footer(); ?>

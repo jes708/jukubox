@@ -7008,6 +7008,7 @@ body.single-post #commentform textarea{
 }
 body.single-post #commentform textarea{
         height:200px !important;
+	border-radius: 5px;
 }
 
 body.single-post div.comment-meta p > a{
@@ -7259,3 +7260,54 @@ input[type="color"],
 
 /*Seach form END*/
 
+body.page-id-24 div#content .padder {
+width: 961px;
+border-right: none;
+}
+
+body.page-template-onecolumn-page-php #respond {
+display: none;
+}
+
+div.type-post {
+box-shadow: none;
+border: solid 1px rgb(216, 216, 216);
+}
+
+div#comm_box {
+background-color: white;
+box-shadow: none;
+border: solid 1px rgb(216, 216, 216);
+padding: 20px 35px 55px 35px;
+}
+
+#respond {
+background-color: transparent;
+border: none;
+-moz-border-radius: 0;
+-webkit-border-radius: 0;
+border-radius: 0;
+}
+
+li.comment.alt .time-since {
+left: 9px;
+position: relative;
+}
+
+td.pluginButtonSpacer {
+left: 10px !important;
+position: relative !important;
+}
+
+#ffca62874 {
+width: auto !important;
+}
+
+.socialicons:nth-child(3) {
+right: 34px;
+position: relative;
+}
+
+body.archive div#container, body.single-post div#container {
+width: 1040px !important;
+}
