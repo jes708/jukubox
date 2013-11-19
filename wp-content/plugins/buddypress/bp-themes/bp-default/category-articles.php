@@ -41,7 +41,7 @@
 					<!--	<div class="author-box">
 							<a href="<?php //echo $userlink; ?>"><?php //echo get_avatar( get_the_author_meta( 'user_email' ), '70' ); ?></a>
 							<p><?php //printf( _x( 'by %s', 'Post written by...', 'buddypress' ), bp_core_get_userlink( $post->post_author ) ); ?></p>
-						</div> --> 
+						</div>  --> 
 
 						<div class="post-content">
 						<!--	<h2 class="posttitle"><a href="<?php //the_permalink(); ?>" rel="bookmark" title="<?php //_e( 'Permanent Link to', 'buddypress' ); ?> <?php //the_title_attribute(); ?>"><?php //the_title(); ?></a></h2>
