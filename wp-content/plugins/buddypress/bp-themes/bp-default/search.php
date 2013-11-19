@@ -26,7 +26,7 @@
 
 
                         <p class="date">
-                                <?php printf( _x( 'by %s', 'Post written by...', 'buddypress' ), str_replace( '<a href=', '<a rel="author" href=', bp_core_get_userlink( $post->post_author ) ) ); ?> &middot; <?php printf( __( '%1$s <!--<span>in %2$s</span>-->', 'buddypress' ), get_the_date(), get_the_category_list( ', ' ) ); ?> &middot; <?php comments_number('No comments', 'One comment', '% Comments'); ?>
+                                <?php printf( _x( 'by %s', 'Post written by...', 'buddypress' ), str_replace( '<a href=', '<a rel="author" href=', bp_core_get_userlink( $post->post_author ) ) ); ?> &middot; <?php printf( __( '%1$s <!--<span>in %2$s</span>-->', 'buddypress' ), get_the_date(), get_the_category_list( ', ' ) ); ?> &middot; <?php comments_popup_link( __( 'No Comments', 'buddypress' ), __( '1 Comment', 'buddypress' ), __( '% Comments', 'buddypress' ) ); ?>
 
 
                                 <span class="post-utility alignright"><?php edit_post_link( __( 'Edit this entry', 'buddypress' ) ); ?></span>
