@@ -6231,17 +6231,17 @@ margin-bottom: 13px;
 
 /*//////blog single page start here//////*/
 
-body.search-results, body.archive{
+body.blog, body.search-results, body.archive{
         background-image: url(http://jukubox.com/wp-content/uploads/2013/07/cardboard_flat2.png)  !important;
 
 }
-body.search-results .input-append .accessibly-hidden, body.archive .input-append .accessibly-hidden{
+body.blog .input-append .accessibly-hidden, body.search-results .input-append .accessibly-hidden, body.archive .input-append .accessibly-hidden{
         color: #999999;
         padding:18px;
 }
 
 
-body.search-results h2.posttitle, body.archive h2.posttitle {
+body.blog h2.posttitle, body.search-results h2.posttitle, body.archive h2.posttitle {
         color: #333333;
     font-size: 22px;
     font-weight: bold;
@@ -6249,18 +6249,20 @@ body.search-results h2.posttitle, body.archive h2.posttitle {
         letter-spacing: normal;
 }
 
-body.search-results p.date, body.archive p.date {
+body.blog p.date, body.search-results p.date, body.archive p.date {
         font-family:'Open Sans', sans-serif;
         font-size: 14px !important;
         color: #333333;
 }
 
-body.search-results p.date > a, body.archive p.date > a {
+body.blog p.date > a, body.search-results p.date > a, body.archive p.date > a {
 /*    color: #05a0f7;
  *            text-decoration: none;
  *            */    font-size: 13px !important;
         }
 
+body.blog p.date > a:hover,
+body.blog p.date > a:focus,
 body.search-results p.date > a:hover,
 body.search-results p.date > a:focus,
 body.archive p.date > a:hover,
@@ -6270,13 +6272,13 @@ body.archive p.date > a:focus  {
  *            */    font-size: 13px !important;
         }
 
-body.search-results div.post-content .entry, body.archive div.post-content .entry {
+body.blog div.post-content .entry, body.search-results div.post-content .entry, body.archive div.post-content .entry {
     font-family:'Open Sans', sans-serif;
     font-size: 17px !important;
     color: #333333;
         padding:0 15px;
 }
-body.search-results div.post-content div.entry > p, body.archive div.post-content div.entry > p {
+body.blog div.post-content div.entry > p, body.search-results div.post-content div.entry > p, body.archive div.post-content div.entry > p {
     font-family:'Open Sans', sans-serif;
     font-size: 17px !important;
     color: #333333;
@@ -6285,10 +6287,12 @@ body.search-results div.post-content div.entry > p, body.archive div.post-conten
         margin-bottom:40px !important;
 }
 
-body.search-results div.post-content div.entry > p a, body.archive div.post-content div.entry > p a{
+body.blog div.post-content div.entry > p a, body.search-results div.post-content div.entry > p a, body.archive div.post-content div.entry > p a{
         color: #05A0F7 !important;
 }
 
+body.blog div.alignright > a,
+body.blog div.alignleft > a,
 body.search-results div.alignright > a,
 body.search-results div.alignleft > a,
 body.archive div.alignright > a,
@@ -6298,6 +6302,10 @@ body.archive div.alignleft > a{
  *            */    font-size: 13px !important;
 }
 
+body.blog div.alignright > a:hover,
+body.blog div.alignright > a:focus,
+body.blog div.alignleft > a:hover,
+body.blog div.alignleft > a:focus,
 body.search-results div.alignright > a:hover,
 body.search-results div.alignright > a:focus,
 body.search-results div.alignleft > a:hover,
@@ -6316,11 +6324,13 @@ body.archive div.alignleft > a:focus {
 
 /*//////sidebar start here//////*/
 
+body.blog ul#manual-recent-post > li,
 body.search-results ul#manual-recent-post > li,
 body.archive ul#manual-recent-post > li{
         margin-bottom: 10px !important;
 }
 
+body.blog ul#manual-recent-post > li > p:nth-child(1),
 body.search-results ul#manual-recent-post > li > p:nth-child(1),
 body.archive ul#manual-recent-post > li > p:nth-child(1){
     font-family: 'Montserrat','Helvetica Neue','Arial' !important;
@@ -6329,12 +6339,17 @@ body.archive ul#manual-recent-post > li > p:nth-child(1){
         color: #666666;
         margin-bottom: 0 !important;
 }
+
+body.blog ul#manual-recent-post > li > p:nth-child(1):hover,
+body.blog ul#manual-recent-post > li > p:nth-child(1):focus,
 body.search-results ul#manual-recent-post > li > p:nth-child(1):hover,
 body.search-results ul#manual-recent-post > li > p:nth-child(1):focus,
 body.archive ul#manual-recent-post > li > p:nth-child(1):hover,
 body.archive ul#manual-recent-post > li > p:nth-child(1):focus{
     font-size: 13px !important;
 }
+
+body.blog ul#manual-recent-post > li > p:nth-child(2),
 body.search-results ul#manual-recent-post > li > p:nth-child(2),
 body.archive ul#manual-recent-post > li > p:nth-child(2){
     font-family: 'Open Sans', sans-serif !important;
@@ -6344,6 +6359,7 @@ body.archive ul#manual-recent-post > li > p:nth-child(2){
         margin-bottom: 0 !important;
 }
 
+body.blog div#sidebar .widget h3.widgettitle,
 body.search-results div#sidebar .widget h3.widgettitle,
 body.archive div#sidebar .widget h3.widgettitle{
         font-family: 'Montserrat','Helvetica Neue','Arial' !important;
@@ -6355,6 +6371,7 @@ body.archive div#sidebar .widget h3.widgettitle{
         text-transform:none;
 }
 
+body.blog div#sidebar .widget > ul > li > a,
 body.search-results div#sidebar .widget > ul > li > a,
 body.archive div#sidebar .widget > ul > li > a{
     /*color: #05a0f7;
@@ -6366,6 +6383,8 @@ body.archive div#sidebar .widget > ul > li > a{
         /*text-decoration: none !important;*/
 }
 
+body.blog div#sidebar .widget > ul > li > a:hover,
+body.blog div#sidebar .widget > ul > li > a:focus,
 body.search-results div#sidebar .widget > ul > li > a:hover,
 body.search-results div#sidebar .widget > ul > li > a:focus,
 body.archive div#sidebar .widget > ul > li > a:hover,
@@ -6379,6 +6398,7 @@ body.archive div#sidebar .widget > ul > li > a:focus {
 
 }
 
+body.blog div#sidebar .widget .menu-item > a,
 body.search-results div#sidebar .widget .menu-item > a,
 body.archive div#sidebar .widget .menu-item > a{
 /*    color: #05a0f7;
@@ -6388,6 +6408,8 @@ body.archive div#sidebar .widget .menu-item > a{
     font-size: 13px !important;
 }
 
+body.blog div#sidebar .widget .menu-item > a:hover,
+body.blog div#sidebar .widget .menu-item > a:focus,
 body.search-results div#sidebar .widget .menu-item > a:hover,
 body.search-results div#sidebar .widget .menu-item > a:focus,
 body.archive div#sidebar .widget .menu-item > a:hover,
@@ -6404,6 +6426,7 @@ body.archive div#sidebar .widget .menu-item > a:focus {
 
 
 /*///////avatar start here/////*/
+body.blog .comment-avatar-box div.avb img.avatar,
 body.search-results .comment-avatar-box div.avb img.avatar,
 body.archive .comment-avatar-box div.avb img.avatar{
         width:64px !important;
@@ -6418,6 +6441,7 @@ body.archive .comment-avatar-box div.avb img.avatar{
     border-radius: 0;
 }
 
+body.blog span.alignright img.avatar,
 body.search-results span.alignright img.avatar,
 body.archive span.alignright img.avatar{
         width: 52px;
@@ -6427,6 +6451,7 @@ body.archive span.alignright img.avatar{
     border-radius: 4px;
 }
 
+body.blog div#sidebar div.item-avatar img,
 body.search-results div#sidebar div.item-avatar img,
 body.archive div#sidebar div.item-avatar img{
 }
@@ -6452,6 +6477,7 @@ body.archive div#sidebar div.item-avatar img{
 
 /*///////comment start here/////*/
 
+body.blog div#comments > h3,
 body.search-results div#comments > h3,
 body.archive div#comments > h3{
         font-family: 'Montserrat','Helvetica Neue','Arial' !important;
@@ -6460,6 +6486,7 @@ body.archive div#comments > h3{
         color:#333333;
 }
 
+body.blog div#respond > h3,
 body.search-results div#respond > h3,
 body.archive div#respond > h3{
         font-weight:bold !important;
@@ -6467,16 +6494,23 @@ body.archive div#respond > h3{
         color:#333333;
 }
 
+body.blog .comment-content.standard-form .comment-notes,
 body.search-results .comment-content.standard-form .comment-notes,
 body.archive .comment-content.standard-form .comment-notes{
         display:none !important;
 }
 
+body.blog .comment-content.standard-form p.comment-form-author,
 body.search-results .comment-content.standard-form p.comment-form-author,
 body.archive .comment-content.standard-form p.comment-form-author{
         margin-bottom:10px;
 }
 
+body.blog #signup_form.standard-form input[type="text"],
+body.blog #signup_form.standard-form textarea,
+body.blog .form-allowed-tags,
+body.blog #commentform input[type="text"],
+body.blog #commentform textarea,
 body.search-results #signup_form.standard-form input[type="text"],
 body.search-results #signup_form.standard-form textarea,
 body.search-results .form-allowed-tags,
@@ -6491,11 +6525,14 @@ body.archive #commentform textarea{
         padding:10px !important;
         margin-bottom:0 !important;
 }
+
+body.blog #commentform textarea,
 body.search-results #commentform textarea,
 body.archive #commentform textarea{
         height:200px !important;
 }
 
+body.blog div.comment-meta p > a,
 body.search-results div.comment-meta p > a,
 body.archive div.comment-meta p > a{
     font-family: 'Montserrat','Helvetica Neue','Arial' !important;
@@ -6505,6 +6542,8 @@ body.archive div.comment-meta p > a{
         text-decoration: none !important;
 }
 
+body.blog div.comment-meta p > a:hover,
+body.blog div.comment-meta p > a:focus,
 body.search-results div.comment-meta p > a:hover,
 body.search-results div.comment-meta p > a:focus,
 body.archive div.comment-meta p > a:hover,
@@ -6512,6 +6551,7 @@ body.archive div.comment-meta p > a:focus{
         text-decoration: none !important;
 }
 
+body.blog div.comment-meta p > a > span,
 body.search-results div.comment-meta p > a > span,
 body.archive div.comment-meta p > a > span {
     color: #05a0f7;
@@ -6520,6 +6560,8 @@ body.archive div.comment-meta p > a > span {
     font-size: 14px !important;
 }
 
+body.blog div.comment-meta p > a > span:hover,
+body.blog div.comment-meta p > a > span:focus,
 body.search-results div.comment-meta p > a > span:hover,
 body.search-results div.comment-meta p > a > span:focus,
 body.archive div.comment-meta p > a > span:hover,
@@ -6529,11 +6571,14 @@ body.archive div.comment-meta p > a > span:focus  {
     font-size: 14px !important;
         }
 
+body.blog div.comment-entry p,
 body.search-results div.comment-entry p,
 body.archive div.comment-entry p{
         color: #333333;
     font-size: 15px !important;
 }
+
+body.blog div.comment-entry p > a,
 body.search-results div.comment-entry p > a,
 body.archive div.comment-entry p > a{
     color: #05a0f7;
@@ -6541,6 +6586,8 @@ body.archive div.comment-entry p > a{
     font-size: 15px !important;
 }
 
+body.blog div.comment-entry p > a:hover,
+body.blog div.comment-entry p > a:focus,
 body.search-results div.comment-entry p > a:hover,
 body.search-results div.comment-entry p > a:focus,
 body.archive div.comment-entry p > a:hover,
@@ -6549,6 +6596,7 @@ body.archive div.comment-entry p > a:focus{
         text-decoration: none !important;
 }
 
+body.blog #respond > h3,
 body.search-results #respond > h3,
 body.archive #respond > h3{
     font-family: 'Montserrat','Helvetica Neue','Arial' !important;
@@ -6556,6 +6604,8 @@ body.archive #respond > h3{
         font-size: 17px;
         color: #00388e;
 }
+
+body.blog .comment-notes,
 body.search-results .comment-notes,
 body.archive .comment-notes {
     font-family:'Open Sans', sans-serif;
@@ -6568,6 +6618,7 @@ body.archive .comment-notes {
 
 /*Drop down start*/
 
+body.blog .time-select,
 body.search-results .time-select,
 body.archive .time-select{
         height:35px;
@@ -6583,6 +6634,7 @@ body.archive .time-select{
         box-shadow: 0 1px 0 0 #666;
         }
 
+body.blog .time-select .custom-drop1,
 body.search-results .time-select .custom-drop1,
 body.archive .time-select .custom-drop1{
 
@@ -6595,6 +6647,7 @@ body.archive .time-select .custom-drop1{
         border-radius: 8px 8px 8px 8px;
 }
 
+body.blog .time-select .custom-drop1 .custom-drop-text,
 body.search-results .time-select .custom-drop1 .custom-drop-text,
 body.archive .time-select .custom-drop1 .custom-drop-text{
         position:absolute;
@@ -6609,11 +6662,13 @@ body.archive .time-select .custom-drop1 .custom-drop-text{
         color: #666666;
 }
 
+body.blog .time-select .custom-drop1 .custom-drop-text div,
 body.search-results .time-select .custom-drop1 .custom-drop-text div,
 body.archive .time-select .custom-drop1 .custom-drop-text div{
         padding-top:5px;
         }
 
+body.blog .time-select .custom-drop1 .custom-drop2,
 body.search-results .time-select .custom-drop1 .custom-drop2,
 body.archive .time-select .custom-drop1 .custom-drop2{
 
@@ -6629,6 +6684,7 @@ body.archive .time-select .custom-drop1 .custom-drop2{
         z-index:10;
 }
 
+body.blog .time-select .custom-second,
 body.search-results .time-select .custom-second,
 body.archive .time-select .custom-second{
         position:absolute;
@@ -6647,12 +6703,14 @@ body.archive .time-select .custom-second{
         border-radius:0 0 10px 10px;
         }
 
+body.blog .dropdown-side,
 body.search-results .dropdown-side,
 body.archive .dropdown-side{
         padding:0;
         margin:0;
 }
 
+body.blog .dropdown-side li,
 body.search-results .dropdown-side li,
 body.archive .dropdown-side li{
         padding:5px 10px;
@@ -6663,7 +6721,7 @@ body.archive .dropdown-side li{
         color: #777777;
         font-weight:normal !important;
 }
-
+body.blog .dropdown-side li a,
 body.search-results .dropdown-side li a,
 body.archive .dropdown-side li a{
     font-family: 'Open Sans', sans-serif !important;
@@ -6677,6 +6735,9 @@ body.archive .dropdown-side li a{
 
 /*Seach form*/
 
+body.blog #customsform input[type="text"],
+body.blog #customsform input[type="text"]:hover,
+body.blog #customsform input[type="text"]:focus,
 body.search-results #customsform input[type="text"],
 body.search-results #customsform input[type="text"]:hover,
 body.search-results #customsform input[type="text"]:focus,
@@ -6709,6 +6770,9 @@ body.archive #customsform input[type="text"]:focus{
         padding:2px 5px  !important;
 }
 
+body.blog #customsform #notback2.cus-button,
+body.blog #customsform #notback2.cus-button:hover,
+body.blog #customsform #notback2.cus-button:focus,
 body.search-results #customsform #notback2.cus-button,
 body.search-results #customsform #notback2.cus-button:hover,
 body.search-results #customsform #notback2.cus-button:focus,
@@ -7366,7 +7430,7 @@ right: 34px;
 position: relative;
 }
 
-body.archive div#container, body.single-post div#container {
+body.search-results div#container, body.blog div#container, body.archive div#container, body.single-post div#container {
 width: 1040px !important;
 }
 
@@ -7379,4 +7443,8 @@ position: relative;
 top: 7px;
 left: 7px;
 color: rgb(92, 92, 92);
+}
+
+#notback2 {
+background: transparent !important;
 }
