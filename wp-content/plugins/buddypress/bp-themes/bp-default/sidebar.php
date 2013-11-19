@@ -197,7 +197,7 @@
     <form id="customsform" method="post" action="<?php echo get_site_url(); ?>" style="padding-top:15px; padding-bottom:10px;">
         
         <input type="text" name="s" class="search-teacher" id="notback1" placeholder="Search Blog" />
-        <button class="cus-button" type="submit" id="notback2" name="search"></button>
+        <button class="cus-button" type="submit" id="notback2" name="search"><i class="icon-search"></i></button>
         
         <!--<input type="hidden" value="32b8ce28b5" name="_wpnonce" id="_wpnonce"><input type="hidden" value="/welcome-to-jukubox-beta/" name="_wp_http_referer">-->
     
@@ -247,6 +247,7 @@ $('#customsform .search-teacher').css({'background-color': 'transparent', 'backg
                             </div>
                             
                             <div class="custom-drop2">
+				<i class="icon-caret-down icon-large"></i>
                             </div>
                     </div>
                     
@@ -255,9 +256,6 @@ $('#customsform .search-teacher').css({'background-color': 'transparent', 'backg
                     
                     <ul class="dropdown-side">
                         <?php wp_get_archives( array( 'type' => 'monthly', 'limit' => 20 ) ); ?>
-                        <!--<li><a href="" >I am Naznin. I am a Web Developer and Web Designer.</a></li>
-                        <li><a href="" >I am Naznin. I am a Web Developer and Web Designer.</a></li>
-                        <li><a href="" >I am Naznin. I am a Web Developer and Web Designer.</a></li>-->
                     </ul>
              		</div>
     

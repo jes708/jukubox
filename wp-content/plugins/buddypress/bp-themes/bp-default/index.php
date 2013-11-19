@@ -20,7 +20,7 @@
 					<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 						<div class="author-box">
-							<?php echo get_avatar( get_the_author_meta( 'user_email' ), '50' ); ?>
+							<?php //echo get_avatar( get_the_author_meta( 'user_email' ), '50' ); ?>
 							<p><?php printf( _x( 'by %s', 'Post written by...', 'buddypress' ), bp_core_get_userlink( $post->post_author ) ); ?></p>
 
 							<?php if ( is_sticky() ) : ?>

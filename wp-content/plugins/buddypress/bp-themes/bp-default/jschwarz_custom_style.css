@@ -6231,17 +6231,17 @@ margin-bottom: 13px;
 
 /*//////blog single page start here//////*/
 
-body.archive{
-        background-image: url('backgroundimage.jpg')  !important;
+body.search-results, body.archive{
+        background-image: url(http://jukubox.com/wp-content/uploads/2013/07/cardboard_flat2.png)  !important;
 
 }
-body.archive .input-append .accessibly-hidden{
+body.search-results .input-append .accessibly-hidden, body.archive .input-append .accessibly-hidden{
         color: #999999;
         padding:18px;
 }
 
 
-body.archive h2.posttitle {
+body.search-results h2.posttitle, body.archive h2.posttitle {
         color: #333333;
     font-size: 22px;
     font-weight: bold;
@@ -6249,18 +6249,20 @@ body.archive h2.posttitle {
         letter-spacing: normal;
 }
 
-body.archive p.date/*, p.postmetadata */{
+body.search-results p.date, body.archive p.date {
         font-family:'Open Sans', sans-serif;
         font-size: 14px !important;
         color: #333333;
 }
 
-body.archive p.date > a {
+body.search-results p.date > a, body.archive p.date > a {
 /*    color: #05a0f7;
  *            text-decoration: none;
  *            */    font-size: 13px !important;
         }
 
+body.search-results p.date > a:hover,
+body.search-results p.date > a:focus,
 body.archive p.date > a:hover,
 body.archive p.date > a:focus  {
 /*    color: #00388e;
@@ -6268,13 +6270,13 @@ body.archive p.date > a:focus  {
  *            */    font-size: 13px !important;
         }
 
-body.archive div.post-content .entry {
+body.search-results div.post-content .entry, body.archive div.post-content .entry {
     font-family:'Open Sans', sans-serif;
     font-size: 17px !important;
     color: #333333;
         padding:0 15px;
 }
-body.archive div.post-content div.entry > p {
+body.search-results div.post-content div.entry > p, body.archive div.post-content div.entry > p {
     font-family:'Open Sans', sans-serif;
     font-size: 17px !important;
     color: #333333;
@@ -6283,11 +6285,12 @@ body.archive div.post-content div.entry > p {
         margin-bottom:40px !important;
 }
 
-body.archive div.post-content div.entry > p a{
+body.search-results div.post-content div.entry > p a, body.archive div.post-content div.entry > p a{
         color: #05A0F7 !important;
 }
 
-
+body.search-results div.alignright > a,
+body.search-results div.alignleft > a,
 body.archive div.alignright > a,
 body.archive div.alignleft > a{
 /*    color: #05a0f7;
@@ -6295,7 +6298,10 @@ body.archive div.alignleft > a{
  *            */    font-size: 13px !important;
 }
 
-
+body.search-results div.alignright > a:hover,
+body.search-results div.alignright > a:focus,
+body.search-results div.alignleft > a:hover,
+body.search-results div.alignleft > a:focus,
 body.archive div.alignright > a:hover,
 body.archive div.alignright > a:focus,
 body.archive div.alignleft > a:hover,
@@ -6310,10 +6316,12 @@ body.archive div.alignleft > a:focus {
 
 /*//////sidebar start here//////*/
 
+body.search-results ul#manual-recent-post > li,
 body.archive ul#manual-recent-post > li{
         margin-bottom: 10px !important;
 }
 
+body.search-results ul#manual-recent-post > li > p:nth-child(1),
 body.archive ul#manual-recent-post > li > p:nth-child(1){
     font-family: 'Montserrat','Helvetica Neue','Arial' !important;
     font-size: 13px !important;
@@ -6321,12 +6329,13 @@ body.archive ul#manual-recent-post > li > p:nth-child(1){
         color: #666666;
         margin-bottom: 0 !important;
 }
-
+body.search-results ul#manual-recent-post > li > p:nth-child(1):hover,
+body.search-results ul#manual-recent-post > li > p:nth-child(1):focus,
 body.archive ul#manual-recent-post > li > p:nth-child(1):hover,
 body.archive ul#manual-recent-post > li > p:nth-child(1):focus{
     font-size: 13px !important;
 }
-
+body.search-results ul#manual-recent-post > li > p:nth-child(2),
 body.archive ul#manual-recent-post > li > p:nth-child(2){
     font-family: 'Open Sans', sans-serif !important;
     font-size: 13px !important;
@@ -6335,6 +6344,7 @@ body.archive ul#manual-recent-post > li > p:nth-child(2){
         margin-bottom: 0 !important;
 }
 
+body.search-results div#sidebar .widget h3.widgettitle,
 body.archive div#sidebar .widget h3.widgettitle{
         font-family: 'Montserrat','Helvetica Neue','Arial' !important;
     font-weight:bold !important;
@@ -6345,6 +6355,7 @@ body.archive div#sidebar .widget h3.widgettitle{
         text-transform:none;
 }
 
+body.search-results div#sidebar .widget > ul > li > a,
 body.archive div#sidebar .widget > ul > li > a{
     /*color: #05a0f7;
  *         text-decoration: none;*/
@@ -6355,6 +6366,8 @@ body.archive div#sidebar .widget > ul > li > a{
         /*text-decoration: none !important;*/
 }
 
+body.search-results div#sidebar .widget > ul > li > a:hover,
+body.search-results div#sidebar .widget > ul > li > a:focus,
 body.archive div#sidebar .widget > ul > li > a:hover,
 body.archive div#sidebar .widget > ul > li > a:focus {
         /*color: #00388e;
@@ -6366,6 +6379,7 @@ body.archive div#sidebar .widget > ul > li > a:focus {
 
 }
 
+body.search-results div#sidebar .widget .menu-item > a,
 body.archive div#sidebar .widget .menu-item > a{
 /*    color: #05a0f7;
  *            text-decoration: none;*/
@@ -6374,7 +6388,8 @@ body.archive div#sidebar .widget .menu-item > a{
     font-size: 13px !important;
 }
 
-
+body.search-results div#sidebar .widget .menu-item > a:hover,
+body.search-results div#sidebar .widget .menu-item > a:focus,
 body.archive div#sidebar .widget .menu-item > a:hover,
 body.archive div#sidebar .widget .menu-item > a:focus {
     /*color: #00388e;
@@ -6389,7 +6404,7 @@ body.archive div#sidebar .widget .menu-item > a:focus {
 
 
 /*///////avatar start here/////*/
-
+body.search-results .comment-avatar-box div.avb img.avatar,
 body.archive .comment-avatar-box div.avb img.avatar{
         width:64px !important;
         height:64px !important;
@@ -6403,6 +6418,7 @@ body.archive .comment-avatar-box div.avb img.avatar{
     border-radius: 0;
 }
 
+body.search-results span.alignright img.avatar,
 body.archive span.alignright img.avatar{
         width: 52px;
         height: 52px;
@@ -6411,6 +6427,7 @@ body.archive span.alignright img.avatar{
     border-radius: 4px;
 }
 
+body.search-results div#sidebar div.item-avatar img,
 body.archive div#sidebar div.item-avatar img{
 }
 
@@ -6435,24 +6452,36 @@ body.archive div#sidebar div.item-avatar img{
 
 /*///////comment start here/////*/
 
+body.search-results div#comments > h3,
 body.archive div#comments > h3{
         font-family: 'Montserrat','Helvetica Neue','Arial' !important;
         font-weight:bold !important;
         font-size:22px !important;
         color:#333333;
 }
+
+body.search-results div#respond > h3,
 body.archive div#respond > h3{
         font-weight:bold !important;
         font-size:22px !important;
         color:#333333;
 }
+
+body.search-results .comment-content.standard-form .comment-notes,
 body.archive .comment-content.standard-form .comment-notes{
         display:none !important;
 }
+
+body.search-results .comment-content.standard-form p.comment-form-author,
 body.archive .comment-content.standard-form p.comment-form-author{
         margin-bottom:10px;
 }
 
+body.search-results #signup_form.standard-form input[type="text"],
+body.search-results #signup_form.standard-form textarea,
+body.search-results .form-allowed-tags,
+body.search-results #commentform input[type="text"],
+body.search-results #commentform textarea,
 body.archive #signup_form.standard-form input[type="text"],
 body.archive #signup_form.standard-form textarea,
 body.archive .form-allowed-tags,
@@ -6462,10 +6491,12 @@ body.archive #commentform textarea{
         padding:10px !important;
         margin-bottom:0 !important;
 }
+body.search-results #commentform textarea,
 body.archive #commentform textarea{
         height:200px !important;
 }
 
+body.search-results div.comment-meta p > a,
 body.archive div.comment-meta p > a{
     font-family: 'Montserrat','Helvetica Neue','Arial' !important;
     font-weight:bold;
@@ -6474,10 +6505,14 @@ body.archive div.comment-meta p > a{
         text-decoration: none !important;
 }
 
+body.search-results div.comment-meta p > a:hover,
+body.search-results div.comment-meta p > a:focus,
 body.archive div.comment-meta p > a:hover,
 body.archive div.comment-meta p > a:focus{
         text-decoration: none !important;
 }
+
+body.search-results div.comment-meta p > a > span,
 body.archive div.comment-meta p > a > span {
     color: #05a0f7;
         text-decoration: none !important;
@@ -6485,6 +6520,8 @@ body.archive div.comment-meta p > a > span {
     font-size: 14px !important;
 }
 
+body.search-results div.comment-meta p > a > span:hover,
+body.search-results div.comment-meta p > a > span:focus,
 body.archive div.comment-meta p > a > span:hover,
 body.archive div.comment-meta p > a > span:focus  {
     color: #00388e;
@@ -6492,30 +6529,34 @@ body.archive div.comment-meta p > a > span:focus  {
     font-size: 14px !important;
         }
 
+body.search-results div.comment-entry p,
 body.archive div.comment-entry p{
         color: #333333;
     font-size: 15px !important;
 }
-
+body.search-results div.comment-entry p > a,
 body.archive div.comment-entry p > a{
     color: #05a0f7;
         text-decoration: none;
     font-size: 15px !important;
 }
 
+body.search-results div.comment-entry p > a:hover,
+body.search-results div.comment-entry p > a:focus,
 body.archive div.comment-entry p > a:hover,
 body.archive div.comment-entry p > a:focus{
     color: #00388e;
         text-decoration: none !important;
 }
 
+body.search-results #respond > h3,
 body.archive #respond > h3{
     font-family: 'Montserrat','Helvetica Neue','Arial' !important;
     font-weight:bold;
         font-size: 17px;
         color: #00388e;
 }
-
+body.search-results .comment-notes,
 body.archive .comment-notes {
     font-family:'Open Sans', sans-serif;
     font-size: 17px !important;
@@ -6527,6 +6568,7 @@ body.archive .comment-notes {
 
 /*Drop down start*/
 
+body.search-results .time-select,
 body.archive .time-select{
         height:35px;
         width: 100%;
@@ -6541,6 +6583,7 @@ body.archive .time-select{
         box-shadow: 0 1px 0 0 #666;
         }
 
+body.search-results .time-select .custom-drop1,
 body.archive .time-select .custom-drop1{
 
         position:relative;
@@ -6552,6 +6595,7 @@ body.archive .time-select .custom-drop1{
         border-radius: 8px 8px 8px 8px;
 }
 
+body.search-results .time-select .custom-drop1 .custom-drop-text,
 body.archive .time-select .custom-drop1 .custom-drop-text{
         position:absolute;
         top:0;
@@ -6564,12 +6608,15 @@ body.archive .time-select .custom-drop1 .custom-drop-text{
     font-weight: normal;
         color: #666666;
 }
+
+body.search-results .time-select .custom-drop1 .custom-drop-text div,
 body.archive .time-select .custom-drop1 .custom-drop-text div{
         padding-top:5px;
         }
+
+body.search-results .time-select .custom-drop1 .custom-drop2,
 body.archive .time-select .custom-drop1 .custom-drop2{
 
-        background:#EAEAEA url('droparrow2.png') no-repeat 50% 50%;
         position:absolute;
         top:0;
         right:0;
@@ -6582,6 +6629,7 @@ body.archive .time-select .custom-drop1 .custom-drop2{
         z-index:10;
 }
 
+body.search-results .time-select .custom-second,
 body.archive .time-select .custom-second{
         position:absolute;
         top:0;
@@ -6599,11 +6647,13 @@ body.archive .time-select .custom-second{
         border-radius:0 0 10px 10px;
         }
 
+body.search-results .dropdown-side,
 body.archive .dropdown-side{
         padding:0;
         margin:0;
 }
 
+body.search-results .dropdown-side li,
 body.archive .dropdown-side li{
         padding:5px 10px;
         margin:5px 0;
@@ -6613,6 +6663,8 @@ body.archive .dropdown-side li{
         color: #777777;
         font-weight:normal !important;
 }
+
+body.search-results .dropdown-side li a,
 body.archive .dropdown-side li a{
     font-family: 'Open Sans', sans-serif !important;
     font-size: 13px !important;
@@ -6625,6 +6677,9 @@ body.archive .dropdown-side li a{
 
 /*Seach form*/
 
+body.search-results #customsform input[type="text"],
+body.search-results #customsform input[type="text"]:hover,
+body.search-results #customsform input[type="text"]:focus,
 body.archive #customsform input[type="text"],
 body.archive #customsform input[type="text"]:hover,
 body.archive #customsform input[type="text"]:focus{
@@ -6654,6 +6709,9 @@ body.archive #customsform input[type="text"]:focus{
         padding:2px 5px  !important;
 }
 
+body.search-results #customsform #notback2.cus-button,
+body.search-results #customsform #notback2.cus-button:hover,
+body.search-results #customsform #notback2.cus-button:focus,
 body.archive #customsform #notback2.cus-button,
 body.archive #customsform #notback2.cus-button:hover,
 body.archive #customsform #notback2.cus-button:focus{
@@ -6674,7 +6732,6 @@ body.archive #customsform #notback2.cus-button:focus{
         cursor:pointer !important;
         padding: 0 0 0 0 !important;
         line-height: normal !important;
-        background: #FFF url("searchsmall.png") 50% 50% no-repeat !important;
 }
 
 /*textarea,*/
@@ -6708,6 +6765,9 @@ input[type="color"],
     vertical-align: middle;
 }
 
+body.search-results #nav-below div.alignleft {
+display: none;
+}
 
 /*Seach form END*/
 
@@ -6746,7 +6806,7 @@ input[type="color"],
 /*//////blog single page start here//////*/
 
 body.single-post{
-        background-image: url('backgroundimage.jpg')  !important;
+        background-image: url(http://jukubox.com/wp-content/uploads/2013/07/cardboard_flat2.png) !important;
 
 }
 body.single-post .input-append .accessibly-hidden{
@@ -7115,7 +7175,6 @@ body.single-post .time-select .custom-drop1 .custom-drop-text div{
         }
 body.single-post .time-select .custom-drop1 .custom-drop2{
 
-        background:#EAEAEA url('droparrow2.png') no-repeat 50% 50%;
         position:absolute;
         top:0;
         right:0;
@@ -7221,7 +7280,6 @@ body.single-post #customsform #notback2.cus-button:focus{
         cursor:pointer !important;
         padding: 0 0 0 0 !important;
         line-height: normal !important;
-        background: #FFF url("searchsmall.png") 50% 50% no-repeat !important;
 }
 
 
@@ -7310,4 +7368,15 @@ position: relative;
 
 body.archive div#container, body.single-post div#container {
 width: 1040px !important;
+}
+
+#notback2 i {
+color: black;
+}
+
+div.custom-drop2 .icon-caret-down.icon-large {
+position: relative;
+top: 7px;
+left: 7px;
+color: rgb(92, 92, 92);
 }
