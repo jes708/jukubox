@@ -7382,8 +7382,8 @@ input[type="color"],
 
 /*Seach form END*/
 
-body.page-id-24 div#content .padder {
-width: 961px;
+body.page-id-62 div#content .padder, body.page-id-24 div#content .padder {
+width: 984px;
 border-right: none;
 }
 
@@ -7430,7 +7430,7 @@ right: 34px;
 position: relative;
 }
 
-body.search-results div#container, body.blog div#container, body.archive div#container, body.single-post div#container {
+body.page-id-62 div#container, body.search-results div#container, body.blog div#container, body.archive div#container, body.single-post div#container {
 width: 1040px !important;
 }
 

@@ -140,6 +140,6 @@ $worker_name = bp_get_profile_field_data('field=1&user_id=' . $worker_id . '') ;
 		</div><!-- .padder -->
 	</div><!-- #content -->
 
-	<?php get_sidebar(); ?>
+	<?php //get_sidebar(); ?>
 
 <?php get_footer(); ?>
