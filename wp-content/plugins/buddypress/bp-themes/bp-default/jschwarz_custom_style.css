@@ -7448,3 +7448,10 @@ color: rgb(92, 92, 92);
 #notback2 {
 background: transparent !important;
 }
+
+body.page-id-24 div#content .padder {
+width: 966px;
+border-right: none;
+left: -15px !important;
+position: relative;
+}
