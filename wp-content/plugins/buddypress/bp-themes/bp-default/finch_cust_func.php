@@ -161,10 +161,10 @@ function get_upcoming_lessons($user_id, $time_interval, $StudentOrTeacher) {
 				wp_app_appointments.status IN ('confirmed', 'completed', 'paid', 'reserved')
 			AND
 
-				 wp_app_appointments.start <= NOW() " /*.  " DATE_SUB(NOW(), INTERVAL " . $time_interval . " MINUTE)*/ . " 
+				 wp_app_appointments.start <= DATE_ADD(NOW(), INTERVAL 2 HOUR) 
 			AND
-				 wp_app_appointments.end >= NOW()  " /* DATE_SUB(NOW(), INTERVAL " . $time_interval . "  MINUTE) */  
-				 /* wp_app_appointments.end >= NOW()*/ . "
+				 wp_app_appointments.end >= DATE_SUB(NOW(), INTERVAL 2 HOUR)     
+				
  			AND
 				wp_bp_xprofile_data.field_id = 1 
 			AND
@@ -204,7 +204,7 @@ function get_upcoming_lessons($user_id, $time_interval, $StudentOrTeacher) {
 
 		$enterable_lessons = Array();  // are there available lessons currently?  
 	
-		if( (time() >= $beg_enter_time) /*&& (time() <= $end_enter_time)*/   ) { 
+		if( (time() >= $beg_enter_time) && (time() <= $end_enter_time)  ) { 
 			$can_enter = TRUE;
 			$take_lesson_html = 'The Room is Open!<br /><button type="button" class="enter_room btn btn-primary" goto="' . get_home_url() . '/lesson-room/?lesson_id=' . $lesson_id . '">Enter Room</button>
 			'; 
