@@ -1935,9 +1935,9 @@ function generate_lessontoggle($userId, $services='') { // takes has of lesson s
 		} else { 
 			$checkedOrNo = ""; 
 		}
-		if(( $value['ID'] != 1 ) && ( $value['ID'] != 2 )) {  // servnumedit can't toggle free first lesson - introduction from new students  
+//		if(( $value['ID'] != 1 ) || ( $value['ID'] != 2 )) {  // servnumedit can't toggle free first lesson - introduction from new students  
 			echo '<input class="serv_check" type="checkbox" name="services[' . $value['ID'] . ']" value="' . $value['ID'] . '" ' . $checkedOrNo . ' /> <strong>' . $value['name'] . '</strong><br />'; 
-		} 
+//		} 
 	} 
 	echo '<button type="submit" id="serveChangeSubmit" class="btn btn-primary">Change My Services</button>';  
 	echo '</form>'; 
