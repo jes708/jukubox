@@ -7455,3 +7455,7 @@ border-right: none;
 left: -15px !important;
 position: relative;
 }
+
+#cant_toggle {
+display: none;
+}
