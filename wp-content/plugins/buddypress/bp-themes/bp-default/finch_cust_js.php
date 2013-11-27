@@ -561,13 +561,13 @@ jQuery(document).ready(function() {
 //});
 
 jQuery(document).ready(function() {
-    if ( document.location.href.indexOf('app_service_id=0') > -1 ) {
+    if ( document.location.href.indexOf('app_service_id=1') > -1 ) {
         jQuery('.appointments_take_appointment').remove();
     }
 });       
          
 jQuery(document).ready(function() {
-    if ( document.location.href.indexOf('app_service_id=0') > -1 ) {
+    if ( document.location.href.indexOf('app_service_id=1') > -1 ) {
         jQuery('div.app_timetable_cell.free').click(function() {
                 jQuery('select.app_select_services').addClass('red_hil');
                 jQuery("html, body").animate({ scrollTop: 0 }, "fast");

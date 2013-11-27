@@ -1678,13 +1678,13 @@ function get_fullhour_price($worker) {
 
 function reset_price( $price, $service, $worker, $user ) {
 // Replace 3 with your free service ID
-if ( 2 == $service || 3 == $service || 5 == $service ) {
+if ( 2 == $service || 4 == $service || 6 == $service ) {
 $price = 0;
 return $price; }
-elseif ( 4 == $service) {
+elseif ( 5 == $service) {
 $price = get_halfhour_price($worker);
 return $price; }
-elseif ( 1 == $service) {
+elseif ( 3 == $service) {
 $price = get_fullhour_price($worker);
 return $price; }
 }
@@ -1799,8 +1799,8 @@ function does_xprofileprice_exist($fieldID, $userId) {
 }  
 
 function get_service_prices($userId, $serv_num) { 
-	if( $serv_num == 1 ) { $column = 'price'; } 
-	elseif( $serv_num == 4 ) { $column = 'price_half_hour'; }
+	if( $serv_num == 3 ) { $column = 'price'; } 
+	elseif( $serv_num == 5 ) { $column = 'price_half_hour'; }
 	else { echo 'Error getting price!'; return false; }  
 	
 	$get_price = "SELECT
@@ -1848,11 +1848,11 @@ function generate_lessontoggle($userId, $services='') { // takes has of lesson s
 		foreach( $service_hash as $key => $value ) { 
 			if(  !$sub_service_hash[$key] )    {  
 					// service removed - delete from xprofile data if a paid service
-				if ( ($key == 1) || ($key == 4) ) { 
-					if( $key == 1 ) { // delete hour price
+				if ( ($key == 3) || ($key == 5) ) { 
+					if( $key == 3 ) { // delete hour price
 						$fieldID = 23; 	
 					} 
-					elseif( $key == 4 ) { // delete half hour price
+					elseif( $key == 5 ) { // delete half hour price
 						$fieldID = 221; 
 					}
  
@@ -1874,11 +1874,11 @@ function generate_lessontoggle($userId, $services='') { // takes has of lesson s
 			} 	
 		} // end foreach
 		foreach( $sub_service_hash as $key => $value ) { 
-			if( ( !$service_hash[$key] ) && ( $key == 1 || $key == 4 ) ) { 	
-				if( $key == 1 ) { // add hour price
+			if( ( !$service_hash[$key] ) && ( $key == 3 || $key == 5 ) ) { 	
+				if( $key == 3 ) { // add hour price
 					$fieldID = 23; 	
 				} 
-				elseif( $key == 4 ) { // add half hour price
+				elseif( $key == 5 ) { // add half hour price
 					$fieldID = 221; 
 				}
 					 
@@ -1935,7 +1935,7 @@ function generate_lessontoggle($userId, $services='') { // takes has of lesson s
 		} else { 
 			$checkedOrNo = ""; 
 		}
-		if( $value['ID'] != 2 ) {  // can't toggle free first lesson - introduction from new students  
+		if(( $value['ID'] != 1 ) && ( $value['ID'] != 2 )) {  // servnumedit can't toggle free first lesson - introduction from new students  
 			echo '<input class="serv_check" type="checkbox" name="services[' . $value['ID'] . ']" value="' . $value['ID'] . '" ' . $checkedOrNo . ' /> <strong>' . $value['name'] . '</strong><br />'; 
 		} 
 	} 
@@ -2155,7 +2155,7 @@ function bp_get_lesson_button( $potential_friend_id = 0, $friend_status = false 
 					'block_self'        => true,
 					'wrapper_class'     => 'lesson-button-wrapper friendship-button pending_friend',
 					'wrapper_id'        => 'friendship-button-' . $potential_friend_id,
-					'link_href'         => wp_nonce_url('/test-appointment/?app_provider_id=' . $potential_friend_id . '&app_service_id=0', 'friends_withdraw_friendship' ),
+					'link_href'         => wp_nonce_url('/test-appointment/?app_provider_id=' . $potential_friend_id . '&app_service_id=1', 'friends_withdraw_friendship' ),
 					'link_text'         => __( '<i class="icon-book icon-large"></i> Book Lesson', 'buddypress' ),
 					'link_title'        => __( 'Schedule a Lesson', 'buddypress' ),
 					'link_id'			=> 'friend-' . $potential_friend_id,

@@ -94,7 +94,7 @@ style="top:13px;"
 		<?php if( is_teacher( $disp_user_id )===TRUE ) : ?>	
 			<script>
 			<?php /* if( bp_is_my_friend($disp_user_id) ) { */  ?>
-				var schedule_button = '<div class="generic-button" id="schedule-lesson"><a href="<?php echo get_home_url(); ?>/test-appointment/?app_provider_id=<?php echo $disp_user_id; ?>&app_service_id=0" title="Schedule a private lesson with this user." class="btn btn-primary send-message"><i class="icon-book"></i> Book Lesson</a></div>';
+				var schedule_button = '<div class="generic-button" id="schedule-lesson"><a href="<?php echo get_home_url(); ?>/test-appointment/?app_provider_id=<?php echo $disp_user_id; ?>&app_service_id=1" title="Schedule a private lesson with this user." class="btn btn-primary send-message"><i class="icon-book"></i> Book Lesson</a></div>';
 			
 		 
 				//alert(thingie);  

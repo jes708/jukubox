@@ -1447,7 +1447,7 @@ class Appointments {
 		$s .= '<div class="app_services_dropdown_select">';
 		$s .= '<select name="app_select_services" class="app_select_services">';
 		if ( $services ) {
-			$s .= '<option value="0" selected="selected">Please select a service</option>';
+//			$s .= '<option value="0" selected="selected">Please select a service</option>';
 			foreach ( $services as $service ) {
 				// Check if this is the first service, so it would be displayed by default
 				if ( $service->ID == $this->service ) {
