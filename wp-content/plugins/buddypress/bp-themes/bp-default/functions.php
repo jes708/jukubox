@@ -2115,10 +2115,10 @@ function bp_member_add_lesson_button() {
 	$us_serv_str = get_us_services($membId);
 	$pos_hour = false;
 	$pos_half = false;
-	if (strpos($us_serv_str, ":1:") !== false) {
+	if (strpos($us_serv_str, ":3:") !== false) { //servnumedit
         	$pos_hour = true;
 	}
-	if (strpos($us_serv_str, ":4:") !== false) {
+	if (strpos($us_serv_str, ":5:") !== false) { //servnumedit
         	$pos_half = true;
 	}
 

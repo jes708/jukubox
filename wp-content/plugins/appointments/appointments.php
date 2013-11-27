@@ -2166,7 +2166,7 @@ class Appointments {
 		// NHF - allowed personal half hour prices, added variables for console.log
 		$price_raw = $price; 
 		$worker_raw = $worker;
-		if( $service == 4 ) { // if this is a half-hour lesson
+		if( $service == 5 ) { // servnumedit if this is a half-hour lesson
 			$price_raw = get_halfhour_price($worker);
 			$price = (double)$price_raw; 		
 		}  
@@ -4760,10 +4760,10 @@ $raw_half = get_halfhour_price($cur_us_id);
 $us_serv_str = get_us_services($cur_us_id);
 $pos_hour = false;
 $pos_half = false;
-if (strpos($us_serv_str, ":1:") !== false) {
+if (strpos($us_serv_str, ":3:") !== false) { //servnumedit 
 	$pos_hour = true;
 }
-if (strpos($us_serv_str, ":4:") !== false) {
+if (strpos($us_serv_str, ":5:") !== false) { //servnumedit 
         $pos_half = true;
 }
 //		if(( !$raw_hour || $raw_hour == '' || $raw_hour==0 ) && ( !$raw_half || $raw_half == '' || $raw_half==0 )) { 
@@ -4980,9 +4980,9 @@ function screen_content_app_pricing_settings() {
 
 	// set field ids with service numbers
 	// data for hour long lessons 
-	$first_field_id = Array('field_id' => '23', 'serv_num' => '1', 'table_column' => 'price');
+	$first_field_id = Array('field_id' => '23', 'serv_num' => '3', 'table_column' => 'price'); //servnumedit 
 	// data for half hour long lessons 
-	$second_field_id = Array('field_id' => '221', 'serv_num' => '4', 'table_column' => 'price_half_hour');  
+	$second_field_id = Array('field_id' => '221', 'serv_num' => '5', 'table_column' => 'price_half_hour'); //servnumedit  
 	
 	if( isset($_POST['halfHourPRice']) ) { 
 		submit_new_appointments_prices( $_POST['halfHourPRice'], $second_field_id, $user_id); 
@@ -5015,12 +5015,12 @@ function screen_content_app_pricing_settings() {
 			//print_r($services_hash); 
 	?>
 	<div class="priceWrap">	
-	<?php if( (array_key_exists(1, $services_hash)) || (array_key_exists(4, $services_hash))  ) : ?> 
+	<?php if( (array_key_exists(3, $services_hash)) || (array_key_exists(5, $services_hash))  ) : //servnumedit ?> 
 		<h4>Set the price you wish to charge for lessons</h4>
 		<form method="post" id="priceForm">
 	<?php endif; ?>
 <?php 	
-		if( array_key_exists(1, $services_hash) ) { 
+		if( array_key_exists(3, $services_hash) ) { //servnumedit 
 			if( !empty($previous_price) ) {  
 				//echo '<h4>Your current price per hour: <span id="priceNum">$' . $previous_price . '/ hour lesson</span></h4>';  
 				$init_price = $previous_price; 
@@ -5033,7 +5033,7 @@ function screen_content_app_pricing_settings() {
 		<?php  
 		}
 		 
-		if( array_key_exists(4, $services_hash) ) { 
+		if( array_key_exists(5, $services_hash) ) { //servnumedit 
 			if( !empty($previous_halfhour_price) ) { 			
 				//echo '<h4>Your current price per half hour: <span id="priceNum">$' . $previous_halfhour_price . '/ half hour lesson</span></h4>';  
 				$init_halfhour_price = $previous_halfhour_price; 
@@ -5051,7 +5051,7 @@ function screen_content_app_pricing_settings() {
 			?>
 
 		
-	<?php if( (array_key_exists(1, $services_hash)) || (array_key_exists(4, $services_hash))  ) : ?> 
+	<?php if( (array_key_exists(3, $services_hash)) || (array_key_exists(5, $services_hash))  ) : //servnumedit ?>  
 			<input type="hidden" name="worker_id" value="<?php echo $user_id; ?>" />
 			<p><button type="submit" class="btn btn-primary">Change Price</button></p>
 
