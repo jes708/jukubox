@@ -1920,6 +1920,7 @@ function generate_lessontoggle($userId, $services='') { // takes has of lesson s
 	
 	$avail_serv = serivces_hash('total', '');
 	$avail_serv_array = $avail_serv['array']; 
+        $avail_serv_array_0 = array_slice($avail_serv_array, 2, 4);
 	$avail_serv_hash = $avail_serv['hash'];  
 
 	// reset server hash - to get newset updated services available	
@@ -1929,7 +1930,7 @@ function generate_lessontoggle($userId, $services='') { // takes has of lesson s
 	echo '<h4>Services I Teach</h4>';
 	echo '<form method="post" id="serviceForm" action="">'; 
 	echo '<input type="hidden" name="serviceToggled" value="" />';  		
-	foreach( $avail_serv_array as $key => $value ) {
+	foreach( $avail_serv_array_0 as $key => $value ) {
 		if( !empty( $service_hash[$value['ID']] ) ) { 
 			$checkedOrNo = "checked"; 
 		} else { 
