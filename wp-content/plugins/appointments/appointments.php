@@ -4800,7 +4800,7 @@ if (strpos($us_serv_str, ":4:") !== false) {
 					var cancel_app_status = jQuery(this).parent('td').parent('tr').children('.app_status').text();
 					var cancel_app_service = jQuery(this).parent('td').parent('tr').children('.service_name').attr('ser_id'); 
 					//alert(cancel_app_status + cancel_app_service); 
-					if( cancel_app_service == 1 && cancel_app_status == 'pending' ) { 
+					if(( cancel_app_service == 3 && cancel_app_status == 'pending' ) || ( cancel_app_service == 5 && cancel_app_status == 'pending' )) { 
 						alert('This is a paid service that the client has not paid for yet - it cannot be approved until the client makes the reqiured payment.  If they neglect to make payment, cancel it, as it will otherwise note your schedule as filled for that time period.') 
 						return false;
 					} 
