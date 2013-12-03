@@ -960,7 +960,7 @@ jq(document).ready( function() {
 		// NHF edit - require approval for canceling friendship
 		if( thelink.hasClass('remove') ) { 
 			 
-			var confRem = confirm('Are you sure you want to defriend this person?'); 
+			var confRem = confirm('Are you sure you want to remove this connection?'); 
 			if (confRem == false) { 
 				return false; 
 			} 

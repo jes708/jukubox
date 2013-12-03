@@ -93,7 +93,7 @@ $worker_name = bp_get_profile_field_data('field=1&user_id=' . $worker_id . '') ;
 							<script>
 								jQuery('app_select_services').ready(function() { 
 							<?php foreach($avail_serv_hash as $key => $value ) : ?>
-							    <?php if($key != 2) : ?>
+							    <?php if($key > 2) : ?>
 								 	jQuery('.app_select_services option[value="<?php echo $key; ?>"]').remove();
 							    <?php endif; ?>
 							<?php endforeach; ?>

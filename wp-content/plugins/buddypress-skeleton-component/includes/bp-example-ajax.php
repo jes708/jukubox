@@ -37,7 +37,7 @@ function example_friends_ajax_addremove_friend() {
 	if ( 'is_friend' == BP_Friends_Friendship::check_is_friend( $bp->loggedin_user->id, $_POST['fid'] ) ) {
 
 		if ( !friends_remove_friend( $bp->loggedin_user->id, $_POST['fid'] ) ) {
-			echo __( 'Friendship could not be canceled.', 'bp-component' );
+			echo __( 'Studio could not be left.', 'bp-component' );
 		} else {
 			echo '<a id="friend-' . $_POST['fid'] . '" class="add" rel="add" title="' . __( 'Add Friend', 'bp-component' ) . '" href="' . $bp->loggedin_user->domain . $bp['friends']['slug'] . '/add-friend/' . $_POST['fid'] . '">' . __( 'Add Friend', 'bp-component' ) . '</a>';
 		}
@@ -45,7 +45,7 @@ function example_friends_ajax_addremove_friend() {
 	} else if ( 'not_friends' == BP_Friends_Friendship::check_is_friend( $bp->loggedin_user->id, $_POST['fid'] ) ) {
 
 		if ( !friends_add_friend( $bp->loggedin_user->id, $_POST['fid'] ) ) {
-			echo __( 'Friendship could not be requested.', 'bp-component');
+			echo __( 'Studio admission could not be requested.', 'bp-component');
 		} else {
 			echo '<a href="' . $bp->loggedin_user->domain . $bp['friends']['slug'] . '" class="requested">' . __( 'Friendship Requested', 'bp-component' ) . '</a>';
 		}

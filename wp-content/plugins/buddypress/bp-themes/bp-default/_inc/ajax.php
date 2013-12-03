@@ -602,9 +602,9 @@ function bp_dtheme_ajax_addremove_friend() {
 		check_ajax_referer( 'friends_remove_friend' );
 
 		if ( ! friends_remove_friend( bp_loggedin_user_id(), $friend_id ) ) {
-			echo __( 'Could not cancel.', 'buddypress' );
+			echo __( 'Could not leave studio.', 'buddypress' );
 		} else {
-			echo '<a id="friend-' . esc_attr( $friend_id ) . '" class="btn btn-gray add" rel="add" title="' . __( 'Add Friend', 'buddypress' ) . '" href="' . wp_nonce_url( bp_loggedin_user_domain() . bp_get_friends_slug() . '/add-friend/' . $friend_id, 'friends_add_friend' ) . '">' . __( '<i class="icon-plus"></i> Add Friend', 'buddypress' ) . '</a>';
+			echo '<a id="friend-' . esc_attr( $friend_id ) . '" class="btn btn-gray add" rel="add" title="' . __( 'Add Friend', 'buddypress' ) . '" href="' . wp_nonce_url( bp_loggedin_user_domain() . bp_get_friends_slug() . '/add-friend/' . $friend_id, 'friends_add_friend' ) . '">' . __( '<i class="icon-plus"></i> Join Studio', 'buddypress' ) . '</a>';
 		}
 
 	// Trying to request friendship
@@ -622,9 +622,9 @@ function bp_dtheme_ajax_addremove_friend() {
 		check_ajax_referer( 'friends_withdraw_friendship' );
 
 		if ( friends_withdraw_friendship( bp_loggedin_user_id(), $friend_id ) ) {
-			echo '<a id="friend-' . esc_attr( $friend_id ) . '" class="btn btn-gray add" rel="add" title="' . __( 'Add Friend', 'buddypress' ) . '" href="' . wp_nonce_url( bp_loggedin_user_domain() . bp_get_friends_slug() . '/add-friend/' . $friend_id, 'friends_add_friend' ) . '">' . __( '<i class="icon-plus"></i> Add Friend', 'buddypress' ) . '</a>';
+			echo '<a id="friend-' . esc_attr( $friend_id ) . '" class="btn btn-gray add" rel="add" title="' . __( 'Add Friend', 'buddypress' ) . '" href="' . wp_nonce_url( bp_loggedin_user_domain() . bp_get_friends_slug() . '/add-friend/' . $friend_id, 'friends_add_friend' ) . '">' . __( '<i class="icon-plus"></i> Join Studio', 'buddypress' ) . '</a>';
 		} else {
-			echo __("Could not cancel.", 'buddypress');
+			echo __("Could not leave studio.", 'buddypress');
 		}
 
 	// Request already pending
