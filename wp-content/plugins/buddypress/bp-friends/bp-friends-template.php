@@ -268,10 +268,11 @@ function bp_add_friend_button( $potential_friend_id = 0, $friend_status = false 
 			$potential_friend_id = bp_get_potential_friend_id( $potential_friend_id );
 
 		$is_friend = bp_is_friend( $potential_friend_id );
+		$is_teacher = is_teacher( $potential_friend_id );
 
 /*		if ( empty( $is_friend ) )
 			return false; */ 
-
+if( $is_teacher !== TRUE ) :
 		switch ( $is_friend ) { // NHF EDIT - make it visible when logged in 
 			case 'pending' :
 				$button = array(
@@ -299,7 +300,7 @@ function bp_add_friend_button( $potential_friend_id = 0, $friend_status = false 
 					'wrapper_class'     => 'friendship-button is_friend',
 					'wrapper_id'        => 'friendship-button-' . $potential_friend_id,
 					'link_href'         => wp_nonce_url( bp_loggedin_user_domain() . bp_get_friends_slug() . '/remove-friend/' . $potential_friend_id . '/', 'friends_remove_friend' ),
-					'link_text'         => __( '<i class="icon-remove"></i> Leave Studio', 'buddypress' ),
+					'link_text'         => __( '<i class="icon-remove"></i> Remove from Studio', 'buddypress' ),
 					'link_title'        => __( 'Cancel Friendship', 'buddypress' ),
 					'link_id'           => 'friend-' . $potential_friend_id,
 					'link_rel'          => 'remove',
@@ -316,7 +317,7 @@ function bp_add_friend_button( $potential_friend_id = 0, $friend_status = false 
 					'wrapper_class'     => 'friendship-button not_friends',
 					'wrapper_id'        => 'friendship-button-' . $potential_friend_id,
 					'link_href'         => wp_nonce_url( bp_loggedin_user_domain() . bp_get_friends_slug() . '/add-friend/' . $potential_friend_id . '/', 'friends_add_friend' ),
-					'link_text'         => __( '<i class="icon-plus"></i> Join Studio', 'buddypress' ),
+					'link_text'         => __( '<i class="icon-plus"></i> Add to Studio', 'buddypress' ),
 					'link_title'        => __( 'Add Friend', 'buddypress' ),
 					'link_id'           => 'friend-' . $potential_friend_id,
 					'link_rel'          => 'add',
@@ -324,6 +325,61 @@ function bp_add_friend_button( $potential_friend_id = 0, $friend_status = false 
 				);
 				break;
 		}
+else :
+                switch ( $is_friend ) { // NHF EDIT - make it visible when logged in 
+                        case 'pending' :
+                                $button = array(
+                                        'id'                => 'pending',
+                                        'component'         => 'friends',
+                                        'must_be_logged_in' => false, // NHF EDIT true,
+                                        'block_self'        => true,
+                                        'wrapper_class'     => 'friendship-button pending_friend',
+                                        'wrapper_id'        => 'friendship-button-' . $potential_friend_id,
+                                        'link_href'         => wp_nonce_url( bp_loggedin_user_domain() . bp_get_friends_slug() . '/requests/cancel/' . $potential_friend_id . '/', 'friends_withdraw_friendship' ),
+                                        'link_text'         => __( '<i class="icon-remove"></i> Cancel Request', 'buddypress' ),
+                                        'link_title'        => __( 'Cancel Friendship Requested', 'buddypress' ),
+                                        'link_id'                       => 'friend-' . $potential_friend_id,
+                                        'link_rel'                      => 'remove',
+                                        'link_class'        => 'btn btn-gray friendship-button pending_friend requested'
+                                );
+                                break;
+
+                        case 'is_friend' :
+                                $button = array(
+                                        'id'                => 'is_friend',
+                                        'component'         => 'friends',
+                                        'must_be_logged_in' => false, // NHF EDIT true,
+                                        'block_self'        => true,
+                                        'wrapper_class'     => 'friendship-button is_friend',
+                                        'wrapper_id'        => 'friendship-button-' . $potential_friend_id,
+                                        'link_href'         => wp_nonce_url( bp_loggedin_user_domain() . bp_get_friends_slug() . '/remove-friend/' . $potential_friend_id . '/', 'friends_remove_friend' ),
+                                        'link_text'         => __( '<i class="icon-remove"></i> Leave Studio', 'buddypress' ),
+                                        'link_title'        => __( 'Cancel Friendship', 'buddypress' ),
+                                        'link_id'           => 'friend-' . $potential_friend_id,
+                                        'link_rel'          => 'remove',
+                                        'link_class'        => 'btn btn-gray friendship-button is_friend remove'
+                                );
+                                break;
+
+                        default:
+                                $button = array(
+                                        'id'                => 'not_friends',
+                                        'component'         => 'friends',
+                                        'must_be_logged_in' => false, // NHF EDIT true,
+                                        'block_self'        => true,
+                                        'wrapper_class'     => 'friendship-button not_friends',
+                                        'wrapper_id'        => 'friendship-button-' . $potential_friend_id,
+                                        'link_href'         => wp_nonce_url( bp_loggedin_user_domain() . bp_get_friends_slug() . '/add-friend/' . $potential_friend_id . '/', 'friends_add_friend' ),
+                                        'link_text'         => __( '<i class="icon-plus"></i> Join Studio', 'buddypress' ),
+                                        'link_title'        => __( 'Add Friend', 'buddypress' ),
+                                        'link_id'           => 'friend-' . $potential_friend_id,
+                                        'link_rel'          => 'add',
+                                        'link_class'        => 'btn btn-gray friendship-button not_friends add'
+                                );
+                                break;
+                }
+
+endif;
 
 		// Filter and return the HTML button
 		return bp_get_button( apply_filters( 'bp_get_add_friend_button', $button ) );
