@@ -7642,3 +7642,8 @@ box-shadow: 0 0 0;
 body.friends.bp-user.logged-in #members-order-select label {
 left: -35px !important;
 }
+
+p#field_28 {
+position: absolute;
+top: 0;
+}
