@@ -3447,7 +3447,7 @@ div#whats-new-options {
 height: 50px !important;
 }
 
-body.bp-user div#sidebar {
+body.activate div#sidebar, body.bp-user div#sidebar, body.register div#sidebar {
 display: none;
 }
 
@@ -7465,7 +7465,7 @@ position: relative;
 margin-bottom: -9px;
 }
 
-body.page-id-24 div#content .padder {
+body.register div#content .padder, body.activate div#content .padder, body.page-id-24 div#content .padder {
 width: 966px;
 border-right: none;
 left: -15px !important;
@@ -7647,3 +7647,12 @@ p#field_28 {
 position: absolute;
 top: 0;
 }
+
+body.register div#content .padder, body.activate div#content .padder {
+border-right: none;
+}
+
+#activation-form {
+display: none;
+}
+

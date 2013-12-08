@@ -25,7 +25,7 @@
 
 				<?php do_action( 'bp_before_activate_content' ); ?>
 
-				<p><?php _e( 'Please provide a valid activation key.', 'buddypress' ); ?></p>
+				<p><?php _e( 'Your account has already been activated!', 'buddypress' ); ?></p>
 
 				<form action="" method="get" class="standard-form" id="activation-form">
 
@@ -49,6 +49,6 @@
 		</div><!-- .padder -->
 	</div><!-- #content -->
 
-	<?php get_sidebar( 'buddypress' ); ?>
-
+<!--	<?php get_sidebar( 'buddypress' ); ?>
+-->
 <?php get_footer( 'buddypress' ); ?>

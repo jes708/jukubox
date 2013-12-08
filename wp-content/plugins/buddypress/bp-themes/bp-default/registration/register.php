@@ -52,6 +52,16 @@ jQuery("input#signup_username").on({
     this.value = this.value.replace(/\s/g, "");
   }
 });
+
+$('input#signup_username').bind('keypress', function (event) {
+    var regex = new RegExp("^[^\.]+$");
+    var key = String.fromCharCode(!event.charCode ? event.which : event.charCode);
+    if (!regex.test(key)) {
+       event.preventDefault();
+       return false;
+    }
+});
+
 </script>
 
 
@@ -297,7 +307,7 @@ jQuery("input#signup_username").on({
 		</div><!-- .padder -->
 	</div><!-- #content -->
 
-	<?php get_sidebar( 'buddypress' ); ?>
+	<?php // get_sidebar( 'buddypress' ); ?>
 
 	<script type="text/javascript">
 		jQuery(document).ready( function() {
