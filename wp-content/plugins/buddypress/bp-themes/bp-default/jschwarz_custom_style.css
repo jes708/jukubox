@@ -7449,6 +7449,22 @@ color: rgb(92, 92, 92);
 background: transparent !important;
 }
 
+body.friends #members-order-select {
+position: relative;
+right: 200px;
+}
+
+body.friends #members-order-select label {
+position: relative;
+left: -25px !important;
+}
+
+body.friends #subnav {
+top: -10px !important;
+position: relative;
+margin-bottom: -9px;
+}
+
 body.page-id-24 div#content .padder {
 width: 966px;
 border-right: none;
@@ -7533,7 +7549,7 @@ margin-top: -23px !important;
 position: relative;
 }
 
-body.friends #subnav, body.activity #subnav {
+body.friends.logged-in #subnav, body.activity #subnav {
 top: -15px;
 margin-top: -23px !important;
 position: relative;
@@ -7547,7 +7563,7 @@ body.messages #subnav li:nth-of-type(1) {
 margin-left: 186px;
 }
 
-body.friends #subnav li:nth-of-type(1), body.settings #subnav li:nth-of-type(1), body.appointments #subnav li:nth-of-type(1) {
+body.friends.logged-in #subnav li:nth-of-type(1), body.settings #subnav li:nth-of-type(1), body.appointments #subnav li:nth-of-type(1) {
 margin-left: 185px;
 }
 
@@ -7555,7 +7571,7 @@ margin-left: 185px;
 box-shadow: 0 0 0;
 }
 
-body.friends #members-order-select label, body.activity #activity-filter-select label {
+body.friends.logged-in #members-order-select label, body.activity #activity-filter-select label {
 right: 40px;
 bottom: 3px;
 position: relative;
@@ -7565,17 +7581,17 @@ body.friends #members-order-select, body.activity #activity-filter-select {
 border: none !important;
 }
 
-body.friends #subnav li, body.activity #subnav li {
+body.friends.logged-in #subnav li, body.activity #subnav li {
 top: 30px;
 position: relative;
 }
 
-body.friends #members-friends, body.activity #activity-filter-by {
+body.friends.logged-in #members-friends, body.activity #activity-filter-by {
 position: relative;
 bottom: 28px !important;
 }
 
-body.friends #members-order-select {
+body.friends.logged-in #members-order-select {
 position: relative;
 right: 200px;
 top: 0px !important;
@@ -7587,25 +7603,25 @@ left: 0;
 top: 0px;
 }
 
-body.friends #subnav li {
+body.friends.logged-in #subnav li {
 top: 48px !important;
 position: relative;
 }
 
-body.friends #subnav {
+body.friends.logged-in #subnav {
 margin-bottom: -11px !important;
 }
 
-body.friends #subnav ul {
+body.friends.logged-in #subnav ul {
 margin-top: -17px;
 }
 
-body.friends #subnav ul li:last-of-type {
+body.friends.logged-in #subnav ul li:last-of-type {
 top: 0 !important;
 position: relative;
 }
 
-body.friends div.item-list-tabs ul li a, body.friends div.item-list-tabs ul li span {
+body.friends.logged-in div.item-list-tabs ul li a, body.friends.logged-in div.item-list-tabs ul li span {
 position: relative;
 z-index: 5;
 }
@@ -7617,4 +7633,12 @@ position: relative;
 
 body.messages #subnav {
 top: 3px;
+}
+
+table#newroomtable {
+box-shadow: 0 0 0;
+}
+
+body.friends.bp-user.logged-in #members-order-select label {
+left: -35px !important;
 }
