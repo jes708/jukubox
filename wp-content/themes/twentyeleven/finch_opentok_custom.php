@@ -90,7 +90,7 @@ $session = $apiObj->createSession( $_SERVER["REMOTE_ADDR"], array(SessionPropert
 <script src="http://static.opentok.com/webrtc/v2.0/js/TB.min.js" ></script>
  
 
-<script type="text/javascript">
+<script type="text/javascript" onload="connect(); javascript:startPublishing()">
 
        var apiKey = '<?php echo $apiKey; ?>'; 
     var sessionId = '<?php echo $sessionId; ?>'; 
