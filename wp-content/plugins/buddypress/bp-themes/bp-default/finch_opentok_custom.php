@@ -64,9 +64,9 @@
 	}
 
  
-echo '<script>
-window.onbeforeunload = function() { return "Make sure you don\'t accidentally leave a lesson while it\'s in session!"; } 
-</script>'; 
+//echo '<script>
+//window.onbeforeunload = function() { return "Make sure you don\'t accidentally leave a lesson while it\'s in session!"; } 
+//</script>'; 
 	/* if($db_session_id == '') 
 	{ 
 		$is_session_id = FALSE; 
@@ -213,9 +213,9 @@ $session = $apiObj->createSession( $_SERVER["REMOTE_ADDR"], array(SessionPropert
 
 		function disconnect() {
 			session.disconnect();
-//			hide('disconnectLink');
-//			hide('publishLink');
-//			hide('unpublishLink');
+			hide('disconnectLink');
+			hide('publishLink');
+			hide('unpublishLink');
 		}
 
 		// Called when user wants to start publishing to the session
@@ -228,9 +228,9 @@ $session = $apiObj->createSession( $_SERVER["REMOTE_ADDR"], array(SessionPropert
 				var publisherProps = {width: VIDEO_WIDTH, height: VIDEO_HEIGHT};
 				publisher = TB.initPublisher(apiKey, publisherDiv.id, publisherProps);  // Pass the replacement div id and properties
 				session.publish(publisher);
-//				hide('connectLink');
+				hide('connectLink');
 //				show('unpublishLink');
-//                              hide('publishLink');
+                                hide('publishLink');
 			}
 		}
 
@@ -241,7 +241,7 @@ $session = $apiObj->createSession( $_SERVER["REMOTE_ADDR"], array(SessionPropert
 			publisher = null;
 
 //			show('publishLink');
-//			hide('unpublishLink');
+			hide('unpublishLink');
 		}
 
     //--------------------------------------
@@ -294,9 +294,10 @@ $session = $apiObj->createSession( $_SERVER["REMOTE_ADDR"], array(SessionPropert
 			for (var i = 0; i < event.streams.length; i++) {
 				addStream(event.streams[i]);
 			}
-//			show('disconnectLink');
+			show('disconnectLink');
 //			show('publishLink');
 //			hide('connectLink');
+			startPublishing();
 		}
 
 		function streamCreatedHandler(event) {
@@ -316,10 +317,10 @@ $session = $apiObj->createSession( $_SERVER["REMOTE_ADDR"], array(SessionPropert
 			// will automatically be removed. This default behaviour can be prevented using event.preventDefault()
 			publisher = null;
 
-//			show('connectLink');
-//			hide('disconnectLink');
-//			hide('publishLink');
-//			hide('unpublishLink');
+			show('connectLink');
+			hide('disconnectLink');
+			hide('publishLink');
+			hide('unpublishLink');
 		}
 
 		function connectionDestroyedHandler(event) {

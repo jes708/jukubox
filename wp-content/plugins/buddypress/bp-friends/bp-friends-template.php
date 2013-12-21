@@ -284,7 +284,7 @@ if( $is_teacher !== TRUE ) :
 					'wrapper_id'        => 'friendship-button-' . $potential_friend_id,
 					'link_href'         => wp_nonce_url( bp_loggedin_user_domain() . bp_get_friends_slug() . '/requests/cancel/' . $potential_friend_id . '/', 'friends_withdraw_friendship' ),
 					'link_text'         => __( '<i class="icon-remove"></i> Cancel Request', 'buddypress' ),
-					'link_title'        => __( 'Cancel Friendship Requested', 'buddypress' ),
+					'link_title'        => __( 'Cancel Request', 'buddypress' ),
 					'link_id'			=> 'friend-' . $potential_friend_id,
 					'link_rel'			=> 'remove',
 					'link_class'        => 'btn btn-gray friendship-button pending_friend requested'
@@ -301,7 +301,7 @@ if( $is_teacher !== TRUE ) :
 					'wrapper_id'        => 'friendship-button-' . $potential_friend_id,
 					'link_href'         => wp_nonce_url( bp_loggedin_user_domain() . bp_get_friends_slug() . '/remove-friend/' . $potential_friend_id . '/', 'friends_remove_friend' ),
 					'link_text'         => __( '<i class="icon-remove"></i> Remove from Studio', 'buddypress' ),
-					'link_title'        => __( 'Cancel Friendship', 'buddypress' ),
+					'link_title'        => __( 'Remove from Studio', 'buddypress' ),
 					'link_id'           => 'friend-' . $potential_friend_id,
 					'link_rel'          => 'remove',
 					'link_class'        => 'btn btn-gray friendship-button is_friend remove'
@@ -318,7 +318,7 @@ if( $is_teacher !== TRUE ) :
 					'wrapper_id'        => 'friendship-button-' . $potential_friend_id,
 					'link_href'         => wp_nonce_url( bp_loggedin_user_domain() . bp_get_friends_slug() . '/add-friend/' . $potential_friend_id . '/', 'friends_add_friend' ),
 					'link_text'         => __( '<i class="icon-plus"></i> Add to Studio', 'buddypress' ),
-					'link_title'        => __( 'Add Friend', 'buddypress' ),
+					'link_title'        => __( 'Add to Studio', 'buddypress' ),
 					'link_id'           => 'friend-' . $potential_friend_id,
 					'link_rel'          => 'add',
 					'link_class'        => 'btn btn-gray friendship-button not_friends add'
@@ -337,7 +337,7 @@ else :
                                         'wrapper_id'        => 'friendship-button-' . $potential_friend_id,
                                         'link_href'         => wp_nonce_url( bp_loggedin_user_domain() . bp_get_friends_slug() . '/requests/cancel/' . $potential_friend_id . '/', 'friends_withdraw_friendship' ),
                                         'link_text'         => __( '<i class="icon-remove"></i> Cancel Request', 'buddypress' ),
-                                        'link_title'        => __( 'Cancel Friendship Requested', 'buddypress' ),
+                                        'link_title'        => __( 'Cancel Request', 'buddypress' ),
                                         'link_id'                       => 'friend-' . $potential_friend_id,
                                         'link_rel'                      => 'remove',
                                         'link_class'        => 'btn btn-gray friendship-button pending_friend requested'
@@ -354,7 +354,7 @@ else :
                                         'wrapper_id'        => 'friendship-button-' . $potential_friend_id,
                                         'link_href'         => wp_nonce_url( bp_loggedin_user_domain() . bp_get_friends_slug() . '/remove-friend/' . $potential_friend_id . '/', 'friends_remove_friend' ),
                                         'link_text'         => __( '<i class="icon-remove"></i> Leave Studio', 'buddypress' ),
-                                        'link_title'        => __( 'Cancel Friendship', 'buddypress' ),
+                                        'link_title'        => __( 'Leave Studio', 'buddypress' ),
                                         'link_id'           => 'friend-' . $potential_friend_id,
                                         'link_rel'          => 'remove',
                                         'link_class'        => 'btn btn-gray friendship-button is_friend remove'
@@ -371,7 +371,7 @@ else :
                                         'wrapper_id'        => 'friendship-button-' . $potential_friend_id,
                                         'link_href'         => wp_nonce_url( bp_loggedin_user_domain() . bp_get_friends_slug() . '/add-friend/' . $potential_friend_id . '/', 'friends_add_friend' ),
                                         'link_text'         => __( '<i class="icon-plus"></i> Join Studio', 'buddypress' ),
-                                        'link_title'        => __( 'Add Friend', 'buddypress' ),
+                                        'link_title'        => __( 'Join Studio', 'buddypress' ),
                                         'link_id'           => 'friend-' . $potential_friend_id,
                                         'link_rel'          => 'add',
                                         'link_class'        => 'btn btn-gray friendship-button not_friends add'

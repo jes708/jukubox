@@ -16,6 +16,8 @@ if ( !defined( 'ABSPATH' ) ) exit;
 function friends_notification_new_request( $friendship_id, $initiator_id, $friend_id ) {
 
 	$initiator_name = bp_core_get_user_displayname( $initiator_id );
+        $email_for_teacher = is_teacher( $friend_id );
+
 
 	if ( 'no' == bp_get_user_meta( (int) $friend_id, 'notification_friends_friendship_request', true ) )
 		return false;
@@ -26,21 +28,32 @@ function friends_notification_new_request( $friendship_id, $initiator_id, $frien
 	$settings_link     = trailingslashit( bp_core_get_user_domain( $friend_id ) .  $settings_slug . '/notifications' );
 	$initiator_link    = bp_core_get_user_domain( $initiator_id );
 
-	// Set up and send the message
+	// EDIT to SUBJECT [JUKUBOX] Set up and send the message
 	$to       = $ud->user_email;
 	$sitename = wp_specialchars_decode( get_blog_option( bp_get_root_blog_id(), 'blogname' ), ENT_QUOTES );
-	$subject  = '[' . $sitename . '] ' . sprintf( __( 'New friendship request from %s', 'buddypress' ), $initiator_name );
+	$subject  = '[Jukubox] ' . sprintf( __( 'New studio request from %s', 'buddypress' ), $initiator_name );
 
+if( $email_for_teacher !== TRUE ) :
 	$message = sprintf( __(
-'%1$s wants to add you as a friend.
+'%1$s wants to join your studio.
 
-To view all of your pending friendship requests: %2$s
+To view all of your pending studio requests: %2$s
 
 To view %3$s\'s profile: %4$s
 
 ---------------------
 ', 'buddypress' ), $initiator_name, $all_requests_link, $initiator_name, $initiator_link );
+else :
+        $message = sprintf( __(
+'%1$s has sent you a studio invitation.
 
+To view all of your pending studio requests: %2$s
+
+To view %3$s\'s profile: %4$s
+
+---------------------
+', 'buddypress' ), $initiator_name, $all_requests_link, $initiator_name, $initiator_link );
+endif;
 	$message .= sprintf( __( 'To disable these notifications please log in and go to: %s', 'buddypress' ), $settings_link );
 
 	/* Send the message */
@@ -68,10 +81,10 @@ function friends_notification_accepted_request( $friendship_id, $initiator_id, $
 	// Set up and send the message
 	$to       = $ud->user_email;
 	$sitename = wp_specialchars_decode( get_blog_option( bp_get_root_blog_id(), 'blogname' ), ENT_QUOTES );
-	$subject  = '[' . $sitename . '] ' . sprintf( __( '%s accepted your friendship request', 'buddypress' ), $friend_name );
+	$subject  = '[Jukubox] ' . sprintf( __( '%s accepted your studio request', 'buddypress' ), $friend_name );
 
 	$message = sprintf( __(
-'%1$s accepted your friend request.
+'%1$s accepted your studio request.
 
 To view %2$s\'s profile: %3$s
 
