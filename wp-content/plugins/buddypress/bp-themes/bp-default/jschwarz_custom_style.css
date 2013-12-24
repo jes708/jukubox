@@ -7666,3 +7666,8 @@ button#connectLink {
 top: 23px !important;
 }
 
+.publisherContainer {
+width: 240px;
+min-height: 180px;
+background-size: 90%;
+}

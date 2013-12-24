@@ -177,8 +177,8 @@ $session = $apiObj->createSession( $_SERVER["REMOTE_ADDR"], array(SessionPropert
     //var VIDEO_WIDTH = 320;
     // var VIDEO_HEIGHT = 240;
 	
-    var VIDEO_WIDTH = 160;
-    var VIDEO_HEIGHT = 120;
+    var VIDEO_WIDTH = 240;
+    var VIDEO_HEIGHT = 180;
     TB.addEventListener("exception", exceptionHandler);
 
     if (TB.checkSystemRequirements() != TB.HAS_REQUIREMENTS) {
