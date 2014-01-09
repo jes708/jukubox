@@ -7586,11 +7586,6 @@ top: 30px;
 position: relative;
 }
 
-body.friends.logged-in #members-friends, body.activity #activity-filter-by {
-position: relative;
-bottom: 28px !important;
-}
-
 body.friends.logged-in #members-order-select {
 position: relative;
 right: 200px;
@@ -7639,10 +7634,6 @@ table#newroomtable {
 box-shadow: 0 0 0;
 }
 
-body.friends.bp-user.logged-in #members-order-select label {
-left: -35px !important;
-}
-
 p#field_28 {
 position: absolute;
 top: 0;
@@ -7671,3 +7662,34 @@ width: 240px;
 min-height: 180px;
 background-size: 90%;
 }
+
+body.friends.logged-in #members-friends {
+position: relative;
+bottom: -5px !important;
+margin-top: 7px;
+margin-bottom: 12px;
+}
+
+body.friends.my-account.logged-in #members-friends {
+margin-top: -2px;
+margin-bottom: 12px;
+}
+
+body.friends.bp-user.logged-in #members-order-select label {
+left: -30px !important;
+top: 36px;
+}
+
+body.friends.my-account.bp-user.logged-in #members-order-select label {
+left: -35px !important;
+}
+
+body.friends.my-account.logged-in #members-friends, body.activity #activity-filter-by {
+position: relative;
+bottom: 28px !important;
+}
+
+body.friends.my-account.logged-in #members-order-select label {
+top: 23px;
+}
+
