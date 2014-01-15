@@ -35,7 +35,7 @@
 				</div>
 			</div>
 			<div id="jukucopyright">
-			<p>Copyright © 2014 Jukubox LLC.</p>
+			<p>Copyright © 2013-2014 Jukubox LLC.</p>
 			<br>
 			<p>All rights reserved.</p>
 			</div>
