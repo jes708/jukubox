@@ -35,7 +35,7 @@
 				</div>
 			</div>
 			<div id="jukucopyright">
-			<p>Copyright © 2013 Jukubox LLC.</p>
+			<p>Copyright © 2014 Jukubox LLC.</p>
 			<br>
 			<p>All rights reserved.</p>
 			</div>
@@ -153,7 +153,7 @@ $foot_col_4 = array_slice($instruments_array, 28, 14);
 				<?php do_action( 'bp_dtheme_credits' ); ?>
 				 <p><?php printf( __( 'Proudly powered by <a href="%1$s">WordPress</a> and <a href="%2$s">BuddyPress</a>.', 'buddypress' ), 'http://wordpress.org', 'http://buddypress.org' ); ?></p> 
 				
-				<p><?php printf( __( ' &copy; 2013, The Jukubox Team (Rachel Lee, Jonathan Schwarz, Eric Silberger).  Designed and developed by Nicholas Finch of NHF Digital.', 'buddypress' ), 'http://wordpress.org', 'http://buddypress.org' ); ?></p>
+				<p><?php printf( __( ' &copy; 2014, The Jukubox Team (Rachel Lee, Jonathan Schwarz, Eric Silberger).  Designed and developed by Nicholas Finch of NHF Digital.', 'buddypress' ), 'http://wordpress.org', 'http://buddypress.org' ); ?></p>
 
 			</div>
 		 
