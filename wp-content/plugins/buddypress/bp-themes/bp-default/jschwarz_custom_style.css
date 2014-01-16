@@ -7693,9 +7693,11 @@ body.friends.my-account.logged-in #members-order-select label {
 top: 23px;
 }
 
-.remove {
-width: auto !important;
-height: auto !important;
-margin-left: auto !important;
-top: auto !important;
+body.change-avatar div.error {
+z-index: 999999999999999999999;
+position: relative;
+bottom: 110px;
+width: 400px;
+float: right;
+right: 15px;
 }
