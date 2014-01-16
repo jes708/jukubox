@@ -7693,3 +7693,9 @@ body.friends.my-account.logged-in #members-order-select label {
 top: 23px;
 }
 
+.remove {
+width: auto !important;
+height: auto !important;
+margin-left: auto !important;
+top: auto !important;
+}
