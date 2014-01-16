@@ -7693,7 +7693,7 @@ body.friends.my-account.logged-in #members-order-select label {
 top: 23px;
 }
 
-div.error {
+body.change-avatar div.error {
 z-index: 999999999999999999999;
 position: relative;
 bottom: 110px;
