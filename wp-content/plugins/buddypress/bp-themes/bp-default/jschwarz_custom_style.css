@@ -7693,3 +7693,11 @@ body.friends.my-account.logged-in #members-order-select label {
 top: 23px;
 }
 
+div.error {
+z-index: 999999999999999999999;
+position: relative;
+bottom: 110px;
+width: 400px;
+float: right;
+right: 15px;
+}
