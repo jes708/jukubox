@@ -972,7 +972,7 @@ function requestLessonApproval() {
 
 " . $client_name . " has requested a " . $lesson_type . " with you on
 
-	" . $lesson_start_readable . " EDT
+	" . $lesson_start_readable . " Eastern Time (ET)
 
 To confirm or deny this appointment, log in to http://www.jukubox.com - You'll see a button on the homepage to confirm the appointment, or click on the 'Confirm Appointments' menu item.  
 
