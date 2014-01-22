@@ -3164,7 +3164,7 @@ class Appointments {
 			if ( $this->local_time > $ccs && $this->local_time < $cce )
 				$class_name = 'notpossible now';
 			// Mark passed hours
-			else if ( $this->local_time > $ccs )
+			else if ( $this->local_time > ($ccs - 5*60*60) )
 				$class_name = 'notpossible app_past';
 			// Then check if this time is blocked
 			else if ( isset( $this->options["app_lower_limit"] ) && $this->options["app_lower_limit"] 
