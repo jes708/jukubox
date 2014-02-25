@@ -7701,3 +7701,12 @@ width: 400px;
 float: right;
 right: 15px;
 }
+
+/* oDesk Merge */
+
+.rest-stars p {
+margin-top: -7px !important;
+position: relative;
+left: 3px;
+}
+
