@@ -584,10 +584,3 @@ jQuery(document).ready(function() {
 
 </script>
 
-<!-- Schwarz Add -->
-<script>
-jQuery(document).ready(function() {
-        jQuery("input[name='location[field_1]']").val("<?php echo $_POST['presignup_name']; ?>");
-});
-</script>
-<!-- End Schwarz -->

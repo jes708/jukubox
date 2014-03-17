@@ -225,9 +225,6 @@ $('input#signup_username').bind('keypress', function (event) {
 
 				<?php endif; ?>
 
-
-
-
 				<?php if ( bp_get_blog_signup_allowed() ) : ?>
 
 					<?php do_action( 'bp_before_blog_details_fields' ); ?>

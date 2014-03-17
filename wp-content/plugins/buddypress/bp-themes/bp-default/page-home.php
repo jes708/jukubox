@@ -11,12 +11,13 @@
 	<p id="White_home_p">Our faculty consists of the world's most respected instructors from the top musical conservatories.</p>
 	<img style="bottom:110px; height:430px; position:relative; float:right; right:14px;" src="../../../../../wp-content/uploads/2013/11/Dicterow-Header.jpg"> 	
 	<p id="Amber_p">Glenn Dicterow</br><em>Jukubox faculty</em> member</p>
+	<h3 id="Amber_h" style="float:left;">Sign up to begin using Jukubox</h3>
 
                 <form action="register" name="presignup" id="presignup" class="standard-form" method="post" enctype="multipart/form-data">
-                        <input type="text" name="presignup_name" id="presignup_name" placeholder="Name" value="" />
+<!--                        <input type="text" name="presignup_name" id="presignup_name" placeholder="Name" value="" /> -->
                         <input type="text" name="presignup_email" id="presignup_email" placeholder="Email" value="<?php bp_signup_email_value(); ?>" />
-                        <input type="text" name="presignup_password" id="presignup_password" placeholder="Password" value="" />
-                        <input type="submit" />
+<!--                        <input type="text" name="presignup_password" id="presignup_password" placeholder="Password" value="" /> -->
+                        <input type="submit" id="submit_presignup_email" class="btn btn-primary" value="Sign Up" />
 		</form>
 
     </section>
