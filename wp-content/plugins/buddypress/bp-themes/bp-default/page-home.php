@@ -20,6 +20,8 @@
                         <input type="submit" id="submit_presignup_email" class="btn btn-primary" value="Sign Up" />
 		</form>
 
+<?php // madmimi_form( 104257 ); ?>
+
     </section>
 </section></a>
 <section class="f-part-divide"> 
