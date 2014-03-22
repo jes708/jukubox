@@ -7777,3 +7777,32 @@ border-radius: 6px !important;
 float: none !important;
 margin-right: auto !important;
 }
+
+div#bdsa, div#bdsb, div#su_pw, div#su_pw_cf {
+position: relative;
+height: 45px;
+}
+
+body.register #container input {
+float: right;
+clear: both;
+position: relative;
+bottom: 32px;
+}
+
+body.register #content {
+padding-left: 25px;
+}
+
+#field_129_day,  #field_129_month,  #field_129_year {
+float: right;
+clear: left;
+}
+
+div.editfield p.description {
+font-size: 9px !important;
+clear: left;
+position: relative;
+bottom: 8px;
+color: rgb(168, 168, 168);
+}
