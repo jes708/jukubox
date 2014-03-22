@@ -7742,3 +7742,38 @@ left: 199px;
 float: left;
 clear: left;
 }
+
+.standard-form#signup_form div.submit {
+float: left;
+}
+
+body.register div#container {
+background-image: url(http://jukubox.com/wp-content/uploads/2013/06/jukuback1.png);
+background-repeat: repeat;
+width: 520px !important;
+border: 1px solid rgb(230, 230, 230);
+}
+
+body.register {
+background-image: url(http://jukubox.com/wp-content/uploads/2013/07/cardboard_flat2.png);
+}
+
+body.register div#container input {
+border: 2px solid rgb(217, 217, 217) !important;
+}
+
+body.register div#container .standard-form label {
+font-size: 13px;
+float: left;
+}
+
+body.register #field_1, body.register #basic-details-section input {
+float: right !important;
+width: 315px !important;
+border-radius: 6px !important;
+}
+
+#su_pw, #su_pw_cf {
+float: none !important;
+margin-right: auto !important;
+}
