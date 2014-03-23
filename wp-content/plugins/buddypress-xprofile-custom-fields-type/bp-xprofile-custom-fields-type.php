@@ -249,6 +249,7 @@ function bxcft_edit_render_new_xprofile_field($echo = true) {
        ?>
            <div class="datebox">
                <label class="label-form <?php if ( bp_get_the_profile_field_is_required() ) : ?>required<?php endif; ?>" for="<?php bp_the_profile_field_input_name(); ?>_day"> <?php //if ( bp_get_the_profile_field_is_required() ) { echo __('*', 'bxcft'); } ?> <?php bp_the_profile_field_name(); ?> </label>
+<div id="datebox_selects">
 
                <?php
                $birthdate_start_year = date('Y')-1;
@@ -298,7 +299,7 @@ function bxcft_edit_render_new_xprofile_field($echo = true) {
                ?>
 
                </select>
-
+</div>
            </div>
        <?php
        } 

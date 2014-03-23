@@ -7828,12 +7828,12 @@ width: 110px;
 
 .register-section .editfield {
 border-bottom: none;
-padding-bottom: 3px !important;
+padding-bottom: 0 !important;
 }
 
 body.register .datebox select {
 position: relative;
-bottom: 22px;
+bottom: 25px;
 margin-left: 2px;
 z-index: 10;
 }
@@ -7868,6 +7868,29 @@ text-align: left;
 }
 
 button#signup_submit {
-margin-top: 12px;
+margin-top: 0;
 float: right;
+position: relative;
+bottom: 38px;
+}
+
+#datebox_selects {
+float: right;
+}
+
+body.register div.subtext input {
+margin-right: 5px;
+}
+
+body.register div.submit {
+height: 40px;
+}
+
+.recaptchatable a {
+font-size: 7pt;
+}
+
+#recaptcha_response_field {
+font-size: 11px !important;
+text-indent: 4px;
 }

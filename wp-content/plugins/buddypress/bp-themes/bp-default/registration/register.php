@@ -276,10 +276,9 @@ $('input#signup_username').bind('keypress', function (event) {
 				<?php endif; ?>
 
 				<?php do_action( 'bp_before_registration_submit_buttons' ); ?>
-
 				<div class="submit">
 					<div class="subtext"><input type="checkbox" id="register_check" />I agree to the Jukubox <a href="http://jukubox.com/terms-of-use/">Terms of Use</a>, including the <a href="http://jukubox.com/privacy-policy/">Privacy Policy</a> and <a href="http://jukubox.com/teachers-manual/">Teacher's Manual</a></div>
-					<button type="submit" disabled name="signup_submit" class="btn btn-large btn-primary" id="signup_submit"><?php _e( 'Complete Registration', 'buddypress' ); ?></button>
+					<button type="submit" disabled name="signup_submit" class="btn btn-large btn-primary" id="signup_submit"><?php _e( 'Register', 'buddypress' ); ?></button>
 				</div>
 
 <script>
@@ -310,9 +309,9 @@ checker.onchange = function(){
 				<?php do_action( 'bp_before_registration_confirmed' ); ?>
 
 				<?php if ( bp_registration_needs_activation() ) : ?>
-					<p><?php _e( 'You have successfully created your account! To begin using this site you will need to activate your account via the email we have just sent to your address.', 'buddypress' ); ?></p>
+					<p style="width:446px;"><?php _e( 'You have successfully created your account! To begin using this site you will need to activate your account via the email we have just sent to your address.', 'buddypress' ); ?></p>
 				<?php else : ?>
-					<p><?php _e( 'You have successfully created your account! Please log in using the username and password you have just created.', 'buddypress' ); ?></p>
+					<p style="width:446px;"><?php _e( 'You have successfully created your account! Please log in using the username and password you have just created.', 'buddypress' ); ?></p>
 				<?php endif; ?>
 
 				<?php do_action( 'bp_after_registration_confirmed' ); ?>
