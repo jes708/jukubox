@@ -7806,3 +7806,68 @@ position: relative;
 bottom: 8px;
 color: rgb(168, 168, 168);
 }
+
+#basic-details-section {
+clear: left;
+float: left;
+position: relative;
+}
+
+.register-section .editfield {
+border-bottom: none;
+padding-bottom: 0 !important;
+}
+
+#field_129_year {
+width: 70px;
+}
+
+#field_129_month {
+width: 110px;
+}
+
+.register-section .editfield {
+border-bottom: none;
+padding-bottom: 3px !important;
+}
+
+body.register .datebox select {
+position: relative;
+bottom: 22px;
+margin-left: 2px;
+z-index: 10;
+}
+
+#register_check {
+float: left !important;
+position: relative;
+}
+
+#basic-details-section {
+position: relative;
+bottom: 27px;
+}
+
+#basic-details-section {
+margin-bottom: -50px;
+}
+
+#recaptcha_table {
+margin-top: 40px !important;
+position: relative;
+}
+
+#register_check {
+position: relative;
+top: -8px !important;
+}
+
+div.subtext {
+width: 275px;
+text-align: left;
+}
+
+button#signup_submit {
+margin-top: 12px;
+float: right;
+}

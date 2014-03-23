@@ -28,64 +28,6 @@
 
 <!--				<p><?php _e( 'Fill out the fields below to start working with the web\'s best musicians!', 'buddypress' ); ?></p> -->
 
-				<?php do_action( 'bp_before_account_details_fields' ); ?>
-
-				<div class="register-section" id="basic-details-section">
-
-					<?php /***** Basic Account Details ******/ ?>
-
-<!--					<h4><?php _e( 'Account Details', 'buddypress' ); ?></h4> -->
-<div id="bdsa" >
-					<label for="signup_username"><?php _e( 'Username', 'buddypress' ); ?> <?php //_e( '(required)', 'buddypress' ); ?></label>
-					<?php do_action( 'bp_signup_username_errors' ); ?>
-					<input type="text" name="signup_username" id="signup_username" value="<?php bp_signup_username_value(); ?>" />
-</div>
-
-
-<script>
-jQuery("input#signup_username").on({
-  keydown: function(e) {
-    if (e.which === 32)
-      return false;
-  },
-  change: function() {
-    this.value = this.value.replace(/\s/g, "");
-  }
-});
-
-$('input#signup_username').bind('keypress', function (event) {
-    var regex = new RegExp("^[^\.]+$");
-    var key = String.fromCharCode(!event.charCode ? event.which : event.charCode);
-    if (!regex.test(key)) {
-       event.preventDefault();
-       return false;
-    }
-});
-
-</script>
-
-
-
-<div id="bdsb">
-					<!-- NHF edit - included statement about parents if under the age of 14 --> 
-					<label for="signup_email"><?php _e( 'Email Address', 'buddypress' ); ?> <?php //_e( '(required - parent\'s email if under age 14)', 'buddypress' ); ?></label>
-					<?php do_action( 'bp_signup_email_errors' ); ?>
-					<input type="text" name="signup_email" id="signup_email" value="<?php bp_signup_email_value(); echo $_POST['presignup_email']; ?>" />
-</div>
-<div id="su_pw">
-					<label for="signup_password"><?php _e( 'Choose Password', 'buddypress' ); ?> <?php //_e( '(required)', 'buddypress' ); ?></label>
-					<?php do_action( 'bp_signup_password_errors' ); ?>
-					<input type="password" name="signup_password" id="signup_password" value="<?php echo $_POST['presignup_password']; ?>" />
-</div>
-<div id="su_pw_cf">
-					<label for="signup_password_confirm"><?php _e( 'Confirm Password', 'buddypress' ); ?> <?php //_e( '(required)', 'buddypress' ); ?></label>
-					<?php do_action( 'bp_signup_password_confirm_errors' ); ?>
-					<input type="password" name="signup_password_confirm" id="signup_password_confirm" value="" />
-</div>
-				</div><!-- #basic-details-section -->
-
-				<?php do_action( 'bp_after_account_details_fields' ); ?>
-
 				<?php /***** Extra Profile Details ******/ ?>
 
 				<?php if ( bp_is_active( 'xprofile' ) ) : ?>
@@ -225,6 +167,72 @@ $('input#signup_username').bind('keypress', function (event) {
 					<?php do_action( 'bp_after_signup_profile_fields' ); ?>
 
 				<?php endif; ?>
+
+
+
+
+                                <?php do_action( 'bp_before_account_details_fields' ); ?>
+
+                                <div class="register-section" id="basic-details-section">
+
+                                        <?php /***** Basic Account Details ******/ ?>
+
+<!--                                    <h4><?php _e( 'Account Details', 'buddypress' ); ?></h4> -->
+<div id="bdsa" >
+                                        <label for="signup_username"><?php _e( 'Username', 'buddypress' ); ?> <?php //_e( '(required)', 'buddypress' ); ?></label>
+                                        <?php do_action( 'bp_signup_username_errors' ); ?>
+                                        <input type="text" name="signup_username" id="signup_username" value="<?php bp_signup_username_value(); ?>" />
+</div>
+
+
+<script>
+jQuery("input#signup_username").on({
+  keydown: function(e) {
+    if (e.which === 32)
+      return false;
+  },
+  change: function() {
+    this.value = this.value.replace(/\s/g, "");
+  }
+});
+
+$('input#signup_username').bind('keypress', function (event) {
+    var regex = new RegExp("^[^\.]+$");
+    var key = String.fromCharCode(!event.charCode ? event.which : event.charCode);
+    if (!regex.test(key)) {
+       event.preventDefault();
+       return false;
+    }
+});
+
+</script>
+
+
+
+<div id="bdsb">
+                                        <!-- NHF edit - included statement about parents if under the age of 14 -->
+                                        <label for="signup_email"><?php _e( 'Email Address', 'buddypress' ); ?> <?php //_e( '(required - parent\'s email if under age 14)', 'buddypress' ); ?></label>
+                                        <?php do_action( 'bp_signup_email_errors' ); ?>
+                                        <input type="text" name="signup_email" id="signup_email" value="<?php bp_signup_email_value(); echo $_POST['presignup_email']; ?>" />
+</div>
+<div id="su_pw">
+                                        <label for="signup_password"><?php _e( 'Choose Password', 'buddypress' ); ?> <?php //_e( '(required)', 'buddypress' ); ?></label>
+                                        <?php do_action( 'bp_signup_password_errors' ); ?>
+                                        <input type="password" name="signup_password" id="signup_password" value="<?php echo $_POST['presignup_password']; ?>" />
+</div>
+<div id="su_pw_cf">
+                                        <label for="signup_password_confirm"><?php _e( 'Confirm Password', 'buddypress' ); ?> <?php //_e( '(required)', 'buddypress' ); ?></label>
+                                        <?php do_action( 'bp_signup_password_confirm_errors' ); ?>
+                                        <input type="password" name="signup_password_confirm" id="signup_password_confirm" value="" />
+</div>
+                                </div><!-- #basic-details-section -->
+
+                                <?php do_action( 'bp_after_account_details_fields' ); ?>
+
+
+
+
+
 
 				<?php if ( bp_get_blog_signup_allowed() ) : ?>
 
