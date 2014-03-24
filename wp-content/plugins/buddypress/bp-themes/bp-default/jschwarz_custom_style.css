@@ -7806,6 +7806,14 @@ float: right;
 clear: left;
 }
 
+body.profile-edit #field_129_day, 
+body.profile-edit #field_129_month, 
+body.profile-edit #field_129_year {
+bottom: 22px;
+position: relative;
+right: 618px;
+}
+
 div.editfield p.description {
 font-size: 9px !important;
 clear: left;
