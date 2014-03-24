@@ -7752,6 +7752,7 @@ background-image: url(http://jukubox.com/wp-content/uploads/2013/06/jukuback1.pn
 background-repeat: repeat;
 width: 520px !important;
 border: 1px solid rgb(230, 230, 230);
+min-height: 620px !important;
 }
 
 body.register {
@@ -7893,4 +7894,21 @@ font-size: 7pt;
 #recaptcha_response_field {
 font-size: 11px !important;
 text-indent: 4px;
+}
+
+.standard-form#signup_form div div.error {
+width: auto;
+text-indent: 5px;
+height: auto;
+float: right;
+clear: both;
+position: relative;
+bottom: 41px;
+left: 0;
+margin: 0;
+padding: 0 5px 0 0;
+}
+
+body.register #container h2 {
+color: black;
 }
