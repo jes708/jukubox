@@ -248,16 +248,20 @@ function bxcft_edit_render_new_xprofile_field($echo = true) {
            }
        ?>
            <div class="datebox">
-               <label class="label-form <?php if ( bp_get_the_profile_field_is_required() ) : ?>required<?php endif; ?>" for="<?php bp_the_profile_field_input_name(); ?>_day"><?php bp_the_profile_field_name(); ?> <?php if ( bp_get_the_profile_field_is_required() ) { echo __('*', 'bxcft'); } ?></label>
+               <label class="label-form <?php if ( bp_get_the_profile_field_is_required() ) : ?>required<?php endif; ?>" for="<?php bp_the_profile_field_input_name(); ?>_day"> <?php //if ( bp_get_the_profile_field_is_required() ) { echo __('*', 'bxcft'); } ?> <?php bp_the_profile_field_name(); ?> </label>
+<div id="datebox_selects">
 
-               <select name="<?php bp_the_profile_field_input_name(); ?>_day" class="span1" id="<?php bp_the_profile_field_input_name(); ?>_day" <?php if ( bp_get_the_profile_field_is_required() ) : ?>aria-required="true"<?php endif; ?>>
-                   <option value=""<?=selected( $day, '', false )?>>--</option>
                <?php
-                   for ( $i = 1; $i < 32; ++$i ) {
-                       echo '<option value="' . $i .'"' . selected( $day, $i, false ) . '>' . $i . '</option>';
-                   } 
+               $birthdate_start_year = date('Y')-1;
                ?>
 
+               <select name="<?php bp_the_profile_field_input_name() ?>_year" class="span2" id="<?php bp_the_profile_field_input_name(); ?>_year" <?php if ( bp_get_the_profile_field_is_required() ) : ?>aria-required="true" required="required"<?php endif; ?>>
+               <option value=""<?=selected( $year, '', false )?>>----</option>
+               <?php
+                   for ( $i = $birthdate_start_year; $i > 1901; $i-- ) {
+                       echo '<option value="' . $i .'"' . selected( $year, $i, false ) . '>' . $i . '</option>';
+                   }
+               ?>
                </select>
 
                <select name="<?php bp_the_profile_field_input_name() ?>_month" class="span2" id="<?php bp_the_profile_field_input_name(); ?>_month" <?php if ( bp_get_the_profile_field_is_required() ) : ?>aria-required="true"<?php endif; ?>>
@@ -285,18 +289,17 @@ function bxcft_edit_render_new_xprofile_field($echo = true) {
                    }
                ?>
                </select>
-               <?php
-               $birthdate_start_year = date('Y')-1;
-               ?>               
 
-               <select name="<?php bp_the_profile_field_input_name() ?>_year" class="span2" id="<?php bp_the_profile_field_input_name(); ?>_year" <?php if ( bp_get_the_profile_field_is_required() ) : ?>aria-required="true" required="required"<?php endif; ?>>
-               <option value=""<?=selected( $year, '', false )?>>----</option>
+               <select name="<?php bp_the_profile_field_input_name(); ?>_day" class="span1" id="<?php bp_the_profile_field_input_name(); ?>_day" <?php if ( bp_get_the_profile_field_is_required() ) : ?>aria-required="true"<?php endif; ?>>
+                   <option value=""<?=selected( $day, '', false )?>>--</option>
                <?php
-                   for ( $i = $birthdate_start_year; $i > 1901; $i-- ) {
-                       echo '<option value="' . $i .'"' . selected( $year, $i, false ) . '>' . $i . '</option>';
+                   for ( $i = 1; $i < 32; ++$i ) {
+                       echo '<option value="' . $i .'"' . selected( $day, $i, false ) . '>' . $i . '</option>';
                    }
                ?>
+
                </select>
+</div>
            </div>
        <?php
        } 

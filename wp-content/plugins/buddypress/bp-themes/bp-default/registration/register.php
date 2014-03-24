@@ -28,63 +28,6 @@
 
 <!--				<p><?php _e( 'Fill out the fields below to start working with the web\'s best musicians!', 'buddypress' ); ?></p> -->
 
-				<?php do_action( 'bp_before_account_details_fields' ); ?>
-
-				<div class="register-section" id="basic-details-section">
-
-					<?php /***** Basic Account Details ******/ ?>
-
-<!--					<h4><?php _e( 'Account Details', 'buddypress' ); ?></h4> -->
-
-					<label for="signup_username"><?php _e( 'Username', 'buddypress' ); ?> <?php _e( '(required)', 'buddypress' ); ?></label>
-					<?php do_action( 'bp_signup_username_errors' ); ?>
-					<input type="text" name="signup_username" id="signup_username" value="<?php bp_signup_username_value(); ?>" />
-
-
-
-<script>
-jQuery("input#signup_username").on({
-  keydown: function(e) {
-    if (e.which === 32)
-      return false;
-  },
-  change: function() {
-    this.value = this.value.replace(/\s/g, "");
-  }
-});
-
-$('input#signup_username').bind('keypress', function (event) {
-    var regex = new RegExp("^[^\.]+$");
-    var key = String.fromCharCode(!event.charCode ? event.which : event.charCode);
-    if (!regex.test(key)) {
-       event.preventDefault();
-       return false;
-    }
-});
-
-</script>
-
-
-
-
-					<!-- NHF edit - included statement about parents if under the age of 14 --> 
-					<label for="signup_email"><?php _e( 'Email Address', 'buddypress' ); ?> <?php _e( '(required - parent\'s email if under age 14)', 'buddypress' ); ?></label>
-					<?php do_action( 'bp_signup_email_errors' ); ?>
-					<input type="text" name="signup_email" id="signup_email" value="<?php bp_signup_email_value(); ?>" />
-<div id="su_pw">
-					<label for="signup_password"><?php _e( 'Choose a Password', 'buddypress' ); ?> <?php _e( '(required)', 'buddypress' ); ?></label>
-					<?php do_action( 'bp_signup_password_errors' ); ?>
-					<input type="password" name="signup_password" id="signup_password" value="" />
-</div>
-<div id="su_pw_cf">
-					<label for="signup_password_confirm"><?php _e( 'Confirm Password', 'buddypress' ); ?> <?php _e( '(required)', 'buddypress' ); ?></label>
-					<?php do_action( 'bp_signup_password_confirm_errors' ); ?>
-					<input type="password" name="signup_password_confirm" id="signup_password_confirm" value="" />
-</div>
-				</div><!-- #basic-details-section -->
-
-				<?php do_action( 'bp_after_account_details_fields' ); ?>
-
 				<?php /***** Extra Profile Details ******/ ?>
 
 				<?php if ( bp_is_active( 'xprofile' ) ) : ?>
@@ -104,7 +47,7 @@ $('input#signup_username').bind('keypress', function (event) {
 
 								<?php if ( 'textbox' == bp_get_the_profile_field_type() ) : ?>
 
-									<label for="<?php bp_the_profile_field_input_name(); ?>"><?php bp_the_profile_field_name(); ?> <?php if ( bp_get_the_profile_field_is_required() ) : ?><?php _e( '(required)', 'buddypress' ); ?><?php endif; ?></label>
+									<label for="<?php bp_the_profile_field_input_name(); ?>"><?php bp_the_profile_field_name(); ?> <?php if ( bp_get_the_profile_field_is_required() ) : ?><?php //_e( '(required)', 'buddypress' ); ?><?php endif; ?></label>
 									<?php do_action( 'bp_' . bp_get_the_profile_field_input_name() . '_errors' ); ?>
 									<input type="text" name="<?php bp_the_profile_field_input_name(); ?>" id="<?php bp_the_profile_field_input_name(); ?>" value="<?php bp_the_profile_field_edit_value(); ?>" />
 
@@ -112,7 +55,7 @@ $('input#signup_username').bind('keypress', function (event) {
 
 								<?php if ( 'textarea' == bp_get_the_profile_field_type() ) : ?>
 
-									<label for="<?php bp_the_profile_field_input_name(); ?>"><?php bp_the_profile_field_name(); ?> <?php if ( bp_get_the_profile_field_is_required() ) : ?><?php _e( '(required)', 'buddypress' ); ?><?php endif; ?></label>
+									<label for="<?php bp_the_profile_field_input_name(); ?>"><?php bp_the_profile_field_name(); ?> <?php if ( bp_get_the_profile_field_is_required() ) : ?><?php //_e( '(required)', 'buddypress' ); ?><?php endif; ?></label>
 									<?php do_action( 'bp_' . bp_get_the_profile_field_input_name() . '_errors' ); ?>
 									<textarea rows="5" cols="40" name="<?php bp_the_profile_field_input_name(); ?>" id="<?php bp_the_profile_field_input_name(); ?>"><?php bp_the_profile_field_edit_value(); ?></textarea>
 
@@ -120,7 +63,7 @@ $('input#signup_username').bind('keypress', function (event) {
 
 								<?php if ( 'selectbox' == bp_get_the_profile_field_type() ) : ?>
 
-									<label for="<?php bp_the_profile_field_input_name(); ?>"><?php bp_the_profile_field_name(); ?> <?php if ( bp_get_the_profile_field_is_required() ) : ?><?php _e( '(required)', 'buddypress' ); ?><?php endif; ?></label>
+									<label for="<?php bp_the_profile_field_input_name(); ?>"><?php bp_the_profile_field_name(); ?> <?php if ( bp_get_the_profile_field_is_required() ) : ?><?php //_e( '(required)', 'buddypress' ); ?><?php endif; ?></label>
 									<?php do_action( 'bp_' . bp_get_the_profile_field_input_name() . '_errors' ); ?>
 									<select name="<?php bp_the_profile_field_input_name(); ?>" id="<?php bp_the_profile_field_input_name(); ?>">
 										<?php bp_the_profile_field_options(); ?>
@@ -130,7 +73,7 @@ $('input#signup_username').bind('keypress', function (event) {
 
 								<?php if ( 'multiselectbox' == bp_get_the_profile_field_type() ) : ?>
 
-									<label for="<?php bp_the_profile_field_input_name(); ?>"><?php bp_the_profile_field_name(); ?> <?php if ( bp_get_the_profile_field_is_required() ) : ?><?php _e( '(required)', 'buddypress' ); ?><?php endif; ?></label>
+									<label for="<?php bp_the_profile_field_input_name(); ?>"><?php bp_the_profile_field_name(); ?> <?php if ( bp_get_the_profile_field_is_required() ) : ?><?php //_e( '(required)', 'buddypress' ); ?><?php endif; ?></label>
 									<?php do_action( 'bp_' . bp_get_the_profile_field_input_name() . '_errors' ); ?>
 									<select name="<?php bp_the_profile_field_input_name(); ?>" id="<?php bp_the_profile_field_input_name(); ?>" multiple="multiple">
 										<?php bp_the_profile_field_options(); ?>
@@ -141,7 +84,7 @@ $('input#signup_username').bind('keypress', function (event) {
 								<?php if ( 'radio' == bp_get_the_profile_field_type() ) : ?>
 
 									<div class="radio">
-										<span class="label"><?php bp_the_profile_field_name(); ?> <?php if ( bp_get_the_profile_field_is_required() ) : ?><?php _e( '(required)', 'buddypress' ); ?><?php endif; ?></span>
+										<span class="label"><?php bp_the_profile_field_name(); ?> <?php if ( bp_get_the_profile_field_is_required() ) : ?><?php //_e( '(required)', 'buddypress' ); ?><?php endif; ?></span>
 
 										<?php do_action( 'bp_' . bp_get_the_profile_field_input_name() . '_errors' ); ?>
 										<?php bp_the_profile_field_options(); ?>
@@ -156,7 +99,7 @@ $('input#signup_username').bind('keypress', function (event) {
 								<?php if ( 'checkbox' == bp_get_the_profile_field_type() ) : ?>
 
 									<div class="checkbox">
-										<span class="label"><?php bp_the_profile_field_name(); ?> <?php if ( bp_get_the_profile_field_is_required() ) : ?><?php _e( '(required)', 'buddypress' ); ?><?php endif; ?></span>
+										<span class="label"><?php bp_the_profile_field_name(); ?> <?php if ( bp_get_the_profile_field_is_required() ) : ?><?php //_e( '(required)', 'buddypress' ); ?><?php endif; ?></span>
 
 										<?php do_action( 'bp_' . bp_get_the_profile_field_input_name() . '_errors' ); ?>
 										<?php bp_the_profile_field_options(); ?>
@@ -167,7 +110,7 @@ $('input#signup_username').bind('keypress', function (event) {
 								<?php if ( 'datebox' == bp_get_the_profile_field_type() ) : ?>
 
 									<div class="datebox">
-										<label for="<?php bp_the_profile_field_input_name(); ?>_day"><?php bp_the_profile_field_name(); ?> <?php if ( bp_get_the_profile_field_is_required() ) : ?><?php _e( '(required)', 'buddypress' ); ?><?php endif; ?></label>
+										<label for="<?php bp_the_profile_field_input_name(); ?>_day"><?php bp_the_profile_field_name(); ?> <?php if ( bp_get_the_profile_field_is_required() ) : ?><?php //_e( '(required)', 'buddypress' ); ?><?php endif; ?></label>
 										<?php do_action( 'bp_' . bp_get_the_profile_field_input_name() . '_errors' ); ?>
 
 										<select name="<?php bp_the_profile_field_input_name(); ?>_day" class="span1" id="<?php bp_the_profile_field_input_name(); ?>_day">
@@ -225,6 +168,72 @@ $('input#signup_username').bind('keypress', function (event) {
 
 				<?php endif; ?>
 
+
+
+
+                                <?php do_action( 'bp_before_account_details_fields' ); ?>
+
+                                <div class="register-section" id="basic-details-section">
+
+                                        <?php /***** Basic Account Details ******/ ?>
+
+<!--                                    <h4><?php _e( 'Account Details', 'buddypress' ); ?></h4> -->
+<div id="bdsa" >
+                                        <label for="signup_username"><?php _e( 'Username', 'buddypress' ); ?> <?php //_e( '(required)', 'buddypress' ); ?></label>
+                                        <?php do_action( 'bp_signup_username_errors' ); ?>
+                                        <input type="text" name="signup_username" id="signup_username" value="<?php bp_signup_username_value(); ?>" />
+</div>
+
+
+<script>
+jQuery("input#signup_username").on({
+  keydown: function(e) {
+    if (e.which === 32)
+      return false;
+  },
+  change: function() {
+    this.value = this.value.replace(/\s/g, "");
+  }
+});
+
+$('input#signup_username').bind('keypress', function (event) {
+    var regex = new RegExp("^[^\.]+$");
+    var key = String.fromCharCode(!event.charCode ? event.which : event.charCode);
+    if (!regex.test(key)) {
+       event.preventDefault();
+       return false;
+    }
+});
+
+</script>
+
+
+
+<div id="bdsb">
+                                        <!-- NHF edit - included statement about parents if under the age of 14 -->
+                                        <label for="signup_email"><?php _e( 'Email Address', 'buddypress' ); ?> <?php //_e( '(required - parent\'s email if under age 14)', 'buddypress' ); ?></label>
+                                        <?php do_action( 'bp_signup_email_errors' ); ?>
+                                        <input type="text" name="signup_email" id="signup_email" value="<?php bp_signup_email_value(); echo $_POST['presignup_email']; ?>" />
+</div>
+<div id="su_pw">
+                                        <label for="signup_password"><?php _e( 'Choose Password', 'buddypress' ); ?> <?php //_e( '(required)', 'buddypress' ); ?></label>
+                                        <?php do_action( 'bp_signup_password_errors' ); ?>
+                                        <input type="password" name="signup_password" id="signup_password" value="<?php echo $_POST['presignup_password']; ?>" />
+</div>
+<div id="su_pw_cf">
+                                        <label for="signup_password_confirm"><?php _e( 'Confirm Password', 'buddypress' ); ?> <?php //_e( '(required)', 'buddypress' ); ?></label>
+                                        <?php do_action( 'bp_signup_password_confirm_errors' ); ?>
+                                        <input type="password" name="signup_password_confirm" id="signup_password_confirm" value="" />
+</div>
+                                </div><!-- #basic-details-section -->
+
+                                <?php do_action( 'bp_after_account_details_fields' ); ?>
+
+
+
+
+
+
 				<?php if ( bp_get_blog_signup_allowed() ) : ?>
 
 					<?php do_action( 'bp_before_blog_details_fields' ); ?>
@@ -267,11 +276,24 @@ $('input#signup_username').bind('keypress', function (event) {
 				<?php endif; ?>
 
 				<?php do_action( 'bp_before_registration_submit_buttons' ); ?>
-
 				<div class="submit">
-					<div class="subtext">By clicking Complete Registration, I agree to the Jukubox <a href="http://jukubox.com/terms-of-use/">Terms of Use</a>, including the <a href="http://jukubox.com/privacy-policy/">Privacy Policy</a> and <a href="http://jukubox.com/teachers-manual/">Teacher's Manual</a></div>
-					<button type="submit" name="signup_submit" class="btn btn-large btn-primary" id="signup_submit"><?php _e( 'Complete Registration', 'buddypress' ); ?></button>
+					<div class="subtext"><input type="checkbox" id="register_check" />I agree to the Jukubox <a href="http://jukubox.com/terms-of-use/">Terms of Use</a>, including the <a href="http://jukubox.com/privacy-policy/">Privacy Policy</a> and <a href="http://jukubox.com/teachers-manual/">Teacher's Manual</a></div>
+					<button type="submit" disabled name="signup_submit" class="btn btn-large btn-primary" id="signup_submit"><?php _e( 'Register', 'buddypress' ); ?></button>
 				</div>
+
+<script>
+var checker = document.getElementById('register_check');
+var sendbtn = document.getElementById('signup_submit');
+// when unchecked or checked, run the function
+checker.onchange = function(){
+    if(this.checked){
+        sendbtn.disabled = false;
+    } else {
+        sendbtn.disabled = true;
+    }
+
+}
+</script>
 
 				<?php do_action( 'bp_after_registration_submit_buttons' ); ?>
 
@@ -287,9 +309,9 @@ $('input#signup_username').bind('keypress', function (event) {
 				<?php do_action( 'bp_before_registration_confirmed' ); ?>
 
 				<?php if ( bp_registration_needs_activation() ) : ?>
-					<p><?php _e( 'You have successfully created your account! To begin using this site you will need to activate your account via the email we have just sent to your address.', 'buddypress' ); ?></p>
+					<p style="width:446px;"><?php _e( 'You have successfully created your account! To begin using this site you will need to activate your account via the email we have just sent to your address.', 'buddypress' ); ?></p>
 				<?php else : ?>
-					<p><?php _e( 'You have successfully created your account! Please log in using the username and password you have just created.', 'buddypress' ); ?></p>
+					<p style="width:446px;"><?php _e( 'You have successfully created your account! Please log in using the username and password you have just created.', 'buddypress' ); ?></p>
 				<?php endif; ?>
 
 				<?php do_action( 'bp_after_registration_confirmed' ); ?>
