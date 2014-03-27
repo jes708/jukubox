@@ -7806,14 +7806,6 @@ float: right;
 clear: left;
 }
 
-body.profile-edit #field_129_day, 
-body.profile-edit #field_129_month, 
-body.profile-edit #field_129_year {
-bottom: 22px;
-position: relative;
-right: 618px;
-}
-
 div.editfield p.description {
 font-size: 9px !important;
 clear: left;
@@ -7927,27 +7919,58 @@ body.register #container h2 {
 color: black;
 }
 
-body.profile.public h3 {
+body.profile.edit #profile-edit-form div.editfield.field_117 div.checkbox span, body.profile.edit #profile-edit-form div.editfield.field_2 div.checkbox span, body.bp-user #profile-edit-form label, body.profile.public h3 {
 color: rgb(35, 63, 150);
 font-family: 'Montserrat' !important;
 font-size: 16px !important;
 padding-left: 0;
 margin-bottom: 0px;
+font-weight: 600 !important;
+padding-top: 19px;
+padding-bottom: 3px;
 }
 
-#subnav ul li {
+body.profile.edit #profile-edit-form div.editfield.field_2 div.checkbox span, body.profile.edit #profile-edit-form div.editfield.field_117 div.checkbox span, body.profile.edit #profile-edit-form div.editfield.field_117 div.checkbox span {
+left: -20px;
+position: relative;
+margin-top: 0px;
+margin-bottom: -10px !important;
+}
+
+body.profile.edit #profile-edit-form div.editfield.field_117 div.checkbox label, body.profile.edit #profile-edit-form div.editfield.field_2 div.checkbox label {
+font-family: 'open sans' !important;
+font-size: 13px !important;
+font-weight: 400 !important;
+color: black;
+margin-bottom: -10px;
+}
+
+body.bp-user #profile-edit-form label {
+padding-top: 6px;
+}
+
+body.bp-user.profile.edit div.editfield {
+margin-bottom: -6px !important;
+}
+
+body.bp-user #subnav ul li {
 float: left;
 clear: left;
 margin-left: 0;
 border: none !important;
 }
 
-#subnav ul a {
+body.bp-user #subnav ul a {
 color: black;
+padding-left: 7px !important;
+left: 8px !important;
+position: relative;
+width: 140px;
 }
 
-#subnav ul li.current.selected a {
-background: transparent;
+body.bp-user #subnav ul li.current.selected a {
+background: rgb(230, 230, 230);
+border-radius: 0;
 }
 
 body.bp-user #subnav li:nth-of-type(1) {
@@ -7963,9 +7986,11 @@ left: 5px;
 top: 30px;
 }   
 
-div.bp-widget.profile {
+body.profile.edit form#profile-edit-form, body.bp-user form#whats-new-form, body.bp-user div.bp-widget.profile, body.bp-user div.activity {
 position: relative;
-left: 180px;
+left: 155px;
+border-left: 1px solid rgb(220, 220, 220);
+padding-left: 20px;
 width: 775px;
 }
 
@@ -7981,4 +8006,60 @@ padding-bottom: 12px;
 
 p, div.entry ul li {
 font-size: 13px !important;
+}
+
+body.bp-user form#whats-new-form, body.bp-user div.activity {
+top: 35px;
+}
+
+div.profile h4 {
+display: block;
+position: relative;
+top: 7px;
+border-bottom: 1px solid rgb(223, 223, 223);
+width: 776px;
+padding-bottom: 13px;
+font-size: 19px;
+}
+
+body.profile.edit #profile-edit-form div.editfield.field_129 p.description {
+height: 60px;
+}
+
+body.profile.edit textarea, body.profile.edit input[type=text] {
+width: 92%;
+}
+
+.field-visibility-settings-notoggle, .field-visibility-settings-toggle {
+display: none;
+}
+
+body.profile.edit #profile-edit-form div.editfield.field_129 div.datebox {
+height: 80px !important;
+position: relative;
+}
+
+body.profile.edit #datebox_selects {
+float: left;
+position: relative;
+top: 5px;
+}
+
+body.profile.edit #profile-edit-form div.editfield.field_117 div.checkbox label:last-of-type, body.profile.edit #profile-edit-form div.editfield.field_2 div.checkbox label:last-of-type, body.profile.edit #profile-edit-form input[type=text], body.profile.edit #profile-edit-form input[type=url], body.profile.edit #profile-edit-form textarea, body.profile.edit #profile-edit-form select {
+margin-bottom: 16px;
+}
+
+body.profile.edit div.editfield p.description {
+font-size: 10px !important;
+clear: left;
+position: relative;
+bottom: 7px;
+color: rgb(168, 168, 168);
+margin-bottom: -4px;
+}
+
+body.profile.edit #profile-edit-form div.editfield.field_117 div.checkbox p.description, body.profile.edit #profile-edit-form div.editfield.field_2 div.checkbox p.description {
+right: 20px;
+top: 3px;
+margin-bottom: -9px;
 }
