@@ -2199,3 +2199,4 @@ $bp->bp_nav['activity']['position'] = 20;
 add_action( 'bp_setup_nav', 'bbg_change_profile_tab_order', 999 );
 
 define( 'BP_DEFAULT_COMPONENT', 'profile' );
+

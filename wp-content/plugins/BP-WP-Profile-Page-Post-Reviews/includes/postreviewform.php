@@ -29,7 +29,7 @@ if (is_user_logged_in()) {
     $check_show = (bp_displayed_user_id() == $current_user->ID and $options['Prevent'] == "Prevent");
 
     if ($check_show) {
-        echo "<p style='padding-bottom:5px'>You can't review yourself</p>";
+        echo "";//"<p style='padding-bottom:5px;'>You can't review yourself</p>";
     } else {
         ?>
 <form class="review-member-form whats-new-form-member" name="whats-new-form" id="whats-new-form " method="post" action="">
