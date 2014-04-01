@@ -4752,6 +4752,8 @@ class Appointments {
 			
 // Schwarz Add
 
+echo '<div id="lessons_sub_one">';
+
 global $current_user;
       get_currentuserinfo();
 $cur_us_id = $current_user->ID;
@@ -4879,6 +4881,7 @@ if (strpos($us_serv_str, ":5:") !== false) { //servnumedit
 
 			</script>   ";   
 		} // end if is teacher	
+echo '</div>';
 		do_action( 'app_after_bp_my_appointments', $user_id );
 	}
 

@@ -45,7 +45,8 @@ get_header( 'buddypress' ); ?>
 
 					</ul>
 				</div><!-- .item-list-tabs -->
-
+<!--Schwarz Div-->
+<div id="settings_not">
 				<h3><?php _e( 'Email Notification', 'buddypress' ); ?></h3>
 
 				<?php do_action( 'bp_template_content' ); ?>
@@ -66,7 +67,7 @@ get_header( 'buddypress' ); ?>
 					<?php wp_nonce_field('bp_settings_notifications'); ?>
 
 				</form>
-
+</div>
 				<?php do_action( 'bp_after_member_body' ); ?>
 
 			</div><!-- #item-body -->

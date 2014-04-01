@@ -46,7 +46,8 @@
 
 					</ul>
 				</div><!-- .item-list-tabs -->
-
+<!--Schwarz div-->
+<div id="delete_set">
 				<h3><?php _e( 'Delete Account', 'buddypress' ); ?></h3>
 
 				<div id="message" class="info">
@@ -81,7 +82,7 @@
 					<?php wp_nonce_field( 'delete-account' ); ?>
 
 				</form>
-
+</div>
 				<?php do_action( 'bp_after_member_body' ); ?>
 
 			</div><!-- #item-body -->

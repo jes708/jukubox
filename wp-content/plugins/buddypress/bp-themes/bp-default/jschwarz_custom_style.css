@@ -7986,12 +7986,39 @@ left: 5px;
 top: 30px;
 }   
 
-body.change-avatar #item-body div.profile, body.profile.edit form#profile-edit-form, body.bp-user form#whats-new-form, body.bp-user div.bp-widget.profile, body.bp-user.activity div.activity, body.bp-user.reviews div#item-body {
+div#delete_set, body.bp-user.settings div#settings_not, body.bp-user.settings div#general_set, body.appointment-settings div.standard-form, #lessons_sub_one, body.bp-user.friends div.members.friends, body.bp-user.friends div#message, body.bp-user.messages div.messages, body.change-avatar #item-body div.profile, body.profile.edit form#profile-edit-form, body.bp-user form#whats-new-form, body.bp-user div.bp-widget.profile, body.bp-user.activity div.activity, body.bp-user.reviews div#item-body {
 position: relative;
 left: 155px;
 border-left: 1px solid rgb(220, 220, 220);
 padding-left: 20px;
 width: 775px;
+}
+
+.priceWrap {
+float: left;
+clear: both;
+position: relative;
+left: 155px;
+border-left: 1px solid rgb(220, 220, 220);
+padding-left: 20px;
+}
+
+#PriceSubmit, #serveChangeSubmit {
+position: absolute;
+bottom: 10px;
+
+}
+
+.servWrap {
+position: relative;
+left: 155px; 
+border-left: 1px solid rgb(220, 220, 220);
+padding-left: 20px; 
+height: 215px;
+}        
+
+.priceWrap h4 {
+margin-bottom: 25px;
 }
 
 body.profile.public div.bp-widget.profile .field_129, body.profile.public div.bp-widget.profile .field_20, body.profile.public div.bp-widget.profile .field_23, body.profile.public div.bp-widget.profile .field_221 {
@@ -8012,7 +8039,7 @@ body.bp-user form#whats-new-form, body.bp-user div.activity {
 top: 35px;
 }
 
-div.profile h4 {
+div#delete_set h3, div#settings_not h3, div#general_set h3, div.profile h4 {
 display: block;
 position: relative;
 top: 7px;
@@ -8020,6 +8047,25 @@ border-bottom: 1px solid rgb(223, 223, 223);
 width: 776px;
 padding-bottom: 13px;
 font-size: 19px;
+}
+
+.servWrap h4, .priceWrap h4 {
+display: block;
+position: relative;
+top: 7px;
+border-top: 1px solid rgb(223, 223, 223);
+width: 776px;
+padding-top: 13px;
+color: rgb(35, 63, 150);
+font-family: 'Montserrat' !important;
+font-size: 16px !important;
+font-weight: 600 !important;
+}
+
+#serviceForm strong {
+line-height: 24px;
+top: 3px;
+position: relative;
 }
 
 body.profile.edit #profile-edit-form div.editfield.field_129 p.description {

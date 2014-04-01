@@ -45,7 +45,8 @@ get_header( 'buddypress' ); ?>
 
 					</ul>
 				</div><!-- .item-list-tabs -->
-
+<!--Schwarz Div-->
+<div id="general_set">
 				<h3><?php _e( 'General Settings', 'buddypress' ); ?></h3>
 
 				<?php do_action( 'bp_template_content' ); ?>
@@ -71,7 +72,7 @@ get_header( 'buddypress' ); ?>
 					<div class="submit">
 						<button type="submit" name="submit" id="submit" class="auto btn btn-primary"><?php _e( 'Save Changes', 'buddypress' ); ?></button>
 					</div>
-
+</div>
 					<?php do_action( 'bp_core_general_settings_after_submit' ); ?>
 
 					<?php wp_nonce_field( 'bp_settings_general' ); ?>
