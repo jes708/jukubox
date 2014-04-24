@@ -8014,7 +8014,7 @@ position: relative;
 left: 155px; 
 border-left: 1px solid rgb(220, 220, 220);
 padding-left: 20px; 
-height: 215px;
+height: 256px;
 }        
 
 .priceWrap h4 {
@@ -8046,6 +8046,15 @@ top: 7px;
 border-bottom: 1px solid rgb(223, 223, 223);
 width: 776px;
 padding-bottom: 13px;
+font-size: 19px;
+}
+
+h3.PandS {
+display: block;
+position: relative;
+top: 7px;
+width: 776px;
+margin-bottom: 0px;
 font-size: 19px;
 }
 
@@ -8108,4 +8117,52 @@ body.profile.edit #profile-edit-form div.editfield.field_117 div.checkbox p.desc
 right: 20px;
 top: 3px;
 margin-bottom: -9px;
+}
+
+div#newkey {
+color: rgb(35, 63, 150);
+}
+
+div#newkey strong {
+color: black;
+font-size: 12px;
+position: relative;
+top: 5px;
+}
+
+#newkey a {
+font-size: 17px;
+position: relative;
+bottom: -4px;
+}
+
+body.page-id-115 h2.pagetitle {
+display: none;
+}
+
+body.page-id-115 div.padder.one-column {
+padding-left: 165px;
+padding-right: 165px;
+}
+
+body.page-id-115 h1 {
+font-size: 27px;
+margin: 10px 0 -1px 0;
+font-weight: 600 !important;
+color: rgb(15, 15, 15);
+}
+
+body.page-id-115 td {
+border: none !important;
+}
+
+#post-115 img {
+position: relative;
+top: 3px;
+margin-right: 4px;
+}
+
+button#newRoomButton {
+bottom: 15px;
+position: relative;
 }

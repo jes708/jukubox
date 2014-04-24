@@ -1928,6 +1928,7 @@ function generate_lessontoggle($userId, $services='') { // takes has of lesson s
 	$service_hash = get_user_services_hash($userId); 	
 	//echo '<pre>'; print_r($service_hash); echo '</pre>';
 	echo '<div class="servWrap">'; 
+        echo '<h3 class="PandS">Prices and Services</h3>';
 	echo '<h4>Services I Teach</h4>';
 	echo '<form method="post" id="serviceForm" action="">'; 
 	echo '<input type="hidden" name="serviceToggled" value="" />';  		
