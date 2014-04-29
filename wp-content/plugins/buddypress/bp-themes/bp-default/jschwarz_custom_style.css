@@ -191,7 +191,7 @@ color: rgba(255, 255, 255, 0);
 /* new background stuff */
 
 body {
-background-image: url(http://jukubox.com/wp-content/uploads/2013/06/jukuback1.png);
+/*background-image: url(http://jukubox.com/wp-content/uploads/2013/06/jukuback1.png);*/
 background-repeat: repeat;
 }
 
@@ -1182,7 +1182,7 @@ input.search-query {
   cursor: pointer;
   color: #333333 !important;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75) !important;
-  background-color: #f5f5f5 !important;
+  background-color: #dddddd !important;
   background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6) !important;
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6)) !important;
   background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6) !important;
@@ -3746,8 +3746,9 @@ overflow: hidden;
 }
 
 div#messages-dir-count {
-left: 15px;
 position: relative;
+font-size: 12px;
+margin-bottom: 20px;
 }
 
 div.message-metadata img {
@@ -7984,9 +7985,14 @@ width: 180px;
 border: none;
 left: 5px;
 top: 30px;
+min-height: 100px;
 }   
 
-div#delete_set, body.bp-user.settings div#settings_not, body.bp-user.settings div#general_set, body.appointment-settings div.standard-form, #lessons_sub_one, body.bp-user.friends div.members.friends, body.bp-user.friends div#message, body.bp-user.messages div.messages, body.change-avatar #item-body div.profile, body.profile.edit form#profile-edit-form, body.bp-user form#whats-new-form, body.bp-user div.bp-widget.profile, body.bp-user.activity div.activity, body.bp-user.reviews div#item-body {
+div#subnav li {
+margin-bottom: 5px;
+}
+
+body.messages div#message-thread, body.messages div#composeMessage, div#delete_set, body.bp-user.settings div#settings_not, body.bp-user.settings div#general_set, body.appointment-settings div.standard-form, #lessons_sub_one, body.bp-user.friends div.members.friends, body.bp-user.friends div#message, body.bp-user.messages div.messages, body.change-avatar #item-body div.profile, body.profile.edit form#profile-edit-form, body.bp-user form#whats-new-form, body.bp-user div.bp-widget.profile, body.bp-user.activity div.activity, body.bp-user.reviews div#item-body {
 position: relative;
 left: 155px;
 border-left: 1px solid rgb(220, 220, 220);
@@ -8006,7 +8012,6 @@ padding-left: 20px;
 #PriceSubmit, #serveChangeSubmit {
 position: absolute;
 bottom: 10px;
-
 }
 
 .servWrap {
@@ -8039,14 +8044,34 @@ body.bp-user form#whats-new-form, body.bp-user div.activity {
 top: 35px;
 }
 
-div#delete_set h3, div#settings_not h3, div#general_set h3, div.profile h4 {
+body.messages div#message-thread h2#message-thread-inbox, div#composeMessage h2, div#delete_set h3, div#settings_not h3, div#general_set h3, div.profile h4 {
 display: block;
 position: relative;
 top: 7px;
 border-bottom: 1px solid rgb(223, 223, 223);
 width: 776px;
-padding-bottom: 13px;
+padding-bottom: 8px;
 font-size: 19px;
+color: rgb(10, 10, 10);
+}
+
+div#inbox-subtab h2 {
+display: block;
+position: absolute;
+top: 7px;
+width: 776px;
+padding-bottom: 8px;
+font-size: 19px;
+color: black;
+}
+
+div#inbox-subtab {
+height: 60px;
+border-bottom: solid 1px rgb(223, 223, 223);
+}
+
+div.message-search div.input-append {
+top: 19px;
 }
 
 h3.PandS {
@@ -8165,4 +8190,98 @@ margin-right: 4px;
 button#newRoomButton {
 bottom: 15px;
 position: relative;
+}
+
+body.messages h3#message-subject {
+color: rgb(35, 63, 150);
+font-size: 18px;
+margin-bottom: -15px;
+}
+
+body.messages p#message-recipients {
+border-bottom: rgb(223, 223, 223) 1px solid;
+padding-bottom: 15px;
+margin: 10px 0 5px 0 !important;
+}
+
+div#message-thread a.btn.btn-small.confirm {
+margin-bottom: 30px !important;
+}
+
+body.messages div.message-metadata img {
+left: 4px;
+padding: 0 !important;
+margin-right: 13px !important;
+}
+
+body.messages.view textarea#message_content {
+width: 100%;
+position: relative;
+right: 40px;
+top: 7px;
+}
+
+body.messages div.message-content button#send_reply_button {
+right: 40px;
+position: relative;
+}
+
+table#message-threads tr.alt td {
+background: white;
+border-bottom: 1px solid rgb(223, 223, 223);
+border-top: 1px solid rgb(223, 223, 223);
+}
+
+table#message-threads {
+border-bottom: 1px solid rgb(175, 175, 175);
+border-top: 1px solid rgb(175, 175, 175);
+}
+
+table#message-threads tr:last-of-type td {
+border-bottom: 1px solid rgb(175, 175, 175) !important;
+}
+
+body.messages div.messages-options-nav {
+background: transparent;
+float: left;
+top: 20px;
+height: 75px;
+position: relative;
+}
+
+a#delete_inbox_messages {
+height: 16px;
+bottom: 1px;
+position: relative;
+margin-left: 18px;
+}
+
+select#message-type-select {
+top: 4px;
+position: relative;
+}
+
+table#message-threads tr.alt.unread td {
+background: #fff9db;
+border-top: 1px solid #ffe8c4;
+border-bottom: 1px solid #ffe8c4;
+font-weight: bold;
+}
+
+body.messages #message-threads input[type="checkbox"] {
+left: 15px;
+position: relative;
+}
+
+body.messages table#message-threads td.thread-options {
+width: 5.2%;
+position: relative;
+}
+
+td.thread-title {
+padding-right: 25px;
+}
+
+p.thread-excerpt {
+padding-right: 20px;
 }

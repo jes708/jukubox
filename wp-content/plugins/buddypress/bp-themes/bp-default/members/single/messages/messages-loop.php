@@ -1,5 +1,15 @@
 <?php do_action( 'bp_before_member_messages_loop' ); ?>
 
+<div id="inbox-subtab">
+<h2>Inbox</h2>
+
+        <?php if ( bp_is_messages_inbox() || bp_is_messages_sentbox() ) : ?>
+
+                <div class="message-search"><?php bp_message_search_form(); ?></div>
+
+        <?php endif; ?>
+</div>
+
 <?php if ( bp_has_message_threads( bp_ajax_querystring( 'messages' ) ) ) : ?>
 
 	<div class="pagination no-ajax" id="user-pag">
@@ -22,35 +32,41 @@
 		<?php while ( bp_message_threads() ) : bp_message_thread(); ?>
 
 			<tr id="m-<?php bp_message_thread_id(); ?>" class="<?php bp_message_css_class(); ?><?php if ( bp_message_thread_has_unread() ) : ?> unread"<?php else: ?> read"<?php endif; ?>>
-				<td width="1%" class="thread-count">
-					<span class="unread-count"><?php bp_message_thread_unread_count(); ?></span>
+
+                                <td width="13%" class="thread-options">
+                                        <input type="checkbox" name="message_ids[]" value="<?php bp_message_thread_id(); ?>" />
 				</td>
-				<td width="1%" class="thread-avatar"><?php bp_message_thread_avatar(); ?></td>
+<!--				<td width="1%" class="thread-count">
+					<span class="unread-count"><?php //bp_message_thread_unread_count(); ?></span>
+				</td>
+-->				<td width="1%" class="thread-avatar"><?php bp_message_thread_avatar(); ?></td>
 
 				<?php if ( 'sentbox' != bp_current_action() ) : ?>
-					<td width="30%" class="thread-from">
+					<td width="20%" class="thread-from">
 						<?php _e( 'From:', 'buddypress' ); ?> <?php bp_message_thread_from(); ?><br />
 						<span class="activity"><?php bp_message_thread_last_post_date(); ?></span>
 					</td>
 				<?php else: ?>
-					<td width="30%" class="thread-from">
+					<td width="20%" class="thread-from">
 						<?php _e( 'To:', 'buddypress' ); ?> <?php bp_message_thread_to(); ?><br />
 						<span class="activity"><?php bp_message_thread_last_post_date(); ?></span>
 					</td>
 				<?php endif; ?>
 
-				<td width="50%" class="thread-info">
+				<td width="25%" class="thread-title">
 					<p><a href="<?php bp_message_thread_view_link(); ?>" title="<?php _e( "View Message", "buddypress" ); ?>"><?php bp_message_thread_subject(); ?></a></p>
+				</td>
+				<td width="25%" class="thread-info">
 					<p class="thread-excerpt"><?php bp_message_thread_excerpt(); ?></p>
 				</td>
 
 				<?php do_action( 'bp_messages_inbox_list_item' ); ?>
 
-				<td width="13%" class="thread-options">
+<!--				<td width="13%" class="thread-options">
 					<input type="checkbox" name="message_ids[]" value="<?php bp_message_thread_id(); ?>" />
-					<a class="btn btn-small btn-primary confirm" href="<?php bp_message_thread_delete_link(); ?>" title="<?php _e( "Delete Message", "buddypress" ); ?>"><?php _e( 'Delete', 'buddypress' ); ?></a> &nbsp;
+					<a class="btn btn-small btn-primary confirm" href="<?php //bp_message_thread_delete_link(); ?>" title="<?php //_e( "Delete Message", "buddypress" ); ?>"><?php //_e( 'Delete', 'buddypress' ); ?></a> &nbsp;
 				</td>
-			</tr>
+-->			</tr>
 
 		<?php endwhile; ?>
 	</table><!-- #message-threads -->

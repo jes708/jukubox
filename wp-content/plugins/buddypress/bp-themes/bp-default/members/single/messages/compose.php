@@ -1,3 +1,7 @@
+<div id="composeMessage">
+
+<h2>Compose</h2>
+
 <form action="<?php bp_messages_form_action('compose'); ?>" method="post" id="send_message_form" class="standard-form" role="main">
 
 	<?php do_action( 'bp_before_messages_compose_content' ); ?>
@@ -30,6 +34,8 @@
 
 	<?php wp_nonce_field( 'messages_send_message' ); ?>
 </form>
+
+</div>
 
 <script type="text/javascript">
 	document.getElementById("send-to-input").focus();

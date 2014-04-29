@@ -449,7 +449,7 @@ function bp_messages_options() {
 
 	<?php endif; ?>
 
-	<a href="#" id="delete_<?php echo bp_current_action(); ?>_messages"><?php _e( 'Delete Selected', 'buddypress' ); ?></a> &nbsp;
+	<a href="#" class="btn btn-small btn-primary" id="delete_<?php echo bp_current_action(); ?>_messages"><?php _e( 'DELETE', 'buddypress' ); ?></a> &nbsp;
 
 <?php
 }

@@ -1,10 +1,10 @@
 <div id="message-thread" role="main">
 
+<h2 id="message-thread-inbox">Inbox</h2>
+
 	<?php do_action( 'bp_before_message_thread_content' ); ?>
 
 	<?php if ( bp_thread_has_messages() ) : ?>
-
-		<h3 id="message-subject"><?php bp_the_thread_subject(); ?></h3>
 
 		<p id="message-recipients">
 			<span class="highlight">
@@ -21,8 +21,9 @@
 
 			</span>
 
-			<a class="btn btn-small btn-primary confirm" href="<?php bp_the_thread_delete_link(); ?>" title="<?php _e( "Delete Message", "buddypress" ); ?>"><?php _e( 'Delete', 'buddypress' ); ?></a> &nbsp;
 		</p>
+
+                <h3 id="message-subject"><?php bp_the_thread_subject(); ?></h3>
 
 		<?php do_action( 'bp_before_message_thread_list' ); ?>
 
@@ -58,6 +59,8 @@
 		<?php endwhile; ?>
 
 		<?php do_action( 'bp_after_message_thread_list' ); ?>
+
+                        <a class="btn btn-small confirm" href="<?php bp_the_thread_delete_link(); ?>" title="<?php _e( "Delete Message", "buddypress" ); ?>"><?php _e( 'DELETE MESSAGE', 'buddypress' ); ?></a> &nbsp;
 
 		<?php do_action( 'bp_before_message_thread_reply' ); ?>
 
