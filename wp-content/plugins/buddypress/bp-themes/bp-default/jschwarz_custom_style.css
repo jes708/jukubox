@@ -8285,3 +8285,16 @@ padding-right: 25px;
 p.thread-excerpt {
 padding-right: 20px;
 }
+
+body.messages div.pagination {
+width: auto;
+}
+
+body.messages div#messages-dir-pag {
+top: 10px;
+position: relative;
+}
+
+body.messages div.message-search {
+margin: 0;
+}

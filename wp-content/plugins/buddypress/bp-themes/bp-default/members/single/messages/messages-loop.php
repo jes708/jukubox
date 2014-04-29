@@ -1,7 +1,14 @@
 <?php do_action( 'bp_before_member_messages_loop' ); ?>
 
 <div id="inbox-subtab">
-<h2>Inbox</h2>
+
+        <?php if ( bp_is_messages_inbox() ) : ?>
+		<h2>Inbox</h2>
+        <?php endif; ?>
+
+        <?php if ( bp_is_messages_sentbox() ) : ?>
+                <h2>Sent Messages</h2>
+        <?php endif; ?>
 
         <?php if ( bp_is_messages_inbox() || bp_is_messages_sentbox() ) : ?>
 
