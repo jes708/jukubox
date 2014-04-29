@@ -8298,3 +8298,16 @@ position: relative;
 body.messages div.message-search {
 margin: 0;
 }
+
+@media (max-width: 480px) {
+body.registration div.editfield {
+width: 465px;
+}
+
+body.registration div#basic-details-section {
+width: 465px !important;
+top: -8px;
+}
+
+
+}
