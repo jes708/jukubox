@@ -78,6 +78,6 @@
 		</div><!-- .padder -->
 	</div><!-- #content -->
 <?php wp_reset_query(); ?>
-	<?php get_sidebar(); ?>
+	<?php get_sidebar( 'archive' ); ?>
 
 <?php get_footer(); ?>
