@@ -2201,3 +2201,9 @@ add_action( 'bp_setup_nav', 'bbg_change_profile_tab_order', 999 );
 
 define( 'BP_DEFAULT_COMPONENT', 'profile' );
 
+
+function remove_friends_nav() {
+   global $bp;
+      bp_core_remove_subnav_item( $bp->activity->slug, 'friends' );
+   }
+add_action( 'init', 'remove_friends_nav' );

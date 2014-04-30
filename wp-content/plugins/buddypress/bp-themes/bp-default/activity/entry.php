@@ -65,11 +65,11 @@
 
 					<?php if ( !bp_get_activity_is_favorite() ) : ?>
 
-						<a href="<?php bp_activity_favorite_link(); ?>" class="btn btn-mini btn-inverse fav bp-secondary-action" title="<?php esc_attr_e( 'Mark as Favorite', 'buddypress' ); ?>"><?php _e( 'Favorite', 'buddypress' ); ?></a>
+						<a href="<?php bp_activity_favorite_link(); ?>" class="fav bp-secondary-action" title="<?php esc_attr_e( 'Mark as Favorite', 'buddypress' ); ?>"><i class="icon-large icon-heart-empty"></i><?php //_e( 'Favorite', 'buddypress' ); ?></a>
 
 					<?php else : ?>
 
-						<a href="<?php bp_activity_unfavorite_link(); ?>" class="btn btn-mini btn-inverse button unfav bp-secondary-action" title="<?php esc_attr_e( 'Remove Favorite', 'buddypress' ); ?>"><?php _e( 'Remove Favorite', 'buddypress' ); ?></a>
+						<a href="<?php bp_activity_unfavorite_link(); ?>" class="unfav bp-secondary-action" title="<?php esc_attr_e( 'Remove Favorite', 'buddypress' ); ?>"><i class="icon-large icon-heart"></i><?php //_e( 'Remove Favorite', 'buddypress' ); ?></a>
 
 					<?php endif; ?>
 

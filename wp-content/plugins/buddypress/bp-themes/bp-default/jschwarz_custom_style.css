@@ -7992,7 +7992,7 @@ div#subnav li {
 margin-bottom: 5px;
 }
 
-body.messages div#message-thread, body.messages div#composeMessage, div#delete_set, body.bp-user.settings div#settings_not, body.bp-user.settings div#general_set, body.appointment-settings div.standard-form, #lessons_sub_one, body.bp-user.friends div.members.friends, body.bp-user.friends div#message, body.bp-user.messages div.messages, body.change-avatar #item-body div.profile, body.profile.edit form#profile-edit-form, body.bp-user form#whats-new-form, body.bp-user div.bp-widget.profile, body.bp-user.activity div.activity, body.bp-user.reviews div#item-body {
+body.messages div#message-thread, body.messages div#composeMessage, div#delete_set, body.bp-user.settings div#settings_not, body.bp-user.settings div#general_set, body.appointment-settings div.standard-form, #lessons_sub_one, body.bp-user.friends div.members.friends, body.bp-user.friends div#message, body.bp-user.messages div.messages, body.change-avatar #item-body div.profile, body.profile.edit form#profile-edit-form, body.bp-user form#whats-new-form, body.bp-user div.bp-widget.profile, body.bp-user.activity div.title_activity, body.bp-user.reviews div#item-body {
 position: relative;
 left: 155px;
 border-left: 1px solid rgb(220, 220, 220);
@@ -8055,7 +8055,7 @@ font-size: 19px;
 color: rgb(10, 10, 10);
 }
 
-div#inbox-subtab h2 {
+div#inbox-subtab h2, div#activ_he h2 {
 display: block;
 position: absolute;
 top: 7px;
@@ -8065,7 +8065,7 @@ font-size: 19px;
 color: black;
 }
 
-div#inbox-subtab {
+div#inbox-subtab, div#activ_he {
 height: 60px;
 border-bottom: solid 1px rgb(223, 223, 223);
 }
@@ -8308,6 +8308,51 @@ body.registration div#basic-details-section {
 width: 465px !important;
 top: -8px;
 }
+}
 
+#item-body form#whats-new-form {
+left: 0 !important;
+position: relative;
+border-left: none;
+margin-bottom: 12px !important;
+width: 776px;
+padding: 0 0 10px 0;
+top: 7px;
+}
 
+ul.item-list li {
+max-width: 776px;
+}
+
+body.activity div#activity-filter-select {
+float: right;
+position: relative;
+top: 30px;
+}
+
+li.activity-item {
+padding-bottom: 14px !important;
+padding-top: 13px !important;
+}
+
+ul.activity-list > li:first-child {
+padding-top: 18px !important;
+}
+
+body.activity .icon-heart {
+text-decoration: none;
+color: rgb(5, 160, 247);
+}
+
+body.activity .icon-heart:hover {
+color: rgb(119, 195, 238);
+}
+
+body.activity .icon-heart-empty {
+text-decoration: none;
+color: black; 
+}   
+    
+body.activity .icon-heart-empty:hover {
+color: rgb(5, 160, 247);
 }
