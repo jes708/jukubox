@@ -8044,7 +8044,7 @@ body.bp-user form#whats-new-form, body.bp-user div.activity {
 top: 35px;
 }
 
-body.messages div#message-thread h2#message-thread-inbox, div#composeMessage h2, div#delete_set h3, div#settings_not h3, div#general_set h3, div.profile h4 {
+body.reviews div#item-body h3, body.messages div#message-thread h2#message-thread-inbox, div#composeMessage h2, div#delete_set h3, div#settings_not h3, div#general_set h3, div.profile h4 {
 display: block;
 position: relative;
 top: 7px;
@@ -8339,20 +8339,60 @@ ul.activity-list > li:first-child {
 padding-top: 18px !important;
 }
 
-body.activity .icon-heart {
+body.activity .icon-heart, body.activity .icon-comment {
 text-decoration: none;
 color: rgb(5, 160, 247);
 }
 
-body.activity .icon-heart:hover {
+body.activity .icon-heart:hover, body.activity .icon-comment:hover {
 color: rgb(119, 195, 238);
 }
 
-body.activity .icon-heart-empty {
+body.activity .icon-heart-empty, body.activity .icon-comment-alt {
 text-decoration: none;
 color: black; 
 }   
+
+body.reviews .icon-remove, body.activity .icon-remove {
+text-decoration: none;
+color: rgb(220, 220, 220);
+}
     
-body.activity .icon-heart-empty:hover {
+body.activity .icon-heart-empty:hover, body.activity .icon-comment-alt:hover {
 color: rgb(5, 160, 247);
 }
+
+body.activity a.bp-primary-action span {
+background: transparent;
+color: rgb(5, 160, 247);
+text-decoration: none;
+font-size: 12px;
+font-weight: 600;
+position: relative;
+top: 1px;
+right: 5px;
+margin-right: -6px;
+}
+
+body.activity .icon-comment-alt, body.activity .icon-comment {
+bottom: 1px;
+position: relative;
+}
+
+body.activity .icon-remove, body.reviews .icon-remove {
+float: right;
+}
+
+body.reviews .icon-remove:hover, body.activity .icon-remove:hover {
+color: rgb(247, 5, 5);
+}
+
+body.activity li.xprofile.new_member.activity-item.mini .icon-remove, body.activity li.profile.new_avatar.activity-item.mini .icon-remove, body.activity li.friends.friendship_created.activity-item.mini .icon-remove { 
+position: relative;
+left: 24px;
+}
+
+li.friends.friendship_created.activity-item.mini {
+width: 776px;
+}
+

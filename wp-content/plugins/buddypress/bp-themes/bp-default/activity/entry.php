@@ -55,23 +55,31 @@
 
 			<div class="activity-meta">
 
+                                <?php if ( bp_activity_can_favorite() ) : ?> 
+ 
+                                        <?php if ( !bp_get_activity_is_favorite() ) : ?> 
+ 
+                                                <a href="<?php bp_activity_favorite_link(); ?>" class="fav bp-secondary-action" title="<?php esc_attr_e( 'Mark as Favorite', 'buddypress' ); ?>"><i class="icon-large icon-heart-empty"></i><?php //_e( 'Favorite', 'buddypress' ); ?></a> 
+ 
+                                        <?php else : ?> 
+ 
+                                                <a href="<?php bp_activity_unfavorite_link(); ?>" class="unfav bp-secondary-action" title="<?php esc_attr_e( 'Remove Favorite', 'buddypress' ); ?>"><i class="icon-large icon-heart"></i><?php //_e( 'Remove Favorite', 'buddypress' ); ?></a> 
+ 
+                                        <?php endif; ?> 
+ 
+                                <?php endif; ?> 
+
 				<?php if ( bp_activity_can_comment() ) : ?>
 
-					<a href="<?php bp_get_activity_comment_link(); ?>" class="btn btn-mini btn-inverse  acomment-reply bp-primary-action" id="acomment-comment-<?php bp_activity_id(); ?>"><?php printf( __( 'Comment <span>%s</span>', 'buddypress' ), bp_activity_get_comment_count() ); ?></a>
+<?php if ( bp_activity_get_comment_count() == 0 ) : ?> 
 
-				<?php endif; ?>
+					<a href="<?php bp_get_activity_comment_link(); ?>" class="acomment-reply bp-primary-action" id="acomment-comment-<?php bp_activity_id(); ?>"><?php printf( __( '<i class="icon-comment-alt icon-large"></i> ', 'buddypress' ) ); ?></a>
 
-				<?php if ( bp_activity_can_favorite() ) : ?>
+<?php elseif ( bp_activity_get_comment_count() > 0 ) : ?> 
 
-					<?php if ( !bp_get_activity_is_favorite() ) : ?>
+                                        <a href="<?php bp_get_activity_comment_link(); ?>" class="acomment-reply bp-primary-action" id="acomment-comment-<?php bp_activity_id(); ?>"><?php printf( __( '<i class="icon-comment icon-large"></i> <span>%s</span>', 'buddypress' ), bp_activity_get_comment_count() ); ?></a> 
 
-						<a href="<?php bp_activity_favorite_link(); ?>" class="fav bp-secondary-action" title="<?php esc_attr_e( 'Mark as Favorite', 'buddypress' ); ?>"><i class="icon-large icon-heart-empty"></i><?php //_e( 'Favorite', 'buddypress' ); ?></a>
-
-					<?php else : ?>
-
-						<a href="<?php bp_activity_unfavorite_link(); ?>" class="unfav bp-secondary-action" title="<?php esc_attr_e( 'Remove Favorite', 'buddypress' ); ?>"><i class="icon-large icon-heart"></i><?php //_e( 'Remove Favorite', 'buddypress' ); ?></a>
-
-					<?php endif; ?>
+<?php endif; ?>
 
 				<?php endif; ?>
 
@@ -101,7 +109,7 @@
 						<div class="ac-textarea">
 							<textarea id="ac-input-<?php bp_activity_id(); ?>" class="ac-input" name="ac_input_<?php bp_activity_id(); ?>"></textarea>
 						</div>
-						<input type="submit" name="ac_form_submit" value="<?php _e( 'Post', 'buddypress' ); ?>" /> &nbsp; <?php _e( 'or press esc to cancel.', 'buddypress' ); ?>
+						<input class="btn btn-primary btn-small act_com" type="submit" name="ac_form_submit" value="<?php _e( 'Post', 'buddypress' ); ?>" /> &nbsp; <?php _e( 'or press esc to cancel.', 'buddypress' ); ?>
 						<input type="hidden" name="comment_form_id" value="<?php bp_activity_id(); ?>" />
 					</div>
 
