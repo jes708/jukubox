@@ -65,7 +65,7 @@
 <?php else: ?>
 
 	<div id="message" class="info">
-		<p><?php _e( 'You have no pending friendship requests.', 'buddypress' ); ?></p>
+		<p><?php _e( 'You have no pending studio requests.', 'buddypress' ); ?></p>
 	</div>
 
 <?php endif;?>
