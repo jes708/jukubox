@@ -33,14 +33,16 @@
 	</ul>
 </div>
 
+<div class="friPag">
+
 <?php
 
 if ( bp_is_current_action( 'requests' ) ) :
+        echo '<h3 class="friPag">Requests</h3>';
 	 locate_template( array( 'members/single/friends/requests.php' ), true );
-
 else :
 	do_action( 'bp_before_member_friends_content' ); ?>
-
+        <h3 class="friPag">Connections</h3>
 	<div class="members friends">
 
 		<?php locate_template( array( 'members/members-loop.php' ), true ); ?>
@@ -50,3 +52,5 @@ else :
 	<?php do_action( 'bp_after_member_friends_content' ); ?>
 
 <?php endif; ?>
+
+</div>

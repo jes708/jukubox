@@ -7564,9 +7564,9 @@ body.messages #subnav li:nth-of-type(1) {
 margin-left: 186px;
 }
 
-body.friends.logged-in #subnav li:nth-of-type(1), body.settings #subnav li:nth-of-type(1), body.appointments #subnav li:nth-of-type(1) {
+/*body.friends.logged-in #subnav li:nth-of-type(1), body.settings #subnav li:nth-of-type(1), body.appointments #subnav li:nth-of-type(1) {
 margin-left: 185px;
-}
+}*/
 
 .appointments-my-appointments {
 box-shadow: 0 0 0;
@@ -7992,7 +7992,7 @@ div#subnav li {
 margin-bottom: 5px;
 }
 
-body.messages div#message-thread, body.messages div#composeMessage, div#delete_set, body.bp-user.settings div#settings_not, body.bp-user.settings div#general_set, body.appointment-settings div.standard-form, #lessons_sub_one, body.bp-user.friends div.members.friends, body.bp-user.friends div#message, body.bp-user.messages div.messages, body.change-avatar #item-body div.profile, body.profile.edit form#profile-edit-form, body.bp-user form#whats-new-form, body.bp-user div.bp-widget.profile, body.bp-user.activity div.title_activity, body.bp-user.reviews div#item-body {
+body.messages div#message-thread, body.messages div#composeMessage, div#delete_set, body.bp-user.settings div#settings_not, body.bp-user.settings div#general_set, body.appointment-settings div.standard-form, #lessons_sub_one, body.bp-user.friends div.friPag, body.bp-user.messages div.messages, body.change-avatar #item-body div.profile, body.profile.edit form#profile-edit-form, body.bp-user form#whats-new-form, body.bp-user div.bp-widget.profile, body.bp-user.activity div.title_activity, body.bp-user.reviews div#item-body {
 position: relative;
 left: 155px;
 border-left: 1px solid rgb(220, 220, 220);
@@ -8044,7 +8044,7 @@ body.bp-user form#whats-new-form, body.bp-user div.activity {
 top: 35px;
 }
 
-body.reviews div#item-body h3, body.messages div#message-thread h2#message-thread-inbox, div#composeMessage h2, div#delete_set h3, div#settings_not h3, div#general_set h3, div.profile h4 {
+h3.friPag, body.reviews div#item-body h3, body.messages div#message-thread h2#message-thread-inbox, div#composeMessage h2, div#delete_set h3, div#settings_not h3, div#general_set h3, div.profile h4 {
 display: block;
 position: relative;
 top: 7px;
@@ -8396,3 +8396,12 @@ li.friends.friendship_created.activity-item.mini {
 width: 776px;
 }
 
+body.friends div#subnav {
+float: left;
+margin-right: -140px !important;
+padding-top: 15px !important;
+}
+
+body.requests li#requests-personal-li {
+padding-top: 47px !important;
+}
