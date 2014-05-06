@@ -8392,7 +8392,7 @@ position: relative;
 left: 24px;
 }
 
-li.friends.friendship_created.activity-item.mini {
+li.profile.new_avatar.activity-item.mini, li.xprofile.new_member.activity-item.mini, li.friends.friendship_created.activity-item.mini {
 width: 776px;
 }
 
