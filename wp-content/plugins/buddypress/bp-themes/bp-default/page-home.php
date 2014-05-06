@@ -9,7 +9,7 @@
     <section class="f-part-wrap preamble" style="max-width: 1000px; margin: 0 auto;">
 	<h1 id="Amber_header">Live-video music lessons </br>with the world's best teachers.</h1>
 	<p id="White_home_p">Our faculty consists of the world's most respected instructors from the top musical conservatories.</p>
-	<img style="bottom:118px; height:445px; position:relative; float:right; right:14px;" src="../../../../../wp-content/uploads/2014/04/Dicterow-Fuzzy.png"> 	
+	<img style="bottom:118px; height:445px; position:relative; float:right; right:14px;" src="../../../../../wp-content/uploads/2014/05/Dicterow-Fuzzy.png"> 	
 	<p id="Amber_p">Glenn Dicterow</br><em>Jukubox faculty</em> member</p>
 	<h3 id="Amber_h" style="float:left;">Sign up to begin using Jukubox</h3>
 
