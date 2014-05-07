@@ -361,11 +361,11 @@ wp_reset_query();
 
 
 					<div id="loggedin_div">
-		<a href="<?php echo bp_loggedin_user_domain(); ?>profile">
-		<?php  $av_args = array('item_id' => $user_id, 'type' => 'full'); 
-			echo bp_core_fetch_avatar($av_args);  ?>
+<!--		<a href="<?php //echo bp_loggedin_user_domain(); ?>profile">
+		<?php  //$av_args = array('item_id' => $user_id, 'type' => 'full'); 
+			//echo bp_core_fetch_avatar($av_args);  ?>
 		</a>
-			<div id="homeLoggedTitles">
+-->			<div id="homeLoggedTitles">
 						<h2 id="toploghome" style="font-size: 37px; text-align: center;  line-height: 1em;"><a href="<?php echo bp_loggedin_user_domain(); ?>profile">Welcome,  <?php echo $finch_user_name; ?>!</a></h2>
 						
 						<h2 class="toploghome2" align="center" >Account Type: <span id="accTypeText">  

@@ -67,8 +67,27 @@ if ($options['profile'] == "profile") {
             $check_content_loop = $wpdb->get_results("SELECT AVG(star) AS Average FROM " . $wpdb->prefix . "bp_activity WHERE  type = 'Member_review' AND usercheck='" . bp_get_member_user_id() . "'");
             $check_content_loop_count = $wpdb->get_col("SELECT star FROM " . $wpdb->prefix . "bp_activity WHERE  type = 'Member_review' AND usercheck='" . bp_get_member_user_id() . "'");
         } else {
+
+
+
+
+//Schwarz Add
+			if (bp_displayed_user_id()) {
+
+
+
+//end Schwarz
             $check_content_loop = $wpdb->get_results("SELECT AVG(star) AS Average FROM " . $wpdb->prefix . "bp_activity WHERE  type = 'Member_review' AND usercheck='" . bp_displayed_user_id() . "'");
             $check_content_loop_count = $wpdb->get_col("SELECT star FROM " . $wpdb->prefix . "bp_activity WHERE  type = 'Member_review' AND usercheck='" . bp_displayed_user_id() . "'");
+
+
+// Schwarz Add
+} else {
+            $check_content_loop = $wpdb->get_results("SELECT AVG(star) AS Average FROM " . $wpdb->prefix . "bp_activity WHERE  type = 'Member_review' AND usercheck='" . bp_loggedin_user_id() . "'");
+            $check_content_loop_count = $wpdb->get_col("SELECT star FROM " . $wpdb->prefix . "bp_activity WHERE  type = 'Member_review' AND usercheck='" . bp_loggedin_user_id() . "'");
+}
+//end Schwarz
+
         }
         if ($check_content_loop[0]->Average != "") {
             $check_show_star_loop = $check_content_loop[0]->Average;

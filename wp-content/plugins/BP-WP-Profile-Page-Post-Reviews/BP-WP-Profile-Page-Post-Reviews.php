@@ -370,8 +370,9 @@ if ($options['postpage'] == 'postpage') {
             $check_show_star = 0;
         }
 ?>
+
 <div class="top-commentss">
-    <span class="rating-top"><?php
+   <span class="rating-top"><?php
         $demss = 0;
         for ($dem = 1; $dem < 6; ++$dem) {
             if ($dem <= $check_show_star ) {
@@ -388,6 +389,7 @@ if ($options['postpage'] == 'postpage') {
     ?></span> (Based on  <?php count($rows) ?> Rating )
     <h1>HEllo world</h1><h3>Reviews</h3>
 </div>
+
         <?php
     }
 

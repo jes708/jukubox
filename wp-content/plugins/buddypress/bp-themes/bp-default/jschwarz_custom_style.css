@@ -8353,7 +8353,7 @@ text-decoration: none;
 color: black; 
 }   
 
-body.reviews .icon-remove, body.activity .icon-remove {
+body.reviews #item-body .icon-remove, body.activity #item-body .icon-remove {
 text-decoration: none;
 color: rgb(220, 220, 220);
 }
@@ -8379,15 +8379,15 @@ bottom: 1px;
 position: relative;
 }
 
-body.activity .icon-remove, body.reviews .icon-remove {
+body.activity #item-body .icon-remove, body.reviews #item-body .icon-remove {
 float: right;
 }
 
-body.reviews .icon-remove:hover, body.activity .icon-remove:hover {
+body.reviews #item-body .icon-remove:hover, body.activity #item-body .icon-remove:hover {
 color: rgb(247, 5, 5);
 }
 
-body.activity li.xprofile.new_member.activity-item.mini .icon-remove, body.activity li.profile.new_avatar.activity-item.mini .icon-remove, body.activity li.friends.friendship_created.activity-item.mini .icon-remove { 
+body.activity #item-body li.xprofile.new_member.activity-item.mini .icon-remove, body.activity #item-body li.profile.new_avatar.activity-item.mini .icon-remove, body.activity #item-body li.friends.friendship_created.activity-item.mini .icon-remove { 
 position: relative;
 left: 24px;
 }
@@ -8408,4 +8408,13 @@ padding-top: 47px !important;
 
 #object-nav li {
 top: -1px;
+}
+
+body.home-page.logged-in #object-nav li {
+list-style: none;
+margin-left: 5px !important;
+}
+
+body.home-page.logged-in div.item-list-tabs.no-ajax ul li:last-of-type {
+display: none;
 }
