@@ -328,6 +328,38 @@ wp_reset_query();
 
 
 <?php if( is_user_logged_in() )  { ?>
+
+
+
+
+
+
+
+                        <div id="item-header" role="complementary">
+
+                                <?php locate_template( array( 'members/single/member-header-home.php' ), true ); ?>
+
+                        </div><!-- #item-header -->
+
+                        <div id="item-nav">
+                                <div class="item-list-tabs no-ajax" id="object-nav" role="navigation">
+                                        <ul>
+
+                                                <?php bp_get_loggedin_user_nav(); ?>
+
+                                                <?php do_action( 'bp_member_options_nav' ); ?>
+
+                                        </ul>
+                                </div>
+                        </div><!-- #item-nav -->
+
+
+
+
+
+
+
+
 					<div id="loggedin_div">
 		<a href="<?php echo bp_loggedin_user_domain(); ?>profile">
 		<?php  $av_args = array('item_id' => $user_id, 'type' => 'full'); 

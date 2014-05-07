@@ -4754,6 +4754,17 @@ class Appointments {
 
 echo '<div id="lessons_sub_one">';
 
+                                                        get_upcoming_lessons($user_id, 15, "Student");
+                                                        if( is_teacher($user_id)===TRUE ) {
+                                                                get_upcoming_lessons($user_id, 15, "Teacher");
+                                                        }
+
+
+                                                        if( is_teacher($user_id) === TRUE ) {
+                                                                appointments_to_confirm_as_teacher($user_id);
+                                                        }
+
+
 global $current_user;
       get_currentuserinfo();
 $cur_us_id = $current_user->ID;
@@ -4782,11 +4793,13 @@ if (strpos($us_serv_str, ":5:") !== false) { //servnumedit
                                 echo '<h2 align="center">Your current rate is: <a id="appointmentspage_price" href="' . get_home_url() . '/members/' . $current_user->user_login . '/appointments/name-your-price"> $' . $raw_half . '/30min.</a></h2>';
                         } // end if/else price^M
 				echo '<p align="center"><a href="' . get_home_url() . '/teachers-manual/#comPolicies" >See Pricing Policies Here</a></p>';  
+
 		} // end if teacher
 		
 		if( is_teacher($user_id)===TRUE ) {
 			$price = get_cur_teacher_price($user_id);
 			echo do_shortcode('[app_my_appointments status="paid,confirmed,pending" _allow_confirm=1 provider=1 '.$gcal.' _finch_allow_cancel=1]');
+
 			// NHF Custom javascript to handle cancellation
 		 
 			echo " 
