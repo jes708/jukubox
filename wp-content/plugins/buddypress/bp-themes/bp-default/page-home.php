@@ -366,19 +366,9 @@ wp_reset_query();
 			//echo bp_core_fetch_avatar($av_args);  ?>
 		</a>
 -->			<div id="homeLoggedTitles">
-						<h2 id="toploghome" style="font-size: 37px; text-align: center;  line-height: 1em;"><a href="<?php echo bp_loggedin_user_domain(); ?>profile">Welcome,  <?php echo $finch_user_name; ?>!</a></h2>
+						<h2 id="toploghome">Home</h2>
 						
-						<h2 class="toploghome2" align="center" >Account Type: <span id="accTypeText">  
-							<?php if( is_teacher($user_id)===TRUE ) { 
-									$userType = "Teacher"; 
-								}  
-							      else { 
-									$userType = "Student";
-								} 
-								echo $userType; 
-							 ?>
-						</span></h2></div><!--  --> 
-					</div><!-- loggedin_div --> 	
+					</div><!--  --> 
 						<?php 						
 							get_upcoming_lessons($user_id, 15, "Student");
 							if( is_teacher($user_id)===TRUE ) {   
@@ -395,31 +385,12 @@ wp_reset_query();
 
 <!-- Schwarz Edit -->
 
+
+
+
+
                                                 <?php // NHF Code 
                                                 if( is_teacher($user_id)===TRUE ) {
-
-$hour_rate_raw = get_fullhour_price($user_id);
-$half_rate_raw = get_halfhour_price($user_id);
-$us_serv_str = get_us_services($user_id);
-$pos_hour = false;
-$pos_half = false;
-if (strpos($us_serv_str, ":3:") !== false) { //servnumedit
-        $pos_hour = true;
-}
-if (strpos($us_serv_str, ":5:") !== false) { //servnumedit
-        $pos_half = true;
-}
-
-							if ( !$pos_hour && !$pos_half) {
-                                                                echo '<h2 align="center">Enter your price <a href="' . get_home_url() . '/members/' . $current_user->user_login . '/appointments/name-your-price">here</a>!</h2>';
-                                                        } elseif ( $pos_hour && $pos_half ) {
-                                                                echo '<h2 align="center">Your current rate is:<a id="homepage_price" href="' . get_home_url() . '/members/' . $current_user->user_login . '/appointments/name-your-price"> $' . $half_rate_raw . '/30min</a> and <a id="homepage_price_2" href="' 
-. get_home_url() . '/members/' . $current_user->user_login . '/appointments/name-your-price">$' . $hour_rate_raw . '/hour</a>.</h2>';
-                                                        } elseif ($pos_hour) {
-                                                                echo '<h2 align="center">Your current rate is:<a id="homepage_price" href="' . get_home_url() . '/members/' . $current_user->user_login . '/appointments/name-your-price"> $' . $hour_rate_raw . '/hour</a>.</h2>';
-                                                        } elseif ($pos_half) {
-                                                                echo '<h2 align="center">Your current rate is:<a id="homepage_price" href="' . get_home_url() . '/members/' . $current_user->user_login . '/appointments/name-your-price"> $' . $half_rate_raw . '/30min</a>.</h2>';
-                                                        }
 
 							echo '<p class="homePlaceHold"></p>';   
 							echo '<h3 align="center">Lessons To Teach</h3>';
@@ -435,10 +406,18 @@ if (strpos($us_serv_str, ":5:") !== false) { //servnumedit
 						<?php wp_link_pages( array( 'before' => '<div class="page-link"><p>' . __( 'Pages: ', 'buddypress' ), 'after' => '</p></div>', 'next_or_number' => 'number' ) ); ?>
 						<?php edit_post_link( __( 'Edit this page.', 'buddypress' ), '<p class="edit-link">', '</p>'); ?>
 
+
+
+
+
+
+
+
 					</div>
 
 				</div>
-			
+
+		</div>	
 			<!-- NHF custom javascript to edit forms --> 
 			<script>
 				//var text = jQuery('.my-appointments-confirm').text(); 

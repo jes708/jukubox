@@ -3455,7 +3455,7 @@ body.bp-user div#content .padder {
 border: none;
 }
 
-body.bp-user div#members-only-header {
+body.bp-user div#members-only-header, body.home-page.logged-in div#members-only-header {
 background: url(../../../../uploads/2013/07/cardboard_flat2.png);
 width: 100%;
 height: 168px;
@@ -3660,7 +3660,7 @@ overflow: inherit;
 }
 
 @-moz-document url-prefix() {
-body.bp-user div#members-only-header {
+body.bp-user div#members-only-header, body.home-page.logged-in div#members-only-header {
 top: -10px;
 	}
 }
@@ -5781,7 +5781,7 @@ left: 5px;
 }
 
 @-moz-document url-prefix() {
-body.bp-user div#members-only-header {
+body.bp-user div#members-only-header, body.home-page.logged-in div#members-only-header {
     top: -15px;
 }
 body.bp-user div#content .padder {
@@ -7992,7 +7992,7 @@ div#subnav li {
 margin-bottom: 5px;
 }
 
-body.messages div#message-thread, body.messages div#composeMessage, div#delete_set, body.bp-user.settings div#settings_not, body.bp-user.settings div#general_set, body.appointment-settings div.standard-form, #lessons_sub_one, body.bp-user.friends div.friPag, body.bp-user.messages div.messages, body.change-avatar #item-body div.profile, body.profile.edit form#profile-edit-form, body.bp-user form#whats-new-form, body.bp-user div.bp-widget.profile, body.bp-user.activity div.title_activity, body.bp-user.reviews div#item-body {
+body.home-page.logged-in div#loggedin_div, body.messages div#message-thread, body.messages div#composeMessage, div#delete_set, body.bp-user.settings div#settings_not, body.bp-user.settings div#general_set, body.appointment-settings div.standard-form, #lessons_sub_one, body.bp-user.friends div.friPag, body.bp-user.messages div.messages, body.change-avatar #item-body div.profile, body.profile.edit form#profile-edit-form, body.bp-user form#whats-new-form, body.bp-user div.bp-widget.profile, body.bp-user.activity div.title_activity, body.bp-user.reviews div#item-body {
 position: relative;
 left: 155px;
 border-left: 1px solid rgb(220, 220, 220);
@@ -8044,15 +8044,18 @@ body.bp-user form#whats-new-form, body.bp-user div.activity {
 top: 35px;
 }
 
-h3.friPag, body.reviews div#item-body h3, body.messages div#message-thread h2#message-thread-inbox, div#composeMessage h2, div#delete_set h3, div#settings_not h3, div#general_set h3, div.profile h4 {
+#toploghome, h3.friPag, body.reviews div#item-body h3, body.messages div#message-thread h2#message-thread-inbox, div#composeMessage h2, div#delete_set h3, div#settings_not h3, div#general_set h3, div.profile h4 {
 display: block;
 position: relative;
 top: 7px;
 border-bottom: 1px solid rgb(223, 223, 223);
 width: 776px;
 padding-bottom: 8px;
-font-size: 19px;
+font-size: 20px;
 color: rgb(10, 10, 10);
+text-align: left !important;
+margin-left: 0 !important;
+font-weight: 400 !important;
 }
 
 div#inbox-subtab h2, div#activ_he h2 {
@@ -8417,4 +8420,35 @@ margin-left: 5px !important;
 
 body.home-page.logged-in div.item-list-tabs.no-ajax ul li:last-of-type {
 display: none;
+}
+
+body.home-page.logged-in div#container {
+top: 13px;
+left: 15px;
+}
+
+body.home-page.logged-in div#members-only-header {
+top: 0 !important;
+}
+
+div#loggedin_div {
+bottom: 40px;
+}
+
+div#loggedin_div h3 {
+text-align: left;
+color: rgb(35, 63, 150);
+font-size: 17px;
+}
+
+table.my-appointments.tablesorter {
+border: none;
+}
+
+#post-24 .entry h3 {
+margin-top: -50px !important;
+}
+
+#post-24 .entry table {
+margin-bottom: 70px !important;
 }
