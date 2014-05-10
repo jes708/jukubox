@@ -121,23 +121,98 @@ echo '</pre>'; */
 							<?php //echo bp_search_form_type_select(); ?>
 							<?php //wp_nonce_field( 'bp_search_form' ); ?>
 
+<a class="head_link" href="<?php echo get_home_url() . '/teachers'; ?>">Teachers</a>
+<a class="head_link" href="<?php echo get_home_url() . '/category/articles'; ?>">Blog</a>
 
 <?php if( is_user_logged_in() ) :
       global $current_user;
       get_currentuserinfo();
       $username_for_envelope = $current_user->user_login; ?>
+      <?php $head_unread_msg = messages_get_unread_count(); ?>
 
-<a id="header_messages" href="<?php echo get_home_url() . '/members/' . $username_for_envelope . '/messages'; ?>"<i class="icon-envelope icon-2x"></i>
+<div id="notify_nav_menu">
+        <h5><i class="icon-bell icon-large"></i><?php echo ' ' . bp_get_loggedin_user_fullname();?></h5>
+	<div id="nav_menu_box">
+		<ul id="menu_box_links">
+			<li><a href="<?php echo get_home_url() . '/members/' . $username_for_envelope . '/profile'; ?>"><h5><i class="icon-user icon-large"></i>  Profile</h5></a></li>
 
-<?php $head_unread_msg = messages_get_unread_count();
-if($head_unread_msg !== 0) :
- ?>
+			<li>
+			<?php if( is_teacher($user_id)===TRUE ) : ?>
 
-<div id="header_unread"><?php echo $head_unread_msg; ?></div>
 
-<?php endif; ?>
 
-</a>
+
+
+
+
+<?php
+        $appointments_query = "SELECT
+                                        * 
+                                FROM
+                                        wp_app_appointments
+                                WHERE
+                                        worker = " . $user_id . " 
+                                AND
+                                        status IN ('pending', 'paid')  
+                                AND
+                                        start >= NOW()
+                                ";
+        $appointments_array = finch_mysql_query($appointments_query, "return");
+        //finch_mysql_query($appointments_query, "display"); 
+
+        //$num_confirm_appointments = 1;
+        if( ! $appointments_array) {
+                return false;
+        }
+        $num_confirm_appointments = 0;
+        foreach( $appointments_array as $key => $value ) {
+                if( $value['status'] == 'pending') {
+                        // appointment is pending - does it require payment?
+                        $service_id = $value['service'];
+
+                        if(is_paid_service($service_id) === FALSE) {
+                                $add_service = TRUE;
+                                $num_confirm_appointments++;
+                        }
+                        else {
+                                $add_service = FALSE;
+
+                                // NHF - added this in - paid services that are pending
+                                        // must also be included in count
+                                $num_confirm_appointments++;
+                        }   // end if/else                              
+
+                } // end if
+                else  // isn't pending, must be paid
+                {
+                        $num_confirm_appointments++;
+                }
+        } // end foreach
+?>
+
+
+
+
+
+
+
+                        	<a href="<?php echo get_home_url() . '/members/' . $username_for_envelope . '/appointments'; ?>">
+			<?php else : ?>
+				<a href="<?php echo get_home_url(); ?>">
+			<?php endif; ?>
+			<h5><i class="icon-calendar icon-large"></i>  Lessons
+                        <?php if(( is_teacher($user_id)===TRUE ) && ( $num_confirm_appointments !== 0 )) : ?>
+				<?php echo ' (' . $num_confirm_appointments . ')' ; ?>
+                        <?php endif; ?>
+
+			</h5></a></li>
+
+			<li><a href="<?php echo get_home_url() . '/members/' . $username_for_envelope . '/messages'; ?>"<h5><i class="icon-envelope icon-large"></i>  Messages
+
+                        <?php if($head_unread_msg !== 0) : ?>
+				(<?php echo $head_unread_msg; ?>)
+			<?php endif; ?>
+			</h5></a></li>
 
 
 <a id="header_friends" href="<?php echo get_home_url() . '/members/' . $username_for_envelope . '/friends/requests'; ?>"<i class="icon-user icon-2x"></i>
@@ -151,9 +226,9 @@ if( $head_requests !== 0) :
 <?php endif; ?>
 
 </a>
-
-
-
+	
+	</div>
+</div>
 
 <?php endif; ?>
 
@@ -188,6 +263,7 @@ if( $head_requests !== 0) :
         	</div>
 	</div>
 </div>
+
 
 <div id="members-only-header" style="display:none;">
 </div>
