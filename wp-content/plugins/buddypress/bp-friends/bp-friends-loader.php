@@ -106,7 +106,7 @@ class BP_Friends_Component extends BP_Component {
 
 		// Add the subnav items to the friends nav item
 		$sub_nav[] = array(
-			'name'            => __( 'Friendships', 'buddypress' ),
+			'name'            => sprintf( __( 'Connections (%d)', 'buddypress' ), friends_get_total_friend_count() ),
 			'slug'            => 'my-friends',
 			'parent_url'      => $friends_link,
 			'parent_slug'     => bp_get_friends_slug(),
@@ -116,7 +116,7 @@ class BP_Friends_Component extends BP_Component {
 		);
 
 		$sub_nav[] = array(
-			'name'            => __( 'Requests',   'buddypress' ),
+			'name'            => sprintf( __( 'Requests (%d)',   'buddypress' ), bp_friend_get_total_requests_count() ),
 			'slug'            => 'requests',
 			'parent_url'      => $friends_link,
 			'parent_slug'     => bp_get_friends_slug(),
