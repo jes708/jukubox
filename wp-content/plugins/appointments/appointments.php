@@ -1235,7 +1235,7 @@ class Appointments {
 			if ( !is_array( $apps) )
 				return;
 				
-			$provider_or_client = __('Provider', 'appointments' );
+			$teacher_or_student = __('Teacher', 'appointments' );
 		
 			$q = '';
 			foreach ( $apps as $app_id ) {
@@ -1254,7 +1254,7 @@ class Appointments {
 				$results = false;
 		}
 		else {
-			$provider_or_client = __('Client', 'appointments' );
+			$teacher_or_student = __('Student', 'appointments' );
 			// If no id is given, get current user
 			if ( !$provider_id )
 				$provider_id = $current_user->ID;
@@ -1284,7 +1284,7 @@ class Appointments {
 		$ret .= $title;
 		$ret  = apply_filters( 'app_my_appointments_before_table', $ret );
 		$ret .= '<table class="my-appointments tablesorter"><thead>';
-		$ret .= apply_filters( 'app_my_appointments_column_name', '<th class="my-appointments-service">'. __('Service', 'appointments' ) . '</th><th class="my-appointments-worker">' . $provider_or_client . 
+		$ret .= apply_filters( 'app_my_appointments_column_name', '<th class="my-appointments-service">'. __('Service', 'appointments' ) . '</th><th class="my-appointments-worker">' . $teacher_or_student . 
 			'</th><th class="my-appointments-date">' . __('Date and time', 'appointments' ) . '</th><th class="my-appointments-status">' 
 			. __('Status', 'appointments' ) . '</th>' ); 
 		$colspan = 4;

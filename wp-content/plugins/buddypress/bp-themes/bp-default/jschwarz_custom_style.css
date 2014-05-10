@@ -8450,5 +8450,22 @@ margin-top: -50px !important;
 }
 
 #post-24 .entry table {
-margin-bottom: 70px !important;
+top: 5px !important;
+margin-bottom: 0px !important;
+position: relative;
+}
+
+#post-24 .entry tbody {
+background: transparent !important;
+}
+
+#post-24 .entry div.appointments-my-appointments {
+margin-top: 50px;
+position: relative;
+}
+
+#post-24 .entry div#teacher_apps {
+bottom: 50px;
+position: relative;
+margin-bottom: -10px !important;
 }

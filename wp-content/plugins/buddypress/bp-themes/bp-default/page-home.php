@@ -389,11 +389,14 @@ wp_reset_query();
 
 
 
-                                                <?php // NHF Code 
+                                                <?php // NHF Code
+
+                                                        echo '<p class="homePlaceHold"></p>';   
+                                                        echo '<h3 align="center">Upcoming Lessons</h3>';
+
+ 
                                                 if( is_teacher($user_id)===TRUE ) {
 
-							echo '<p class="homePlaceHold"></p>';   
-							echo '<h3 align="center">Lessons To Teach</h3>';
 							echo '<div id="teacher_apps">';  
 						        echo do_shortcode('[app_my_appointments provider=1 _allow_confirm=1 status="confirmed,pending,paid" provider_id=' . $user_id . ' order_by="start ASC" ]');
 							// _allow_confirm=1
