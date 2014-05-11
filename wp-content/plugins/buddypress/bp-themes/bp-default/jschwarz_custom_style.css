@@ -8537,14 +8537,14 @@ color: white;
 font-family: 'montserrat';
 float: left;
 position: relative;
-left: 260px;
+left: -45px;
 font-size: 14px;
 margin-right: 25px;
 bottom: 4px;
 z-index: 10;
 }
 
-#header a.head_link:hover, h5.notify_dropper:hover {
+#menu-item-848:hover, #menu-item-867:hover, #header a.head_link:hover, h5.notify_dropper:hover {
 cursor: pointer;
 text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.71);
 text-decoration: none;
@@ -8570,9 +8570,27 @@ border: none !important;
 }
 
 #search-bar .input-append {
-left: -392px !important;
+float: left;
+left: -30px;
 }
 
 ul#menu_box_links li i.icon-envelope.icon-large, ul#menu_box_links li i.icon-group.icon-large, ul#menu_box_links li i.icon-calendar.icon-large {
 padding-top: 4px;
+}
+
+#header #search-bar {
+margin-top: -25px;
+}
+
+div#header {
+padding-bottom: 60px;
+margin-bottom: 0px;
+top: 0px;
+}
+
+@media (max-width: 767px) {
+div#header {
+margin-bottom: 28px;
+top: 28px;
+}
 }
