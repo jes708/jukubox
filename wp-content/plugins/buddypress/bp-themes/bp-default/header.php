@@ -111,7 +111,7 @@ echo '</pre>'; */
 <button type="submit" class="btn btn-invisible" name="search-submit" id="search-submit" value="Search">
 <i class="icon-search"></i>
 </button>
-</div>
+</div> <!-- .input_append -->
 							<?php  echo bp_search_form_type_select(); ?>
 
 							<!-- <input type="submit" name="search-submit" id="search-submit" value="<?php _e( 'Search', 'buddypress' ); ?>" /> -->
@@ -153,12 +153,11 @@ echo '</pre>'; */
         $appointments_array = finch_mysql_query($appointments_query, "return");
         //finch_mysql_query($appointments_query, "display"); 
 
-        //$num_confirm_appointments = 1;
-        if( ! $appointments_array) {
-                return false;
-        }
+        if( $appointments_array) {
+	}
+        
         $num_confirm_appointments = 0;
-        foreach( $appointments_array as $key => $value ) {
+	foreach( $appointments_array as $key => $value ) {
                 if( $value['status'] == 'pending') {
                         // appointment is pending - does it require payment?
                         $service_id = $value['service'];
@@ -181,6 +180,7 @@ echo '</pre>'; */
                         $num_confirm_appointments++;
                 }
         } // end foreach
+
 else:
 	$num_confirm_appointments = 0;
 endif;
@@ -201,7 +201,7 @@ $notify_total = $head_unread_msg + $head_requests + $num_confirm_appointments;
 
 <div id="notify_nav_menu">
         <h5 class="notify_dropper"><i class="icon-bell icon-large"></i>
-	<?php if($notify_total > 0) : ?>
+	<?php if($notify_total !== 0) : ?>
                 <span id="notify_total"><?php echo $notify_total;?></span>
 	<?php endif; ?>
 <?php echo ' ' . bp_get_loggedin_user_fullname();?></h5>
@@ -209,35 +209,29 @@ $notify_total = $head_unread_msg + $head_requests + $num_confirm_appointments;
 		<ul id="menu_box_links">
 			<li><a href="<?php echo get_home_url() . '/members/' . $username_for_envelope . '/profile'; ?>"><h5><i class="icon-user icon-large"></i><span class="notify_text">  Profile</span></h5></a></li>
 
-			<li>
-			<?php if( is_teacher($user_id)===TRUE ) : ?>
 
 
 
+                        <li>
+                        <?php if( is_teacher($user_id)===TRUE ) : ?>
 
-
-
-
-
-
-
-
-
-
-
-                        	<a href="<?php echo get_home_url() . '/members/' . $username_for_envelope . '/appointments'; ?>">
-			<?php else : ?>
-				<a href="<?php echo get_home_url(); ?>">
-			<?php endif; ?>
-			<h5><i class="icon-calendar icon-large"></i><span class="notify_text">
+                                <a href="<?php echo get_home_url() . '/members/' . $username_for_envelope . '/appointments'; ?>">
+                        <?php else : ?>
+                                <a href="<?php echo get_home_url(); ?>">
+                        <?php endif; ?>
+                        <h5><i class="icon-calendar icon-large"></i><span class="notify_text">
                         <?php if(( is_teacher($user_id)===TRUE ) && ( $num_confirm_appointments !== 0 )) : ?>
-				<?php echo '  Lesson Requests (' . $num_confirm_appointments . ')' ; ?>
-			<?php else : ?>
-				<?php echo '  Lessons'; ?>
+                                <?php echo '  Lesson Requests (' . $num_confirm_appointments . ')' ; ?>
+                        <?php else : ?>
+                                <?php echo '  Lessons'; ?>
                         <?php endif; ?>
 
 
-			</span></h5></a></li>
+                        </span></h5></a></li>
+
+
+
+
 
 			<li><a href="<?php echo get_home_url() . '/members/' . $username_for_envelope . '/messages'; ?>"><h5><i class="icon-envelope icon-large"></i><span class="notify_text">  Messages
 
@@ -258,12 +252,11 @@ $notify_total = $head_unread_msg + $head_requests + $num_confirm_appointments;
 			<li><a href="<?php echo wp_logout_url( wp_guess_url() ); ?>"><h5><i class="icon-eject icon large"></i><span class="notify_text">  Logout</span></h5></a></li>
 	
 	</ul>
-</div>
-</div>
+</div> <!-- #nav_menu_box -->
+</div> <!-- #notify_nav_menu -->
+<?php endif; ?> <!--if logged in -->
 
-<?php endif; ?>
 
-</div>
 						</form><!-- #search-form -->
 
 				<?php do_action( 'bp_search_login_bar' ); ?>
@@ -276,7 +269,7 @@ $notify_total = $head_unread_msg + $head_requests + $num_confirm_appointments;
 			    <div id="nav_wrapper">
 				<?php wp_nav_menu( array( 'container' => false, 'menu_id' => 'nav', 'theme_location' => 'primary', 'fallback_cb' => 'bp_dtheme_main_nav' ) ); ?>
 			    </div><!-- end nav_wrapper --> 
-			</div>
+			</div> <!-- #mavigation -->
 <!--<div id="loginFancyBox">
 	<div class="login_padder">
 	<img src="../../../../wp-content/uploads/2013/10/LoginBox2.png">
@@ -291,13 +284,13 @@ $notify_total = $head_unread_msg + $head_requests + $num_confirm_appointments;
         	<div class="login_contain">
 			<?php echo do_shortcode("[sp_login_shortcode]"); ?>
 <!--			<div id="login_x_out"><p>&#10006</p></div>  -->
-        	</div>
-	</div>
-</div>
+        	</div> <!-- #login_contain -->
+	</div> <!-- #login_center_padder -->
+</div> <!-- #fade_allow -->
 
 
 <div id="members-only-header" style="display:none;">
-</div>
+</div> <!-- #members-only-header -->
 
 			<?php do_action( 'bp_header' ); ?>
 

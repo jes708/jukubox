@@ -4760,9 +4760,6 @@ echo '<div id="lessons_sub_one">';
                                                         }
 
 
-                                                        if( is_teacher($user_id) === TRUE ) {
-                                                                appointments_to_confirm_as_teacher($user_id);
-                                                        }
 
 
 global $current_user;

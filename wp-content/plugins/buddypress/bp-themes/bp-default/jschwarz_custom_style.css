@@ -8489,6 +8489,7 @@ position: relative;
 
 div#nav_menu_box {
 position: absolute;
+z-index: 100001;
 text-align: left;
 right: 0px;
 background: white;
@@ -8580,12 +8581,20 @@ padding-top: 4px;
 
 #header #search-bar {
 margin-top: -25px;
+height: 84px;
+margin-bottom: 13px;
+}
+
+#header:after {
+height: 84px;
 }
 
 div#header {
-padding-bottom: 60px;
+z-index: auto;
+padding-bottom: 0px;
 margin-bottom: 0px;
 top: 0px;
+height: 59px;
 }
 
 @media (max-width: 767px) {
@@ -8593,4 +8602,20 @@ div#header {
 margin-bottom: 28px;
 top: 28px;
 }
+}
+
+body.logged-in div#navigation {
+display: none;
+}
+
+body.home-page.logged-in div#container, body.bp-user div#container {
+top: -4px;
+}
+
+body.home-page.logged-in div#members-only-header {
+margin-top: -13px;
+}
+
+div#sidebar {
+z-index: auto;
 }

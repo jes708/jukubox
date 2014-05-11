@@ -8,9 +8,7 @@
  */
 
 ?>
-
 <?php do_action( 'bp_before_member_header' ); ?>
-
 <div id="item-header-avatar">
 	<a href="<?php bp_displayed_user_link(); ?>">
 
@@ -126,7 +124,5 @@ style="top:13px;"
 	</div><!-- #item-meta -->
 
 </div><!-- #item-header-content -->
-
 <?php do_action( 'bp_after_member_header' ); ?>
-
 <?php do_action( 'template_notices' ); ?>
