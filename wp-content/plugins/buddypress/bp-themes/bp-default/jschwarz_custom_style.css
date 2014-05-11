@@ -8562,3 +8562,9 @@ color: rgb(5, 160, 247);
 text-decoration: none;
 }
 
+body.home-page.logged-in td img {
+height: 36px !important;
+margin-top: -20px !important;
+position: relative;
+border: none !important;
+}
