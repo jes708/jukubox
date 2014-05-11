@@ -242,6 +242,31 @@ jQuery(document).ready(function() {
         });
          
 
+
+
+
+
+
+
+$(document).mouseup(function (e)
+{
+    var notifyMenu = $("div#nav_menu_box");
+    var notifyDrop = $("h5.notify_dropper");
+
+    if (!notifyDrop.is(e.target) // if the target of the click isn't the container...
+        && notifyDrop.has(e.target).length === 0) // ... nor a descendant of the container
+    {
+        notifyMenu.hide();
+    }
+});
+
+jQuery(document).ready(function() {
+        jQuery('h5.notify_dropper').click(function() {
+                jQuery('div#nav_menu_box').toggle();
+        });
+});
+
+
 // End Schwarz
 
 <?php if( !is_user_logged_in() ) : ?>

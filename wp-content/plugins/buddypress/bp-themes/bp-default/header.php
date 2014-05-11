@@ -129,15 +129,7 @@ echo '</pre>'; */
       get_currentuserinfo();
       $username_for_envelope = $current_user->user_login; ?>
       <?php $head_unread_msg = messages_get_unread_count(); ?>
-
-<div id="notify_nav_menu">
-        <h5><i class="icon-bell icon-large"></i><?php echo ' ' . bp_get_loggedin_user_fullname();?></h5>
-	<div id="nav_menu_box">
-		<ul id="menu_box_links">
-			<li><a href="<?php echo get_home_url() . '/members/' . $username_for_envelope . '/profile'; ?>"><h5><i class="icon-user icon-large"></i>  Profile</h5></a></li>
-
-			<li>
-			<?php if( is_teacher($user_id)===TRUE ) : ?>
+      <?php $head_requests = bp_friend_get_total_requests_count(); ?>
 
 
 
@@ -145,7 +137,8 @@ echo '</pre>'; */
 
 
 
-<?php
+
+<?php if( is_teacher($user_id)===TRUE ) :
         $appointments_query = "SELECT
                                         * 
                                 FROM
@@ -188,7 +181,43 @@ echo '</pre>'; */
                         $num_confirm_appointments++;
                 }
         } // end foreach
+else:
+	$num_confirm_appointments = 0;
+endif;
+
+$notify_total = $head_unread_msg + $head_requests + $num_confirm_appointments;
+
 ?>
+
+
+
+
+
+
+
+
+
+
+
+<div id="notify_nav_menu">
+        <h5 class="notify_dropper"><i class="icon-bell icon-large"></i>
+	<?php if($notify_total > 0) : ?>
+                <span id="notify_total"><?php echo $notify_total;?></span>
+	<?php endif; ?>
+<?php echo ' ' . bp_get_loggedin_user_fullname();?></h5>
+	<div id="nav_menu_box">
+		<ul id="menu_box_links">
+			<li><a href="<?php echo get_home_url() . '/members/' . $username_for_envelope . '/profile'; ?>"><h5><i class="icon-user icon-large"></i><span class="notify_text">  Profile</span></h5></a></li>
+
+			<li>
+			<?php if( is_teacher($user_id)===TRUE ) : ?>
+
+
+
+
+
+
+
 
 
 
@@ -200,34 +229,36 @@ echo '</pre>'; */
 			<?php else : ?>
 				<a href="<?php echo get_home_url(); ?>">
 			<?php endif; ?>
-			<h5><i class="icon-calendar icon-large"></i>  Lessons
+			<h5><i class="icon-calendar icon-large"></i><span class="notify_text">
                         <?php if(( is_teacher($user_id)===TRUE ) && ( $num_confirm_appointments !== 0 )) : ?>
-				<?php echo ' (' . $num_confirm_appointments . ')' ; ?>
+				<?php echo '  Lesson Requests (' . $num_confirm_appointments . ')' ; ?>
+			<?php else : ?>
+				<?php echo '  Lessons'; ?>
                         <?php endif; ?>
 
-			</h5></a></li>
 
-			<li><a href="<?php echo get_home_url() . '/members/' . $username_for_envelope . '/messages'; ?>"<h5><i class="icon-envelope icon-large"></i>  Messages
+			</span></h5></a></li>
+
+			<li><a href="<?php echo get_home_url() . '/members/' . $username_for_envelope . '/messages'; ?>"><h5><i class="icon-envelope icon-large"></i><span class="notify_text">  Messages
 
                         <?php if($head_unread_msg !== 0) : ?>
 				(<?php echo $head_unread_msg; ?>)
 			<?php endif; ?>
-			</h5></a></li>
+			</span></h5></a></li>
 
+                        <li><a href="<?php echo get_home_url() . '/members/' . $username_for_envelope . '/friends/requests'; ?>"><h5><i class="icon-group icon-large"></i><span class="notify_text">  Studio Requests
 
-<a id="header_friends" href="<?php echo get_home_url() . '/members/' . $username_for_envelope . '/friends/requests'; ?>"<i class="icon-user icon-2x"></i>
+                        <?php if($head_requests !== 0) : ?>
+                                (<?php echo $head_requests; ?>)
+                        <?php endif; ?>
+                        </span></h5></a></li>
 
-<?php $head_requests = bp_friend_get_total_requests_count();
-if( $head_requests !== 0) :
- ?>
-
-<div id="header_requested"><?php echo $head_requests; ?></div>
-
-<?php endif; ?>
-
-</a>
+			<li><a href="<?php echo get_home_url() . '/members/' . $username_for_envelope . '/settings'; ?>"><h5><i class="icon-gear icon-large"></i><span class="notify_text">  Settings</span></h5></a></li>
+			
+			<li><a href="<?php echo wp_logout_url( wp_guess_url() ); ?>"><h5><i class="icon-eject icon large"></i><span class="notify_text">  Logout</span></h5></a></li>
 	
-	</div>
+	</ul>
+</div>
 </div>
 
 <?php endif; ?>

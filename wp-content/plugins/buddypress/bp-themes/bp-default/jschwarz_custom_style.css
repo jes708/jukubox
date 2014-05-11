@@ -8469,3 +8469,96 @@ bottom: 50px;
 position: relative;
 margin-bottom: -10px !important;
 }
+
+span#notify_total {
+background: red;
+padding: 0px 4px 1px 4px;
+bottom: 7px;
+right: 5px;
+font-size: 10px;
+margin-left: -12px;
+position: relative;
+box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.47);
+border-radius: 1px;
+}
+
+div#notify_nav_menu i.icon-bell.icon-large {
+right: 5px;
+position: relative;
+}
+
+div#nav_menu_box {
+position: absolute;
+text-align: left;
+right: 0px;
+background: white;
+border: 1px solid gray;
+width: 170px;
+height: 200px;
+padding: 15px 23px 20px 27px;
+box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.34);
+border-radius: 2px;
+display: none;
+}
+
+ul#menu_box_links li h5 {
+padding-bottom: 10px;
+font-family: 'open sans' !important;
+font-size: 13px;
+}
+
+ul#menu_box_links li i {
+padding-right: 8px;
+position: absolute;
+font-size: 10px;
+padding-top: 2px;
+}
+
+ul#menu_box_links li a {
+color: rgb(68, 68, 68);
+}
+
+span.notify_text {
+position: relative;
+right: -30px;
+}
+
+ul#menu_box_links li i.icon-eject.icon.large {
+text-indent: 1px;
+padding-top: 4px;
+}
+
+ul#menu_box_links li i.icon-eject.icon.large, ul#menu_box_links li i.icon-gear.icon-large, ul#menu_box_links li i.icon-user.icon-large {
+font-size: 12px !important;
+}
+
+#header a.head_link {
+color: white;
+font-family: 'montserrat';
+float: left;
+position: relative;
+left: 260px;
+font-size: 14px;
+margin-right: 25px;
+bottom: 4px;
+z-index: 10;
+}
+
+#header a.head_link:hover, h5.notify_dropper:hover {
+cursor: pointer;
+text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.71);
+text-decoration: none;
+}
+
+div#notify_nav_menu {
+float: right;
+position: relative;
+bottom: 10px;
+margin-bottom: -26px;
+}
+
+ul#menu_box_links li a:hover {
+color: rgb(5, 160, 247);
+text-decoration: none;
+}
+
