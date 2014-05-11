@@ -8568,3 +8568,11 @@ margin-top: -20px !important;
 position: relative;
 border: none !important;
 }
+
+#search-bar .input-append {
+left: -392px !important;
+}
+
+ul#menu_box_links li i.icon-envelope.icon-large, ul#menu_box_links li i.icon-group.icon-large, ul#menu_box_links li i.icon-calendar.icon-large {
+padding-top: 4px;
+}
