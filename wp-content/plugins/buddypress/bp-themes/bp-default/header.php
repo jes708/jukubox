@@ -128,7 +128,13 @@ echo '</pre>'; */
 <a id="login_head">Login</a>
 <?php endif; ?>
 
-<?php if( is_user_logged_in() ) :
+
+
+<?php if( is_user_logged_in() ) : ?>
+
+<a class="head_link" href="<?php echo get_home_url() . '/create-a-room'; ?>"><i class="icon-desktop icon-large"></i></a>
+
+<?php
       global $current_user;
       get_currentuserinfo();
       $username_for_envelope = $current_user->user_login; ?>
