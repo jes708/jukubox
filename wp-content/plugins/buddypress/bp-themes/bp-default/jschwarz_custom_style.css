@@ -3916,7 +3916,7 @@ display: none;
 body.directory.members div#subnav, body.page-id-28 div#subnav {
 position: relative;
 top: 68px;
-z-index: 10;
+z-index: auto;
 border-bottom: none;
 }
 
