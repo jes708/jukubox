@@ -5897,7 +5897,7 @@ div.login_contain {
 width: 304px;
 height: 204px;
 opacity: 1;
-position: fixed;
+position: fixed !important;
 bottom: 55px;
 z-index: 10000001;
 background: rgba(0, 0, 0, 0.9);
@@ -5914,7 +5914,7 @@ height: 100%;
 width: 100%;
 background: black;
 opacity: 0.4;
-position: fixed;
+position: fixed !important;
 z-index: 10000000;
 top: 0;
 display: none;
@@ -8545,7 +8545,17 @@ bottom: 4px;
 z-index: 10;
 }
 
-#menu-item-848:hover, #menu-item-867:hover, #header a.head_link:hover, h5.notify_dropper:hover {
+a#login_head {
+color: white;
+font-family: 'montserrat';
+float: right;
+position: relative;
+font-size: 14px;
+bottom: 4px;
+z-index: 10;
+}
+
+a#login_head:hover, #menu-item-848:hover, #menu-item-867:hover, #header a.head_link:hover, h5.notify_dropper:hover {
 cursor: pointer;
 text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.71);
 text-decoration: none;

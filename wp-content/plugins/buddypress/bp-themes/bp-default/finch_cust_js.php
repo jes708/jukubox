@@ -186,7 +186,7 @@ jQuery(document).ready(function() {
 });
 
 jQuery(document).ready(function() {
-        jQuery('.loggedout_menu a').click(function() {
+        jQuery('a#login_head').click(function() {
                 jQuery('div#loginCenterFancyBox').fadeToggle();
 		jQuery('div#loginCenterFancyBox').queue(function() {
                 jQuery('div.login_center_padder').toggle();

@@ -124,6 +124,10 @@ echo '</pre>'; */
 <a class="head_link" href="<?php echo get_home_url() . '/teachers'; ?>">Teachers</a>
 <a class="head_link" href="<?php echo get_home_url() . '/category/articles'; ?>">Blog</a>
 
+<?php if( ! is_user_logged_in() ) : ?>
+<a id="login_head">Login</a>
+<?php endif; ?>
+
 <?php if( is_user_logged_in() ) :
       global $current_user;
       get_currentuserinfo();
