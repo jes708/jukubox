@@ -1687,6 +1687,12 @@ return $price; }
 elseif ( 3 == $service) {
 $price = get_fullhour_price($worker);
 return $price; }
+elseif ( 7 == $service) {
+$price = 12 * get_fullhour_price($worker);
+return $price; }
+elseif ( 8 == $service) {
+$price = 12 * get_halfhour_price($worker);
+return $price; }
 }
 add_filter( 'app_paypal_amount', 'reset_price', 10, 4 );
 add_filter( 'app_get_price', 'reset_price', 10, 4 );
@@ -1799,8 +1805,8 @@ function does_xprofileprice_exist($fieldID, $userId) {
 }  
 
 function get_service_prices($userId, $serv_num) { 
-	if( $serv_num == 3 ) { $column = 'price'; } 
-	elseif( $serv_num == 5 ) { $column = 'price_half_hour'; }
+	if( ($serv_num == 3) || ($serv_num == 7) ) { $column = 'price'; } 
+	elseif( ($serv_num == 5) || ($serv_num == 8) ) { $column = 'price_half_hour'; }
 	else { echo 'Error getting price!'; return false; }  
 	
 	$get_price = "SELECT
@@ -1812,7 +1818,8 @@ function get_service_prices($userId, $serv_num) {
 			"; 
 	$price_arr = finch_mysql_query($get_price, "return"); 
 
-	$price = $price_arr[0][$column]; 
+	$price = $price_arr[0][$column];
+        if( ($serv_num == 7) || ($serv_num == 8) ) { $price = 12 * $price; } 
 	return $price; 
 } 
 
@@ -1921,7 +1928,7 @@ function generate_lessontoggle($userId, $services='') { // takes has of lesson s
 	$avail_serv = serivces_hash('total', '');
 	$avail_serv_array = $avail_serv['array']; 
         $avail_serv_array_0 = array_slice($avail_serv_array, 0, 2);
-        $avail_serv_array_1 = array_slice($avail_serv_array, 2, 4);
+        $avail_serv_array_1 = array_slice($avail_serv_array, 2, 6);
 	$avail_serv_hash = $avail_serv['hash'];  
 
 	// reset server hash - to get newset updated services available	

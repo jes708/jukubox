@@ -2169,7 +2169,15 @@ class Appointments {
 		if( $service == 5 ) { // servnumedit if this is a half-hour lesson
 			$price_raw = get_halfhour_price($worker);
 			$price = (double)$price_raw; 		
-		}  
+		} elseif( $service == 7 ) { // servnumedit if this is a full hour lesson package 
+                        $price_raw = get_fullhour_price($worker); 
+			$price_raw = 12 * $price_raw; 
+                        $price = (double)$price_raw;            
+                } elseif( $service == 8 ) { // servnumedit if this is a half-hour lesson package 
+                        $price_raw = get_halfhour_price($worker); 
+			$price_raw = 12 * $price_raw;  
+                        $price = (double)$price_raw;            
+		} 
 		// end NHF
 	 
 		// It is possible to apply special discounts

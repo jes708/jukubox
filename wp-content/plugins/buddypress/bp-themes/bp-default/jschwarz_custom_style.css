@@ -8019,7 +8019,7 @@ position: relative;
 left: 155px; 
 border-left: 1px solid rgb(220, 220, 220);
 padding-left: 20px; 
-height: 256px;
+height: 306px;
 }        
 
 .priceWrap h4 {
@@ -8066,6 +8066,7 @@ width: 776px;
 padding-bottom: 8px;
 font-size: 19px;
 color: black;
+font-weight: 400 !important;
 }
 
 div#inbox-subtab, div#activ_he {
