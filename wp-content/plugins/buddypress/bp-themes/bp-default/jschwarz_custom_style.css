@@ -279,6 +279,8 @@ background-image: -webkit-gradient( linear, left top, right bottom, color-stop(1
 
 #post-62 div.entry h3 {
 font-size: 14pt !important;
+color: rgb(35, 63, 150);
+margin-bottom: 0px;
 }
 
 /* .friendship-button {
@@ -5448,10 +5450,10 @@ img.wait_img, #post-62 div.appointments-wrapper img {
 border-radius: 0;
 border: none;
 padding: 0;
-top: 0;
+top: 2px;
 background-color: transparent;
 position: relative;
-width: auto !important;
+width: 12px !important;
 height: auto !important;
 }
 
@@ -6144,7 +6146,7 @@ img.new_loader {
 position: relative;
 float: right;
 right: 595px;
-top: 10px !important;
+top: 21px !important;
 display: none;
 }
 
@@ -6152,7 +6154,7 @@ p.new_loader {
 position: relative;
 float: right;
 right: 490px;
-top: 8px !important;
+top: 19px !important;
 color: black;
 display: none;
 }
@@ -8044,7 +8046,7 @@ body.bp-user form#whats-new-form, body.bp-user div.activity {
 top: 35px;
 }
 
-#toploghome, h3.friPag, body.reviews div#item-body h3, body.messages div#message-thread h2#message-thread-inbox, div#composeMessage h2, div#delete_set h3, div#settings_not h3, div#general_set h3, div.profile h4 {
+body.page-id-62 h2.pagetitle, #toploghome, h3.friPag, body.reviews div#item-body h3, body.messages div#message-thread h2#message-thread-inbox, div#composeMessage h2, div#delete_set h3, div#settings_not h3, div#general_set h3, div.profile h4 {
 display: block;
 position: relative;
 top: 7px;
@@ -8056,6 +8058,10 @@ color: rgb(10, 10, 10);
 text-align: left !important;
 margin-left: 0 !important;
 font-weight: 400 !important;
+}
+
+body.page-id-62 h2.pagetitle {
+width: 100%;
 }
 
 div#inbox-subtab h2, div#activ_he h2 {
@@ -8629,4 +8635,68 @@ margin-top: -13px;
 
 div#sidebar {
 z-index: auto;
+}
+
+span.appWo {
+color: #000;
+text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.93);
+}
+
+body.page-id-62 a:hover {
+text-decoration: none !important;
+}
+
+div.app_timetable {
+position: relative;
+bottom: 30px;
+}
+
+div.app_timetable {
+margin-bottom: -115px;
+}
+
+body.page-id-62 div#container {
+padding-bottom: 20px;
+}
+
+body.page-id-62 table {
+box-shadow: none;
+}
+
+td.notpossible, div.notpossible {
+background: gray !important;
+}
+
+td.busy, div.busy {
+background: rgb(35, 63, 150) !important;
+opacity: 1;
+}
+
+td.today {
+opacity: 1;
+}
+
+td.free, div.free {
+background: rgb(5, 160, 247) !important;
+}
+
+.app_monthly_schedule_wrapper table th {
+font-weight: bold;
+text-align: center !important;
+border-top: 1px solid black !important;
+border-bottom: 1px solid black !important;
+}
+
+div.appointments-name-field, div.appointments-email-field, div.appointments-city-field, div.appointments-confirmation-end {
+display: none !important;
+}
+
+.bulk_text {
+width: 452px;
+border: rgb(150, 150, 150) solid 1px;
+border-radius: 3px;
+padding: 11px;
+font-style: oblique;
+box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+display: none;
 }

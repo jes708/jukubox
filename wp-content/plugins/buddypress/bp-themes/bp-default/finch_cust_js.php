@@ -607,5 +607,12 @@ jQuery(document).ready(function() {
         });  
 });  
 
+jQuery(document).ready(function() {
+    if ( ( document.location.href.indexOf('app_service_id=7') > -1 ) || ( document.location.href.indexOf('app_service_id=8') > -1 ) ) {
+        jQuery('.bulk_text').show();
+	jQuery('div.appointments-note-field').show();
+    }
+}); 
+
 </script>
 

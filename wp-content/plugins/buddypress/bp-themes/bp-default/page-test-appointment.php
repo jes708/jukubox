@@ -23,12 +23,13 @@ $worker_name = bp_get_profile_field_data('field=1&user_id=' . $worker_id . '') ;
 					// if it returns 'is_friend'
 					// echo friends_check_friendship_status( $user_id,$worker_id); ?>
 	
-					<?php echo bp_core_fetch_avatar ( array( 'item_id' => $worker_id, 'type' => 'full' ) ); ?>						<script>
+					<a href="<?php echo bp_core_get_user_domain($worker_id); ?>profile"><?php echo bp_core_fetch_avatar ( array( 'item_id' => $worker_id, 'type' => 'full' ) ); ?></a>
+					<script>
 						jQuery('.user-<?php echo $worker_id; ?>-avatar').css("float","right"); 
 					</script>		
 					<div class="entry">
 					<!-- nhf fix link --> 
-					<a href="<?php echo bp_core_get_user_domain($worker_id); ?>profile"><h1><?php echo $worker_name; ?></h1></a>
+					<h3><span style="color: rgb(35, 63, 150); font-weight: 800;">Teacher: </span><a href="<?php echo bp_core_get_user_domain($worker_id); ?>profile"><span class="appWo"><?php echo $worker_name; ?></span></a></h3>
 
 
 			<?php if(!is_user_logged_in() ) { ?>

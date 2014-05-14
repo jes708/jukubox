@@ -1785,16 +1785,16 @@ class Appointments {
 	function confirmation( $atts ) {
 	
 		extract( shortcode_atts( array(
-		'title'			=> __('<h3>Please check the appointment details below and confirm:</h3>', 'appointments' ),
+		'title'			=> __('<h3>Please check the details below and confirm:</h3>', 'appointments' ),
 		'button_text'	=> __('Please click here to confirm this appointment', 'appointments' ),
-		'confirm_text'	=> __('We have received your appointment. Thanks!', 'appointments' ),
+		'confirm_text'	=> __('Your lesson request has been placed!', 'appointments' ),
 		'warning_text'	=> __('Please fill in the requested field','appointments'),
 		'name'			=> __('Your name:','appointments'),
 		'email'			=> __('Your email:','appointments'),
 		'phone'			=> __('Your phone:','appointments'),
 		'address'		=> __('Your address:','appointments'),
 		'city'			=> __('City:','appointments'),
-		'note'			=> __('Your notes:','appointments'),
+		'note'			=> __('Scheduling Requests:','appointments'),
 		'gcal'			=> __('Access Google Calendar and submit appointment','appointments'),
 		), $atts ) );
 		
@@ -1871,7 +1871,7 @@ class Appointments {
 		$ret .= '<label><span>'. $city . '</span><input type="text" class="appointments-city-field-entry" value="'.$c.'" /></label>';
 		$ret .= '</div>';
 		$ret .= '<div class="appointments-note-field" style="display:none">';
-		$ret .= '<label><span>'. $note . '</span><input type="text" class="appointments-note-field-entry" /></label>';
+		$ret .= '<label><span>'. $note . '</span><textarea style="font-size:13px; width:600px;" class="appointments-note-field-entry"></textarea></label>';
 		$ret .= '</div>';
 		$ret .= '<div class="appointments-gcal-field" style="display:none">';
 		$ret .= '<label><span>'.$this->gcal_image.'</span><input type="checkbox" class="appointments-gcal-field-entry" '.$gcal_checked.' />&nbsp;';
@@ -2171,11 +2171,11 @@ class Appointments {
 			$price = (double)$price_raw; 		
 		} elseif( $service == 7 ) { // servnumedit if this is a full hour lesson package 
                         $price_raw = get_fullhour_price($worker); 
-			$price_raw = 12 * $price_raw; 
+			$price_raw = 11.5 * $price_raw; 
                         $price = (double)$price_raw;            
                 } elseif( $service == 8 ) { // servnumedit if this is a half-hour lesson package 
                         $price_raw = get_halfhour_price($worker); 
-			$price_raw = 12 * $price_raw;  
+			$price_raw = 11.5 * $price_raw;  
                         $price = (double)$price_raw;            
 		} 
 		// end NHF
@@ -2190,7 +2190,7 @@ class Appointments {
 			die( json_encode( array("error"=>apply_filters( 'app_booked_message',__( 'We are sorry, but this time slot is no longer available. Please refresh the page and try another time slot. Thank you.', 'appointments')))));
 		
 		$service_obj = $this->get_service( $service );		
-		$service = '<label><span>'. __('Service name: ', 'appointments' ).  '</span>'. apply_filters( 'app_confirmation_service', stripslashes( $service_obj->name ), $service_obj->name ) . '</label>';
+		$service = '<label><span>'. __('Service: ', 'appointments' ).  '</span>'. apply_filters( 'app_confirmation_service', stripslashes( $service_obj->name ), $service_obj->name ) . '</label>';
 		$start = '<label><span>'.__('Date and time: ', 'appointments' ). '</span>'. apply_filters( 'app_confirmation_start', date_i18n( $this->datetime_format, $start ), $start ) . '</label>';
 		$end = '<label><span>'.__('Lasts (approx): ', 'appointments' ). '</span>'. apply_filters( 'app_confirmation_lasts', $service_obj->duration . " ". __('minutes', 'appointments'), $service_obj->duration ) . '</label>';
 		if ( $price > 0 )
@@ -2199,7 +2199,7 @@ class Appointments {
 			$price = 0;
 			
 		if ( $worker )
-			$worker = '<label><span>'. __('Service provider: ', 'appointments' ).  '</span>'. apply_filters( 'app_confirmation_worker', stripslashes( $this->get_worker_name( $worker ) ), $worker ) . '</label>';
+			$worker = '<label><span>'. __('Teacher: ', 'appointments' ).  '</span>'. apply_filters( 'app_confirmation_worker', stripslashes( $this->get_worker_name( $worker ) ), $worker ) . '</label>';
 		else
 			$worker = '';
 			
@@ -3097,7 +3097,7 @@ class Appointments {
 
 		$ret = apply_filters( 'app_monthly_schedule_after_last_row', $ret );		
 		$ret .= '</tbody>';
-		$ret .= $this->_get_table_meta_row_monthly('tfoot', $long);
+//		$ret .= $this->_get_table_meta_row_monthly('tfoot', $long);
 		$ret .= '</table>';
 		$ret  = apply_filters( 'app_monthly_schedule_after_table', $ret );
 		$ret .= '</div>';
@@ -3159,7 +3159,7 @@ class Appointments {
 		$ret  = '';
 		$ret .= '<div class="app_timetable app_timetable_'.$day_start.'"'.$style.'>';
 		$ret .= '<div class="app_timetable_title">';
-		$ret .= date_i18n( $this->date_format, $day_start );
+		$ret .= strtoupper(date_i18n( 'l, m/d/y', $day_start ));
 		$ret .= '</div>';
 		
 		for ( $t=$first; $t<$last; $t=$t+$step ) {
@@ -3435,13 +3435,13 @@ class Appointments {
 	
 	function get_short_day_names () {
 		return array(
-			__('Su', 'appointments'),
-			__('Mo', 'appointments'),
-			__('Tu', 'appointments'),
-			__('We', 'appointments'),
-			__('Th', 'appointments'),
-			__('Fr', 'appointments'),
-			__('Sa', 'appointments'),
+			__('SUN', 'appointments'),
+			__('MON', 'appointments'),
+			__('TUE', 'appointments'),
+			__('WED', 'appointments'),
+			__('THU', 'appointments'),
+			__('FRI', 'appointments'),
+			__('SAT', 'appointments'),
 		);
 	}
 	

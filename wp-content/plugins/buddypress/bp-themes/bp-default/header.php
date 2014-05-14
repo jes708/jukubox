@@ -232,6 +232,8 @@ $notify_total = $head_unread_msg + $head_requests + $num_confirm_appointments;
                         <h5><i class="icon-calendar icon-large"></i><span class="notify_text">
                         <?php if(( is_teacher($user_id)===TRUE ) && ( $num_confirm_appointments !== 0 )) : ?>
                                 <?php echo '  Lesson Requests (' . $num_confirm_appointments . ')' ; ?>
+                        <?php elseif(( is_teacher($user_id)===TRUE ) && ( $num_confirm_appointments === 0 )) : ?>
+                                <?php echo '  Lesson Requests'; ?>
                         <?php else : ?>
                                 <?php echo '  Lessons'; ?>
                         <?php endif; ?>

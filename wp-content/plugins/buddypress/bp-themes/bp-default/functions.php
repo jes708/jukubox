@@ -1688,10 +1688,10 @@ elseif ( 3 == $service) {
 $price = get_fullhour_price($worker);
 return $price; }
 elseif ( 7 == $service) {
-$price = 12 * get_fullhour_price($worker);
+$price = 11.5 * get_fullhour_price($worker);
 return $price; }
 elseif ( 8 == $service) {
-$price = 12 * get_halfhour_price($worker);
+$price = 11.5 * get_halfhour_price($worker);
 return $price; }
 }
 add_filter( 'app_paypal_amount', 'reset_price', 10, 4 );
@@ -1819,7 +1819,7 @@ function get_service_prices($userId, $serv_num) {
 	$price_arr = finch_mysql_query($get_price, "return"); 
 
 	$price = $price_arr[0][$column];
-        if( ($serv_num == 7) || ($serv_num == 8) ) { $price = 12 * $price; } 
+        if( ($serv_num == 7) || ($serv_num == 8) ) { $price = 11.5 * $price; } 
 	return $price; 
 } 
 
