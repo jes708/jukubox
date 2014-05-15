@@ -4651,6 +4651,7 @@ class Appointments {
 				//'name' => __( 'Appointments', 'appointments' ),
 				'name' => __( 'Lessons', 'appointments' ),
 				'slug' => 'appointments',
+				'position' => 20,
 				'show_for_displayed_user' => false,
 				'screen_function' => array( &$this, 'tab_template_my_app' ) // NHF - changed tab_template to tab_template_my_appl to make it automatically open up to appointments 
 			) );
