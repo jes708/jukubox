@@ -298,6 +298,7 @@ text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.45);
 .app_form.worker h3 {
 padding: 8px;
 margin-bottom: -2px;
+display: none;
 }
 
 .confirmdiv, #enter_app_room_wrap {
@@ -3848,8 +3849,9 @@ body.directory.members div#sidebar, body.page-id-28 div#sidebar {
 background: transparent;
 width: 175px;
 float: left;
-position: relative;
+position: absolute;
 left: 210px;
+clear: both;
 }
 
 body.directory.members div#content .padder, body.page-id-28 div#content .padder {
@@ -8046,7 +8048,7 @@ body.bp-user form#whats-new-form, body.bp-user div.activity {
 top: 35px;
 }
 
-body.page-id-62 h2.pagetitle, #toploghome, h3.friPag, body.reviews div#item-body h3, body.messages div#message-thread h2#message-thread-inbox, div#composeMessage h2, div#delete_set h3, div#settings_not h3, div#general_set h3, div.profile h4 {
+h3#lesson_requests, h3#Availability, body.page-id-62 h2.pagetitle, #toploghome, h3.friPag, body.reviews div#item-body h3, body.messages div#message-thread h2#message-thread-inbox, div#composeMessage h2, div#delete_set h3, div#settings_not h3, div#general_set h3, div.profile h4 {
 display: block;
 position: relative;
 top: 7px;
@@ -8058,6 +8060,11 @@ color: rgb(10, 10, 10);
 text-align: left !important;
 margin-left: 0 !important;
 font-weight: 400 !important;
+}
+
+h3#lesson_requests {
+top: -15px;
+margin-bottom: -15px;
 }
 
 body.page-id-62 h2.pagetitle {
@@ -8608,9 +8615,10 @@ height: 84px;
 
 div#header {
 z-index: auto;
-padding-bottom: 0px;
-margin-bottom: 0px;
-top: 0px;
+padding-bottom: 25px;
+padding-top: 0;
+margin-bottom: 25px;
+top: 25px;
 height: 59px;
 }
 
@@ -8619,6 +8627,15 @@ div#header {
 margin-bottom: 28px;
 top: 28px;
 }
+
+body.search div#content, body.archive div#content, body.single-post div#content {
+width: 776px;
+}
+
+body.search div#sidebar, body.archive div#sidebar, body.single-post div#sidebar {
+float: left;
+}
+
 }
 
 body.logged-in div#navigation {
@@ -8699,4 +8716,130 @@ padding: 11px;
 font-style: oblique;
 box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
 display: none;
+}
+
+@media only screen and (max-width: 480px) {
+div.item-list-tabs ul li a, div.item-list-tabs ul li span{
+padding: 5px 10px;
+display: block;
+height: 20px;
+}
+
+div.item-list-tabs ul li:first-child {
+margin: 5px 0px 0px 20px;
+}
+
+div.item-list-tabs ul li {
+margin-top: auto;
+margin: 5px 0 0 5px;
+float: left;
+}
+
+div.item-list-tabs ul li.selected a, div.item-list-tabs ul li.current a {
+background-color: #fff;
+-moz-border-radius-topleft: 3px;
+-webkit-border-top-left-radius: 3px;
+-moz-border-radius-topright: 3px;
+-webkit-border-top-right-radius: 3px;
+border-top-left-radius: 3px;
+border-top-right-radius: 3px;
+color: #555;
+font-weight: bold;
+}
+
+#object-nav li {
+background: white;
+border: 1px solid rgba(163, 163, 163, 0.38);
+font-size: 12px !important;
+padding-left: 5px;
+position: relative;
+padding-right: 5px;
+margin-right: -6px;
+padding-top: 3px;
+padding-bottom: 3px;
+top: -2px;
+}
+
+div.item-list-tabs ul li.selected {
+position: relative;
+top: 0px !important;
+right: 1px;
+}
+
+div#subnav a {
+text-indent: 0 !important;
+}
+
+div#subnav a#just-me {
+top: 15px;
+margin-bottom: -15px;
+}
+
+div#subnav ul {
+border: none;
+}
+
+div#subnav a#inbox {
+top: 10px;
+}
+
+}
+
+p#av_note {
+font-size: 12px !important;
+font-weight: bold;
+margin-top: 23px !important;
+}
+
+h4.darkBlue {
+color: rgb(35, 63, 150);
+}
+
+.top_sev {
+display: block;
+position: relative;
+border-top: 1px solid rgb(223, 223, 223);
+width: 776px;
+padding-top: 20px;
+margin-top: 10px;
+margin-left: 0 !important;
+}
+
+a.price_pol_link {
+color: rgb(5, 160, 247) !important;
+}
+
+a.price_pol_link:hover {
+text-decoration: none;
+}
+
+.htwo_app {
+font-size: 17px;
+margin-bottom: 0px;
+font-weight: 400 !important;
+color: rgb(35, 63, 150);
+}
+
+th.my-appointments-service.header {
+min-width: 134px !important;
+}
+
+th.my-appointments-worker.header {
+min-width: 132px;
+}
+
+th.my-appointments-date.header {
+min-width: 170px;
+}
+
+th.my-appointments-status.header {
+min-width: 93px;
+}
+
+table.tablesorter thead tr .header, table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSortUp {
+background-image: none !important;
+}
+
+.my-appointments.tablesorter tbody, .my-appointments.tablesorter thead {
+text-align: left;
 }

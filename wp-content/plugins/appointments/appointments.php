@@ -1345,7 +1345,7 @@ class Appointments {
 						$target = '_self';
 					else
 						$target = '_blank';
-					$ret .= '<td><a title="'.__('Click to submit this appointment to your Google Calendar account','appointments')
+					$ret .= '<td style="display: none;"><a title="'.__('Click to submit this appointment to your Google Calendar account','appointments')
 					.'" href="'.$this->gcal( $r->service, strtotime( $r->start, $this->local_time), strtotime( $r->end, $this->local_time), true )
 					.'" target="'.$target.'">'.$this->gcal_image.'</a></td>';
 				}
@@ -4664,7 +4664,7 @@ class Appointments {
 			//$name = __( 'My Appointments as Provider', 'appointments' );
 
 		if ( $this->is_worker( $user_id ) && isset($this->options["allow_worker_wh"]) && 'yes' == $this->options["allow_worker_wh"] ) {
-			$name = __( 'Lessons I am Teaching', 'appointments' );
+			$name = __( 'Lesson Requests', 'appointments' );
 		bp_core_new_subnav_item( array(
 			'name' => $name,
 			'slug' => 'my-appointments',
@@ -4674,10 +4674,24 @@ class Appointments {
 		) );
 		} 
 		
+
+                // JES - generate tab for redirect to home 
+                // Generate this tab only if allowed
+                if ( $this->is_worker( $user_id ) && isset($this->options["allow_worker_wh"]) && 'yes' == $this->options["allow_worker_wh"] ) {
+                        bp_core_new_subnav_item( array(
+                                'name' => __(   'Upcoming Lessons', 'appointments' ),
+                                'slug' => '/',
+                                'parent_url' => get_home_url(), 
+                                'parent_slug' => 'appointments',
+                                'screen_function' => array( &$this, 'tab_template_app_pricing_settings' )
+                        ) );
+                }  
+                // end JES generate redirect
+
 		// Generate this tab only if allowed
 		if ( $this->is_worker( $user_id ) && isset($this->options["allow_worker_wh"]) && 'yes' == $this->options["allow_worker_wh"] ) {
 			bp_core_new_subnav_item( array(
-				'name' => __( /* NHF EDIT */ /*'Appointments Settings',*/ /* end NHF edit */  'My Lesson Schedule', 'appointments' ),
+				'name' => __( /* NHF EDIT */ /*'Appointments Settings',*/ /* end NHF edit */  'Availability', 'appointments' ),
 				'slug' => 'appointment-settings',
 				'parent_url' => $link, 
 				'parent_slug' => 'appointments',
@@ -4701,7 +4715,7 @@ class Appointments {
 		// Generate this tab only if allowed
 		if ( $this->is_worker( $user_id ) && isset($this->options["allow_worker_wh"]) && 'yes' == $this->options["allow_worker_wh"] ) {
 			bp_core_new_subnav_item( array(
-				'name' => __(   'See Your Schedule', 'appointments' ),
+				'name' => __(   'Calendar View', 'appointments' ),
 				'slug' => '?app_provider_id=' . $user_id . '&app_service_id=1&placeholder=place',
 				'parent_url' => get_home_url() . '/test-appointment/', 
 				'parent_slug' => 'appointments',
@@ -4762,6 +4776,8 @@ class Appointments {
 
 echo '<div id="lessons_sub_one">';
 
+echo '<h3 id="lesson_requests">Lesson Requests</h3>';
+
                                                         get_upcoming_lessons($user_id, 15, "Student");
                                                         if( is_teacher($user_id)===TRUE ) {
                                                                 get_upcoming_lessons($user_id, 15, "Teacher");
@@ -4786,18 +4802,18 @@ if (strpos($us_serv_str, ":5:") !== false) { //servnumedit
 }
 //		if(( !$raw_hour || $raw_hour == '' || $raw_hour==0 ) && ( !$raw_half || $raw_half == '' || $raw_half==0 )) { 
 		if( !$pos_hour && !$pos_half) { 
-			echo '<h2 align="center">Enter your price <a href="' . get_home_url() . '/members/' . $current_user->user_login . '/appointments/name-your-price">here</a>!</h2>'; 
+			echo '<h2 class="htwo_app" align="left">Enter your price <a href="' . get_home_url() . '/members/' . $current_user->user_login . '/appointments/name-your-price">here</a>!</h2>'; 
 //			} elseif (($raw_hour > 0) && ($raw_half > 0)) { 
                         } elseif ( $pos_hour && $pos_half ) { 
-				echo '<h2 align="center">Your current rate is:<a id="appointmentspage_price" href="' . get_home_url() . '/members/' . $current_user->user_login . '/appointments/name-your-price"> $' . $raw_half . '/30min</a> and <a id="appointmentspage_price_2" href="' . get_home_url() . '/members/' . $current_user->user_login . '/appointments/name-your-price"> $' . $raw_hour . '/hour.</a></h2>';
+				echo '<h2 class="htwo_app" align="left">Current rate:<a id="appointmentspage_price" href="' . get_home_url() . '/members/' . $current_user->user_login . '/appointments/name-your-price"> $' . $raw_half . '/30min</a> and <a id="appointmentspage_price_2" href="' . get_home_url() . '/members/' . $current_user->user_login . '/appointments/name-your-price"> $' . $raw_hour . '/hour.</a></h2>';
 //                        } elseif ($raw_hour > 0) { 
                         } elseif ($pos_hour) { 
-                                echo '<h2 align="center">Your current rate is: <a id="appointmentspage_price" href="' . get_home_url() . '/members/' . $current_user->user_login . '/appointments/name-your-price"> $' . $raw_hour . '/hour.</a></h2>';
+                                echo '<h2 class="htwo_app" align="left">Current rate: <a id="appointmentspage_price" href="' . get_home_url() . '/members/' . $current_user->user_login . '/appointments/name-your-price"> $' . $raw_hour . '/hour.</a></h2>';
 //                        } elseif ($raw_half > 0) { 
                         } elseif ($pos_half) { 
-                                echo '<h2 align="center">Your current rate is: <a id="appointmentspage_price" href="' . get_home_url() . '/members/' . $current_user->user_login . '/appointments/name-your-price"> $' . $raw_half . '/30min.</a></h2>';
+                                echo '<h2 class="htwo_app" align="left">Current rate: <a id="appointmentspage_price" href="' . get_home_url() . '/members/' . $current_user->user_login . '/appointments/name-your-price"> $' . $raw_half . '/30min.</a></h2>';
                         } // end if/else price^M
-				echo '<p align="center"><a href="' . get_home_url() . '/teachers-manual/#comPolicies" >See Pricing Policies Here</a></p>';  
+				echo '<p align="left">See <a class="price_pol_link" href="' . get_home_url() . '/teachers-manual/#comPolicies" >Pricing Policies</a></p>';  
 
 		} // end if teacher
 		
@@ -4820,7 +4836,7 @@ if (strpos($us_serv_str, ":5:") !== false) { //servnumedit
 					var cancel_app_status = jQuery(this).parent('td').parent('tr').children('.app_status').text();
 					var cancel_app_service = jQuery(this).parent('td').parent('tr').children('.service_name').attr('ser_id'); 
 					//alert(cancel_app_status + cancel_app_service); 
-					if(( cancel_app_service == 3 && cancel_app_status == 'pending' ) || ( cancel_app_service == 5 && cancel_app_status == 'pending' )) { 
+					if(( cancel_app_service == 3 && cancel_app_status == 'pending' ) || ( cancel_app_service == 5 && cancel_app_status == 'pending' ) || ( cancel_app_service == 7 && cancel_app_status == 'pending' ) || ( cancel_app_service == 8 && cancel_app_status == 'pending' )) { 
 						alert('This is a paid service that the client has not paid for yet - it cannot be approved until the client makes the reqiured payment.  If they neglect to make payment, cancel it, as it will otherwise note your schedule as filled for that time period.') 
 						return false;
 					} 
@@ -4940,18 +4956,18 @@ echo '</div>';
 			?>
 			<div class="standard-form">
 				<form method="post">
-					<h2>Please choose times based on <strong>Eastern Time (ET)</strong>.</h2>
-					<h3>Do not choose times based on your own time zone, if different.</h3>
-					<h4><?php /* _e('My Working Hours', 'appointments');*/ _e('Weekly Lesson Schedule', 'appointments'); ?></h4>
+					<h3 id="Availability">Availability</h3>
+					<p id="av_note">Please choose times based on Eastern Time (ET). Do not choose times based on your own time zone, if different.</p>
+					<h4 class="darkBlue"><?php /* _e('My Working Hours', 'appointments');*/ _e('Weekly Lesson Schedule', 'appointments'); ?></h4>
 					<?php echo $this->working_hour_form('open'); ?>
-					<h4><?php /* _e('My Break Hours', 'appointments');*/  _e('Break Hours', 'appointments'); ?></h4>
+					<h4 class="top_sev darkBlue"><?php /* _e('My Break Hours', 'appointments');*/  _e('Break Hours', 'appointments'); ?></h4>
 					<?php echo $this->working_hour_form('closed'); ?>
 					
-					<h4><?php /* _e('My Exceptional Working Days', 'appointments');*/ _e('Extra Lesson Days (Not Regularly Scheduled)', 'appointments'); ?></h4>
+					<h4 class="top_sev darkBlue"><?php /* _e('My Exceptional Working Days', 'appointments');*/ _e('Extra Lesson Days (Not Regularly Scheduled)', 'appointments'); ?></h4>
 
 					<input class="datepick" id="open_datepick" type="text" style="width:100%" name="open[exceptional_days]" value="<?php if (isset($result["open"])) echo $result["open"]?>" />
 					
-					<h4><?php /*_e('My Holidays', 'appointments');*/ _e('Holidays', 'appointments'); ?></h4>
+					<h4 class="top_sev darkBlue"><?php /*_e('My Holidays', 'appointments');*/ _e('Holidays', 'appointments'); ?></h4>
 					
 					<input class="datepick" id="closed_datepick" type="text" style="width:100%" name="closed[exceptional_days]" value="<?php if (isset($result["closed"])) echo $result["closed"]?>" />
 					<div class="submit">
