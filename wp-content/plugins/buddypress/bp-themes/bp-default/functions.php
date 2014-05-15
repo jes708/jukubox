@@ -2200,9 +2200,10 @@ function bp_get_lesson_button( $potential_friend_id = 0, $friend_status = false 
 
 function bbg_change_profile_tab_order() {
 global $bp;
+$the_user_id = $bp->loggedin_user->userdata->ID;
 
 $bp->bp_nav['profile']['position'] = 10;
-$bp->bp_nav['activity']['position'] = 20;
+$bp->bp_nav['activity']['position'] = 30;
 }
 add_action( 'bp_setup_nav', 'bbg_change_profile_tab_order', 999 );
 

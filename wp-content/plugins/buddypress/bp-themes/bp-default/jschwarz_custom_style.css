@@ -3155,9 +3155,9 @@ z-index: 10;
 
 #jukulogo {
 position: relative;
-width: 212px;
-margin-left: 0px;
-margin-top: 10px;
+width: 157px;
+margin-left: 4px;
+margin-right: 34px;
 z-index: 2000;
 }
 
@@ -6287,7 +6287,7 @@ body.blog div.post-content div.entry > p, body.search-results div.post-content d
     font-family:'Open Sans', sans-serif;
     font-size: 17px !important;
     color: #333333;
-    font-size: 17px !important;
+    font-size: 14px !important;
         line-height: 170% !important;
         margin-bottom:40px !important;
 }
@@ -6913,15 +6913,14 @@ body.single-post p.date > a:focus  {
 
 body.single-post div.post-content .entry {
     font-family:'Open Sans', sans-serif;
-    font-size: 17px !important;
+    font-size: 14px !important;
     color: #333333;
         padding:0 15px;
 }
 body.single-post div.post-content div.entry > p {
     font-family:'Open Sans', sans-serif;
-    font-size: 17px !important;
     color: #333333;
-    font-size: 17px !important;
+    font-size: 14px !important;
         line-height: 170% !important;
         margin-bottom:40px !important;
 }
@@ -8842,4 +8841,9 @@ background-image: none !important;
 
 .my-appointments.tablesorter tbody, .my-appointments.tablesorter thead {
 text-align: left;
+}
+
+body.profile iframe {
+width: 776px;
+height: 474px;
 }
