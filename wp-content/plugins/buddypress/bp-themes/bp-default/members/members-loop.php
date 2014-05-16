@@ -80,8 +80,8 @@ jQuery('#search-by-instrument').ready(function() {
 <?php elseif( empty($select_teachers) &&  !empty($instrument) && ($instrument != 'notApplicable')  ) : // if no teachers are availble for a certian instrument/spciality ?>
 
 	<div id="message" class="info">
-		<h1>Instrument: <?php echo $instrument; ?></h1>
-		<p><?php _e( "No teachers yet with this specialty!  Check back with us soon!  For now, select another specialty to search!", 'buddypress' ); ?></p>
+		<h3 class="no_inst"><?php echo $instrument; ?></h3>
+		<p><?php _e( "Hold tight (like a fermata). More teachers coming soon!", 'buddypress' ); ?></p>
 	</div>
 
 <?php  elseif ( bp_has_members( $string  ) ) : // NHF CODE CODE ?>
