@@ -1299,7 +1299,7 @@ class Appointments {
 		}
 		// NHF - adding column for cancel
 		if ( $_finch_allow_cancel == 1 ) { 
-			$ret .= '<th class="my-appointments-deny">'. __('Deny/Cancel', 'appointments' ) . '</th>';
+			$ret .= '<th class="my-appointments-deny">'. __('Cancel', 'appointments' ) . '</th>';
 			$colspan++;
 		} 
 		// End NHF	

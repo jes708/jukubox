@@ -8860,3 +8860,31 @@ body.home-page.logged-in div#subnav {
 left: -6px !important;
 }
 
+@-moz-document url-prefix() {
+body.bp-user div#content {
+    top: 5px;
+}
+
+body.page-id-28 div#subnav {
+margin-top: -95px;
+}
+
+body.page-id-28 div#content { 
+margin-bottom: 110px;
+top: 100px;
+}   
+
+body.home-page .f-part-divide.black {
+    top: 0px;
+    position: relative;
+}
+
+div#messages-dir-count {
+margin: 0;
+}
+
+.appointments-my-appointments table th, .appointments-my-appointments table td {
+padding: 10px;
+}
+
+}

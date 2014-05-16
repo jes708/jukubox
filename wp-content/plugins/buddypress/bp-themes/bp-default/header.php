@@ -41,6 +41,20 @@ echo $nowie;*/
 		<link rel="shortcut icon" type="image/x-icon" href="../../../../wp-content/uploads/2013/06/favicon.ico?v=2"> 
 		<link rel="stylesheet" href="../../../../wp-content/plugins/buddypress/bp-themes/bp-default/font-awesome/css/font-awesome.min.css">
 
+
+
+<!--Start of Zopim Live Chat Script-->
+<script type="text/javascript">
+window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute('charset','utf-8');
+$.src='//v2.zopim.com/?27lEOQpllT1OqCvadmkEEHcmN4LArVql';z.t=+new Date;$.
+type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
+</script>
+<!--End of Zopim Live Chat Script-->
+
+
+
 	</head>
 <body <?php body_class(); ?> id="bp-default">
 
