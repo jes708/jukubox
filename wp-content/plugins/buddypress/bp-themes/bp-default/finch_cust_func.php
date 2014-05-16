@@ -177,7 +177,7 @@ function get_upcoming_lessons($user_id, $time_interval, $StudentOrTeacher) {
 		return false;
 	}  
 	$upcoming_html = '<div id="enter_app_room_wrap">'; 
-	$upcoming_html .= '<h3 style="margin:0;margin-top: 10px; margin-bottom: 10px;">' . $titleMessage . '</h3><table><tbody>'; 
+	$upcoming_html .= '<h3 style="margin:0;margin-top: 10px !important; text-align: center; margin-bottom: 10px;">' . $titleMessage . '</h3><table><tbody>'; 
 	
 	foreach( $upcoming_array as $key => $value) {
 		

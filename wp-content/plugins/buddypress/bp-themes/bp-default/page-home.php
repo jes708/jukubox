@@ -353,6 +353,28 @@ wp_reset_query();
                                 </div>
                         </div><!-- #item-nav -->
 
+<?php                                                if( is_teacher($user_id)===TRUE ) : ?>
+
+<div id="item-body" role="main">
+<div class="item-list-tabs no-ajax" id="subnav">
+        <ul>
+                <li id="my-appointments-personal-li"><a id="my-appointments" href="<?php echo get_home_url() . '/members/' . bp_core_get_username($user_id) . '/appointments/my-appointments/';?>">Lesson Requests</a></li>
+                <li id="/-personal-li" class="current selected"><a id="/" href="<?php echo get_home_url();?>">Upcoming Lessons</a></li>
+                <li id="appointment-settings-personal-li"><a id="appointment-settings" href="<?php echo get_home_url() . '/members/' . bp_core_get_username($user_id) . '/appointments/appointment-settings/';?>">Availability</a></li>
+                <li id="name-your-price-personal-li"><a id="name-your-price" href="<?php echo get_home_url() . '/members/' . bp_core_get_username($user_id) . '/appointments/name-your-price/';?>">Prices and Services</a></li>
+                <li style="display:block;" id="calendar_view"><a id="calendar_view" href="<?php echo get_home_url() . '/test-appointment/?app_provider_id=' . $user_id . '&app_service_id=1&placeholder=place/';?>">Calendar View</a></li>
+        </ul>
+</div>
+
+<script>
+jQuery(document).ready(function() {
+    if (jQuery('body').hasClass('home-page logged-in') ) {
+        jQuery('li#li-nav-appointments').addClass('current selected');
+    }
+}); 
+</script>
+
+<?php endif; ?>
 
 
 
@@ -361,6 +383,15 @@ wp_reset_query();
 
 
 					<div id="loggedin_div">
+
+
+
+
+
+
+
+
+
 <!--		<a href="<?php //echo bp_loggedin_user_domain(); ?>profile">
 		<?php  //$av_args = array('item_id' => $user_id, 'type' => 'full'); 
 			//echo bp_core_fetch_avatar($av_args);  ?>
@@ -396,6 +427,8 @@ wp_reset_query();
 
  
                                                 if( is_teacher($user_id)===TRUE ) {
+
+
 
 							echo '<div id="teacher_apps">';  
 						        echo do_shortcode('[app_my_appointments provider=1 _allow_confirm=1 status="confirmed,pending,paid" provider_id=' . $user_id . ' order_by="start ASC" ]');
@@ -530,7 +563,7 @@ wp_reset_query();
   				<li>Estas</li>
 			</ul>
 		</div> -->
- 
+                </div><!--item-body-->
 		</div><!-- .page -->
 
 		<?php do_action( 'bp_after_blog_page' ); ?>

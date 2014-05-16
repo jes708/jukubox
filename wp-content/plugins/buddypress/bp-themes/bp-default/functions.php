@@ -2215,4 +2215,3 @@ function remove_friends_nav() {
       bp_core_remove_subnav_item( $bp->activity->slug, 'friends' );
    }
 add_action( 'init', 'remove_friends_nav' );
-

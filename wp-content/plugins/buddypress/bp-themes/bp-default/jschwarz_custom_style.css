@@ -7532,22 +7532,26 @@ body.xprofile td.data p {
 font-size: 13px !important;
 }
 
-body.bp-user div#subnav ul li {
+body.home-page.logged-in div#subnav ul {
+list-style-type: none;
+}
+
+body.bp-user div#subnav ul li, body.home-page.logged-in div#subnav ul li {
 border-right: solid rgba(218, 218, 218, 0.67) 1px;
 }
 
-body.bp-user #subnav li:nth-of-type(1) {
+body.bp-user #subnav li:nth-of-type(1), body.home-page.logged-in #subnav li:nth-of-type(1) {
 text-indent: 0;
 margin-left: 188px;
 border-left: solid rgba(218, 218, 218, 0.67) 1px;
 }
 
-body.bp-user #subnav ul a {
+body.bp-user #subnav ul a, body.home-page.logged-in #subnav ul a {
 font-size: 12px;
 padding: 0 15px 0 15px !important;
 }
 
-body.bp-user #subnav {
+body.bp-user #subnav, body.home-page.logged-in #subnav {
 top: 15px;
 margin-top: -23px !important;
 position: relative;
@@ -7957,14 +7961,14 @@ body.bp-user.profile.edit div.editfield {
 margin-bottom: -6px !important;
 }
 
-body.bp-user #subnav ul li {
+body.bp-user #subnav ul li, body.home-page.logged-in #subnav ul li {
 float: left;
 clear: left;
 margin-left: 0;
 border: none !important;
 }
 
-body.bp-user #subnav ul a {
+body.bp-user #subnav ul a, body.home-page.logged-in #subnav ul a  {
 color: black;
 padding-left: 7px !important;
 left: 8px !important;
@@ -7972,17 +7976,17 @@ position: relative;
 width: 140px;
 }
 
-body.bp-user #subnav ul li.current.selected a {
+body.bp-user #subnav ul li.current.selected a, body.home-page.logged-in #subnav ul li.current.selected a {
 background: rgb(230, 230, 230);
 border-radius: 0;
 }
 
-body.bp-user #subnav li:nth-of-type(1) {
+body.bp-user #subnav li:nth-of-type(1), body.home-page.logged-in #subnav li:nth-of-type(1) {
 margin-left: 0;
 position: relative;
 }
 
-body.bp-user #subnav { 
+body.home-page.logged-in #subnav, body.bp-user #subnav { 
 position: absolute;
 width: 180px;
 border: none;
@@ -8847,3 +8851,12 @@ body.profile iframe {
 width: 776px;
 height: 474px;
 }
+
+div#loggedin_div {
+top: 0px;
+}
+
+body.home-page.logged-in div#subnav {
+left: -6px !important;
+}
+

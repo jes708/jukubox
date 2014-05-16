@@ -614,5 +614,11 @@ jQuery(document).ready(function() {
     }
 }); 
 
+jQuery(document).ready(function() {
+    if (jQuery('a#appointmentspage_price_2').length ) {
+        jQuery('li#my-appointments-personal-li').addClass('current selected');
+    }
+}); 
+
 </script>
 

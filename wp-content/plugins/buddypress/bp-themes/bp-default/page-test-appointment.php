@@ -77,7 +77,7 @@ $worker_name = bp_get_profile_field_data('field=1&user_id=' . $worker_id . '') ;
 							// echo do_shortcode('[app_service_providers ]');  ?>
 					<?php } else { // user isn't friends ?>
 						<?php if( $user_id == $worker_id ) { // you're viewing your own schedule ?>
-							<h3 style="width: 63%">This is your schedule as others see it.</h3>
+							<h3 style="width: 63%; display: none;">This is your schedule as others see it.</h3>
 						<?php } else { // viewing someone else's schedule but you're not friends ?>
 							<!-- <h3 style="width: 63%">You are not yet friends with <?php echo $worker_name; ?>: Send a message and request friendship to be able to book a lesson!</h3> --> 
 							<?php 
