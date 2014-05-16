@@ -8600,6 +8600,8 @@ border: none !important;
 #search-bar .input-append {
 float: left;
 left: -30px;
+margin-right: 18px;
+width: 295px;
 }
 
 ul#menu_box_links li i.icon-envelope.icon-large, ul#menu_box_links li i.icon-group.icon-large, ul#menu_box_links li i.icon-calendar.icon-large {
