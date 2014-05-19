@@ -2139,7 +2139,7 @@ right: 29px;
 #header, #footer {
 position: relative;
 color: #fff;
-background: #020031 !important;
+background: rgb(18, 119, 187) !important;
 background: -moz-radial-gradient(center 135px, cover, rgb(3, 187, 245) 5%, rgb(25, 40, 104) 100%) !important;
 background: -webkit-gradient(radial, center center, 135px, center center, 100%, color-stop(0%, rgb(3, 187, 245)), color-stop(100%, rgb(25, 187, 245))) !important;
 background: -webkit-radial-gradient(center 135px, cover, rgb(3, 187, 245) 5%, rgb(25, 40, 104) 100%) !important;

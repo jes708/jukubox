@@ -7,10 +7,10 @@
 
 <!--<a href="<?php //echo get_home_url() . '/teachers'; ?>">--><section class="f-part-divide black">
     <section class="f-part-wrap preamble" style="max-width: 1000px; margin: 0 auto;">
-	<h1 id="Amber_header">Live-video music lessons </br>with the world's best teachers.</h1>
+	<h1 id="Amber_header">Live-video music lessons <br>with the world's best teachers.</h1>
 	<p id="White_home_p">Our faculty consists of the world's most respected instructors from the top musical conservatories.</p>
 	<img style="bottom:118px; height:445px; position:relative; float:right; right:14px;" src="../../../../../wp-content/uploads/2014/05/Dicterow-Fuzzy.png"> 	
-	<p id="Amber_p">Glenn Dicterow</br><em>Jukubox faculty</em> member</p>
+	<p id="Amber_p">Glenn Dicterow<br><em>Jukubox faculty</em> member</p>
 	<h3 id="Amber_h" style="float:left;">Sign up to begin using Jukubox</h3>
 
                 <form action="register" name="presignup" id="presignup" class="standard-form" method="post" enctype="multipart/form-data">
