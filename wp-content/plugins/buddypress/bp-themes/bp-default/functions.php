@@ -1927,8 +1927,8 @@ function generate_lessontoggle($userId, $services='') { // takes has of lesson s
 	
 	$avail_serv = serivces_hash('total', '');
 	$avail_serv_array = $avail_serv['array']; 
-        $avail_serv_array_0 = array_slice($avail_serv_array, 0, 2);
-        $avail_serv_array_1 = array_slice($avail_serv_array, 2, 6);
+        $avail_serv_array_0 = array_slice($avail_serv_array, 0, 1);
+        $avail_serv_array_1 = array_slice($avail_serv_array, 1, 7);
 	$avail_serv_hash = $avail_serv['hash'];  
 
 	// reset server hash - to get newset updated services available	
