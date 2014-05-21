@@ -6051,7 +6051,7 @@ color: rgb(243, 211, 143);
 font-weight: 600 !important;
 float: right;
 position: relative;
-left: 278px;
+left: 275px;
 top: 254px;
 text-align: right;
 text-shadow: 1px 1px 1px black;
@@ -6073,7 +6073,7 @@ font-family: 'open sans' !important;
 }
 
 div.login_contain {
-background: rgba(16, 18, 43, 0.9);
+background: rgba(32, 32, 32, 0.9);
 border: solid 2px rgb(35, 35, 36);
 box-shadow: 0 0 12px rgba(185, 185, 185, 0);
 }
@@ -6247,6 +6247,7 @@ body.blog .input-append .accessibly-hidden, body.search-results .input-append .a
 
 
 body.blog h2.posttitle, body.search-results h2.posttitle, body.archive h2.posttitle {
+	margin: 20px 0 0 30px;
         color: #333333;
     font-size: 22px;
     font-weight: bold;
@@ -6258,6 +6259,7 @@ body.blog p.date, body.search-results p.date, body.archive p.date {
         font-family:'Open Sans', sans-serif;
         font-size: 14px !important;
         color: #333333;
+	margin-left: 30px;
 }
 
 body.blog p.date > a, body.search-results p.date > a, body.archive p.date > a {
@@ -6284,6 +6286,7 @@ body.blog div.post-content .entry, body.search-results div.post-content .entry, 
         padding:0 15px;
 }
 body.blog div.post-content div.entry > p, body.search-results div.post-content div.entry > p, body.archive div.post-content div.entry > p {
+    margin: 20px;
     font-family:'Open Sans', sans-serif;
     font-size: 17px !important;
     color: #333333;
@@ -6885,6 +6888,7 @@ body.single-post .input-append .accessibly-hidden{
 
 
 body.single-post h2.posttitle {
+	margin: 20px 0px 0px 30px;
         color: #333333;
     font-size: 22px;
     font-weight: bold;
@@ -6893,9 +6897,14 @@ body.single-post h2.posttitle {
 }
 
 body.single-post p.date/*, p.postmetadata */{
+	margin-left: 30px;
         font-family:'Open Sans', sans-serif;
         font-size: 14px !important;
         color: #333333;
+}
+
+span.post-utility.alignright {
+margin-right: 35px;
 }
 
 body.single-post p.date > a {
@@ -6918,6 +6927,7 @@ body.single-post div.post-content .entry {
         padding:0 15px;
 }
 body.single-post div.post-content div.entry > p {
+    margin: 20px;
     font-family:'Open Sans', sans-serif;
     color: #333333;
     font-size: 14px !important;
@@ -7736,7 +7746,7 @@ letter-spacing: -0.4px;
 
 input#presignup_email {
 float: left;
-width: 179px;
+width: 225px;
 clear: left;
 top: 40px;
 position: relative;
@@ -7748,8 +7758,9 @@ padding-left: 10px !important;
 float: left;
 clear: left;
 position: relative;
-top: -3px;
-left: 199px;
+top: -2px;
+left: 264px;
+height: 32px;
 }
 
 .standard-form #profile-details-section {
@@ -8572,6 +8583,10 @@ bottom: 4px;
 z-index: 10;
 }
 
+body.home-page a#login_head {
+right: 23px;
+}
+
 a#login_head:hover, #menu-item-848:hover, #menu-item-867:hover, #header a.head_link:hover, h5.notify_dropper:hover {
 cursor: pointer;
 text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.71);
@@ -8881,10 +8896,6 @@ body.home-page .f-part-divide.black {
     position: relative;
 }
 
-div#messages-dir-count {
-margin: 0;
-}
-
 .appointments-my-appointments table th, .appointments-my-appointments table td {
 padding: 10px;
 }
@@ -8893,4 +8904,11 @@ padding: 10px;
 
 #nav {
 display:none;
+}
+
+div#messages-dir-count, div#messages-dir-pag {
+top: 0 !important;
+margin: 0 !important;
+padding: 0 !important;
+position: relative;
 }
