@@ -31,6 +31,7 @@ $worker_name = bp_get_profile_field_data('field=1&user_id=' . $worker_id . '') ;
 					<!-- nhf fix link --> 
 					<h3><span style="color: rgb(35, 63, 150); font-weight: 800;">Teacher: </span><a href="<?php echo bp_core_get_user_domain($worker_id); ?>profile"><span class="appWo"><?php echo $worker_name; ?></span></a></h3>
 
+                                                      <?php $wo_serv_str = get_us_services($worker_id); ?>
 
 			<?php if(!is_user_logged_in() ) { ?>
 				
@@ -42,7 +43,6 @@ $worker_name = bp_get_profile_field_data('field=1&user_id=' . $worker_id . '') ;
 					<?php if(friends_check_friendship_status( $user_id,$worker_id) == 'is_friend' ) { ?>
  						<?php  
 							$serv_remove = get_deletable_services( $worker_id ); 
-							
 						?>
 						<!-- remove options not authorized --> 
 						<script>
@@ -57,7 +57,7 @@ $worker_name = bp_get_profile_field_data('field=1&user_id=' . $worker_id . '') ;
 								<script>
 									// commented this out for now - depends on toggling
 									jQuery('.app_select_services').ready( function() { 	
-									//	jQuery('.app_select_services option[value="2"]').remove();
+										jQuery('.app_select_services option[value="2"]').remove();
 									}); // end ready  
 								</script>  
 							<?php } 
@@ -91,13 +91,22 @@ $worker_name = bp_get_profile_field_data('field=1&user_id=' . $worker_id . '') ;
 							?> 
 								
 								<!-- remove options not authorized --> 
+
 							<script>
 								jQuery('app_select_services').ready(function() { 
+<?php if (strpos($wo_serv_str, ":2:") !== false) : ?>
 							<?php foreach($avail_serv_hash as $key => $value ) : ?>
-							    <?php if($key > 1) : ?>
+							    <?php if($key > 2) : ?>
 								 	jQuery('.app_select_services option[value="<?php echo $key; ?>"]').remove();
 							    <?php endif; ?>
 							<?php endforeach; ?>
+<?php else:?>
+                                                        <?php foreach($avail_serv_hash as $key => $value ) : ?>
+                                                            <?php if($key > 1) : ?>
+                                                                        jQuery('.app_select_services option[value="<?php echo $key; ?>"]').remove();
+                                                            <?php endif; ?>
+                                                        <?php endforeach; ?>
+<?php endif; ?>
 								}); // end ready
 							</script>
 						<?php } // end if-else user_id = worker_id ?>	
