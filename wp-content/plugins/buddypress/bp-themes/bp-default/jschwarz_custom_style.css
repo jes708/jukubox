@@ -2286,13 +2286,17 @@ padding: 20px;
 margin-bottom: -6px;
 }
 
-#members-list .item-title a {
+body.friend-requests div.item-title a, #members-list .item-title a {
 font-size: 16px;
 font-family: 'open sans' !important;
 margin-bottom: 20px;
 font-weight: 700 !important;
 color: rgb(35, 63, 150);
 left: 8px;
+}
+
+body.friend-requests div.item-title a:hover {
+text-decoration: none;
 }
 
 .page-id-4 div.entry div:nth-of-type(4) {
@@ -3700,7 +3704,7 @@ height: 153px;
 width: 102%;
 }
 
-#members-list .item-avatar img {
+body.friend-requests ul.item-list li img.avatar, #members-list .item-avatar img {
 box-shadow: 0 0 1px rgb(228, 228, 228) !important;
 top: 0;
 bottom: 0;
@@ -3712,8 +3716,8 @@ border: 1px solid rgba(163, 163, 163, 0.38);
 padding: 4px;
 background-color: white;
 position: relative;
-width: 135px;
-height: 135px;
+width: 106px;
+height: 106px;
 }
 
 tr.field_33 iframe {
@@ -8911,4 +8915,30 @@ top: 0 !important;
 margin: 0 !important;
 padding: 0 !important;
 position: relative;
+}
+
+body.friend-requests div#pag-bottom, body.friend-requests div#pag-top {
+display: none;
+}
+
+body.friend-requests li.requestSize {
+height: 104px;
+}
+
+body.friend-requests div.item-avatar {
+bottom: 7px;
+position: relative;
+}
+
+body.friend-requests div.item-title a {
+left: 15px;
+position: relative;
+bottom: 16px;
+}
+
+body.friend-requests a.rejected:hover, body.friend-requests a.rejected, body.friend-requests a.accepted:hover, body.friend-requests a.accepted {
+background: none !important;
+color: black !important;
+font-size: 15px;
+pointer-events: none;
 }

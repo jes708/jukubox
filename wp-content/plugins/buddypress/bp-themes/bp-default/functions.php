@@ -159,8 +159,8 @@ function bp_dtheme_enqueue_scripts() {
 	// Add words that we need to use in JS to the end of the page so they can be translated and still used.
 	$params = array(
 		'my_favs'           => __( 'My Favorites', 'buddypress' ),
-		'accepted'          => __( 'Accepted', 'buddypress' ),
-		'rejected'          => __( 'Rejected', 'buddypress' ),
+		'accepted'          => __( '&#x2713; Connection Accepted!', 'buddypress' ),
+		'rejected'          => __( '<i class="icon-remove icon-large"></i> Connection Rejected', 'buddypress' ),
 		'show_all_comments' => __( 'Show all comments for this thread', 'buddypress' ),
 		'show_all'          => __( 'Show all', 'buddypress' ),
 		'comments'          => __( 'comments', 'buddypress' ),
