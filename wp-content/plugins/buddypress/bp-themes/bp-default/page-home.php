@@ -41,7 +41,7 @@
 </div>
 
 <div id="home-vid" style="float:right; margin-right: 77px;">
-                 <iframe width="444" height="265" src="//www.youtube.com/embed/vN0OzvCTj7k" style="padding: 26px 0 0 79px; position:relative; z-index:10" frameborder="0" allowfullscreen></iframe>
+                 <iframe width="444" height="265" src="//www.youtube.com/embed/q2pM3_qwKhA" style="padding: 26px 0 0 79px; position:relative; z-index:10" frameborder="0" allowfullscreen></iframe>
 
 </div>
 
