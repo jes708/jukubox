@@ -146,7 +146,10 @@ echo '</pre>'; */
 
 <?php if( is_user_logged_in() ) : ?>
 
-<a class="head_link" href="<?php echo get_home_url() . '/create-a-room'; ?>"><i class="icon-desktop icon-large"></i></a>
+<!--<a class="head_link" href="<?php // echo get_home_url() . '/create-a-room'; ?>"><i class="icon-desktop icon-large"></i></a>
+-->
+
+<a class="head_link" href="<?php echo get_home_url() . '/download'; ?>"><i class="icon-download icon-large"></i></a>
 
 <?php
       global $current_user;
