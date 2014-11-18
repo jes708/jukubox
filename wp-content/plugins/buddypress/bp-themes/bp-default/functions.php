@@ -1693,6 +1693,12 @@ return $price; }
 elseif ( 8 == $service) {
 $price = 11.5 * get_halfhour_price($worker);
 return $price; }
+elseif ( 9 == $service) {
+$price = 0.75 * get_fullhour_price($worker);
+return $price; }
+elseif ( 10 == $service) {
+$price = 0.75 * get_halfhour_price($worker);
+return $price; }
 }
 add_filter( 'app_paypal_amount', 'reset_price', 10, 4 );
 add_filter( 'app_get_price', 'reset_price', 10, 4 );
@@ -1805,8 +1811,8 @@ function does_xprofileprice_exist($fieldID, $userId) {
 }  
 
 function get_service_prices($userId, $serv_num) { 
-	if( ($serv_num == 3) || ($serv_num == 7) ) { $column = 'price'; } 
-	elseif( ($serv_num == 5) || ($serv_num == 8) ) { $column = 'price_half_hour'; }
+	if( ($serv_num == 3) || ($serv_num == 7) || ($serv_num == 9) ) { $column = 'price'; } 
+	elseif( ($serv_num == 5) || ($serv_num == 8) || ($serv_num == 10) ) { $column = 'price_half_hour'; }
 	else { echo 'Error getting price!'; return false; }  
 	
 	$get_price = "SELECT
@@ -1820,7 +1826,9 @@ function get_service_prices($userId, $serv_num) {
 
 	$price = $price_arr[0][$column];
         if( ($serv_num == 7) || ($serv_num == 8) ) { $price = 11.5 * $price; } 
-	return $price; 
+	return $price;
+        if( ($serv_num == 9) || ($serv_num == 10) ) { $price = 0.75 * $price; }
+        return $price; 
 } 
 
 function insert_new_service_string( $new_serv_string, $userId ) { 
@@ -1928,7 +1936,7 @@ function generate_lessontoggle($userId, $services='') { // takes has of lesson s
 	$avail_serv = serivces_hash('total', '');
 	$avail_serv_array = $avail_serv['array']; 
         $avail_serv_array_0 = array_slice($avail_serv_array, 0, 1);
-        $avail_serv_array_1 = array_slice($avail_serv_array, 1, 7);
+        $avail_serv_array_1 = array_slice($avail_serv_array, 1, 9);
 	$avail_serv_hash = $avail_serv['hash'];  
 
 	// reset server hash - to get newset updated services available	
@@ -2221,6 +2229,7 @@ add_filter( 'bp_core_signup_send_validation_email_message', 'custom_buddypress_a
 function custom_buddypress_activation_message( $message, $user_id, $activate_url ) {
     $user = get_userdata( $user_id );
     return "Hi $user->user_login,
+
 Thanks for registering! To complete the activation of your account please click the following link:
 
 $activate_url
