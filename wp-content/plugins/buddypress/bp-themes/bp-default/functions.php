@@ -2215,3 +2215,18 @@ function remove_friends_nav() {
       bp_core_remove_subnav_item( $bp->activity->slug, 'friends' );
    }
 add_action( 'init', 'remove_friends_nav' );
+
+add_filter( 'bp_core_signup_send_validation_email_message', 'custom_buddypress_activation_message', 10, 3 );
+ 
+function custom_buddypress_activation_message( $message, $user_id, $activate_url ) {
+    $user = get_userdata( $user_id );
+    return "Hi $user->user_login,
+Thanks for registering! To complete the activation of your account please click the following link:
+
+$activate_url
+
+SPECIAL OFFER: All first lessons will be 25% off for the remainder of 2014!
+
+Sincerely,
+The Jukubox Team";
+}
