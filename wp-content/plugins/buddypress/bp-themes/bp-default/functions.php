@@ -2153,12 +2153,12 @@ function bp_member_add_lesson_button() {
         	$pos_half = true;
 	}
 
-                                if($pos_hour && !empty($hour_rates_raw)) :
+                                if($pos_hour && !empty($hour_rates_raw) && ($hour_rates_raw < 201)) :
                                  ?><p class="hour_rates_pmem"><?php echo "$" . $hour_rates_raw . "/hour";?>
                             </p>
                                 <?php endif; ?>
                                   <?php 
-                                if($pos_half && !empty($half_rates_raw)) :
+                                if($pos_half && !empty($half_rates_raw) && ($half_rates_raw < 201)) :
                                  ?><p class="half_rates_pmem"><?php echo "$" . $half_rates_raw . "/30min";?>
                             </p>
                                 <?php endif; ?>

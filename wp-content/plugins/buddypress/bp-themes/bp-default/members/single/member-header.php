@@ -47,14 +47,14 @@
 	<div id="rates_instruments">
 		<div id="r_i_rates">
 		                  <?php $hour_rates_raw = get_fullhour_price($disp_user_id);
-                                if(!empty($hour_rates_raw)) : 
+                                if(!empty($hour_rates_raw) && ($hour_rates_raw < 201)) : 
 				 ?><p class="hour_rates_p"><?php echo "$" . $hour_rates_raw . "/hour";
 
                                 ?>
                             </p>
 				<?php endif; ?>
                                   <?php $half_rates_raw = get_halfhour_price($disp_user_id);
-                                if(!empty($half_rates_raw)) :                               
+                                if(!empty($half_rates_raw) && ($half_rates_raw < 101)) :                               
 				 ?><p class="half_rates_p"><?php echo "($" . $half_rates_raw . "/half hour)";
 
                                 ?>
