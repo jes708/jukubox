@@ -8729,9 +8729,9 @@ border-top: 1px solid black !important;
 border-bottom: 1px solid black !important;
 }
 
-div.appointments-name-field, div.appointments-email-field, div.appointments-city-field, div.appointments-confirmation-end {
+/*div.appointments-name-field, div.appointments-email-field, div.appointments-city-field, div.appointments-confirmation-end {
 display: none !important;
-}
+}*/
 
 .bulk_text {
 width: 452px;
