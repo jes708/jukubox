@@ -11,7 +11,7 @@
 	<p id="White_home_p">Our faculty consists of the world's most respected instructors from the top musical conservatories.</p>
 	<img style="bottom:118px; height:445px; position:relative; float:right; right:14px;" src="../../../../../wp-content/uploads/2014/05/Dicterow-Homepage-Fuzzy.png"> 	
 	<p id="Amber_p">Glenn Dicterow<br><em>Jukubox faculty member</em></p>
-	<h3 id="Amber_h" style="float:left;">Sign up now and get 25% off your first lesson!</h3>
+	<h3 id="Amber_h" style="float:left;">Sign up to begin using Jukubox</h3>
 
                 <form action="register" name="presignup" id="presignup" class="standard-form" method="post" enctype="multipart/form-data">
 <!--                        <input type="text" name="presignup_name" id="presignup_name" placeholder="Name" value="" /> -->
