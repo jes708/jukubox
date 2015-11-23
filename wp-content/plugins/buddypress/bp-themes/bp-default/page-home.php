@@ -221,7 +221,7 @@
 	<div class="gk-features gk-perspective">
 <!--		<h4>Coming Soon!</h4> -->
 		<p style="float: left;">We are currently offering a limited number of scholarships thanks to a grant from Tarisio. For a free call and potential access to the scholarships, write me at eric@jukubox.com to schedule a call.</p>
-		<p style="float: left;">-Eric Silberger</p>
+		<p style="float: left; font-weight: bold; font-style: italic;">-Eric Silberger</p>
 	</div>
 	</div>
 <!--    </section>
