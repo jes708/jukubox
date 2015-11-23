@@ -217,10 +217,11 @@
 <section class="f-part-divide"> 
     <section class="f-part-wrap" style="max-width: 1000px;">
 	<div id="testimonials">
-    	<h1 class="jes-big-header-2">Testimonials</h1>
+    	<h1 style="float: left; right: 0;" class="jes-big-header-2">From the CEO</h1>
 	<div class="gk-features gk-perspective">
-		<h4>Coming Soon!</h4>
-		<p> Email general@jukubox.com if you would like your endorsement of Jukubox featured on our homepage!</p>
+<!--		<h4>Coming Soon!</h4> -->
+		<p style="float: left;">We are currently offering a limited number of scholarships thanks to a grant from Tarisio. For a free call and potential access to the scholarships, write me at eric@jukubox.com to schedule a call.</p>
+		<p style="float: left;">-Eric Silberger</p>
 	</div>
 	</div>
 <!--    </section>
