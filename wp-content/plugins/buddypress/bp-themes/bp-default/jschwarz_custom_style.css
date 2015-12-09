@@ -8979,3 +8979,7 @@ a.download_mac, a.download_windows {
 position: relative;
 top: 10px;
 }
+
+div.socialicons.s4plusone {
+left: 0px;
+}
