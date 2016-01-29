@@ -95,4 +95,4 @@ require_once(ABSPATH . 'wp-settings.php');
 // NHF - added this to allow buddypress profile rating to function
 define('CONCATENATE_SCRIPTS', false );
 
-define( 'WP_ALLOW_REPAIR', true );
+//define( 'WP_ALLOW_REPAIR', true );
